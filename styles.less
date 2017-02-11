@@ -1,0 +1,367 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+@level-0: 4%;
+@level-1: 16%;
+@level-2: 28%;
+@level-3: 36%;
+@level-4: 42%;
+
+@purple: #791685;
+@orange: #e75225;
+@red: #e7253c;
+@yellow: #d8c13a;
+@green: #1b9387;
+
+@bg-color: #141422;
+@bg-scrollbar: @yellow;
+
+@left-width: 280px;
+@right-width: 240px;
+
+.left-width {
+  max-width: @left-width !important;
+  min-width: @left-width !important;
+      width: @left-width !important;
+}
+
+.right-width {
+  max-width: @right-width !important;
+  min-width: @right-width !important;
+      width: @right-width !important;
+}
+
+.reset-background {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.reset-border {
+  border: none !important;
+  border-image: none !important;
+  -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+     -ms-border-radius: 0 !important;
+         border-radius: 0 !important;
+}
+.reset-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.reset-position {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+atom-workspace {
+  // background-color: red !important;
+  background-color: @bg-color !important;
+}
+
+// atom-panel-container,
+atom-panel-container.top,
+atom-panel-container.bottom,
+.panel-header,
+.status-bar,
+.panel-footer,
+.panel-left,
+.panel-right,
+// .panel-horizontal,
+// .panel-vertical,
+.tree-view,
+.tree-view-resize-handle,
+.remote-ftp-view,
+.tool-bar,
+.title-bar,
+.gutter,
+.editor,
+project-viewer,
+project-viewer pv-header,
+// .tool-panel,
+// .panes,
+// .pane,
+.tree-view-scroller,
+.settings-view,
+.settings-view .config-menu,
+.settings-view .panels,
+.tab-bar,
+.tab-bar .tab,
+.tab-bar .tab .title,
+.tab-bar .tab::after,
+.tab-bar .tab::before {
+  .reset-border();
+  .reset-background();
+}
+
+::-webkit-scrollbar {
+  .reset-background();
+}
+::-webkit-scrollbar-corner {
+  .reset-background();
+  background-color: @bg-color !important;
+}
+::-webkit-scrollbar-thumb {
+  .reset-background();
+  background-color: @bg-scrollbar !important;
+  border-color: @bg-color !important;
+}
+::-webkit-scrollbar-track {
+  .reset-background();
+  background-color: @bg-color !important;
+}
+
+.panel-footer {
+  background-color: @bg-color !important;
+  border-top: solid 1px lighten(@bg-color, @level-0) !important;
+
+  .status-bar {
+    color: @red !important;
+    height: 30px !important;
+    line-height: normal !important;
+
+    a {
+      color: @yellow !important;
+    }
+
+    .status-bar-left {
+      .reset-margin();
+      .reset-position();
+      margin-top: 8px !important;
+    }
+
+    .status-bar-right {
+      .reset-margin();
+      .reset-position();
+      margin-top: 8px !important;
+    }
+  }
+}
+
+.title-bar {
+  .reset-margin();
+  .reset-position();
+  background-color: @bg-color !important;
+  height: auto !important;
+  line-height: normal !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+
+  .title {
+    .reset-margin();
+    .reset-position();
+    height: 32px !important;
+    line-height: normal !important;
+    padding-top: 7px !important;
+    color: @yellow !important;
+  }
+}
+
+.tree-view-resizer {
+  .left-width();
+
+  height: 612px !important;
+
+  .tree-view {
+    padding-bottom: 16px !important;
+    border-left: solid 1px lighten(@bg-color, @level-0) !important;
+    background-color: @bg-color !important;
+  }
+}
+
+.tool-bar {
+  .reset-margin();
+  .reset-position();
+  background-color: @bg-color !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  height: auto !important;
+  line-height: normal !important;
+
+  .tool-bar-btn {
+    .reset-border();
+    .reset-margin();
+    .reset-position();
+    color: @bg-color !important;
+    background-image: none !important;
+    background-color: @yellow !important;
+    cursor: pointer !important;
+    width: 50px !important;
+    height: 48px !important;
+    line-height: normal !important;
+    text-align: center !important;
+  }
+
+  .tool-bar-btn:hover {
+    color: @bg-color !important;
+    background-image: none !important;
+    background-color: darken(@yellow, @level-1) !important;
+  }
+}
+
+.tab-bar {
+  height: auto !important;
+  line-height: normal !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+
+  .tab {
+    height: auto !important;
+    line-height: normal !important;
+    color: @yellow !important;
+    background-color: darken(@bg-color, @level-0) !important;
+
+    &.active {
+      color: @bg-color !important;
+      background-color: @yellow !important;
+    }
+
+    .title {
+      height: 36px !important;
+      line-height: normal !important;
+      padding-top: 10px !important;
+    }
+  }
+}
+
+project-viewer {
+  .right-width();
+
+  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+
+  pv-header {
+    font-size: 14px !important;
+    border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  }
+
+  .list-tree {
+    font-size: 12px !important;
+  }
+}
+
+.editor {
+  // border-left: solid 1px lighten(@bg-color, @level-0) !important;
+}
+
+.remote-ftp-view {
+  .reset-margin();
+  .reset-position();
+  .left-width();
+  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+
+  position: absolute !important;
+  z-index: 1 !important;
+  left: -@left-width !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: 0 !important;
+  height: 400px !important;
+  background-color: darken(@bg-color, @level-0) !important;
+
+  .scroller,
+  .queue,
+  .offline {
+    margin-top: 50px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .queue {
+    .reset-margin();
+    .reset-position();
+    left: 0 !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    background-color: @green !important;
+    color: @bg-color !important;
+
+    .progress {
+      height: 30px !important;
+      overflow: hidden !important;
+    }
+
+    .list {
+      height: 30px !important;
+      overflow: hidden !important;
+    }
+  }
+
+  &::after {
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+        -ms-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+    border-top: solid 1px lighten(@bg-color, @level-0) !important;
+    border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+    content: "Remote FTP";
+    display: block !important;
+    width: 100% !important;
+    background-color: darken(@bg-color, @level-0) !important;
+    height: 40px !important;
+    line-height: normal !important;
+    padding-top: 10px !important;
+    font-size: 14px !important;
+    padding-left: 8px !important;
+  }
+
+  ::-webkit-scrollbar {
+    .reset-background();
+  }
+  ::-webkit-scrollbar-corner {
+    .reset-background();
+    background-color: darken(@bg-color, @level-0) !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    .reset-background();
+    background-color: @bg-scrollbar !important;
+    border-color: darken(@bg-color, @level-0) !important;
+  }
+  ::-webkit-scrollbar-track {
+    .reset-background();
+    background-color: darken(@bg-color, @level-0) !important;
+  }
+}
+
+atom-workspace-axis.vertical {
+  .reset-border();
+  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+
+  atom-workspace-axis.vertical .item-views {
+    .reset-border();
+  }
+}
+
+.cursor {
+  border-width: 2px !important;
+  border-color: @red !important;
+  background-color: transparent !important;
+}

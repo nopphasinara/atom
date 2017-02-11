@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6634-xzeke3"
+    ]
+  ],
+  "_from": "../d-117111-6634-out964/package.tgz",
+  "_id": "autocomplete-jsp@0.4.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/autocomplete-jsp",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117111-6634-out964/package.tgz",
+  "_shasum": "0c44184ada7521140aee40fedde8c897b668e432",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6634-out964/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6634-xzeke3",
+  "author": {
+    "name": "Moritz Kneilmann",
+    "email": "moritz.kneilmann@gmx.de"
+  },
+  "bugs": {
+    "url": "https://github.com/MoritzKn/atom-autocomplete-jsp/issues"
+  },
+  "configSchema": {
+    "tldSources": {
+      "type": "array",
+      "default": [
+        "~/.atom/packages/autocomplete-jsp/tlds"
+      ]
+    }
+  },
+  "dependencies": {
+    "fs-plus": "^2.9.3",
+    "match-like": "^0.1.1",
+    "xml2js": "^0.4.17"
+  },
+  "description": "Atom autocomplete+ provider for JSP / JSPX",
+  "devDependencies": {
+    "jshint": "^2.9.3"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/MoritzKn/atom-autocomplete-jsp#readme",
+  "keywords": [
+    "autocomplete",
+    "autocomplete-plus",
+    "jsp",
+    "jspx",
+    "java",
+    "server",
+    "pages"
+  ],
+  "license": "MIT",
+  "main": "src/main.js",
+  "name": "autocomplete-jsp",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProviders"
+      }
+    }
+  },
+  "readme": "# JSP Autocomplete package\n[![Build Status](https://travis-ci.org/MoritzKn/atom-autocomplete-jsp.svg?branch=master)](https://travis-ci.org/MoritzKn/atom-autocomplete-jsp)\n\nThis [Atom](https://atom.io) package adds autocompletion support for JSP with focus on it's subset JSPX.  Uses the [autocomplete-plus](https://github.com/atom-community/autocomplete-plus) package.\n\nSee [setup][setup] and [changelog][changelog]\n\n## Features\n### Autocompletion for implicit objects\n![Screenshot of autocompletion for implicit objects][screenshot-implicit-objects]\n\n### Autocompletion for EL keywords\n![Screenshot of autocompletion for keywords][screenshot-keywords]\n\n### Autocompletion for variables defined in tags\n![Screenshot of autocompletion for variables][screenshot-tags-set]\n\n### Autocompletion for variables from `<jsp:useBean>` tags\n![Screenshot of autocompletion for variables][screenshot-tags-use-bean]\n\n### Autocompletion of tag functions from `.tld` files\n![Screenshot of autocompletion for el-functions][screenshot-tag-functions]\n\nSee [setup][setup] for an explanation how to get autocompletion based on `.tld` files to work.\n\n### Abbreviations\n![Autocompletion for abbreviations][screenshot-abbreviations]\n\n\n## Goals\n- Tag autocompletion based on `.tld` files\n- EL autocompletion for properties\n\n## What this package won't do\n- Autocomplete embedded Java code\n\n## Config\n- `tldSources`: array of directories containing tld files\n\n## Setup\n* Install this package \n```sh\napm install autocomplete-jsp\n```\n\n* Set the configuration `autocomplete-jsp.tldSources` to a directory of your choice, for example `~/tlds` and make sure this directory exist. \n```\nmkdir ~/tlds\n```\n\n* Make sure all [JSTL][jstl] TLDs are in this directory \n```\ncd ~/tlds\nwget https://svn.java.net/svn/jstl~svn/tags/jstl-1.2/impl/src/main/resources/META-INF/fn.tld\nwget https://svn.java.net/svn/jstl~svn/tags/jstl-1.2/impl/src/main/resources/META-INF/c.tld\nwget https://svn.java.net/svn/jstl~svn/tags/jstl-1.2/impl/src/main/resources/META-INF/fmt.tld\nwget https://svn.java.net/svn/jstl~svn/tags/jstl-1.2/impl/src/main/resources/META-INF/sql.tld\nwget https://svn.java.net/svn/jstl~svn/tags/jstl-1.2/impl/src/main/resources/META-INF/x.tld\n```\n\n* Copy all your custom `.tld` files into this directory \n```\ncp ~/workspace/someProject/src/main/resources/WEB-INF/*.tld ~/tlds\n```\n\n[setup]: https://github.com/MoritzKn/atom-autocomplete-jsp/blob/master/README.md#setup\n[changelog]: https://github.com/MoritzKn/atom-autocomplete-jsp/blob/master/CHANGELOG.md\n[jstl]: https://jstl.java.net/\n\n[screenshot-implicit-objects]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-implicit-objects.png\n[screenshot-keywords]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-keywords.png\n[screenshot-tags-set]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-tags-set.png\n[screenshot-tags-use-bean]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-tags-use-bean.png\n[screenshot-tag-functions]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-tag-functions.png\n[screenshot-abbreviations]: https://raw.githubusercontent.com/MoritzKn/atom-autocomplete-jsp/master/doc/img/screenshot-abbreviations.png\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MoritzKn/atom-autocomplete-jsp.git"
+  },
+  "scripts": {
+    "lint": "./node_modules/jshint/bin/jshint src/**.js spec/**js",
+    "test": "npm run lint && apm test"
+  },
+  "version": "0.4.1"
+}

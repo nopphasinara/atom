@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6998-ogjyhj"
+    ]
+  ],
+  "_from": "../d-117111-6998-eoi5c5/package.tgz",
+  "_id": "menu-manager@0.6.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/menu-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117111-6998-eoi5c5/package.tgz",
+  "_shasum": "541d6a2c6c8768fa6878acb0cff9c7161fdb2130",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6998-eoi5c5/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6998-ogjyhj",
+  "author": {
+    "name": "Jeroen van Warmerdam",
+    "email": "jeronevw@hotmail.com",
+    "url": "https://github.com/jerone"
+  },
+  "bugs": {
+    "url": "https://github.com/jerone/menu-manager/issues"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "event-kit": "^2.1.0"
+  },
+  "description": "Menu Manager shows main menu items and all context menu items from Atom.",
+  "devDependencies": {
+    "coffeelint": "^1.15.7"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jerone/menu-manager",
+  "keywords": [
+    "menu",
+    "main menu",
+    "context menu",
+    "contextmenu",
+    "command",
+    "keybinding",
+    "keystroke",
+    "shortcut",
+    "accelerator"
+  ],
+  "license": "MIT",
+  "main": "./lib/menu-manager",
+  "name": "menu-manager",
+  "optionalDependencies": {},
+  "package-dependencies": {
+    "tool-bar": "^1.0.1"
+  },
+  "private": true,
+  "readme": "# [menu-manager](https://github.com/jerone/menu-manager)\n\n[![GitHub Release](https://img.shields.io/github/release/jerone/menu-manager.svg)](https://github.com/jerone/menu-manager/releases)\n[![Atom.io](https://img.shields.io/apm/v/menu-manager.svg)](https://atom.io/packages/menu-manager)\n[![Dependency Status](https://david-dm.org/jerone/menu-manager.svg?theme=shields.io)](https://david-dm.org/jerone/menu-manager)\n[![License](http://img.shields.io/github/license/jerone/menu-manager.svg)](https://github.com/jerone/menu-manager/blob/master/LICENSE.md)\n[![Gitter chat](https://img.shields.io/badge/gitter-online-brightgreen.svg)](https://gitter.im/jerone/menu-manager)\n\n[Menu Manager](https://atom.io/packages/menu-manager) shows main menu items\nand all context menu items from [Atom](https://atom.io).\n\n![A screenshot of your package](https://raw.githubusercontent.com/jerone/menu-manager/master/screenshot.gif)\n\n## Installation\n\n```shell\napm install menu-manager\n```\n\n## Settings\n\n*   Toggle [Tool Bar](https://github.com/suda/tool-bar) button.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jerone/menu-manager.git"
+  },
+  "version": "0.6.0"
+}

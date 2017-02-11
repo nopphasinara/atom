@@ -1,0 +1,96 @@
+"*":
+  "Remote-FTP":
+    autoUploadOnSave: "never"
+    enableTransferNotifications: true
+  "atom-terminal": {}
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
+    enableAutoConfirmSingleSuggestion: false
+    enableExtendedUnicodeSupport: true
+    minimumWordLength: 2
+    useCoreMovementCommands: false
+    useLocalityBonus: false
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    disabledPackages: [
+      "about"
+      "autosave"
+      "background-tips"
+      "exception-reporting"
+      "language-c"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-objective-c"
+      "metrics"
+      "open-on-github"
+      "styleguide"
+      "timecop"
+      "welcome"
+      "deprecation-cop"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "bracket-matcher"
+      "autocomplete-plus"
+      "find-and-replace"
+      "command-palette"
+      "fuzzy-finder"
+      "git-diff"
+      "grammar-selector"
+      "link"
+      "markdown-preview"
+      "notifications"
+      "settings-view"
+      "snippets"
+      "spell-check"
+      "symbols-view"
+      "tree-view"
+      "project-viewer"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-visual-studio-code-ui"
+      "tinacious-design-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "Monaco"
+    fontSize: 12
+    lineHeight: 1.6
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "fc12ebce-06fa-41c7-a18f-a2529e34b4c5"
+  "find-and-replace":
+    focusEditorAfterSearch: true
+    liveSearchMinimumCharacters: 2
+  "git-diff":
+    showIconsInEditorGutter: true
+  "menu-manager": {}
+  notifications:
+    showErrorsInDevMode: true
+  "one-dark-ui":
+    layoutMode: "Compact"
+    tabSizing: "Even"
+  "project-viewer":
+    autohide: false
+    customHoverColor: "#d8c13a"
+    customSelectedColor: "#d8c13a"
+    customTitleColor: "#d8c13a"
+    customWidth: 240
+    hideHeader: false
+    keepContext: false
+    onlyIcons: true
+    statusBarVisibility: true
+  "status-bar": {}
+  tabs:
+    addNewTabsAtEnd: true
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  welcome:
+    showOnStartup: false

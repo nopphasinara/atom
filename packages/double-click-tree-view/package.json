@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6982-1gfa144"
+    ]
+  ],
+  "_from": "../d-117111-6982-4r97l1/package.tgz",
+  "_id": "double-click-tree-view@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/double-click-tree-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117111-6982-4r97l1/package.tgz",
+  "_shasum": "4486e3ecbc1b5d68222e5f61eb2a890b8cf99023",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6982-4r97l1/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6982-1gfa144",
+  "bugs": {
+    "url": "https://github.com/mattsfrey/atom-double-click-tree-view/issues"
+  },
+  "dependencies": {},
+  "description": "Tree-view responds only to double clicks for all operations",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/mattsfrey/atom-double-click-tree-view#readme",
+  "keywords": [
+    "tree-view",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "./lib/double-click-tree-view",
+  "name": "double-click-tree-view",
+  "optionalDependencies": {},
+  "readme": "# double-click-tree-view package\n\nTree-view responds only to double clicks for all operations.\n\nI.E. To open a file or to collapse/expand a directory, you will need to double-click on the entry.\n\nBig thanks to h2so5 for writing the original chary-tree-view that this has been forked from. \n\nhttps://github.com/h2so5/atom-chary-tree-view\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattsfrey/atom-double-click-tree-view.git"
+  },
+  "version": "1.1.0"
+}

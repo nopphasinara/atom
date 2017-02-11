@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-31394-1jmt3l9"
+    ]
+  ],
+  "_from": "../d-117111-31394-16yp3et/package.tgz",
+  "_id": "tinacious-design-syntax@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tinacious-design-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117111-31394-16yp3et/package.tgz",
+  "_shasum": "3e962db0f0c65c7e6aa682859dc811600088c006",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31394-16yp3et/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-31394-1jmt3l9",
+  "author": {
+    "name": "Tina Holly",
+    "email": "info@tinaciousdesign.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tinacious/atom-tinacious-design-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A dark syntax theme that uses bright pink, blue, purple, turquoise and orange.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tinacious/atom-tinacious-design-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "pink",
+    "blue",
+    "dark",
+    "bright",
+    "orange",
+    "easter",
+    "gray"
+  ],
+  "license": "MIT",
+  "name": "tinacious-design-syntax",
+  "optionalDependencies": {},
+  "readme": "![Tinacious Design Syntax](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/tinacious-design-syntax.png)\n\n**Tinacious Design Syntax** is a dark syntax theme that uses a bright palette of colours including pink, blue, turquoise, green, purple, and orange.\n\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/tinacious-design-syntax-swatches.png)\n\nColours curated by Web and Mobile designer and developer Tina from [Tinacious Design](http://tinaciousdesign.com).\n\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/photo.jpg)\n\n### Complements the One Dark UI theme\nWhen used with the One Dark UI theme, this syntax theme offers a dark gray UI with a subtle purple tint.\n\nThe font used in the Atom editor is [Inconsolata](https://www.fontsquirrel.com/fonts/Inconsolata), and the tab bar, status bar, and tree view font is [Source Code Pro](https://www.fontsquirrel.com/fonts/source-code-pro).\n\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/00_OneDark-ui-theme.png)\n\n### Less CSS\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/01_less.png)\n\n### JavaScript (ES6)\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/02_javascript.png)\n\n### JavaScript (Angular)\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/08_angular.png)\n\n### JavaScript (TypeScript + React)\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/03_typescript-react.png)\n\n### JavaScript (TypeScript + React + JSX)\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/04_typescript-react-jsx.png)\n\n### Go lang\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/05_golang.png)\n\n### Ruby\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/06_ruby.png)\n\n### HTML\n![](https://raw.githubusercontent.com/tinacious/atom-tinacious-design-syntax/master/images/07_html.png)\n\n\n## Changelog\n\n### 0.1.0 - Initial Release\n- Initial release\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinacious/atom-tinacious-design-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.0"
+}

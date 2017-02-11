@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6949-13hesu"
+    ]
+  ],
+  "_from": "../d-117111-6949-14k8roq/package.tgz",
+  "_id": "project-viewer@0.3.43",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/project-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117111-6949-14k8roq/package.tgz",
+  "_shasum": "164a9dcca920b4818da5a31c0f597be48a80151e",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6949-14k8roq/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6949-13hesu",
+  "bugs": {
+    "url": "https://github.com/jccguimaraes/atom-project-viewer/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "2.2.0",
+    "devicon": "2.0.0",
+    "octicons": "5.0.1"
+  },
+  "description": "Project viewer/manager that lets you add, edit and remove clients/groups/projects as well as switching between them.",
+  "devDependencies": {
+    "all-contributors-cli": "latest"
+  },
+  "engines": {
+    "atom": ">=1.10.0"
+  },
+  "homepage": "https://github.com/jccguimaraes/atom-project-viewer#readme",
+  "keywords": [
+    "project",
+    "manager",
+    "viewer"
+  ],
+  "license": "MIT",
+  "main": "./src/index",
+  "name": "project-viewer",
+  "optionalDependencies": {},
+  "readme": "# README\n\n[![Join the chat at https://gitter.im/jccguimaraes/atom-project-viewer](http://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg?style=flat-square)](https://gitter.im/jccguimaraes/atom-project-viewer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)\n\n[![atom version](https://img.shields.io/badge/atom-1.10.0-orange.svg?style=flat-square)](https://atom.io/packages/project-viewer/)\n[![apm version](https://img.shields.io/apm/v/project-viewer.svg?style=flat-square)](https://atom.io/packages/project-viewer/)\n[![apm downloads](https://img.shields.io/apm/dm/project-viewer.svg?style=flat-square)](https://atom.io/packages/project-viewer/)\n\n[![Travis CI CI](https://travis-ci.org/jccguimaraes/atom-project-viewer.svg?branch=master)](https://travis-ci.org/jccguimaraes/atom-project-viewer)\n[![AppVeyor CI](https://ci.appveyor.com/api/projects/status/2t91cemmpf635p2e?svg=true\n)](https://ci.appveyor.com/project/jccguimaraes/atom-project-viewer)\n[![CircleCI CI](https://circleci.com/gh/jccguimaraes/atom-project-viewer/tree/master.svg?style=shield&circle-token=c2215983920e08d193a80b5775760792c5d2e883\n)](https://circleci.com/gh/jccguimaraes/atom-project-viewer)\n\n[![Beerpay](https://beerpay.io/jccguimaraes/atom-project-viewer/badge.svg?style=flat-square)](https://beerpay.io/jccguimaraes/atom-project-viewer)\n[![paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square)](https://paypal.me/jccguimaraes)\n\nThis package was driven by other packages that manage projects but didn't gave me what I really wanted for my day to basis setup, so I created this package.\n\n![pv_cgp_01](https://cloud.githubusercontent.com/assets/14871650/15876484/8bfcbc5a-2d05-11e6-90c0-87a38020d78c.gif)\n\n![pv_cgp_02](https://cloud.githubusercontent.com/assets/14871650/15876485/8c13a3b6-2d05-11e6-8f96-bb4ab8acfe9a.gif)\n\n![pv_cgp_03](https://cloud.githubusercontent.com/assets/1093709/16894913/be34c22a-4b65-11e6-8f95-8b8b314f40d5.gif)\n\n## Projects that inspired me!\n\n* [tree-view](https://atom.io/packages/tree-view) from *atom*.\n* [project-manager](https://atom.io/packages/project-manager) from *danielbrodin*.\n* [project-sidebar](https://atom.io/packages/project-sidebar) from *bripkens*.\n\n## Installation\n\nSimply run the following command:\n```sh\napm install project-viewer\n```\nOr find the package in **Atom → Settings → Install** and search for ***project-viewer***.\n\n## Options\n- `shift-ctrl-alt-v` open a select view for fast project opening;\n- `shift-ctrl-alt-b` to toggle between sidebar visibility;\n- `shift-ctrl-alt-n` to toggle focus on sidebar;\n\n## Settings\nSettings | Type | Description | Default\n---------|------|-------------|--------\n`visibilityState` | `String` | Define what would be the default action for **project-viewer** visibility on startup. Options are `Display on startup` and `Remember state` | `Display on startup`\n`visibilityAction` | `Boolean` | 'This `boolean` is relative to the option selected in `Visibility State`. | `true`\n`autohide` | `Boolean` | Ability to autohide project viewer. | `false`\n`panelPosition` | `String` | You can set the place of the viewer, to the most right position or to the most left position. | `Right`\n`alwaysOpenInNewWindow` | `Boolean` | If set to true, always open projects in a new window (default Atom's behavior), instead of opening in the same window. | `false`\n`hideHeader` | `Boolean` | Hide header (for more space). | `false`\n`githubAccessToken` | `String` | Your personal and private GitHub access token. This is useful if you want to save/backup your projects to a remote place (as a gist). *note*: keep in mind that this token should have only permissions to `rw` gists as well as that any package can access this token string. | `''`\n`gistId` | `String` | ID of the gist used as a backup storage. | `''`\n`setName` | `String` | Name of your working set, for example 'work' or 'home'. As each working set is backed up into a separate file in one gist, you can have multiple Client/Group/Project sets on different machines and have them all safely backed up on gist. | `default`\n`convertOldData` | `Boolean` | If you came from a version previous to <code>0.3.0</code>, you most probably have the old data in the atom folder. By default it will always check on startup for this data and if the new does not exist, it will convert to the new data schema. | `true`\n`keepContext` |  `Boolean` | Keep context between project switching. | `false`\n`customWidth` | `Number` | Set a custom panel width | `180`\n`customSelectedColor` | `String` | Set custom selected project color | `''`\n`customHoverColor` | `String` | Set custom hover project color | `''`\n`customTitleColor` | `String` | Set custom main title color | `''`\n`onlyIcons` | `Boolean` | Show the icons without the description. | `false`\n\n## Features & Future Features\nPlease read the `CHANGE LOG` to have a more insight on all the features existing and planned.\n\n## Contributors\nThanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):\n\n<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->\n| [<img src=\"https://avatars.githubusercontent.com/u/14871650?v=3\" width=\"100px;\"/><br /><sub>João Guimarães</sub>](https://github.com/jccguimaraes)<br />💁 [🐛](https://github.com/jccguimaraes/atom-project-viewer/issues?q=author%3Ajccguimaraes) [💻](https://github.com/jccguimaraes/atom-project-viewer/commits?author=jccguimaraes) 🎨 [📖](https://github.com/jccguimaraes/atom-project-viewer/commits?author=jccguimaraes) 👀 | [<img src=\"https://avatars.githubusercontent.com/u/1093709?v=3\" width=\"100px;\"/><br /><sub>Hans Koch</sub>](https://github.com/Hammster)<br />[💻](https://github.com/jccguimaraes/atom-project-viewer/commits?author=Hammster) | [<img src=\"https://avatars.githubusercontent.com/u/4084322?v=3\" width=\"100px;\"/><br /><sub>Holland Wilson</sub>](https://github.com/DamnedScholar)<br />[💻](https://github.com/jccguimaraes/atom-project-viewer/commits?author=DamnedScholar) | [<img src=\"https://avatars.githubusercontent.com/u/7261682?v=3\" width=\"100px;\"/><br /><sub>Roman Huba</sub>](https://github.com/amilor)<br />[💻](https://github.com/jccguimaraes/atom-project-viewer/commits?author=amilor) | [<img src=\"https://avatars.githubusercontent.com/u/10619585?v=3\" width=\"100px;\"/><br /><sub>Loann Neveu</sub>](https://github.com/lneveu)<br />[💻](https://github.com/jccguimaraes/atom-project-viewer/commits?author=lneveu) [🐛](https://github.com/jccguimaraes/atom-project-viewer/issues?q=author%3Alneveu) | [<img src=\"https://avatars0.githubusercontent.com/u/12634286?v=3&s=460\" width=\"100px;\"/><br /><sub>Kristian Barrese</sub>](https://github.com/bitkris-dev)<br />🎨 [🐛](https://github.com/jccguimaraes/atom-project-viewer/issues?q=author%3Abitkris-dev) |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n<!-- ALL-CONTRIBUTORS-LIST:END -->\n\nThis project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!\n\n## Other\nYou can follow me on [Twitter](https://twitter.com/jccguimaraes)\n\n## A Special Thank You!\nI thank all you guys that are and did give great feedback to this project.\n:beers: for everyone.\n\n## Support on Beerpay\nHey dude! Help me out for a couple of :beers:!\n\n[![Beerpay](https://beerpay.io/jccguimaraes/atom-project-viewer/badge.svg?style=beer-square)](https://beerpay.io/jccguimaraes/atom-project-viewer)  [![Beerpay](https://beerpay.io/jccguimaraes/atom-project-viewer/make-wish.svg?style=flat-square)](https://beerpay.io/jccguimaraes/atom-project-viewer?focus=wish)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jccguimaraes/atom-project-viewer.git"
+  },
+  "version": "0.3.43"
+}
