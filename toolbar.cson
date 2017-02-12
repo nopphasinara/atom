@@ -35,36 +35,49 @@
     type: "button"
   }
   {
+    tooltip: "Add Project"
+    callback: "application:add-project-folder"
+    iconset: "fa", icon: "folder-open"
+    type: "button"
+  }
+  {
     tooltip: "Save Project"
     callback: "project-manager:save-project"
     iconset: "fa", icon: "save"
     type: "button"
   }
-  {
-    tooltip: "Edit Project"
-    callback: "project-manager:edit-project"
-    iconset: "fa", icon: "edit"
-    type: "button"
-  }
-  {
-    tooltip: "Update Projects"
-    callback: "project-manager:update-projects"
-    iconset: "fa", icon: "refresh"
-    type: "button"
-  }
-  {
-    tooltip: "Edit Projects"
-    callback: "project-manager:edit-projects"
-    iconset: "fa", icon: "gear"
-    type: "button"
-  }
-  { type: "spacer" }
-  { type: "spacer" }
-  { type: "spacer" }
+  # {
+  #   tooltip: "Edit Project"
+  #   callback: "project-manager:edit-project"
+  #   iconset: "fa", icon: "edit"
+  #   type: "button"
+  # }
+  # {
+  #   tooltip: "Update Projects"
+  #   callback: "project-manager:update-projects"
+  #   iconset: "fa", icon: "refresh"
+  #   type: "button"
+  # }
   {
     tooltip: "Edit Projects"
     callback: "project-manager:edit-projects"
-    iconset: "fa", icon: "gear"
+    iconset: "fa", icon: "gears"
+    type: "button"
+  }
+  { type: "spacer" }
+  { type: "spacer" }
+  { type: "spacer" }
+  {
+    tooltip: "Home"
+    callback: "home:home"
+    iconset: "fa", icon: "home"
+    type: "button"
+  }
+
+  {
+    tooltip: "Close Project"
+    callback: "window:close"
+    iconset: "fa", icon: "close"
     type: "button"
   }
 ]

@@ -539,6 +539,7 @@ code {
 }
 
 .tool-bar-left {
+  position: relative !important;
   .reset-background();
   background-color: darken(@bg-color, @level-0) !important;
   width: 50px !important;
@@ -553,5 +554,22 @@ code {
     overflow: hidden !important;
     background-color: darken(@yellow, @level-1) !important;
     -webkit-mask-image: none !important;
+  }
+
+  .fa-close {
+    .reset-margin();
+    .reset-position();
+    position: absolute !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    bottom: 0 !important;
+
+    &::before {
+      color: @yellow !important;
+    }
+
+    background-color: @red !important;
   }
 }

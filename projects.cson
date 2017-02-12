@@ -1,1 +1,88 @@
-[]
+[
+  {
+    title: ".atom"
+    group: "Packages"
+    paths: [
+      "/Users/sudprawat/.atom"
+    ]
+    icon: "fa-address-book"
+  }
+  {
+    title: ".homestead"
+    group: "Packages"
+    paths: [
+      "/Users/sudprawat/.homestead"
+    ]
+    icon: "fa-address-book"
+  }
+  {
+    title: "d4"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/d4"
+    ]
+  }
+  {
+    title: "swd4"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/swd4"
+    ]
+  }
+  {
+    title: "Repro Gallery Master"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/repro-gallery-master"
+    ]
+  }
+  {
+    title: "Reproduction Gallery"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/reproduction-gallery"
+    ]
+  }
+  {
+    title: "Safariextension"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/safariextension"
+    ]
+  }
+  {
+    title: "Sailing Whitsundays"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/sailing-whitsundays"
+    ]
+  }
+  {
+    title: "Sisaran"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/sisaran"
+    ]
+  }
+  {
+    title: "Soho Art"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/soho-art"
+    ]
+  }
+  {
+    title: "Template"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/template"
+    ]
+  }
+  {
+    title: "Wordpress"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/wordpress"
+    ]
+  }
+]
