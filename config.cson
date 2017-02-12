@@ -9,9 +9,7 @@
     enableAutoConfirmSingleSuggestion: false
     enableExtendedUnicodeSupport: true
     minimumWordLength: 2
-    strictMatching: true
     useCoreMovementCommands: false
-    useLocalityBonus: false
   core:
     allowPendingPaneItems: false
     audioBeep: false

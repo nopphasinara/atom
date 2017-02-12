@@ -124,6 +124,8 @@
   'cmd-k a b': 'remote-ftp:abort-current'
   'shift-cmd-u': 'unset!'
   'alt-cmd-\\': 'project-viewer:toggle-display'
+  'cmd-p': 'fuzzy-finder:toggle-file-finder'
+  'shift-cmd-p': 'fuzzy-finder:toggle-buffer-finder'
 
 'body':
   'shift-cmd-f': 'application:add-project-folder'
