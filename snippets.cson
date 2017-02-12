@@ -19,11 +19,84 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+## Snippet for all providers
+'*':
+  'New snippet':
+    'prefix': 'newsnippet'
+    'body': """
+    '$1':
+      'prefix': '$2'
+      'body': $3
+    """
+  '# comment':
+    'prefix': '#1'
+    'body': '# ${1:comment}'
+  '## comment':
+    'prefix': '#2'
+    'body': '## ${1:comment}'
+  'unset!':
+    'prefix': 'unset'
+    'body': 'unset!'
+
+
+## Text html, Text html php
 '.text.html, .text.html.php':
   '<?php...?>':
     'prefix': 'php'
     'body': '<?php$1?>$0'
+  'DIV':
+    'prefix': 'div'
+    'body': '<div class="$1">$2</div>$0'
+  'DIV Block':
+    'prefix': 'divblock'
+    'body': """
+    <div class="$1">
+      $2
+    </div><!-- /.$1 -->
+    """
+  'DIV with ID':
+    'prefix': 'divid'
+    'body': '<div id="$1" class="$2">$3</div>$0'
+  'DIV Block with ID':
+    'prefix': 'dividblock'
+    'body': """
+    <div id="$1" class="$2">
+      <div class="$2-container">
+        $3
+      </div><!-- /.$2-container -->
+    </div><!-- /.$2 -->
+    """
+  'Bootstrap Panel':
+    'prefix': 'bootstrappanel'
+    'body': """
+    <div class="panel$2">
+      <div class="panel-heading">
+        <h3 class="panel-title">$3</h3>
+      </div>
+      <div class="panel-body">
+        $4
+      </div>
+    </div>$1
+    """
+  'Bootstrap Panel with Footer':
+    'prefix': 'bootstrappanelfooter'
+    'body': """
+    <div class="panel$2">
+      <div class="panel-heading">
+        <h3 class="panel-title">$3</h3>
+      </div>
+      <div class="panel-body">
+        $4
+      </div>
+      <div class="panel-footer">
+        $5
+      </div>
+    </div>$1
+    """
 
+
+## Source coffee
 '.source.coffee':
   'spacer':
     'prefix': 'spacer'
