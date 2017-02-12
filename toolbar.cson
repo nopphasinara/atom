@@ -74,10 +74,10 @@
     type: "button"
   }
 
-  {
-    tooltip: "Close Project"
-    callback: "window:close"
-    iconset: "fa", icon: "close"
-    type: "button"
-  }
+  # {
+  #   tooltip: "Close Project"
+  #   callback: "window:close"
+  #   iconset: "fa", icon: "close"
+  #   type: "button"
+  # }
 ]

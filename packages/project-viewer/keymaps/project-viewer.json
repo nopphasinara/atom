@@ -1,7 +1,0 @@
-{
-    ".platform-darwin, .platform-win32, .platform-linux": {
-        "shift-ctrl-alt-v": "project-viewer:toggle-select-view",
-        "shift-ctrl-alt-b": "project-viewer:toggle-display",
-        "shift-ctrl-alt-n": "project-viewer:toggle-focus"
-    }
-}

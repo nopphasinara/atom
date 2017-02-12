@@ -2,6 +2,8 @@
   "Remote-FTP":
     autoUploadOnSave: "never"
     enableTransferNotifications: true
+  "atom-ctags":
+    disableComplete: true
   "atom-terminal": {}
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
@@ -29,7 +31,6 @@
       "timecop"
       "welcome"
       "deprecation-cop"
-      "project-viewer"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -51,6 +52,7 @@
       "symbols-view"
       "tool-bar"
       "project-manager"
+      "atom-ctags"
     ]
     telemetryConsent: "no"
     themes: [
