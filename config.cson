@@ -44,10 +44,10 @@
       "notifications"
       "settings-view"
       "spell-check"
-      "symbols-view"
       "tree-view"
       "project-viewer"
       "snippets"
+      "symbols-view"
     ]
     telemetryConsent: "no"
     themes: [

@@ -125,7 +125,6 @@
   'shift-cmd-u': 'unset!'
   'alt-cmd-\\': 'project-viewer:toggle-display'
   'cmd-p': 'fuzzy-finder:toggle-file-finder'
-  'shift-cmd-p': 'fuzzy-finder:toggle-buffer-finder'
 
 'body':
   'shift-cmd-f': 'application:add-project-folder'
@@ -162,3 +161,7 @@
   'alt-cmd-[': 'unset!'
   'alt-cmd-]': 'unset!'
   'cmd-e': 'editor:join-lines'
+
+'.platform-darwin atom-workspace atom-text-editor':
+  'cmd-k s y m': 'goto:file-symbol'
+  # 'cmd-k p s y m': 'goto:project-symbol'
