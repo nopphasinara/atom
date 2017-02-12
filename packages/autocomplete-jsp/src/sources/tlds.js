@@ -15,7 +15,7 @@ const methodSignatureRegExp = new RegExp(
     '([a-zA-Z_][a-zA-Z_0-9]*)\\s*' +
     // arguments
     // e.g. (java.lang.String, java.lang.Boolean)
-    '\\(\\s*([a-zA-Z_0-9,. \\[\\]]*)\\s*\\)'
+    '\\(\\s*([a-zA-Z_0-9,.\\s\\[\\]]*)\\s*\\)'
 );
 
 function parseMethodSignature(signature) {
@@ -38,7 +38,17 @@ function parseMethodSignature(signature) {
 }
 
 function parseBool(str) {
-    return str !== 'false';
+    if (typeof str === 'string') {
+        str = str.trim();
+
+        if (str === 'true') {
+            return true;
+        } else if (str === 'false') {
+            return false;
+        }
+    }
+
+    return !!str;
 }
 
 function taglibToDesc(taglib) {
@@ -113,7 +123,7 @@ function readInTld(path) {
                 });
             }
 
-            xml2js.parseString(content, (err, {taglib}) => {
+            xml2js.parseString(content, (err, doc) => {
                 if (err) {
                     return reject({
                         msg: `Parsing XML in '${path}' failed`,
@@ -121,14 +131,21 @@ function readInTld(path) {
                     });
                 }
 
-                const taglibDesc = taglibToDesc(taglib);
+                if (typeof doc.taglib === 'undefined') {
+                    return reject({
+                        msg: `Parsing XML in '${path}' failed`,
+                        causedBy: new Error(),
+                    });
+                }
+
+                const taglibDesc = taglibToDesc(doc.taglib);
                 return resolve(taglibDesc);
             });
         });
     });
 }
 
-function readdirProm(path) {
+function readDir(path) {
     path = path.replace(/[/\\]$/, '');
     return new Promise((resolve, reject) =>
         fs.readdir(path, (err, fileNames) => {
@@ -161,14 +178,16 @@ export function register() {
     const tldSourceDirs = atom.config.get('autocomplete-jsp.tldSources')
             .map(path => fs.normalize(path));
 
-    Promise.all(tldSourceDirs.map(readdirProm))
+    // TODO: refresh when files change
+    Promise.all(tldSourceDirs.map(readDir))
         .then(result => [].concat.apply([], result))
         .then(paths => paths.filter(path => path.endsWith('.tld')))
         .then(paths => readAndRegisterTlds(paths))
-        .catch(err =>
+        .catch(err => {
+            const detail = err.causedBy ? `Caused by:\n${err.causedBy}` : '';
             atom.notifications.addWarning(`Autocomplete-JSP: ${err.msg}`, {
                 dismissable: true,
-                detail: `Caused by:\n${err.causedBy}`,
-            })
-        );
+                detail,
+            });
+        });
 }

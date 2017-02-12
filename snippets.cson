@@ -35,9 +35,6 @@
   '## comment':
     'prefix': '#2'
     'body': '## ${1:comment}'
-  'unset!':
-    'prefix': 'unset'
-    'body': 'unset!'
 
 
 ## Text html, Text html php
