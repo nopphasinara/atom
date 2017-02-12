@@ -36,7 +36,7 @@
   }
   {
     tooltip: "Add Project"
-    callback: "application:add-project-folder"
+    callback: ["application:add-project-folder"]
     iconset: "fa", icon: "folder-open"
     type: "button"
   }

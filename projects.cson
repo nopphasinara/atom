@@ -85,4 +85,11 @@
       "/Users/sudprawat/www/wordpress"
     ]
   }
+  {
+    title: "PhpMyAdmin"
+    group: "www"
+    paths: [
+      "/Users/sudprawat/www/phpmyadmin"
+    ]
+  }
 ]

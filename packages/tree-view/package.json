@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117112-19845-ysk4ul"
+    ]
+  ],
+  "_from": "../d-117112-19845-1jfyevn/package.tgz",
+  "_id": "tree-view@0.214.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tree-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117112-19845-1jfyevn/package.tgz",
+  "_shasum": "8658da0ec95f481f8d01454ccfb82b93396006c0",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-19845-1jfyevn/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117112-19845-ysk4ul",
+  "bugs": {
+    "url": "https://github.com/atom/tree-view/issues"
+  },
+  "configSchema": {
+    "squashDirectoryNames": {
+      "type": "boolean",
+      "default": false,
+      "title": "Collapse directories",
+      "description": "Collapse directories that only contain a single directory."
+    },
+    "hideVcsIgnoredFiles": {
+      "type": "boolean",
+      "default": false,
+      "title": "Hide VCS Ignored Files",
+      "description": "Don't show files and directories ignored by the current project's VCS system. For example, projects using Git have these paths defined in their `.gitignore` file."
+    },
+    "hideIgnoredNames": {
+      "type": "boolean",
+      "default": false,
+      "description": "Don't show items matched by the `Ignored Names` core config setting."
+    },
+    "showOnRightSide": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show the tree view on the right side of the editor instead of the left."
+    },
+    "sortFoldersBeforeFiles": {
+      "type": "boolean",
+      "default": true,
+      "description": "When listing directory items, list subdirectories before listing files."
+    },
+    "autoReveal": {
+      "type": "boolean",
+      "default": false,
+      "description": "Reveal tree view entries when they become the active pane item."
+    },
+    "focusOnReveal": {
+      "type": "boolean",
+      "default": true,
+      "description": "Focus the tree view when revealing entries."
+    },
+    "alwaysOpenExisting": {
+      "type": "boolean",
+      "default": false,
+      "description": "When opening a file, always focus an already-existing view of the file even if it's in a another pane."
+    }
+  },
+  "consumedServices": {
+    "atom.file-icons": {
+      "versions": {
+        "1.0.0": "consumeFileIcons"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.1",
+    "event-kit": "^1.0.0",
+    "fs-plus": "^2.3.0",
+    "minimatch": "~0.3.0",
+    "pathwatcher": "6.8.0-1",
+    "temp": "~0.8.1",
+    "underscore-plus": "^1.0.0"
+  },
+  "description": "Explore and open files in the current project.",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/atom/tree-view#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "tree-view",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# Tree View package\n[![OS X Build Status](https://travis-ci.org/atom/tree-view.svg?branch=master)](https://travis-ci.org/atom/tree-view)\n[![Windows Build Status](https://ci.appveyor.com/api/projects/status/com793ehi0hajrkd/branch/master?svg=true)](https://ci.appveyor.com/project/Atom/tree-view/branch/master) [![Dependency Status](https://david-dm.org/atom/tree-view.svg)](https://david-dm.org/atom/tree-view)\n\n\nExplore and open files in the current project.\n\nPress <kbd>ctrl-\\\\</kbd> or <kbd>cmd-\\\\</kbd> to open/close the Tree view and <kbd>alt-\\\\</kbd> or <kbd>ctrl-0</kbd> to focus it.\n\nWhen the Tree view has focus you can press <kbd>a</kbd>, <kbd>shift-a</kbd>, <kbd>m</kbd>, or <kbd>delete</kbd> to add, move\nor delete files and folders.\n\n![](https://f.cloud.github.com/assets/671378/2241932/6d9cface-9ceb-11e3-9026-31d5011d889d.png)\n\n## API\n\nThe Tree View displays icons next to files. These icons are customizable by installing a package that provides an `atom.file-icons` service.\n\nThe `atom.file-icons` service must provide the following methods:\n\n* `iconClassForPath(path)` - Returns a CSS class name to add to the file view\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/tree-view.git"
+  },
+  "version": "0.214.1"
+}
