@@ -9,6 +9,7 @@
     enableAutoConfirmSingleSuggestion: false
     enableExtendedUnicodeSupport: true
     minimumWordLength: 2
+    strictMatching: true
     useCoreMovementCommands: false
     useLocalityBonus: false
   core:
@@ -44,11 +45,11 @@
       "markdown-preview"
       "notifications"
       "settings-view"
-      "snippets"
       "spell-check"
       "symbols-view"
       "tree-view"
       "project-viewer"
+      "snippets"
     ]
     telemetryConsent: "no"
     themes: [
@@ -57,9 +58,8 @@
     ]
     useCustomTitleBar: true
   editor:
-    fontFamily: "Monaco"
-    fontSize: 12
-    lineHeight: 1.6
+    fontFamily: "Menlo"
+    lineHeight: 1.8
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -91,6 +91,5 @@
   tabs:
     addNewTabsAtEnd: true
     enableMruTabSwitching: false
-    enableVcsColoring: true
   welcome:
     showOnStartup: false

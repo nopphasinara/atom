@@ -33,10 +33,10 @@
 '*':
   'ctrl-left': 'pane:show-previous-item'
   'ctrl-right': 'pane:show-next-item'
-  'shift-ctrl-up': 'window:focus-pane-above'
-  'shift-ctrl-right': 'window:focus-pane-on-right'
-  'shift-ctrl-down': 'window:focus-pane-below'
-  'shift-ctrl-left': 'window:focus-pane-on-left'
+  'shift-alt-up': 'window:focus-pane-above'
+  'shift-alt-right': 'window:focus-pane-on-right'
+  'shift-alt-down': 'window:focus-pane-below'
+  'shift-alt-left': 'window:focus-pane-on-left'
 
 'atom-text-editor.autocomplete-active':
   'tab': 'unset!'
@@ -80,6 +80,11 @@
   'ctrl-tab': 'snippets:next-tab-stop'
   'shift-ctrl-tab': 'snippets:previous-tab-stop'
   'shift-tab': 'unset!'
+  'alt-up': 'editor:upper-case'
+  'alt-down': 'editor:lower-case'
+  'cmd-l': 'editor:select-line'
+  'shift-ctrl-up': 'editor:add-selection-above'
+  'shift-ctrl-down': 'editor:add-selection-below'
 
 '.platform-darwin':
   'cmd-.': 'unset!'
@@ -149,13 +154,9 @@
 'atom-workspace atom-pane':
   'alt-cmd-=': 'unset!'
   'alt-cmd--': 'unset!'
+  'cmd-f': 'find-and-replace:show'
 
 'atom-workspace atom-text-editor:not([mini])':
   'alt-cmd-[': 'unset!'
   'alt-cmd-]': 'unset!'
   'cmd-e': 'editor:join-lines'
-
-'atom-text-editor':
-  'alt-up': 'editor:upper-case'
-  'alt-down': 'editor:lower-case'
-  'cmd-l': 'editor:select-line'

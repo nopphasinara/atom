@@ -31,6 +31,10 @@ atom-text-editor .cursor {
   // border-color: red;
 }
 
+* {
+  font-family: "Menlo", sans-serif !important;
+}
+
 @level-0: 4%;
 @level-1: 16%;
 @level-2: 28%;
@@ -96,6 +100,8 @@ atom-panel-container.bottom,
 .panel-header,
 .status-bar,
 .panel-footer,
+.panel-bottom,
+.panel-bottom > *,
 .panel-left,
 .panel-right,
 // .panel-horizontal,
@@ -106,7 +112,7 @@ atom-panel-container.bottom,
 .tool-bar,
 .title-bar,
 .gutter,
-.editor,
+.editor:not(.mini),
 project-viewer,
 project-viewer pv-header,
 // .tool-panel,
@@ -142,11 +148,16 @@ project-viewer pv-header,
   background-color: @bg-color !important;
 }
 
+atom-pane.pane {
+  padding: 0 !important;
+}
+
 .panel-footer {
   background-color: @bg-color !important;
   border-top: solid 1px lighten(@bg-color, @level-0) !important;
 
   .status-bar {
+    font-size: 10px !important;
     color: @red !important;
     height: 30px !important;
     line-height: normal !important;
@@ -158,13 +169,13 @@ project-viewer pv-header,
     .status-bar-left {
       .reset-margin();
       .reset-position();
-      margin-top: 8px !important;
+      margin-top: 9px !important;
     }
 
     .status-bar-right {
       .reset-margin();
       .reset-position();
-      margin-top: 8px !important;
+      margin-top: 9px !important;
     }
   }
 }
@@ -178,24 +189,28 @@ project-viewer pv-header,
   border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
 
   .title {
+    font-size: 11px !important;
     .reset-margin();
     .reset-position();
     height: 32px !important;
     line-height: normal !important;
-    padding-top: 7px !important;
+    padding-top: 9px !important;
     color: @yellow !important;
+    text-shadow: 1px 1px 1px darken(@bg-color, @level-1) !important;
   }
 }
 
 .tree-view-resizer {
   .left-width();
-
-  height: 612px !important;
+  height: 600px !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  padding-bottom: 8px !important;
+  background-color: @bg-color !important;
 
   .tree-view {
-    padding-bottom: 16px !important;
+    font-size: 12px !important;
+    padding-bottom: 8px !important;
     border-left: solid 1px lighten(@bg-color, @level-0) !important;
-    background-color: @bg-color !important;
   }
 }
 
@@ -239,15 +254,24 @@ project-viewer pv-header,
     color: @yellow !important;
     background-color: darken(@bg-color, @level-0) !important;
 
+    &:not(:last-child) {
+      border-right: solid 1px lighten(@bg-color, @level-0) !important;
+    }
+
     &.active {
       color: @bg-color !important;
       background-color: @yellow !important;
     }
 
     .title {
+      font-size: 12px !important;
       height: 36px !important;
       line-height: normal !important;
-      padding-top: 10px !important;
+      padding-top: 12px !important;
+    }
+
+    .close-icon {
+      cursor: pointer !important;
     }
   }
 }
@@ -258,7 +282,7 @@ project-viewer {
   border-left: solid 1px lighten(@bg-color, @level-0) !important;
 
   pv-header {
-    font-size: 14px !important;
+    font-size: 13px !important;
     border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
   }
 
@@ -268,6 +292,7 @@ project-viewer {
 }
 
 .editor {
+  font-size: 12px !important;
   // border-left: solid 1px lighten(@bg-color, @level-0) !important;
 }
 
@@ -282,15 +307,21 @@ project-viewer {
   left: -@left-width !important;
   top: auto !important;
   right: auto !important;
-  bottom: 0 !important;
-  height: 400px !important;
+  bottom: 1px !important;
+  height: 415px !important;
   background-color: darken(@bg-color, @level-0) !important;
 
   .scroller,
-  .queue,
   .offline {
     margin-top: 50px !important;
-    margin-bottom: 16px !important;
+    // height: 290px !important;
+  }
+
+  .scroller {
+    .ftptree-view {
+      margin-bottom: 16px !important;
+      font-size: 12px !important;
+    }
   }
 
   .queue {
@@ -301,17 +332,59 @@ project-viewer {
     right: auto !important;
     bottom: 0 !important;
     width: 100% !important;
-    background-color: @green !important;
-    color: @bg-color !important;
+    height: 30px !important;
+    line-height: normal !important;
+    overflow: hidden !important;
 
     .progress {
       height: 30px !important;
-      overflow: hidden !important;
+      line-height: normal !important;
+      color: @bg-color !important;
+      background-color: @green !important;
+
+      progress {
+        .reset-margin();
+        .reset-position();
+        margin-top: 10px !important;
+        width: 32px !important;
+      }
+
+      .name {
+        .reset-margin();
+        .reset-position();
+        margin-top: 5px !important;
+        padding-left: 8px !important;
+      }
+
+      .eta {
+        .reset-margin();
+        .reset-position();
+        margin-top: 5px !important;
+        font-weight: bold !important;
+      }
     }
 
     .list {
+      .reset-margin();
+      .reset-position();
       height: 30px !important;
-      overflow: hidden !important;
+      line-height: normal !important;
+      color: @bg-color !important;
+      background-color: @green !important;
+
+      li {
+        .reset-margin();
+        .reset-position();
+        padding-top: 11px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        height: 30px !important;
+        line-height: normal !important;
+        -webkit-box-sizing: border-box !important;
+           -moz-box-sizing: border-box !important;
+            -ms-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+      }
     }
   }
 
@@ -328,9 +401,10 @@ project-viewer {
     background-color: darken(@bg-color, @level-0) !important;
     height: 40px !important;
     line-height: normal !important;
-    padding-top: 10px !important;
-    font-size: 14px !important;
+    padding-top: 11px !important;
+    font-size: 13px !important;
     padding-left: 8px !important;
+    color: @yellow !important;
   }
 
   ::-webkit-scrollbar {
@@ -364,4 +438,89 @@ atom-workspace-axis.vertical {
   border-width: 2px !important;
   border-color: @red !important;
   background-color: transparent !important;
+}
+
+atom-panel.modal.overlay {
+  &::before {
+    background-color: @bg-color !important;
+  }
+}
+
+atom-text-editor[mini],
+atom-text-editor[mini].editor {
+  background-color: darken(@bg-color, @level-1) !important;
+  box-shadow: none !important;
+  border-color: lighten(@bg-color, @level-0) !important;
+}
+
+atom-text-editor[mini].is-focused,
+atom-text-editor[mini].is-focused.editor {
+  background-color: darken(@bg-color, @level-1) !important;
+  box-shadow: 0 0 2px lighten(@bg-color, @level-3) !important;
+  border-color: lighten(@bg-color, @level-2) !important;
+}
+
+.panel-bottom {
+  > div {
+    border-top: solid 1px lighten(@bg-color, @level-0) !important;
+    background-color: darken(@bg-color, @level-0) !important;
+  }
+}
+
+.btn {
+  &:not(.status-indicator) {
+    .reset-background();
+    color: @bg-color !important;
+    background-color: @yellow !important;
+  }
+
+  &::before {
+    color: @bg-color !important;
+  }
+
+  &:hover:not(.disabled),
+  &:hover:not(.active) {
+    color: @bg-color !important;
+    background-color: darken(@yellow, @level-1) !important;
+  }
+
+  &.status-indicator {
+    .reset-background();
+    background-color: @green !important;
+
+    &.is-disabled {
+      background-color: @orange !important;
+    }
+  }
+}
+
+a.icon::before {
+  color: @yellow !important;
+}
+
+.input-checkbox {
+  background-color: @yellow !important;
+
+  &::before {
+    background-color: @bg-color !important;
+  }
+}
+
+select.form-control {
+  background-color: darken(@bg-color, @level-1) !important;
+  border-color: lighten(@bg-color, @level-0) !important;
+
+  &:focus {
+    background-color: darken(@bg-color, @level-1) !important;
+    border-color: lighten(@bg-color, @level-2) !important;
+  }
+}
+
+code {
+  color: darken(white, @level-3) !important;
+  background-color: darken(@bg-color, @level-0) !important;
+  box-shadow: 1px 1px 1px darken(@bg-color, @level-1) !important;
+  // color: @bg-color !important;
+  // background-color: @yellow !important;
+  // box-shadow: 1px 1px 1px darken(@bg-color, @level-0) !important;
 }
