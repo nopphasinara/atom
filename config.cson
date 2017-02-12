@@ -53,6 +53,7 @@
       "tool-bar"
       "project-manager"
       "atom-ctags"
+      "symbols-view-plus"
     ]
     telemetryConsent: "no"
     themes: [
@@ -63,6 +64,7 @@
   editor:
     lineHeight: 1.8
     showIndentGuide: true
+    showInvisibles: true
     softWrap: true
     tabType: "soft"
   "exception-reporting":
@@ -98,6 +100,10 @@
     onlyIcons: true
     statusBarVisibility: true
   "status-bar": {}
+  "symbols-view-plus":
+    plusConfigurations:
+      symbolsViewTheme: "Modal Panel (like atom/symbols-view)"
+      updateProjectTagsOnFileChange: true
   tabs:
     addNewTabsAtEnd: true
     enableMruTabSwitching: false
