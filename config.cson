@@ -29,6 +29,7 @@
       "timecop"
       "welcome"
       "deprecation-cop"
+      "project-viewer"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -48,6 +49,8 @@
       "project-viewer"
       "snippets"
       "symbols-view"
+      "tool-bar"
+      "project-manager"
     ]
     telemetryConsent: "no"
     themes: [
@@ -56,7 +59,6 @@
     ]
     useCustomTitleBar: true
   editor:
-    fontFamily: "Menlo"
     lineHeight: 1.8
     showIndentGuide: true
     softWrap: true
@@ -68,12 +70,21 @@
     liveSearchMinimumCharacters: 2
   "git-diff":
     showIconsInEditorGutter: true
-  "menu-manager": {}
+  "menu-manager":
+    showButton: false
   notifications:
     showErrorsInDevMode: true
   "one-dark-ui":
     layoutMode: "Compact"
     tabSizing: "Even"
+  "project-manager":
+    alwaysOpenInSameWindow: false
+    environmentSpecificProjects: false
+    includeGitRepositories: false
+    prettifyTitle: true
+    savePathsRelativeToHome: false
+    showPath: true
+    sortBy: "title"
   "project-viewer":
     autohide: false
     customHoverColor: "#d8c13a"
@@ -88,5 +99,7 @@
   tabs:
     addNewTabsAtEnd: true
     enableMruTabSwitching: false
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false

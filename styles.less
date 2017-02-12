@@ -32,7 +32,7 @@ atom-text-editor .cursor {
 }
 
 * {
-  font-family: "Menlo", sans-serif !important;
+  // font-family: "Menlo", sans-serif !important;
 }
 
 @level-0: 4%;
@@ -57,6 +57,11 @@ atom-text-editor .cursor {
   max-width: @left-width !important;
   min-width: @left-width !important;
       width: @left-width !important;
+}
+.left-width-more {
+  max-width: (@left-width + 50px) !important;
+  min-width: (@left-width + 50px) !important;
+      width: (@left-width + 50px) !important;
 }
 
 .right-width {
@@ -157,7 +162,7 @@ atom-pane.pane {
   border-top: solid 1px lighten(@bg-color, @level-0) !important;
 
   .status-bar {
-    font-size: 10px !important;
+    font-size: 11px !important;
     color: @red !important;
     height: 30px !important;
     line-height: normal !important;
@@ -169,13 +174,13 @@ atom-pane.pane {
     .status-bar-left {
       .reset-margin();
       .reset-position();
-      margin-top: 9px !important;
+      margin-top: 7px !important;
     }
 
     .status-bar-right {
       .reset-margin();
       .reset-position();
-      margin-top: 9px !important;
+      margin-top: 7px !important;
     }
   }
 }
@@ -189,12 +194,12 @@ atom-pane.pane {
   border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
 
   .title {
-    font-size: 11px !important;
+    font-size: 12px !important;
     .reset-margin();
     .reset-position();
     height: 32px !important;
     line-height: normal !important;
-    padding-top: 9px !important;
+    padding-top: 7px !important;
     color: @yellow !important;
     text-shadow: 1px 1px 1px darken(@bg-color, @level-1) !important;
   }
@@ -202,15 +207,15 @@ atom-pane.pane {
 
 .tree-view-resizer {
   .left-width();
-  height: 600px !important;
+  height: 649px !important;
+  border-left: solid 1px lighten(@bg-color, @level-0) !important;
   border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
   padding-bottom: 8px !important;
   background-color: @bg-color !important;
 
   .tree-view {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding-bottom: 8px !important;
-    border-left: solid 1px lighten(@bg-color, @level-0) !important;
   }
 }
 
@@ -264,10 +269,10 @@ atom-pane.pane {
     }
 
     .title {
-      font-size: 12px !important;
+      font-size: 13px !important;
       height: 36px !important;
       line-height: normal !important;
-      padding-top: 12px !important;
+      padding-top: 11px !important;
     }
 
     .close-icon {
@@ -299,12 +304,12 @@ project-viewer {
 .remote-ftp-view {
   .reset-margin();
   .reset-position();
-  .left-width();
+  .left-width-more();
   border-left: solid 1px lighten(@bg-color, @level-0) !important;
 
   position: absolute !important;
   z-index: 1 !important;
-  left: -@left-width !important;
+  left: -(@left-width + 50px) !important;
   top: auto !important;
   right: auto !important;
   bottom: 1px !important;
@@ -320,7 +325,7 @@ project-viewer {
   .scroller {
     .ftptree-view {
       margin-bottom: 16px !important;
-      font-size: 12px !important;
+      font-size: 13px !important;
     }
   }
 
@@ -531,4 +536,22 @@ code {
 
 .wrap-guide {
   background-color: lighten(@bg-color, @level-1) !important;
+}
+
+.tool-bar-left {
+  .reset-background();
+  background-color: darken(@bg-color, @level-0) !important;
+  width: 50px !important;
+  height: 649px !important;
+
+  .tool-bar-spacer {
+    .reset-background();
+    .reset-border();
+    margin: 0 0 !important;
+    width: 50px !important;
+    height: 2px !important;
+    overflow: hidden !important;
+    background-color: darken(@yellow, @level-1) !important;
+    -webkit-mask-image: none !important;
+  }
 }

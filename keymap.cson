@@ -98,6 +98,7 @@
   'cmd-k g a a c': 'git-plus:add-all-and-commit'
   'cmd-k g a a c p': 'git-plus:add-all-commit-and-push'
   'cmd-k g a c p': 'git-plus:add-and-commit-and-push'
+  'cmd-o': 'project-manager:list-projects'
 
 '.platform-darwin atom-workspace':
   'ctrl-shift-O': 'link:open'

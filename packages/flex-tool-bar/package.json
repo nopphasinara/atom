@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117112-16699-askh3k"
+    ]
+  ],
+  "_from": "../d-117112-16699-hybewc/package.tgz",
+  "_id": "flex-tool-bar@0.11.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/flex-tool-bar",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117112-16699-hybewc/package.tgz",
+  "_shasum": "7b297451597ff345288edf0b142d40e20f5cd599",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117112-16699-hybewc/package.tgz",
+  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117112-16699-askh3k",
+  "bugs": {
+    "url": "https://github.com/cakecatz/flex-toolbar/issues"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1",
+    "change-case": "^3.0.0",
+    "chokidar": "^1.4.3",
+    "cson": "^3.0.2",
+    "fs-plus": "^2.8.1",
+    "json5": "^0.5.0",
+    "space-pen": "^5.1.1",
+    "tree-match-sync": "0.0.2"
+  },
+  "description": "Easily Customizable ToolBar for Atom",
+  "devDependencies": {
+    "remark": "^4.1.2",
+    "remark-lint": "^3.0.0"
+  },
+  "engines": {
+    "atom": ">=0.188.0 <2.0.0"
+  },
+  "homepage": "https://github.com/cakecatz/flex-toolbar#readme",
+  "keywords": [
+    "toolbar",
+    "tool-bar"
+  ],
+  "license": "MIT",
+  "main": "./lib/flex-tool-bar",
+  "name": "flex-tool-bar",
+  "optionalDependencies": {},
+  "package-deps": [
+    "tool-bar"
+  ],
+  "readme": "# Flex Tool Bar\n\n[![Build Status](https://travis-ci.org/cakecatz/flex-toolbar.svg?branch=master)](https://travis-ci.org/cakecatz/flex-toolbar)\n\n## About\n\nThis is a plugin for\nthe [Atom Tool Bar](https://atom.io/packages/tool-bar) package.\n\nYou can configure your toolbar buttons with a `CSON`, `JSON`, `JSON5` file\nto perform specific actions in Atom\nor to open web sites in your default browser.\n\n![screenshot](https://raw.githubusercontent.com/cakecatz/flex-toolbar/docs/screenshot_cson.png)\n\nTo edit your config file,\ntype `Flex Tool Bar: Edit Config File` in the Atom command palette.\n\n## Configuration\n\n**Flex Tool Bar** has three `type`s you can configure:\n`button`, `url` and `spacer`.\n\n-   `button` creates default buttons for your toolbar.\n\n    You can use it to set actions like `application:new-file`.\n\n-   `url` creates buttons pointing to specific web pages.\n\n    Use this to open any web site, such as your GitHub notifications,\n    in your default browser. See this feature in action in this [screencast](http://quick.as/b5vafe4g).\n\n    If you have the package [browser-plus](https://atom.io/packages/browser-plus)\n    installed, you can use it to open your links.\n    Just check the box in Flex Tool Bar's settings.\n\n    Also Atom URI are allowed. For example\n    `atom://config/packages/flex-tool-bar` will open Flex Tool Bar's settings.\n\n-   `spacer` adds separators between toolbar buttons.\n\n### Features\n\n-   multiple callback\n-   button style\n-   hide/disable a button in certain cases\n\n### Button style\n\nCan use CSS Property.\n\n```coffeescript\nstyle: {\n  color: \"red\"\n  background: \"green\"\n  border: \"1px solid blue\"\n}\n```\n\n### Multiple callback\n\n```coffeescript\ncallback: [\"callback1\", \"callback2\"]\n```\n\n### Hide(Show), Disable(Enable) button\n\nYou can hide or disable buttons when a certain grammar is\nused in the active file or a specified file is matched.\n\nIf you set `disable` (`show`, `hide` or `enable`) this way:\n\n```coffeescript\ndisable: \"coffee\"\n```\n\nIt will disable the button if a CoffeeScript file is open.\n\nYou can also look for a specific file using [globs](https://tr.im/glob):\n\n```coffeescript\nshow: {\n  pattern: 'gulpfile.js'\n  options: {\n    maxDepth: 2\n  }\n}\n```\n\nThe package uses [tree-match-sync](https://github.com/bored/tree-match-sync)\nthat depends on the `tree` command, [install it](https://github.com/bored/tree-match-sync#installation)\nbefore using this feature.\n\nThe options are explained [here](https://github.com/isaacs/minimatch#options)\nand it has an extra field: `maxDepth`,\nit translates to `tree`'s option `-L`, you should always set it.\n\nOf course, you can set it as an array.\n\n```coffeescript\ndisable: [\n  \"json\"\n  \"less\"\n]\n```\n\nYou can use `!` :laughing:\n\n```coffeescript\nhide: \"!Markdown\"\n```\n\nThis will hide button when opened any file except Markdown.\n\n```coffeescript\nshow: \"Markdown\"\n```\n\nThis is same above.\n\n### Example\n\n```coffeescript\n[\n  {\n    type: \"url\"\n    icon: \"octoface\"\n    url: \"https://github.com/\"\n    tooltip: \"Github Page\"\n  }\n  {\n    type: \"spacer\"\n  }\n  {\n    type: \"button\"\n    icon: \"document\"\n    callback: \"application:new-file\"\n    tooltip: \"New File\"\n    iconset: \"ion\"\n    mode: \"dev\"\n  }\n  {\n    type: \"button\"\n    icon: \"columns\"\n    iconset: \"fa\"\n    callback: [\"pane:split-right\", \"pane:split-right\"]\n  }\n  {\n    type: \"button\"\n    icon: \"circuit-board\"\n    callback: \"git-diff:toggle-diff-list\"\n    style:\n      color: \"#FA4F28\"\n  }\n  {\n    type: \"button\"\n    icon: \"markdown\"\n    callback: \"markdown-preview:toggle\"\n    disable: \"!markdown\"\n  }\n]\n```\n\n### Per Project Configuration\n\nIf you want buttons that are only for a specific project. Create a toolbar configuration file at the root of your project directory that is listed in the Atom Tree View. All buttons added to the project toolbar will append to the global toolbar buttons.\n\nSee more examples on [Wiki](https://github.com/cakecatz/flex-toolbar/wiki) ✨\n\n## Authors\n\n| [![Ryo Narita][cakecatz avator]](https://github.com/cakecatz) | [![Jeroen van Warmerdam][jerone avator]](https://github.com/jerone) |\n| :-----------------------------------------------------------: | :-----------------------------------------------------------------: |\n| [Ryo Narita](https://github.com/cakecatz)                     | [Jeroen van Warmerdam](https://github.com/jerone)                   |\n\n## License\n\nMIT © [Ryo Narita](https://github.com/cakecatz)\n\n[cakecatz avator]: https://avatars.githubusercontent.com/u/6136383?v=3&s=100\n[jerone avator]: https://avatars.githubusercontent.com/u/55841?v=3&s=100\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakecatz/flex-toolbar.git"
+  },
+  "version": "0.11.0"
+}

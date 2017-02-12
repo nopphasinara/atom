@@ -23,3 +23,29 @@
   '<?php...?>':
     'prefix': 'php'
     'body': '<?php$1?>$0'
+
+'.source.coffee':
+  'spacer':
+    'prefix': 'spacer'
+    'body': '{ type: "spacer" }$0'
+  'button':
+    'prefix': 'button'
+    'body': """
+    {
+      tooltip: "$1"
+      callback: "$2"
+      iconset: "fa", icon: "$3"
+      type: "button"
+    }$0
+    """
+  'url':
+    'prefix': 'url'
+    'body': """
+    {
+      tooltip: "$1"
+      callback: "$2"
+      iconset: "fa", icon: "$3"
+      type: "url"
+      url: "$4"
+    }$0
+    """
