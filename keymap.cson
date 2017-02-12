@@ -30,136 +30,152 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
-'*':
-  'ctrl-left': 'pane:show-previous-item'
-  'ctrl-right': 'pane:show-next-item'
-  'shift-alt-up': 'window:focus-pane-above'
-  'shift-alt-right': 'window:focus-pane-on-right'
-  'shift-alt-down': 'window:focus-pane-below'
-  'shift-alt-left': 'window:focus-pane-on-left'
 
-'atom-text-editor.autocomplete-active':
-  'tab': 'unset!'
-  'ctrl-shift-a': 'autocomplete-plus:confirm'
+## Snippets for all providers
 
-'body atom-text-editor.autocomplete-active':
-  'shift-up': 'autocomplete-plus:move-up'
-  'shift-down': 'autocomplete-plus:move-down'
-  'pageup': 'unset!'
-  'pagedown': 'unset!'
-  'home': 'unset!'
-  'end': 'unset!'
-
-'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
-  'shift-cmd-P': 'command-palette:toggle'
-
-'.platform-darwin atom-text-editor':
-  'cmd-g': 'find-and-replace:find-next'
-  'shift-cmd-G': 'find-and-replace:find-previous'
-  'cmd-d': 'find-and-replace:select-next'
-  'shift-cmd-d': 'find-and-replace:select-previous'
-  # 'ctrl-shift-L': 'unset!'
-  'ctrl-shift-L': 'grammar-selector:show'
-  'cmd-:': 'unset!'
-  # 'cmd-:': 'spell-check:correct-misspelling'
-  'cmd-o': 'symbols-view:toggle-file-symbols'
-  'cmd-k g a c': 'git-plus:add-and-commit'
-
-'.platform-darwin, .platform-win32, .platform-linux':
-  'ctrl-g': 'go-to-line:toggle'
-
-'atom-text-editor:not([mini])':
-  'cmd-j': 'editor:duplicate-lines'
-  'shift-cmd-backspace': 'editor:delete-line'
-  'shift-cmd-delete': 'editor:delete-line'
-  'ctrl-cmd-up': 'editor:move-line-up'
-  'ctrl-cmd-down': 'editor:move-line-down'
-  'cmd-enter': 'editor:newline-above'
-  'shift-cmd-enter': 'editor:newline-below'
-  'enter': 'snippets:expand'
-  'ctrl-tab': 'snippets:next-tab-stop'
-  'shift-ctrl-tab': 'snippets:previous-tab-stop'
-  'shift-tab': 'unset!'
-  'alt-up': 'editor:upper-case'
-  'alt-down': 'editor:lower-case'
-  'cmd-l': 'editor:select-line'
-  'shift-ctrl-up': 'editor:add-selection-above'
-  'shift-ctrl-down': 'editor:add-selection-below'
-
-'.platform-darwin':
-  'cmd-.': 'unset!'
-  # 'cmd-.': 'key-binding-resolver:toggle'
-  'cmd-,': 'settings-view:open'
-  'cmd-\\': 'tree-view:toggle'
-  'cmd-k g p m': 'git-plus:menu'
-  'cmd-k g c': 'git-plus:commit'
-  'cmd-k g s': 'git-plus:status'
-  'cmd-k g a': 'git-plus:add'
-  'cmd-k g a a c': 'git-plus:add-all-and-commit'
-  'cmd-k g a a c p': 'git-plus:add-all-commit-and-push'
-  'cmd-k g a c p': 'git-plus:add-and-commit-and-push'
-  'shift-cmd-o': 'project-manager:list-projects'
-  # 'cmd-k s y m': 'atom-ctags:toggle-project-symbols'
-
-'.platform-darwin atom-workspace':
-  'ctrl-shift-O': 'link:open'
-
-'atom-workspace, atom-workspace atom-text-editor':
-  'ctrl-shift-M': 'unset!'
-  'cmd-k m d p': 'markdown-preview:toggle'
-  # 'ctrl-shift-M': 'markdown-preview:toggle'
-
-'atom-workspace':
-  'shift-cmd-r': 'window:reload'
-  'alt-cmd-t': 'unset!'
-  # 'alt-cmd-t': 'notifications:trigger-error'
-  'ctrl-alt-c': 'unset!'
-  'cmd-k c o n n': 'remote-ftp:connect'
-  'ctrl-alt-d': 'unset!'
-  'cmd-k d o n n': 'remote-ftp:disconnect'
-  'ctrl-cmd-alt-\\': 'remote-ftp:toggle'
-  'cmd-k u p': 'remote-ftp:upload-active'
-  'cmd-k a b': 'remote-ftp:abort-current'
-  'cmd-k f t p': 'remote-ftp:create-ftp-config'
-  'cmd-k s f t p': 'remote-ftp:create-sftp-config'
-  'cmd-k i g f': 'remote-ftp:create-ignore-file'
-  'cmd-k a b': 'remote-ftp:abort-current'
-  'shift-cmd-u': 'unset!'
-  'alt-cmd-\\': 'project-viewer:toggle-display'
-  'cmd-p': 'fuzzy-finder:toggle-file-finder'
-
+## Body
 'body':
-  'shift-cmd-f': 'application:add-project-folder'
-  'ctrl-tab': 'unset!'
-  'shift-ctrl-tab': 'unset!'
-  # 'ctrl-left': 'pane:show-previous-item'
-  # 'ctrl-right': 'pane:show-next-item'
-  'alt-cmd-i': 'unset!'
-  # 'alt-cmd-i': 'window:toggle-dev-tools'
-  'cmd-k d t': 'window:toggle-dev-tools'
-  'cmd--': 'unset!'
-  'cmd-_': 'unset!'
-  # 'cmd--': 'window:decrease-font-size'
-  'cmd-=': 'unset!'
-  'cmd-+': 'unset!'
-  # 'cmd-=': 'window:increase-font-size'
+  ## Unset first!
+  'shift-ctrl-tab':                     'unset!'
+  'ctrl-tab':                           'unset!'
+  'alt-cmd-i':                          'unset!'
+  'cmd--':                              'unset!'
+  'cmd-_':                              'unset!'
+  'cmd-=':                              'unset!'
+  'cmd-+':                              'unset!'
+  ## New snippets
+  'ctrl-left':                          'pane:show-previous-item'
+  'ctrl-right':                         'pane:show-next-item'
+  'cmd-k d t':                          'window:toggle-dev-tools'
 
-'.tree-view':
-  'm': 'tree-view:move'
-  'f2': 'unset!'
-  # 'f2': 'tree-view:move'
-  'a': 'tree-view:add-file'
-  'shift-a': 'tree-view:add-folder'
-  'd': 'tree-view:duplicate'
-  'backspace': 'tree-view:remove'
-  'delete': 'tree-view:remove'
 
+## Platform darwin
+'.platform-darwin':
+  ## Unset first!
+  'cmd-.':                              'unset!'
+  ## New snippets
+  'cmd-,':                              'settings-view:open'
+  'cmd-\\':                             'tree-view:toggle'
+  'cmd-k g p m':                        'git-plus:menu'
+  'cmd-k g c':                          'git-plus:commit'
+  'cmd-k g s':                          'git-plus:status'
+  'cmd-k g a':                          'git-plus:add'
+  'cmd-k g a a c':                      'git-plus:add-all-and-commit'
+  'cmd-k g a a c p':                    'git-plus:add-all-commit-and-push'
+  'cmd-k g a c p':                      'git-plus:add-and-commit-and-push'
+  'shift-cmd-o':                        'project-manager:list-projects'
+  'cmd-k s y m':                        'atom-ctags:toggle-project-symbols'
+  'shift-cmd-P':                        'command-palette:toggle'
+  'ctrl-g':                             'go-to-line:toggle'
+
+
+## Atom workspace
+'atom-workspace':
+  ## Unset first!
+  'shift-cmd-u':                        'unset!'
+  'alt-cmd-t':                          'unset!'
+  'ctrl-alt-c':                         'unset!'
+  'ctrl-alt-d':                         'unset!'
+  ## New snippets
+  'shift-cmd-r':                        'window:reload'
+  'cmd-k c o n n':                      'remote-ftp:connect'
+  'cmd-k d o n n':                      'remote-ftp:disconnect'
+  'ctrl-cmd-alt-\\':                    'remote-ftp:toggle'
+  'cmd-k u p':                          'remote-ftp:upload-active'
+  'cmd-k a b':                          'remote-ftp:abort-current'
+  'cmd-k f t p':                        'remote-ftp:create-ftp-config'
+  'cmd-k s f t p':                      'remote-ftp:create-sftp-config'
+  'cmd-k i g f':                        'remote-ftp:create-ignore-file'
+  'cmd-k a b':                          'remote-ftp:abort-current'
+  'alt-cmd-\\':                         'project-viewer:toggle-display'
+  'cmd-p':                              'fuzzy-finder:toggle-file-finder'
+  'cmd-f':                              'find-and-replace:show'
+
+## Atom workspace > Atom pane
 'atom-workspace atom-pane':
-  'alt-cmd-=': 'unset!'
-  'alt-cmd--': 'unset!'
-  'cmd-f': 'find-and-replace:show'
+  ## Unset first!
+  'alt-cmd-=':                          'unset!'
+  'alt-cmd--':                          'unset!'
+  ## New snippets
 
+## Atom workspace, Atom workspace > Atom text editor
+'atom-workspace, atom-workspace atom-text-editor':
+  ## Unset first!
+  'ctrl-shift-M':                       'unset!'
+  'ctrl-shift-M':                       'unset!'
+  ## New snippets
+
+## Atom workspace > Atom text editor not mini
 'atom-workspace atom-text-editor:not([mini])':
-  'alt-cmd-[': 'unset!'
-  'alt-cmd-]': 'unset!'
-  'cmd-e': 'editor:join-lines'
+  ## Unset first!
+  'alt-cmd-[':                          'unset!'
+  'alt-cmd-]':                          'unset!'
+  ## New snippets
+
+
+## Atom text editor
+'atom-text-editor':
+  ## Unset first!
+  'ctrl-shift-L':                       'unset!'
+  'shift-cmd-;':                        'unset!'
+  'cmd-:':                              'unset!'
+  ## New snippets
+  'cmd-k g m s':                        'grammar-selector:show'
+  'cmd-o':                              'symbols-view:toggle-file-symbols'
+  'cmd-k m d p':                        'markdown-preview:toggle'
+  'cmd-k o l':                          'link:open'
+  'cmd-e':                              'editor:join-lines'
+
+## Atom text editor & Autocomplete activate
+'atom-text-editor.autocomplete-active':
+  ## Unset first!
+  'tab':                                'unset!'
+  'home':                               'unset!'
+  'end':                                'unset!'
+  'pageup':                             'unset!'
+  'pagedown':                           'unset!'
+  ## New snippets
+  'escape':                             'autocomplete-plus:cancel'
+  'shift-up':                           'autocomplete-plus:move-up'
+  'shift-down':                         'autocomplete-plus:move-down'
+  'ctrl-shift-a':                       'autocomplete-plus:confirm'
+
+## Atom text editor not mini
+'atom-text-editor:not([mini])':
+  ## Unset first!
+  ## New snippets
+  'cmd-j':                              'editor:duplicate-lines'
+  'shift-cmd-j':                        'editor:delete-line'
+  'ctrl-cmd-up':                        'editor:move-line-up'
+  'ctrl-cmd-down':                      'editor:move-line-down'
+  'cmd-enter':                          'editor:newline-above'
+  'shift-enter':                        'editor:newline-below'
+  'enter':                              'snippets:expand'
+  'ctrl-tab':                           'snippets:next-tab-stop'
+  'shift-ctrl-tab':                     'snippets:previous-tab-stop'
+  'alt-up':                             'editor:upper-case'
+  'alt-down':                           'editor:lower-case'
+  'cmd-l':                              'editor:select-line'
+  'shift-ctrl-up':                      'editor:add-selection-above'
+  'shift-ctrl-down':                    'editor:add-selection-below'
+  'shift-backspace':                    'fn:delete-right'
+  'shift-delete':                       'fn:delete-right'
+  'shift-space':                        'fn:space-right'
+  'shift-tab':                          'fn:indent-right'
+  'cmd-g':                              'find-and-replace:find-next'
+  'shift-cmd-G':                        'find-and-replace:find-previous'
+  'cmd-d':                              'find-and-replace:select-next'
+  'shift-cmd-d':                        'find-and-replace:select-previous'
+
+
+## Tree view
+'.tree-view':
+  ## Unset first!
+  'f2':                                 'unset!'
+  ## New snippets
+  'm':                                  'tree-view:move'
+  'a':                                  'tree-view:add-file'
+  'shift-a':                            'tree-view:add-folder'
+  'd':                                  'tree-view:duplicate'
+  'backspace':                          'tree-view:remove'
+  'delete':                             'tree-view:remove'
