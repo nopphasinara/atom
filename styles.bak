@@ -1,0 +1,584 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+
+@purple: #791685;
+@orange: #e75225;
+@red: #e7253c;
+@yellow: #d8c13a;
+@green: #1b9387;
+
+@level-0: 4%;
+@level-1: 16%;
+@level-2: 28%;
+@level-3: 36%;
+@level-4: 42%;
+
+@bg-color: #2a2b31;
+@bg-color0: #36373e;
+@bg-color1: #414551;
+@bg-color-0: #343640;
+@bg-color-4: #1e1f23;
+@bg-scrollbar: #41434c;
+@border-color: #151518;
+
+
+
+@left-width: 290px;
+@right-width: 250px;
+
+.left-width {
+  max-width: @left-width !important;
+  min-width: @left-width !important;
+      width: @left-width !important;
+}
+.left-width-more {
+  max-width: (@left-width + 50px) !important;
+  min-width: (@left-width + 50px) !important;
+      width: (@left-width + 50px) !important;
+}
+
+.right-width {
+  max-width: @right-width !important;
+  min-width: @right-width !important;
+      width: @right-width !important;
+}
+
+.reset-background {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.reset-border {
+  border: none !important;
+  border-image: none !important;
+  -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+     -ms-border-radius: 0 !important;
+         border-radius: 0 !important;
+}
+.reset-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.reset-position {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+atom-workspace {
+  background-color: @bg-color !important;
+}
+
+// atom-panel-container,
+atom-panel-container.top,
+atom-panel-container.bottom,
+.panel-header,
+.status-bar,
+.panel-footer,
+.panel-bottom,
+.panel-bottom > *,
+.panel-left,
+.panel-right,
+.tree-view,
+.tree-view-resize-handle,
+.remote-ftp-view,
+.tool-bar,
+.title-bar,
+.gutter,
+.editor:not(.mini),
+project-viewer,
+project-viewer pv-header,
+.dttree-view-scroller,
+.settings-view,
+.settings-view .config-menu,
+.settings-view .panels,
+.tab-bar,
+.tab-bar .tab,
+.tab-bar .tab .title,
+.tab-bar .tab::after,
+.tab-bar .tab::before {
+  .reset-border();
+  .reset-background();
+}
+
+::-webkit-scrollbar {
+  .reset-background();
+}
+::-webkit-scrollbar-corner {
+  .reset-background();
+  background-color: @bg-color !important;
+}
+::-webkit-scrollbar-thumb {
+  .reset-background();
+  background-color: @bg-scrollbar !important;
+  border-color: @bg-color !important;
+}
+::-webkit-scrollbar-track {
+  .reset-background();
+  background-color: @bg-color !important;
+}
+
+atom-pane.pane {
+  padding: 0 !important;
+}
+
+
+/** Footer Panel */
+.panel-footer {
+  background-color: @bg-color0 !important;
+  border-top: solid 1px @border-color !important;
+
+  .status-bar {
+    color: @red !important;
+    height: 30px !important;
+    line-height: normal !important;
+
+    a {
+      color: @yellow !important;
+    }
+
+    .status-bar-left {
+      .reset-margin();
+      .reset-position();
+      margin-top: 7px !important;
+    }
+
+    .status-bar-right {
+      .reset-margin();
+      .reset-position();
+      margin-top: 7px !important;
+    }
+  }
+}
+
+
+/** Window Title Bar */
+.title-bar {
+  .reset-margin();
+  .reset-position();
+  z-index: 9 !important;
+  background-color: @bg-color !important;
+  height: 32px !important;
+  line-height: normal !important;
+  border-bottom: solid 1px @border-color !important;
+
+  .title {
+    .reset-margin();
+    .reset-position();
+    height: auto !important;
+    line-height: normal !important;
+    padding-top: 0 !important;
+    font-weight: bold !important;
+    color: white !important;
+  }
+}
+
+.tree-view-resizer {
+  .left-width();
+  height: 649px !important;
+  border-left: solid 1px @border-color !important;
+  padding-bottom: 8px !important;
+  background-color: @bg-color !important;
+
+  .tree-view {
+    padding-bottom: 8px !important;
+  }
+}
+
+.tool-bar {
+  .reset-margin();
+  .reset-position();
+  background-color: @bg-color !important;
+  border-bottom: solid 1px @border-color !important;
+  height: auto !important;
+  line-height: normal !important;
+
+  .tool-bar-btn {
+    .reset-border();
+    .reset-margin();
+    .reset-position();
+    color: @bg-color !important;
+    background-image: none !important;
+    background-color: @yellow !important;
+    cursor: pointer !important;
+    width: 50px !important;
+    height: 48px !important;
+    line-height: normal !important;
+    text-align: center !important;
+  }
+
+  .tool-bar-btn:hover {
+    color: @bg-color !important;
+    background-image: none !important;
+    background-color: darken(@yellow, @level-1) !important;
+  }
+}
+
+.tab-bar {
+  height: auto !important;
+  line-height: normal !important;
+  background-color: @bg-color-0 !important;
+
+  .tab {
+    background-color: @bg-color1 !important;
+    height: auto !important;
+    line-height: normal !important;
+    border-top: none !important;
+
+    &:hover {
+      // color: white !important;
+      background-color: @bg-color-0 !important;
+    }
+
+    &:not(:last-child) {
+      border-right: solid 1px @border-color !important;
+    }
+
+    &.active {
+      color: @bg-color !important;
+      background-color: @yellow !important;
+      font-weight: bold !important;
+    }
+
+    .title {
+      height: 36px !important;
+      line-height: normal !important;
+      padding-top: 11px !important;
+    }
+
+    .close-icon {
+      cursor: pointer !important;
+    }
+  }
+}
+
+project-viewer {
+  .right-width();
+
+  border-left: solid 1px @border-color !important;
+
+  pv-header {
+    border-bottom: solid 1px @border-color !important;
+  }
+
+  .list-tree {
+
+  }
+}
+
+.remote-ftp-view {
+  .reset-margin();
+  .reset-position();
+  .left-width-more();
+  border-left: solid 1px @border-color !important;
+
+  position: absolute !important;
+  z-index: 1 !important;
+  left: -(@left-width + 50px) !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: 1px !important;
+  height: 415px !important;
+  background-color: @bg-color !important;
+
+  .scroller,
+  .offline {
+    margin-top: 50px !important;
+  }
+
+  .scroller {
+    .ftptree-view {
+      margin-bottom: 16px !important;
+    }
+  }
+
+  .queue {
+    .reset-margin();
+    .reset-position();
+    left: 0 !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 30px !important;
+    line-height: normal !important;
+    overflow: hidden !important;
+
+    .progress {
+      height: 30px !important;
+      line-height: normal !important;
+      color: white !important;
+      background-color: @purple !important;
+
+      progress {
+        .reset-margin();
+        .reset-position();
+        margin-top: 10px !important;
+        width: 32px !important;
+      }
+
+      .name {
+        .reset-margin();
+        .reset-position();
+        margin-top: 4px !important;
+        padding-left: 8px !important;
+      }
+
+      .eta {
+        .reset-margin();
+        .reset-position();
+        margin-top: 4px !important;
+        padding-right: 6px !important;
+        font-weight: bold !important;
+      }
+    }
+
+    .list {
+      .reset-margin();
+      .reset-position();
+      height: 30px !important;
+      line-height: normal !important;
+      color: white !important;
+      background-color: @purple !important;
+
+      li {
+        .reset-margin();
+        .reset-position();
+        padding-top: 10px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        height: 30px !important;
+        line-height: normal !important;
+        -webkit-box-sizing: border-box !important;
+           -moz-box-sizing: border-box !important;
+            -ms-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+      }
+    }
+  }
+
+  &::after {
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+        -ms-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+    border-top: solid 1px @border-color !important;
+    border-bottom: solid 1px @border-color !important;
+    content: "Remote FTP";
+    display: block !important;
+    width: 100% !important;
+    background-color: @bg-color !important;
+    height: 40px !important;
+    line-height: normal !important;
+    padding-top: 11px !important;
+    padding-left: 8px !important;
+    color: @yellow !important;
+  }
+
+  ::-webkit-scrollbar {
+    .reset-background();
+  }
+  ::-webkit-scrollbar-corner {
+    .reset-background();
+    background-color: @bg-color !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    .reset-background();
+    background-color: @bg-scrollbar !important;
+    border-color: @bg-color !important;
+  }
+  ::-webkit-scrollbar-track {
+    .reset-background();
+    background-color: @bg-color !important;
+  }
+}
+
+atom-workspace-axis.vertical {
+  .reset-border();
+  border-left: solid 1px @border-color !important;
+
+  .item-views {
+    .reset-border();
+    border-top: solid 1px @border-color !important;
+  }
+
+  background-color: @bg-color-4 !important;
+}
+
+.cursor {
+  border-width: 1px !important;
+  border-color: @red !important;
+  background-color: transparent !important;
+}
+
+atom-panel.modal.overlay {
+  &::before {
+    background-color: @bg-color !important;
+  }
+}
+
+atom-text-editor[mini],
+atom-text-editor[mini].editor {
+  background-color: darken(@bg-color, @level-1) !important;
+  box-shadow: none !important;
+  border-color: @border-color !important;
+}
+
+atom-text-editor[mini].is-focused,
+atom-text-editor[mini].is-focused.editor {
+  background-color: darken(@bg-color, @level-1) !important;
+  box-shadow: 0 0 2px lighten(@bg-color, @level-3) !important;
+  border-color: lighten(@bg-color, @level-2) !important;
+}
+
+.panel-bottom {
+  > div {
+    border-top: solid 1px @border-color !important;
+    background-color: darken(@bg-color, @level-0) !important;
+  }
+}
+
+a.icon::before {
+  color: @yellow !important;
+}
+
+.input-checkbox {
+  background-color: @yellow !important;
+
+  &::before {
+    background-color: @bg-color !important;
+  }
+}
+
+select.form-control {
+  background-color: darken(@bg-color, @level-1) !important;
+  border-color: @border-color !important;
+
+  &:focus {
+    background-color: darken(@bg-color, @level-1) !important;
+    border-color: lighten(@bg-color, @level-2) !important;
+  }
+}
+
+code {
+  color: darken(white, @level-3) !important;
+  background-color: darken(@bg-color, @level-0) !important;
+  box-shadow: 1px 1px 1px darken(@bg-color, @level-1) !important;
+}
+
+.indent-guide {
+  color: lighten(@bg-color, 10%) !important;
+}
+
+.wrap-guide {
+  background-color: lighten(@bg-color, 16%) !important;
+}
+
+.tool-bar-left {
+  position: relative !important;
+  .reset-background();
+  background-color: @yellow !important;
+  width: 50px !important;
+  height: 649px !important;
+
+  .tool-bar-spacer {
+    .reset-background();
+    .reset-border();
+    margin: 0 0 !important;
+    width: 50px !important;
+    height: 2px !important;
+    overflow: hidden !important;
+    background-color: darken(@yellow, @level-1) !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .fa-close {
+    .reset-margin();
+    .reset-position();
+    position: absolute !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    bottom: 0 !important;
+
+    &::before {
+      color: @yellow !important;
+    }
+
+    background-color: @red !important;
+  }
+}
+
+
+// Reset font size on workspace
+.status-bar {
+  font-size: 11px !important;
+}
+
+.title-bar {
+  .title {
+    font-size: 12px !important;
+  }
+}
+
+.tree-view-resizer {
+  .tree-view {
+    font-size: 13px !important;
+  }
+}
+
+.tab-bar {
+  .tab {
+    .title {
+      font-size: 12px !important;
+    }
+  }
+}
+
+project-viewer {
+  pv-header {
+    font-size: 14px !important;
+  }
+
+  .list-tree {
+    font-size: 13px !important;
+  }
+}
+
+
+/** Editor */
+.editor {
+  font-size: 13px !important;
+}
+
+.remote-ftp-view {
+  font-size: 13px !important;
+
+  .scroller {
+    .ftptree-view {
+      font-size: 13px !important;
+    }
+  }
+
+  &::after {
+    font-size: 14px !important;
+  }
+}

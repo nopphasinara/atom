@@ -15,6 +15,7 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    automaticallyUpdate: false
     disabledPackages: [
       "about"
       "autosave"
@@ -31,6 +32,7 @@
       "timecop"
       "welcome"
       "deprecation-cop"
+      "no-title-bar"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -56,14 +58,16 @@
       "symbols-view-plus"
       "platformio-ide-terminal"
     ]
+    reopenProjectMenuCount: 10
+    restorePreviousWindowsOnStart: true
     telemetryConsent: "no"
     themes: [
-      "atom-visual-studio-code-ui"
+      "one-dark-ui"
       "tinacious-design-syntax"
     ]
     useCustomTitleBar: true
   editor:
-    lineHeight: 1.8
+    lineHeight: 1.6
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
@@ -79,8 +83,9 @@
   notifications:
     showErrorsInDevMode: true
   "one-dark-ui":
-    layoutMode: "Compact"
-    tabSizing: "Even"
+    fontSize: 13
+    layoutMode: "Spacious"
+    tabSizing: "Minimum"
   "platformio-ide-terminal":
     core:
       workingDirectory: "Home"
@@ -116,7 +121,6 @@
   tabs:
     addNewTabsAtEnd: true
     enableMruTabSwitching: false
-  "tool-bar":
-    position: "Left"
+  "tool-bar": {}
   welcome:
     showOnStartup: false

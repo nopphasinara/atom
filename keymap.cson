@@ -63,6 +63,7 @@
   'ctrl-g':                             'go-to-line:toggle'
   # Toggle views by default
   'ctrl-alt-cmd-\\':                    'fn:show-favorite'
+  'ctrl-alt-o':                         'unset!'
 
 
 ## Order elements by level

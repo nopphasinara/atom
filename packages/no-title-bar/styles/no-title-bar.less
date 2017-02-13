@@ -1,0 +1,53 @@
+@import "ui-variables";
+
+#atom-no-title-bar() {
+    @title-bar-buttons-width: 80px; // seems to work well for many themes
+
+    :not(.fullscreen).platform-darwin > atom-workspace {
+        -webkit-app-region: drag;
+
+        .editor,
+        .tab-bar,
+        .tree-view .entry,
+        .tree-view-resize-handle,
+        atom-pane-resize-handle,
+        atom-pane-resize-handle.horizontal:before,
+        atom-pane-resize-handle.vertical:before,
+        linter-message .linter-message-item,
+        linter-message .linter-message-link
+        {
+            -webkit-app-region: no-drag;
+        }
+
+        .title-bar .title {
+            display: none;
+        }
+
+        .title-bar,
+        .tool-bar,
+        .tool-bar button.tool-bar-btn {
+            border-width: 0;
+        }
+
+        atom-workspace-axis.horizontal {
+            margin-top: -@tab-height;
+            background-color: @tab-bar-background-color;
+        }
+
+        atom-panel-container {
+            &.left {
+                margin-top: @tab-height;
+            }
+
+            &.right {
+                margin-top: @tab-height;
+            }
+        }
+
+        atom-panel-container.left:empty + atom-workspace-axis.vertical .pane:nth-child(1) .tab-bar {
+            padding-left: @title-bar-buttons-width;
+        }
+    }
+}
+
+#atom-no-title-bar;

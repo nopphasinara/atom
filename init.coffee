@@ -117,38 +117,28 @@ atom.commands.add 'atom-workspace', 'fn:show-favorite': (editor) ->
 
   if (!_classes.treeView && !_classes.toolBar && !_classes.remoteFtp)
     # Open all invisible panels
-    _classes.remoteFtp = true
-    _classes.toolBar = true
-    _classes.treeView = true
-
     atom.commands.dispatch(_workspace[0], 'tree-view:toggle')
     atom.commands.dispatch(_workspace[0], 'tool-bar:toggle')
     atom.commands.dispatch(_workspace[0], 'remote-ftp:toggle')
   else
     if (_classes.treeView && _classes.toolBar && _classes.remoteFtp)
       # Close all visible panels
-      _classes.remoteFtp = false
-      _classes.toolBar = false
-      _classes.treeView = false
-
       atom.commands.dispatch(_workspace[0], 'remote-ftp:toggle')
       atom.commands.dispatch(_workspace[0], 'tool-bar:toggle')
       atom.commands.dispatch(_workspace[0], 'tree-view:toggle')
     else
-      if (!_classes.treeView && _classes.remoteFtp)
-        _classes.remoteFtp = false
-        atom.commands.dispatch(_workspace[0], 'remote-ftp:toggle')
+      if (!_classes.treeView)
+        if (_classes.remoteFtp)
+          _classes.remoteFtp = false
+          atom.commands.dispatch(_workspace[0], 'remote-ftp:toggle')
 
       if (!_classes.treeView)
-        _classes.treeView = true
         atom.commands.dispatch(_workspace[0], 'tree-view:toggle')
 
       if (!_classes.toolBar)
-        _classes.toolBar = true
         atom.commands.dispatch(_workspace[0], 'tool-bar:toggle')
 
       if (!_classes.remoteFtp)
-        _classes.remoteFtp = true
         atom.commands.dispatch(_workspace[0], 'remote-ftp:toggle')
 
 
