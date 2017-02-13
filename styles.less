@@ -139,7 +139,7 @@ atom-pane.pane {
 
 .panel-footer {
   background-color: darken(@bg-color, @level-0) !important;
-  border-top: solid 1px lighten(@bg-color, @level-0) !important;
+  border-top: solid 1px lighten(@bg-color, @level-1) !important;
 
   .status-bar {
     color: @red !important;
@@ -167,18 +167,20 @@ atom-pane.pane {
 .title-bar {
   .reset-margin();
   .reset-position();
+  z-index: 9 !important;
   background-color: @bg-color !important;
   height: auto !important;
   line-height: normal !important;
-  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
 
   .title {
     .reset-margin();
     .reset-position();
     height: 32px !important;
     line-height: normal !important;
-    padding-top: 7px !important;
-    color: @yellow !important;
+    padding-top: 8px !important;
+    font-weight: bold !important;
+    color: white !important;
     text-shadow: 1px 1px 1px darken(@bg-color, @level-1) !important;
   }
 }
@@ -186,8 +188,8 @@ atom-pane.pane {
 .tree-view-resizer {
   .left-width();
   height: 649px !important;
-  border-left: solid 1px lighten(@bg-color, @level-0) !important;
-  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  border-left: solid 1px lighten(@bg-color, @level-1) !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
   padding-bottom: 8px !important;
   background-color: @bg-color !important;
 
@@ -200,7 +202,7 @@ atom-pane.pane {
   .reset-margin();
   .reset-position();
   background-color: @bg-color !important;
-  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
   height: auto !important;
   line-height: normal !important;
 
@@ -228,13 +230,19 @@ atom-pane.pane {
 .tab-bar {
   height: auto !important;
   line-height: normal !important;
-  border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+  border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
 
   .tab {
     height: auto !important;
     line-height: normal !important;
-    color: @yellow !important;
-    background-color: darken(@bg-color, @level-0) !important;
+    // color: @yellow !important;
+    background-color: @bg-color !important;
+    // background-color: darken(@bg-color, @level-0) !important;
+
+    &:hover {
+      color: white !important;
+      background-color: darken(@bg-color, @level-0) !important;
+    }
 
     &:not(:last-child) {
       border-right: solid 1px lighten(@bg-color, @level-0) !important;
@@ -243,6 +251,7 @@ atom-pane.pane {
     &.active {
       color: @bg-color !important;
       background-color: @yellow !important;
+      font-weight: bold !important;
     }
 
     .title {
@@ -260,10 +269,10 @@ atom-pane.pane {
 project-viewer {
   .right-width();
 
-  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+  border-left: solid 1px lighten(@bg-color, @level-1) !important;
 
   pv-header {
-    border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+    border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
   }
 
   .list-tree {
@@ -275,7 +284,7 @@ project-viewer {
   .reset-margin();
   .reset-position();
   .left-width-more();
-  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+  border-left: solid 1px lighten(@bg-color, @level-1) !important;
 
   position: absolute !important;
   z-index: 1 !important;
@@ -367,8 +376,8 @@ project-viewer {
        -moz-box-sizing: border-box !important;
         -ms-box-sizing: border-box !important;
             box-sizing: border-box !important;
-    border-top: solid 1px lighten(@bg-color, @level-0) !important;
-    border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
+    border-top: solid 1px lighten(@bg-color, @level-1) !important;
+    border-bottom: solid 1px lighten(@bg-color, @level-1) !important;
     content: "Remote FTP";
     display: block !important;
     width: 100% !important;
@@ -385,22 +394,22 @@ project-viewer {
   }
   ::-webkit-scrollbar-corner {
     .reset-background();
-    background-color: darken(@bg-color, @level-0) !important;
+    background-color: @bg-color !important;
   }
   ::-webkit-scrollbar-thumb {
     .reset-background();
     background-color: @bg-scrollbar !important;
-    border-color: darken(@bg-color, @level-0) !important;
+    border-color: @bg-color !important;
   }
   ::-webkit-scrollbar-track {
     .reset-background();
-    background-color: darken(@bg-color, @level-0) !important;
+    background-color: @bg-color !important;
   }
 }
 
 atom-workspace-axis.vertical {
   .reset-border();
-  border-left: solid 1px lighten(@bg-color, @level-0) !important;
+  border-left: solid 1px lighten(@bg-color, @level-1) !important;
 
   atom-workspace-axis.vertical .item-views {
     .reset-border();
@@ -423,7 +432,7 @@ atom-text-editor[mini],
 atom-text-editor[mini].editor {
   background-color: darken(@bg-color, @level-1) !important;
   box-shadow: none !important;
-  border-color: lighten(@bg-color, @level-0) !important;
+  border-color: lighten(@bg-color, @level-1) !important;
 }
 
 atom-text-editor[mini].is-focused,
@@ -435,7 +444,7 @@ atom-text-editor[mini].is-focused.editor {
 
 .panel-bottom {
   > div {
-    border-top: solid 1px lighten(@bg-color, @level-0) !important;
+    border-top: solid 1px lighten(@bg-color, @level-1) !important;
     background-color: darken(@bg-color, @level-0) !important;
   }
 }
@@ -481,7 +490,7 @@ a.icon::before {
 
 select.form-control {
   background-color: darken(@bg-color, @level-1) !important;
-  border-color: lighten(@bg-color, @level-0) !important;
+  border-color: lighten(@bg-color, @level-1) !important;
 
   &:focus {
     background-color: darken(@bg-color, @level-1) !important;

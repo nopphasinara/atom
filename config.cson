@@ -65,7 +65,6 @@
   editor:
     lineHeight: 1.8
     showIndentGuide: true
-    showInvisibles: true
     softWrap: true
     tabType: "soft"
   "exception-reporting":
