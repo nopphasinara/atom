@@ -29,12 +29,26 @@
       'prefix': '$2'
       'body': $3
     """
-  '# comment':
-    'prefix': '#1'
-    'body': '# ${1:comment}'
-  '## comment':
-    'prefix': '#2'
-    'body': '## ${1:comment}'
+  '## comment block':
+    'prefix': '#..'
+    'body': """
+    ## ${1:comment} ##
+    # ${2:...}
+    #
+    """
+  '* comment':
+    'prefix': '*1'
+    'body': '/* ${1:comment} */'
+  '** comment':
+    'prefix': '*2'
+    'body': '/** ${1:comment} */'
+  '** comment block':
+    'prefix': '*..'
+    'body': """
+    /** ${1:comment} **
+    * ${2:...}
+    */
+    """
 
 
 ## Text html, Text html php
@@ -119,3 +133,6 @@
       url: "$4"
     }$0
     """
+  'return unless':
+    'prefix': 'returnunless'
+    'body': 'return unless editor = atom.workspace.getActiveTextEditor()'

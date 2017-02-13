@@ -34,7 +34,7 @@
 ## Snippets for all providers
 
 ## Body
-'body':
+'body, .platform-darwin, atom-workspace':
   ## Unset first!
   'shift-ctrl-tab':                     'unset!'
   'ctrl-tab':                           'unset!'
@@ -43,34 +43,44 @@
   'cmd-_':                              'unset!'
   'cmd-=':                              'unset!'
   'cmd-+':                              'unset!'
+  'cmd-.':                              'unset!'
+  'cmd-\\':                             'unset!'
+  'alt-cmd-\\':                         'unset!'
   ## New snippets
   'ctrl-left':                          'pane:show-previous-item'
   'ctrl-right':                         'pane:show-next-item'
-  'cmd-k d t':                          'window:toggle-dev-tools'
-
-
-## Platform darwin
-'.platform-darwin':
-  ## Unset first!
-  'cmd-.':                              'unset!'
-  ## New snippets
   'cmd-,':                              'settings-view:open'
-  'cmd-\\':                             'tree-view:toggle'
-  'cmd-k g p m':                        'git-plus:menu'
-  'cmd-k g c':                          'git-plus:commit'
-  'cmd-k g s':                          'git-plus:status'
-  'cmd-k g a':                          'git-plus:add'
-  'cmd-k g a a c':                      'git-plus:add-all-and-commit'
-  'cmd-k g a a c p':                    'git-plus:add-all-commit-and-push'
-  'cmd-k g a c p':                      'git-plus:add-and-commit-and-push'
+  'cmd-. g p m':                        'git-plus:menu'
+  'cmd-. g c':                          'git-plus:commit'
+  'cmd-. g s':                          'git-plus:status'
+  'cmd-. g a':                          'git-plus:add'
+  'cmd-. g a a c':                      'git-plus:add-all-and-commit'
+  'cmd-. g a a c p':                    'git-plus:add-all-commit-and-push'
+  'cmd-. g a c p':                      'git-plus:add-and-commit-and-push'
+  'cmd-. s y m':                        'atom-ctags:toggle-project-symbols'
   'shift-cmd-o':                        'project-manager:list-projects'
-  'cmd-k s y m':                        'atom-ctags:toggle-project-symbols'
   'shift-cmd-P':                        'command-palette:toggle'
   'ctrl-g':                             'go-to-line:toggle'
+  # Toggle views by default
+  'ctrl-alt-cmd-\\':                    'fn:show-favorite'
+
+
+## Order elements by level
+# body, .platform-darwin, atom-workspace
+# atom-text-editor
+# Etc.
+#
+## Platform darwin > Platformio ide terminal terminal
+'.platform-darwin .platformio-ide-terminal':
+  'cmd-n': 'platformio-ide-terminal:new'
+  'cmd-x': 'fn:terminal-close'
+  'shift-cmd-x': 'fn:terminal-close-all'
+  'cmd-c': 'platformio-ide-terminal:copy'
+  'cmd-v': 'platformio-ide-terminal:paste'
 
 
 ## Atom workspace
-'atom-workspace':
+'.platform-darwin atom-workspace, atom-workspace':
   ## Unset first!
   'shift-cmd-u':                        'unset!'
   'alt-cmd-t':                          'unset!'
@@ -78,18 +88,17 @@
   'ctrl-alt-d':                         'unset!'
   ## New snippets
   'shift-cmd-r':                        'window:reload'
-  'cmd-k c o n n':                      'remote-ftp:connect'
-  'cmd-k d o n n':                      'remote-ftp:disconnect'
-  'ctrl-cmd-alt-\\':                    'remote-ftp:toggle'
-  'cmd-k u p':                          'remote-ftp:upload-active'
-  'cmd-k a b':                          'remote-ftp:abort-current'
-  'cmd-k f t p':                        'remote-ftp:create-ftp-config'
-  'cmd-k s f t p':                      'remote-ftp:create-sftp-config'
-  'cmd-k i g f':                        'remote-ftp:create-ignore-file'
-  'cmd-k a b':                          'remote-ftp:abort-current'
-  'alt-cmd-\\':                         'project-viewer:toggle-display'
+  'cmd-. c o n n':                      'remote-ftp:connect'
+  'cmd-. d o n n':                      'remote-ftp:disconnect'
+  'cmd-. u p':                          'remote-ftp:upload-active'
+  'cmd-. a b':                          'remote-ftp:abort-current'
+  'cmd-. f t p':                        'remote-ftp:create-ftp-config'
+  'cmd-. s f t p':                      'remote-ftp:create-sftp-config'
+  'cmd-. i g f':                        'remote-ftp:create-ignore-file'
+  'cmd-. a b':                          'remote-ftp:abort-current'
   'cmd-p':                              'fuzzy-finder:toggle-file-finder'
   'cmd-f':                              'find-and-replace:show'
+
 
 ## Atom workspace > Atom pane
 'atom-workspace atom-pane':
@@ -106,7 +115,7 @@
   ## New snippets
 
 ## Atom workspace > Atom text editor not mini
-'atom-workspace atom-text-editor:not([mini])':
+'atom-workspace, atom-workspace atom-text-editor:not([mini])':
   ## Unset first!
   'alt-cmd-[':                          'unset!'
   'alt-cmd-]':                          'unset!'
@@ -120,10 +129,10 @@
   'shift-cmd-;':                        'unset!'
   'cmd-:':                              'unset!'
   ## New snippets
-  'cmd-k g m s':                        'grammar-selector:show'
   'cmd-o':                              'symbols-view:toggle-file-symbols'
-  'cmd-k m d p':                        'markdown-preview:toggle'
-  'cmd-k o l':                          'link:open'
+  'cmd-. g m s':                        'grammar-selector:show'
+  'cmd-. m d p':                        'markdown-preview:toggle'
+  'cmd-. o l':                          'link:open'
   'cmd-e':                              'editor:join-lines'
 
 ## Atom text editor & Autocomplete activate
@@ -166,6 +175,9 @@
   'shift-cmd-G':                        'find-and-replace:find-previous'
   'cmd-d':                              'find-and-replace:select-next'
   'shift-cmd-d':                        'find-and-replace:select-previous'
+  ##
+  'cmd-backspace':                      'fn:delete-line-above'
+  'shift-cmd-backspace':                'fn:delete-line-below'
 
 
 ## Tree view

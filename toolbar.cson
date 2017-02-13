@@ -73,6 +73,18 @@
     iconset: "fa", icon: "home"
     type: "button"
   }
+  {
+    tooltip: "Dev Tools"
+    callback: "window:toggle-dev-tools"
+    iconset: "fa", icon: "chrome"
+    type: "button"
+  }
+  {
+    tooltip: "Terminal"
+    callback: "platformio-ide-terminal:toggle"
+    iconset: "fa", icon: "terminal"
+    type: "button"
+  }
 
   # {
   #   tooltip: "Close Project"

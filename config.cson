@@ -54,6 +54,7 @@
       "project-manager"
       "atom-ctags"
       "symbols-view-plus"
+      "platformio-ide-terminal"
     ]
     telemetryConsent: "no"
     themes: [
@@ -81,6 +82,15 @@
   "one-dark-ui":
     layoutMode: "Compact"
     tabSizing: "Even"
+  "platformio-ide-terminal":
+    core:
+      workingDirectory: "Home"
+    style:
+      animationSpeed: 0
+      fontSize: "13"
+      theme: "homebrew"
+    toggles:
+      runInsertedText: false
   "project-manager":
     alwaysOpenInSameWindow: false
     environmentSpecificProjects: false

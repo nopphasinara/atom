@@ -15,26 +15,6 @@
  * (To see them, uncomment and save)
  */
 
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
-// style UI elements inside atom-text-editor
-atom-text-editor .cursor {
-  // border-color: red;
-}
-
-* {
-  // font-family: "Menlo", sans-serif !important;
-}
-
 @level-0: 4%;
 @level-1: 16%;
 @level-2: 28%;
@@ -162,7 +142,6 @@ atom-pane.pane {
   border-top: solid 1px lighten(@bg-color, @level-0) !important;
 
   .status-bar {
-    font-size: 11px !important;
     color: @red !important;
     height: 30px !important;
     line-height: normal !important;
@@ -194,7 +173,6 @@ atom-pane.pane {
   border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
 
   .title {
-    font-size: 12px !important;
     .reset-margin();
     .reset-position();
     height: 32px !important;
@@ -214,7 +192,6 @@ atom-pane.pane {
   background-color: @bg-color !important;
 
   .tree-view {
-    font-size: 13px !important;
     padding-bottom: 8px !important;
   }
 }
@@ -269,7 +246,6 @@ atom-pane.pane {
     }
 
     .title {
-      font-size: 13px !important;
       height: 36px !important;
       line-height: normal !important;
       padding-top: 11px !important;
@@ -287,18 +263,12 @@ project-viewer {
   border-left: solid 1px lighten(@bg-color, @level-0) !important;
 
   pv-header {
-    font-size: 13px !important;
     border-bottom: solid 1px lighten(@bg-color, @level-0) !important;
   }
 
   .list-tree {
-    font-size: 12px !important;
-  }
-}
 
-.editor {
-  font-size: 12px !important;
-  // border-left: solid 1px lighten(@bg-color, @level-0) !important;
+  }
 }
 
 .remote-ftp-view {
@@ -325,7 +295,6 @@ project-viewer {
   .scroller {
     .ftptree-view {
       margin-bottom: 16px !important;
-      font-size: 13px !important;
     }
   }
 
@@ -407,7 +376,6 @@ project-viewer {
     height: 40px !important;
     line-height: normal !important;
     padding-top: 11px !important;
-    font-size: 13px !important;
     padding-left: 8px !important;
     color: @yellow !important;
   }
@@ -472,32 +440,32 @@ atom-text-editor[mini].is-focused.editor {
   }
 }
 
-.btn {
-  &:not(.status-indicator) {
-    .reset-background();
-    color: @bg-color !important;
-    background-color: @yellow !important;
-  }
-
-  &::before {
-    color: @bg-color !important;
-  }
-
-  &:hover:not(.disabled),
-  &:hover:not(.active) {
-    color: @bg-color !important;
-    background-color: darken(@yellow, @level-1) !important;
-  }
-
-  &.status-indicator {
-    .reset-background();
-    background-color: @green !important;
-
-    &.is-disabled {
-      background-color: @orange !important;
-    }
-  }
-}
+// .btn {
+//   &:not(.status-indicator) {
+//     .reset-background();
+//     color: @bg-color !important;
+//     background-color: @yellow !important;
+//   }
+//
+//   &::before {
+//     color: @bg-color !important;
+//   }
+//
+//   &:hover:not(.disabled),
+//   &:hover:not(.active) {
+//     color: @bg-color !important;
+//     background-color: darken(@yellow, @level-1) !important;
+//   }
+//
+//   &.status-indicator {
+//     .reset-background();
+//     background-color: @green !important;
+//
+//     &.is-disabled {
+//       background-color: @orange !important;
+//     }
+//   }
+// }
 
 a.icon::before {
   color: @yellow !important;
@@ -571,5 +539,59 @@ code {
     }
 
     background-color: @red !important;
+  }
+}
+
+
+// Reset font size on workspace
+.status-bar {
+  font-size: 11px !important;
+}
+
+.title-bar {
+  .title {
+    font-size: 11px !important;
+  }
+}
+
+.tree-view-resizer {
+  .tree-view {
+    font-size: 13px !important;
+  }
+}
+
+.tab-bar {
+  .tab {
+    .title {
+      font-size: 13px !important;
+    }
+  }
+}
+
+project-viewer {
+  pv-header {
+    font-size: 14px !important;
+  }
+
+  .list-tree {
+    font-size: 13px !important;
+  }
+}
+
+.editor {
+  font-size: 13px !important;
+}
+
+.remote-ftp-view {
+  font-size: 13px !important;
+
+  .scroller {
+    .ftptree-view {
+      font-size: 13px !important;
+    }
+  }
+
+  &::after {
+    font-size: 14px !important;
   }
 }
