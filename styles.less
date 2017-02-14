@@ -8,212 +8,713 @@
  * If you are unfamiliar with Less, you can read more about it here:
  * http://lesscss.org
  */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+/* COLORS */
+@baselevel: 40%;
+@midlevel: 0%;
+@darklevel: 2%;
+@darkerlevel: 4%;
+@darkenlevel: 7%;
+@lightlevel: 2%;
+@lighterlevel: 4%;
+@lightenlevel: 7%;
+
+@midgrey: #373c4f;
+@grey: lighten(@midgrey, @baselevel);
+@darkgrey: darken(@midgrey, 6%);
+@darkergrey: darken(@midgrey, 10%);
+@darkengrey: darken(@midgrey, 16%);
+@lightgrey: lighten(@midgrey, 6%);
+@lightergrey: lighten(@midgrey, 10%);
+@lightengrey: lighten(@midgrey, 16%);
+@midgreen: #147f40;
+@green: lighten(@midgreen, @baselevel);
+@darkgreen: darken(@midgreen, 10%);
+@darkergreen: darken(@midgreen, 16%);
+@darkengreen: darken(@midgreen, 20%);
+@lightgreen: lighten(@midgreen, 10%);
+@lightergreen: lighten(@midgreen, 16%);
+@lightengreen: lighten(@midgreen, 20%);
+@midpink: #c22d75;
+@pink: lighten(@midpink, @baselevel);
+@darkpink: darken(@midpink, 10%);
+@darkerpink: darken(@midpink, 16%);
+@darkenpink: darken(@midpink, 20%);
+@lightpink: lighten(@midpink, 10%);
+@lighterpink: lighten(@midpink, 16%);
+@lightenpink: lighten(@midpink, 20%);
+@midyellow: #b38b41;
+@yellow: lighten(@midyellow, @baselevel);
+@darkyellow: darken(@midyellow, 10%);
+@darkeryellow: darken(@midyellow, 16%);
+@darkenyellow: darken(@midyellow, 20%);
+@lightyellow: lighten(@midyellow, 10%);
+@lighteryellow: lighten(@midyellow, 16%);
+@lightenyellow: lighten(@midyellow, 20%);
+@midorange: #c24729;
+@orange: lighten(@midorange, @baselevel);
+@darkorange: darken(@midorange, 10%);
+@darkerorange: darken(@midorange, 16%);
+@darkenorange: darken(@midorange, 20%);
+@lightorange: lighten(@midorange, 10%);
+@lighterorange: lighten(@midorange, 16%);
+@lightenorange: lighten(@midorange, 20%);
+@midblue: #4a66c2;
+@blue: lighten(@midblue, @baselevel);
+@darkblue: darken(@midblue, 6%);
+@darkerblue: darken(@midblue, 10%);
+@darkenblue: darken(@midblue, 16%);
+@lightblue: lighten(@midblue, 10%);
+@lighterblue: lighten(@midblue, 16%);
+@lightenblue: lighten(@midblue, 20%);
+@midcyan: #1b8077;
+@cyan: lighten(@midcyan, @baselevel);
+@darkcyan: darken(@midcyan, 10%);
+@darkercyan: darken(@midcyan, 16%);
+@darkencyan: darken(@midcyan, 20%);
+@lightcyan: lighten(@midcyan, 10%);
+@lightercyan: lighten(@midcyan, 16%);
+@lightencyan: lighten(@midcyan, 20%);
+
+@text-color: #9aa0b6;
+@bg-color: @darkgrey;
+@bg-editor: @darkergrey;
+@bg-status-bar: @midgrey;
+@bg-tool-bar: @darkgrey;
+@border-color: @darkengrey;
+@scrollbar-color: @lightengrey;
+@scrollbar-border: @bg-color;
+@scrollbar-bg: @bg-color;
+@btn-hover: @darkenblue;
+
+.btnDefault {
+  color: @text-color !important;
+  background-color: @darkergrey !important;
+  border: solid 1px @darkengrey !important;
+}
+.btnDefaultHover {
+  color: @text-color !important;
+  background-color: @darkenblue !important;
+  border: solid 1px @darkengrey !important;
+}
+
+.box-shadow(@position, @opacity) {
+  box-shadow: @position rgba(0, 0, 0, @opacity) !important;
+}
+
 .tree-view::before,
 .tab-bar:before,
 .tab.active:before {
   display: none;
 }
 
-atom-panel-container.header {
-  height: auto !important;
-  line-height: normal !important;
-  background-color: #242732 !important;
-  border-bottom: none !important;
 
-  atom-panel.header,
-  atom-panel.header .title-bar,
-  atom-panel.header .title-bar .title {
-    height: auto !important;
-    line-height: normal !important;
-    background-color: transparent !important;
-    border-bottom: none !important;
-  }
 
-  atom-panel.header .title-bar {
-    height: 30px !important;
-    margin-top: -3px !important;
-    padding: 0 0 2px 0 !important;
-    border-bottom: solid 1px #353849 !important;
-
-    .title {
-      color: #9aa0b6 !important;
-    }
-  }
+.reset-margin {
+  margin: 0 0 0 0 !important;
+}
+.reset-padding {
+  padding: 0 0 0 0 !important;
 }
 
-atom-workspace-axis.horizontal {
-  padding-top: 2px !important;
+.reset-position {
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+}
 
-  atom-workspace-axis.vertical {
-    background-color: #2b2e3b !important;
+atom-workspace {
+  background-color: @bg-color !important;
 
-    .tab-bar {
+
+  /** HEADER CONTAINER */
+  atom-panel-container.header {
+    height: auto !important;
+    line-height: normal !important;
+    background-color: @darkergrey !important;
+    border-bottom: none !important;
+
+    atom-panel.header,
+    atom-panel.header .title-bar,
+    atom-panel.header .title-bar .title {
+      height: auto !important;
+      line-height: normal !important;
       background-color: transparent !important;
+      border-bottom: none !important;
+    }
 
-      .close-icon {
-        cursor: pointer !important;
+    atom-panel.header .title-bar {
+      height: 30px !important;
+      margin: 0 0 0 0 !important;
+      padding: 0 0 0 0 !important;
+      border-bottom: solid 1px @border-color !important;
+
+      .title {
+        color: @lightgrey !important;
+      }
+    }
+  }
+
+
+  /** HORIZONTAL CONTAINER */
+  atom-workspace-axis.horizontal {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+
+    atom-panel.panel-left,
+    atom-panel.panel-right,
+    atom-panel.panel-bottom,
+    atom-panel.panel-top {
+      border: none !important;
+    }
+
+
+    /** LEFT CONTAINER */
+    atom-panel-container.left {
+      atom-panel.panel-left {
+        &:not(:empty) {
+          border-left: solid 1px @border-color !important;
+        }
       }
 
-      .tab {
-        background-color: transparent !important;
-        cursor: pointer !important;
+      /* TREE VEW */
+      .tree-view-resizer {
+        background-color: @bg-color !important;
 
-        &::after {
+        .tree-view {
           background-color: transparent !important;
-          border-bottom: solid 1px #242732 !important;
         }
 
-        &.active {
-          background-color: #242732 !important;
+        ::-webkit-scrollbar {
+          background-color: transparent !important;
+        }
+        ::-webkit-scrollbar-corner {
+          background-color: transparent !important;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: @scrollbar-color !important;
+          border-color: @scrollbar-border !important;
+        }
+        ::-webkit-scrollbar-track {
+          background-color: @scrollbar-bg !important;
+        }
+      }
 
-          .title {
+      /* REMOTE FTP */
+      .remote-ftp-view.ftptree-view-resizer {
+        background-color: @bg-color !important;
+
+        .scroller {
+          background-color: transparent !important;
+        }
+
+        .queue {
+          color: #fff !important;
+          background-color: @darkgreen !important;
+
+          .progress {
             background-color: transparent !important;
+
+            progress {
+
+            }
+
+            .name {
+
+            }
+
+            .eta {
+
+            }
+          }
+
+          .list {
+            li {
+
+            }
           }
         }
 
-        .title {
+        .offline {
           background-color: transparent !important;
+
+          .btn {
+            background-color: @darkergrey !important;
+            background-image: none !important;
+          }
+
+          .btn:hover {
+            color: #fff !important;
+            background-color: @lightblue !important;
+          }
+        }
+
+        ::-webkit-scrollbar {
+          background-color: transparent !important;
+        }
+        ::-webkit-scrollbar-corner {
+          background-color: transparent !important;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: @scrollbar-color !important;
+          border-color: @scrollbar-border !important;
+        }
+        ::-webkit-scrollbar-track {
+          background-color: @scrollbar-bg !important;
+        }
+      }
+    }
+
+
+    /** VERTICAL CONTAINER */
+    atom-workspace-axis.vertical {
+      background-color: @bg-color !important;
+
+      /* TOP CONTAINER */
+      atom-panel-container.top {
+
+      }
+
+      /* PANES CONTAINER */
+      atom-pane-container.panes {
+        atom-pane.pane {
+          /* EDITOR VIEWS */
+          .item-views {
+            border: none !important;
+            border-left: solid 1px @border-color !important;
+          }
+
+          /* TAB BAR */
+          .tab-bar {
+            background-color: transparent !important;
+
+            .close-icon {
+              cursor: pointer !important;
+            }
+
+            .tab {
+              background-color: transparent !important;
+              cursor: pointer !important;
+
+              &::after {
+                border-color: @darkengrey !important;
+                background-color: transparent !important;
+              }
+
+              &.active {
+                background-color: @bg-editor !important;
+
+                &::after {
+                  border-bottom-color: @bg-editor !important;
+                }
+
+                .title {
+                  background-color: transparent !important;
+                }
+              }
+
+              .title {
+                background-color: transparent !important;
+              }
+            }
+          }
+        }
+      }
+
+      /* BOTTOM CONTAINER */
+      atom-panel-container.bottom {
+        border: none !important;
+        border-top: solid 1px @border-color !important;
+        border-left: solid 1px @border-color !important;
+
+        atom-panel.panel-bottom {
+          border: none !important;
+        }
+
+        /* FIND AND REPLACE */
+        .find-and-replace {
+
+        }
+
+        /* TERMINAL VIEW */
+        .platformio-ide-terminal,
+        .terminal-view,
+        .platformio-ide-terminal.terminal-view {
+          .panel-divider {
+            display: none !important;
+          }
+
+          .btn-toolbar {
+            border: none !important;
+            background-color: @green !important;
+            height: auto !important;
+            line-height: normal !important;
+            .reset-margin();
+            .reset-padding();
+
+            .btn {
+              .reset-margin();
+              .reset-padding();
+              width: 34px !important;
+              height: 34px !important;
+              line-height: normal !important;
+              border: none !important;
+              text-align: center !important;
+              background-image: none !important;
+              background-color: transparent !important;
+
+              .icon {
+                .reset-margin();
+                .reset-padding();
+              }
+
+              .icon::before {
+                .reset-margin();
+                .reset-padding();
+                height: auto !important;
+                line-height: normal !important;
+                color: @darkgreen !important;
+                font-size: 18px !important;
+              }
+
+              &:hover {
+                .icon::before {
+                  color: @darkergrey !important;
+                }
+              }
+            }
+          }
+
+          .xterm {
+            .reset-margin();
+            .reset-padding();
+            padding: 12px 12px !important;
+            border: none !important;
+            background-color: @darkergrey !important;
+          }
+        }
+      }
+    }
+
+
+    /** RIGHT CONTAINER */
+    atom-panel-container.right {
+      atom-panel.panel-right {
+        &:not(:empty) {
+          border-left: solid 1px @border-color !important;
+        }
+      }
+
+      /* TOOL BAR */
+      .tool-bar {
+        height: auto !important;
+        line-height: normal !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 !important;
+        background-color: @bg-tool-bar !important;
+
+        .btn {
+          color: @grey !important;
+          background-color: transparent !important;
+          background-image: none !important;
+        }
+
+        .btn:hover {
+          color: @darkgreen !important;
+          background-color: @lightergreen !important;
+        }
+
+        .tool-bar-spacer {
+          .reset-margin();
+          .reset-padding();
+          border: none !important;
+          width: 100% !important;
+          height: 1px !important;
+          overflow: hidden !important;
+          -webkit-mask-image: none !important;
+          background-color: @border-color !important;
+        }
+      }
+    }
+
+
+    /** TEXT EDITOR */
+    atom-text-editor {
+      background-color: @bg-editor !important;
+
+      .gutter {
+        background-color: @bg-editor !important;
+      }
+
+      ::-webkit-scrollbar {
+        background-color: transparent !important;
+      }
+      ::-webkit-scrollbar-corner {
+        background-color: transparent !important;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: @scrollbar-color !important;
+        border-color: @bg-editor !important;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: @bg-editor !important;
+      }
+    }
+  }
+
+
+  /** FOOTER CONTAINER */
+  atom-panel-container.footer {
+    border-top: solid 1px @border-color !important;
+
+    atom-panel.panel-footer {
+      > .status-bar {
+        .reset-margin();
+        .reset-padding();
+        height: 32px !important;
+        line-height: normal !important;
+        background-color: @bg-status-bar !important;
+
+        .flexbox-repaint-hack {
+          .reset-margin();
+          .reset-padding();
+          height: auto !important;
+          line-height: normal !important;
+          background-color: transparent !important;
+        }
+
+        .icon {
+          .reset-margin();
+          .reset-padding();
+          .reset-position();
+          width: auto !important;
+          height: auto !important;
+          line-height: normal !important;
+          background-color: transparent !important;
+        }
+
+        .icon::before {
+          .reset-margin();
+          .reset-padding();
+          .reset-position();
+          width: auto !important;
+          height: auto !important;
+          line-height: normal !important;
+          background-color: transparent !important;
+          // color: @lightgrey !important;
+          // background-color: @purple !important;
+        }
+
+        .icon:hover::before {
+          color: @lightergreen !important;
+          background-color: transparent !important;
+        }
+
+        .status-bar-left {
+          .reset-margin();
+          .reset-padding();
+          height: auto !important;
+          line-height: normal !important;
+          background-color: transparent !important;
+
+          /* TERMINAL */
+          .platformio-ide-terminal,
+          .platformio-ide-terminal.status-bar {
+            .reset-margin();
+            .reset-padding();
+            .reset-position();
+            margin-left: 8px !important;
+            margin-right: 12px !important;
+            height: auto !important;
+            line-height: normal !important;
+            background-color: transparent !important;
+
+            .list-inline {
+              .reset-margin();
+              .reset-padding();
+              .reset-position();
+              width: auto !important;
+              height: auto !important;
+              line-height: normal !important;
+
+              li {
+                .reset-margin();
+                .reset-padding();
+                .reset-position();
+                width: auto !important;
+                height: auto !important;
+                line-height: normal !important;
+              }
+            }
+
+            .icon:not(:last-child) {
+              margin-right: 4px !important;
+            }
+
+            .icon::before {
+              padding: 2px 0 0 1px !important;
+              width: 28px !important;
+              height: 22px !important;
+              margin-top: 4px !important;
+            }
+
+            .icon:hover::before {
+              // color: #fff !important;
+              // background-color: transparent !important;
+            }
+          }
+
+          /* FILE INFO */
+          .file-info {
+            margin-top: 6px !important;
+
+            a.current-path {
+
+            }
+          }
+
+          /* CURSOR POSITION */
+          .cursor-position {
+            margin-top: 6px !important;
+
+            a.inline-block {
+
+            }
+          }
+
+          /* SELECTION COUNT */
+          .selection-count {
+            margin-top: 6px !important;
+          }
+        }
+
+        .status-bar-right {
+          .reset-margin();
+          .reset-padding();
+          padding-right: 8px !important;
+          height: auto !important;
+          line-height: normal !important;
+          background-color: transparent !important;
+
+          /* LINE ENDING TILE */
+          a.line-ending-tile {
+            margin-top: 7px !important;
+          }
+
+          /* ENCODING STATUS */
+          .encoding-status {
+            margin-top: 7px !important;
+
+            a {
+
+            }
+          }
+
+          /* GRAMMAR STATUS */
+          .grammar-status {
+            margin-top: 7px !important;
+
+            a {
+
+            }
+          }
+
+          /* GIT VIEW */
+          // is="status-bar-git"
+          .git-view {
+            margin-top: 5px !important;
+
+            .git-branch {
+              .icon {
+                margin-right: 4px !important;
+              }
+
+              .icon::before {
+                color: @lighterblue !important;
+              }
+
+              .branch-label {
+                color: @lighterblue !important;
+              }
+            }
+
+            .git-commits {
+              .icon {
+
+              }
+            }
+
+            .git-status {
+              .icon {
+                color: @lightergreen !important;
+              }
+
+              .icon::before {
+                margin-right: 4px !important;
+                color: @lightergreen !important;
+              }
+            }
+          }
+
+          > div.inline-block {
+            margin-top: 7px !important;
+
+            a {
+
+            }
+
+            a span {
+
+            }
+          }
         }
       }
     }
   }
 }
 
-atom-text-editor {
-  background-color: #242732 !important;
 
-  .gutter {
-    background-color: #242732 !important;
-  }
-
-  ::-webkit-scrollbar {
-    background-color: transparent !important;
-  }
-  ::-webkit-scrollbar-corner {
-    background-color: #242732 !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #3c4052 !important;
-    border-color: #242732 !important;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: #242732 !important;
-  }
+/** TOOLTIP */
+.tooltip-inner {
+  color: @darkergreen !important;
+  background-color: @lightergreen !important;
 }
-
-.tool-bar {
-  height: auto !important;
-  line-height: normal !important;
-  margin: 0 0 0 0 !important;
-  padding: 0 !important;
-  background-color: #242732 !important;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 6, .32) !important;
-     -moz-box-shadow: 0 1px 2px rgba(0, 0, 6, .32) !important;
-      -ms-box-shadow: 0 1px 2px rgba(0, 0, 6, .32) !important;
-          box-shadow: 0 1px 2px rgba(0, 0, 6, .32) !important;
-
-
-  .btn {
-    color: #9aa0b6 !important;
-    background-color: transparent !important;
-    background-image: none !important;
-  }
-
-  .btn:hover {
-    color: #fff !important;
-    background-color: #516ccd !important;
-  }
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: @lightergreen !important;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: @lightergreen !important;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: @lightergreen !important;
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: @lightergreen !important;
 }
 
 
-.status-bar {
-  background-color: #353849 !important;
+/** SCROLLBAR */
+::-webkit-scrollbar {
+  background-color: transparent !important;
 }
-
-.tree-view-resizer {
-  background-color: #2b2e3b !important;
-
-  .tree-view {
-    background-color: transparent !important;
-  }
-
-  ::-webkit-scrollbar {
-    background-color: transparent !important;
-  }
-  ::-webkit-scrollbar-corner {
-    background-color: #2b2e3b !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #3c4052 !important;
-    border-color: #2b2e3b !important;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: #2b2e3b !important;
-  }
+::-webkit-scrollbar-corner {
+  background-color: transparent !important;
 }
-
-
-.remote-ftp-view.ftptree-view-resizer {
-  background-color: #2b2e3b !important;
-
-  .scroller {
-    background-color: transparent !important;
-  }
-
-  .queue {
-    color: #fff !important;
-    background-color: #3a553f !important;
-
-    .progress {
-      background-color: transparent !important;
-
-      progress {
-
-      }
-
-      .name {
-
-      }
-
-      .eta {
-
-      }
-    }
-
-    .list {
-      li {
-
-      }
-    }
-  }
-
-  .offline {
-    background-color: transparent !important;
-
-    .btn {
-      color: #9aa0b6 !important;
-      background-color: #242732 !important;
-      border: solid 1px #1a1c24 !important;
-      background-image: none !important;
-    }
-
-    .btn:hover {
-      color: #fff !important;
-      background-color: #516ccd !important;
-    }
-  }
-
-  ::-webkit-scrollbar {
-    background-color: transparent !important;
-  }
-  ::-webkit-scrollbar-corner {
-    background-color: #2b2e3b !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #3c4052 !important;
-    border-color: #2b2e3b !important;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: #2b2e3b !important;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: @scrollbar-color !important;
+  border-color: @scrollbar-border !important;
+}
+::-webkit-scrollbar-track {
+  background-color: @scrollbar-bg !important;
 }

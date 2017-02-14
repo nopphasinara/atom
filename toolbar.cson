@@ -65,14 +65,6 @@
     type: "button"
   }
   { type: "spacer" }
-  { type: "spacer" }
-  { type: "spacer" }
-  {
-    tooltip: "Home"
-    callback: "home:home"
-    iconset: "fa", icon: "home"
-    type: "button"
-  }
   {
     tooltip: "Dev Tools"
     callback: "window:toggle-dev-tools"

@@ -32,7 +32,6 @@
       "timecop"
       "welcome"
       "deprecation-cop"
-      "no-title-bar"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -121,6 +120,7 @@
   tabs:
     addNewTabsAtEnd: true
     enableMruTabSwitching: false
-  "tool-bar": {}
+  "tool-bar":
+    position: "Right"
   welcome:
     showOnStartup: false
