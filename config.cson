@@ -66,6 +66,7 @@
     ]
     useCustomTitleBar: true
   editor:
+    lineHeight: 1.8
     showIndentGuide: true
     softWrap: true
     tabType: "soft"

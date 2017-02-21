@@ -1,9 +1,9 @@
 git = require './git'
 
 getCommands = ->
-  GitBranch              = require './models/git-branch'
-  GitDeleteLocalBranch   = require './models/git-delete-local-branch'
-  GitDeleteRemoteBranch  = require './models/git-delete-remote-branch'
+  GitCheckoutNewBranch   = require './models/git-checkout-new-branch'
+  GitCheckoutBranch      = require './models/git-checkout-branch'
+  GitDeleteBranch        = require './models/git-delete-branch'
   GitCheckoutAllFiles    = require './models/git-checkout-all-files'
   GitCheckoutFile        = require './models/git-checkout-file'
   GitCherryPick          = require './models/git-cherry-pick'
@@ -61,11 +61,11 @@ getCommands = ->
       commands.push ['git-plus:add-all-and-commit', 'Add All And Commit', -> git.add(repo).then -> GitCommit(repo)]
       commands.push ['git-plus:add-all-commit-and-push', 'Add All, Commit And Push', -> git.add(repo).then -> GitCommit(repo, andPush: true)]
       commands.push ['git-plus:commit-all-and-push', 'Commit All And Push', -> GitCommit(repo, stageChanges: true, andPush: true)]
-      commands.push ['git-plus:checkout', 'Checkout', -> GitBranch.gitBranches(repo)]
-      commands.push ['git-plus:checkout-remote', 'Checkout Remote', -> GitBranch.gitRemoteBranches(repo)]
-      commands.push ['git-plus:new-branch', 'Checkout New Branch', -> GitBranch.newBranch(repo)]
-      commands.push ['git-plus:delete-local-branch', 'Delete Local Branch', -> GitDeleteLocalBranch(repo)]
-      commands.push ['git-plus:delete-remote-branch', 'Delete Remote Branch', -> GitDeleteRemoteBranch(repo)]
+      commands.push ['git-plus:checkout', 'Checkout', -> GitCheckoutBranch(repo)]
+      commands.push ['git-plus:checkout-remote', 'Checkout Remote', -> GitCheckoutBranch(repo, {remote: true})]
+      commands.push ['git-plus:new-branch', 'Checkout New Branch', -> GitCheckoutNewBranch(repo)]
+      commands.push ['git-plus:delete-local-branch', 'Delete Local Branch', -> GitDeleteBranch(repo)]
+      commands.push ['git-plus:delete-remote-branch', 'Delete Remote Branch', -> GitDeleteBranch(repo, {remote: true})]
       commands.push ['git-plus:cherry-pick', 'Cherry-Pick', -> GitCherryPick(repo)]
       commands.push ['git-plus:diff', 'Diff', -> GitDiff(repo, file: currentFile)]
       if atom.config.get('git-plus.experimental.diffBranches')
