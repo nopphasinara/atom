@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
+        "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
-        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
+        "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
+        "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-31732-1fsb2ev"
+      "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117120-1539-l15bre"
     ]
   ],
-  "_from": "../d-117111-31732-lpqaz0/package.tgz",
-  "_id": "tree-view-git-status@1.3.0",
+  "_from": "../d-117120-1539-85j14/package.tgz",
+  "_id": "tree-view-git-status@1.3.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/tree-view-git-status",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
+    "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
-    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
+    "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
+    "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117111-31732-lpqaz0/package.tgz",
-  "_shasum": "733136d7d5881ba59c9c138569ebb6f06fa07d47",
+  "_resolved": "file:../d-117120-1539-85j14/package.tgz",
+  "_shasum": "11e303ddfd5ff0657a5221ced77ad75921e00839",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-31732-lpqaz0/package.tgz",
-  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-31732-1fsb2ev",
+  "_spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1539-85j14/package.tgz",
+  "_where": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117120-1539-l15bre",
   "bugs": {
     "url": "https://github.com/subesokun/atom-tree-view-git-status/issues"
   },
@@ -66,5 +66,5 @@
     "type": "git",
     "url": "git+https://github.com/subesokun/atom-tree-view-git-status.git"
   },
-  "version": "1.3.0"
+  "version": "1.3.1"
 }

@@ -88,7 +88,7 @@
   'ctrl-alt-c':                         'unset!'
   'ctrl-alt-d':                         'unset!'
   ## New snippets
-  'shift-cmd-r':                        'window:reload'
+  'cmd-r':                        'window:reload'
   'cmd-. c o n n':                      'remote-ftp:connect'
   'cmd-. d o n n':                      'remote-ftp:disconnect'
   'cmd-. u p':                          'remote-ftp:upload-active'
@@ -168,17 +168,17 @@
   'cmd-l':                              'editor:select-line'
   'shift-ctrl-up':                      'editor:add-selection-above'
   'shift-ctrl-down':                    'editor:add-selection-below'
-  'shift-backspace':                    'fn:delete-right'
-  'shift-delete':                       'fn:delete-right'
-  'shift-space':                        'fn:space-right'
-  'shift-tab':                          'fn:indent-right'
+  # 'shift-backspace':                    'fn:delete-right'
+  # 'shift-delete':                       'fn:delete-right'
+  # 'shift-space':                        'fn:space-right'
+  # 'shift-tab':                          'fn:indent-right'
   'cmd-g':                              'find-and-replace:find-next'
   'shift-cmd-G':                        'find-and-replace:find-previous'
   'cmd-d':                              'find-and-replace:select-next'
   'shift-cmd-d':                        'find-and-replace:select-previous'
   ##
-  'cmd-backspace':                      'fn:delete-line-above'
-  'shift-cmd-backspace':                'fn:delete-line-below'
+  # 'cmd-backspace':                      'fn:delete-line-above'
+  # 'shift-cmd-backspace':                'fn:delete-line-below'
 
 
 ## Tree view

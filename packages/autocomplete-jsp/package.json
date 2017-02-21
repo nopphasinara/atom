@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
+        "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
-        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
+        "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
+        "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117113-4412-sg0tpw"
+      "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117120-1524-szbuta"
     ]
   ],
-  "_from": "../d-117113-4412-vcg6cg/package.tgz",
-  "_id": "autocomplete-jsp@1.0.0",
+  "_from": "../d-117120-1524-1htj63y/package.tgz",
+  "_id": "autocomplete-jsp@1.0.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/autocomplete-jsp",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
+    "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
-    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
+    "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
+    "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117113-4412-vcg6cg/package.tgz",
-  "_shasum": "f90cc934050c9d3c6ad5b2050a0098156b133ba2",
+  "_resolved": "file:../d-117120-1524-1htj63y/package.tgz",
+  "_shasum": "cb74fe96917fd5378b52a1ab4963ebb2ff9331e7",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117113-4412-vcg6cg/package.tgz",
-  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117113-4412-sg0tpw",
+  "_spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117120-1524-1htj63y/package.tgz",
+  "_where": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117120-1524-szbuta",
   "author": {
     "name": "Moritz Kneilmann",
     "email": "moritz.kneilmann@gmx.de"
@@ -94,5 +94,5 @@
     "lint": "./node_modules/jshint/bin/jshint src/**.js spec/**js",
     "test": "npm run lint && apm test"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

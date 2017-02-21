@@ -66,7 +66,6 @@
     ]
     useCustomTitleBar: true
   editor:
-    lineHeight: 1.6
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
@@ -82,8 +81,7 @@
   notifications:
     showErrorsInDevMode: true
   "one-dark-ui":
-    fontSize: 13
-    layoutMode: "Spacious"
+    layoutMode: "Compact"
     tabSizing: "Minimum"
   "platformio-ide-terminal":
     core:
@@ -122,5 +120,6 @@
     enableMruTabSwitching: false
   "tool-bar":
     position: "Right"
+  "tree-view": {}
   welcome:
     showOnStartup: false

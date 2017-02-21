@@ -22,6 +22,9 @@
 
 ## Snippet for all providers
 '*':
+  '!important':
+    'prefix': 'important'
+    'body': '!important'
   'New snippet':
     'prefix': 'newsnippet'
     'body': """

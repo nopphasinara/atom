@@ -8,699 +8,490 @@
  * If you are unfamiliar with Less, you can read more about it here:
  * http://lesscss.org
  */
+@panel-left-width: 250px;
 
+* {
+  -webkit-mask-image: none !important;
+  -moz-mask-image: none !important;
+  mask-image: none !important;
 
-/*
- * Examples
- * (To see them, uncomment and save)
- */
+  background-image: none !important;
+  border-image: none !important;
+  text-shadow: none !important;
 
-/* COLORS */
-@baselevel: 40%;
-@midlevel: 0%;
-@darklevel: 2%;
-@darkerlevel: 4%;
-@darkenlevel: 7%;
-@lightlevel: 2%;
-@lighterlevel: 4%;
-@lightenlevel: 7%;
-
-@midgrey: #373c4f;
-@grey: lighten(@midgrey, @baselevel);
-@darkgrey: darken(@midgrey, 6%);
-@darkergrey: darken(@midgrey, 10%);
-@darkengrey: darken(@midgrey, 16%);
-@lightgrey: lighten(@midgrey, 6%);
-@lightergrey: lighten(@midgrey, 10%);
-@lightengrey: lighten(@midgrey, 16%);
-@midgreen: #147f40;
-@green: lighten(@midgreen, @baselevel);
-@darkgreen: darken(@midgreen, 10%);
-@darkergreen: darken(@midgreen, 16%);
-@darkengreen: darken(@midgreen, 20%);
-@lightgreen: lighten(@midgreen, 10%);
-@lightergreen: lighten(@midgreen, 16%);
-@lightengreen: lighten(@midgreen, 20%);
-@midpink: #c22d75;
-@pink: lighten(@midpink, @baselevel);
-@darkpink: darken(@midpink, 10%);
-@darkerpink: darken(@midpink, 16%);
-@darkenpink: darken(@midpink, 20%);
-@lightpink: lighten(@midpink, 10%);
-@lighterpink: lighten(@midpink, 16%);
-@lightenpink: lighten(@midpink, 20%);
-@midyellow: #b38b41;
-@yellow: lighten(@midyellow, @baselevel);
-@darkyellow: darken(@midyellow, 10%);
-@darkeryellow: darken(@midyellow, 16%);
-@darkenyellow: darken(@midyellow, 20%);
-@lightyellow: lighten(@midyellow, 10%);
-@lighteryellow: lighten(@midyellow, 16%);
-@lightenyellow: lighten(@midyellow, 20%);
-@midorange: #c24729;
-@orange: lighten(@midorange, @baselevel);
-@darkorange: darken(@midorange, 10%);
-@darkerorange: darken(@midorange, 16%);
-@darkenorange: darken(@midorange, 20%);
-@lightorange: lighten(@midorange, 10%);
-@lighterorange: lighten(@midorange, 16%);
-@lightenorange: lighten(@midorange, 20%);
-@midblue: #4a66c2;
-@blue: lighten(@midblue, @baselevel);
-@darkblue: darken(@midblue, 6%);
-@darkerblue: darken(@midblue, 10%);
-@darkenblue: darken(@midblue, 16%);
-@lightblue: lighten(@midblue, 10%);
-@lighterblue: lighten(@midblue, 16%);
-@lightenblue: lighten(@midblue, 20%);
-@midcyan: #1b8077;
-@cyan: lighten(@midcyan, @baselevel);
-@darkcyan: darken(@midcyan, 10%);
-@darkercyan: darken(@midcyan, 16%);
-@darkencyan: darken(@midcyan, 20%);
-@lightcyan: lighten(@midcyan, 10%);
-@lightercyan: lighten(@midcyan, 16%);
-@lightencyan: lighten(@midcyan, 20%);
-
-@text-color: #9aa0b6;
-@bg-color: @darkgrey;
-@bg-editor: @darkergrey;
-@bg-status-bar: @midgrey;
-@bg-tool-bar: @darkgrey;
-@border-color: @darkengrey;
-@scrollbar-color: @lightengrey;
-@scrollbar-border: @bg-color;
-@scrollbar-bg: @bg-color;
-@btn-hover: @darkenblue;
-
-.btnDefault {
-  color: @text-color !important;
-  background-color: @darkergrey !important;
-  border: solid 1px @darkengrey !important;
-}
-.btnDefaultHover {
-  color: @text-color !important;
-  background-color: @darkenblue !important;
-  border: solid 1px @darkengrey !important;
-}
-
-.box-shadow(@position, @opacity) {
-  box-shadow: @position rgba(0, 0, 0, @opacity) !important;
-}
-
-.tree-view::before,
-.tab-bar:before,
-.tab.active:before {
-  display: none;
+  &:not(.indent-guide) {
+    box-shadow: none !important;
+  }
 }
 
 
+.workspace {
+  > .header {
+    > .panel-header {
+      border: none !important;
+      border-bottom: solid 1px #1c1c3a !important;
 
-.reset-margin {
-  margin: 0 0 0 0 !important;
-}
-.reset-padding {
-  padding: 0 0 0 0 !important;
-}
+      .title-bar {
+        background-color: #343944 !important;
 
-.reset-position {
-  top: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-}
-
-atom-workspace {
-  background-color: @bg-color !important;
-
-
-  /** HEADER CONTAINER */
-  atom-panel-container.header {
-    height: auto !important;
-    line-height: normal !important;
-    background-color: @darkergrey !important;
-    border-bottom: none !important;
-
-    atom-panel.header,
-    atom-panel.header .title-bar,
-    atom-panel.header .title-bar .title {
-      height: auto !important;
-      line-height: normal !important;
-      background-color: transparent !important;
-      border-bottom: none !important;
-    }
-
-    atom-panel.header .title-bar {
-      height: 30px !important;
-      margin: 0 0 0 0 !important;
-      padding: 0 0 0 0 !important;
-      border-bottom: solid 1px @border-color !important;
-
-      .title {
-        color: @lightgrey !important;
+        .title {
+          color: #d9d9d9 !important;
+          font-size: 12px !important;
+        }
       }
     }
   }
 
+  > .horizontal {
+    > .left {
+      > .panel-left {
+        border: none !important;
 
-  /** HORIZONTAL CONTAINER */
-  atom-workspace-axis.horizontal {
-    margin: 0 0 0 0 !important;
-    padding: 0 0 0 0 !important;
+        .tree-view-resizer {
+          height: 616px !important;
 
-    atom-panel.panel-left,
-    atom-panel.panel-right,
-    atom-panel.panel-bottom,
-    atom-panel.panel-top {
-      border: none !important;
+          .tree-view-scroller {
+            background-color: #283676 !important;
+
+            .tree-view {
+              background-color: transparent !important;
+            }
+          }
+
+          .tree-view-resize-handle {
+
+          }
+
+          &::before {
+            content: "Working Folder";
+            width: 100% !important;
+            height: 32px !important;
+            line-height: normal !important;
+            padding-top: 7px !important;
+            padding-left: 8px !important;
+            color: #fff !important;
+            background-color: #343944 !important;
+            font-size: 14px !important;
+          }
+
+          ::-webkit-scrollbar {
+            background-color: transparent !important;
+          }
+          ::-webkit-scrollbar-corner {
+            background-color: transparent !important;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #d9d9d9 !important;
+            border-color: #24376a !important;
+          }
+          ::-webkit-scrollbar-track {
+            background-color: #24376a !important;
+          }
+        }
+
+        .remote-ftp-view.ftptree-view-resizer {
+          position: absolute !important;
+          left: -(@panel-left-width) !important;
+          top: 616px !important;
+          width: @panel-left-width !important;
+          height: 344px !important;
+          background-color: #28294b !important;
+
+          .scroller {
+            margin-top: 32px !important;
+            margin-bottom: 8px !important;
+
+            .ftptree-view {
+
+            }
+          }
+
+          .queue {
+            height: 32px !important;
+            line-height: normal !important;
+            color: #262934 !important;
+            background-color: #5cff55 !important;
+            overflow: hidden !important;
+
+            .progress {
+              margin: 0 !important;
+              padding: 0 !important;
+              height: 32px !important;
+              line-height: normal !important;
+              background-color: transparent !important;
+              border: none !important;
+
+              progress {
+                width: 32px !important;
+                margin: 7px 8px 0 0 !important;
+                padding: 0 !important;
+              }
+
+              .name {
+                margin: 4px 0 0 0 !important;
+                padding: 0 !important;
+                height: auto !important;
+                line-height: normal !important;
+              }
+
+              .eta {
+                margin: 4px 0 0 0 !important;
+                padding: 0 !important;
+                height: auto !important;
+                line-height: normal !important;
+              }
+            }
+
+            .list {
+              li {
+                margin: 0 !important;
+                padding: 8px 8px 0 8px !important;
+
+                height: 32px !important;
+                line-height: normal !important;
+              }
+            }
+          }
+
+          .offline {
+
+          }
+
+          &::before {
+            content: "Remote FTP";
+            width: 100% !important;
+            height: 32px !important;
+            line-height: normal !important;
+            padding-top: 7px !important;
+            padding-left: 8px !important;
+            color: #fff !important;
+            background-color: #343944 !important;
+            font-size: 14px !important;
+          }
+
+          ::-webkit-scrollbar {
+            background-color: transparent !important;
+          }
+          ::-webkit-scrollbar-corner {
+            background-color: transparent !important;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #d9d9d9 !important;
+            border-color: #282947 !important;
+          }
+          ::-webkit-scrollbar-track {
+            background-color: #282947 !important;
+          }
+        }
+      }
     }
 
+    > .vertical {
+      > .top {
 
-    /** LEFT CONTAINER */
-    atom-panel-container.left {
-      atom-panel.panel-left {
-        &:not(:empty) {
-          border-left: solid 1px @border-color !important;
-        }
       }
 
-      /* TREE VEW */
-      .tree-view-resizer {
-        background-color: @bg-color !important;
-
-        .tree-view {
-          background-color: transparent !important;
+      > .panes {
+        .pane {
+          border: none !important;
+          border-left: solid 1px #1c1c3a !important;
         }
 
-        ::-webkit-scrollbar {
-          background-color: transparent !important;
-        }
-        ::-webkit-scrollbar-corner {
-          background-color: transparent !important;
-        }
-        ::-webkit-scrollbar-thumb {
-          background-color: @scrollbar-color !important;
-          border-color: @scrollbar-border !important;
-        }
-        ::-webkit-scrollbar-track {
-          background-color: @scrollbar-bg !important;
-        }
-      }
+        .tab-bar {
+          height: 32px !important;
+          line-height: normal !important;
+          border-bottom: solid 1px #1c1c3a !important;
+          background-color: #282b35 !important;
 
-      /* REMOTE FTP */
-      .remote-ftp-view.ftptree-view-resizer {
-        background-color: @bg-color !important;
+          .tab {
+            height: auto !important;
+            line-height: normal !important;
+            background-color: #343944 !important;
 
-        .scroller {
-          background-color: transparent !important;
-        }
-
-        .queue {
-          color: #fff !important;
-          background-color: @darkgreen !important;
-
-          .progress {
-            background-color: transparent !important;
-
-            progress {
-
+            .title {
+              margin: 0 !important;
+              padding: 7px 24px 0 12px !important;
+              background-color: transparent !important;
+              font-size: 12px !important;
             }
 
-            .name {
-
+            &::before {
+              display: none !important;
             }
 
-            .eta {
-
+            &::after {
+              box-shadow: none !important;
+              border: none !important;
             }
-          }
 
-          .list {
-            li {
+            &.active {
+              background-color: #3f4552 !important;
+            }
 
+            &:not(:last-child) {
+              border-right: solid 1px #1c1c3a !important;
             }
           }
         }
 
-        .offline {
-          background-color: transparent !important;
+        .item-views {
+          .editor {
+            background-color: #262934 !important;
+
+            .scroll-view {
+
+            }
+
+            .vertical-scrollbar {
+              .scrollbar-content {
+
+              }
+            }
+
+            .scrollbar-corner {
+              div {
+
+              }
+            }
+          }
+
+          .gutter {
+            background-color: #20222a !important;
+
+            .line-numbers {
+              .line-number {
+                .icon-right {
+                  &::before {
+
+                  }
+                }
+
+                &::before {
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > .bottom {
+        > .panel-bottom {
+          border: none !important;
+          border-top: solid 1px #1c1c3a !important;
+          border-left: solid 1px #1c1c3a !important;
+
+          .project-find {
+            .header {
+
+            }
+          }
+        }
+      }
+    }
+
+    > .right {
+      > .panel-right {
+        border: none !important;
+        border-left: solid 1px #1c1c3a !important;
+
+        .tool-bar {
+          background-color: #28294b !important;
 
           .btn {
-            background-color: @darkergrey !important;
-            background-image: none !important;
-          }
-
-          .btn:hover {
-            color: #fff !important;
-            background-color: @lightblue !important;
-          }
-        }
-
-        ::-webkit-scrollbar {
-          background-color: transparent !important;
-        }
-        ::-webkit-scrollbar-corner {
-          background-color: transparent !important;
-        }
-        ::-webkit-scrollbar-thumb {
-          background-color: @scrollbar-color !important;
-          border-color: @scrollbar-border !important;
-        }
-        ::-webkit-scrollbar-track {
-          background-color: @scrollbar-bg !important;
-        }
-      }
-    }
-
-
-    /** VERTICAL CONTAINER */
-    atom-workspace-axis.vertical {
-      background-color: @bg-color !important;
-
-      /* TOP CONTAINER */
-      atom-panel-container.top {
-
-      }
-
-      /* PANES CONTAINER */
-      atom-pane-container.panes {
-        atom-pane.pane {
-          /* EDITOR VIEWS */
-          .item-views {
+            margin: 0 !important;
+            padding: 0 !important;
             border: none !important;
-            border-left: solid 1px @border-color !important;
-          }
-
-          /* TAB BAR */
-          .tab-bar {
             background-color: transparent !important;
+            width: 46px !important;
+            height: 48px !important;
 
-            .close-icon {
-              cursor: pointer !important;
+            &::before {
+              color: #7a7ab3 !important;
+              font-size: 22px !important;
             }
 
-            .tab {
-              background-color: transparent !important;
-              cursor: pointer !important;
-
-              &::after {
-                border-color: @darkengrey !important;
-                background-color: transparent !important;
-              }
-
-              &.active {
-                background-color: @bg-editor !important;
-
-                &::after {
-                  border-bottom-color: @bg-editor !important;
-                }
-
-                .title {
-                  background-color: transparent !important;
-                }
-              }
-
-              .title {
-                background-color: transparent !important;
-              }
-            }
-          }
-        }
-      }
-
-      /* BOTTOM CONTAINER */
-      atom-panel-container.bottom {
-        border: none !important;
-        border-top: solid 1px @border-color !important;
-        border-left: solid 1px @border-color !important;
-
-        atom-panel.panel-bottom {
-          border: none !important;
-        }
-
-        /* FIND AND REPLACE */
-        .find-and-replace {
-
-        }
-
-        /* TERMINAL VIEW */
-        .platformio-ide-terminal,
-        .terminal-view,
-        .platformio-ide-terminal.terminal-view {
-          .panel-divider {
-            display: none !important;
-          }
-
-          .btn-toolbar {
-            border: none !important;
-            background-color: @green !important;
-            height: auto !important;
-            line-height: normal !important;
-            .reset-margin();
-            .reset-padding();
-
-            .btn {
-              .reset-margin();
-              .reset-padding();
-              width: 34px !important;
-              height: 34px !important;
-              line-height: normal !important;
-              border: none !important;
-              text-align: center !important;
-              background-image: none !important;
-              background-color: transparent !important;
-
-              .icon {
-                .reset-margin();
-                .reset-padding();
-              }
-
-              .icon::before {
-                .reset-margin();
-                .reset-padding();
-                height: auto !important;
-                line-height: normal !important;
-                color: @darkgreen !important;
-                font-size: 18px !important;
-              }
-
-              &:hover {
-                .icon::before {
-                  color: @darkergrey !important;
-                }
-              }
+            &:hover::before {
+              color: #fff !important;
             }
           }
 
-          .xterm {
-            .reset-margin();
-            .reset-padding();
-            padding: 12px 12px !important;
-            border: none !important;
-            background-color: @darkergrey !important;
+          .tool-bar-spacer {
+            margin: 6px 0 6px 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            height: 0 !important;
+            border-color: #1c1c3a !important;
           }
         }
-      }
-    }
-
-
-    /** RIGHT CONTAINER */
-    atom-panel-container.right {
-      atom-panel.panel-right {
-        &:not(:empty) {
-          border-left: solid 1px @border-color !important;
-        }
-      }
-
-      /* TOOL BAR */
-      .tool-bar {
-        height: auto !important;
-        line-height: normal !important;
-        margin: 0 0 0 0 !important;
-        padding: 0 !important;
-        background-color: @bg-tool-bar !important;
-
-        .btn {
-          color: @grey !important;
-          background-color: transparent !important;
-          background-image: none !important;
-        }
-
-        .btn:hover {
-          color: @darkgreen !important;
-          background-color: @lightergreen !important;
-        }
-
-        .tool-bar-spacer {
-          .reset-margin();
-          .reset-padding();
-          border: none !important;
-          width: 100% !important;
-          height: 1px !important;
-          overflow: hidden !important;
-          -webkit-mask-image: none !important;
-          background-color: @border-color !important;
-        }
-      }
-    }
-
-
-    /** TEXT EDITOR */
-    atom-text-editor {
-      background-color: @bg-editor !important;
-
-      .gutter {
-        background-color: @bg-editor !important;
-      }
-
-      ::-webkit-scrollbar {
-        background-color: transparent !important;
-      }
-      ::-webkit-scrollbar-corner {
-        background-color: transparent !important;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: @scrollbar-color !important;
-        border-color: @bg-editor !important;
-      }
-      ::-webkit-scrollbar-track {
-        background-color: @bg-editor !important;
       }
     }
   }
 
+  > .footer {
+    border: none !important;
 
-  /** FOOTER CONTAINER */
-  atom-panel-container.footer {
-    border-top: solid 1px @border-color !important;
+    > .panel-footer {
+      border: none !important;
+      border-top: solid 1px #1c1c3a !important;
 
-    atom-panel.panel-footer {
       > .status-bar {
-        .reset-margin();
-        .reset-padding();
-        height: 32px !important;
-        line-height: normal !important;
-        background-color: @bg-status-bar !important;
+        .icon {
+          margin: 0 !important;
+          padding: 0 !important;
+          width: auto !important;
+          height: auto !important;
+          line-height: normal !important;
+
+          &::before {
+            width: auto !important;
+            height: auto !important;
+            line-height: normal !important;
+            font-size: 14px !important;
+          }
+        }
 
         .flexbox-repaint-hack {
-          .reset-margin();
-          .reset-padding();
-          height: auto !important;
-          line-height: normal !important;
-          background-color: transparent !important;
-        }
+          .status-bar-left {
+            .platformio-ide-terminal {
+              background-color: transparent !important;
 
-        .icon {
-          .reset-margin();
-          .reset-padding();
-          .reset-position();
-          width: auto !important;
-          height: auto !important;
-          line-height: normal !important;
-          background-color: transparent !important;
-        }
+              .icon-plus {
+                &::before {
 
-        .icon::before {
-          .reset-margin();
-          .reset-padding();
-          .reset-position();
-          width: auto !important;
-          height: auto !important;
-          line-height: normal !important;
-          background-color: transparent !important;
-          // color: @lightgrey !important;
-          // background-color: @purple !important;
-        }
+                }
+              }
 
-        .icon:hover::before {
-          color: @lightergreen !important;
-          background-color: transparent !important;
-        }
+              .status-container {
 
-        .status-bar-left {
-          .reset-margin();
-          .reset-padding();
-          height: auto !important;
-          line-height: normal !important;
-          background-color: transparent !important;
+              }
 
-          /* TERMINAL */
-          .platformio-ide-terminal,
-          .platformio-ide-terminal.status-bar {
-            .reset-margin();
-            .reset-padding();
-            .reset-position();
-            margin-left: 8px !important;
-            margin-right: 12px !important;
-            height: auto !important;
-            line-height: normal !important;
-            background-color: transparent !important;
+              .icon-x {
+                &::before {
 
-            .list-inline {
-              .reset-margin();
-              .reset-padding();
-              .reset-position();
-              width: auto !important;
-              height: auto !important;
-              line-height: normal !important;
-
-              li {
-                .reset-margin();
-                .reset-padding();
-                .reset-position();
-                width: auto !important;
-                height: auto !important;
-                line-height: normal !important;
+                }
               }
             }
 
-            .icon:not(:last-child) {
-              margin-right: 4px !important;
+            .file-info {
+
             }
 
-            .icon::before {
-              padding: 2px 0 0 1px !important;
-              width: 28px !important;
-              height: 22px !important;
-              margin-top: 4px !important;
+            .cursor-position {
+
             }
 
-            .icon:hover::before {
-              // color: #fff !important;
-              // background-color: transparent !important;
-            }
-          }
-
-          /* FILE INFO */
-          .file-info {
-            margin-top: 6px !important;
-
-            a.current-path {
+            .selection-count {
 
             }
           }
 
-          /* CURSOR POSITION */
-          .cursor-position {
-            margin-top: 6px !important;
-
-            a.inline-block {
+          .status-bar-right {
+            .line-ending-tile {
 
             }
-          }
 
-          /* SELECTION COUNT */
-          .selection-count {
-            margin-top: 6px !important;
-          }
-        }
-
-        .status-bar-right {
-          .reset-margin();
-          .reset-padding();
-          padding-right: 8px !important;
-          height: auto !important;
-          line-height: normal !important;
-          background-color: transparent !important;
-
-          /* LINE ENDING TILE */
-          a.line-ending-tile {
-            margin-top: 7px !important;
-          }
-
-          /* ENCODING STATUS */
-          .encoding-status {
-            margin-top: 7px !important;
-
-            a {
+            .encoding-status {
 
             }
-          }
 
-          /* GRAMMAR STATUS */
-          .grammar-status {
-            margin-top: 7px !important;
-
-            a {
+            .grammar-status {
 
             }
-          }
 
-          /* GIT VIEW */
-          // is="status-bar-git"
-          .git-view {
-            margin-top: 5px !important;
+            .git-view {
+              .git-branch {
+                .icon {
 
-            .git-branch {
-              .icon {
-                margin-right: 4px !important;
+                }
+
+                .branch-label {
+
+                }
               }
 
-              .icon::before {
-                color: @lighterblue !important;
+              .git-commits {
+                .commits-ahead-label {
+
+                }
+
+                .commits-behind-label {
+
+                }
               }
 
-              .branch-label {
-                color: @lighterblue !important;
+              .git-status {
+                .icon {
+
+                }
               }
             }
 
-            .git-commits {
+            .inline-block:last-child {
+              a {
+                span {
+
+                }
+              }
+            }
+
+            .package-updates-status-view {
               .icon {
 
               }
-            }
 
-            .git-status {
-              .icon {
-                color: @lightergreen !important;
+              .available-updates-status {
+
               }
-
-              .icon::before {
-                margin-right: 4px !important;
-                color: @lightergreen !important;
-              }
-            }
-          }
-
-          > div.inline-block {
-            margin-top: 7px !important;
-
-            a {
-
-            }
-
-            a span {
-
             }
           }
         }
       }
     }
   }
+
+  > .modal {
+
+  }
+
+  atom-notifications {
+
+  }
+}
+
+
+/** GUIDES */
+.indent-guide {
+  color: #32333b !important;
+}
+.wrap-guide {
+  background-color: #3e3f4a !important;
+}
+.cursor {
+  // color: red !important;
 }
 
 
 /** TOOLTIP */
 .tooltip-inner {
-  color: @darkergreen !important;
-  background-color: @lightergreen !important;
+  color: #6c6c6c !important;
+  background-color: #d9d9d9 !important;
 }
 .tooltip.top .tooltip-arrow,
 .tooltip.top-left .tooltip-arrow,
 .tooltip.top-right .tooltip-arrow {
-  border-top-color: @lightergreen !important;
+  border-top-color: #d9d9d9 !important;
 }
 .tooltip.right .tooltip-arrow {
-  border-right-color: @lightergreen !important;
+  border-right-color: #d9d9d9 !important;
 }
 .tooltip.left .tooltip-arrow {
-  border-left-color: @lightergreen !important;
+  border-left-color: #d9d9d9 !important;
 }
 .tooltip.bottom .tooltip-arrow,
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
-  border-bottom-color: @lightergreen !important;
+  border-bottom-color: #d9d9d9 !important;
 }
 
 
@@ -712,9 +503,9 @@ atom-workspace {
   background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: @scrollbar-color !important;
-  border-color: @scrollbar-border !important;
+  background-color: #343742 !important;
+  border-color: #262934 !important;
 }
 ::-webkit-scrollbar-track {
-  background-color: @scrollbar-bg !important;
+  background-color: #262934 !important;
 }
