@@ -29,13 +29,13 @@
   > .header {
     > .panel-header {
       border: none !important;
-      border-bottom: solid 1px #1c1c3a !important;
+      border-bottom: solid 1px #1f232e !important;
 
       .title-bar {
         background-color: #343944 !important;
 
         .title {
-          color: #d9d9d9 !important;
+          color: #9295a2 !important;
           font-size: 12px !important;
         }
       }
@@ -51,7 +51,7 @@
           height: 616px !important;
 
           .tree-view-scroller {
-            background-color: #283676 !important;
+            background-color: #233461 !important;
 
             .tree-view {
               background-color: transparent !important;
@@ -81,11 +81,11 @@
             background-color: transparent !important;
           }
           ::-webkit-scrollbar-thumb {
-            background-color: #d9d9d9 !important;
-            border-color: #24376a !important;
+            background-color: #9aa0b7 !important;
+            border-color: #233461 !important;
           }
           ::-webkit-scrollbar-track {
-            background-color: #24376a !important;
+            background-color: #233461 !important;
           }
         }
 
@@ -176,7 +176,7 @@
             background-color: transparent !important;
           }
           ::-webkit-scrollbar-thumb {
-            background-color: #d9d9d9 !important;
+            background-color: #9aa0b7 !important;
             border-color: #282947 !important;
           }
           ::-webkit-scrollbar-track {
@@ -194,13 +194,13 @@
       > .panes {
         .pane {
           border: none !important;
-          border-left: solid 1px #1c1c3a !important;
+          border-left: solid 1px #1f232e !important;
         }
 
         .tab-bar {
           height: 32px !important;
           line-height: normal !important;
-          border-bottom: solid 1px #1c1c3a !important;
+          border-bottom: solid 1px #1f232e !important;
           background-color: #282b35 !important;
 
           .tab {
@@ -229,7 +229,7 @@
             }
 
             &:not(:last-child) {
-              border-right: solid 1px #1c1c3a !important;
+              border-right: solid 1px #1f232e !important;
             }
           }
         }
@@ -278,11 +278,17 @@
       > .bottom {
         > .panel-bottom {
           border: none !important;
-          border-top: solid 1px #1c1c3a !important;
-          border-left: solid 1px #1c1c3a !important;
+          border-top: solid 1px #1f232e !important;
+          border-left: solid 1px #1f232e !important;
 
           .project-find {
             .header {
+
+            }
+          }
+
+          .git-plus.info-view {
+            .output {
 
             }
           }
@@ -293,7 +299,7 @@
     > .right {
       > .panel-right {
         border: none !important;
-        border-left: solid 1px #1c1c3a !important;
+        border-left: solid 1px #1f232e !important;
 
         .tool-bar {
           background-color: #28294b !important;
@@ -307,7 +313,7 @@
             height: 48px !important;
 
             &::before {
-              color: #7a7ab3 !important;
+              color: #9aa0b7 !important;
               font-size: 22px !important;
             }
 
@@ -321,7 +327,7 @@
             padding: 0 !important;
             width: 100% !important;
             height: 0 !important;
-            border-color: #1c1c3a !important;
+            border-color: #1f232e !important;
           }
         }
       }
@@ -333,7 +339,7 @@
 
     > .panel-footer {
       border: none !important;
-      border-top: solid 1px #1c1c3a !important;
+      border-top: solid 1px #1f232e !important;
 
       > .status-bar {
         .icon {
@@ -352,54 +358,110 @@
         }
 
         .flexbox-repaint-hack {
+          margin: 0 !important;
+          padding: 0 8px 0 8px !important;
+          height: auto !important;
+          line-height: normal !important;
+
           .status-bar-left {
             .platformio-ide-terminal {
+              margin: 0 12px 0 0 !important;
+              padding: 0 !important;
+              height: auto !important;
+              line-height: normal !important;
               background-color: transparent !important;
 
-              .icon-plus {
-                &::before {
+              .icon {
+                margin: 0 4px 0 0 !important;
+                padding: 0 0 0 0 !important;
+                height: auto !important;
+                line-height: normal !important;
 
+                &::before {
+                  margin-top: 6px !important;
+                  font-size: 14px !important;
+                  color: #fff !important;
+                }
+
+                &:hover::before {
+                  color: #fff !important;
+                }
+
+                &:last-child {
+                  margin-right: 0 !important;
                 }
               }
 
               .status-container {
-
-              }
-
-              .icon-x {
-                &::before {
-
-                }
+                margin: 0 !important;
+                padding: 0 !important;
+                height: auto !important;
+                line-height: normal !important;
               }
             }
 
             .file-info {
+              margin: 7px 12px 0 0 !important;
+              padding: 0 !important;
+              height: auto !important;
+              line-height: normal !important;
 
+              a {
+                color: #fff !important;
+              }
             }
 
             .cursor-position {
+              margin: 7px 4px 0 0 !important;
+              padding: 0 !important;
+              height: auto !important;
+              line-height: normal !important;
 
+              a {
+                color: #fff !important;
+              }
             }
 
             .selection-count {
-
+              margin: 7px 0 0 0 !important;
+              padding: 0 !important;
+              height: auto !important;
+              line-height: normal !important;
+              color: #fff !important;
             }
           }
 
           .status-bar-right {
             .line-ending-tile {
-
+              margin: 6px 0 0 0 !important;
+              padding: 0 !important;
+              display: none !important;
             }
 
             .encoding-status {
+              text-transform: lowercase !important;
+              margin: 7px 12px 0 0 !important;
+              padding: 0 !important;
 
+              a {
+                color: #fff !important;
+              }
             }
 
             .grammar-status {
+              text-transform: lowercase !important;
+              margin: 7px 12px 0 0 !important;
+              padding: 0 !important;
 
+              a {
+                color: #fff !important;
+              }
             }
 
             .git-view {
+              margin: 7px 12px 0 0 !important;
+              padding: 0 !important;
+
               .git-branch {
                 .icon {
 
@@ -427,8 +489,13 @@
               }
             }
 
-            .inline-block:last-child {
+            .inline-block[data-original-title]:not(.package-updates-status-view) {
+              margin: 7px 12px 0 0 !important;
+              padding: 0 !important;
+
               a {
+                color: #5cff55 !important;
+
                 span {
 
                 }
@@ -436,8 +503,12 @@
             }
 
             .package-updates-status-view {
-              .icon {
+              margin: 6px 0 0 0 !important;
+              padding: 0 !important;
+              color: #3df1ff !important;
 
+              .icon {
+                margin-right: 4px !important;
               }
 
               .available-updates-status {
@@ -462,13 +533,13 @@
 
 /** GUIDES */
 .indent-guide {
-  color: #32333b !important;
+  color: #2e313d !important;
 }
 .wrap-guide {
-  background-color: #3e3f4a !important;
+  background-color: #333744 !important;
 }
 .cursor {
-  // color: red !important;
+  color: #4df653 !important;
 }
 
 
@@ -503,7 +574,7 @@
   background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #343742 !important;
+  background-color: #81848f !important;
   border-color: #262934 !important;
 }
 ::-webkit-scrollbar-track {
