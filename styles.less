@@ -9,14 +9,13 @@
  * http://lesscss.org
  */
 @panel-left-width: 264px;
+@tree-view-height: 596px;
+@remote-ftp-height: 364px;
 
 * {
   -webkit-mask-image: none !important;
-  -moz-mask-image: none !important;
-  mask-image: none !important;
-
-  background-image: none !important;
-  border-image: none !important;
+  // background-image: none !important;
+  // border-image: none !important;
   text-shadow: none !important;
 
   &:not(.indent-guide) {
@@ -49,7 +48,7 @@
 
         .tree-view-resizer {
           width: @panel-left-width !important;
-          height: 616px !important;
+          height: @tree-view-height !important;
 
           .tree-view-scroller {
             background-color: #233461 !important;
@@ -95,9 +94,9 @@
         .remote-ftp-view.ftptree-view-resizer {
           position: absolute !important;
           left: -(@panel-left-width) !important;
-          top: 616px !important;
+          top: @tree-view-height !important;
           width: @panel-left-width !important;
-          height: 344px !important;
+          height: @remote-ftp-height !important;
           background-color: #28294b !important;
           font-size: 12px !important;
 
@@ -242,7 +241,7 @@
 
         .item-views {
           .editor {
-            background-color: #262934 !important;
+            background-color: #20222a !important;
             font-size: 12px !important;
 
             .scroll-view {
@@ -359,113 +358,59 @@
         background-color: #333944 !important;
 
         .icon {
-          margin: 0 !important;
-          padding: 0 !important;
-          width: auto !important;
-          height: auto !important;
-          line-height: normal !important;
-
           &::before {
-            width: auto !important;
-            height: auto !important;
-            line-height: normal !important;
-            font-size: 14px !important;
+
           }
         }
 
         .flexbox-repaint-hack {
-          margin: 0 !important;
-          padding: 0 8px 0 8px !important;
-          height: auto !important;
-          line-height: normal !important;
-
           .status-bar-left {
-            > * {
-              vertical-align: middle !important;
-            }
-
             .platformio-ide-terminal {
-              margin: 0 12px 0 0 !important;
-              padding: 0 !important;
-              height: auto !important;
-              line-height: normal !important;
               background-color: transparent !important;
 
               .icon {
-                margin: 0 4px 0 0 !important;
-                padding: 0 0 0 0 !important;
-                height: auto !important;
-                line-height: normal !important;
-
                 &::before {
-                  margin-top: 6px !important;
-                  font-size: 14px !important;
-                  color: #fff !important;
+
                 }
 
                 &:hover::before {
-                  color: #fff !important;
+
                 }
 
                 &:last-child {
-                  margin-right: 0 !important;
+
                 }
               }
 
               .status-container {
-                margin: 0 !important;
-                padding: 0 !important;
-                height: auto !important;
-                line-height: normal !important;
+
               }
             }
 
             .file-info {
-              margin: 0 12px 0 0 !important;
-              padding: 0 !important;
-              height: auto !important;
-              line-height: normal !important;
-
               a {
                 color: #fff !important;
               }
             }
 
             .cursor-position {
-              margin: 0 8px 0 0 !important;
-              padding: 0 !important;
-              height: auto !important;
-              line-height: normal !important;
-
               a {
                 color: #fff !important;
               }
             }
 
             .selection-count {
-              margin: 0 0 0 0 !important;
-              padding: 0 !important;
-              height: auto !important;
-              line-height: normal !important;
-              color: #fff !important;
+
             }
           }
 
           .status-bar-right {
-            > * {
-              vertical-align: middle !important;
-            }
-
             .line-ending-tile {
-              margin: 0 0 0 0 !important;
-              padding: 0 !important;
               display: none !important;
             }
 
             .encoding-status {
               text-transform: lowercase !important;
-              margin: 7px 12px 0 0 !important;
-              padding: 0 !important;
 
               a {
                 color: #fff !important;
@@ -474,8 +419,6 @@
 
             .grammar-status {
               text-transform: lowercase !important;
-              margin: 7px 12px 0 0 !important;
-              padding: 0 !important;
 
               a {
                 color: #fff !important;
@@ -483,12 +426,8 @@
             }
 
             .git-view {
-              margin: 0 12px 0 0 !important;
-              padding: 0 !important;
-
               .icon {
-                margin: 0 4px 0 0 !important;
-                padding: 0 !important;
+
               }
 
               .git-branch {
@@ -519,9 +458,6 @@
             }
 
             .inline-block[data-original-title]:not(.package-updates-status-view) {
-              margin: 7px 12px 0 0 !important;
-              padding: 0 !important;
-
               a {
                 color: #5cff55 !important;
 
@@ -532,12 +468,10 @@
             }
 
             .package-updates-status-view {
-              margin: 6px 0 0 0 !important;
-              padding: 0 !important;
               color: #3df1ff !important;
 
               .icon {
-                margin-right: 4px !important;
+
               }
 
               .available-updates-status {
@@ -604,8 +538,18 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: #81848f !important;
-  border-color: #262934 !important;
+  border-color: #20222a !important;
 }
 ::-webkit-scrollbar-track {
-  background-color: #262934 !important;
+  background-color: #20222a !important;
 }
+
+// .indent-guide-improved {
+//   background-color: gray;
+//   &.indent-guide-stack {
+//     background-color: cyan;
+//     &.indent-guide-active {
+//       background-color: blue;
+//     }
+//   }
+// }

@@ -2,9 +2,9 @@
   "Remote-FTP":
     autoUploadOnSave: "never"
     enableTransferNotifications: true
-  "atom-ctags":
-    disableComplete: true
-  "atom-terminal": {}
+  "Sublime-Style-Column-Selection":
+    mouseButtonTrigger: "Middle"
+    selectKeyTrigger: "None"
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
@@ -12,6 +12,8 @@
     enableExtendedUnicodeSupport: true
     minimumWordLength: 2
     useCoreMovementCommands: false
+  "autocomplete-python":
+    useKite: false
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -32,6 +34,8 @@
       "timecop"
       "welcome"
       "deprecation-cop"
+      "symbols-view"
+      "highlight-column"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -56,6 +60,19 @@
       "atom-ctags"
       "symbols-view-plus"
       "platformio-ide-terminal"
+      "merge-conflicts"
+      "highlight-selected"
+      "atom-beautify"
+      "linter"
+      "autocomplete-paths"
+      "linter-jshint"
+      "script"
+      "docblockr"
+      "editorconfig"
+      "sublime-style-column-selection"
+      "linter-csslint"
+      "atom-ternjs"
+      "expose"
     ]
     reopenProjectMenuCount: 10
     restorePreviousWindowsOnStart: true
@@ -75,6 +92,8 @@
   "find-and-replace":
     focusEditorAfterSearch: true
     liveSearchMinimumCharacters: 2
+  fonts:
+    fontFamily: "DejaVu Mono"
   "git-diff":
     showIconsInEditorGutter: true
   "menu-manager":
@@ -84,15 +103,6 @@
   "one-dark-ui":
     layoutMode: "Compact"
     tabSizing: "Minimum"
-  "platformio-ide-terminal":
-    core:
-      workingDirectory: "Home"
-    style:
-      animationSpeed: 0
-      fontSize: "13"
-      theme: "homebrew"
-    toggles:
-      runInsertedText: false
   "project-manager":
     alwaysOpenInSameWindow: false
     environmentSpecificProjects: false
@@ -101,16 +111,6 @@
     savePathsRelativeToHome: false
     showPath: true
     sortBy: "title"
-  "project-viewer":
-    autohide: false
-    customHoverColor: "#d8c13a"
-    customSelectedColor: "#d8c13a"
-    customTitleColor: "#d8c13a"
-    customWidth: 240
-    hideHeader: false
-    keepContext: false
-    onlyIcons: true
-    statusBarVisibility: true
   "status-bar": {}
   "symbols-view-plus":
     plusConfigurations:
@@ -121,6 +121,7 @@
     enableMruTabSwitching: false
   "tool-bar":
     position: "Right"
-  "tree-view": {}
+  "tree-view":
+    showOnRightSide: false
   welcome:
     showOnStartup: false

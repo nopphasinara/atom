@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+        "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-7409-1lwftw9"
+    ]
+  ],
+  "_from": "../d-117122-7409-1g4pax/package.tgz",
+  "_id": "autoprefixer@3.6.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/autoprefixer",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+    "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117122-7409-1g4pax/package.tgz",
+  "_shasum": "971adbda999d3985d4891796e3ebe84f3560e4d2",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-7409-1g4pax/package.tgz",
+  "_where": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-7409-1lwftw9",
+  "activationCommands": {
+    "atom-workspace": [
+      "core:save",
+      "autoprefixer"
+    ]
+  },
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/atom-autoprefixer/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.1",
+    "postcss": "^5.0.14",
+    "postcss-safe-parser": "^2.0.0",
+    "postcss-scss": "^0.4.0"
+  },
+  "description": "Prefix CSS and SCSS",
+  "devDependencies": {
+    "xo": "*"
+  },
+  "engines": {
+    "atom": ">=1.13.0"
+  },
+  "homepage": "https://github.com/sindresorhus/atom-autoprefixer#readme",
+  "keywords": [
+    "css",
+    "scss",
+    "prefix",
+    "prefixer"
+  ],
+  "license": "MIT",
+  "name": "autoprefixer",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# autoprefixer\n\n> Prefix CSS and SCSS with [Autoprefixer](https://github.com/postcss/autoprefixer)\n\n\n## Install\n\n```\n$ apm install autoprefixer\n```\n\nOr, Settings → Install → Search for `autoprefixer`\n\n\n## Usage\n\n- Open the Command Palette and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284892/51b999b2-9fce-11e3-9e9d-5e6a9cb4e933.gif)\n\n- In an HTML file, select the CSS, open the Command Palette, and type `autoprefixer`.\n\n\t![](https://f.cloud.github.com/assets/1223565/2284893/51e4bd18-9fce-11e3-8b1a-282f664593e9.gif)\n\n\n## Settings\n\nThere's a `Run on Save` option and more in the settings.\n\n\n## Keyboard shortcut\n\nSet the keyboard shortcut you want in your [keymap](http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings):\n\n```cson\n'atom-text-editor':\n\t'cmd-shift-x': 'autoprefixer'\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](https://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/atom-autoprefixer.git"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "version": "3.6.1",
+  "xo": {
+    "esnext": true,
+    "globals": [
+      "atom"
+    ]
+  }
+}

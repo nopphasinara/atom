@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
+        "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
-        "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
+        "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
+        "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6786-udk6wq"
+      "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-1649-4239ur"
     ]
   ],
-  "_from": "../d-117111-6786-1sn9fi0/package.tgz",
-  "_id": "Remote-FTP@0.10.5",
+  "_from": "../d-117122-1649-19gjmev/package.tgz",
+  "_id": "Remote-FTP@0.10.6",
   "_inCache": true,
   "_installable": true,
   "_location": "/Remote-FTP",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
+    "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
-    "spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
+    "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
+    "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117111-6786-1sn9fi0/package.tgz",
-  "_shasum": "7c2c9513e67abd943af4d94431e7d2061239b4b6",
+  "_resolved": "file:../d-117122-1649-19gjmev/package.tgz",
+  "_shasum": "ac2ca28ab1b6acb5f265273fc8da33064af6b7a9",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/d-117111-6786-1sn9fi0/package.tgz",
-  "_where": "/private/var/folders/nx/psx5q0td4s9bgdcgzmkwggx80000gn/T/apm-install-dir-117111-6786-udk6wq",
+  "_spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-1649-19gjmev/package.tgz",
+  "_where": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-1649-4239ur",
   "activationCommands": [],
   "bugs": {
     "url": "https://github.com/mgrenier/remote-ftp/issues"
@@ -79,5 +79,5 @@
     "type": "git",
     "url": "git+https://github.com/mgrenier/remote-ftp.git"
   },
-  "version": "0.10.5"
+  "version": "0.10.6"
 }

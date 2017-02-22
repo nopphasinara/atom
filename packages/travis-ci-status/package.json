@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+        "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-6413-pubxb3"
+    ]
+  ],
+  "_from": "../d-117122-6413-r5sd0y/package.tgz",
+  "_id": "travis-ci-status@1.3.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/travis-ci-status",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+    "spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117122-6413-r5sd0y/package.tgz",
+  "_shasum": "7101d6e912b845a571ad5431421c79b6f7b91b80",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/d-117122-6413-r5sd0y/package.tgz",
+  "_where": "/private/var/folders/hd/7_wh06bs63dg777htgddl_nw0000gn/T/apm-install-dir-117122-6413-pubxb3",
+  "author": {
+    "name": "Tom Bell",
+    "email": "tomb@tomb.io",
+    "url": "https://github.com/tombell"
+  },
+  "bugs": {
+    "url": "https://github.com/tombell/travis-ci-status/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "contributors": [
+    {
+      "name": "Daniel J Griffiths",
+      "email": "dgriffiths@section214.com",
+      "url": "https://github.com/section214"
+    },
+    {
+      "name": "José Magalhães",
+      "email": "magalhas@gmail.com",
+      "url": "https://github.com/magalhas"
+    }
+  ],
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "travis-ci": "^2.0.3"
+  },
+  "description": "Add Travis CI status of the project to the Atom status bar. ",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/tombell/travis-ci-status#readme",
+  "license": "MIT",
+  "main": "./lib/travis-ci-status",
+  "name": "travis-ci-status",
+  "optionalDependencies": {},
+  "readme": "# Travis CI Status [![Build Status](https://travis-ci.org/tombell/travis-ci-status.svg)](https://travis-ci.org/tombell/travis-ci-status)\n\nAdd Travis CI status of the project to the Atom status bar.\n\n![Atom Status Bar Screenshot](https://raw.githubusercontent.com/tombell/travis-ci-status/master/travis_ci_status.png)\n\n## Installing\n\nUse the Atom package manager, which can be found in the Settings view or run\n`apm install travis-ci-status` from the command line.\n\n## Usage\n\nThe Travis CI build status for your repository will be indicated by the\nclock-arrow icon in the status bar. The icon will appear orange when it's\nrequesting the build status, green if the build was successful and red if the\nbuild failed.\n\nThe build status is updated when the project is first opened in Atom and from\nthen on whenever the \"status\" of the project repository changes. The handling of\nthese events was borrowed from the `git-view.coffee` part of the `status-bar`\npackage.\n\n### Remote Name\n\nIf the remote repository Travis is configured to build is named something other\nthan `origin`, you can specify a different name in the **Travis Ci Remote Name**\nfield in the settings view.\n\nPer-repo remotes are also now supported. To specify a per-repo remote, enter it in the **Remote Overrides** field in the settings view in the format `{\"repo\":\"remote\"}`. In other words, if I wanted to add the Travis CI Status package with the remote \"upstream\", I would enter it as follows:\n\n`{\"tombell/travis-ci-status\":\"upstream\"}`\n\n### Travis Pro\n\nYou are able to use this with Travis Pro if you enable it in the settings view.\nYou will also need to generate and set a\n[GitHub API token](https://github.com/settings/tokens/new) to be able to\nauthenticate with the Travis Pro API.\n\n### Commands\n\nThe following commands are available for users to keymap.\n\n* `travis-ci-status:toggle` - Toggle the status bar entry\n* `travis-ci-status:toggle-build-matrix` - Toggle the build matrix panel\n* `travis-ci-status:open-on-travis` - Open the project on the Travis CI site\n\n### Note\n\nSince August 27, 2016 the Travis CI Status package is being maintained by [Ghost1227](https://github.com/ghost1227). While development will be happening in tombell's repo, please direct any messages to me through [my website](https://section214.com).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tombell/travis-ci-status.git"
+  },
+  "version": "1.3.0"
+}

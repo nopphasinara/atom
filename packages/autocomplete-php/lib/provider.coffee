@@ -7,8 +7,7 @@ module.exports =
 
   # This will work on JavaScript and CoffeeScript files, but not in js comments.
   selector: '.source.php'
-  disableForSelector: ''
-  # disableForSelector: '.source.php .comment'
+  disableForSelector: '.source.php .comment'
   # keyword.operator.class.php
 
   # This will take priority over the default provider, which has a priority of 0.

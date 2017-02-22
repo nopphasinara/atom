@@ -66,6 +66,31 @@
   }
   { type: "spacer" }
   {
+    tooltip: "Symbol Tree View"
+    callback: "symbols-tree-view:toggle"
+    iconset: "fa", icon: "chrome"
+    type: "button"
+  }
+  {
+    tooltip: "Expose Toggle"
+    callback: "expose:toggle"
+    iconset: "fa", icon: "chrome"
+    type: "button"
+  }
+  {
+    tooltip: "Node Debugger Toggle"
+    callback: "node-debugger:start-resume"
+    iconset: "fa", icon: "chrome"
+    type: "button"
+  }
+  {
+    tooltip: "Node Debugger Stop"
+    callback: "node-debugger:stop"
+    iconset: "fa", icon: "chrome"
+    type: "button"
+  }
+  { type: "spacer" }
+  {
     tooltip: "Dev Tools"
     callback: "window:toggle-dev-tools"
     iconset: "fa", icon: "chrome"
