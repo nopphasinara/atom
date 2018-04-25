@@ -217,7 +217,7 @@
       "script"
     ]
   editor:
-    fontFamily: "RobotoMono-Regular, master-icons"
+    fontFamily: "Hack, master-icons"
     fontSize: 14
     lineHeight: 1.6
     maxScreenLineLength: 8000
