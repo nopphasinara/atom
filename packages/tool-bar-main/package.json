@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "atom-package-deps": "^4.6.1"
+    "atom-package-deps": "^4.6.2"
   },
   "description": "Main tool bar",
   "devDependencies": {},
