@@ -1,0 +1,49 @@
+// Floating panel for the editor to add stuff into
+ccp-container {
+  position: fixed;
+  display: flex;
+  border-radius: 3px;
+  background-color: @ccpBackground;
+  border: 1px solid @ccpAmber;
+  flex-direction: column;
+	z-index: 5;
+
+  .invisible {
+    display: none;
+  }
+
+  @arrow: 10px;
+
+  & ccp-triangle {
+    position: absolute;
+    width: @arrow;
+    height: @arrow;
+    left: ~"calc(50% - "(@arrow / 2)~")";
+    bottom: ~"calc(100% - "(@arrow / 2)~")";
+    box-shadow: 1px -1px 0 0 @ccpAmber;
+    background-color: inherit;
+    transform: rotate(-45deg);
+  }
+
+  &.down {
+    ccp-triangle {
+      top: ~"calc(100% - "(@arrow / 2)~")";
+      bottom: auto;
+      box-shadow: -1px 1px 0 0 @ccpAmber;
+    }
+  }
+
+  canvas {
+    display: none;
+  }
+}
+
+ccp-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.26);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

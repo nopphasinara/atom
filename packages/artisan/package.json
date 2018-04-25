@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-6411-1ozuzod.mjos2fyldi"
+    ]
+  ],
+  "_from": "../d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+  "_id": "artisan@0.3.2",
+  "_inCache": true,
+  "_location": "/artisan",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+  "_shasum": "211aa448037f1fa5f46d975f2850c3f8c02f9003",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6411-4uq60t.rmxn4gqfr/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-6411-1ozuzod.mjos2fyldi",
+  "bugs": {
+    "url": "https://github.com/dzava/atom-artisan/issues"
+  },
+  "dependencies": {},
+  "description": "Laravel artisan commands inside Atom",
+  "deserializers": {
+    "artisan/ResultView": "deserializeResultView"
+  },
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/dzava/atom-artisan#readme",
+  "keywords": [
+    "laravel",
+    "artisan"
+  ],
+  "license": "MIT",
+  "main": "./lib/artisan.js",
+  "name": "artisan",
+  "optionalDependencies": {},
+  "readme": "## Laravel Artisan commands for Atom\n\nInspired by the Laravel artisan plugin for Sublime Text, this package  allows you to run artisan commands from inside Atom.\n\n### Usage\n\nOpen the command menu and select the command you want to run, if a command requires additional arguments (like the `make` commands), you will be prompted for additional input.\n\n### Custom commands\n\nSet the `Custom commands` setting to a JSON file containing custom commands. Custom commands will override the default when the names match.\n\n#### Command structure\n```json\n{\n  \"name\": \"the name that will appear in the command menu\",\n  \"command\": \"the artisan command to run\",\n  \"needsInput\": true,\n  \"caption\": \"the message that will be displayed when asking for input\",\n  \"showInPanel\": true\n}\n```\n\n### Notes\n\n- The command will run on the first valid Laravel project (a project where artisan exists in the project root).\n- Commands that require long running processes are not supported (queue:work, serve).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzava/atom-artisan.git"
+  },
+  "version": "0.3.2"
+}
