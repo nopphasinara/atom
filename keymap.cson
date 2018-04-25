@@ -1,0 +1,316 @@
+# Your keymap
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+'body':
+  'cmd-k': 'unset!'
+  'cmd-1': 'unset!'
+  'cmd-2': 'unset!'
+  'cmd-3': 'unset!'
+  'cmd-4': 'unset!'
+  'cmd-5': 'unset!'
+  'cmd-6': 'unset!'
+  'cmd-7': 'unset!'
+  'cmd-8': 'unset!'
+  'cmd-9': 'unset!'
+  'cmd-0': 'unset!'
+  'cmd-+': 'unset!'
+  'cmd--': 'unset!'
+  'cmd-=': 'unset!'
+  'cmd-_': 'unset!'
+  'ctrl-alt-cmd-p': 'unset!'
+  'ctrl-cmd-f': 'unset!'
+  'alt-cmd--': 'unset!'
+  'alt-cmd-_': 'unset!'
+  'alt-cmd-=': 'unset!'
+  'alt-cmd-+': 'unset!'
+  'home': 'unset!'
+  'end': 'unset!'
+  'pageup': 'unset!'
+  'pagedown': 'unset!'
+  'ctrl-home': 'unset!'
+  'ctrl-end': 'unset!'
+  'ctrl-pageup': 'unset!'
+  'ctrl-pagedown': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'shift-ctrl-tab': 'pane:show-previous-item'
+  'shift-cmd-t': 'pane:reopen-closed-item'
+  'shift-ctrl-left': 'pane:move-item-left'
+  'shift-ctrl-right': 'pane:move-item-right'
+  'cmd-{': 'pane:show-previous-item'
+  'cmd-}': 'pane:show-next-item'
+  'alt-cmd-down': 'window:focus-pane-below'
+  'alt-cmd-up': 'window:focus-pane-above'
+  'alt-cmd-left': 'window:focus-pane-on-left'
+  'alt-cmd-right': 'window:focus-pane-on-right'
+  'ctrl-down': 'window:focus-pane-below'
+  'ctrl-up': 'window:focus-pane-above'
+  'ctrl-left': 'window:focus-pane-on-left'
+  'ctrl-right': 'window:focus-pane-on-right'
+  'shift-cmd-r': 'window:reload'
+  'shift-cmd-n': 'application:new-window'
+  'shift-cmd-a': 'application:add-project-folder'
+  'shift-cmd-i': 'window:toggle-dev-tools'
+  'alt-cmd-i': 'settings-view:install-packages-and-themes'
+  'alt-cmd-o': 'tree-view:show-current-file-in-file-manager'
+  'alt-cmd-g': 'open-on-github:repository'
+  'alt-cmd-f': 'open-on-github:file'
+
+
+'.advanced-open-file atom-text-editor':
+  'tab': 'advanced-open-file:autocomplete'
+  'up': 'advanced-open-file:move-cursor-up'
+  'down': 'advanced-open-file:move-cursor-down'
+  'alt-delete': 'advanced-open-file:delete-path-component'
+
+
+'.platform-darwin .advanced-open-file atom-text-editor':
+  'cmd-z': 'advanced-open-file:undo'
+
+
+'.platform-darwin atom-workspace':
+  'cmd-o': 'advanced-open-file:toggle'
+  'cmd-. cmd-c': 'change-case:camel'
+  'cmd-. cmd-s': 'change-case:snake'
+  'cmd-. cmd-k': 'change-case:kebab'
+  'shift-cmd-k': 'unset!'
+
+
+'.platform-darwin atom-text-editor':
+  'ctrl-backspace': 'bracket-matcher:remove-matching-brackets'
+  'cmd-g': 'find-and-replace:find-next'
+  'shift-cmd-g': 'find-and-replace:find-previous'
+  'cmd-d': 'find-and-replace:select-next'
+  'ctrl-g': 'go-to-line:toggle'
+  'ctrl-alt-cmd-g': 'grammar-selector:show'
+  'ctrl-o': 'link:open'
+  'cmd-r': 'symbols-view:toggle-file-symbols'
+  'alt-cmd-a': 'aligner:align'
+  'shift-f11': 'remote-sync:upload-file'
+  'f11': 'remote-sync:download-file'
+
+
+'.entries.list-tree .file.entry.list-item':
+  'shift-f11': 'remote-sync:upload-file'
+  'f11': 'remote-sync:download-file'
+
+
+'.entries.list-tree .header.list-item, .header.list-item.project-root-header':
+  'shift-f11': 'remote-sync:upload-folder'
+  'f11': 'remote-sync:download-folder'
+
+
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+  'shift-cmd-p': 'command-palette:toggle'
+
+
+'.platform-darwin atom-text-editor:not([mini])':
+  'shift-enter': 'emmet:expand-abbreviation'
+  'ctrl-backspace': 'emmet:remove-tag'
+  'ctrl-m': 'emmet:matching-pair'
+  'shift-cmd-e': 'emmet:balance-outward'
+  'cmd-e': 'emmet:balance-inward'
+  'shift-alt-tab': 'emmet:select-previous-item'
+  'alt-tab': 'emmet:select-next-item'
+  'ctrl-c': 'emmet:evaluate-math-expression'
+  'ctrl-=': 'emmet:increment-number-by-1'
+  'ctrl--': 'emmet:decrement-number-by-1'
+  'shift-ctrl-=': 'emmet:increment-number-by-10'
+  'shift-ctrl--': 'emmet:decrement-number-by-10'
+  'ctrl-0': 'emmet:encode-decode-data-url'
+  'ctrl-u': 'emmet:update-tag'
+  'cmd-m': 'emmet:merge-lines'
+  'ctrl-w': 'emmet:wrap-with-abbreviation'
+  'ctrl-i': 'emmet:interactive-expand-abbreviation'
+
+
+'.platform-darwin':
+  'shift-cmd-f': 'project-find:show'
+  'cmd-f': 'find-and-replace:show'
+  # 'alt-cmd-f': 'find-and-replace:show-replace'
+  'cmd-p': 'fuzzy-finder:toggle-file-finder'
+  'cmd-b': 'fuzzy-finder:toggle-buffer-finder'
+  'cmd-,': 'settings-view:open'
+  # 'shift-cmd-\\': 'tree-view:toggle'
+  'cmd-escape': 'tree-view:reveal-active-file'
+  'ctrl-\\': 'tree-view:toggle-focus'
+  'shift-cmd-o': 'project-manager:list-projects'
+
+
+'.platform-darwin .find-and-replace':
+  'shift-enter': 'find-and-replace:show-previous'
+  'shift-cmd-enter': 'find-and-replace:find-next-selected'
+  'cmd-enter': 'find-and-replace:confirm'
+  'alt-enter': 'find-and-replace:find-all'
+  'alt-cmd-r': 'find-and-replace:toggle-regex-option'
+  'alt-cmd-c': 'find-and-replace:toggle-case-option'
+  'alt-cmd-s': 'find-and-replace:toggle-selection-option'
+  'alt-cmd-w': 'find-and-replace:toggle-whole-word-option'
+
+
+'.platform-darwin .project-find':
+  'cmd-enter': 'project-find:confirm'
+  'alt-cmd-r': 'project-find:toggle-regex-option'
+  'alt-cmd-c': 'project-find:toggle-case-option'
+  'alt-cmd-w': 'project-find:toggle-whole-word-option'
+
+
+'.find-and-replace, .project-find, .project-find .results-view':
+  'tab': 'find-and-replace:focus-next'
+  'shift-tab': 'find-and-replace:focus-previous'
+
+
+'.platform-darwin .find-and-replace .replace-container atom-text-editor':
+  'cmd-enter': 'find-and-replace:replace-all'
+
+
+'.platform-darwin .project-find .replace-container atom-text-editor':
+  'cmd-enter': 'project-find:replace-all'
+
+
+'.github-StagingView':
+  'tab': 'core:focus-next'
+  'shift-tab': 'core:focus-previous'
+  'left': 'core:move-left'
+
+
+'.github-CommitView-editor atom-text-editor:not([mini])':
+  'shift-tab': 'core:focus-previous'
+
+
+'.github-FilePatchView':
+  'right': 'core:move-right'
+  'tab': 'github:select-next-hunk'
+  'shift-tab': 'github:select-previous-hunk'
+
+
+'.github-Prompt-input':
+  'enter': 'core:confirm'
+  'esc': 'tool-panel:unfocus'
+
+
+'.github-Dialog':
+  'shift-tab': 'core:focus-previous'
+
+
+'.github-Dialog input':
+  'enter': 'core:confirm'
+
+
+'.go-to-line atom-text-editor[mini]':
+  'enter': 'core:confirm'
+  'escape': 'core:cancel'
+
+
+'.platform-darwin .go-to-line atom-text-editor[mini]':
+  'escape': 'core:cancel'
+
+
+'atom-text-editor':
+  'shift-tab': 'snippets:expand'
+  'cmd-backspace': 'editor:delete-line'
+  'ctrl-m': 'bracket-matcher:go-to-matching-bracket'
+  'alt-cmd-p': 'project-manager:edit-projects'
+  'alt-up': 'editor:move-to-beginning-of-previous-paragraph'
+  'alt-down': 'editor:move-to-beginning-of-next-paragraph'
+  'alt-shift-up': 'editor:select-to-beginning-of-previous-paragraph'
+  'alt-shift-down': 'editor:select-to-beginning-of-next-paragraph'
+  'alt-4': 'gc:tab-stop'
+  'alt-e': 'gc:php-echo'
+  'alt-1': 'gc:blade-echo'
+  'alt-[': 'gc:blade-e'
+  'alt-space': 'gc:spaces'
+  'alt-/': 'gc:blade-comment'
+  'alt-.': 'gc:dots'
+  'alt-=': 'gc:plus'
+  'alt->': 'gc:ddots'
+  'alt-+': 'gc:dplus'
+  'alt-enter': 'gc:insert-br'
+  'alt-p': 'gc:insert-p'
+  'shift-cmd-m': 'bracket-matcher:select-inside-brackets'
+  'ctrl-alt-top': 'pane:split-top-and-copy-active-item'
+  'ctrl-alt-right': 'pane:split-right-and-copy-active-item'
+  'ctrl-alt-bottom': 'pane:split-bottom-and-copy-active-item'
+  'ctrl-alt-left': 'pane:split-left-and-copy-active-item'
+
+
+'atom-text-editor:not([mini])':
+  'cmd-. cmd-u': 'editor:upper-case'
+  'cmd-. cmd-l': 'editor:lower-case'
+  'tab': 'snippets:next-tab-stop'
+  'shift-tab': 'snippets:previous-tab-stop'
+  'alt-cmd-tab': 'editor:auto-indent'
+  'cmd-. cmd-r': 'sort-lines:sort'
+  'shift-enter': 'emmet:expand-abbreviation'
+  'ctrl-backspace': 'emmet:remove-tag'
+  'ctrl-m': 'emmet:matching-pair'
+  'shift-cmd-e': 'emmet:balance-outward'
+  'cmd-e': 'emmet:balance-inward'
+  'shift-alt-tab': 'emmet:select-previous-item'
+  'alt-tab': 'emmet:select-next-item'
+  'ctrl-c': 'emmet:evaluate-math-expression'
+  'ctrl-=': 'emmet:increment-number-by-1'
+  'ctrl--': 'emmet:decrement-number-by-1'
+  'shift-ctrl-=': 'emmet:increment-number-by-10'
+  'shift-ctrl--': 'emmet:decrement-number-by-10'
+  'ctrl-0': 'emmet:encode-decode-data-url'
+  'ctrl-u': 'emmet:update-tag'
+  'cmd-m': 'emmet:merge-lines'
+  'ctrl-w': 'emmet:wrap-with-abbreviation'
+  'ctrl-i': 'emmet:interactive-expand-abbreviation'
+
+
+'atom-text-editor.autocomplete-active':
+  'enter': 'autocomplete-plus:confirm'
+  'escape': 'autocomplete-plus:cancel'
+
+
+'.platform-darwin .tree-view':
+  'cmd-c': 'tree-view:copy'
+  'cmd-x': 'tree-view:cut'
+  'cmd-v': 'tree-view:paste'
+  'right': 'tree-view:expand-item'
+  'left': 'tree-view:collapse-directory'
+  'alt-cmd-o': 'tree-view:show-in-file-manager'
+
+
+'.tree-view':
+  'enter': 'tree-view:expand-item'
+  'right': 'tree-view:expand-item'
+  'left': 'tree-view:collapse-directory'
+  'escape': 'tree-view:unfocus'
+  'alt-cmd-c': 'tree-view:copy-full-path'
+  'm': 'tree-view:move'
+  'a': 'tree-view:add-file'
+  'shift-a': 'tree-view:add-folder'
+  'd': 'tree-view:duplicate'
+  'r': 'tree-view:rename'
+  'backspace': 'tree-view:remove'
+  'up': 'core:move-up'
+  'down': 'core:move-down'
+
+
+'.tree-view-dialog atom-text-editor[mini]':
+  'enter': 'core:confirm'
+  'escape': 'core:cancel'
+
+
+'.project-manager input':
+  'enter': 'core:confirm'
+
+
+'.project-manager atom-text-editor[mini]':
+  'shift-enter': 'project-manager:alt-confirm'
+
+
+'.platform-darwin atom-workspace atom-text-editor:not(.mini)':
+  'cmd-. cmd-.': 'sass-autocompile:compile-to-file'
+  'ctrl-shift-m': 'unset!'
+
+'ccp-container':
+  'escape': 'chrome-color-picker:close'
+  'enter': 'chrome-color-picker:saveAndClose'
+  'cmd-enter': 'chrome-color-picker:pickcolor'

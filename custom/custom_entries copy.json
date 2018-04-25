@@ -1,0 +1,194 @@
+[
+  {
+    "icon": "navicon-round",
+    "callback": "command-palette:toggle",
+    "tooltip": "Command Palette",
+    "iconset": "ion",
+    "type": "button",
+    "className": "gct, gct-process-palette"
+  },
+  {
+    "type": "spacer",
+    "className": "gct, gct-spacer"
+  },
+  {
+    "icon": "document-text",
+    "callback": "application:open-file",
+    "tooltip": "Open File",
+    "iconset": "ion",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "folder",
+    "callback": "application:open-folder",
+    "tooltip": "Open Folder",
+    "iconset": "ion",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "archive",
+    "callback": "core:save",
+    "tooltip": "Save File",
+    "iconset": "ion",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "type": "spacer",
+    "className": "gct, gct-spacer"
+  },
+  {
+    "icon": "columns",
+    "callback": "pane:split-right",
+    "tooltip": "Split screen - Horizontally",
+    "iconset": "fa",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "star",
+    "callback": "atom-beautify:beautify-editor",
+    "tooltip": "Beautify",
+    "iconset": "fa",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "json",
+    "callback": "pretty-json:prettify",
+    "tooltip": "JSON",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-duck"
+  },
+  {
+    "icon": "sort-alphabetical",
+    "callback": "sort-lines:sort",
+    "tooltip": "Sort Lines",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-sort"
+  },
+  {
+    "type": "spacer",
+    "className": "gct, gct-spacer"
+  },
+  {
+    "icon": "git-plain",
+    "callback": "git-control:toggle",
+    "tooltip": "Git control",
+    "iconset": "devicon",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "diff",
+    "callback": "split-diff:toggle",
+    "tooltip": "Split Diff",
+    "iconset": "devicon",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "upload",
+    "callback": "remote-sync:upload-file",
+    "tooltip": "Upload File",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "icon": "download",
+    "callback": "remote-sync:download-file",
+    "tooltip": "Download File",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-run"
+  },
+  {
+    "type": "spacer",
+    "className": "gct, gct-spacer"
+  },
+  {
+    "icon": "keyboard",
+    "callback": "key-binding-resolver:toggle",
+    "tooltip": "Toggle Key Binding Resolver",
+    "iconset": "",
+    "type": "button",
+    "className": "gct, gct-key-binding"
+  },
+  {
+    "icon": "target",
+    "callback": "editor:log-cursor-scope",
+    "tooltip": "Cursor Scope",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-cursor-scope"
+  },
+  {
+    "icon": "wrap",
+    "callback": "editor:toggle-soft-wrap",
+    "tooltip": "Toggle Soft Wrap",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-wrap"
+  },
+  {
+    "icon": "eye",
+    "callback": "markdown-preview:toggle",
+    "tooltip": "Markdown Preview",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-preview"
+  },
+  {
+    "icon": "google-translate",
+    "url": "https://translate.google.com",
+    "tooltip": "Google Translate",
+    "iconset": "mdi",
+    "type": "url",
+    "className": "gct, gct-translate"
+  },
+  {
+    "icon": "refresh",
+    "callback": "window:reload",
+    "tooltip": "Reload Window",
+    "iconset": "ion",
+    "type": "button",
+    "className": "gct, gct-run",
+    "priority": -999
+  },
+  {
+    "icon": "console",
+    "callback": "window:toggle-dev-tools",
+    "tooltip": "Dev Tools",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-dev-tools",
+    "priority": -999
+  },
+  {
+    "type": "spacer",
+    "className": "gct, gct-spacer"
+  },
+  {
+    "icon": "dots-vertical",
+    "callback": "window:toggle-right-dock",
+    "tooltip": "Toggle Right Dock",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-dev-tools",
+    "priority": -999
+  },
+  {
+    "icon": "dots-horizontal",
+    "callback": "window:toggle-bottom-dock",
+    "tooltip": "Toggle Bottom Dock",
+    "iconset": "mdi",
+    "type": "button",
+    "className": "gct, gct-dev-tools",
+    "priority": -999
+  }
+]

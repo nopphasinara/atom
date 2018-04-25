@@ -1,0 +1,334 @@
+"*":
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
+    ignoredPatterns: [
+      "*.pyc"
+      "*.pyo"
+      "*.DS_Store"
+      "*.md"
+      "*.db"
+    ]
+  "aligner-javascript":
+    ":-alignment": "left"
+  "aligner-scss":
+    "!-enabled": true
+  artisan:
+    notifications: false
+    php: "/usr/local/bin/php"
+  "atom-autocomplete-php":
+    gotoKey: "ctrl"
+    insertNewlinesForUseStatements: true
+  "autocomplete-font-awesome":
+    version: "4.7.0"
+  "autocomplete-js-import": {}
+  "autocomplete-modules": {}
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
+    defaultProvider: "Symbol"
+    enableAutoConfirmSingleSuggestion: false
+    enableExtendedUnicodeSupport: true
+    fileBlacklist: [
+      "*.md"
+      "*.txt"
+    ]
+    minimumWordLength: 1
+    strictMatching: true
+  "autocomplete-snippets": {}
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  "chrome-color-picker":
+    General:
+      preferredFormat: "hex"
+      showButtons: true
+    HexColors:
+      fallbackAlphaFormat: "hsl"
+      forceHexSize: "hex6"
+      uppercaseHex: true
+  colorio:
+    hsl: true
+    hsv: true
+  "command-palette":
+    preserveLastSearch: true
+  "command-toolbar": {}
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    automaticallyUpdate: false
+    disabledPackages: [
+      "autosave"
+      "background-tips"
+      "language-c"
+      "language-csharp"
+      "language-toml"
+      "welcome"
+      "spell-check"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "archive-view"
+      "chrome-color-picker"
+      "color-picker"
+      "colorio"
+      "autoflow"
+      "bookmarks"
+      "bracket-matcher"
+      "command-palette"
+      "dev-live-reload"
+      "encoding-selector"
+      "find-and-replace"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "go-to-line"
+      "grammar-selector"
+      "image-view"
+      "keybinding-resolver"
+      "link"
+      "markdown-preview"
+      "notifications"
+      "open-on-github"
+      "settings-view"
+      "snippets"
+      "spell-check"
+      "symbols-view"
+      "tree-view"
+      "project-manager"
+      "atom-alignment"
+      "remote-sync"
+      "sass-autocompile"
+      "sort-lines"
+      "select-text-between-tags"
+      "emmet"
+      "autocomplete-plus"
+      "autocomplete-xml"
+      "atom-ternjs"
+      "hyperclick"
+      "atom-autocomplete-php"
+      "command-toolbar"
+      "tool-bar"
+      "aligner"
+      "simple-align"
+      "advanced-open-file"
+      "browser-plus"
+      "change-case"
+      "context-menu-manager"
+      "pretty-json"
+      "script"
+      "split-diff"
+      "advanced-open-file"
+      "aligner"
+      "aligner-coffeescript"
+      "aligner-css"
+      "aligner-javascript"
+      "aligner-php"
+      "aligner-scss"
+      "aligner-typescript"
+      "artisan"
+      "atom-autocomplete-php"
+      "atom-bootstrap4"
+      "atom-ternjs"
+      "autocomplete-ctags"
+      "autocomplete-font-awesome"
+      "autocomplete-js-import"
+      "autocomplete-modules"
+      "autocomplete-paths"
+      "autocomplete-sql"
+      "blade-snippets"
+      "browser-plus"
+      "busy-signal"
+      "change-case"
+      "coffee-autocompile"
+      "command-toolbar"
+      "context-menu-manager"
+      "css-hyperclick"
+      "double-tag"
+      "emmet"
+      "file-hyperclick"
+      "git-plus"
+      "hyperclick"
+      "javascript-snippets"
+      "jquery-snippets"
+      "js-hyperclick"
+      "language-blade"
+      "laravel"
+      "menu-manager"
+      "path-hyperclick"
+      "php-hyperclick"
+      "php-server"
+      "pretty-json"
+      "project-manager"
+      "remote-sync"
+      "sass-autocompile"
+      "script"
+      "sort-lines"
+      "split-diff"
+      "tool-bar"
+      "tool-bar-almighty"
+      "v-bootstrap4"
+      "styleguide"
+      "project-plus"
+      "project-sidebar"
+      "project-view"
+      "toolbar-basic"
+      "atom-minify"
+      "remote-ftp"
+      "ftp-remote-edit"
+      "intentions"
+      "php-integrator-refactoring"
+      "node-debugger"
+      "php-debug"
+      "imdone-atom"
+      "docker"
+      "chrome-color-picker"
+    ]
+    projectHome: "~/.dotfiles/projects"
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "no"
+    themes: [
+      "goldfish-dark-ui"
+      "goldfish-dark-syntax"
+    ]
+    titleBar: "hidden"
+  "double-tag":
+    ignoredTags: [
+      "area"
+      "base"
+      "body"
+      "br"
+      "col"
+      "command"
+      "embed"
+      "head"
+      "hr"
+      "html"
+      "img"
+      "input"
+      "keygen"
+      "link"
+      "meta"
+      "param"
+      "source"
+      "title"
+      "track"
+      "wbr"
+      "iframe"
+      "script"
+    ]
+  editor:
+    fontFamily: "RobotoMono-Regular, master-icons"
+    fontSize: 14
+    lineHeight: 1.6
+    maxScreenLineLength: 8000
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  emmet:
+    extensionsPath: "~/.dotfiles/emmet"
+  "exception-reporting":
+    userId: "d909ec40-833e-4cf2-821a-7e8bc3cdba57"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
+    searchContextLineCountAfter: 0
+    searchContextLineCountBefore: 0
+  "ftp-remote-edit":
+    config: "77485f75cc07344f85b1c9af5ef80a4208f022521fe55f4f6729653a12718418dff082109a0e4a8df902fcaccb64b87da8aa0f0376ffecb66e506c62975f76c6e9702e90dd89ffcc0230ef2156cdb2f77eb158753eea35a9719b8487c67e4de75fb0c6134a99331f98d7cdbfe9feafb6604e764f52d4940ed5b24bd3ec1d137633c6c81636205297ccff41af684411ce3182212e07915fc7cefbe4c57dc5a0937cc729fc6aa0316f08b6876754c26010e9a5d3ef5cccdc2b149dcdcf6f376a68d46c39"
+    password: "1d024c"
+    tree:
+      showHiddenFiles: true
+  "fuzzy-finder":
+    excludeVcsIgnoredPaths: false
+    preserveLastSearch: true
+    searchAllPanes: true
+  "goldfish-dark-ui":
+    hideDockButtons: true
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+    linuxTriggerKeys: "altKey"
+    win32TriggerKeys: "altKey"
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".json"
+      ".node"
+      ".ts"
+    ]
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "menu-manager":
+    showButton: false
+  "package-generator":
+    packageSyntax: "coffeescript"
+  "project-manager":
+    savePathsRelativeToHome: true
+    showPath: false
+    sortBy: "title"
+  "remote-ftp":
+    connector:
+      autoUploadOnSave: "never"
+    notifications: {}
+    statusbar: {}
+    tree: {}
+  "remote-sync":
+    autoHideLogPanel: true
+    foldLogPanel: true
+    monitorFileAnimation: false
+  "sass-autocompile":
+    autoHidePanelDelay: 2000
+    compileCompressed: false
+    compileExpanded: true
+    compileOnSave: false
+    notifications: "Notifications"
+    showAdditionalCompilationInfo: false
+  snippets: {}
+  "split-diff":
+    ignoreWhitespace: true
+    turnOffSoftWrap: true
+  "status-bar": {}
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  "tool-bar": {}
+  "tree-view":
+    alwaysOpenExisting: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    keepMarkdownLineBreakWhitespace: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+    tabLength: 4
+".coffee.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".css.scss.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".js.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".less":
+  aligner:
+    config:
+      ":-alignment": "left"
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".source.sql":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+    softWrap: false

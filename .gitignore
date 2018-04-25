@@ -1,0 +1,13 @@
+blob-store
+compile-cache
+dev
+storage
+.apm
+.node-gyp
+.npm
+projects.cson
+.remote-sync.json
+node_modules
+packages/atom-autocomplete-php/indexes
+.DS_Store
+Thumbs.db

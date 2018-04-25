@@ -1,0 +1,11 @@
+'.text.html':
+
+  'Breadcrumb':
+    'prefix': 'breadcrumb'
+    'body': """
+    <ol class="breadcrumb" style="margin-bottom: 5px;">
+      <li><a href="#">${1:Home}</a></li>
+      <li><a href="#">${2:Library}</a></li>
+      <li class="active">${3:Data}</li>
+    </ol>
+    """

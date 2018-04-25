@@ -1,0 +1,316 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+@import "./packages/goldfish-dark-ui/styles/ui-variables.less";
+
+
+.editor {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  .gutter {
+    // background: @ui-syntax-color;
+
+    &.line-numbers {
+      opacity: 1 !important;
+
+      .line-number {
+        padding-left: 14px !important;
+
+        &[class*="git-line-"] {
+          padding-left: 12px !important;
+        }
+
+        &.git-line-added {
+          border-color: @text-color-success !important;
+        }
+        &.git-line-modified {
+          border-color: @text-color-warning !important;
+        }
+        &.git-line-removed {
+          border-color: @text-color-removed !important;
+        }
+
+        &.bracket-matcher {
+          // background: @syntax-cursor-line !important;
+          opacity: 1 !important !important;
+        }
+
+        &.cursor-line {
+          opacity: 1 !important;
+
+          &.cursor-line-no-selection {
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+  }
+  .syntax--comment {
+    font-style: normal !important;
+  }
+
+  .syntax--hyperlink {
+    text-decoration: none !important;
+  }
+
+  .cursors {
+    opacity: 1 !important;
+
+    &.blink-off {
+      opacity: 0 !important;
+    }
+  }
+
+  .cursor {
+    border-color: @accent-bg-color !important;
+  }
+
+  .bracket-matcher {
+    .region {
+      opacity: 1 !important;
+      border-bottom-color: @text-color-success !important;
+    }
+  }
+}
+
+.command-toolbar-tooltip {
+  font-size: @ui-size * 1.15;
+  padding: @ui-padding * .5 @ui-padding * .65 !important;
+  border: none !important;
+  border-radius: @component-border-radius !important;
+  background-color: @tooltip-background-color !important;
+  color: @tooltip-text-color !important;
+  white-space: nowrap !important;
+  max-width: none !important;
+}
+
+.command-toolbar {
+  box-shadow: none !important;
+  padding: 0 0 !important;
+  margin: 0 0 !important;
+  height: 32px !important;
+  line-height: 2.6em !important;
+
+  .btn {
+    padding: 0 6px !important;
+    margin: 0 2px !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    border-color: transparent !important;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &[contenteditable=true] {
+      color: @mono-1 !important;
+      background: @background-color-highlight !important;
+      border-radius: 0 !important;
+      border-color: transparent !important;
+    }
+  }
+
+  .new-btn {
+    font-family: "Menlo", "master-icons" !important;
+    padding: 0 19px !important;
+    background: transparent !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    border-color: transparent !important;
+
+    &:hover {
+      color: @accent-bg-color !important;
+    }
+
+    &:before {
+      content: "+" !important;
+    }
+  }
+}
+
+
+
+@base-amount: 14;
+
+@tool-bar-height: 44;
+@tool-bar-font-size: 20;
+.tool-bar {
+  .btn {
+    min-width: unit(100 / 40, %) !important;
+    height: auto !important;
+    min-height: auto !important;
+    line-height: normal !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    &:before {
+      font-size: unit(@tool-bar-font-size, px) !important;
+      height: unit(@tool-bar-height, px) !important;
+      line-height: unit(@tool-bar-height, px) !important;
+    }
+  }
+
+  .tool-bar-spacer {
+    height: auto !important;
+    border-image: none !important;
+  }
+
+  .gc {
+    font-family: "master-icons";
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    font-variant: normal !important;
+
+    &.fa {
+      font-family: "FontAwesome", "FontAwesome5ProLight", "FontAwesome5ProRegular", "FontAwesome5ProSolid", "FontAwesome5FreeRegular", "FontAwesome5FreeSolid", "FontAwesome5BrandsRegular" !important;
+      font-size: 20px !important;
+    }
+    &.custom {
+      font-family: "fontcustom" !important;
+      font-size: 20px !important;
+    }
+    &.ico {
+      font-family: "icofont" !important;
+      font-size: 20px !important;
+    }
+    &.icomoon {
+      font-family: "icomoon" !important;
+      font-size: 20px !important;
+    }
+    &.iconic {
+      font-family: "iconmonstr-iconic-font", "open-iconic" !important;
+      font-size: 20px !important;
+    }
+    &.ion {
+      font-family: "Ionicons" !important;
+      font-size: 20px !important;
+    }
+    &.oct {
+      font-family: "octicons" !important;
+      font-size: 20px !important;
+    }
+    &.typ {
+      font-family: "typicons" !important;
+      font-size: 20px !important;
+    }
+    &.das {
+      font-family: "dashicons" !important;
+      font-size: 20px !important;
+    }
+    &.ent {
+      font-family: "entypo" !important;
+      font-size: 20px !important;
+    }
+  }
+}
+
+.status-bar {
+  font-size: .8em;
+}
+
+.settings-view {
+  .link {
+    color: @accent-bg-color !important;
+
+    &:hover {
+      color: lighten(@accent-bg-color, 6%) !important;
+    }
+  }
+}
+
+.tree-view {
+  .list-item {
+    &.selected {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+  }
+}
+
+
+.tab-bar {
+    .tab {
+        &.active {
+            &:before {
+                // background: @accent-color !important;
+            }
+        }
+    }
+}
+
+
+.btn {
+    &.selected {
+        // background: @accent-color !important;
+    }
+}
+
+
+atom-dock {
+  &.left {
+    .atom-dock-inner {
+      .pane {
+        .list-inline {
+          + .item-views {
+            .list-tree {
+              .list-item {
+                span.name {
+                  // width: 100%;
+                }
+              }
+            }
+
+            .tree-view {
+              // margin-top: 8px !important;
+
+              .tree-view-root {
+                .project-root {
+                  .project-root-header {
+                    height: 33px;
+                  }
+
+                  > .list-tree {
+                    padding-top: 14px !important;
+                    padding-bottom: 14px !important;
+                  }
+                }
+              }
+            }
+          }
+
+          &.tab-bar.inset-panel {
+            display: none !important;
+
+            .tab {
+              &[data-type=TreeView] {
+                > .title {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

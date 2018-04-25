@@ -1,0 +1,62 @@
+@import "colors.less";
+
+// Official Syntax Variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @accent-bg-color;
+@syntax-background-color:      @syntax-bg;
+@syntax-selection-color:       @syntax-background-color-highlight;
+@syntax-selection-flash-color: @accent-bg-color;
+
+@syntax-text-color-highlight: lighten(@syntax-text-color, 14%);
+@syntax-text-color-selected: lighten(@syntax-text-color, 25%);
+
+@syntax-background-color-highlight: lighten(@syntax-background-color, 6%);
+@syntax-background-color-selected: lighten(@syntax-background-color, 10%);
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@accent-bg-color, 25%);
+@syntax-result-marker-color-selected: @accent-bg-color;
+
+// Gutter colors
+@syntax-gutter-text-color:                @syntax-gutter;
+@syntax-gutter-text-color-selected:       @syntax-fg;
+@syntax-gutter-background-color:          @syntax-background-color-highlight;
+@syntax-gutter-background-color-selected: @syntax-background-color-selected;
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed:  @hue-2;
+@syntax-color-added:    @hue-4;
+@syntax-color-modified: @hue-6-2;
+@syntax-color-removed:  @hue-5;
+
+// For language entity colors
+@syntax-color-variable:   @hue-5;
+@syntax-color-constant:   @hue-6;
+@syntax-color-property:   @syntax-fg;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-function:   @hue-2;
+@syntax-color-method:     @hue-2;
+@syntax-color-class:      @hue-6-2;
+@syntax-color-keyword:    @hue-3;
+@syntax-color-tag:        @hue-5;
+@syntax-color-attribute:  @hue-6;
+@syntax-color-import:     @hue-3;
+@syntax-color-snippet:    @hue-4;
+
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+@syntax-cursor-line: fade(@syntax-selection-color, 40%);
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 55%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;

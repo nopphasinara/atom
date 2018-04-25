@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118325-32556-1me7xlr.x9vu6jemi"
+    ]
+  ],
+  "_from": "../d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+  "_id": "double-tag@1.2.1",
+  "_inCache": true,
+  "_location": "/double-tag",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+  "_shasum": "ec64b7b65e069e66a8afb74f2ddc5b7ba137adc3",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118325-32556-13q40t0.asoejhsemi/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118325-32556-1me7xlr.x9vu6jemi",
+  "activationCommands": {},
+  "bugs": {
+    "url": "https://github.com/dsandstrom/atom-double-tag/issues"
+  },
+  "dependencies": {},
+  "description": "Faster HTML tag editing",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.25.0 <2.0.0"
+  },
+  "homepage": "https://github.com/dsandstrom/atom-double-tag#readme",
+  "keywords": [
+    "html"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "double-tag",
+  "optionalDependencies": {},
+  "readme": "# Double Tag\n\n###### An Atom Package - [Atom.io](https://atom.io/packages/double-tag) : [Github](https://github.com/dsandstrom/atom-double-tag)\n[![Build Status](https://travis-ci.org/dsandstrom/atom-double-tag.svg?branch=master)](https://travis-ci.org/dsandstrom/atom-double-tag)\n\nEdit both the start and end HTML tags at the same time.\n\n![Screen Recording](https://cloud.githubusercontent.com/assets/1400414/15229336/75130366-1845-11e6-9ad7-f6f9359c1eca.gif)\n\n### How To Use\nEdit the start tag (`<div>`) and the matching end tag (`</div>`) will be changed automatically. Likewise for the end tag.\n\n### Configs\n* **ignoredTags** - HTML tags that are ignored.  (Default:\n`area, base, body, br, col, command, embed, head, hr, html, img, input, keygen, link, meta, param, source, title, track, wbr`)\n* **allowEndTagSync** - Whether editing the end tag will change the start tag.  (Default: `true`)\n\n### Notes\n* Supported Languages: HTML, PHP, ERB, JSX, XML, marko\n* Issues and Pull Requests are welcome.\n* Recording done with: [screen-recorder](https://atom.io/packages/screen-recorder)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dsandstrom/atom-double-tag.git"
+  },
+  "version": "1.2.1"
+}

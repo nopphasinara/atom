@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-11839-40895-1e5rldy.p06gm8to6r"
+    ]
+  ],
+  "_from": "../d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+  "_id": "autocomplete-sql@0.5.0",
+  "_inCache": true,
+  "_location": "/autocomplete-sql",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+  "_shasum": "6bbdd7bc5cd88d38089eb41051f94e0bd8b840fa",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11839-40895-r6jkma.xkc4nrvn29/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-11839-40895-1e5rldy.p06gm8to6r",
+  "bugs": {
+    "url": "https://github.com/webdevel/autocomplete-sql/issues"
+  },
+  "dependencies": {},
+  "description": "Autocomplete SQL provider for Atom Autocomplete Plus",
+  "devDependencies": {
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "cross-env": "^5.0.5",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/webdevel/autocomplete-sql#readme",
+  "keywords": [
+    "autocomplete",
+    "sql",
+    "atom",
+    "autocomplete+",
+    "autocomplete-plus",
+    "autocomplete-sql",
+    "mysql"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "autocomplete-sql",
+  "nyc": {
+    "all": true,
+    "include": [
+      "lib/*"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# Autocomplete SQL\n[![Build Status](https://travis-ci.org/webdevel/autocomplete-sql.svg?branch=master)](https://travis-ci.org/webdevel/autocomplete-sql)\n[![Coverage Status](https://coveralls.io/repos/github/webdevel/autocomplete-sql/badge.svg?branch=master)](https://coveralls.io/github/webdevel/autocomplete-sql?branch=master)\n![Version](https://img.shields.io/apm/v/autocomplete-sql.svg)\n![Downloads](https://img.shields.io/apm/dm/autocomplete-sql.svg)\n[![License](https://img.shields.io/apm/l/icon-fonts.svg?style=flat)](https://atom.io/packages/autocomplete-sql)\n\n*[Autocomplete SQL]* provider for *[Atom]* *[Autocomplete Plus]*\n\n### Installing\nYou may choose your preferred method of installation.\n###### Command Line APM\n`apm install autocomplete-sql`\n###### Atom GUI\n`Atom->Settings->Install->Search autocomplete-sql`\n###### Command Line Git\nYou will have to know the location of the Atom configuration directory for your operating system. The default locations for Windows, MacOS, Linux are `%USERPROFILE%\\.atom` and `~/.atom` respectively. After cloning the package, you will have to restart Atom which will automatically load it.\n```sh\ncd .atom/packages\ngit clone git@github.com:webdevel/autocomplete-sql.git\n```\n\n### Contributing\nPlease read [Contributing]. Feel free to submit pull requests, issues and comments! Thank you. Participants will be added to the list of [Contributors].\n\n### Dependencies\n*[Autocomplete SQL]* is an *[Atom]* *[Autocomplete+]* provider and requires *[Autocomplete+]* to be installed. *[Autocomplete+]* is currently bundled with *[Atom]* by default.\n\n### License\n*[Autocomplete SQL]* is Free and Open Source Software. It is licensed by the MIT License.\n\n[Atom]: https://atom.io/\n[Autocomplete Plus]: https://github.com/atom/autocomplete-plus\n[Autocomplete+]: https://github.com/atom/autocomplete-plus\n[Autocomplete SQL]: https://github.com/webdevel/autocomplete-sql\n[Contributors]: https://github.com/webdevel/autocomplete-sql/blob/master/CONTRIBUTORS.md\n[Contributing]: https://github.com/webdevel/autocomplete-sql/blob/master/CONTRIBUTING.md\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevel/autocomplete-sql.git"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "cross-env NODE_ENV=test nyc --reporter=text mocha --require babel-register --timeout 9000"
+  },
+  "version": "0.5.0"
+}

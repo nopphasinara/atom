@@ -1,0 +1,12 @@
+{
+  "name": "goldfish-dark-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A template syntax theme to build from",
+  "repository": "https://github.com/nopphasinara/goldfish-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
