@@ -1,4 +1,0 @@
-'.source.js':
-  'height':
-    'prefix': 'height'
-    'body': 'height(${1:integer})$0'

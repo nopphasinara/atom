@@ -1,4 +1,0 @@
-'.source.js':
-  '.outerWidth':
-    'prefix': 'outerWidth'
-    'body': 'outerWidth()$0'

@@ -1,4 +1,0 @@
-'.source.js':
-  '.noConflict()':
-    'prefix': 'noconflict'
-    'body': '\$.noConflict();$0'

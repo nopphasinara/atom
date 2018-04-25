@@ -1,4 +1,0 @@
-'.source.js':
-  '$(this)':
-    'prefix': 'this'
-    'body': '\$(this)$0'
