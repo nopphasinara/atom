@@ -306,7 +306,7 @@
     commentEnd: " --}}"
     commentStart: "{{-- "
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
-    tabLength: 4
+    tabLength: 2
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
