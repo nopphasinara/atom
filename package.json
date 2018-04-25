@@ -1,7 +1,0 @@
-{
-  "requires": true,
-  "dependencies": {
-    "atom-package-deps": "^4.6.0",
-    "lint-staged": "^7.0.4"
-  }
-}
