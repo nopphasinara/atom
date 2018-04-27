@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-5884-1kcfihy.4tx0mb1emi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118328-24410-1ar3c6k.8q7c2wewmi"
     ]
   ],
-  "_from": "../d-118325-5884-z9yaa3.cult0529/package.tgz",
+  "_from": "../d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
   "_id": "command-toolbar@1.0.12",
   "_inCache": true,
-  "_location": "/command-toolbar",
+  "_location": "/Users/Shared/CommandToolbar/command-toolbar",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118325-5884-z9yaa3.cult0529/package.tgz",
+  "_resolved": "file:../d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
   "_shasum": "549130723fa48208f87371819c727c7ec7f1c5a4",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-5884-z9yaa3.cult0529/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-5884-1kcfihy.4tx0mb1emi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118328-24410-1keurcs.nw6yywg66r/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118328-24410-1ar3c6k.8q7c2wewmi",
   "bugs": {
     "url": "https://github.com/mark-hahn/command-toolbar/issues"
   },
