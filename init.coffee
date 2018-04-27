@@ -97,6 +97,12 @@ atom.commands.add 'atom-text-editor', 'gc:blade-comment', ->
   options = { skip: true, move: 5 }
   gc.mutateSelectedText(selections, '{{-- {{replacement}} --}}', options)
 
+atom.commands.add 'atom-text-editor', 'gc:html-comment', ->
+  editor = atom.workspace.getActiveTextEditor()
+  selections = editor.getSelections()
+  options = { skip: true, move: 4 }
+  gc.mutateSelectedText(selections, '<!-- {{replacement}} -->', options)
+
 atom.commands.add 'atom-text-editor', 'gc:blade-e', ->
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()

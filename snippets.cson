@@ -197,6 +197,12 @@
     'body': '<?php\n\n${0}'
 
 ".source.php":
+  'Class vars':
+    'prefix': 'class:vars'
+    'body': 'echo \'<pre>\'; print_r(get_class_vars(get_class(${1:var}))); echo \'</pre>\';${0}'
+  'Class methods':
+    'prefix': 'class:methods'
+    'body': 'echo \'<pre>\'; print_r(get_class_methods(${1:var})); echo \'</pre>\';${0}'
   'Pre Print':
     'prefix': 'pre:print'
     'body': 'echo \'<pre>\'; print_r(${1:var}); echo \'</pre>\';${0}'

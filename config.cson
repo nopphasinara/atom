@@ -59,9 +59,6 @@
     disabledPackages: [
       "autosave"
       "background-tips"
-      "language-c"
-      "language-csharp"
-      "language-toml"
       "welcome"
       "spell-check"
     ]

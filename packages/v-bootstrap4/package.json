@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-6077-1piy8vt.q1d9dlsor"
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118327-2726-wgmw23.vtk2hs38fr"
     ]
   ],
-  "_from": "../d-118325-6077-raca66.4domholxr/package.tgz",
+  "_from": "../d-118327-2726-16mb7je.zffkc323xr/package.tgz",
   "_id": "v-bootstrap4@0.2.2",
   "_inCache": true,
   "_location": "/v-bootstrap4",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118325-6077-raca66.4domholxr/package.tgz",
+  "_resolved": "file:../d-118327-2726-16mb7je.zffkc323xr/package.tgz",
   "_shasum": "ba9e2fef4f6f991379f319d03f6af1a309f61d4c",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118325-6077-raca66.4domholxr/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118325-6077-1piy8vt.q1d9dlsor",
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118327-2726-16mb7je.zffkc323xr/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118327-2726-wgmw23.vtk2hs38fr",
   "bugs": {
     "url": "https://github.com/thevuong/v-bootstrap4/issues"
   },

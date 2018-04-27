@@ -11,6 +11,16 @@
     ]
   ]
 
+  '.editor:not([mini])':[
+    label: 'Remote Sync',
+    submenu:[
+      {label: 'Upload File', command: 'remote-sync:upload-file'}
+      {label: 'Download File', command: 'remote-sync:download-file'}
+      {label: 'Delete File', command: 'remote-sync:delete-file'}
+      {label: 'Configure', command: 'remote-sync:configure'}
+    ]
+  ]
+
   '.entries.list-tree .header.list-item, .header.list-item.project-root-header':[
     label: 'Remote Sync',
     submenu:[
