@@ -236,6 +236,17 @@ describe "DoubleTag", ->
 
           expect(editor.getText()).toBe '<dashed-span>test</dashed-span>'
 
+    describe "with uppercase tag", ->
+      beforeEach ->
+        editor.setText('<DIV>test</DIV>')
+
+      describe "when tag is changed", ->
+        it "copies the new tag to the end", ->
+          editor.setCursorBufferPosition([0, 4])
+          editor.insertText('S')
+
+          expect(editor.getText()).toBe '<DIVS>test</DIVS>'
+
     describe "with php inside tag", ->
       describe "when cursor added to php", ->
         it "doesn't raise an error", ->
@@ -277,6 +288,17 @@ describe "DoubleTag", ->
           editor.backspace()
 
           expect(editor.getText()).toBe '<fo( class="bar">foobar</fo>'
+
+    describe "with incomplete inner tag", ->
+      beforeEach ->
+        editor.setText('<foo>\n<foo\n</foo>')
+
+      describe "when adding a letter to the inner tag", ->
+        it "doesn't edit end tag", ->
+          editor.setCursorBufferPosition([1, 4])
+          editor.insertText('b')
+
+          expect(editor.getText()).toBe '<foo>\n<foob\n</foo>'
 
   describe "for a end tag", ->
     describe "when not allowing end tag sync", ->
@@ -452,7 +474,7 @@ describe "DoubleTag", ->
           it "copies the new tag to the start", ->
             expect(editor.getText()).toBe '<h3>\n  <span>test</span>\n</h3>'
 
-          describe "then inner tag is changed after moving cursor with arrows", ->
+          describe "then inner tag changed after moving cursor with arrows", ->
             it "copies the new tag to the start", ->
               editor.moveUp()
               editor.moveRight(14)

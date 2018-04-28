@@ -18,7 +18,6 @@
     php: "/usr/local/bin/php"
   "atom-autocomplete-php":
     gotoKey: "ctrl"
-    insertNewlinesForUseStatements: true
   "autocomplete-font-awesome":
     version: "4.7.0"
   "autocomplete-js-import": {}
@@ -28,13 +27,11 @@
     confirmCompletion: "enter"
     defaultProvider: "Symbol"
     enableAutoConfirmSingleSuggestion: false
-    enableExtendedUnicodeSupport: true
     fileBlacklist: [
       "*.md"
       "*.txt"
     ]
     minimumWordLength: 1
-    strictMatching: true
   "autocomplete-snippets": {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -279,6 +276,7 @@
     compileExpanded: true
     compileOnSave: false
     notifications: "Notifications"
+    precision: 3
     showAdditionalCompilationInfo: false
   snippets: {}
   "split-diff":
