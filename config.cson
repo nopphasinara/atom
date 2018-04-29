@@ -17,6 +17,7 @@
     notifications: false
     php: "/usr/local/bin/php"
   "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
     gotoKey: "ctrl"
   "autocomplete-font-awesome":
     version: "4.7.0"
@@ -276,7 +277,6 @@
     compileExpanded: true
     compileOnSave: false
     notifications: "Notifications"
-    precision: 3
     showAdditionalCompilationInfo: false
   snippets: {}
   "split-diff":
