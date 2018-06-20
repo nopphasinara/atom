@@ -1,4 +1,0 @@
-'.source.js':
-  'andSelf':
-    'prefix': 'andSelf'
-    'body': 'andSelf()$0'

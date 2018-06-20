@@ -1,4 +1,0 @@
-'.source.js':
-  '$.trim()':
-    'prefix': 'trim'
-    'body': '\$.trim(${1:\'${2:string}\'})$0'

@@ -1,4 +1,0 @@
-'.source.js':
-  '.position()':
-    'prefix': 'position'
-    'body': 'position();$0'
