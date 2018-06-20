@@ -35,7 +35,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "FiraCode-Regular, master-icons"
+    fontFamily: "\"FiraCode-Regular\", \"master-icons\""
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
