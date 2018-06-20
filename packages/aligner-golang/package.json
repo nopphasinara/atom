@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+        "spec": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118520-29653-1whhd19.uh7smrt3xr"
+    ]
+  ],
+  "_from": "../d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+  "_id": "aligner-golang@0.1.0",
+  "_inCache": true,
+  "_location": "/aligner-golang",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+    "spec": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+  "_shasum": "d08dd60b5d319a8c0f8bbc8832b6959b940f77de",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118520-29653-12c8ea7.o529j7zaor/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118520-29653-1whhd19.uh7smrt3xr",
+  "bugs": {
+    "url": "https://github.com/timfallmk/atom-aligner-golang/issues"
+  },
+  "dependencies": {},
+  "description": "Aligner support for Go in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/timfallmk/atom-aligner-golang#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "golang",
+    "go"
+  ],
+  "license": "GPLv3",
+  "main": "./lib/main",
+  "name": "aligner-golang",
+  "optionalDependencies": {},
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# atom-aligner-golang\nAligner support Go in Atom\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timfallmk/atom-aligner-golang.git"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,170 @@
+
+// Custom variables
+@tool-bar-height: 44;
+@tool-bar-font-size: 20;
+@btn-icon-size: 20px;
+@font-size-sm: .875em;
+
+
+.editor {
+  * {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -moz-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+  }
+
+  .syntax--comment {
+    font-style: normal !important;
+  }
+
+  .syntax--hyperlink {
+    text-decoration: none !important;
+  }
+
+  .cursor {
+    // border-color: lime !important;
+  }
+
+  .cursors {
+    opacity: 1 !important;
+
+    &.blink-off {
+      opacity: 0 !important;
+    }
+  }
+
+  .bracket-matcher {
+    .region {
+      opacity: 1 !important;
+      // border-bottom-color: lime !important;
+      border-bottom-style: dotted !important;
+    }
+  }
+
+  .gutter {
+    &.line-numbers {
+      opacity: 1 !important;
+
+      .line-number {
+        padding-left: 14px !important;
+
+        &[class*="git-line-"] {
+          padding-left: 12px !important;
+        }
+
+        &.git-line-added {
+          // border-color: @text-color-success !important;
+        }
+        &.git-line-modified {
+          // border-color: @text-color-warning !important;
+        }
+        &.git-line-removed {
+          // border-color: @text-color-removed !important;
+        }
+
+        &.bracket-matcher {
+          opacity: 1 !important !important;
+        }
+
+        &.cursor-line {
+          opacity: 1 !important;
+
+          &.cursor-line-no-selection {
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.status-bar {
+  font-size: @font-size-sm;
+}
+
+
+.title-bar {
+  .title {
+    font-size: @font-size-sm;
+  }
+}
+
+
+.tool-bar {
+  .btn {
+    min-width: unit(100 / 44, %) !important;
+    height: auto !important;
+    min-height: auto !important;
+    line-height: normal !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    &:before {
+      font-size: unit(@tool-bar-font-size, px) !important;
+      height: unit(@tool-bar-height, px) !important;
+      line-height: unit(@tool-bar-height, px) !important;
+    }
+  }
+
+  .tool-bar-spacer {
+    height: auto !important;
+    border-image: none !important;
+  }
+
+  .gc {
+    font-family: "master-icons";
+    font-size: @btn-icon-size !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    font-variant: normal !important;
+
+    &.fa {
+      font-family: "FontAwesome", "FontAwesome5ProLight", "FontAwesome5ProRegular", "FontAwesome5ProSolid", "FontAwesome5FreeRegular", "FontAwesome5FreeSolid", "FontAwesome5BrandsRegular" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.custom {
+      font-family: "fontcustom" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.ico {
+      font-family: "icofont" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.icomoon {
+      font-family: "icomoon" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.iconic {
+      font-family: "iconmonstr-iconic-font", "open-iconic" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.ion {
+      font-family: "Ionicons" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.oct {
+      font-family: "octicons" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.typ {
+      font-family: "typicons" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.das {
+      font-family: "dashicons" !important;
+      font-size: @btn-icon-size !important;
+    }
+    &.ent {
+      font-family: "entypo" !important;
+      font-size: @btn-icon-size !important;
+    }
+  }
+}

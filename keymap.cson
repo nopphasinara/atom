@@ -1,0 +1,92 @@
+
+# Custom keymaps
+
+'html, body, .workspace, atom-workspace, atom-text-editor, .editor, div':
+  'shift-ctrl-tab'   : 'unset!'
+  'ctrl-home'        : 'unset!'
+  'ctrl-end'         : 'unset!'
+  'ctrl-pageup'      : 'unset!'
+  'ctrl-pagedown'    : 'unset!'
+  'ctrl-tab'         : 'unset!'
+  'ctrl-down'        : 'unset!'
+  'ctrl-up'          : 'unset!'
+  'ctrl-left'        : 'unset!'
+  'ctrl-right'       : 'unset!'
+  'ctrl-alt-cmd-p'   : 'unset!'
+  'ctrl-cmd-f'       : 'unset!'
+  'alt-cmd--'        : 'unset!'
+  'alt-cmd-_'        : 'unset!'
+  'alt-cmd-='        : 'unset!'
+  'alt-cmd-+'        : 'unset!'
+  'cmd-.'            : 'unset!'
+  'cmd-k'            : 'unset!'
+  'cmd-1'            : 'unset!'
+  'cmd-2'            : 'unset!'
+  'cmd-3'            : 'unset!'
+  'cmd-4'            : 'unset!'
+  'cmd-5'            : 'unset!'
+  'cmd-6'            : 'unset!'
+  'cmd-7'            : 'unset!'
+  'cmd-8'            : 'unset!'
+  'cmd-9'            : 'unset!'
+  'cmd-0'            : 'unset!'
+  'cmd-+'            : 'unset!'
+  'cmd--'            : 'unset!'
+  'cmd-='            : 'unset!'
+  'cmd-_'            : 'unset!'
+  'cmd-l'            : 'unset!'
+  'home'             : 'unset!'
+  'end'              : 'unset!'
+  'pageup'           : 'unset!'
+  'pagedown'         : 'unset!'
+  'cmd-o'            : 'unset!'
+  'alt-delete'       : 'unset!'
+  'ctrl-p'           : 'unset!'
+  'ctrl-n'           : 'unset!'
+  'ctrl-i'           : 'unset!'
+  'ctrl-k'           : 'unset!'
+  'ctrl-l'           : 'unset!'
+
+  'shift-tab'        : 'editor:auto-indent'
+  'shift-ctrl-left'  : 'pane:move-item-left'
+  'shift-ctrl-right' : 'pane:move-item-right'
+  'shift-cmd-t'      : 'pane:reopen-closed-item'
+  'shift-cmd-r'      : 'window:reload'
+  'shift-cmd-n'      : 'application:new-window'
+  'shift-cmd-a'      : 'application:add-project-folder'
+  'shift-cmd-I'      : 'settings-view:install-packages-and-themes'
+  'alt-tab'          : 'editor:auto-indent'
+  'alt-cmd-down'     : 'window:focus-pane-below'
+  'alt-cmd-up'       : 'window:focus-pane-above'
+  'alt-cmd-left'     : 'window:focus-pane-on-left'
+  'alt-cmd-right'    : 'window:focus-pane-on-right'
+  'alt-cmd-i'        : 'window:toggle-dev-tools'
+  'alt-cmd-o'        : 'tree-view:show-current-file-in-file-manager'
+  'alt-cmd-g'        : 'open-on-github:repository'
+  'alt-cmd-f'        : 'open-on-github:file'
+  'cmd-{'            : 'pane:show-previous-item'
+  'cmd-}'            : 'pane:show-next-item'
+
+
+'.platform-darwin atom-workspace, atom-workspace, .workspace':
+  'cmd-o'            : 'advanced-open-file:toggle'
+  'shift-cmd-R'      : 'window:reload'
+
+
+'.platform-darwin atom-text-editor, atom-text-editor, .platform-darwin .editor, .editor':
+  'alt-cmd-a'        : 'aligner:align'
+
+
+'.platform-darwin atom-text-editor:not([mini]), atom-text-editor:not([mini]), .platform-darwin .editor:not([mini]), .editor:not([mini])':
+  'alt-cmd-tab'      : 'editor:auto-indent'
+  'cmd-backspace'    : 'editor:delete-line'
+  # 'alt-cmd-a'       : 'atom-alignment:alignMultiple'
+
+
+# Custom
+'.advanced-open-file atom-text-editor, .advanced-open-file .editor':
+  'tab'              : 'advanced-open-file:autocomplete'
+  'up'               : 'advanced-open-file:move-cursor-up'
+  'down'             : 'advanced-open-file:move-cursor-down'
+  'alt-delete'       : 'advanced-open-file:delete-path-component'
+  'cmd-z'            : 'advanced-open-file:undo'

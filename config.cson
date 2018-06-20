@@ -1,0 +1,51 @@
+"*":
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
+    helmDirSwitch: true
+  aligner:
+    alignComments: true
+  "aligner-coffeescript":
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "aligner-css":
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "aligner-javascript":
+    ":-leftSpace": true
+  "aligner-scss":
+    ":-leftSpace": true
+  "atom-alignment":
+    addSpacePostfix: true
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    automaticallyUpdate: false
+    packagesWithKeymapsDisabled: [
+      "atom-alignment"
+      "advanced-open-file"
+      "aligner"
+      "tool-bar"
+    ]
+    projectHome: "~/.dotfiles/projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    fontFamily: "FiraCode-Regular, master-icons"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "96aeaf46-f376-4c96-9151-ee117d00d47d"
+  "one-dark-ui":
+    hideDockButtons: true
+  rainglow:
+    SelectSyntax: "crisp-rainglow-syntax"
+  welcome:
+    showOnStartup: false

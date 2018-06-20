@@ -1,0 +1,8 @@
+"context-menu":
+  ".editor": [
+    "label": "More…"
+    "submenu": [
+      { 'label': 'Align Lines', 'command': 'atom-alignment:alignMultiple' }
+    ]
+  ]
+  ".overlayer": []

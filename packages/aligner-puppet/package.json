@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+        "spec": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118520-29605-14d1oqz.g1mp5019k9"
+    ]
+  ],
+  "_from": "../d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+  "_id": "aligner-puppet@0.1.1",
+  "_inCache": true,
+  "_location": "/aligner-puppet",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+    "spec": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+  "_shasum": "157b4a3ee3d053304f20c9da31b9dde93ebc6f91",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118520-29605-xj7yql.9hx4leg66r/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118520-29605-14d1oqz.g1mp5019k9",
+  "bugs": {
+    "url": "https://github.com/bigbrozer/atom-aligner-puppet/issues"
+  },
+  "dependencies": {},
+  "description": "Puppet support for aligner",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bigbrozer/atom-aligner-puppet#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner-puppet",
+  "optionalDependencies": {},
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# aligner-puppet\n\n[Aligner](https://github.com/adrianlee44/atom-aligner) add-on to support\nPuppet resource's attribute assignment and maybe more.\n\n## Installation\n\nAligner must be installed along with this package. For more information,\nplease check out [Aligner](https://github.com/adrianlee44/atom-aligner)\n\n## Thanks\n\nBased on [@adrianlee44's atom-aligner-php](https://github.com/adrianlee44).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigbrozer/atom-aligner-puppet.git"
+  },
+  "version": "0.1.1"
+}
