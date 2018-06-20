@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+        "spec": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118520-32148-1tz17yk.0qqyarwwmi"
+    ]
+  ],
+  "_from": "../d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+  "_id": "one-dark-vivid-syntax@1.8.1",
+  "_inCache": true,
+  "_location": "/one-dark-vivid-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+    "spec": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+  "_shasum": "0a55453d30919628e8b2dcb2e28bf4265396a111",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118520-32148-dd4uyo.q8ex9zr529/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118520-32148-1tz17yk.0qqyarwwmi",
+  "bugs": {
+    "url": "https://github.com/simurai/one-dark-vivid-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A more vivid One Dark Syntax theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/simurai/one-dark-vivid-syntax#readme",
+  "keywords": [
+    "vivid",
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-dark-vivid-syntax",
+  "optionalDependencies": {},
+  "readme": "## One Dark Vivid Syntax\n\nThis Atom theme is identical to the original [One Dark](https://atom.io/themes/one-dark-syntax) theme, except that the colors are more __vivid__.\n\n![one-dark-syntax](https://cloud.githubusercontent.com/assets/378023/7783203/49271ef6-0174-11e5-8eb1-d80b8d34a0e3.png)\n\n> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).\n\n\n### Install\n\n```\napm install one-dark-vivid-syntax\n```\n\nOr go to __Settings > Install__ and search for `one-dark-vivid-syntax`.\n\nThen after installing, select \"One Dark Vivid\" from the __Settings > Themes > Syntax Themes__ drop-down menu.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simurai/one-dark-vivid-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.8.1"
+}
