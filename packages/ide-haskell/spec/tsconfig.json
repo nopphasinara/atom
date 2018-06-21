@@ -1,6 +1,0 @@
-{
-  "compileOnSave": false,
-  "extends": "../tsconfig.json",
-  "include": ["./**.ts"],
-  "exclude": []
-}
