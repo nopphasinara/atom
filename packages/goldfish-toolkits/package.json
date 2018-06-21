@@ -7,13 +7,14 @@
   },
   "dependencies": {
     "array-shuffle": "^1.0.1",
+    "atom-languageclient": "^0.9.0",
     "atom-space-pen-views": "^2.2.0",
     "change-case": "^3.0.2",
     "event-kit": "^1.2.0",
     "javascript-natural-sort": "^0.7.1",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
-    "node-uuid": "^1.4.3"
+    "uuid": "^3.2.1"
   },
   "devDependencies": {},
   "packageDependencies": {
