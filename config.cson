@@ -17,6 +17,24 @@
     ":-leftSpace": true
   "atom-alignment":
     addSpacePostfix: true
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
+    "atom-ide-datatip":
+      datatipDebounceDelay: 100
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+      showDiagnosticTraces: true
+    "atom-ide-outline-view":
+      nameOnly: true
+    "atom-ide-terminal":
+      cursorBlink: true
+      fontFamily: "\"Hack-Regular\", \"monospace\""
+      lineHeight: 1.54
+    hyperclick:
+      darwinTriggerKeys: "ctrlKey,metaKey"
+    use:
+      hyperclick: "never"
   core:
     allowPendingPaneItems: false
     audioBeep: false
