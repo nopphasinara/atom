@@ -1,4 +1,16 @@
 '.source.php':
+  'protected $var':
+    'prefix': 'ptvar'
+    'body': '''
+    protected ${1:\\$var}${3: = ${2:null}}$0
+    '''
+
+  'protected $arr':
+    'prefix': 'ptarr'
+    'body': '''
+    protected ${1:\\$arr}${4: = ${2:\\[$3\\]}}$0
+    '''
+
   'print_r()':
     'description': 'description…'
     'prefix': 'pr'
