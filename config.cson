@@ -39,6 +39,9 @@
     allowPendingPaneItems: false
     audioBeep: false
     automaticallyUpdate: false
+    disabledPackages: [
+      "linter"
+    ]
     packagesWithKeymapsDisabled: [
       "atom-alignment"
       "advanced-open-file"
@@ -61,6 +64,23 @@
     tabType: "soft"
   "exception-reporting":
     userId: "96aeaf46-f376-4c96-9151-ee117d00d47d"
+  "ide-css":
+    additionalGrammars: [
+      "source.css.sass"
+      "source.css.styls"
+      "source.css.scss"
+      "source.css.less"
+    ]
+  "ide-haskell":
+    autoHideOutput: true
+  "ide-html":
+    additionalGrammars: [
+      "text.html.php"
+      "text.html.jsp"
+      "text.html.blade.php"
+    ]
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
   "one-dark-ui":
     hideDockButtons: true
   rainglow:

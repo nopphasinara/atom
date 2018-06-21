@@ -1,0 +1,73 @@
+'.source.scss':
+  'Small up':
+    'prefix': 'sm-up'
+    'body': """
+      @media \#\{$small-up} {
+        $1
+      }"""
+  'Small only':
+    'prefix': 'sm-only'
+    'body': """
+      @media \#\{$small-only} {
+        $1
+      }"""
+  'Medium up':
+    'prefix': 'med-up'
+    'body': """
+      @media \#\{$medium-up} {
+        $1
+      }"""
+  'Medium only':
+    'prefix': 'med-only'
+    'body': """
+      @media \#\{$medium-only} {
+        $1
+      }"""
+  'Large up':
+    'prefix': 'large-up'
+    'body': """
+      @media \#\{$large-up} {
+        $1
+      }"""
+  'Large only':
+    'prefix': 'large-only'
+    'body': """
+      @media \#\{$large-only} {
+        $1
+      }"""
+  'X-Large up':
+    'prefix': 'xlarge-up'
+    'body': """
+      @media \#\{$xlarge-up} {
+        $1
+      }"""
+  'X-Large only':
+    'prefix': 'xlarge-only'
+    'body': """
+      @media \#\{$xlarge-only} {
+        $1
+      }"""
+  'XX-Large up':
+    'prefix': 'xxlarge-up'
+    'body': """
+      @media \#\{$xxlarge-up} {
+        $1
+      }"""
+  'XX-Large only':
+    'prefix': 'xxlarge-only'
+    'body': """
+      @media \#\{$xlarge-only} {
+        $1
+      }"""
+  'Landscape':
+    'prefix': 'landscape'
+    'body': """
+      @media \#\{$landscape} {
+        $1
+      }"""
+  'Portrait':
+    'prefix': 'portrait'
+    'body': """
+      @media \#\{$portrait} {
+        $1
+      }"""

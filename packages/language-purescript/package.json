@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118521-10927-m2fw63.vrv7808uxr"
+    ]
+  ],
+  "_from": "../d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+  "_id": "language-purescript@0.8.3",
+  "_inCache": true,
+  "_location": "/language-purescript",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+  "_shasum": "54f1c935d77bbaf786c3d6969e49fd765412cdbf",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-10927-1ad19bx.427rbsatt9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118521-10927-m2fw63.vrv7808uxr",
+  "bugs": {
+    "url": "https://github.com/darinmorrison/atom-language-purescript/issues"
+  },
+  "dependencies": {},
+  "description": "PureScript language support for the Atom editor",
+  "devDependencies": {
+    "coffee-script": "~1.9.0",
+    "season": "~2.0.0"
+  },
+  "engines": {
+    "atom": ">= 0.105.0"
+  },
+  "homepage": "https://github.com/darinmorrison/atom-language-purescript#readme",
+  "license": "MIT",
+  "name": "language-purescript",
+  "optionalDependencies": {},
+  "readme": "# PureScript language support in Atom\n\nAdds syntax highlighting to [PureScript](http://www.purescript.org) files in Atom. This grammar is also used indirectly by\nGitHub highlighting via [linguist](https://github.com/github/linguist), and [VS Code](https://github.com/nwolverson/vscode-language-purescript).\n\nContributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.\n\n## Development\n\nThe language-purescript grammar derives originally from the language-haskell grammar, with changes to accommodate the\nPureScript language and the subsequent language changes.\n\nThe grammar used by Atom is [grammars/purescript.cson](grammars/purescript.cson), but this is **generated** from\n[src/purescript.coffee](src/purescript.coffee), this can be regenerated via `npm run build`.\n\nThe grammar is picked up by [regular linguist updates](https://github.com/github/linguist#theres-a-problem-with-the-syntax-highlighting-of-a-file), and via a `build` script in \n[vscode-language-purescript](https://github.com/nwolverson/vscode-language-purescript).",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darinmorrison/atom-language-purescript.git"
+  },
+  "scripts": {
+    "build": "coffee src/purescript.coffee"
+  },
+  "version": "0.8.3"
+}

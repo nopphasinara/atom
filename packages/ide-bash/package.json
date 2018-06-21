@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118521-12022-19li5yd.t1xxomkj4i"
+    ]
+  ],
+  "_from": "../d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+  "_id": "ide-bash@1.0.11",
+  "_inCache": true,
+  "_location": "/ide-bash",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+  "_shasum": "1985acb9e69b2ef977a475c50bfb1d925c8cc4f6",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118521-12022-1v35jeq.he7qk0rudi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118521-12022-19li5yd.t1xxomkj4i",
+  "author": {
+    "name": "Mads Hartmann",
+    "email": "mads3379@gmail.com",
+    "url": "https://twitter.com/mads_hartmann"
+  },
+  "bugs": {
+    "url": "https://github.com/mads-hartmann/ide-bash/issues"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.9.5"
+  },
+  "description": "Language Bash language support for Atom-IDE",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.shell",
+    "bash"
+  ],
+  "homepage": "https://github.com/mads-hartmann/ide-bash#readme",
+  "license": "MIT",
+  "main": "src/main.js",
+  "name": "ide-bash",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "readme": "# Bash IDE\n\nBash language support for Atom-IDE. It's backed by\n[mads-hartmann/bash-language-server][bash-lsp].\n\n## System Requirements\n\nYou need to install that language server separately as it depends on native node\nmodules.\n\n```bash\nnpm i -g bash-language-server\n```\n\n## Features\n\n- [x] Jump to declaration\n- [x] Find references\n- [x] Code Outline & Show Symbols\n- [x] Highlight occurrences\n- [x] Code completion\n- [x] Simple diagnostics reporting\n- [ ] Rename symbol\n\n## Development Guide\n\nMost of the interesting bits are happening in the server so you'll probably want\nto head over to the [development guide][server-dev-guide] to see the development\nflow for the server.\n\nIf not, here's how to work on the Atom client.\n\n```bash\ngit clone git@github.com:mads-hartmann/ide-bash && cd ide-bash\nnpm install\napm link\n```\n\nIf you want to inspect the communication between the Atom and the Bash language\nserver then open the Developer Tools in Atom and execute the following piece of\ncode in the Console.\n\n```javascript\natom.config.set('core.debugLSP', true)\n```\n\nReload the window and you should see all the messages.\n\n[bash-lsp]: https://github.com/mads-hartmann/bash-language-server\n[server-dev-guide]: https://github.com/mads-hartmann/bash-language-server/blob/master/docs/development-guide.md\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mads-hartmann/ide-bash.git"
+  },
+  "version": "1.0.11"
+}
