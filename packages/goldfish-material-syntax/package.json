@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118521-8458-1agn8mb.31vvtmlsor"
+    ]
+  ],
+  "_from": "../d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+  "_id": "goldfish-material-syntax@1.0.0",
+  "_inCache": true,
+  "_location": "/goldfish-material-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+  "_shasum": "48c52cf9b740197ab38913287974842757f59e1b",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-8458-1x63oj.lno8gxpqfr/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118521-8458-1agn8mb.31vvtmlsor",
+  "bugs": {
+    "url": "https://github.com/nopphasinara/goldfish-material-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A darker syntax theme for Atom that uses Google's Material Design color palette",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nopphasinara/goldfish-material-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "material",
+    "material design"
+  ],
+  "license": "MIT",
+  "name": "goldfish-material-syntax",
+  "optionalDependencies": {},
+  "readme": "![](http://i.imgur.com/f58FC9u.png)\n---\n\nA darker variant of [Atom Material Syntax](https://github.com/nopphasinara/atom-material-ui) for [Atom Material UI](https://github.com/nopphasinara/atom-material-ui). Inspired by Mattia Astorino's [SublimeText theme](https://github.com/equinusocio/material-theme).\n\n![](http://i.imgur.com/2mxpDcl.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopphasinara/goldfish-material-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.0"
+}

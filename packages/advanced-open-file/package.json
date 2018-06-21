@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
-        "spec": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118520-28713-17bl3yy.1h5w3zncdi"
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118521-15263-89jebt.j44116ecdi"
     ]
   ],
-  "_from": "../d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+  "_from": "../d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
   "_id": "advanced-open-file@0.16.8",
   "_inCache": true,
   "_location": "/advanced-open-file",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
-    "spec": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
+  "_resolved": "file:../d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
   "_shasum": "6a7fe4baad56eca96c79909d017ababfba0de984",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118520-28713-11qgonq.qda9zwu3di/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118520-28713-17bl3yy.1h5w3zncdi",
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118521-15263-1aner6z.kn0u3j714i/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118521-15263-89jebt.j44116ecdi",
   "activationCommands": {
     "atom-workspace": [
       "advanced-open-file:toggle"

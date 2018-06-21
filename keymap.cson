@@ -1,7 +1,20 @@
-
-# Custom keymaps
-
-'html, body, .workspace, atom-workspace, atom-text-editor, .editor, div':
+'html,
+body,
+body atom-workspace,
+body .workspace,
+body atom-text-editor,
+body .editor,
+.platform-darwin,
+.platform-darwin atom-workspace,
+.platform-darwin .workspace,
+.platform-darwin atom-text-editor,
+.platform-darwin .editor,
+atom-workspace,
+.workspace,
+atom-workspace atom-text-editor,
+.workspace .editor,
+atom-text-editor,
+.editor':
   'shift-ctrl-tab'   : 'unset!'
   'ctrl-home'        : 'unset!'
   'ctrl-end'         : 'unset!'
@@ -39,21 +52,21 @@
   'end'              : 'unset!'
   'pageup'           : 'unset!'
   'pagedown'         : 'unset!'
-  'cmd-o'            : 'unset!'
-  'alt-delete'       : 'unset!'
   'ctrl-p'           : 'unset!'
   'ctrl-n'           : 'unset!'
   'ctrl-i'           : 'unset!'
   'ctrl-k'           : 'unset!'
   'ctrl-l'           : 'unset!'
 
+  'alt-cmd-p'   : 'project-manager:edit-projects'
+  'shift-cmd-R' : 'window:reload'
+  'cmd-o'       : 'advanced-open-file:toggle'
   'shift-tab'        : 'editor:auto-indent'
   'shift-ctrl-left'  : 'pane:move-item-left'
   'shift-ctrl-right' : 'pane:move-item-right'
-  'shift-cmd-t'      : 'pane:reopen-closed-item'
-  'shift-cmd-r'      : 'window:reload'
-  'shift-cmd-n'      : 'application:new-window'
-  'shift-cmd-a'      : 'application:add-project-folder'
+  'shift-cmd-T'      : 'pane:reopen-closed-item'
+  'shift-cmd-N'      : 'application:new-window'
+  'shift-cmd-S'      : 'application:add-project-folder'
   'shift-cmd-I'      : 'settings-view:install-packages-and-themes'
   'alt-tab'          : 'editor:auto-indent'
   'alt-cmd-down'     : 'window:focus-pane-below'
@@ -70,161 +83,45 @@
   'ctrl-escape'      : 'tree-view:toggle-focus'
 
 
-'.platform-darwin atom-workspace, atom-workspace, .workspace':
-  'cmd-o'            : 'advanced-open-file:toggle'
-  'shift-cmd-R'      : 'window:reload'
+'.platform-darwin':
+  'shift-cmd-O': 'project-manager:list-projects'
 
 
-'.platform-darwin atom-text-editor, atom-text-editor, .platform-darwin .editor, .editor':
-  'alt-cmd-a'        : 'aligner:align'
+'.platform-darwin atom-workspace,
+.platform-darwin .workspace,
+atom-workspace,
+.workspace':
+  '': ''
 
 
-'.platform-darwin atom-text-editor:not([mini]), atom-text-editor:not([mini]), .platform-darwin .editor:not([mini]), .editor:not([mini])':
-  'alt-cmd-tab'      : 'editor:auto-indent'
-  'cmd-backspace'    : 'editor:delete-line'
-  # 'alt-cmd-a'       : 'atom-alignment:alignMultiple'
+'.platform-darwin atom-text-editor,
+.platform-darwin .editor,
+atom-workspace atom-text-editor,
+atom-workspace .editor,
+.workspace atom-text-editor,
+.workspace .editor':
+  'alt-cmd-a': 'alignment'
 
 
-# Custom
-'.advanced-open-file atom-text-editor, .advanced-open-file .editor':
-  'tab'              : 'advanced-open-file:autocomplete'
-  'up'               : 'advanced-open-file:move-cursor-up'
-  'down'             : 'advanced-open-file:move-cursor-down'
-  'alt-delete'       : 'advanced-open-file:delete-path-component'
-  'cmd-z'            : 'advanced-open-file:undo'
+'.platform-darwin atom-text-editor:[mini],
+.platform-darwin .editor:[mini],
+atom-workspace atom-text-editor:[mini],
+atom-workspace .editor:[mini],
+.workspace atom-text-editor:[mini],
+.workspace .editor:[mini]':
+  '': ''
 
 
-'.go-to-line atom-text-editor[mini],
-.go-to-line .editor[mini]':
-  'enter': 'core:confirm'
-  'escape': 'core:cancel'
-
-
-'.platform-darwin .go-to-line atom-text-editor[mini],
-.platform-darwin .go-to-line .editor[mini]':
-  'escape': 'core:cancel'
-
-
-'.github-CommitView-editor atom-text-editor:not([mini]),
-.github-CommitView-editor .editor:not([mini])':
-  'shift-tab': 'core:focus-previous'
-
-
-'.github-FilePatchView':
-  'right': 'core:move-right'
-  'tab': 'github:select-next-hunk'
-  'shift-tab': 'github:select-previous-hunk'
-
-
-'.github-Prompt-input':
-  'enter': 'core:confirm'
-  'esc': 'tool-panel:unfocus'
-
-
-'.github-Dialog':
-  'shift-tab': 'core:focus-previous'
-
-
-'.github-Dialog input':
-  'enter': 'core:confirm'
-
-
-'.github-StagingView':
-  'tab': 'core:focus-next'
-  'shift-tab': 'core:focus-previous'
-  'left': 'core:move-left'
-
-
-'.platform-darwin .project-find .replace-container atom-text-editor,
-.platform-darwin .project-find .replace-container .editor,
-.project-find .replace-container atom-text-editor,
-.project-find .replace-container .editor':
-  'cmd-enter': 'project-find:replace-all'
-
-
-'.platform-darwin .find-and-replace .replace-container atom-text-editor,
-.platform-darwin .find-and-replace .replace-container .editor,
-.find-and-replace .replace-container atom-text-editor,
-.find-and-replace .replace-container .editor':
-  'cmd-enter': 'find-and-replace:replace-all'
-
-
-'.project-find .results-view':
-  'tab': 'find-and-replace:focus-next'
-  'shift-tab': 'find-and-replace:focus-previous'
-
-
-'.project-find, .platform-darwin .project-find':
-  'tab': 'find-and-replace:focus-next'
-  'shift-tab': 'find-and-replace:focus-previous'
-
-  'cmd-enter': 'project-find:confirm'
-  'alt-cmd-r': 'project-find:toggle-regex-option'
-  'alt-cmd-c': 'project-find:toggle-case-option'
-  'alt-cmd-w': 'project-find:toggle-whole-word-option'
-
-
-'.find-and-replace, .platform-darwin .find-and-replace':
-  'tab': 'find-and-replace:focus-next'
-  'shift-tab': 'find-and-replace:focus-previous'
-
-  'shift-enter': 'find-and-replace:show-previous'
-  'shift-cmd-enter': 'find-and-replace:find-next-selected'
-  'cmd-enter': 'find-and-replace:confirm'
-  'alt-enter': 'find-and-replace:find-all'
-  'alt-cmd-r': 'find-and-replace:toggle-regex-option'
-  'alt-cmd-c': 'find-and-replace:toggle-case-option'
-  'alt-cmd-s': 'find-and-replace:toggle-selection-option'
-  'alt-cmd-w': 'find-and-replace:toggle-whole-word-option'
-
-
-'.tree-view, .platform-darwin .tree-view':
-  'cmd-c': 'tree-view:copy'
-  'cmd-x': 'tree-view:cut'
-  'cmd-v': 'tree-view:paste'
-  'right': 'tree-view:expand-item'
-  'left': 'tree-view:collapse-directory'
-  'alt-cmd-o': 'tree-view:show-in-file-manager'
-  'enter': 'tree-view:expand-item'
-  'right': 'tree-view:expand-item'
-  'left': 'tree-view:collapse-directory'
-  'escape': 'tree-view:unfocus'
-  'alt-cmd-c': 'tree-view:copy-full-path'
-  'm': 'tree-view:move'
-  'a': 'tree-view:add-file'
-  'shift-a': 'tree-view:add-folder'
-  'd': 'tree-view:duplicate'
-  'r': 'tree-view:rename'
-  'backspace': 'tree-view:remove'
-  'up': 'core:move-up'
-  'down': 'core:move-down'
-  'f11': 'remote-ftp:download-selected'
-  'shift-f11': 'remote-ftp:upload-selected'
-
-
-'.tree-view-dialog atom-text-editor[mini],
-.tree-view-dialog .editor[mini]':
-  'enter': 'core:confirm'
-  'escape': 'core:cancel'
+'.platform-darwin atom-text-editor:not([mini]),
+.platform-darwin .editor:not([mini]),
+atom-workspace atom-text-editor:not([mini]),
+atom-workspace .editor:not([mini]),
+.workspace atom-text-editor:not([mini]),
+.workspace .editor:not([mini])':
+  'cmd-backspace': 'editor:delete-line'
+  'f11': 'remote-sync:download-file'
+  'shift-f11': 'remote-sync:upload-file'
 
 
 '.project-manager input':
   'enter': 'core:confirm'
-
-
-'.project-manager atom-text-editor[mini],
-.project-manager .editor[mini]':
-  'shift-enter': 'project-manager:alt-confirm'
-
-
-'.platform-darwin atom-workspace atom-text-editor:not(.mini),
-.platform-darwin .workspace atom-text-editor:not(.mini),
-.platform-darwin .workspace .editor:not(.mini),
-.platform-darwin atom-workspace .editor:not(.mini)':
-  'cmd-. cmd-.': 'sass-autocompile:compile-to-file'
-  'ctrl-shift-m': 'unset!'
-
-
-'.pane atom-text-editor:not(.mini),
-.pane .editor:not(.mini)':
-  'tab': 'snippets:expand'
