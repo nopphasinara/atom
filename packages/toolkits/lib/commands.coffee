@@ -74,11 +74,16 @@ module.exports =
       options = { skip: true, move: 4, infix: '$var' }
       gc.mutateSelectedText(selections, '{!! {{replacement}} !!}', options)
 
-    atom.commands.add 'atom-workspace', 'gc:copy-filename', ->
+    atom.commands.add 'atom-workspace, atom-text-editor', 'gc:copy-filename', ->
       editor = atom.workspace.getActiveTextEditor()
       clipboard = editor.getFileName()
       if clipboard != ''
         GC.clipboard = clipboard
+        atom.clipboard.write(clipboard)
+
+    atom.commands.add 'atom-text-editor', 'gc:compile-sass', ->
+      editor = atom.workspace.getActiveTextEditor()
+      atom.commands.dispatch(atom.views.getView(editor), "sass-autocompile:compile-to-file")
 
     atom.commands.add 'atom-text-editor', 'gc:paste', ->
       editor = atom.workspace.getActiveTextEditor()

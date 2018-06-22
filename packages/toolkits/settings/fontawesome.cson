@@ -1,8 +1,6 @@
 '.text.html, .text.css, .text.less, .text.scss, .text.sass':
   'editor':
     'completions': [
-
-      # v4.7.0
       'fa'
       'fas'
       'far'

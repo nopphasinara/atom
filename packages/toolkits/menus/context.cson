@@ -1,61 +1,221 @@
 "context-menu":
-  ".editor:not([mini])": [
-    "label": "Change Case"
-    "submenu": [
-      { "label": "lowercase", "command": "change-case:lower" }
-      { "label": "lOWERCASEFIRST", "command": "change-case:lowerFirst" }
-      { "label": "sentence case", "command": "change-case:sentence" }
-      { "label": "Title Case", "command": "change-case:title" }
-      { "label": "UPPERCASE", "command": "change-case:upper" }
-      { "label": "Uppercasefirst", "command": "change-case:upperFirst" }
-      { "type": "separator" }
-      { "label": "camelCase", "command": "change-case:camel" }
-      { "label": "CONSTANT_CASE", "command": "change-case:constant" }
-      { "label": "dot.case", "command": "change-case:dot" }
-      { "label": "param-case", "command": "change-case:param" }
-      { "label": "PascalCase", "command": "change-case:pascal" }
-      { "label": "path/case", "command": "change-case:path" }
-      { "label": "snake_case", "command": "change-case:snake" }
-      { "type": "separator" }
-      { "label": "Swap Case", "command": "change-case:swap" }
-    ]
-
-    "label": "Emmet"
-    "submenu": [
+  {
+    "atom-text-editor:not([mini]), .editor:not([mini])": [
       {
-        "label": "Encode\\Decode data:URL image"
-        "command": "emmet:encode-decode-data-url"
+        "label": "Change Case"
+        "submenu": [
+          {
+            "label": "lowercase"
+            "command": "change-case:lower"
+          }
+          {
+            "label": "lOWERCASEFIRST"
+            "command": "change-case:lowerFirst"
+          }
+          {
+            "label": "sentence case"
+            "command": "change-case:sentence"
+          }
+          {
+            "label": "Title Case"
+            "command": "change-case:title"
+          }
+          {
+            "label": "UPPERCASE"
+            "command": "change-case:upper"
+          }
+          {
+            "label": "Uppercasefirst"
+            "command": "change-case:upperFirst"
+          }
+          { "type": "separator" }
+          {
+            "label": "camelCase"
+            "command": "change-case:camel"
+          }
+          {
+            "label": "CONSTANT_CASE"
+            "command": "change-case:constant"
+          }
+          {
+            "label": "dot.case"
+            "command": "change-case:dot"
+          }
+          {
+            "label": "param-case"
+            "command": "change-case:param"
+          }
+          {
+            "label": "PascalCase"
+            "command": "change-case:pascal"
+          }
+          {
+            "label": "path/case"
+            "command": "change-case:path"
+          }
+          {
+            "label": "snake_case"
+            "command": "change-case:snake"
+          }
+          { "type": "separator" }
+          {
+            "label": "Swap Case"
+            "command": "change-case:swap"
+          }
+        ]
       }
       {
-        "label": "Update Image Size"
-        "command": "emmet:update-image-size"
+        "label": "Sort Lines"
+        "submenu": [
+          {
+            "label": "Sort"
+            "command": "sort-lines:sort"
+          }
+          {
+            "label": "Reverse Sort"
+            "command": "sort-lines:reverse-sort"
+          }
+          {
+            "label": "Unique"
+            "command": "sort-lines:unique"
+          }
+          {
+            "label": "Case Insensitive Sort"
+            "command": "sort-lines:case-insensitive-sort"
+          }
+          {
+            "label": "Natural"
+            "command": "sort-lines:natural"
+          }
+          {
+            "label": "By Length"
+            "command": "sort-lines:by-length"
+          }
+          {
+            "label": "Shuffle"
+            "command": "sort-lines:shuffle"
+          }
+        ]
       }
-    ]
-  ]
-
-  ".editor:not([mini]), .entries.list-tree .file.entry.list-item": [
-    "label": "Remote Sync"
-    "submenu": [
-      { "label": "Upload File", "command": "remote-sync:upload-file" }
-      { "label": "Download File", "command": "remote-sync:download-file" }
-      { "label": "Delete File", "command": "remote-sync:delete-file" }
-      { "label": "Configure", "command": "remote-sync:configure" }
-    ]
-  ]
-
-  ".entries.list-tree .header.list-item, .header.list-item.project-root-header": [
-    "label": "Remote Sync"
-    "submenu": [
-      { "label": "Upload Folder", "command": "remote-sync:upload-folder" }
-      { "label": "Download Folder", "command": "remote-sync:download-folder" }
-      { "label": "Delete Folder", "command": "remote-sync:delete-folder" }
-      { "label": "Configure", "command": "remote-sync:configure" }
-    ]
-  ]
-
-  ".tree-view": [
       {
-        "id": "sass-autocompile-context-menu-compile",
-        "label": "Compile SASS", "command": "sass-autocompile:compile-to-file"
+        "label": "Remote Sync"
+        "submenu": [
+          {
+            "label": "Upload File"
+            "command": "remote-sync:upload-file"
+          }
+          {
+            "label": "Download File"
+            "command": "remote-sync:download-file"
+          }
+          {
+            "label": "Delete File"
+            "command": "remote-sync:delete-file"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync:configure"
+          }
+        ]
+      }
+      {
+        "label": "More…"
+        "submenu": [
+          {
+            "label": "Copy Filename"
+            "command": "gc:copy-filename"
+          }
+          {
+            "label": "Copy Path"
+            "command": "editor:copy-path"
+          }
+          {
+            "label": "Copy Project Path"
+            "command": "editor:copy-project-path"
+          }
+          { "type": "separator" }
+          {
+            "label": "Update Tag"
+            "command": "emmet:update-tag"
+          }
+          {
+            "label": "Update Image Size"
+            "command": "emmet:update-image-size"
+          }
+          {
+            "label": "Encode\\Decode data:URL image"
+            "command": "emmet:encode-decode-data-url"
+          }
+        ]
       }
     ]
+
+    ".entries.list-tree .file.entry.list-item": [
+      {
+        "label": "Remote Sync"
+        "submenu": [
+          {
+            "label": "Upload File"
+            "command": "remote-sync:upload-file"
+          }
+          {
+            "label": "Download File"
+            "command": "remote-sync:download-file"
+          }
+          {
+            "label": "Delete File"
+            "command": "remote-sync:delete-file"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync:configure"
+          }
+        ]
+      }
+    ]
+
+    ".entries.list-tree .header.list-item, .header.list-item.project-root-header": [
+      {
+        "label": "Remote Sync"
+        "submenu": [
+          {
+            "label": "Upload Folder"
+            "command": "remote-sync:upload-folder"
+          }
+          {
+            "label": "Download Folder"
+            "command": "remote-sync:download-folder"
+          }
+          {
+            "label": "Delete Folder"
+            "command": "remote-sync:delete-folder"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync:configure"
+          }
+        ]
+      }
+    ]
+
+    ".tree-view": [
+      {
+        "label": "Compile SASS"
+        "command": "sass-autocompile:compile-to-file"
+        "id": "sass-autocompile-context-menu-compile"
+      }
+    ]
+
+    "atom-text-editor[data-grammar~=\"scss\"], .editor[data-grammar~=\"scss\"]": [
+      {
+        "label": "More…"
+        "submenu": [
+          { "type": "separator" }
+          {
+            "label": "Compile SASS"
+            "command": "gc:compile-sass"
+          }
+        ]
+      }
+    ]
+  }

@@ -10,14 +10,17 @@
   "license": "MIT",
   "keywords": [],
   "dependencies": {
-    "array-shuffle": "^1.0.1",
-    "atom-space-pen-views": "^2.2.0",
-    "change-case": "^3.0.2",
-    "coffeescript": "^2.3.1",
-    "event-kit": "^1.2.0",
-    "javascript-natural-sort": "^0.7.1",
+    "array-shuffle": "*",
+    "async": "^2.6.1",
+    "atom-space-pen-views": "*",
+    "change-case": "*",
+    "coffeescript": "*",
+    "event-kit": "^2.5.0",
+    "javascript-natural-sort": "*",
     "jquery": "^3.3.1",
+    "less": "*",
     "lodash": "^4.17.10",
+    "mkdirp": "*",
     "uuid": "*"
   },
   "devDependencies": {

@@ -1,0 +1,4 @@
+'.text.plain, .source.log, .source.txt':
+  'editor':
+    'softWrap': false
+    'maxScreenLineLength': 4096
