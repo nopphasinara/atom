@@ -1,0 +1,28 @@
+{
+  "type": "private",
+  "name": "atom",
+  "version": "1.0.0",
+  "description": "Customize atom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopphasinara/atom.git"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "array-shuffle": "^1.0.1",
+    "atom-space-pen-views": "^2.2.0",
+    "change-case": "^3.0.2",
+    "event-kit": "^1.2.0",
+    "javascript-natural-sort": "^0.7.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "uuid": "*"
+  },
+  "packageDependencies": {
+    "tool-bar": "*",
+    "jquery": "^3.3.1"
+  },
+  "activationCommands": {},
+  "consumedServices": {}
+}

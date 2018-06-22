@@ -31,11 +31,27 @@
       "=>"
       ":"
     ]
+  "autocomplete-plus":
+    autoActivationDelay: 100
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
+    defaultProvider: "Symbol"
+    minimumWordLength: 1
+  "bracket-matcher":
+    alwaysSkipClosingPairs: true
+    highlightMatchingLineNumber: true
+  "command-palette":
+    preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
     automaticallyUpdate: false
     closeEmptyWindows: false
+    disabledPackages: [
+      "autosave"
+      "background-tips"
+      "deprecation-cop"
+    ]
     ignoredNames: [
       ".git"
       ".hg"
@@ -51,6 +67,32 @@
       "advanced-open-file"
       "alignment"
       "markdown-preview"
+      "sass-autocompile"
+      "archive-view"
+      "autocomplete-plus"
+      "autoflow"
+      "bookmarks"
+      "bracket-matcher"
+      "command-palette"
+      "dev-live-reload"
+      "encoding-selector"
+      "find-and-replace"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "go-to-line"
+      "grammar-selector"
+      "image-view"
+      "keybinding-resolver"
+      "link"
+      "notifications"
+      "open-on-github"
+      "settings-view"
+      "snippets"
+      "spell-check"
+      "styleguide"
+      "symbols-view"
+      "tree-view"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -71,9 +113,13 @@
     tabType: "soft"
   "exception-reporting":
     userId: "000d46de-7d57-4358-b418-14d7465390a0"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
   "markdown-preview":
     breakOnSingleNewline: true
-    openPreviewInSplitPane: false
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
@@ -84,5 +130,21 @@
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
+  "sass-autocompile":
+    autoHidePanelDelay: 2000
+    compactFilenamePattern: "$1.css"
+    compileCompact: true
+    compileCompressed: false
+    compileOnSave: false
+    nestedFilenamePattern: "$1.css"
+    precision: 3
+    showAdditionalCompilationInfo: false
+  "status-bar":
+    fullWidth: false
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
   welcome:
     showOnStartup: false
