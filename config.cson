@@ -93,6 +93,7 @@
       "styleguide"
       "symbols-view"
       "tree-view"
+      "tool-bar"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -146,5 +147,10 @@
   tabs:
     displayMruTabList: false
     enableMruTabSwitching: false
+  "tool-bar":
+    fullWidth: false
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
