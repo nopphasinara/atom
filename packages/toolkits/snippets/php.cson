@@ -7,6 +7,12 @@
 
 
 '.source.php':
+  'var_dump()':
+    'prefix': 'dump'
+    'body': '''
+      var_dump($1)$0
+    '''
+
   'throw':
     'prefix': 'throw'
     'body': '''
@@ -30,9 +36,7 @@
 
   'protected $var':
     'prefix': 'ptvar'
-    'body': '''
-    protected ${1:\\$var}${3: = ${2:null}}$0
-    '''
+    'body': 'protected ${1:$var}${2: = ${3:null}}'
 
   'protected $arr':
     'prefix': 'ptarr'

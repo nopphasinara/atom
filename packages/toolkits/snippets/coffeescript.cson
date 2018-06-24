@@ -1,0 +1,21 @@
+'.source.coffee':
+  'Snippet':
+    'prefix': 'snip'
+    'body': """
+      '${1:selector}':
+        '${2:name}':
+          'prefix': '${3:prefix}'
+          'body': '''
+            $4
+          '''$0
+    """
+
+  'Snippet Item':
+    'prefix': 'snipadd'
+    'body': """
+      '${1:name}':
+        'prefix': '${2:prefix}'
+        'body': '''
+          $3
+        '''$0
+    """

@@ -150,6 +150,10 @@ atom-workspace .editor:not([mini]),
   'cmd-m'                                    : 'emmet:merge-lines'
   'ctrl-w'                                   : 'emmet:wrap-with-abbreviation'
   'ctrl-i'                                   : 'emmet:interactive-expand-abbreviation'
+  'alt-\''                                   : 'gc:dots'
+  'alt-\"'                                   : 'gc:ddots'
+  'alt-\='                                   : 'gc:plus'
+  'alt-\+'                                   : 'gc:dplus'
 
 
 '.project-manager input'                     :
