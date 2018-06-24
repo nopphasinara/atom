@@ -147,6 +147,11 @@
             "command": "emmet:encode-decode-data-url"
           }
           { "type": "separator" }
+          {
+            'label': 'Align'
+            'command': 'aligner:align'
+          }
+          { "type": "separator" }
         ]
       }
     ]

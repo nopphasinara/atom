@@ -21,7 +21,9 @@
     "less": "*",
     "lodash": "^4.17.10",
     "mkdirp": "*",
-    "uuid": "*"
+    "uuid": "*",
+    "atom-package-deps": "^4.6.0",
+    "extend": "^3.0.0"
   },
   "snippets": "./snippets/",
   "devDependencies": {

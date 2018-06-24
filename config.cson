@@ -1,36 +1,12 @@
 "*":
+  ProviderCoffee:
+    config: null
+  ProviderJavascript:
+    config: null
   "advanced-open-file":
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
-  alignment:
-    leftSeparators: []
-    rightSeparators: [
-      "="
-      "+="
-      "-="
-      "*="
-      "/="
-      "?="
-      "|="
-      "%="
-      ".="
-      "=>"
-      ":"
-    ]
-    spaceSeparators: [
-      "="
-      "+="
-      "-="
-      "*="
-      "/="
-      "?="
-      "|="
-      "%="
-      ".="
-      "=>"
-      ":"
-    ]
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -98,6 +74,7 @@
       "tool-bar"
       "emmet"
       "autocomplete-plus"
+      "split-diff"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -146,6 +123,8 @@
     nestedFilenamePattern: "$1.css"
     precision: 3
     showAdditionalCompilationInfo: false
+  "split-diff":
+    turnOffSoftWrap: true
   "status-bar":
     fullWidth: false
   "symbols-view":
