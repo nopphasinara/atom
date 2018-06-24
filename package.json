@@ -23,6 +23,7 @@
     "mkdirp": "*",
     "uuid": "*"
   },
+  "snippets": "./snippets/",
   "devDependencies": {
     "coffeelint": "*",
     "request": "*",

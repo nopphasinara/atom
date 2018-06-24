@@ -51,16 +51,19 @@
       "autosave"
       "background-tips"
       "deprecation-cop"
-    ]
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "._*"
-      "Thumbs.db"
-      "desktop.ini"
-      "indexes"
+      "about"
+      "archive-view"
+      "exception-reporting"
+      "language-csharp"
+      "language-c"
+      "language-java"
+      "language-objective-c"
+      "language-toml"
+      "metrics"
+      "spell-check"
+      "styleguide"
+      "timecop"
+      "welcome"
     ]
     packagesWithKeymapsDisabled: [
       "project-manager"
@@ -69,7 +72,6 @@
       "markdown-preview"
       "sass-autocompile"
       "archive-view"
-      "autocomplete-plus"
       "autoflow"
       "bookmarks"
       "bracket-matcher"
@@ -95,16 +97,17 @@
       "tree-view"
       "tool-bar"
       "emmet"
+      "autocomplete-plus"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "goldfish-material-syntax"
+      "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "'SFMono-Regular', 'MesloLGS-Regular', 'master-icons'"
+    fontFamily: "'MesloLGS-Regular', 'master-icons'"
     fontSize: 14
     lineHeight: 1.54
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"

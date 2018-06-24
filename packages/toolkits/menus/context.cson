@@ -146,6 +146,7 @@
             "label": "Encode\\Decode data:URL image"
             "command": "emmet:encode-decode-data-url"
           }
+          { "type": "separator" }
         ]
       }
     ]

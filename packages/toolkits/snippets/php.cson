@@ -1,0 +1,29 @@
+'.text.html.php':
+  '<?php':
+    'prefix': 'ph'
+    'body': '''
+      <?php\n\n$0
+    '''
+
+
+'.source.php':
+  'throw':
+    'prefix': 'throw'
+    'body': '''
+    throw new \\Exception(${1:\\"Error Processing Request\\"}${2:, ${3:1}})$0
+    '''
+
+  'namespace':
+    'prefix': 'ns'
+    'body': '''
+      namespace $0
+    '''
+
+  'class ClassName':
+    'prefix': 'class'
+    'body': '''
+      class ${1:ClassName}
+      {
+        $2
+      }$0
+    '''
