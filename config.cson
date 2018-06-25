@@ -84,10 +84,9 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "'MesloLGS-Regular', 'master-icons'"
+    fontFamily: "'FiraCode-Regular', 'master-icons'"
     fontSize: 14
-    lineHeight: 1.54
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    lineHeight: 1.6
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -139,3 +138,6 @@
 ".blade.html.php.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
