@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+        "spec": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118525-6172-hvt9nl.1c7yhhyqfr"
+    ]
+  ],
+  "_from": "../d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+  "_id": "path-hyperclick@0.3.0",
+  "_inCache": true,
+  "_location": "/path-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+    "spec": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+  "_shasum": "87bed34a2e4cb73c0475a34366cd9aa5fc7614e0",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118525-6172-u3rssv.e3rztzkt9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118525-6172-hvt9nl.1c7yhhyqfr",
+  "bugs": {
+    "url": "https://github.com/wingyplus/path-hyperclick/issues"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "description": "File jumper with hyperclick",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/wingyplus/path-hyperclick#readme",
+  "keywords": [
+    "hyperclick",
+    "path",
+    "file"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "path-hyperclick",
+  "optionalDependencies": {},
+  "package-deps": [
+    "hyperclick"
+  ],
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# Path Hyperclick\n\nPath Hyperclick use open editor by clicking path\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingyplus/path-hyperclick.git"
+  },
+  "version": "0.3.0"
+}

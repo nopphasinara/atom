@@ -76,6 +76,7 @@
       "emmet"
       "autocomplete-plus"
       "split-diff"
+      "hyperclick"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -102,6 +103,8 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
+  hyperclick:
+    darwinTriggerKeys: "ctrlKey"
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":

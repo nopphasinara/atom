@@ -67,7 +67,7 @@ atom-text-editor,
   'shift-ctrl-right'                         : 'pane:move-item-right'
   'shift-cmd-T'                              : 'pane:reopen-closed-item'
   'shift-cmd-N'                              : 'application:new-window'
-  'shift-cmd-S'                              : 'application:add-project-folder'
+  'shift-cmd-A'                              : 'application:add-project-folder'
   'shift-cmd-I'                              : 'settings-view:install-packages-and-themes'
   'alt-cmd-tab'                              : 'editor:auto-indent'
   'alt-cmd-down'                             : 'window:focus-pane-below'
