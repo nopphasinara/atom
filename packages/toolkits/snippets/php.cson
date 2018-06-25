@@ -100,7 +100,7 @@
   'foreach':
     'prefix': 'foreach'
     'body': '''
-      foreach (${2:\\$var} as \\$${3:key}${1: => \\$${4:value}}) {
-        $5
+      foreach (${1:\\$var} as \\$${2:key} => \\$${3:value}) {
+        $4
       }$0
     '''

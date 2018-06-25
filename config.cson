@@ -13,6 +13,7 @@
     confirmCompletion: "enter"
     defaultProvider: "Symbol"
     minimumWordLength: 1
+    similarSuggestionRemoval: "textOrSnippet"
   "bracket-matcher":
     alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
@@ -84,7 +85,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "'FiraCode-Regular', 'master-icons'"
+    fontFamily: "'Menlo', 'master-icons'"
     fontSize: 14
     lineHeight: 1.6
     scrollPastEnd: true
