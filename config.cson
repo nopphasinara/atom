@@ -135,8 +135,7 @@
   tabs:
     displayMruTabList: false
     enableMruTabSwitching: false
-  "tool-bar":
-    fullWidth: false
+  "tool-bar": {}
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
