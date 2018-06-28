@@ -62,7 +62,7 @@ atom-text-editor,
   'alt-cmd-p'                                : 'project-manager:edit-projects'
   'shift-cmd-R'                              : 'window:reload'
   'cmd-o'                                    : 'advanced-open-file:toggle'
-  'shift-tab'                                : 'editor:outdent-selected-rows'
+  'shift-tab'                                : 'native!'
   'shift-ctrl-left'                          : 'pane:move-item-left'
   'shift-ctrl-right'                         : 'pane:move-item-right'
   'shift-cmd-T'                              : 'pane:reopen-closed-item'
@@ -154,6 +154,11 @@ atom-workspace .editor:not([mini]),
   'alt-\"'                                   : 'gc:ddots'
   'alt-\='                                   : 'gc:plus'
   'alt-\+'                                   : 'gc:dplus'
+  'shift-alt-space'                          : 'gc:spaces'
+  'alt-space'                                : 'gc:insert-space'
+  'shift-alt-enter'                          : 'gc:insert-p'
+  'alt-enter'                                : 'gc:insert-br'
+  'shift-tab'                                : 'editor:outdent-selected-rows'
 
 
 '.project-manager input'                     :
@@ -223,6 +228,8 @@ atom-workspace .editor:not([mini]),
 .find-and-replace .replace-container atom-text-editor,
 .find-and-replace .replace-container .editor':
   'cmd-enter'                                : 'find-and-replace:replace-all'
+  'tab'                                      : 'find-and-replace:focus-next'
+  'shift-tab'                                : 'find-and-replace:focus-previous'
 
 
 '.project-find .results-view'                :

@@ -183,5 +183,11 @@ module.exports =
       options = { select: false, skip: true }
       gc.mutateSelectedText(selections, '<p>&nbsp;</p>', options)
 
+    atom.commands.add 'atom-text-editor', 'gc:insert-space', ->
+      editor = atom.workspace.getActiveTextEditor()
+      selections = editor.getSelections()
+      options = { select: false, skip: true }
+      gc.mutateSelectedText(selections, '&nbsp;', options)
+
   initialize: () ->
     this.activate()
