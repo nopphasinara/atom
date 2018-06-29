@@ -19,3 +19,21 @@
           $3
         '''$0
     """
+
+  'Project Path':
+    'prefix': 'pp'
+    'body': '''
+      { "title": "$1", "paths": [ "~/.dotfiles/projects/$1" ] }
+    '''
+
+  'Website Project Path':
+    'prefix': 'pw'
+    'body': '''
+      { "title": "$1", "paths": [ "~/www/$1" ] }
+    '''
+
+  'Path':
+    'prefix': 'path'
+    'body': '''
+      { "title": "~/$1", "paths": [ "~/$1" ] }
+    '''

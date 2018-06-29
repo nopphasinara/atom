@@ -14,6 +14,8 @@
     defaultProvider: "Symbol"
     minimumWordLength: 1
     similarSuggestionRemoval: "textOrSnippet"
+  "blade-spacer":
+    workInAllFiles: true
   "bracket-matcher":
     alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
@@ -140,7 +142,21 @@
     showOnStartup: false
 ".blade.html.php.text":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
-".html.php.text":
-  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+".css.scss.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".scss.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
