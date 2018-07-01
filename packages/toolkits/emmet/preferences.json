@@ -1,0 +1,7 @@
+{
+  "filter.commentTrigger": "class",
+  "filter.commentAfter": "<!-- <%= attr('id', '/ #') %><%= attr('class', '/ .') %> -->",
+  "css.alignVendor": true,
+  "css.keywordAliases": "i:important, d:default, in:inherit",
+  "css.keywords": "important, default, inherit"
+}

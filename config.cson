@@ -4,9 +4,13 @@
   ProviderJavascript:
     config: null
   "advanced-open-file":
-    defaultInputValue: "Empty"
+    defaultInputValue: "none"
     fuzzyMatch: true
     helmDirSwitch: true
+  "atom-hot-package-loader":
+    autoWatchTarget: true
+    detectTargetOnStart: true
+    onlyInDevMode: false
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -79,6 +83,8 @@
       "autocomplete-plus"
       "split-diff"
       "hyperclick"
+      "change-case"
+      "sort-lines"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -97,7 +103,7 @@
     softWrap: true
     tabType: "soft"
   emmet:
-    extensionsPath: "~/.dotfiles/emmet"
+    extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "000d46de-7d57-4358-b418-14d7465390a0"
   "find-and-replace":
