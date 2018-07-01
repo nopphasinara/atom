@@ -110,7 +110,7 @@ atom-workspace .editor,
 .workspace .editor':
   'cmd-d'                                    : 'find-and-replace:select-next'
   'ctrl-alt-cmd-g'                           : 'grammar-selector:show'
-  'alt-cmd-a'                                : 'alignment'
+  'alt-cmd-a'                                : 'aligner:align'
 
 
 # '.platform-darwin atom-text-editor:[mini],
