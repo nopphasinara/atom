@@ -151,14 +151,14 @@
     commentEnd: " --}}"
     commentStart: "{{-- "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?$"
-".php.source":
-  editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?$"
 ".css.scss.source":
   editor:
     autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
+".php.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?$"
 ".sass.source":
   editor:
     autoIndentOnPaste: true
