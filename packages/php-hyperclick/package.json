@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
-        "spec": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118525-6128-1crwbmk.bdqbprpb9"
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5348-1kb62l6.dda5wjnhfr"
     ]
   ],
-  "_from": "../d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+  "_from": "../d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
   "_id": "php-hyperclick@1.2.1",
   "_inCache": true,
   "_location": "/php-hyperclick",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
-    "spec": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
+  "_resolved": "file:../d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
   "_shasum": "63633bec1de01e49e45a7ed0c79c63ed2a5627a1",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118525-6128-1d716c4.f1qko9lik9/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118525-6128-1crwbmk.bdqbprpb9",
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5348-1s5pg1d.w7iuwpzaor/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5348-1kb62l6.dda5wjnhfr",
   "author": {
     "name": "Hari KT"
   },

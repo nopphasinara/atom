@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
+        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
-        "spec": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
+        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
+        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118525-6083-1590a79.nlgxp0t3xr"
+      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5328-1motg0n.28tgj8m2t9"
     ]
   ],
-  "_from": "../d-118525-6083-74px06.is2amdkj4i/package.tgz",
+  "_from": "../d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
   "_id": "hyperclick@0.1.5",
   "_inCache": true,
   "_location": "/hyperclick",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
+    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
-    "spec": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
+    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
+    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118525-6083-74px06.is2amdkj4i/package.tgz",
+  "_resolved": "file:../d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
   "_shasum": "bfd388a0798053e09d72c36175a4c88f75b1f57a",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118525-6083-74px06.is2amdkj4i/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118525-6083-1590a79.nlgxp0t3xr",
+  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5328-5y5lcu.3ie75jyvi/package.tgz",
+  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5328-1motg0n.28tgj8m2t9",
   "bugs": {
     "url": "https://github.com/facebook-atom/hyperclick/issues"
   },
