@@ -169,3 +169,6 @@
     autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
+".source.sql":
+  editor:
+    softWrap: false
