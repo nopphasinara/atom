@@ -158,7 +158,9 @@ atom-workspace .editor:not([mini]),
   'alt-space'                                : 'gc:insert-space'
   'shift-alt-enter'                          : 'gc:insert-p'
   'alt-enter'                                : 'gc:insert-br'
-  'alt-/'                                : 'gc:html-comment'
+  'cmd-?'                                    : 'gc:html-comment'
+  'alt-/'                                    : 'gc:block-comment'
+  'alt-?'                                    : 'gc:inline-comment'
   'shift-tab'                                : 'editor:outdent-selected-rows'
 
 

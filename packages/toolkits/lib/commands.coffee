@@ -110,6 +110,18 @@ module.exports =
       options = { skip: true, move: 4 }
       gc.mutateSelectedText(selections, '<!-- {{replacement}} -->', options)
 
+    atom.commands.add 'atom-text-editor', 'gc:block-comment', ->
+      editor = atom.workspace.getActiveTextEditor()
+      selections = editor.getSelections()
+      options = { skip: true, move: 3 }
+      gc.mutateSelectedText(selections, '/* {{replacement}} */', options)
+
+    atom.commands.add 'atom-text-editor', 'gc:inline-comment', ->
+      editor = atom.workspace.getActiveTextEditor()
+      selections = editor.getSelections()
+      options = { skip: true, }
+      gc.mutateSelectedText(selections, '// {{replacement}}', options)
+
     atom.commands.add 'atom-text-editor', 'gc:blade-e', ->
       editor = atom.workspace.getActiveTextEditor()
       selections = editor.getSelections()

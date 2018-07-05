@@ -154,6 +154,15 @@
 ".css.scss.source":
   editor:
     autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".css.source":
+  editor:
+    autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
 ".php.source":
@@ -167,6 +176,8 @@
 ".scss.source":
   editor:
     autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
 ".source.sql":
