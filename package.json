@@ -12,18 +12,18 @@
   "dependencies": {
     "array-shuffle": "*",
     "async": "^2.6.1",
+    "atom-package-deps": "^4.6.0",
     "atom-space-pen-views": "*",
     "change-case": "*",
     "coffeescript": "*",
     "event-kit": "^2.5.0",
+    "extend": "^3.0.0",
     "javascript-natural-sort": "*",
     "jquery": "^3.3.1",
-    "less": "*",
+    "less": "^3.5.3",
     "lodash": "^4.17.10",
     "mkdirp": "*",
-    "uuid": "*",
-    "atom-package-deps": "^4.6.0",
-    "extend": "^3.0.0"
+    "uuid": "^3.3.2"
   },
   "snippets": "./snippets/",
   "devDependencies": {
