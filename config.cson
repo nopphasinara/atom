@@ -150,12 +150,24 @@
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?$"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".css.scss.source":
   editor:
     autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
+".css.source":
+  editor:
+    autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".php.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".sass.source":
   editor:
     autoIndentOnPaste: true
@@ -164,5 +176,10 @@
 ".scss.source":
   editor:
     autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".source.sql":
+  editor:
     softWrap: false
