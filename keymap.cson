@@ -111,6 +111,8 @@ atom-workspace .editor,
   'cmd-d'                                    : 'find-and-replace:select-next'
   'ctrl-alt-cmd-g'                           : 'grammar-selector:show'
   'alt-cmd-a'                                : 'aligner:align'
+  'ctrl-c'                                   : 'gc:copy'
+  'ctrl-v'                                   : 'gc:paste'
 
 
 # '.platform-darwin atom-text-editor:[mini],
