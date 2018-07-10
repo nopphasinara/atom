@@ -1,0 +1,8 @@
+'.source.php':
+  'collect()':
+    'prefix': 'collect'
+    'body': '''
+    \\$${1:collect} = \\$${1:collect}->${2:map}(function (\\$${3:item}, \\$${4:key}) {
+      $5
+    });$0
+    '''
