@@ -2,7 +2,9 @@
   'collect()':
     'prefix': 'collect'
     'body': '''
-    \\$${1:collect} = \\$${1:collect}->${2:map}(function (\\$${3:item}, \\$${4:key}) {
-      $5
+    ${1:\\$collect} = ${2:collect(${3:\\$array})}->${4:map}(function (${5:\\$item}, ${6:\\$key}) {
+      $7
+
+      return ${5:\\$item};
     });$0
     '''

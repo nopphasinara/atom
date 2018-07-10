@@ -163,7 +163,7 @@ atom-workspace .editor:not([mini]),
   'cmd-?'                                    : 'gc:html-comment'
   'alt-/'                                    : 'gc:block-comment'
   'alt-?'                                    : 'gc:inline-comment'
-  'shift-tab'                                : 'editor:outdent-selected-rows'
+  # 'shift-tab'                                : 'editor:outdent-selected-rows'
 
 
 '.project-manager input'                     :
@@ -321,6 +321,6 @@ atom-workspace .editor:not([mini]),
   'escape'                                   : 'autocomplete-plus:cancel'
 
 'atom-text-editor:not([mini])':
-  'enter': 'snippets:expand'
-  'tab': 'snippets:next-tab-stop'
-  'shift-tab': 'snippets:previous-tab-stop'
+  'enter'                                    : 'snippets:expand'
+  'tab'                                      : 'snippets:next-tab-stop'
+  'shift-tab'                                : 'snippets:previous-tab-stop'
