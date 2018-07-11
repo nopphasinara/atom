@@ -4,7 +4,6 @@
   ProviderJavascript:
     config: null
   "advanced-open-file":
-    defaultInputValue: "none"
     fuzzyMatch: true
     helmDirSwitch: true
   "atom-hot-package-loader":
@@ -97,6 +96,7 @@
     fontFamily: "'Menlo', 'master-icons'"
     fontSize: 14
     lineHeight: 1.6
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
