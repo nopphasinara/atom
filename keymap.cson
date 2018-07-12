@@ -113,6 +113,8 @@ atom-workspace .editor,
   'alt-cmd-a'                                : 'aligner:align'
   'ctrl-c'                                   : 'gc:copy'
   'ctrl-v'                                   : 'gc:paste'
+  'alt-q'                                    : 'gc:tab-stop'
+  'alt-.'                                    : 'gc:tab-stop'
 
 
 # '.platform-darwin atom-text-editor:[mini],

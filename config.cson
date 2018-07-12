@@ -11,7 +11,7 @@
     detectTargetOnStart: true
     onlyInDevMode: false
   "autocomplete-plus":
-    autoActivationDelay: 100
+    autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     defaultProvider: "Symbol"

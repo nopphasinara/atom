@@ -1,4 +1,92 @@
 '.source.php':
+  'Doc description':
+    'prefix': 'docdesc'
+    'body': '''
+      /**
+       * ${1:undocumented function summary}
+       *
+       * ${2:Undocumented function long description}
+       *
+       * @return ${6:return} ${7:type}
+       */$0
+    '''
+  'Doc description param':
+    'prefix': 'docdescparam'
+    'body': '''
+      /**
+       * ${1:undocumented function summary}
+       *
+       * ${2:Undocumented function long description}
+       *
+       * @param ${3:type} ${4:var} ${5:Description}
+       * @return ${6:return} ${7:type}
+       */$0
+    '''
+  'doc':
+    'prefix': 'doc'
+    'body': '''
+      /**
+       * ${1:undocumented function summary}
+       *
+       * @return ${5:return} ${6:type}
+       */$0
+    '''
+  'doc param':
+    'prefix': 'docparam'
+    'body': '''
+      /**
+       * ${1:undocumented function summary}
+       *
+       * @param ${2:type} ${3:var} ${4:Description}
+       * @return ${2:return} ${3:type}
+       */$0
+    '''
+  'Doc Function':
+    'prefix': 'docfn'
+    'body': '''
+      /**
+       * ${4:undocumented function summary}
+       *
+       * @return ${5:return type}
+       */
+      ${1:function} ${2:FunctionName}(${3:$args})
+      {
+        ${6:// code...${0}}
+      }
+    '''
+  'Doc Function Param':
+    'prefix': 'docfnparam'
+    'body': '''
+      /**
+       * ${4:undocumented function summary}
+       *
+       * @param ${5:type} ${6:var} ${7:Description}
+       * @return ${8:return type}
+       */
+      ${1:function} ${2:FunctionName}(${3:$args})
+      {
+        ${9:// code...${0}}
+      }
+    '''
+  'function':
+    'prefix': 'fn'
+    'body': '''
+      ${5:// doc...}
+      ${2}${1:function} ${3:FunctionName}(${4:$args})
+      {
+        ${6:// code...}
+      }$0
+    '''
+  'Class Variable':
+    'prefix': 'class_variable'
+    'body': '''
+      /**
+       * ${3:undocumented class variable}
+       *
+       * @var ${4:string}
+       */
+      ${1:var} ${2:$varname};$0
+    '''
   'if ()..;':
     'prefix': 'inif'
     'body': '''
