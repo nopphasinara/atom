@@ -35,7 +35,16 @@
     "profile": "html",
     "snippets": {
       "classm": "${pre_prefix}print_r(get_class_methods(|));${pre_suffix}$0",
-      "classv": "${pre_prefix}print_r(get_class_vars(|));${pre_suffix}$0"
+      "classv": "${pre_prefix}print_r(get_class_vars(|));${pre_suffix}$0",
+      "comment|comm|c": "// ${1:comment}",
+      "this|$t": "\\$this->${1:prop}",
+      "request|req|$r": "\\$request->${1:prop}",
+      "request$|req$|r$": "Request \\$request",
+      "var|v": "${2:${1}var} ${4:\\$${3:var}};|",
+      "ptvar|ptv": "protected ${2:\\$${1:var}};|",
+      "prvar|prv": "private ${2:\\$${1:var}};|",
+      "pbvar|pbv": "public ${2:\\$${1:var}};|",
+      "stvar|stv": "static ${2:\\$${1:var}};|"
     },
     "abbreviations": {}
   },
