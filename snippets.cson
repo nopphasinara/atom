@@ -2,32 +2,3 @@
   # Reset
   'combak':
     'prefix': 'combak'
-
-  'ss':
-    'prefix': 'ss'
-    'body': '''
-    // ${1:comment${0}}
-    '''
-  '//':
-    'prefix': '//'
-    'body': '''
-    // ${1:comment${0}}
-    '''
-  '// comment':
-    'prefix': 'comment'
-    'body': '''
-    // ${1:comment${0}}
-    '''
-  'PHPDoc Function':
-    'prefix': 'docfn'
-    'body': '''
-      /**
-       * ${5:undocumented function summary}
-       *
-       * @return ${6:return type}
-       */
-      ${2:}${1:function} ${3:FunctionName}(${4:$args})
-      {
-        ${7:// code...${0}}
-      }
-    '''

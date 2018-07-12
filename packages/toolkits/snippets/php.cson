@@ -49,17 +49,17 @@
        * @return ${2:return} ${3:type}
        */$0
     '''
-  'Doc Function':
+  'PHPDoc Function':
     'prefix': 'docfn'
     'body': '''
       /**
-       * ${4:undocumented function summary}
+       * ${5:undocumented function summary}
        *
-       * @return ${5:return type}
+       * @return ${6:return type}
        */
-      ${1:function} ${2:FunctionName}(${3:$args})
+      ${2:}${1:function} ${3:FunctionName}(${4:$args})
       {
-        ${6:// code...${0}}
+        ${7:// code...${0}}
       }
     '''
   'Doc Function Param':
