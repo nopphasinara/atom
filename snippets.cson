@@ -2,3 +2,33 @@
   # Reset
   'combak':
     'prefix': 'combak'
+  'review':
+    'prefix': 'review'
+
+  'return ...':
+    'prefix': 're'
+    'body': '''
+    return ${1:type};$0
+    '''
+  'return true':
+    'prefix': 're:t'
+    'body': '''
+    return true;$0
+    '''
+  'return false':
+    'prefix': 're:f'
+    'body': '''
+    return false;$0
+    '''
+  'return $var':
+    'prefix': 're:v'
+    'body': '''
+    return ${1:\\$var};$0
+    '''
+  'Laravel Collections':
+    'prefix': 'collect'
+    'body': '''
+    \\$${2:${1:collect}} = ${4:collect(\\$${3:${1:array}})}->${5:method}(function (\\$${7:${6:item}}, \\$${8:key}) {
+      ${9:return \\$${10:${6:item}};}$11
+    });$0
+    '''
