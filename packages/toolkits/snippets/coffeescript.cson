@@ -16,15 +16,9 @@
       '${1:name}':
         'prefix': '${2:prefix}'
         'body': '''
-          $3
+          ${3:content}
         '''$0
     """
-
-  'Project Path':
-    'prefix': 'pp'
-    'body': '''
-      { "title": "$1", "paths": [ "~/.dotfiles/projects/$1" ] }
-    '''
 
   'Website Project Path':
     'prefix': 'pw'

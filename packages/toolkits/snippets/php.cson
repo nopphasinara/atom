@@ -1,208 +1,36 @@
-'.text.html.php':
-  '<?php':
+## Reset
+'.text.html.php,
+.text.html.blade.php':
+  'ph':
     'prefix': 'ph'
-    'body': '''
-      <?php\n\n$0
-    '''
-
-
-'.source.php':
-  'Doc description':
-    'prefix': 'docdesc'
-    'body': '''
-      /**
-       * ${1:undocumented function summary}
-       *
-       * ${2:Undocumented function long description}
-       *
-       * @return ${6:return} ${7:type}
-       */$0
-    '''
-  'Doc description param':
-    'prefix': 'docdescparam'
-    'body': '''
-      /**
-       * ${1:undocumented function summary}
-       *
-       * ${2:Undocumented function long description}
-       *
-       * @param ${3:type} ${4:var} ${5:Description}
-       * @return ${6:return} ${7:type}
-       */$0
-    '''
-  'doc':
-    'prefix': 'doc'
-    'body': '''
-      /**
-       * ${1:undocumented function summary}
-       *
-       * @return ${5:return} ${6:type}
-       */$0
-    '''
-  'doc param':
-    'prefix': 'docparam'
-    'body': '''
-      /**
-       * ${1:undocumented function summary}
-       *
-       * @param ${2:type} ${3:var} ${4:Description}
-       * @return ${2:return} ${3:type}
-       */$0
-    '''
-  'PHPDoc Function':
-    'prefix': 'docfn'
-    'body': '''
-      /**
-       * ${5:undocumented function summary}
-       *
-       * @return ${6:return type}
-       */
-      ${2:}${1:function} ${3:FunctionName}(${4:$args})
-      {
-        ${7:// code...${0}}
-      }
-    '''
-  'Doc Function Param':
-    'prefix': 'docfnparam'
-    'body': '''
-      /**
-       * ${4:undocumented function summary}
-       *
-       * @param ${5:type} ${6:var} ${7:Description}
-       * @return ${8:return type}
-       */
-      ${1:function} ${2:FunctionName}(${3:$args})
-      {
-        ${9:// code...${0}}
-      }
-    '''
-  'function':
-    'prefix': 'fn'
-    'body': '''
-      ${5:// doc...}
-      ${2}${1:function} ${3:FunctionName}(${4:$args})
-      {
-        ${6:// code...}
-      }$0
-    '''
-  'Class Variable':
-    'prefix': 'class_variable'
-    'body': '''
-      /**
-       * ${3:undocumented class variable}
-       *
-       * @var ${4:string}
-       */
-      ${1:var} ${2:$varname};$0
-    '''
-  'if ()..;':
-    'prefix': 'inif'
-    'body': '''
-      if (${1:condition}) ${2:..};$0
-    '''
-  'collect()':
-    'prefix': 'collect'
-    'body': '''
-    ${1:\\$collect} = ${2:collect(${3:\\$array})}->${4:map}(function (${5:\\$item}, ${6:\\$key}) {
-      $7
-
-      return ${5:\\$item};
-    });$0
-    '''
-  'var_dump()':
-    'prefix': 'dump'
-    'body': '''
-      var_dump($1)$0
-    '''
-
-  'throw':
-    'prefix': 'throw'
-    'body': '''
-    throw new \\Exception(${1:\\"Error Processing Request\\"}${2:, ${3:1}})$0
-    '''
-
-  'namespace':
-    'prefix': 'ns'
-    'body': '''
-      namespace $0
-    '''
-
-  'class ClassName':
-    'prefix': 'class'
-    'body': '''
-      class ${1:ClassName}
-      {
-        $2
-      }$0
-    '''
-
-  'protected $var':
-    'prefix': 'ptvar'
-    'body': 'protected ${1:$var}${2: = ${3:null}}'
-
-  'protected $arr':
-    'prefix': 'ptarr'
-    'body': '''
-    protected ${1:\\$arr}${4: = ${2:\\[$3\\]}}$0
-    '''
-
-  'print_r()':
-    'description': 'description…'
-    'prefix': 'pr'
-    'body': '''
-    echo \\'<pre>\\'; print_r(${1:\\$var}); echo \\'</pre>\\';$0
-    '''
-
+  'php':
+    'prefix': 'php'
   'if':
     'prefix': 'if'
-    'body': '''
-    if (${1:condition}) {
-      $2
-    }$0
-    '''
-
-  'if…else':
-    'prefix': 'ifelse'
-    'body': '''
-    if (${1:condition}) {
-      $2
-    } else {
-      $3
-    }$0
-    '''
-
-  'if…elseif':
-    'prefix': 'ifelseif'
-    'body': '''
-    if (${1:condition}) {
-      $2
-    } elseif (${3:condition}) {
-      $4
-    } else {
-      $5
-    }$0
-    '''
-
-  'elseif':
-    'prefix': 'elseif'
-    'body': '''
-    elseif (${1:condition}) {
-      $2
-    }$0
-    '''
-
-  'else':
-    'prefix': 'else'
-    'body': '''
-    else {
-      $1
-    }$0
-    '''
-
+  'for':
+    'prefix': 'for'
   'foreach':
     'prefix': 'foreach'
-    'body': '''
-      foreach (${1:\\$var} as \\$${2:key} => \\$${3:value}) {
-        $4
-      }$0
-    '''
+  'array':
+    'prefix': 'array'
+  'arr':
+    'prefix': 'arr'
+  'var':
+    'prefix': 'var'
+
+
+# '.text.html.php,
+# .text.html.blade.php':
+#   'xxx':
+#     'prefix': 'xxx'
+#     'body': ''
+#     'description': ''
+
+
+# '.source.php':
+#   'print_r':
+#     'prefix': 'print_r|pp|pr'
+#     'body': '''
+#     echo "<pre>"; print_r(${2:\\$${1:var}}); echo "</pre>";$0
+#     '''
+#     'description': ''

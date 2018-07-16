@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle snippet-generator",
+        "command": "snippet-generator:generate"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "snippet-generator",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "snippet-generator:generate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+'.source.coffee':
+    'Snippet Generator':
+        'prefix':'snip'
+        'body':'\'${1:Snippet Title}\':\n\t\'prefix\':\'${2:your_custom_prefix}\'\n\t\'body\':\'${3:Paste your snippet here.}\''

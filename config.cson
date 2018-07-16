@@ -4,6 +4,7 @@
   ProviderJavascript:
     config: null
   "advanced-open-file":
+    defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
   "atom-hot-package-loader":
@@ -11,10 +12,11 @@
     detectTargetOnStart: true
     onlyInDevMode: false
   "autocomplete-plus":
-    autoActivationDelay: 10
+    autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     defaultProvider: "Symbol"
+    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
     similarSuggestionRemoval: "textOrSnippet"
   "blade-spacer":
@@ -164,6 +166,9 @@
     commentEnd: " */"
     commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+    softWrap: false
+".ini.source":
+  editor:
     softWrap: false
 ".php.source":
   editor:

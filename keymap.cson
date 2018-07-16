@@ -113,8 +113,9 @@ atom-workspace .editor,
   'alt-cmd-a'                                : 'aligner:align'
   'ctrl-c'                                   : 'gc:copy'
   'ctrl-v'                                   : 'gc:paste'
-  'alt-q'                                    : 'gc:tab-stop'
-  'alt-.'                                    : 'gc:tab-stop'
+  'alt-4'                                    : 'gc:tab-stop'
+  'alt-,'                                    : 'gc:tab-stop'
+  'cmd-;'                                    : 'gc:tab-stop'
 
 
 # '.platform-darwin atom-text-editor:[mini],
@@ -134,6 +135,7 @@ atom-workspace .editor:not([mini]),
 .workspace .editor:not([mini])':
   'alt-\['                                   : 'gc:blade-e'
   'alt-\]'                                   : 'gc:blade-echo'
+  'alt-1'                                    : 'gc:blade-echo'
   'alt-e'                                    : 'gc:php-echo'
   'cmd-backspace'                            : 'editor:delete-line'
   'f11'                                      : 'remote-sync:download-file'

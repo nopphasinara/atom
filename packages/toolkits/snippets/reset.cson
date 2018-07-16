@@ -1,0 +1,10 @@
+'*':
+  # Reset
+  'abbr':
+    'prefix': 'abbr'
+  'address':
+    'prefix': 'address'
+  'combak':
+    'prefix': 'combak'
+  'review':
+    'prefix': 'review'

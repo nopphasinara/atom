@@ -1,0 +1,19 @@
+## RESET
+'.text.plain,
+.text.html':
+  'xxx':
+    'prefix': 'xxx'
+
+
+'.text.plain':
+  'xxx':
+    'prefix': 'xxx'
+    'body': '''
+    '''
+
+
+'.text.html':
+  'xxx':
+    'prefix': 'xxx'
+    'body': '''
+    '''

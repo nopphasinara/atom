@@ -1,34 +1,118 @@
-'.source.php':
-  # Reset
-  'combak':
-    'prefix': 'combak'
-  'review':
-    'prefix': 'review'
+## GLOBAL RESET
+'.text.html,
+.text.html.blade.php,
+.text.plain,
+.source.php':
+  'data-target':
+    'prefix': 'data-target'
 
-  'return ...':
-    'prefix': 're'
+
+'.text.html,
+.text.plain':
+  'Font Awesome':
+    'prefix': 'fa'
     'body': '''
-    return ${1:type};$0
+    <i class="${1:fa} fa-${2:icon}${3}"></i>$0
     '''
-  'return true':
-    'prefix': 're:t'
+
+
+## PHP
+'.text.html.php,
+.text.html.blade.php':
+  'xxx':
+    'prefix': 'xxx'
+    'body': ''
+    'description': ''
+
+
+## PHP SOURCE
+'.source.php':
+  'print_r':
+    'prefix': 'pr'
     'body': '''
-    return true;$0
+      echo "<pre>"; print_r(${2:\\$${1:var}}); echo "</pre>";$0
     '''
-  'return false':
-    'prefix': 're:f'
+  'Print Class Methods':
+    'prefix': 'pr:methods'
     'body': '''
-    return false;$0
+      echo "<pre>"; print_r(get_class_methods($1)); echo "</pre>";$0
     '''
-  'return $var':
-    'prefix': 're:v'
+  'Print Function Arguments':
+    'prefix': 'pr:args'
     'body': '''
-    return ${1:\\$var};$0
+      echo "<pre>"; print_r(func_get_args()); echo "</pre>";$0
     '''
-  'Laravel Collections':
-    'prefix': 'collect'
+  'Laravel Collection':
+    'prefix': 'la:collect'
     'body': '''
-    \\$${2:${1:collect}} = ${4:collect(\\$${3:${1:array}})}->${5:method}(function (\\$${7:${6:item}}, \\$${8:key}) {
-      ${9:return \\$${10:${6:item}};}$11
-    });$0
+      \\$${1:collect} = ${3:\\$${2:collect}}->${4:map}(function (\\$${5:item}, \\$${6:key}) {
+        ${7://}
+      });$0
     '''
+  '$var':
+    'prefix': 'v'
+    'body': '''
+      \\$${1:var}$0
+    '''
+  '$var …':
+    'prefix': 'v-'
+    'body': '''
+      \\$${1:var} = ${2:\\'${3}\\'}$0
+    '''
+  '$var boolean':
+    'prefix': 'v-b'
+    'body': '''
+      \\$${1:var} = ${2:true}$0
+    '''
+  'if':
+    'prefix': 'if'
+    'body': '''
+      if ($1) ${2:\\{${3}\\}}$0
+    '''
+  'json_encode()':
+    'prefix': 'json_encode'
+    'body': '''
+      json_encode($1)$0
+    '''
+  'json_decode()':
+    'prefix': 'json_decode'
+    'body': '''
+      json_decode($1, ${2:true})$0
+    '''
+  'function () …':
+    'prefix': 'fn'
+    'body': '''
+      ${1:function} ${2:functionName}($3) {
+        ${4://}
+      }$0
+    '''
+  'preg_replace()':
+    'prefix': 'preg_replace'
+    'body': '''
+      preg_replace("$1", "$2", ${4:\\$${3:var}})$0;
+    '''
+  'strtoupper()':
+    'prefix': 'strtoupper'
+    'body': '''
+      strtoupper($1)$0;
+    '''
+  'strtolower()':
+    'prefix': 'strtolower'
+    'body': '''
+      strtolower($1)$0;
+    '''
+
+
+## HTML TAGS
+'.meta.tag.block.html,
+.punctuation.definition.tag.html':
+  'data-target':
+    'prefix': 'data-target'
+    'body': 'data-target="$1"$0'
+
+
+## HTML QUOTED
+# '.string.quoted.double.html,
+# .string.quoted.single.html':
+#   'data-target':
+#     'prefix': 'data-target'

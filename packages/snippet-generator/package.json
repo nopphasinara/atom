@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+        "spec": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118615-3170-1025sut.g3342f0f6r"
+    ]
+  ],
+  "_from": "../d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+  "_id": "snippet-generator@0.3.2",
+  "_inCache": true,
+  "_location": "/snippet-generator",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+    "spec": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+  "_shasum": "7e8085af7b071a04f8930d627452eed2d4a7ba8b",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118615-3170-i7nt77.itddbzkt9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118615-3170-1025sut.g3342f0f6r",
+  "activationCommands": {
+    "atom-workspace": "snippet-generator:generate"
+  },
+  "bugs": {
+    "url": "https://github.com/danseethaler/snippet-generator/issues"
+  },
+  "dependencies": {},
+  "description": "Insanely fast way to turn your code into a snippet.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/danseethaler/snippet-generator#readme",
+  "keywords": [
+    "snippet",
+    "creation",
+    "generator",
+    "generation",
+    "snippet creation",
+    "snippet generation"
+  ],
+  "license": "MIT",
+  "main": "./lib/snippet-generator",
+  "name": "snippet-generator",
+  "optionalDependencies": {},
+  "readme": "# snippet-generator package\n\nInsanely fast way to turn your code into a snippet.\n\nThis packages adds two features to Atom:\n\n- Instantly convert the selected code into a snippet valid format that can be pasted into your snippets.cson file.\n- A snippet for creating a snippet. Isn't that fancy? Seriously though, in your snippets.cson file you'll be able to type `snip` to quickly add the title, prefix, and body to your snippet.\n\n![example](https://d2beia7gtp5yjy.cloudfront.net/cdn_image/df/b75f4/33243836/13073/landing/v999/ovw33/snippet_generator.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danseethaler/snippet-generator.git"
+  },
+  "version": "0.3.2"
+}
