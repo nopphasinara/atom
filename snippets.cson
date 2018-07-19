@@ -106,6 +106,12 @@
 ## HTML TAGS
 '.meta.tag.block.html,
 .punctuation.definition.tag.html':
+  'id':
+    'prefix': '#'
+    'body': 'id="$1"$0'
+  'class':
+    'prefix': '.'
+    'body': 'class="$1"$0'
   'data-target':
     'prefix': 'data-target'
     'body': 'data-target="$1"$0'

@@ -167,12 +167,44 @@
     commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
+".html.text":
+  editor:
+    completions: [
+      "crossorigin"
+      "anonymous"
+      "data-target"
+      "target"
+      "href"
+      "class"
+      "id"
+      "type"
+      "readonly"
+      "required"
+      "disabled"
+      "integrate"
+    ]
 ".ini.source":
   editor:
     softWrap: false
 ".php.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+".plain.text":
+  editor:
+    completions: [
+      "crossorigin"
+      "anonymous"
+      "data-target"
+      "target"
+      "href"
+      "class"
+      "id"
+      "type"
+      "readonly"
+      "required"
+      "disabled"
+      "integrate"
+    ]
 ".sass.source":
   editor:
     autoIndentOnPaste: true
@@ -188,7 +220,3 @@
 ".source.sql":
   editor:
     softWrap: false
-".text.html,
-.text.plain":
-  "editor":
-    "completions": []

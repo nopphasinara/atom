@@ -15,6 +15,7 @@ atom-workspace atom-text-editor,
 .workspace .editor,
 atom-text-editor,
 .editor':
+  'shift-tab'                                : 'unset!'
   'shift-ctrl-tab'                           : 'unset!'
   'ctrl-shift-m'                             : 'unset!'
   'ctrl-home'                                : 'unset!'
@@ -32,7 +33,8 @@ atom-text-editor,
   'alt-cmd-_'                                : 'unset!'
   'alt-cmd-='                                : 'unset!'
   'alt-cmd-+'                                : 'unset!'
-  'cmd-.'                                    : 'unset!'
+  'cmd-.'                                    : 'native!'
+  'cmd-\.'                                   : 'native!'
   'cmd-k'                                    : 'unset!'
   'cmd-1'                                    : 'unset!'
   'cmd-2'                                    : 'unset!'
@@ -62,7 +64,6 @@ atom-text-editor,
   'alt-cmd-p'                                : 'project-manager:edit-projects'
   'shift-cmd-R'                              : 'window:reload'
   'cmd-o'                                    : 'advanced-open-file:toggle'
-  'shift-tab'                                : 'native!'
   'shift-ctrl-left'                          : 'pane:move-item-left'
   'shift-ctrl-right'                         : 'pane:move-item-right'
   'shift-cmd-T'                              : 'pane:reopen-closed-item'
@@ -167,6 +168,7 @@ atom-workspace .editor:not([mini]),
   'cmd-?'                                    : 'gc:html-comment'
   'alt-/'                                    : 'gc:block-comment'
   'alt-?'                                    : 'gc:inline-comment'
+  'shift-tab'                                : 'snippets:expand'
   # 'shift-tab'                                : 'editor:outdent-selected-rows'
 
 
