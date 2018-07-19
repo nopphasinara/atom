@@ -1,18 +1,1 @@
-'.text.html,
-.text.plain':
-  'editor':
-    'completions': [
-      'crossorigin'
-      'annonymous'
-      'nopphasin.arayasirikul@gmail.com'
-      'goldfishcreative.thailand@gmail.com'
-      'fineartdeveloper@gmail.com'
-      'goldfishcreativethailand.com'
-      'important'
-      'default'
-      '@php()'
-      '@section()'
-      'atom-workspace'
-      'atom-text-editor'
-      'atom-space-pen-views'
-    ]
+{}

@@ -188,3 +188,7 @@
 ".source.sql":
   editor:
     softWrap: false
+".text.html,
+.text.plain":
+  "editor":
+    "completions": []
