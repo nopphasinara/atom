@@ -204,6 +204,12 @@
       "required"
       "disabled"
       "integrate"
+      "fineartdevelop"
+      "nopphasin"
+      "nopphasin.arayasirikul"
+      "arayasirikul"
+      "goldfishcreativethailand"
+      "goldfishcreative.thailand"
     ]
 ".sass.source":
   editor:
