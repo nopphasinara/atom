@@ -19,10 +19,11 @@
 ## PHP
 '.text.html.php,
 .text.html.blade.php':
-  'xxx':
-    'prefix': 'xxx'
-    'body': ''
-    'description': ''
+  'print_r':
+    'prefix': 'print_r'
+    'body': '''
+    <pre><?php print_r($1); ?></pre>$0
+    '''
 
 
 ## PHP SOURCE
