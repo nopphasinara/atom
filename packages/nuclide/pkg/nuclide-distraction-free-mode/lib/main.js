@@ -68,7 +68,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  *
- * 
+ *
  * @format
  */
 class Activation {
@@ -98,15 +98,15 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-distraction-free-mode');
-    toolBar.addSpacer({
-      priority: 900
-    });
-    toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      icon: 'eye',
-      callback: 'nuclide-distraction-free-mode:toggle',
-      tooltip: 'Toggle Distraction-Free Mode',
-      priority: 901
-    }));
+    // toolBar.addSpacer({
+    //   priority: 900
+    // });
+    // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   icon: 'eye',
+    //   callback: 'nuclide-distraction-free-mode:toggle',
+    //   tooltip: 'Toggle Distraction-Free Mode',
+    //   priority: 901
+    // }));
     const disposable = new (_UniversalDisposable().default)(() => {
       toolBar.removeItems();
     });

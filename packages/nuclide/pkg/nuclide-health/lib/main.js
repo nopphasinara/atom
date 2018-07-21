@@ -165,7 +165,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  *
- * 
+ *
  * @format
  */
 // Imports from non-Nuclide modules.
@@ -214,17 +214,17 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-health');
-    this._healthButton = toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      icon: 'dashboard',
-      callback: 'nuclide-health:toggle',
-      tooltip: 'Toggle Nuclide Health Stats',
-      priority: -400
-    })).element;
+    // this._healthButton = toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   icon: 'dashboard',
+    //   callback: 'nuclide-health:toggle',
+    //   tooltip: 'Toggle Nuclide Health Stats',
+    //   priority: -400
+    // })).element;
 
-    this._healthButton.classList.add('nuclide-health-jewel');
+    // this._healthButton.classList.add('nuclide-health-jewel');
 
     const disposable = new (_UniversalDisposable().default)(() => {
-      this._healthButton = null;
+      // this._healthButton = null;
       toolBar.removeItems();
     });
 

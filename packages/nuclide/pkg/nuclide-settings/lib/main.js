@@ -81,7 +81,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  *
- * 
+ *
  * @format
  */
 let subscriptions = null;
@@ -103,15 +103,15 @@ function registerCommandAndOpener() {
 
 function consumeToolBar(getToolBar) {
   const toolBar = getToolBar('nuclide-home');
-  toolBar.addSpacer({
-    priority: -501
-  });
-  toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-    icon: 'gear',
-    callback: 'nuclide-settings:toggle',
-    tooltip: 'Open Nuclide Settings',
-    priority: -500
-  }));
+  // toolBar.addSpacer({
+  //   priority: -501
+  // });
+  // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+  //   icon: 'gear',
+  //   callback: 'nuclide-settings:toggle',
+  //   tooltip: 'Open Nuclide Settings',
+  //   priority: -500
+  // }));
   const disposable = new (_UniversalDisposable().default)(() => {
     toolBar.removeItems();
   });

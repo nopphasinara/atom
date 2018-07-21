@@ -359,25 +359,25 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-task-runner');
-    toolBar.addSpacer({
-      priority: 400
-    });
-    const {
-      element
-    } = toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      callback: 'nuclide-task-runner:toggle-toolbar-visibility',
-      tooltip: 'Toggle Task Runner Toolbar',
-      iconset: 'ion',
-      icon: 'play',
-      priority: 401
-    }));
-    element.className += ' nuclide-task-runner-tool-bar-button';
+    // toolBar.addSpacer({
+    //   priority: 400
+    // });
+    // const {
+    //   element
+    // } = toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   callback: 'nuclide-task-runner:toggle-toolbar-visibility',
+    //   tooltip: 'Toggle Task Runner Toolbar',
+    //   iconset: 'ion',
+    //   icon: 'play',
+    //   priority: 401
+    // }));
+    // element.className += ' nuclide-task-runner-tool-bar-button';
     const buttonUpdatesDisposable = new (_UniversalDisposable().default)( // $FlowFixMe: Update rx defs to accept ish with Symbol.observable
     _RxMin.Observable.from(this._store).subscribe(state => {
       if (state.taskRunners.count() > 0) {
-        element.removeAttribute('hidden');
+        // element.removeAttribute('hidden');
       } else {
-        element.setAttribute('hidden', 'hidden');
+        // element.setAttribute('hidden', 'hidden');
       }
     })); // Remove the button from the toolbar.
 

@@ -248,7 +248,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
- * 
+ *
  * @format
  */
 const DATATIP_PACKAGE_NAME = 'debugger-datatip';
@@ -984,13 +984,13 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('debugger');
-    toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      iconset: 'icon-nuclicon',
-      icon: 'debugger',
-      callback: 'debugger:show-attach-dialog',
-      tooltip: 'Attach Debugger',
-      priority: 500
-    })).element;
+    // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   iconset: 'icon-nuclicon',
+    //   icon: 'debugger',
+    //   callback: 'debugger:show-attach-dialog',
+    //   tooltip: 'Attach Debugger',
+    //   priority: 500
+    // })).element;
     const disposable = new (_UniversalDisposable().default)(() => {
       toolBar.removeItems();
     });

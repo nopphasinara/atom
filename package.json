@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/generator": "^7.0.0-beta.54",
+    "adb": "^0.2.0",
     "atom-grammar-test": "^0.6.4",
     "atom-space-pen-views": "^2.2.0",
     "eslint": "^5.2.0",
@@ -29,6 +30,8 @@
     "lerna": "^2.11.0",
     "mock-spawn": "^0.2.6",
     "node-ipc": "^9.1.1",
+    "nuclide-adb": "^0.7.2",
+    "nuclide-fbsimctl-rpc": "0.0.0",
     "nyc": "^12.0.2",
     "prettier": "^1.13.7",
     "relay-compiler": "^1.6.0",

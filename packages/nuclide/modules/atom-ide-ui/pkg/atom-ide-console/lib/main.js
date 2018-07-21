@@ -179,12 +179,12 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-console');
-    toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      icon: 'nuclicon-console',
-      callback: 'console:toggle',
-      tooltip: 'Toggle Console',
-      priority: 700
-    }));
+    // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   icon: 'nuclicon-console',
+    //   callback: 'console:toggle',
+    //   tooltip: 'Toggle Console',
+    //   priority: 700
+    // }));
 
     this._disposables.add(() => {
       toolBar.removeItems();

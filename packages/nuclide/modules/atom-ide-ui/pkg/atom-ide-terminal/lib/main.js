@@ -132,7 +132,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
- * 
+ *
  * @format
  */
 // for homedir
@@ -190,12 +190,12 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-terminal');
-    toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      icon: 'terminal',
-      callback: 'atom-ide-terminal:new-terminal',
-      tooltip: 'New Terminal',
-      priority: 700
-    }));
+    // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   icon: 'terminal',
+    //   callback: 'atom-ide-terminal:new-terminal',
+    //   tooltip: 'New Terminal',
+    //   priority: 700
+    // }));
     const disposable = new (_UniversalDisposable().default)(() => {
       toolBar.removeItems();
     });

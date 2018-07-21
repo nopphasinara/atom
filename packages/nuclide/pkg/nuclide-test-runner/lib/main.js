@@ -69,7 +69,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  *
- * 
+ *
  * @format
  */
 const logger = (0, _log4js().getLogger)('nuclide-test-runner');
@@ -193,12 +193,12 @@ class Activation {
 
   consumeToolBar(getToolBar) {
     const toolBar = getToolBar('nuclide-test-runner');
-    toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
-      icon: 'checklist',
-      callback: 'nuclide-test-runner:toggle-panel',
-      tooltip: 'Toggle Test Runner',
-      priority: 600
-    }));
+    // toolBar.addButton((0, _ToolbarUtils().makeToolbarButtonSpec)({
+    //   icon: 'checklist',
+    //   callback: 'nuclide-test-runner:toggle-panel',
+    //   tooltip: 'Toggle Test Runner',
+    //   priority: 600
+    // }));
     const disposable = new (_UniversalDisposable().default)(() => {
       toolBar.removeItems();
     });
