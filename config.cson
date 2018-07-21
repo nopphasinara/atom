@@ -52,7 +52,6 @@
     disabledPackages: [
       "autosave"
       "background-tips"
-      "deprecation-cop"
       "about"
       "archive-view"
       "exception-reporting"

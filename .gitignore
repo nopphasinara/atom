@@ -10,3 +10,5 @@ projects.cson
 packages/atom-autocomplete-php/indexes
 .DS_Store
 Thumbs.db
+/node_modules
+/recovery
