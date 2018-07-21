@@ -1,4 +1,0 @@
-'.text.html':
-  'Amcharts JS snippet':
-    'prefix': 'amcharts'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/amcharts.js"></script>'

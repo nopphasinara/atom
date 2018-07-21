@@ -1,4 +1,0 @@
-'.text.html':
-  'Bacon JS snippet':
-    'prefix': 'baconjscdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.89/Bacon.min.js"></script>'

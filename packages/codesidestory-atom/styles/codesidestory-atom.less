@@ -1,0 +1,171 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "syntax-variables";
+@import "octicon-utf-codes.less";
+
+.codesidestory-atom {
+}
+
+.css-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-bottom-panel {
+  padding: 5px 0 0 5px;
+}
+
+.css-close {
+  cursor: pointer;
+}
+
+.primary-line {
+  font-weight: bold;
+}
+
+.css-repo-list {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.css-convo {
+  min-height: 20px;
+  min-width: 400px;
+  background-color: @syntax-background-color;
+  box-shadow: 0 5px 10px lighten(@base-border-color, 50%);
+  border: 1px solid @base-border-color;
+  box-shadow: 0 0 5px @overlay-border-color;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  .css-close-chat {
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    color: @text-color-warning;
+  }
+  .css-convo-line {
+    padding: 5px 25px 5px 5px;
+    & > p {
+      margin-bottom: 0px;
+    }
+    &:nth-child(even) {
+      background-color: rgba(69, 142, 209, .04);
+    }
+    .css-ago {
+      font-size: 12px;
+    }
+  }
+  .css-input-wrapper {
+    padding: 10px 5px;
+    .css-input {
+      background-color: @syntax-background-color;
+      color: @syntax-text-color;
+    }
+    background: linear-gradient(
+      0deg,
+      @syntax-background-color 0%,
+      darken(@syntax-background-color, 10%) 50%,
+      @syntax-background-color 100%
+    );
+  }
+  .css-lines-wrapper {
+    background-color: @syntax-background-color;
+    min-height: 40px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .css-scroll {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: @syntax-background-color;
+  }
+}
+
+.css-convo-icon {
+  cursor: pointer;
+  color: #ff8888;
+  &:before {
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+  }
+  &:hover {
+    color: darken(#ff8888, 20%);
+  }
+}
+
+/* repo-setting-view */
+.css-item {
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+.css-line-item {
+  font-size: 14px;
+}
+.css-link {
+  color: @button-background-color-selected;
+  text-decoration: underline;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.css-margin-right {
+  margin-right: 10px;
+}
+.css-block {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+}
+.css-line {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.css-action {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+.css-repo {
+  border: 1px solid #dddddd;
+}
+
+/* screen picker */
+.css-picker {
+  display: flex;
+  flex-direction: column;
+  .css-thumbs {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    .css-thumb-wrapper {
+      margin: 5px;
+      padding: 0 5px;
+      cursor: pointer;
+      box-shadow: 0 0 5px @overlay-border-color;
+      &:hover {
+        outline: 2px solid @text-color-info;
+      }
+    }
+  }
+}
+
+/* screen preview */
+.css-preview {
+  display: flex;
+  flex-direction: column;
+  .css-video {
+    width: 580px;
+  }
+}
+.css-progress {
+  width: 100%;
+  margin: 5px 0;
+}
+.css-recording {
+  margin-top: 6px;
+  margin-right: 5px;
+}

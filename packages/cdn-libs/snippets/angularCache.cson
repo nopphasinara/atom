@@ -1,4 +1,0 @@
-'.text.html':
-  'Angular Cache JS snippet':
-    'prefix': 'angularcachecdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cache/4.6.0/angular-cache.min.js"></script>'

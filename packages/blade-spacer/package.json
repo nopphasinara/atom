@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+        "raw": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
-        "spec": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+        "rawSpec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+        "spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118529-12473-11ps19j.pqpremte29"
+      "/private/tmp/apm-install-dir-118621-52228-b4wpm1.45yksurf6r"
     ]
   ],
-  "_from": "../d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+  "_from": "../d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
   "_id": "blade-spacer@0.4.2",
   "_inCache": true,
   "_location": "/blade-spacer",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+    "raw": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
-    "spec": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+    "rawSpec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+    "spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
+  "_resolved": "file:../d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
   "_shasum": "51d97a12e4a641c599af9352133affec50fbd5db",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118529-12473-t24nfq.zsz1q93sor/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118529-12473-11ps19j.pqpremte29",
+  "_spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118621-52228-b4wpm1.45yksurf6r",
   "bugs": {
     "url": "https://github.com/ishanray/blade-spacer/issues"
   },

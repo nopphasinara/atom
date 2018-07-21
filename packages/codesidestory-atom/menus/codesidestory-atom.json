@@ -1,0 +1,31 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "CodeSideStory",
+        "submenu": [
+          {
+            "label": "Initialize",
+            "command": "codesidestory:init"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "CodeSideStory",
+          "submenu": [
+            {
+              "label": "Init",
+              "command": "codesidestory:init"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

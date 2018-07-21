@@ -1,4 +1,0 @@
-'.text.html':
-  'Angular Carousel JS snippet':
-    'prefix': 'angularcarouselcdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-carousel/1.0.1/angular-carousel.min.js"></script>'

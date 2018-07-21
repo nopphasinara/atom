@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+        "raw": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
-        "spec": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+        "rawSpec": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
+        "spec": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118529-12443-1e7s6nc.tv9hccjtt9"
+      "/private/tmp/apm-install-dir-118621-52246-9xxqt0.nksrwwmi"
     ]
   ],
-  "_from": "../d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+  "_from": "../d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
   "_id": "language-blade@0.40.0",
   "_inCache": true,
   "_location": "/language-blade",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+    "raw": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
-    "spec": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+    "rawSpec": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
+    "spec": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
+  "_resolved": "file:../d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
   "_shasum": "98f579526dc57840c322ffc94dd7eb640dd4bf84",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118529-12443-ts4swz.rrvhjmj9k9/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118529-12443-1e7s6nc.tv9hccjtt9",
+  "_spec": "/private/tmp/d-118621-52246-16998eq.ug2gjy8pvi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118621-52246-9xxqt0.nksrwwmi",
   "bugs": {
     "url": "https://github.com/jawee/language-blade/issues"
   },

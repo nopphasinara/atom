@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
-        "spec": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118524-2774-18lp18.u61ypsyvi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-153jh8p.bj71awnrk9"
     ]
   ],
-  "_from": "../d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+  "_from": "../d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
   "_id": "aligner@1.2.4",
   "_inCache": true,
   "_location": "/aligner",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
-    "spec": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
+  "_resolved": "file:../d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
   "_shasum": "2b2b2a3607d8e59cce40e94e6d50dc127db04389",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118524-2774-1ybgce5.5ve06yldi/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118524-2774-18lp18.u61ypsyvi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-10mhimx.mrtqd26gvi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-153jh8p.bj71awnrk9",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner/issues"
   },

@@ -1,4 +1,0 @@
-'.text.html':
-  'HightCharts Exports snippet':
-    'prefix': 'hightchartsexportscdn'
-    'body': '<script src="http://code.highcharts.com/modules/exporting.js"></script>'

@@ -1,4 +1,0 @@
-'.text.html':
-  'Backbone JS snippet':
-    'prefix': 'backbonejscdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>'

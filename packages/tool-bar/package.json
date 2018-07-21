@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
-        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118522-4711-sz9w6j.6i6ublnmi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-10027-m1l0q8.3vjed8to6r"
     ]
   ],
-  "_from": "../d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+  "_from": "../d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
   "_id": "tool-bar@1.1.7",
   "_inCache": true,
   "_location": "/tool-bar",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
-    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
+  "_resolved": "file:../d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
   "_shasum": "58bcf0c5dea5dd8db6c43dadf393a44388e1f9fc",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-4711-1ua7g7s.v2capmbo6r/package.tgz",
-  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118522-4711-sz9w6j.6i6ublnmi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-10027-smkiw9.51a0za1yvi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-10027-m1l0q8.3vjed8to6r",
   "bugs": {
     "url": "https://github.com/suda/toolbar/issues"
   },

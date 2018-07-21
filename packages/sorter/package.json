@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-19905-1d7ldhe.4zls4te29"
+    ]
+  ],
+  "_from": "../d-118621-19905-uuuwej.qsuac3di/package.tgz",
+  "_id": "sorter@1.2.1",
+  "_inCache": true,
+  "_location": "/sorter",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118621-19905-uuuwej.qsuac3di/package.tgz",
+  "_shasum": "5cd6b7d7da9669ebf1016f70c7e867b6c2919b37",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-19905-uuuwej.qsuac3di/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-19905-1d7ldhe.4zls4te29",
+  "activationCommands": {
+    "atom-workspace": [
+      "sorter:sort",
+      "sorter:natural-sort"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/dodekeract/atom-sorter/issues"
+  },
+  "dependencies": {
+    "compute-gcd": "^1.2.0",
+    "javascript-natural-sort": "0.7.x",
+    "js-yaml": "^3.12.0",
+    "json-stable-stringify": "^1.0.1"
+  },
+  "description": "Sort all the things!",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/dodekeract/atom-sorter#readme",
+  "keywords": [
+    "sort",
+    "lines",
+    "sorting",
+    "natural",
+    "natural-sort",
+    "json-sorting",
+    "sort-json",
+    "json"
+  ],
+  "license": "MIT",
+  "main": "./source/index.js",
+  "name": "sorter",
+  "optionalDependencies": {},
+  "readme": "<h1 align=\"center\">Sorter</h1>\n\n<p align=\"center\">\n\tSort all the things!\n</p>\n\n<p align=\"center\">\n\t<a href=\"https://slack.dodekeract.com\"><img src=\"https://slack.dodekeract.com/badge.svg\"/></a>\n\t<a href=\"https://atom.io/packages/sorter\"><img src=\"https://img.shields.io/apm/dm/sorter.svg\"/></a>\n\t<a href=\"https://atom.io/packages/sorter\"><img src=\"https://img.shields.io/apm/v/sorter.svg\"/></a>\n</p>\n\n## Installation\n\n```bash\napm install sorter\n```\n\n## Bindings\n\nBy default, the following keyboard shortcuts are assigned:\n\n| macOS |       API Call        | Linux                                       |\n|------:|:---------------------:|:--------------------------------------------|\n| `⌃⌥E` |     `sorter:sort`     | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>E</kbd> |\n| `⌥⇧E` | `sorter:natural-sort` | <kbd>ALT</kbd>+<kbd>⇧</kbd>+<kbd>E</kbd>    |\n\n## Supported Sorting Contexts\n\n* Single-Line-Selections and selections spanning parts of one line\n\t* `sorter` will attempt to sort `JSON`\n\t* `sorter` will attempt to sort `YAML`\n\t* `sorter` will attempt to sort `HTML`\n\t* `sorter` will attempt to sort `CSS`\n\t* `sorter` will attempt to sort any `=`, `,` or ` ` separated values\n\t* `sorter` will attempt to restore semicolons and indentation\n\t* For example:\n\t\t* `{\"b\":0,\"a\":1}` → `{\"a\":1,\"b\":0}`\n\t\t* `id=\"a\" class=\"example\"` → `class=\"example\" id=\"a\"`\n\t\t* `a, x, c, 2;` → `2, a, c, x;`\n\n* Multi-Line-Selections\n\t* `sorter` will attempt to sort JSON\n\t* these will be sorted by line\n\n* Multiple Selections\n\t* every selection will be handled separately according to the rules above\n\n\n## Supported Sorting Algorithms\n\n* Alphabetic Sort\n\t* default javascript sorting function\n\t* `sorter:sort`\n\n* Natural Sort\n\t* sorts like a human\n\t* uses [javascript-natural-sort](https://npmjs.org/package/javascript-natural-sort)\n\t* `sorter:natural-sort`\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodekeract/atom-sorter.git"
+  },
+  "version": "1.2.1"
+}

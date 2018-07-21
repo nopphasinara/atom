@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
-        "spec": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118524-2969-1f4r44x.q1biwo2yb9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-1vg37fd.4pgfp6i529"
     ]
   ],
-  "_from": "../d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+  "_from": "../d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
   "_id": "aligner-css@1.2.1",
   "_inCache": true,
   "_location": "/aligner-css",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
-    "spec": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118524-2969-radru3.nq8v2qehfr/package.tgz",
+  "_resolved": "file:../d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
   "_shasum": "c05a306f68c6016a07effde5924329895a892bbc",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118524-2969-radru3.nq8v2qehfr/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118524-2969-1f4r44x.q1biwo2yb9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-h9kpju.ncz9a7cik9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-1vg37fd.4pgfp6i529",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-css/issues"
   },

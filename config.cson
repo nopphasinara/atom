@@ -32,8 +32,17 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    automaticallyUpdate: false
-    closeEmptyWindows: false
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "autosave"
       "background-tips"
@@ -51,6 +60,8 @@
       "styleguide"
       "timecop"
       "welcome"
+      "tree-view"
+      "image-view"
     ]
     packagesWithKeymapsDisabled: [
       "project-manager"
@@ -100,7 +111,6 @@
     titleBar: "custom"
   editor:
     fontFamily: "'Menlo', 'master-icons'"
-    fontSize: 14
     lineHeight: 1.6
     maxScreenLineLength: 4096
     scrollPastEnd: true
@@ -112,8 +122,13 @@
     extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "000d46de-7d57-4358-b418-14d7465390a0"
+  "file-icons":
+    tabPaneIcon: false
   "find-and-replace":
     liveSearchMinimumCharacters: 1
+  fonts:
+    fontFamily: "Plex"
+    secondaryFonts: "Menlo, monospace, \"master-icons\""
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
@@ -123,6 +138,40 @@
     phpPath: "/usr/local/bin/php"
   "markdown-preview":
     breakOnSingleNewline: true
+  nuclide:
+    "atom-ide-code-format":
+      formatOnType: false
+    "atom-ide-datatip":
+      datatipDebounceDelay: 100
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+    "atom-ide-outline-view":
+      nameOnly: true
+    "atom-ide-terminal":
+      allowTransparency: true
+      cursorBlink: true
+    hyperclick:
+      darwinTriggerKeys: "ctrlKey"
+    installRecommendedPackages: true
+    "nuclide-file-tree":
+      autoExpandSingleChild: false
+      hideIgnoredNames: false
+      hideVcsIgnoredPaths: false
+      showOpenFiles: false
+      showUncommittedChanges: false
+    "nuclide-related-files": {}
+    use:
+      "atom-ide-code-format": "never"
+      "atom-ide-outline-view": "never"
+      "nuclide-distraction-free-mode": "never"
+      "nuclide-health": "never"
+      "nuclide-home": "never"
+      "nuclide-navigation-stack": "never"
+      "nuclide-navigation-stack-status-bar": "never"
+      "nuclide-recent-files-service": "never"
+      "nuclide-related-files": "never"
+      "nuclide-welcome-page": "never"
+      "nuclide-working-sets": "never"
   "one-dark-ui":
     hideDockButtons: true
   "php-debug":
@@ -148,8 +197,7 @@
     showAdditionalCompilationInfo: false
   "split-diff":
     turnOffSoftWrap: true
-  "status-bar":
-    fullWidth: false
+  "status-bar": {}
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

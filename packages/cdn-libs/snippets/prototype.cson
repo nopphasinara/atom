@@ -1,4 +1,0 @@
-'.text.html':
-  'Prototype snippet':
-    'prefix': 'prototypecdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.min.js"></script>'

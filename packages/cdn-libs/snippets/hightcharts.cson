@@ -1,4 +1,0 @@
-'.text.html':
-  'HightCharts snippet':
-    'prefix': 'highchartscdn'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.4/highcharts.js"></script>'

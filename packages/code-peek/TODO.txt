@@ -1,0 +1,4 @@
+TODO write unit tests for code peek and code peek view
+
+Eventually:
+TODO use something other than a panel
