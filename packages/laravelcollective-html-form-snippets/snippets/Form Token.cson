@@ -1,0 +1,4 @@
+'.text.html, .text.html.php.blade':
+  '{!! Form::token() !!}':
+    'prefix': 'formtoken'
+    'body': '{!! Form::token(${1}) !!}${0}'

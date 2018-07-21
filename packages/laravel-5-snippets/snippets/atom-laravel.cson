@@ -1,0 +1,213 @@
+'.source.php':
+    'DieDump':
+        'prefix': 'dd'
+        'body': """
+            dd(${1:something});
+        """
+    'Dump':
+        'prefix': 'dump'
+        'body': """
+            dump(${1:something});
+        """
+    'HasMany':
+        'prefix': 'l:hm'
+        'body': """
+            /**
+             * Get the ${1:models} for the ${2:model}.
+             *
+             * @return \\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasMany
+             */
+            public function ${1:models}()
+            {
+                return $this->hasMany(${3:Name}::class${4:, 'foreign_key', 'local_key'});
+            }
+        """
+    'BelongsTo':
+        'prefix': 'l:bt'
+        'body': """
+            /**
+             * Get the ${1:model} that owns the ${2:model}.
+             *
+             * @return \\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsTo
+             */
+            public function ${1:model}()
+            {
+                return $this->belongsTo(${3:Name}::class${4:, 'foreign_key', 'local_key'});
+            }
+        """
+    'BelongsToMany':
+        'prefix': 'l:btm'
+        'body': """
+            /**
+             * The ${1:models} that belong to the ${2:model}.
+             *
+             * @return \\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsToMany
+             */
+            public function ${1:models}()
+            {
+                return $this->belongsToMany(${3:Name}::class${4:, 'table_name', 'foreign_key', 'local_key'});
+            }
+        """
+    'HasOne':
+        'prefix': 'l:ho'
+        'body': """
+            /**
+             * Get the ${1:model} record associated with the ${2:model}.
+             *
+             * @return \\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOne
+             */
+            public function ${1:model}()
+            {
+                return $this->hasOne(${3:Name}::class${4:, 'foreign_key', 'local_key'});
+            }
+        """
+    'EloquentBoot':
+        'prefix': 'l:mb'
+        'body': """
+            /**
+             * The "booting" method of the model.
+             *
+             * @return void
+             */
+            protected static function boot()
+            {
+                parent::boot();
+            }
+        """
+    'Fillable':
+        'prefix': 'l:fillable'
+        'body': """
+            /**
+             * The attributes that are mass assignable.
+             *
+             * @var array
+             */
+            protected $fillable = ['${1:properties}'];
+        """
+    'Touches':
+        'prefix': 'l:touches'
+        'body': """
+            /**
+             * All of the relationships to be touched.
+             *
+             * @var array
+             */
+            protected $touches = ['${1:properties}'];
+        """
+    'Guarded':
+        'prefix': 'l:guarded'
+        'body': """
+            /**
+             * The attributes that aren't mass assignable.
+             *
+             * @var array
+             */
+            protected $guarded = ['${1:properties}'];
+        """
+    'Hidden':
+        'prefix': 'l:hidden'
+        'body': """
+            /**
+             * The attributes that should be hidden for arrays.
+             *
+             * @var array
+             */
+            protected $hidden = ['${1:properties}'];
+        """
+    'Visible':
+        'prefix': 'l:visible'
+        'body': """
+            /**
+             * The attributes that should be visible in arrays.
+             *
+             * @var array
+             */
+            protected $visible = ['${1:properties}'];
+        """
+    'Dates':
+        'prefix': 'l:dates'
+        'body': """
+            /**
+             * The attributes that should be mutated to dates.
+             *
+             * @var array
+             */
+            protected $dates = ['${1:properties}'];
+        """
+    'Appends':
+        'prefix': 'l:appends'
+        'body': """
+            /**
+             * The accessors to append to the model's array form.
+             *
+             * @var array
+             */
+            protected $appends = ['${1:properties}'];
+        """
+    'Casts':
+        'prefix': 'l:casts'
+        'body': """
+            /**
+             * The attributes that should be casted to native types.
+             *
+             * @var array
+             */
+            protected $casts = [
+                '${1:property_name}' => '${2:type}',
+            ];
+        """
+    'Scope':
+        'prefix': 'l:scope'
+        'body': """
+            /**
+             * Scope a query to only include ${2:description}.
+             *
+             * @param \\\\Illuminate\\\\Database\\\\Eloquent\\\\Builder $query
+             * @return \\\\Illuminate\\\\Database\\\\Eloquent\\\\Builder
+             */
+            public function scope${1:Name}($query)
+            {
+                return $this;
+            }
+        """
+    'Accessor':
+        'prefix': 'l:accessor'
+        'body': """
+            /**
+             * Get the ${1:description}.
+             *
+             * @return ${2:type}
+             */
+            public function get${3:Name}Attribute($${4:attribute})
+            {
+                return $${4:attribute};
+            }
+        """
+    'Mutator':
+        'prefix': 'l:mutator'
+        'body': """
+            /**
+             * Set the ${1:description}.
+             *
+             * @param  ${2:paramType}  $${5:value}
+             * @return void
+             */
+            public function set${4:Name}Attribute($${5:value})
+            {
+                $this->attributes['${6:attribute}'] = $${5:value};
+            }
+        """
+    'ControllerFunction':
+        'prefix': 'l:controller'
+        'body': """
+            /**
+             * ${2:description}.
+             *
+             * @return \\\\Illuminate\\\\Http\\\\Response
+             */
+            public function ${1:Name}()
+            {
+                ${3}
+                return view('');
+            }
+        """

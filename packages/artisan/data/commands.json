@@ -1,0 +1,311 @@
+[
+    {
+        "caption": "Enter the name of the command you need help with",
+        "command": "help",
+        "name": "help",
+        "needsInput": true,
+        "showInPanel": true
+    },
+    {
+        "command": "clear-compiled",
+        "name": "clear compiled"
+    },
+    {
+        "command": "down",
+        "name": "down"
+    },
+    {
+        "command": "env",
+        "name": "env"
+    },
+    {
+        "command": "list",
+        "name": "list",
+        "showInPanel": true
+    },
+    {
+        "command": "migrate",
+        "name": "migrate"
+    },
+    {
+        "caption": "Enter the preset type (none, bootstrap, vue, react)",
+        "command": "preset",
+        "name": "preset",
+        "needsInput": true
+    },
+    {
+        "command": "up",
+        "name": "up"
+    },
+    {
+        "caption": "Enter the desired namespace.",
+        "command": "app:name",
+        "name": "app name",
+        "needsInput": true
+    },
+    {
+        "command": "auth:clear-resets",
+        "name": "auth clear resets"
+    },
+    {
+        "command": "cache:clear",
+        "name": "cache clear"
+    },
+    {
+        "caption": "Enter the key to remove",
+        "command": "cache:forget",
+        "name": "cache forget",
+        "needsInput": true
+    },
+    {
+        "command": "cache:table",
+        "name": "cache table"
+    },
+    {
+        "command": "config:cache",
+        "name": "config cache"
+    },
+    {
+        "command": "config:clear",
+        "name": "config clear"
+    },
+    {
+        "command": "db:seed",
+        "name": "db seed"
+    },
+    {
+        "command": "event:generate",
+        "name": "event generate"
+    },
+    {
+        "command": "key:generate",
+        "name": "key generate"
+    },
+    {
+        "command": "make:auth",
+        "name": "make auth"
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:channel",
+        "name": "make channel",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the command.",
+        "command": "make:command",
+        "name": "make command",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:controller",
+        "name": "make controller",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:event",
+        "name": "make event",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:exception",
+        "name": "make exception",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:factory",
+        "name": "make factory",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:job",
+        "name": "make job",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:listener",
+        "name": "make listener",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:mail",
+        "name": "make mail",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:middleware",
+        "name": "make middleware",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the migration.",
+        "command": "make:migration",
+        "name": "make migration",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:model",
+        "name": "make model",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:notification",
+        "name": "make notification",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:policy",
+        "name": "make policy",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:provider",
+        "name": "make provider",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:request",
+        "name": "make request",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:resource",
+        "name": "make resource",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:rule",
+        "name": "make rule",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:seeder",
+        "name": "make seeder",
+        "needsInput": true
+    },
+    {
+        "caption": "Enter the name of the class",
+        "command": "make:test",
+        "name": "make test",
+        "needsInput": true
+    },
+    {
+        "command": "migrate:fresh",
+        "name": "migrate fresh"
+    },
+    {
+        "command": "migrate:install",
+        "name": "migrate install"
+    },
+    {
+        "command": "migrate:refresh",
+        "name": "migrate refresh"
+    },
+    {
+        "command": "migrate:reset",
+        "name": "migrate reset"
+    },
+    {
+        "command": "migrate:rollback",
+        "name": "migrate rollback"
+    },
+    {
+        "command": "migrate:status",
+        "name": "migrate status"
+    },
+    {
+        "command": "notifications:table",
+        "name": "notifications table"
+    },
+    {
+        "command": "package:discover",
+        "name": "package discover"
+    },
+    {
+        "command": "queue:failed",
+        "name": "queue failed"
+    },
+    {
+        "command": "queue:failed-table",
+        "name": "queue failed table"
+    },
+    {
+        "command": "queue:flush",
+        "name": "queue flush"
+    },
+    {
+        "caption": "Enter the id of the failed job.",
+        "command": "queue:forget",
+        "name": "queue forget",
+        "needsInput": true
+    },
+    {
+        "command": "queue:restart",
+        "name": "queue restart"
+    },
+    {
+        "caption": "Enter the id of the failed job or \"all\" to retry all jobs.",
+        "command": "queue:retry",
+        "name": "queue retry",
+        "needsInput": true
+    },
+    {
+        "command": "queue:table",
+        "name": "queue table"
+    },
+    {
+        "command": "route:cache",
+        "name": "route cache"
+    },
+    {
+        "command": "route:clear",
+        "name": "route clear"
+    },
+    {
+        "command": "route:list",
+        "name": "route list",
+        "showInPanel": true
+    },
+    {
+        "caption": "Enter the id",
+        "command": "schedule:finish",
+        "name": "schedule finish",
+        "needsInput": true
+    },
+    {
+        "command": "schedule:run",
+        "name": "schedule run"
+    },
+    {
+        "command": "session:table",
+        "name": "session table"
+    },
+    {
+        "command": "storage:link",
+        "name": "storage link"
+    },
+    {
+        "command": "vendor:publish",
+        "name": "vendor publish"
+    },
+    {
+        "command": "view:clear",
+        "name": "view clear"
+    }
+]

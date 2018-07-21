@@ -1,0 +1,17 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+atom-text-editor {
+  .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--any.syntax--html.syntax--angular,
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--html.syntax--angular {
+    color: @text-color-warning;
+  }
+
+  .syntax--punctuation.syntax--definition.syntax--block.syntax--begin.syntax--angular,
+  .syntax--punctuation.syntax--definition.syntax--block.syntax--end.syntax--angular {
+    color: @text-color-success;
+  }
+}

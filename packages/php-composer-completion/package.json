@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-64446-1dx4737.fm99v8to6r"
+    ]
+  ],
+  "_from": "../d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+  "_id": "php-composer-completion@0.3.4",
+  "_inCache": true,
+  "_location": "/php-composer-completion",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+  "_shasum": "cb3dd00189f55c8c6d205e8d43263a630b84aa4a",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-64446-1dx4737.fm99v8to6r",
+  "bugs": {
+    "url": "https://github.com/vinicarlos56/php-composer-autocompletion/issues"
+  },
+  "dependencies": {
+    "mock-spawn": "v0.2.6",
+    "mockery": "1.4.0"
+  },
+  "description": "autocomplete+ provider for php projects based on composer",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/vinicarlos56/php-composer-autocompletion#readme",
+  "keywords": [
+    "php",
+    "composer",
+    "autocomplete",
+    "completion",
+    "php-completion"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "php-composer-completion",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# php-composer-completion package\nautocomplete+ provider for php projects based on composer.\n\nThis package is currently under development and might not work properly with others php providers.\n\n# How it works\nThe package searches for the vendor/autoload.php file within the project root and uses it to resolve the methods available in some given class on your project.\n\nCurrently the features provided are:\n\n- Method resolution for the current class (i.e. $this->).\n- Method resolution for any dependency set as a method parameter, so if your method parameter relies on an interface, or a class the methods will pop up when you try to call it within that method.\n- Correct resolution for static methods\n- Support for self and parent keywords\n- Variables and constants\n- Inherited methods\n\n# todo\nThis is an experimental package yet and there are a lot of features missing, the ones I'm planning to the next beta release are:\n- Resolution for explicit property attribution via constructor\n- Access to static resources for a given class name\n- Methods from interfaces\n\n# bugs\nIf you find any bugs, or have any proposal please feel free to open an issue and I'll try to help as soon as possible.\n\n![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicarlos56/php-composer-autocompletion.git"
+  },
+  "version": "0.3.4"
+}
