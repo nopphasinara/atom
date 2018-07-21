@@ -1,8 +1,0 @@
-{
-  "compileOnSave": false,
-  "extends": "../lib-src/tsconfig.json",
-  "include": ["**.ts"],
-  "compilerOptions": {
-    "types": ["mocha", "chai", "promise-queue"]
-  }
-}

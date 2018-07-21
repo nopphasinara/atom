@@ -1,5 +1,0 @@
-{ "extends": "atom-haskell-tslint-rules",
-  "rules": {
-    "no-floating-promises": false
-  }
-}
