@@ -14,6 +14,8 @@
     autoWatchTarget: true
     detectTargetOnStart: true
     onlyInDevMode: false
+  "atom-terminal":
+    app: "iTerm.app"
   "autocomplete-plus":
     autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
@@ -104,6 +106,16 @@
       "sort-lines"
       "atom-autocomplete-php"
       "duplicate-line-or-selection"
+      "atom-ternjs"
+      "atom-terminal"
+      "build"
+      "codesidestory-atom"
+      "css-declaration-sorter"
+      "git-time-machine"
+      "highlight-selected"
+      "jumpy"
+      "merge-conflicts"
+      "sorter"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -135,10 +147,15 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
+  "highlight-selected":
+    showResultsOnScrollBar: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
   "ide-php":
     phpPath: "/usr/local/bin/php"
+  jumpy:
+    fontSize: 1
+    useHomingBeaconEffectOnJumps: false
   "markdown-preview":
     breakOnSingleNewline: true
   nuclide:

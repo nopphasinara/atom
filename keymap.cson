@@ -102,7 +102,7 @@ atom-workspace,
 .workspace':
   'cmd-escape'                                         : 'tree-view:reveal-active-file'
 
-'.platform-darwin atom-workspace':  
+'.platform-darwin atom-workspace':
   'cmd-escape'                                         : 'tree-view:reveal-active-file'
 
 
@@ -337,3 +337,7 @@ atom-workspace .editor:not([mini]),
 
 '.platform-darwin .nuclide-file-tree':
   'd': 'tree-view:duplicate-selection'
+
+
+'atom-workspace atom-text-editor:not(.mini), .tree-view':
+  'alt-j': 'jumpy:toggle'
