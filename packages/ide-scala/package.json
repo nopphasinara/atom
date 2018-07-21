@@ -1,0 +1,156 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+        "spec": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-50796-xo2gul.vrwegynwmi"
+    ]
+  ],
+  "_from": "../d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+  "_id": "ide-scala@0.7.0",
+  "_inCache": true,
+  "_location": "/ide-scala",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+    "spec": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+  "_shasum": "6c2a1b9ecb9b24aa79d235c540753389c411c93f",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-50796-azsibp.h3nmblc8fr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-50796-xo2gul.vrwegynwmi",
+  "activationHooks": [
+    "language-scala:grammar-used"
+  ],
+  "author": {
+    "name": "Alexey Alekhin",
+    "email": "laughedelic@gmail.com",
+    "url": "https://github.com/laughedelic"
+  },
+  "bugs": {
+    "url": "https://github.com/laughedelic/atom-ide-scala/issues"
+  },
+  "consumedServices": {
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    },
+    "signature-help": {
+      "versions": {
+        "0.1.0": "consumeSignatureHelp"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "console": {
+      "versions": {
+        "0.1.0": "consumeConsole"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "0.9.5",
+    "atom-package-deps": "4.6.1"
+  },
+  "description": "Scala & Dotty language support for Atom IDE",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.21.0 <2.0.0"
+  },
+  "enhancedScopes": [
+    "source.scala"
+  ],
+  "homepage": "https://github.com/laughedelic/atom-ide-scala#readme",
+  "keywords": [
+    "scala",
+    "scalameta",
+    "ide",
+    "atom-ide",
+    "lsp",
+    "language-server",
+    "language-server-protocol",
+    "dotty"
+  ],
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "ide-scala",
+  "optionalDependencies": {},
+  "package-deps": [
+    "language-scala",
+    "atom-ide-ui"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-actions": {
+      "versions": {
+        "0.1.0": "provideCodeActions"
+      }
+    },
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "provideHyperclick"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "readme": "# Atom IDE Scala language client\n\n[![](https://travis-ci.org/laughedelic/atom-ide-scala.svg?branch=master)](https://travis-ci.org/laughedelic/atom-ide-scala)\n[![](https://img.shields.io/github/release/laughedelic/atom-ide-scala/all.svg)](https://github.com/laughedelic/atom-ide-scala/releases/latest)\n[![](https://img.shields.io/apm/v/ide-scala.svg)](https://atom.io/packages/ide-scala)\n[![](https://img.shields.io/apm/dm/ide-scala.svg)](https://atom.io/packages/ide-scala)\n[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)\n[![](https://img.shields.io/badge/contact-gitter_chat-dd1054.svg)](https://gitter.im/laughedelic/atom-ide-scala)\n\nScala/Dotty language support for [Atom IDE], powered by [Metals] :metal: and [Dotty language server]\n\n![](https://user-images.githubusercontent.com/766656/34135911-aa78092a-e463-11e7-9fdf-710a8deb4093.png)\n\n#### 🚧 WORK IN PROGRESS 🚧\n\nThe project is in active development and may have some rough edges. You are welcome to try it out and provide any feedback in the [Gitter chat](https://gitter.im/laughedelic/atom-ide-scala) or [Github issues](https://github.com/laughedelic/atom-ide-scala/issues).\n\nThis plugin is written in **[Scala.js]**, so if you are a Scala developer looking for better development experience in Atom, you're encouraged to contribute. Check the [contributing guide](CONTRIBUTING.md) and [open issues](https://github.com/laughedelic/atom-ide-scala/issues) especially the ones marked with `help wanted` label.\n\nThe work of this plugin is to launch the language server and wire communication with it to the Atom IDE services. Most of the interesting stuff is happening on the server side, so check also the [scalameta/metals](https://github.com/scalameta/metals) project.\n\nDuring development some reusable parts were split into separate repos:\n\n* [scalajs-atom-api](https://github.com/laughedelic/scalajs-atom-api): Scala.js facades for Atom-related APIs (including atom-languageclient)\n* [sbt-atom-package](https://github.com/laughedelic/sbt-atom-package): an sbt plugin wraping apm and simplifying development of Scala.js-based Atom plugins\n\n## Features\n\n<details><summary> ⚠️ This list is outdated and refers only to the Metals features. Check each supported server documentation to find out which features they support.</summary>\n\nHere is a list of the features which are implemented. It doesn't mean that they all work well, just that they are implemented on the server side and are supported by this plugin. Also notice that some features may take time to activate after you open a new file or change code.\n\n* [Formatting](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/code-format.md) with [Scalafmt](http://scalameta.org/scalafmt):\n  + Add `.scalafmt` [config](http://scalameta.org/scalafmt/#Configuration) to the project\n  + Use <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>C</kbd> hotkey\n  + It formats the whole file\n* [Diagnostics](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/diagnostics.md) (linting with [Scalafix](https://scalacenter.github.io/scalafix) and presentation compiler):\n  + If you have `.scalafix` configuration in the project, you will see linting messages in the diagnostics panel and red underlines in the code\n  + You will also see compilation errors from the presentation compiler as you type\n* [Definitions](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/definitions.md):\n  + Hold <kbd>Cmd</kbd> and hover to preview the definition or click to jump to the source\n* [References](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/find-references.md):\n  + Right-click on a symbol and choose `Find References` in the context menu\n  + Or open command palette and run `Find References` command\n* [Code Highlights](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/code-highlight.md):\n  + When cursor is placed on a symbol, all its occurrences in the file should get highlighted\n* [Datatips](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/datatips.md) (type on hover):\n  + Just hover over a symbol to see its type\n  + You can also hold <kbd>Alt</kbd> to see the type of symbol under the cursor\n* [Outline view](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/outline-view.md) (symbols tree):\n  + Use <kbd>Alt</kbd><kbd>O</kbd> to open it\n* Auto completions as you type with presentation compiler\n  + This is experimental and requires some extra setup\n* [Signature Help](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/signature-help.md) (experimental UI):\n  + When you type a method name and an open parenthesis you should see information about method parameters\n\nSee also default [Atom IDE keybindings](https://github.com/facebook-atom/atom-ide-ui/blob/master/docs/keybindings.md).\n\nFor the full list of implemented and planned features see the [overview](https://github.com/scalameta/metals/blob/master/docs/overview.md) of the Metals project.\n\n</details>\n\n## Installation\n\nYou can install it by following [this link](atom://settings-view/show-package?package=ide-scala) or by running this command:\n\n```\napm install ide-scala\n```\n\nOn the first launch it will automatically install its dependencies if needed:\n+ [language-scala](https://github.com/atom-community/language-scala) for basic Scala syntax highlighting\n+ [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui) for the Atom IDE interface\n\n## Usage\n\nThis plugin can work with different Scala language servers. You can use it for Scala-2.12 Metals projects as well as for the Dotty projects.\n\nIn any case it is expected that you first follow the corresponding language server setup instructions to prepare your project. Usually it involves installing an sbt plugin and running some setup command for every new project. The Atom plugin will check the project setup and choose the right server automatically. This is configurable:\n\n* you can select a default server which will be used for all new projects (you're still expected to setup your projects manually until servers can do it on their own)\n* you can turn off automatic server choice if you always want to use same server\n\nPlugin gets activated only when you open a `.scala` file.\n\n> ⚠️ Notice that when you close all tabs with Scala files, language server will be stopped. See [atom-languageclient#141](https://github.com/atom/atom-languageclient/issues/141) for discussion on this behavior.\n\n### Metals\n\n1. Follow Metals [installation instructions](https://github.com/scalameta/metals/blob/master/docs/installation.md) to prepare your Scala projects.\n1. Open a project in Atom. Once you open a Scala file, you will see the server launching.\n\n### Dotty\n\n1. Setup a [Dotty sbt project](https://github.com/lampepfl/dotty-example-project) and run `sbt configureIDE` in it.  \n    Official instructions may tell you to run `launchIDE` in sbt, but this command can only launch VS Code, so just use `configureIDE` instead and open the project in Atom.\n1. Open a project in Atom. Once you open a Scala file, you will see the server launching.\n\n### Ensime\n\nThere is [Ensime LSP](https://github.com/ensime/ensime-server/issues/1918) support in development. See [#13](https://github.com/laughedelic/atom-ide-scala/issues/13) for details if you're interested in contributing.\n\n[Scala]: http://scala-lang.org/\n[Scala.js]: https://www.scala-js.org/\n[Atom IDE]: https://ide.atom.io/\n[Metals]: https://github.com/scalameta/metals\n[LSP]: https://github.com/Microsoft/language-server-protocol\n[Dotty language server]: http://dotty.epfl.ch/docs/usage/ide-support.html\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laughedelic/atom-ide-scala.git"
+  },
+  "version": "0.7.0"
+}

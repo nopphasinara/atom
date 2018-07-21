@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+        "spec": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-51308-nosxrb.ei1rw6zuxr"
+    ]
+  ],
+  "_from": "../d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+  "_id": "ide-haskell-repl@0.8.1",
+  "_inCache": true,
+  "_location": "/ide-haskell-repl",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+    "spec": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+  "_shasum": "62eecc705f0b2113bee83819cd0065009bf25fe6",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-51308-1d1l0bi.e9n179o1or/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-51308-nosxrb.ei1rw6zuxr",
+  "activationHooks": [
+    "language-haskell:grammar-used"
+  ],
+  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
+  "bugs": {
+    "url": "https://github.com/atom-haskell/ide-haskell-repl/issues"
+  },
+  "consumedServices": {
+    "ide-haskell-upi": {
+      "description": "Uses ide-haskell's unified pluggable interface",
+      "versions": {
+        "^0.3.0": "consumeUPI"
+      }
+    },
+    "autocomplete.watchEditor": {
+      "versions": {
+        "^1.0.0": "consumeWatchEditor"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-haskell-utils": "^1.0.2",
+    "atom-highlight": "^0.4.1",
+    "etch": "^0.12.8",
+    "fuzzaldrin": "^2.1.0",
+    "promise-queue": "^2.2.5",
+    "tree-kill": "^1.2.0",
+    "tslib": "^1.9.0"
+  },
+  "description": "Haskell REPL support for ide-haskell",
+  "deserializers": {
+    "IdeHaskellReplView": "createReplView"
+  },
+  "devDependencies": {
+    "@types/atom": "~1.24.2",
+    "@types/chai": "^4.1.2",
+    "@types/fuzzaldrin": "^2.1.1",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^8.5.9",
+    "atom-haskell-tslint-rules": "^0.2.2",
+    "atom-ts-spec-runner": "^1.1.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "prettier": "^1.11.1",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "~2.7.2"
+  },
+  "engines": {
+    "atom": ">=1.24.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/ide-haskell-repl#readme",
+  "keywords": [
+    "ide-haskell",
+    "ide",
+    "haskell",
+    "repl"
+  ],
+  "license": "MIT",
+  "main": "./lib/ide-haskell-repl",
+  "name": "ide-haskell-repl",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "3.0.0": "autocompleteProvider_3_0_0"
+      }
+    }
+  },
+  "readme": "# IDE-Haskell REPL ![](https://david-dm.org/atom-haskell/ide-haskell-repl.svg)\n\n***This package is in beta.***\n\nThis package provides a way to interact with ghci (or, more precisely, `cabal repl` or `stack ghci`) from Atom.\n\n![image](https://cloud.githubusercontent.com/assets/7275622/24383478/c3ae1ae4-1365-11e7-88a6-0c4877b23fc1.png)\n\n## Documentation\n\nPlease refer to documentation site https://atom-haskell.github.io. In particular, see [here](https://atom-haskell.github.io/extra-packages/ide-haskell-repl/#using-on-windows) when running `ide-haskell-repl` on Windows.\n\n## License\n\nCopyright © 2015 Atom-Haskell.\n\nContributors (by number of commits):\n\n<!-- BEGIN CONTRIBUTORS LIST -->\n* Nikolay Yakimov\n* yaeti\n* Yakov Borevich\n* soiamsoNG\n\n<!-- END CONTRIBUTORS LIST -->\n\nSee [LICENSE.md][LICENSE] for details.\n\n[LICENSE]: https://github.com/atom-haskell/ide-haskell-repl/blob/master/LICENSE.md\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/ide-haskell-repl.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint --project . && tslint --project spec",
+    "prettier": "prettier --write 'src/**/*.ts?(x)' 'spec/**/*.ts?(x)'",
+    "prettier-check": "prettier -l 'src/**/*.ts?(x)' 'spec/**/*.ts?(x)'",
+    "test": "npm run typecheck && npm run lint && npm run prettier-check",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p spec"
+  },
+  "version": "0.8.1"
+}

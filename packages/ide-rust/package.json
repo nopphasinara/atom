@@ -1,0 +1,135 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+        "spec": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-51338-5gj84v.3i1k8olxr"
+    ]
+  ],
+  "_from": "../d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+  "_id": "ide-rust@0.18.0",
+  "_inCache": true,
+  "_location": "/ide-rust",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+    "spec": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+  "_shasum": "a0835dba8a158b908ed5f22ebfb27719dd2f4bf1",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-51338-yzgdwk.b70xwxko6r/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-51338-5gj84v.3i1k8olxr",
+  "bugs": {
+    "url": "https://github.com/mehcode/atom-ide-rust/issues"
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.9.5",
+    "atom-package-deps": "^4.6.2",
+    "toml": "^2.3.3",
+    "underscore-plus": "^1.6.8"
+  },
+  "description": "Rust language support for Atom-IDE",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  },
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.rust"
+  ],
+  "homepage": "https://github.com/mehcode/atom-ide-rust#readme",
+  "keywords": [
+    "rust",
+    "rls",
+    "ide"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "ide-rust",
+  "optionalDependencies": {},
+  "package-deps": [
+    "language-rust",
+    "atom-ide-ui"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-actions": {
+      "versions": {
+        "0.1.0": "provideCodeActions"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "readme": "# IDE-Rust\nRust language support for Atom-IDE, powered by the Rust Language Server (RLS).\n\n![](http://image.ibb.co/gwfQTm/output.gif \"Usage Jan-2018\")\n\n## Features\n - Auto-completion\n - Diagnostics (errors and warnings from `rustc` and `clippy`, see `clippy_preference` setting)\n - Document outline\n - Go to definition (`ctrl` or `cmd` click)\n - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)\n - Find references (`ctrl-alt-shift-f` or `cmd-opt-shift-f` also in context menu)\n - Format file with rustfmt (`ctrl-shift-c` or `cmd-shift-c` also in context menu)\n - Format on save (disabled by default, see `atom-ide-ui` settings)\n - Rls toolchain selection in package settings\n - Rls toolchain update checking at startup & every 6 hours thereafter\n - Global Rls configuration for `all_targets`, `clippy_preference`\n - Per-project Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)\n   ```toml\n   # rls.toml\n   features = [\"serde\"]\n   ```\n - Graceful handling of Rls being missing from the distribution _(which is/was somewhat common on the nightly channel)_\n   * Warns before installing a rust version without Rls or when using an already installed one\n   * Automatic detection of, and prompt to install, the latest working dated release\n\n## Install\nYou can install from the command line with:\n```\n$ apm install ide-rust\n```\nOr you can install from Settings view by searching for `ide-rust`.\n\nNo other packages or manual setup is required as these will be handled with user prompts after install. However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).\n\n## Commands\n- `ide-rust:restart-all-language-servers` Restart all currently active Rls processes\n\n## Multi-crate projects\nA root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project.\nFor example, a project with *'rust_foo'* & *'rust_bar'* directories/crates could have the following root `Cargo.toml`\n```toml\n# Cargo.toml\n[workspace]\nmembers = [\n    \"rust_foo\",\n    \"rust_bar\",\n]\n```\n\n## Overriding Rls\nThe Rls command can be specified manually, for example to run from local source code:\n```cson\n# config.cson\n  ...\n  \"ide-rust\":\n    rlsCommandOverride: \"cargo +nightly run --manifest-path=/rls-src/Cargo.toml\"\n```\nWhen set you'll be able to see, and remove, this from the package settings. After restarting atom an info message will inform you the override is in place.\n\n![](https://image.ibb.co/jsR65w/rls_Command_Override_Info.png)\n\n## Debugging IDE-Rust\nIf stuff isn't working you can try **enabling logging** to debug:\n  * Open the atom console _(ctrl-shift-i)_\n  * Enter `atom.config.set('core.debugLSP', true)`\n  * Reload atom _(ctrl-shift-F5)_\n\nThis will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect. It will also include any Rls stderr messages (as warnings) which may point to Rls bugs.\n\n## License\nMIT License. See the [license](LICENSE) for more details.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehcode/atom-ide-rust.git"
+  },
+  "scripts": {
+    "test": "eslint lib test --max-warnings 0"
+  },
+  "version": "0.18.0"
+}

@@ -14,6 +14,9 @@
     autoWatchTarget: true
     detectTargetOnStart: true
     onlyInDevMode: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
   "atom-terminal":
     app: "iTerm.app"
   "autocomplete-plus":
@@ -63,7 +66,6 @@
       "styleguide"
       "timecop"
       "welcome"
-      "tree-view"
       "image-view"
       "file-icons"
     ]

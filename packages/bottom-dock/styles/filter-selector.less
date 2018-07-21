@@ -1,0 +1,46 @@
+@import "ui-variables";
+
+.filter-selector {
+  padding-right: 5px;
+
+  .filter-label {
+    padding-right: 5px;
+    vertical-align: middle;
+    line-height: 1.8em;
+
+  }
+
+  .filter-button {
+    border-radius: 0;
+    height: initial;
+    background: @button-background-color;
+    text-shadow: none;
+    border: 1px solid @button-border-color;
+    border-left: 0;
+    padding-top: initial;
+    line-height: 1.8em;
+
+    &:first-child {
+      border-left: 1px solid #181818;
+      border-top-left-radius: @component-border-radius;
+      border-bottom-left-radius: @component-border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: @component-border-radius;
+      border-bottom-right-radius: @component-border-radius;
+
+    }
+
+    &:hover {
+      .delete-button {
+        visibility: visible;
+      }
+    }
+
+    &.selected {
+      background-color: @button-background-color-selected;
+      color: @text-color-selected;
+    }
+  }
+}

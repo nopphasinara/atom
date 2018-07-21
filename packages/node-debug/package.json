@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+        "spec": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-52230-13m2ewp.tpsexw29"
+    ]
+  ],
+  "_from": "../d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+  "_id": "node-debug@0.1.7",
+  "_inCache": true,
+  "_location": "/node-debug",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+    "spec": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+  "_shasum": "5693aa24b018efc696e241e51b01ee9daaecf39f",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-52230-1m1yrkd.njhx7mbo6r/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-52230-13m2ewp.tpsexw29",
+  "activationCommands": {
+    "atom-workspace": "node-debug:run"
+  },
+  "author": {
+    "name": "Andi Heinkelein",
+    "email": "andifeind@noname-media.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Andifeind/atom-node-inspector/issues"
+  },
+  "debug": "./examples/debug.js",
+  "dependencies": {
+    "biased-opener": "^0.2.8",
+    "superchain": "^0.1.2"
+  },
+  "description": "Node.js debugging interface for Atom using node-inspector.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Andifeind/atom-node-inspector#readme",
+  "keywords": [
+    "debugger",
+    "debug",
+    "node-debug",
+    "node-debugger",
+    "node-inspector"
+  ],
+  "license": "MIT",
+  "main": "./lib/node-debug",
+  "name": "node-debug",
+  "optionalDependencies": {},
+  "readme": "# node-debug\n\nNode.js debugging interface for Atom using node-inspector.  \n[node-inspector](https://github.com/node-inspector/node-inspector) uses the Blink Developer Tools as debugging interface.\n\n![node-debug screenshot](https://cloud.githubusercontent.com/assets/3463165/14064391/02f19412-f402-11e5-8f21-5bd3a59ed488.jpg)\n\nInstall\n-------\n\nThe node-debug app installs `node-inspector` by its first start. This may takes a few seconds. Press `ctrl`+`alt`+`i` to open the atom console to see whats happend. The debugger should start after a successfully installation.\n\nRun the debugger\n----------------\n\nThe debugger will be start by the command `node-debug:run` or by pressing `ctrl`+`i`. The debugger reads the main file from package.json of the current project. It looks for a `debug` flag or reads from the `main` propertie.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andifeind/atom-node-inspector.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.7"
+}

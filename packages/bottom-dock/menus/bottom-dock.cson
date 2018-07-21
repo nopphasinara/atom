@@ -1,0 +1,18 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'bottom-dock'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'bottom-dock:toggle'
+        },
+        {
+          'label': 'Remove Current Pane'
+          'command': 'bottom-dock:delete'
+        }
+      ]
+    ]
+  }
+]

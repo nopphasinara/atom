@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+        "spec": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-50868-1wtoc6g.4m47m8to6r"
+    ]
+  ],
+  "_from": "../d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+  "_id": "ide-standardjs@0.0.1",
+  "_inCache": true,
+  "_location": "/ide-standardjs",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+    "spec": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+  "_shasum": "a13a79ce1013219efd0a921595f29dab360dfeb7",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-50868-1x5d4zf.jpruanhfr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-50868-1wtoc6g.4m47m8to6r",
+  "bugs": {
+    "url": "https://github.com/yuriihabrusiev/ide-standardjs/issues"
+  },
+  "dependencies": {
+    "standard": "^10.0.3"
+  },
+  "description": "JavaScript Standard Style linter and formatter for Atom IDE",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.22.0 <2.0.0"
+  },
+  "homepage": "https://github.com/yuriihabrusiev/ide-standardjs#readme",
+  "keywords": [
+    "atom-ide",
+    "javascript",
+    "standard",
+    "linter",
+    "formatter"
+  ],
+  "license": "MIT",
+  "main": "./lib/ide-standardjs",
+  "name": "ide-standardjs",
+  "optionalDependencies": {},
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# ide-standardjs\n> Error: Use JavaScript Standard Style\n\n[JavaScript Standard Style][standardjs] linter and formatter for [Atom IDE][atom-ide].\n\n## Early access\nThis package is currently an early access release.\nYou should also install the [atom-ide-ui][atom-ide-ui] package to expose the functionality within Atom.\n\n## License\nMIT License.  See [the license](LICENSE) for more details.\n\n[standardjs]: https://standardjs.com\n[atom-ide]: https://ide.atom.io\n[atom-ide-ui]: https://atom.io/packages/atom-ide-ui\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriihabrusiev/ide-standardjs.git"
+  },
+  "standard": {
+    "globals": [
+      "atom"
+    ]
+  },
+  "version": "0.0.1"
+}

@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+        "spec": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-51478-1sl4c0s.4igqa1yvi"
+    ]
+  ],
+  "_from": "../d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+  "_id": "ide-c@0.0.2",
+  "_inCache": true,
+  "_location": "/ide-c",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+    "spec": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+  "_shasum": "86120506d2d90913063567d4f0666b41dc7b5aaf",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-51478-c2pvf4.f5c54uz0k9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-51478-1sl4c0s.4igqa1yvi",
+  "bugs": {
+    "url": "https://github.com/jbree/ide-c/issues"
+  },
+  "dependencies": {},
+  "description": "Soon-to-be home of ide-clangd",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jbree/ide-c#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/ide-c",
+  "name": "ide-c",
+  "optionalDependencies": {},
+  "readme": "# ide-c\n\nA soon-to-be clang-based language server client for ide-atom-ui\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbree/ide-c.git"
+  },
+  "version": "0.0.2"
+}

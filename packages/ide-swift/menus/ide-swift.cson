@@ -1,0 +1,50 @@
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Created by Sam Deane, 23/05/2018.
+# All code (c) 2018 - present day, Elegant Chaos Limited.
+# For licensing terms, see http://elegantchaos.com/license/liberal/.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Swift'
+      'submenu': [
+        {
+          'label': 'Set Target'
+          'command': 'ide-swift:target'
+        },
+        {
+          'label': 'Build'
+          'command': 'ide-swift:build'
+        },
+        {
+          'label': 'Debug'
+          'command': 'ide-swift:debug'
+        }
+      ]
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Swift'
+      'submenu': [
+        {
+          'label': 'Set Target'
+          'command': 'ide-swift:target'
+        },
+        {
+          'label': 'Build'
+          'command': 'ide-swift:build'
+        },
+        {
+          'label': 'Debug'
+          'command': 'ide-swift:debug'
+        }
+      ]
+    ]
+  }
+]

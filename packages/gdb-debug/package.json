@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+        "spec": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-52299-jkjfzw.bw66o5hfr"
+    ]
+  ],
+  "_from": "../d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+  "_id": "gdb-debug@0.0.3",
+  "_inCache": true,
+  "_location": "/gdb-debug",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+    "spec": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+  "_shasum": "43052a5b818eadf2848b956fa89191ca55d991c9",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-52299-1kbpdad.2x9k9pmn29/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-52299-jkjfzw.bw66o5hfr",
+  "bugs": {
+    "url": "https://github.com/lloiser/gdb-debug/issues"
+  },
+  "configSchema": {
+    "panelInitialVisible": {
+      "title": "Panel initially visible",
+      "description": "Determines whether the panel is initially visible for new atom instances or not.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1",
+    "react-for-atom": "^15.0.1-0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "description": "gdb debugger interface for atom",
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-react": "^5.0.1"
+  },
+  "engines": {
+    "atom": ">=1.5.3 <2.0.0"
+  },
+  "homepage": "https://github.com/lloiser/gdb-debug#readme",
+  "keywords": [
+    "gdb",
+    "debug",
+    "debugger"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "gdb-debug",
+  "optionalDependencies": {},
+  "package-deps": [],
+  "providedServices": {
+    "gdb-debug": {
+      "description": "Start the gdb debugger using this API.",
+      "versions": {
+        "0.1.0": "provideDebug"
+      }
+    }
+  },
+  "readme": "# [gdb-debug](https://atom.io/packages/gdb-debug)\n\nAn atom debugging interface for gdb.\n\n## Install\n\nEither `apm install gdb-debug` or search for `gdb-debug` in the settings.\n\n## Key bindings\n\n* `f5` runs the current package (`dlv debug`)\n* `ctrl-f5` runs the current package tests (`dlv test`)\n* `f6` stops gdb (`exit / quit / q`)\n* `f8` continue the execution (`c / continue`)\n* `f9` toggle breakpoint\n* `f10` step over to next source line (`n / next`)\n* `f11` step into functions (`s / step`)\n* `cmd-k cmd-g` (mac) / `ctrl-k ctrl-g` (others) toggles the main panel\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lloiser/gdb-debug.git"
+  },
+  "version": "0.0.3"
+}

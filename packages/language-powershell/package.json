@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+        "spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118622-50982-ownu1l.r4gmish5mi"
+    ]
+  ],
+  "_from": "../d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+  "_id": "language-powershell@4.0.1",
+  "_inCache": true,
+  "_location": "/language-powershell",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+    "spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+  "_shasum": "a96828ba11567fd88d2cb8871718d4d78947b104",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118622-50982-ownu1l.r4gmish5mi",
+  "bugs": {
+    "url": "https://github.com/jugglingnutcase/language-powershell/issues"
+  },
+  "dependencies": {},
+  "description": "PowerShell language support for Atom",
+  "devDependencies": {
+    "cson": "^1.6.2",
+    "plist": "^1.1.0"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jugglingnutcase/language-powershell#readme",
+  "keywords": [
+    "powershell",
+    "microsoft",
+    "windows",
+    "grammar"
+  ],
+  "license": "MIT",
+  "name": "language-powershell",
+  "optionalDependencies": {},
+  "readme": "# PowerShell language support in Atom [![Build Status](https://travis-ci.org/jugglingnutcase/language-powershell.svg?branch=master)](https://travis-ci.org/jugglingnutcase/language-powershell)\n\nThis package provides [PowerShell](https://msdn.microsoft.com/en-us/mt173057.aspx) language support in the [Atom editor](https://atom.io) by leveraging the [PowerShell syntax][ES] from Microsoft.\n\n## Issues\n\nIf you discover any issues with the way the syntax is highlighted, please open an issue against the [PowerShell/EditorSyntax][ES] repository instead of this one, since this package is based on that grammar.\n\nAny issues that aren't related to the grammar are fair game here, though! Start one [here](https://github.com/jugglingnutcase/language-powershell/issues/new).\n\n[ES]:https://github.com/PowerShell/EditorSyntax\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugglingnutcase/language-powershell.git"
+  },
+  "scripts": {
+    "convert": "node scripts/convert-grammar.js"
+  },
+  "version": "4.0.1"
+}

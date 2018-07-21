@@ -1,0 +1,114 @@
+'context-menu':
+  '.psci-pane': [
+    {
+      'label': 'Copy'
+      'command': 'ide-purescript:psci-copy'
+    }
+    {
+      'label': 'PSCI: Reset'
+      'command': 'ide-purescript:psci-reset'
+    }
+  ]
+  'atom-text-editor[data-grammar*="source purescript"]:not([mini])': [
+    {
+      'label': 'PSCI: Send Line'
+      'command': 'ide-purescript:psci-send-line'
+    }
+    {
+      'label': 'PSCI: Send Selection'
+      'command': 'ide-purescript:psci-send-selection'
+    }
+    {
+      'label': 'PureScript'
+      'submenu': [
+        {
+          'label': 'Add Import'
+          'command': 'ide-purescript:add-explicit-import'
+        }
+        {
+          'label': 'Case Split'
+          'command': 'ide-purescript:case-split'
+        }
+        {
+          'label': 'Add Clause'
+          'command': 'ide-purescript:add-clause'
+        }
+        {
+          'label': 'Fix Typo'
+          'command': 'ide-purescript:fix-typo'
+        }
+      ]
+    }
+  ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'PureScript'
+      'submenu': [
+        {
+          'label': 'Build'
+          'command': 'ide-purescript:build'
+        }
+        {
+          'label': 'Search (local)'
+          'command': 'ide-purescript:search'
+        }
+        {
+          'label': 'Search Pursuit'
+          'command': 'ide-purescript:pursuit-search'
+        }
+        {
+          'label': 'Search Pursuit (modules/packages)'
+          'command': 'ide-purescript:pursuit-search-modules'
+        }
+        {
+          'label': 'Add Import (open)'
+          'command': 'ide-purescript:add-module-import'
+        }
+        {
+          'label': 'Add Import (explicit)'
+          'command': 'ide-purescript:add-explicit-import'
+        }
+        {
+          'label': 'Case Split'
+          'command': 'ide-purescript:case-split'
+        }
+        {
+          'label': 'Add Clause'
+          'command': 'ide-purescript:add-clause'
+        }
+        {
+          'label': 'Fix Typo'
+          'command': 'ide-purescript:fix-typo'
+        }
+        {
+          'label': 'PSCI: Open'
+          'command': 'ide-purescript:psci-open'
+        }
+        {
+          'label': 'PSCI: Send Line'
+          'command': 'ide-purescript:psci-send-line'
+        }
+        {
+          'label': 'PSCI: Send Selection'
+          'command': 'ide-purescript:psci-send-selection'
+        }
+        {
+          'label': 'Restart IDE server'
+          'command': 'ide-purescript:restart-psc-ide'
+        }
+        {
+          'label': 'Start IDE server'
+          'command': 'ide-purescript:start-psc-ide'
+        }
+        {
+          'label': 'Stop IDE server'
+          'command': 'ide-purescript:stop-psc-ide'
+        }
+      ]
+    ]
+
+  }
+]
