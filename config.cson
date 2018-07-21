@@ -7,6 +7,9 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
+    insertNewlinesForUseStatements: true
   "atom-hot-package-loader":
     autoWatchTarget: true
     detectTargetOnStart: true
@@ -86,6 +89,7 @@
       "hyperclick"
       "change-case"
       "sort-lines"
+      "atom-autocomplete-php"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -115,10 +119,16 @@
     searchAllPanes: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
+  "ide-php":
+    phpPath: "/usr/local/bin/php"
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
     hideDockButtons: true
+  "php-debug":
+    display:
+      arraySort: true
+    showWelcome: false
   "project-manager":
     prettifyTitle: false
     savePathsRelativeToHome: true

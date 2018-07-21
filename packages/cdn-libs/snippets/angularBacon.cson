@@ -1,0 +1,4 @@
+'.text.html':
+  'Angular Bacon snippet':
+    'prefix': 'angularbaconCdn'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-bacon/2.0.0/angular-bacon.min.js"><script>'

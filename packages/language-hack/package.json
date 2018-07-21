@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-6799-1y1i62n.1i2v1s8aor"
+    ]
+  ],
+  "_from": "../d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+  "_id": "language-hack@0.1.1",
+  "_inCache": true,
+  "_location": "/language-hack",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+  "_shasum": "9d01167ef6f46565c7098bbe5c409a1200ca6890",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-6799-17h3owu.zpzeyiudi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-6799-1y1i62n.1i2v1s8aor",
+  "bugs": {
+    "url": "https://github.com/steelbrain/language-hack/issues"
+  },
+  "dependencies": {},
+  "description": "HackLang grammar for Atom Editor",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/steelbrain/language-hack",
+  "license": "MIT",
+  "name": "language-hack",
+  "optionalDependencies": {},
+  "readme": "# [HackLang][HackLang] Grammar for Atom Editor\n\nOriginally cloned from [Atom's PHP Language Package][PHPLangPackage].\n\nContributions are greatly appreciated. Please fork this repository and open a\npull request to add snippets, make grammar tweaks, etc.\n\n[PHPLangPackage]:https://github.com/atom/language-php\n[HackLang]:https://github.com/facebok/hhvm",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/language-hack.git"
+  },
+  "version": "0.1.1"
+}

@@ -1,0 +1,4 @@
+'.text.html':
+  'Angular Material snippet':
+    'prefix': 'angularmaterialcdn'
+    'body': '<link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css" rel="stylesheet" crossorigin="anonymous"'

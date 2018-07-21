@@ -31,7 +31,7 @@
   'print_r':
     'prefix': 'pr'
     'body': '''
-      echo "<pre>"; print_r(${2:\\$${1:var}}); echo "</pre>";$0
+      echo "<pre>"; print_r(${1:\\$${2:var}}); echo "</pre>";$0
     '''
   'Print Class Methods':
     'prefix': 'pr:methods'
