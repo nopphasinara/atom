@@ -1,8 +1,16 @@
 
 // Config -----------------------------------
-@syntax-hue:          230;
-@syntax-saturation:   12%;
-@syntax-brightness:   22%;
+@base: #252735;
+// @base: #2A3845;
+// @base: #2F3E4D;
+
+@syntax-hue:          hue(@base);
+@syntax-saturation:   saturation(@base);
+@syntax-brightness:   lightness(@base);
+
+// @syntax-hue:          230;
+// @syntax-saturation:   12%;
+// @syntax-brightness:   22%;
 
 
 // Monochrome -----------------------------------

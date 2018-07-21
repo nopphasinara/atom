@@ -36,6 +36,7 @@
       "source.ini": [
         ".hgrc"
         ".buckconfig"
+        ".flowconfig"
       ]
       "source.json": [
         "BUCK.autodeps"
@@ -102,6 +103,7 @@
       "change-case"
       "sort-lines"
       "atom-autocomplete-php"
+      "duplicate-line-or-selection"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
