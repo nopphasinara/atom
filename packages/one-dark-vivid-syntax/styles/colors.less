@@ -1,26 +1,77 @@
 
 // Config -----------------------------------
-@syntax-hue:          230;
-@syntax-saturation:   12%;
-@syntax-brightness:   22%;
+@base: #1F2838;
+// @base: #2E3440;
+// @base: #1E1E1E;
+// @base: #282A35;
+// @base: #212121;
+// @base: #868E95;
+
+@syntax-hue:          hue(@base);
+@syntax-saturation:   saturation(@base);
+@syntax-brightness:   lightness(@base) + 2%;
+
+// @syntax-hue:          hue(@base);
+// @syntax-saturation:   saturation(@base) + 10%;
+// @syntax-brightness:   lightness(@base) - 40%;
+
+// @syntax-hue:          230;
+// @syntax-saturation:   12%;
+// @syntax-brightness:   22%;
 
 
 // Monochrome -----------------------------------
-@mono-1: hsl(@syntax-hue, 60%, 92%); // default text
-@mono-2: hsl(@syntax-hue, 24%, 66%);
-@mono-3: hsl(@syntax-hue, 12%, 44%);
+@mono-1: hsl(@syntax-hue, @syntax-saturation - ((100 - @syntax-saturation) * .05), @syntax-brightness + ((100 - @syntax-brightness) * .9));
+@mono-2: hsl(@syntax-hue, @syntax-saturation - ((100 - @syntax-saturation) * .1), @syntax-brightness + ((100 - @syntax-brightness) * .35));
+@mono-3: hsl(@syntax-hue, @syntax-saturation - ((100 - @syntax-saturation) * .1), @syntax-brightness + ((100 - @syntax-brightness) * .2));
+
+// @mono-1: hsl(@syntax-hue, 60%, 92%); // default text
+// @mono-2: hsl(@syntax-hue, 24%, 66%);
+// @mono-3: hsl(@syntax-hue, 12%, 44%);
 
 // Colors -----------------------------------
-@hue-1:   hsl(191, 91%, 73%); // <-cyan
-@hue-2:   hsl(212, 99%, 75%); // <-blue
-@hue-3:   hsl(286, 82%, 79%); // <-purple
-@hue-4:   hsl(118, 69%, 78%); // <-green
+@cyan: #86E0FC;
+// @cyan: #95CBE8;
+// @cyan: #6FD5F7;
+@hue-1:   hsl(hue(@cyan), saturation(@cyan), lightness(@cyan) + 2%);
+// @hue-1:   hsl(hue(@cyan), saturation(@cyan), lightness(@cyan) - 10%);
+// @hue-1:   hsl(hue(@cyan), saturation(@cyan), lightness(@cyan));
+// @hue-1:   hsl(191, 91%, 73%); // <-cyan
+@blue: #8EC5F7;
+@hue-2:   hsl(hue(@blue), saturation(@blue) + 14%, lightness(@blue) + 2%);
+// @hue-2:   hsl(212, 99%, 75%); // <-blue
+@purple: #C3ADF2;
+// @purple: #C198F4;
+// @purple: #A6A7FC;
+@hue-3:   hsl(hue(@purple), saturation(@purple) + 14%, lightness(@purple) + 1%);
+// @hue-3:   hsl(hue(@purple), saturation(@purple) - 18%, lightness(@purple) + 1%);
+// @hue-3:   hsl(hue(@purple), saturation(@purple) + 6%, lightness(@purple)) + 14%;
+// @hue-3:   hsl(286, 82%, 79%); // <-purple
+@green: #A3F791;
+// @green: #42FA7C;
+@hue-4:   hsl(hue(@green), saturation(@green) - 2%, lightness(@green) + 2%);
+// @hue-4:   hsl(hue(@green), saturation(@green) - 14%, lightness(@green) + 8%);
+// @hue-4:   hsl(118, 69%, 78%); // <-green
 
 @hue-5:   hsl(  5, 91%, 73%); // <-red 1
-@hue-5-2: hsl(348, 45%, 66%); // <-red 2
+@red2: #DA6C72;
+// @red2: #ED5454;
+@hue-5-2: hsl(hue(@red2), saturation(@red2), lightness(@red2));
+// @hue-5-2: hsl(hue(@red2), saturation(@red2), lightness(@red2));
+// @hue-5-2: hsl(348, 45%, 66%); // <-red 2
 
-@hue-6:   hsl( 48, 71%, 76%); // <-orange 1
-@hue-6-2: hsl( 41, 98%, 70%); // <-orange 2
+@orange1: #FAC88F;
+// @orange1: #EC9C39;
+@hue-6: hsl(hue(@orange1), saturation(@orange1), lightness(@orange1));
+// @hue-6: hsl(hue(@orange1), saturation(@orange1), lightness(@orange1) + 14%);
+// @hue-6:   hsl( 48, 71%, 76%); // <-orange 1
+@yellow2: #F4E557;
+// @yellow2: #F8E893;
+// @yellow2: #FEED64;
+@hue-6-2: hsl(hue(@yellow2), saturation(@yellow2) - 10%, lightness(@yellow2) + 2%);
+// @hue-6-2: hsl(hue(@yellow2), saturation(@yellow2) + 10%, lightness(@yellow2) + 1%);
+// @hue-6-2: hsl(hue(@yellow2), saturation(@yellow2) - 14%, lightness(@yellow2));
+// @hue-6-2: hsl( 41, 98%, 70%); // <-orange 2
 
 
 // Base Syntax colors -----------------------------------
