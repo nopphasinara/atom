@@ -1,2 +1,0 @@
-* #7: Ported to Scala.js
-* #10: Relicensed to MIT

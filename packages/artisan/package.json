@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-63765-3s0hb6.34j5ah5mi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1oan3nb.76rnukgldi"
     ]
   ],
-  "_from": "../d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+  "_from": "../d-118622-12095-4chz74.dl465ka9k9/package.tgz",
   "_id": "artisan@0.3.2",
   "_inCache": true,
   "_location": "/artisan",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
+  "_resolved": "file:../d-118622-12095-4chz74.dl465ka9k9/package.tgz",
   "_shasum": "211aa448037f1fa5f46d975f2850c3f8c02f9003",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1aypnwu.bd8klf2yb9/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-63765-3s0hb6.34j5ah5mi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4chz74.dl465ka9k9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1oan3nb.76rnukgldi",
   "bugs": {
     "url": "https://github.com/dzava/atom-artisan/issues"
   },

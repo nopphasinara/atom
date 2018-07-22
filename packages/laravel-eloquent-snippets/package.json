@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-63765-1l6bf17.8swf80k9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1oc8k67.aom5eidx6r"
     ]
   ],
-  "_from": "../d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+  "_from": "../d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
   "_id": "laravel-eloquent-snippets@2.0.0",
   "_inCache": true,
   "_location": "/laravel-eloquent-snippets",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
+  "_resolved": "file:../d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
   "_shasum": "26f608061ccf7ca4a257e011aeae2a10b3574bfa",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-63765-1qppq3m.f0fgczncdi/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-63765-1l6bf17.8swf80k9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-158j26v.qo2w6d2t9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1oc8k67.aom5eidx6r",
   "activationCommands": {
     "atom-workspace": "laravel-eloquent-snippets:toggle"
   },

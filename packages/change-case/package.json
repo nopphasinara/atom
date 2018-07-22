@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
-        "spec": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-52160-1f1aqr3.n91d4e7b9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-6fw4bx.bfmrall3di"
     ]
   ],
-  "_from": "../d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+  "_from": "../d-118622-12095-md2402.rokibb7qfr/package.tgz",
   "_id": "change-case@0.6.5",
   "_inCache": true,
   "_location": "/change-case",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
-    "spec": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
+  "_resolved": "file:../d-118622-12095-md2402.rokibb7qfr/package.tgz",
   "_shasum": "309c6849aa1f961753c0fe7d66e2cd09bef9765e",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-52160-8wj6vw.f2dkt3ayvi/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-52160-1f1aqr3.n91d4e7b9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-md2402.rokibb7qfr/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-6fw4bx.bfmrall3di",
   "activationCommands": {
     "atom-workspace atom-text-editor": [
       "change-case:camel",

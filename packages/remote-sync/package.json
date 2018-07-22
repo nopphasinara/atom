@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
-        "spec": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-51981-1gjmr56.693rfwdn29"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1whgqex.glnllyp66r"
     ]
   ],
-  "_from": "../d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+  "_from": "../d-118622-12095-1sxc46j.381lmims4i/package.tgz",
   "_id": "remote-sync@4.1.8",
   "_inCache": true,
   "_location": "/remote-sync",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
-    "spec": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
+  "_resolved": "file:../d-118622-12095-1sxc46j.381lmims4i/package.tgz",
   "_shasum": "56a4c2d182490165bb00b0a6ca2b7d97a50447ae",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-51981-1q82kpv.y1ded0a4i/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-51981-1gjmr56.693rfwdn29",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1sxc46j.381lmims4i/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1whgqex.glnllyp66r",
   "bugs": {
     "url": "https://github.com/yongkangchen/remote-sync/issues"
   },

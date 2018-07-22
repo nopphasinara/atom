@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
-        "spec": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118622-51449-vf6xta.5gjg36jemi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1dhua7e.7mjmwsif6r"
     ]
   ],
-  "_from": "../d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+  "_from": "../d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
   "_id": "language-rust@0.4.12",
   "_inCache": true,
   "_location": "/language-rust",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
-    "spec": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
+  "_resolved": "file:../d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
   "_shasum": "3efc1cef78e8126b8c73d8bbef07819c8baed459",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118622-51449-17pd2bz.ns32kb7qfr/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118622-51449-vf6xta.5gjg36jemi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1kp7v3d.lsex00y66r/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1dhua7e.7mjmwsif6r",
   "bugs": {
     "url": "https://github.com/zargony/atom-language-rust/issues"
   },

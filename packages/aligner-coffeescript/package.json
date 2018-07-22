@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-19vqwfg.36q1al9pb9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-y9096r.kaczl7hkt9"
     ]
   ],
-  "_from": "../d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+  "_from": "../d-118622-12095-b58gep.anx0drhpvi/package.tgz",
   "_id": "aligner-coffeescript@1.0.1",
   "_inCache": true,
   "_location": "/aligner-coffeescript",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
+  "_resolved": "file:../d-118622-12095-b58gep.anx0drhpvi/package.tgz",
   "_shasum": "2f60f60f67dde0c474d59b34a34ee9764535a445",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-52429-1e0zugc.3ffy1fw29/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-52429-19vqwfg.36q1al9pb9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-b58gep.anx0drhpvi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-y9096r.kaczl7hkt9",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-coffeescript/issues"
   },

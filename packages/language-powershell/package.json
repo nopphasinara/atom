@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
-        "spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118622-50982-ownu1l.r4gmish5mi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-qbkz1w.5ansal9pb9"
     ]
   ],
-  "_from": "../d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+  "_from": "../d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
   "_id": "language-powershell@4.0.1",
   "_inCache": true,
   "_location": "/language-powershell",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
-    "spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
+  "_resolved": "file:../d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
   "_shasum": "a96828ba11567fd88d2cb8871718d4d78947b104",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118622-50982-14dtiq7.5j5zxe0zfr/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118622-50982-ownu1l.r4gmish5mi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1gwin7u.qxnldf5hfr/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-qbkz1w.5ansal9pb9",
   "bugs": {
     "url": "https://github.com/jugglingnutcase/language-powershell/issues"
   },

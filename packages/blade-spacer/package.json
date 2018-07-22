@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
-        "spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-52228-b4wpm1.45yksurf6r"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-186tusa.krn2g4aemi"
     ]
   ],
-  "_from": "../d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+  "_from": "../d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
   "_id": "blade-spacer@0.4.2",
   "_inCache": true,
   "_location": "/blade-spacer",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
-    "spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
+  "_resolved": "file:../d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
   "_shasum": "51d97a12e4a641c599af9352133affec50fbd5db",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-52228-1yzjxmn.b1t7w4s4i/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-52228-b4wpm1.45yksurf6r",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-cym4f5.rybkkgwrk9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-186tusa.krn2g4aemi",
   "bugs": {
     "url": "https://github.com/ishanray/blade-spacer/issues"
   },

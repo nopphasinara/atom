@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-54450-1m0mlgk.xj6yzm2t9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-ozhvrk.8kdjk8olxr"
     ]
   ],
-  "_from": "../d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+  "_from": "../d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
   "_id": "hyperclick@0.1.5",
   "_inCache": true,
   "_location": "/hyperclick",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-54450-7nxahq.ctqaxajor/package.tgz",
+  "_resolved": "file:../d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
   "_shasum": "bfd388a0798053e09d72c36175a4c88f75b1f57a",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-54450-7nxahq.ctqaxajor/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-54450-1m0mlgk.xj6yzm2t9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-s57nu5.jwgyhhyqfr/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-ozhvrk.8kdjk8olxr",
   "bugs": {
     "url": "https://github.com/facebook-atom/hyperclick/issues"
   },

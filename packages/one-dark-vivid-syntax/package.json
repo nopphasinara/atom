@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
-        "spec": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-51641-xsuxsi.28tlc8fr"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-16r2ciy.v4vn7y14i"
     ]
   ],
-  "_from": "../d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+  "_from": "../d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
   "_id": "one-dark-vivid-syntax@1.8.1",
   "_inCache": true,
   "_location": "/one-dark-vivid-syntax",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
-    "spec": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-51641-4w0trn.biyukjfw29/package.tgz",
+  "_resolved": "file:../d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
   "_shasum": "0a55453d30919628e8b2dcb2e28bf4265396a111",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-51641-4w0trn.biyukjfw29/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-51641-xsuxsi.28tlc8fr",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1tkezzc.zlz2p4x6r/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-16r2ciy.v4vn7y14i",
   "bugs": {
     "url": "https://github.com/simurai/one-dark-vivid-syntax/issues"
   },

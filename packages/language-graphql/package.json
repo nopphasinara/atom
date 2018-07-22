@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-11897-yi31ak.wvj7lrqkt9"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-eu2ob7.klfu6m9529"
     ]
   ],
-  "_from": "../d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+  "_from": "../d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
   "_id": "language-graphql@0.10.1",
   "_inCache": true,
   "_location": "/language-graphql",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
+  "_resolved": "file:../d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
   "_shasum": "4d85e1f0b53d10d1598b90db80d80fac61cde012",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-11897-1i9z6ln.1iu6k49529/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-11897-yi31ak.wvj7lrqkt9",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-q9ibuv.l005vfs9k9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-eu2ob7.klfu6m9529",
   "bugs": {
     "url": "https://github.com/rmosolgo/language-graphql/issues"
   },

@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
-        "spec": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-52325-oowfp0.srk9pmn29"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1snbp8o.nr9xdpldi"
     ]
   ],
-  "_from": "../d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+  "_from": "../d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
   "_id": "sass-autocompile@0.13.5",
   "_inCache": true,
   "_location": "/sass-autocompile",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
-    "spec": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-52325-1liqojt.8ae2ke29/package.tgz",
+  "_resolved": "file:../d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
   "_shasum": "fcb3c7a0232a17f642526f5057ccd76fdbda5054",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-52325-1liqojt.8ae2ke29/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-52325-oowfp0.srk9pmn29",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-gtinq1.g2mc6p3nmi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-1snbp8o.nr9xdpldi",
   "bugs": {
     "url": "https://github.com/armin-pfaeffle/sass-autocompile/issues"
   },

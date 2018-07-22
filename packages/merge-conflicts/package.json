@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-20120-1f1a6d1.9dq2gldi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-193hdza.bh7r7iizfr"
     ]
   ],
-  "_from": "../d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+  "_from": "../d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
   "_id": "merge-conflicts@1.4.5",
   "_inCache": true,
   "_location": "/merge-conflicts",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
+  "_resolved": "file:../d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
   "_shasum": "55dd07cd3fe640e4f0f8430da410ee82c8132578",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-20120-1g64uah.6rjcsaif6r/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-20120-1f1a6d1.9dq2gldi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-sibpv2.p5wx00y66r/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-193hdza.bh7r7iizfr",
   "bugs": {
     "url": "https://github.com/smashwilson/merge-conflicts/issues"
   },

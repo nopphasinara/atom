@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
-        "spec": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118621-58426-1lbaj2g.siatrtqpvi"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-2jldd0.2ulodjwcdi"
     ]
   ],
-  "_from": "../d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+  "_from": "../d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
   "_id": "atom-autocomplete-php@0.25.6",
   "_inCache": true,
   "_location": "/atom-autocomplete-php",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
-    "spec": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
+  "_resolved": "file:../d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
   "_shasum": "04c1113ae16f917be77a4ff130e39aa88062c419",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118621-58426-ad9zhw.7anv53tyb9/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118621-58426-1lbaj2g.siatrtqpvi",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-1vlspqg.ch2t8adcxr/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-2jldd0.2ulodjwcdi",
   "bugs": {
     "url": "https://github.com/Peekmo/atom-autocomplete-php/issues"
   },

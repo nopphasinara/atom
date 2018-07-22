@@ -17,6 +17,17 @@
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnType: false
+    "atom-ide-datatip":
+      datatipDebounceDelay: 100
+    "atom-ide-diagnostics-ui":
+      showDiagnosticTraces: true
+    "atom-ide-terminal":
+      cursorBlink: true
+    hyperclick:
+      darwinTriggerKeys: "altKey"
+    use:
+      "atom-ide-debugger": "never"
+      hyperclick: "never"
   "atom-terminal":
     app: "iTerm.app"
   "autocomplete-plus":
@@ -117,6 +128,7 @@
       "jumpy"
       "merge-conflicts"
       "sorter"
+      "atom-nodejs-snippets"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"

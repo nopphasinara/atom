@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-64446-1dx4737.fm99v8to6r"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-16bzh2k.xnbjf6flxr"
     ]
   ],
-  "_from": "../d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+  "_from": "../d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
   "_id": "php-composer-completion@0.3.4",
   "_inCache": true,
   "_location": "/php-composer-completion",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
+  "_resolved": "file:../d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
   "_shasum": "cb3dd00189f55c8c6d205e8d43263a630b84aa4a",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-64446-1lzogjw.0xmh5dygb9/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-64446-1dx4737.fm99v8to6r",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-3vlqkn.kpr7oxn7b9/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-16bzh2k.xnbjf6flxr",
   "bugs": {
     "url": "https://github.com/vinicarlos56/php-composer-autocompletion/issues"
   },

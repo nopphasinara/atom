@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-23170-ox2li.wredk7qfr"
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-t9atc7.iztl5trzfr"
     ]
   ],
-  "_from": "../d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+  "_from": "../d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
   "_id": "css-declaration-sorter@1.2.2",
   "_inCache": true,
   "_location": "/css-declaration-sorter",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
+  "_resolved": "file:../d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
   "_shasum": "1fd7635ec2739984bed4809deee220bec3f4f254",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118621-23170-18e3bfn.mru4s1nhfr/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118621-23170-ox2li.wredk7qfr",
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-17gkzuc.9hsmt8d7vi/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-t9atc7.iztl5trzfr",
   "author": {
     "name": "Selwyn",
     "email": "talk@selwyn.cc",
