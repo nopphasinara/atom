@@ -129,6 +129,8 @@
       "merge-conflicts"
       "sorter"
       "atom-nodejs-snippets"
+      "aligner"
+      "valign"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -138,7 +140,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "'Menlo', 'master-icons'"
+    fontFamily: "'Meslo', 'Menlo', 'master-icons', 'monospace'"
     lineHeight: 1.6
     maxScreenLineLength: 4096
     scrollPastEnd: true
@@ -156,7 +158,7 @@
     liveSearchMinimumCharacters: 1
   fonts:
     fontFamily: "Meslo"
-    secondaryFonts: "Menlo, monospace, \"master-icons\""
+    secondaryFonts: "'Menlo', 'monospace', 'master-icons'"
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
@@ -238,6 +240,10 @@
     displayMruTabList: false
     enableMruTabSwitching: false
   "tool-bar": {}
+  valign:
+    COLON:
+      align: "right"
+      padding: "both"
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
