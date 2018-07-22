@@ -108,6 +108,11 @@
     'body': '''
       strtolower($1)$0;
     '''
+  'return …':
+    'prefix': 're-'
+    'body': '''
+    return ${2:\\$${1:var}};$0
+    '''
 
 
 ## HTML TAGS

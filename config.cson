@@ -143,7 +143,7 @@
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   fonts:
-    fontFamily: "Plex"
+    fontFamily: "Meslo"
     secondaryFonts: "Menlo, monospace, \"master-icons\""
   "fuzzy-finder":
     preserveLastSearch: true
@@ -153,6 +153,7 @@
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
   "ide-php":
+    autocompletePriority: "lower"
     phpPath: "/usr/local/bin/php"
   jumpy:
     fontSize: 1
