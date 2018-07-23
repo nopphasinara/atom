@@ -131,6 +131,7 @@
       "atom-nodejs-snippets"
       "aligner"
       "valign"
+      "terminal-tab-service"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"

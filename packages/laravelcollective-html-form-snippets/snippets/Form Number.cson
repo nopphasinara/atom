@@ -1,4 +1,0 @@
-'.text.html, .text.html.php.blade':
-  '{!! Form::number() !!}':
-    'prefix': 'formnumber'
-    'body': '{!! Form::number(${1:$name}, ${2:$value}, ${3:[${4}]}) !!}${0}'

@@ -1,4 +1,0 @@
-'.text.html, .text.html.php.blade':
-  '{!! Form::selectMonth() !!}':
-    'prefix': 'formselectmonth'
-    'body': '{!! Form::selectMonth(${1:$name}, ${2:[${3}]}) !!}${0}'

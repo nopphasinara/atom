@@ -1,4 +1,0 @@
-'.text.html, .text.html.php.blade':
-  '{!! Form::file() !!}':
-    'prefix': 'formfile'
-    'body': '{!! Form::file(${1:$name}, ${2:[${3}]}) !!}${0}'

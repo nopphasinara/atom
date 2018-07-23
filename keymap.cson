@@ -90,6 +90,9 @@ atom-text-editor,
   'cmd-f'                                    : 'find-and-replace:show'
   'cmd-p'                                    : 'fuzzy-finder:toggle-file-finder'
   'cmd-b'                                    : 'fuzzy-finder:toggle-buffer-finder'
+  'shift-cmd-|'                              : 'tree-view:toggle-focus'
+  'ctrl-\\'                                  : 'tree-view:toggle-focus'
+  'ctrl-cmd-\\'                              : 'tree-view:reveal-active-file'
 
 
 # '.platform-darwin':

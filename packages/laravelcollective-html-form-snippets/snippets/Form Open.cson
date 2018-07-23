@@ -1,4 +1,0 @@
-'.text.html, .text.html.php.blade':
-  '{!! Form::open() !!}':
-    'prefix': 'formopen'
-    'body': '{!! Form::open(${1}) !!}${0}'
