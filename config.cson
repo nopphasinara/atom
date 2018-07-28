@@ -69,6 +69,7 @@
       "styleguide"
       "welcome"
       "file-icons"
+      "deprecation-cop"
     ]
     packagesWithKeymapsDisabled: [
       "project-manager"

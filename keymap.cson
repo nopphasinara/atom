@@ -93,6 +93,7 @@ atom-text-editor,
   'shift-cmd-|'                              : 'tree-view:toggle-focus'
   'ctrl-\\'                                  : 'tree-view:toggle-focus'
   'ctrl-cmd-\\'                              : 'tree-view:reveal-active-file'
+  'cmd-g'                                    : 'go-to-line:toggle'
 
 
 # '.platform-darwin':

@@ -19,6 +19,17 @@
 ## PHP
 '.text.html.php,
 .text.html.blade.php':
+  '<?php …':
+    'prefix': 'ph'
+    'body': '''
+      <?php
+      $0
+    '''
+  '<?php … ?>':
+    'prefix': 'php'
+    'body': '''
+      <?php$1?>$0
+    '''
   'print_r':
     'prefix': 'print_r'
     'body': '''
