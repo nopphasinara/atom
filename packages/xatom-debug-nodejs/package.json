@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+        "spec": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118629-45521-r3z2ty.ujykn5qaor"
+    ]
+  ],
+  "_from": "../d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+  "_id": "xatom-debug-nodejs@0.9.3",
+  "_inCache": true,
+  "_location": "/xatom-debug-nodejs",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+    "spec": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+  "_shasum": "f689b375df41a59d02f673907050224f75729a08",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118629-45521-jq9ik4.702mv1v2t9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118629-45521-r3z2ty.ujykn5qaor",
+  "author": {
+    "name": "Williams Medina",
+    "email": "williams.medinaa@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/xatom-plugins/xatom-debug-nodejs/issues"
+  },
+  "consumedServices": {
+    "xatom-debug": {
+      "versions": {
+        "1.0.0": "registerPlugin"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.6.0",
+    "chokidar": "^1.6.1",
+    "lodash": "^4.17.4",
+    "xatom-debug-chrome-base": "^0.2.12"
+  },
+  "description": "NodeJS Debugger Plugin for xatom-debug",
+  "devDependencies": {
+    "@types/atom": "0.0.36",
+    "@types/chokidar": "^1.6.0",
+    "@types/lodash": "^4.14.62",
+    "@types/node": "^7.0.8",
+    "typescript": "^2.3.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/xatom-plugins/xatom-debug-nodejs#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "xatom-debug-nodejs",
+  "optionalDependencies": {},
+  "package-deps": [
+    "xatom-debug"
+  ],
+  "readme": "# XAtom NodeJS Debugger\n\nNodeJS Debugging Plugin for [xatom-debug](https://github.com/willyelm/xatom-debug)\nThis Plugin uses the new `--inspect` v8-inspector (node) feature.\n\n![preview](https://raw.githubusercontent.com/willyelm/xatom-debug/master/assets/preview.png)\n\n### Installation\n\n```\napm install xatom-debug-nodejs\n```\n\n### Requirements\n- atom 1.0.0+\n- xatom-debug 1.0.0+\n- NodeJS 6.3+\n\n### License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xatom-plugins/xatom-debug-nodejs.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "start": "npm run build -- -w"
+  },
+  "version": "0.9.3"
+}

@@ -1,0 +1,11 @@
+{
+  "atom-workspace": {
+    "ctrl-r": "xatom-debug:run",
+    "ctrl-shift-s": "xatom-debug:stop",
+    "ctrl-shift-e": "xatom-debug:resume",
+    "ctrl-o": "xatom-debug:step-over",
+    "ctrl-i": "xatom-debug:step-into",
+    "ctrl-t": "xatom-debug:step-out",
+    "ctrl-shift-d": "xatom-debug:toggle"
+  }
+}

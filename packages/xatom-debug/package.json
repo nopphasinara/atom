@@ -1,0 +1,139 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+        "spec": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118629-45491-3gqq4k.uhvf6wp14i"
+    ]
+  ],
+  "_from": "../d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+  "_id": "xatom-debug@1.6.11",
+  "_inCache": true,
+  "_location": "/xatom-debug",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+    "spec": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+  "_shasum": "9025e7c399dd043fbdf0ecb45559bb8c3ad5df9a",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118629-45491-1g4dlwn.1ngtbotj4i/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118629-45491-3gqq4k.uhvf6wp14i",
+  "author": {
+    "name": "Williams Medina",
+    "email": "williams.medinaa@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/willyelm/xatom-debug/issues"
+  },
+  "configSchema": {
+    "toolbarStyle": {
+      "title": "Toolbar Style",
+      "description": "Change toolbar panel position.",
+      "type": "string",
+      "default": "TopPanel",
+      "enum": [
+        {
+          "value": "TopPanel",
+          "description": "Top"
+        },
+        {
+          "value": "BottomPanel",
+          "description": "Bottom"
+        },
+        {
+          "value": "HeaderPanel",
+          "description": "Title"
+        }
+      ]
+    },
+    "showToolbarIcon": {
+      "title": "Atom Bugs Icon",
+      "description": "Show xatom-debug icon on toolbar.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.6.0",
+    "lodash": "^4.17.4"
+  },
+  "description": "A Simple Debugger for Atom",
+  "devDependencies": {
+    "@types/atom": "0.0.36",
+    "@types/lodash": "^4.14.62",
+    "@types/node": "^7.0.8",
+    "typescript": "^2.3.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/willyelm/xatom-debug#readme",
+  "keywords": [
+    "javascript",
+    "debugger",
+    "debug",
+    "atom",
+    "repl",
+    "bugs",
+    "chrome",
+    "browser",
+    "willyelm",
+    "node",
+    "breakpoint",
+    "console"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "xatom-debug",
+  "optionalDependencies": {},
+  "package-deps": [
+    "xatom-debug-nodejs"
+  ],
+  "providedServices": {
+    "xatom-debug": {
+      "versions": {
+        "1.0.0": "provideXAtomDebugPlugin"
+      }
+    }
+  },
+  "readme": "# XAtom Debug\n\n[![gitter](https://img.shields.io/gitter/room/xatom-debug/xatom-debug.svg?style=flat-square)](https://gitter.im/willyelm/xatom-debug?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![apm](https://img.shields.io/apm/v/xatom-debug.svg?style=flat-square)](https://atom.io/packages/xatom-debug)\n[![apm](https://img.shields.io/apm/l/xatom-debug.svg?style=flat-square)](https://github.com/willyelm/atom-bug/blob/master/LICENSE.md)\n\nA Simple Debugging tool for Atom. `xatom-debug` is a base debugger UI provider, you will need  additionally install a specific debugger for your language.\n\n![preview](https://raw.githubusercontent.com/willyelm/xatom-debug/master/assets/preview.png)\n\n### Installation\n\n```\napm install xatom-debug\n```\n\n### Features\n\n- `Toolbar`: Toolbar API allows to control the execution process, select and configure the selected plugin.\n\n![feature](https://raw.githubusercontent.com/willyelm/xatom-debug/master/assets/toolbar-preview.png)\n\n- `Breakpoints`: Add, remove breakpoints by clicking on the file line. breakpoints are accessible from the `Debug Area` as well.\n\n![feature](https://raw.githubusercontent.com/willyelm/xatom-debug/master/assets/breakpoint-preview.png)\n\n- `Debug Area`: Navigate the current scope status local and global variables, open the current call-stack functions and control the execution step.\n\n![feature](https://raw.githubusercontent.com/willyelm/xatom-debug/master/assets/debug-area-preview.png)\n\n- `Configuration`:\n\n### API Documentation\n\non progress...\n\n### Available Plugins\n\nBelow is the list of available plugins so far:\n\nPackage|Description\n---|---\n[NodeJS](https://atom.io/packages/xatom-debug-nodejs)|Run and debug javascript files using NodeJS 6.3+.\n[Google Chrome](https://atom.io/packages/xatom-debug-chrome)|Connect the debugger to a server enabling debugging javascript files.\n\n### Requirements\n- atom 1.0.0+\n\n### License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willyelm/xatom-debug.git"
+  },
+  "scripts": {
+    "start": "tsc -w"
+  },
+  "showWelcome": true,
+  "version": "1.6.11",
+  "xatom-debug": [
+    {
+      "schemeName": "Develop",
+      "pluginName": "Node.js",
+      "pluginOptions": {
+        "binaryPath": "",
+        "portNumber": "5858",
+        "lauchArguments": [],
+        "environmentVariables": {}
+      }
+    }
+  ]
+}

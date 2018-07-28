@@ -4,7 +4,6 @@
   ProviderJavascript:
     config: null
   "advanced-open-file":
-    defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
   "atom-autocomplete-php":
@@ -124,6 +123,10 @@
       "aligner"
       "valign"
       "terminal-tab-service"
+      "language-log"
+      "xatom-debug"
+      "terminal-tab"
+      "console-panel"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -239,6 +242,9 @@
       padding: "both"
   welcome:
     showOnStartup: false
+  "xatom-debug":
+    showToolbarIcon: false
+    toolbarStyle: "BottomPanel"
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
