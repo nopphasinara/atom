@@ -17,6 +17,28 @@
 
 
 ## PHP
+'.text.html.blade.php':
+  'inc':
+    'prefix': 'inc'
+  'sec':
+    'prefix': 'sec'
+
+  '@include':
+    'prefix': 'include'
+    'body': '''
+    @include(${1:\\$view})$0
+    '''
+  '@section':
+    'prefix': 'sec'
+    'body': '''
+    @section(\\'${1:name}\\', \\'$2\\')$0
+    '''
+  '@section…@endsection':
+    'prefix': 'sece'
+    'body': '''
+    @section(\\'${1:name}\\')$2@endsection$0
+    '''
+
 '.text.html.php,
 .text.html.blade.php':
   '<?php …':
