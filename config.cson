@@ -253,15 +253,11 @@
 ".css.scss.source":
   editor:
     autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
 ".css.source":
   editor:
     autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
 ".html.text":
@@ -316,8 +312,6 @@
 ".scss.source":
   editor:
     autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
 ".source.sql":

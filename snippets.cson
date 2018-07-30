@@ -7,6 +7,17 @@
     'prefix': 'data-target'
 
 
+'.text.plain':
+  'downloading':
+    'prefix': 'downloading'
+    'body': 'Downloading ${1:the internet}...$0'
+  'saving':
+    'prefix': 'saving'
+    'body': 'Saving ${1:a Bookmark}...$0'
+  'loading':
+    'prefix': 'loading'
+    'body': 'Loading...$0'
+
 '.text.html,
 .text.plain':
   'Font Awesome':
