@@ -6,5 +6,12 @@
     "github": "^14.0.*",
     "jquery": "^3.3.1",
     "process": "^0.11.*"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
   }
 }
