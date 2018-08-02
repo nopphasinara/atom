@@ -204,7 +204,7 @@
       "nuclide-working-sets": "never"
   "one-dark-ui":
     hideDockButtons: true
-    stickyHeaders: true
+    stickyHeaders: false
   "php-debug":
     display:
       arraySort: true
