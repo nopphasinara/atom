@@ -62,9 +62,7 @@
     disabledPackages: [
       "autosave"
       "background-tips"
-      "about"
       "metrics"
-      "spell-check"
       "styleguide"
       "welcome"
       "file-icons"
@@ -206,6 +204,7 @@
       "nuclide-working-sets": "never"
   "one-dark-ui":
     hideDockButtons: true
+    stickyHeaders: true
   "php-debug":
     display:
       arraySort: true
