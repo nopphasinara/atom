@@ -1,6 +1,0 @@
-{
-  "atom-text-editor": {
-    "space": "spaces-in-braces:run-space-check",
-    "backspace": "spaces-in-braces:run-backspace-check"
-  }
-}

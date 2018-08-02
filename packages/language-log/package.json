@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+        "raw": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
-        "spec": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+        "rawSpec": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
+        "spec": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118629-42705-1izc6l8.bsldfv42t9"
+      "/private/tmp/apm-install-dir-11872-7074-1dq4tua.9hgsqbyb9"
     ]
   ],
-  "_from": "../d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+  "_from": "../d-11872-7074-ikd4az.wqymish5mi/package.tgz",
   "_id": "language-log@1.10.1",
   "_inCache": true,
   "_location": "/language-log",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+    "raw": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
-    "spec": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+    "rawSpec": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
+    "spec": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
+  "_resolved": "file:../d-11872-7074-ikd4az.wqymish5mi/package.tgz",
   "_shasum": "edebb028c973f515ec336a07534c90975e826640",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118629-42705-pcacjs.ndgdz8semi/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118629-42705-1izc6l8.bsldfv42t9",
+  "_spec": "/private/tmp/d-11872-7074-ikd4az.wqymish5mi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11872-7074-1dq4tua.9hgsqbyb9",
   "bugs": {
     "url": "https://github.com/MRodalgaard/language-log/issues"
   },
