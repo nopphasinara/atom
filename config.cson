@@ -6,29 +6,6 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-autocomplete-php":
-    binPhp: "/usr/local/bin/php"
-    insertNewlinesForUseStatements: true
-  "atom-hot-package-loader":
-    autoWatchTarget: true
-    detectTargetOnStart: true
-    onlyInDevMode: false
-  "atom-ide-ui":
-    "atom-ide-code-format":
-      formatOnType: false
-    "atom-ide-datatip":
-      datatipDebounceDelay: 100
-    "atom-ide-diagnostics-ui":
-      showDiagnosticTraces: true
-    "atom-ide-terminal":
-      cursorBlink: true
-    hyperclick:
-      darwinTriggerKeys: "altKey"
-    use:
-      "atom-ide-debugger": "never"
-      hyperclick: "never"
-  "atom-terminal":
-    app: "iTerm.app"
   "autocomplete-plus":
     autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
@@ -37,8 +14,6 @@
     enableExtendedUnicodeSupport: true
     minimumWordLength: 1
     similarSuggestionRemoval: "textOrSnippet"
-  "blade-spacer":
-    workInAllFiles: true
   "bracket-matcher":
     alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
@@ -136,7 +111,6 @@
   editor:
     fontFamily: "'Meslo', 'Menlo', 'master-icons', 'monospace'"
     lineHeight: 1.6
-    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -146,69 +120,22 @@
     extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "000d46de-7d57-4358-b418-14d7465390a0"
-  "file-icons":
-    tabPaneIcon: false
   "find-and-replace":
-    liveSearchMinimumCharacters: 1
-  fonts:
-    fontFamily: "Meslo"
-    secondaryFonts: "'Menlo', 'monospace', 'master-icons'"
+    liveSearchMinimumCharacters: 999
+    showSearchWrapIcon: false
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
-  "highlight-selected":
-    showResultsOnScrollBar: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
-  "ide-php":
-    autocompletePriority: "lower"
-    phpPath: "/usr/local/bin/php"
   jumpy:
     fontSize: 1
     useHomingBeaconEffectOnJumps: false
   "markdown-preview":
     breakOnSingleNewline: true
-  nuclide:
-    "atom-ide-code-format":
-      formatOnType: false
-    "atom-ide-datatip":
-      datatipDebounceDelay: 100
-    "atom-ide-diagnostics-ui":
-      autoVisibility: true
-    "atom-ide-outline-view":
-      nameOnly: true
-    "atom-ide-terminal":
-      allowTransparency: true
-      cursorBlink: true
-    hyperclick:
-      darwinTriggerKeys: "ctrlKey"
-    installRecommendedPackages: true
-    "nuclide-file-tree":
-      autoExpandSingleChild: false
-      hideIgnoredNames: false
-      hideVcsIgnoredPaths: false
-      showOpenFiles: false
-      showUncommittedChanges: false
-    "nuclide-related-files": {}
-    use:
-      "atom-ide-code-format": "never"
-      "atom-ide-outline-view": "never"
-      "nuclide-distraction-free-mode": "never"
-      "nuclide-health": "never"
-      "nuclide-home": "never"
-      "nuclide-navigation-stack": "never"
-      "nuclide-navigation-stack-status-bar": "never"
-      "nuclide-recent-files-service": "never"
-      "nuclide-related-files": "never"
-      "nuclide-welcome-page": "never"
-      "nuclide-working-sets": "never"
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
-  "php-debug":
-    display:
-      arraySort: true
-    showWelcome: false
   "project-manager":
     prettifyTitle: false
     savePathsRelativeToHome: true
@@ -235,15 +162,8 @@
     displayMruTabList: false
     enableMruTabSwitching: false
   "tool-bar": {}
-  valign:
-    COLON:
-      align: "right"
-      padding: "both"
   welcome:
     showOnStartup: false
-  "xatom-debug":
-    showToolbarIcon: false
-    toolbarStyle: "BottomPanel"
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
@@ -275,6 +195,7 @@
       "disabled"
       "integrate"
     ]
+    softWrap: true
 ".ini.source":
   editor:
     softWrap: false
@@ -303,6 +224,7 @@
       "goldfishcreativethailand"
       "goldfishcreative.thailand"
     ]
+    softWrap: true
 ".sass.source":
   editor:
     autoIndentOnPaste: true
