@@ -94,6 +94,8 @@ atom-text-editor,
   'ctrl-\\'                                  : 'tree-view:toggle-focus'
   'ctrl-cmd-\\'                              : 'tree-view:reveal-active-file'
   'cmd-g'                                    : 'go-to-line:toggle'
+  'shift-ctrl-O'                                    : 'open-project-file:open'
+  'alt-ctrl-o'                                    : 'open-project-file:open'
 
 
 # '.platform-darwin':

@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+        "spec": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11874-20650-hzhjfs.yb1vpldi"
+    ]
+  ],
+  "_from": "../d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+  "_id": "open-project-file@1.1.1",
+  "_inCache": true,
+  "_location": "/open-project-file",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+    "spec": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+  "_shasum": "b68478d8c38443b21d871644b4178310f6d9aace",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11874-20650-ga0ol8.gfzgirizfr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11874-20650-hzhjfs.yb1vpldi",
+  "activationCommands": {
+    "atom-workspace": "open-project-file:open"
+  },
+  "bugs": {
+    "url": "https://github.com/avaly/atom-open-project-file/issues"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "season": "^5.4.1"
+  },
+  "description": "Atom package: Open project file under cursor",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.14.0",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/avaly/atom-open-project-file#readme",
+  "keywords": [
+    "atom",
+    "package",
+    "open",
+    "file",
+    "project",
+    "cursor"
+  ],
+  "license": "MIT",
+  "main": "./lib/open-project-file",
+  "name": "open-project-file",
+  "optionalDependencies": {},
+  "readme": "# open-project-file\n\nOpen file under cursor in Atom.\n\n![Demo Screencast](https://raw.github.com/avaly/atom-open-project-file/master/docs/screencast.gif)\n\nIt handles opening:\n\n- files using relative paths:\n\n```js\n// /foo/bar.js\nimport test from './sub/dir/test';\n// -> /foo/sub/dir/test.js\n```\n\n- files using default project paths:\n\n```js\n// /foo/bar.js\nimport test from 'sub/dir/test';\n// -> /sub/dir/test.js\n```\n\n- files using custom project paths specified in [`projects.cson`](https://github.com/danielbrodin/atom-project-manager#local-settings-file)\n\n```\n{\n  title: \"Sample Project\"\n  paths: [\n    \"/path/to/project\"\n  ]\n  prefixPaths: [\n    \"/path/to/other\"\n  ]\n}\n```\n\n```js\n// /path/to/project/foo.js\nimport test from 'sub/dir/bar';\n// -> /path/to/other/sub/dir/bar.js\n```\n\nUseful for projects setting up custom path resolving (e.g. using webpack).\n\n## Install\n\n```\n$ apm install project-manager\n```\n\nYou can also open Atom and go to `Preferences` > `Install` and search for `open-project-file`\n\n## Use\n\nKeymaps:\n\n- `ctrl-shift-o`: Opens file under cursor\n\nCommands:\n\n- `open-project-file:open`: Opens file under cursor\n\n## Credits\n\nInspired by:\n- https://atom.io/packages/open-this\n- https://atom.io/packages/open-sesame\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avaly/atom-open-project-file.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "precommit": "npm test",
+    "test": "npm run lint"
+  },
+  "version": "1.1.1"
+}
