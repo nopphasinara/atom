@@ -19,6 +19,9 @@
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
+  "context-git":
+    contextMenuItems:
+      refresh: false
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -102,6 +105,8 @@
       "console-panel"
       "open-file"
       "open-project-file"
+      "git-control"
+      "git-plus"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -128,6 +133,10 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
+  "git-plus":
+    commits: {}
+    diffs:
+      useSplitDiff: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
   jumpy:

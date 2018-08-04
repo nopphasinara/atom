@@ -1,0 +1,17 @@
+@import "ui-variables";
+
+.context-git.status {
+	display: inline-block;
+
+	&.hidden {
+		display: none;
+	}
+
+	progress:indeterminate {
+		max-width: 40px;
+	}
+
+	> span {
+		margin-left: 0.5em;
+	}
+}

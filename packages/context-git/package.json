@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+        "spec": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11874-33835-1wbo71t.8cvztfn7b9"
+    ]
+  ],
+  "_from": "../d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+  "_id": "context-git@0.20.0",
+  "_inCache": true,
+  "_location": "/context-git",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+    "spec": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+  "_shasum": "fcacf7bcccef73cea368c60e0c66a8abde8fac40",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11874-33835-1v6ijqw.aw2ob0rudi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11874-33835-1wbo71t.8cvztfn7b9",
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/UziTech/context-git/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "statusBarService"
+      }
+    }
+  },
+  "dependencies": {
+    "etch": "^0.12.8",
+    "promisificator": "^4.1.1",
+    "rimraf": "^2.6.2",
+    "string-argv": "0.0.2"
+  },
+  "description": "Use git from the context menu",
+  "devDependencies": {
+    "atom-jasmine2-test-runner": "^2.0.0",
+    "eslint": "^4.17.0",
+    "eslint-plugin-react": "^7.6.1",
+    "temp": "^0.8.3"
+  },
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/UziTech/context-git#readme",
+  "keywords": [
+    "context",
+    "git"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "context-git",
+  "optionalDependencies": {},
+  "readme": "<!-- [![Throughput Graph](https://graphs.waffle.io/UziTech/context-git/throughput.svg)](https://waffle.io/UziTech/context-git/metrics) -->\n[![Build Status](https://travis-ci.org/UziTech/context-git.svg?branch=master)](https://travis-ci.org/UziTech/context-git)\n[![Build status](https://ci.appveyor.com/api/projects/status/649me6gpm37u4tja?svg=true)](https://ci.appveyor.com/project/UziTech/context-git)\n[![Dependency Status](https://david-dm.org/UziTech/context-git.svg)](https://david-dm.org/UziTech/context-git)\n\n# context-git package\n\nAn Atom.io package to use git from the context menu. You can choose which commands show up in the context menu by enabling/disabling them in the settings.\n\n![screenshot](./context-git.gif)\n\n## Usage\n\nThis package will add a \"Git\" item to the context menu when you right click on the tree-view, tabs, or the editor.\n\n## Documentation\n\n[See /docs/docs.md](https://github.com/UziTech/context-git/blob/master/docs/docs.md)\n\n## Contributing\n\n### Voting\n\nThe easiest way to contribute to this package is to vote on new commmands. New commands are entered as issues with the [`command`](https://github.com/UziTech/context-git/issues?q=is%3Aissue+is%3Aopen+label%3Acommand) label. I will prioritize commands with the most :+1:'s\n\n### Submit Commands\n\nIf there are commands you would like to see just create an issue with the command template and I will label it as a command.\n\n### Submit An Issue\n\nIf you find a bug or just have a question about something create an issue and I will be happy to help you out.\n\n### Create A Pull Request\n\nIf there is an issue you think you can fix or a command you think you can implement just create a pull request referencing that issue so I know that you are working on it\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UziTech/context-git.git"
+  },
+  "version": "0.20.0"
+}
