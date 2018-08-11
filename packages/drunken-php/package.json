@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+        "spec": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-118711-12391-1ogj5zs.e9v6byy14i"
+    ]
+  ],
+  "_from": "../d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+  "_id": "drunken-php@0.2.4",
+  "_inCache": true,
+  "_location": "/drunken-php",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+    "spec": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+  "_shasum": "303b3003edbca9b2f1e2946dd55021f4f828ead5",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-118711-12391-1adug22.1glwwdygb9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118711-12391-1ogj5zs.e9v6byy14i",
+  "author": {
+    "name": "Jan T. Sott",
+    "url": "http://github.com/idleberg"
+  },
+  "bugs": {
+    "url": "https://github.com/idleberg/atom-drunken-php/issues"
+  },
+  "dependencies": {},
+  "description": "Atom snippets for PHP, right kinda wrong",
+  "devDependencies": {
+    "coffeelint-stylish": "^0.1.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-debug": "^3.0.0",
+    "gulp-jsonlint": "^1.2.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/idleberg/atom-drunken-php#readme",
+  "keywords": [
+    "php"
+  ],
+  "license": "MIT",
+  "name": "drunken-php",
+  "optionalDependencies": {},
+  "readme": "# Drunken PHP for Atom\n\n[![apm](https://img.shields.io/apm/l/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)\n[![apm](https://img.shields.io/apm/v/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)\n[![apm](https://img.shields.io/apm/dm/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)\n[![Travis](https://img.shields.io/travis/idleberg/atom-drunken-php.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-drunken-php)\n[![David](https://img.shields.io/david/dev/idleberg/atom-drunken-php.svg?style=flat-square)](https://david-dm.org/idleberg/atom-drunken-php?type=dev)\n\n## Description\n\nPHP is [often](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/) [criticized](http://tnx.nl/php.html) for having an inconsistent syntax and this is exactly what *Drunken PHP* aims at. It's a set of alternative command completions, including aliases for ill-formed syntax. Read the [Aliases](#aliases) section below for examples.\n\n## Installation\n\n### apm\n\n* Install package `apm install drunken-php` (or use the GUI)\n\n### Using Git\n\n1. Change directory `cd ~/.atom/packages/`\n2. Clone repository `git clone https://github.com/idleberg/atom-drunken-php drunken-php`\n\n## Usage\n\n## Aliases\n\nYou can tell apart *Drunken PHP* from proper syntax from the `%`-prefix displayed in the command completion window. Aliases have been broken up into the following categories:\n\n### Prince Versions\n\nNamed after the Prince Emulator in Douglas Coupland's [Microserfs](http://www.wired.com/wired/archive/2.01/microserfs.html), you can substitute any `to` with the number `2` and vice versa.\n\nExamples:\n\nPHP         | Alias\n------------|-----------\n`bin2hex`   | `bintohex`\n`cal_to_jd` | `cal2jd`\n\n### Spacing\n\nEnables you to type commands with or without spacing. Probably obsolete due to fuzzy completions.\n\nExamples:\n\nPHP                          | Alias\n-----------------------------|-----------------------------\n`get_html_translation_table` | `gethtmltranslationtable`\n`getimagesizefromstring`     | `get_image_size_from_string`\n\n### Spelling\n\nCorrects common spelling mistakes.\n\nExamples:\n\nPHP             | Alias\n----------------|-----------------------------\n`mb_strwidth`   | `mb_strwidht`\n`ob_get_length` | `ob_get_lenght`\n`phpversion`    | `phpverison`\n\n### Synonyms\n\nMakes some native syntax more descriptive\n\nExamples:\n\nPHP          | Alias\n-------------|------------------------\n`asin`       | `arc_sin` (or `arcsin`)\n`asort`      | `array_sort`\n`bzcompress` | `bzip_compress`\n\n### Word Order\n\nThe order of noun and verb is reversible\n\nExamples:\n\nPHP           | Alias\n--------------|-----------\n`ini_get`     | `get_ini`\n`get_class`   | `class_get`\n\n## License\n\nThe MIT License (MIT)\n\nCopyright (c) 2015 Jan T. Sott\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\n## Donate\n\nYou are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/atom-drunken-php) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idleberg/atom-drunken-php.git"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  },
+  "version": "0.2.4"
+}

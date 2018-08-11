@@ -6,6 +6,8 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
   "autocomplete-plus":
     autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
@@ -107,6 +109,7 @@
       "open-project-file"
       "git-control"
       "git-plus"
+      "php-debug"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -147,6 +150,10 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
+  "php-debug":
+    display:
+      arraySort: true
+    showWelcome: false
   "project-manager":
     prettifyTitle: false
     savePathsRelativeToHome: true
