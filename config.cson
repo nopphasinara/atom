@@ -8,6 +8,9 @@
     helmDirSwitch: true
   "atom-autocomplete-php":
     binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
+  "atom-ide-ui":
+    use:
+      hyperclick: "never"
   "autocomplete-plus":
     autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
@@ -110,6 +113,7 @@
       "git-control"
       "git-plus"
       "php-debug"
+      "atom-debug-ui"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -142,6 +146,7 @@
       useSplitDiff: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
+  "ide-php": {}
   jumpy:
     fontSize: 1
     useHomingBeaconEffectOnJumps: false
