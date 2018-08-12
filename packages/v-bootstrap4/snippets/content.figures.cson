@@ -1,0 +1,10 @@
+'.text.html':
+
+  'Figures':
+    'prefix': 'figure-'
+    'body': """
+    <figure class="figure">
+      <img src="${1:...}" class="figure-img img-fluid img-rounded" alt="${2:...}">
+      <figcaption class="figure-caption">${3:...}</figcaption>
+    </figure>
+    """

@@ -1,0 +1,26 @@
+'.text.html':
+
+  'Modal':
+    'prefix': 'modal'
+    'body': """
+    <button class="btn btn-primary" data-toggle="modal" data-target="#${2:myModal}">${4:Launch demo modal}</button>
+
+    <div id="${2:myModal}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="${3:myModalLabel}" aria-hidden="true">
+      <div class="modal-dialog${1: modal-lg}">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="${3:myModalLabel}">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ${5:...}
+          </div>
+          <div class="modal-footer">
+            ${6:...}
+          </div>
+        </div>
+      </div>
+    </div>
+    """

@@ -173,6 +173,21 @@
     'body': 'data-target="$1"$0'
 
 
+## LESS
+'.source.css.less,
+.source.css.scss,
+.source.css.sass':
+  '@import':
+    'prefix': 'imp'
+    'body': '@import "$1";$0'
+  '@extend':
+    'prefix': 'ext'
+    'body': '@extend $1'
+  '@include':
+    'prefix': 'inc'
+    'body': '@include $1'
+
+
 ## HTML QUOTED
 # '.string.quoted.double.html,
 # .string.quoted.single.html':
