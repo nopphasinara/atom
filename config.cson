@@ -25,6 +25,8 @@
   "command-palette":
     preserveLastSearch: true
   "context-git":
+    confirmationDialogs:
+      "discard-changes": false
     contextMenuItems:
       refresh: false
   core:
@@ -177,6 +179,8 @@
     precision: 3
     showAdditionalCompilationInfo: false
   "split-diff":
+    ignoreWhitespace: true
+    syncHorizontalScroll: true
     turnOffSoftWrap: true
   "status-bar": {}
   "symbols-view":
