@@ -148,7 +148,8 @@
       useSplitDiff: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
-  "ide-php": {}
+  "ide-php":
+    autocompletePriority: "lower"
   jumpy:
     fontSize: 1
     useHomingBeaconEffectOnJumps: false
