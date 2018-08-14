@@ -6,8 +6,7 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-autocomplete-php":
-    binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
+  "atom-autocomplete-php": {}
   "atom-ide-ui":
     use:
       hyperclick: "never"

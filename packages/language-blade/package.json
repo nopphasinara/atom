@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
+        "raw": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
-        "spec": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
+        "rawSpec": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
+        "spec": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118711-3904-1p5u4ue.pfey36jemi"
+      "/private/tmp/apm-install-dir-118714-7661-bq8hkv.zo3x0nqaor"
     ]
   ],
-  "_from": "../d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
-  "_id": "language-blade@0.41.1",
+  "_from": "../d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
+  "_id": "language-blade@0.41.2",
   "_inCache": true,
   "_location": "/language-blade",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
+    "raw": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
-    "spec": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
+    "rawSpec": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
+    "spec": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
-  "_shasum": "baa65c4780de1ae195680a6fcd37296757a3cc54",
+  "_resolved": "file:../d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
+  "_shasum": "b9b8d0990572ca19cb2cd3954136e4fa0bf386d4",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118711-3904-1e3xvn4.cxbikke29/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118711-3904-1p5u4ue.pfey36jemi",
+  "_spec": "/private/tmp/d-118714-7661-1caxf77.0sv9ebfbt9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118714-7661-bq8hkv.zo3x0nqaor",
   "bugs": {
     "url": "https://github.com/jawee/language-blade/issues"
   },
@@ -55,5 +55,5 @@
     "type": "git",
     "url": "git+https://github.com/jawee/language-blade.git"
   },
-  "version": "0.41.1"
+  "version": "0.41.2"
 }

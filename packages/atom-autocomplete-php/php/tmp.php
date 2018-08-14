@@ -1,1 +1,1 @@
-<?php $config = array( 'composer' => '/usr/local/bin/composer', 'php' => '/usr/local/Cellar/php/7.2.5/bin/php', 'autoload' => array('vendor/autoload.php','autoload.php',), 'classmap' => array('vendor/composer/autoload_classmap.php','autoload/ezp_kernel.php',) );
+<?php $config = array( 'composer' => '/usr/local/bin/composer', 'php' => 'php', 'autoload' => array('vendor/autoload.php','autoload.php',), 'classmap' => array('vendor/composer/autoload_classmap.php','autoload/ezp_kernel.php',) );
