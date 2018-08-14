@@ -11,6 +11,8 @@
   "atom-ide-ui":
     use:
       hyperclick: "never"
+  "atom-minify":
+    jsMinifier: "Google Closure Compiler"
   "autocomplete-plus":
     autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
@@ -116,6 +118,7 @@
       "git-plus"
       "php-debug"
       "atom-debug-ui"
+      "atom-minify"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"

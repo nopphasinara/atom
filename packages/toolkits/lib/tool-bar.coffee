@@ -41,12 +41,12 @@ module.exports =
     #   iconset: 'mdi'
     #   type: 'button'
 
-    # @toolBar.addButton
-    #   callback: 'atom-minify:minify-to-min-file'
-    #   text: '<i class="gc"></i>'
-    #   html: true
-    #   tooltip: 'Minified'
-    #   type: 'button'
+    @toolBar.addButton
+      callback: 'atom-minify:minify-direct'
+      text: '<i class="gc"></i>'
+      html: true
+      tooltip: 'Minified'
+      type: 'button'
 
     @toolBar.addButton
       callback:

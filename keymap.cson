@@ -275,9 +275,11 @@ atom-workspace .editor:not([mini]),
 .find-and-replace':
   'tab'                                      : 'find-and-replace:focus-next'
   'shift-tab'                                : 'find-and-replace:focus-previous'
+  'cmd-d'                                    : 'find-and-replace:find-next'
+  'shift-cmd-D'                              : 'find-and-replace:find-previous'
 
   'shift-enter'                              : 'find-and-replace:show-previous'
-  'shift-cmd-enter'                          : 'find-and-replace:find-next-selected'
+  # 'shift-cmd-enter'                          : 'find-and-replace:find-next-selected'
   'cmd-enter'                                : 'find-and-replace:confirm'
   'alt-enter'                                : 'find-and-replace:find-all'
   'alt-cmd-r'                                : 'find-and-replace:toggle-regex-option'
