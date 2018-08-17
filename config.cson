@@ -170,7 +170,6 @@
     showPath: false
     sortBy: "title"
   "remote-sync":
-    autoHideLogPanel: true
     foldLogPanel: true
   "sass-autocompile":
     autoHidePanelDelay: 2000
