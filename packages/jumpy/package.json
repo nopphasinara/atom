@@ -2,52 +2,56 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
+        "raw": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
+        "rawSpec": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
+        "spec": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-n1zdpg.7v14wy7gb9"
+      "/private/tmp/apm-install-dir-118723-12496-4pi3vt.7hmzql4n29"
     ]
   ],
-  "_from": "../d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
-  "_id": "jumpy@4.2.0",
+  "_from": "../d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
+  "_id": "jumpy@5.0.0",
   "_inCache": true,
   "_location": "/jumpy",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
+    "raw": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
+    "rawSpec": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
+    "spec": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
-  "_shasum": "fe8257f8bd10af17a43211e0dccdba2073815bb1",
+  "_resolved": "file:../d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
+  "_shasum": "0870f60f060e859ecaa6475b75b1b411bb6095e9",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118622-12095-4omtax.fw4fhl4n29/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118622-12095-n1zdpg.7v14wy7gb9",
+  "_spec": "/private/tmp/d-118723-12496-1ivjbq6.l406x647vi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118723-12496-4pi3vt.7hmzql4n29",
+  "atomTestRunner": "./spec/custom-runner",
+  "author": {
+    "name": "David L. Goldberg"
+  },
   "bugs": {
     "url": "https://github.com/DavidLGoldberg/jumpy/issues"
   },
   "dependencies": {
-    "javascript-state-machine": "2.4.0",
     "lodash": "2.4.1",
     "space-pen": "^4.2.2"
   },
   "description": "An Atom package that creates dynamic hotkeys to jump around files across visible panes.",
   "devDependencies": {
     "@types/atom": "0.0.38",
-    "@types/javascript-state-machine": "2.4.1",
     "@types/lodash": "4.14.77",
+    "atom-jasmine3-test-runner": "3.1.0",
+    "madge": "3.2.0",
     "typescript": "2.5.3"
   },
   "engines": {
@@ -78,5 +82,5 @@
     "type": "git",
     "url": "git+https://github.com/DavidLGoldberg/jumpy.git"
   },
-  "version": "4.2.0"
+  "version": "5.0.0"
 }
