@@ -97,7 +97,7 @@
   'protected $var':
     'prefix': 'pt-var'
     'body': '''
-      protected \\$${1:var}$2;$0
+      protected \\$${1:var}$2
     '''
   '$var':
     'prefix': 'v'
@@ -132,9 +132,9 @@
   'function () …':
     'prefix': 'fn'
     'body': '''
-      ${1:function} ${2:functionName}($3)
+      ${1:${2}function} ${3:functionName}($4)
       {
-        ${4://}
+        ${5://}
       }$0
     '''
   'preg_replace()':
