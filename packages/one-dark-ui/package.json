@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
+        "raw": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
-        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
+        "rawSpec": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
+        "spec": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118629-47851-67glv8.puikymn29"
+      "/private/tmp/apm-install-dir-118725-10012-1864a5.tm6w2ymn29"
     ]
   ],
-  "_from": "../d-118629-47851-1xl303l.619j6k1emi/package.tgz",
-  "_id": "one-dark-ui@1.12.4",
+  "_from": "../d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
+  "_id": "one-dark-ui@1.12.5",
   "_inCache": true,
   "_location": "/one-dark-ui",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
+    "raw": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
-    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
+    "rawSpec": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
+    "spec": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118629-47851-1xl303l.619j6k1emi/package.tgz",
-  "_shasum": "882fcd010b4d3723873691e86ed4448c18c5ecc4",
+  "_resolved": "file:../d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
+  "_shasum": "e075c0ea4287eacd36214a5775ea14b0c03d19fb",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-118629-47851-1xl303l.619j6k1emi/package.tgz",
-  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-118629-47851-67glv8.puikymn29",
+  "_spec": "/private/tmp/d-118725-10012-1yqi97u.7so3v26gvi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118725-10012-1864a5.tm6w2ymn29",
   "bugs": {
     "url": "https://github.com/atom/one-dark-ui/issues"
   },
@@ -121,5 +121,5 @@
     "url": "git+https://github.com/atom/one-dark-ui.git"
   },
   "theme": "ui",
-  "version": "1.12.4"
+  "version": "1.12.5"
 }
