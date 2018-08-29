@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
+        "raw": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
-        "spec": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
+        "rawSpec": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
+        "spec": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118721-2257-1da9dot.ly9wrn3ik9"
+      "/private/tmp/apm-install-dir-118729-2248-1o4p4bm.47hkmuc8fr"
     ]
   ],
-  "_from": "../d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
-  "_id": "git-plus@8.0.1",
+  "_from": "../d-118729-2248-xufi1c.p4cjif6r/package.tgz",
+  "_id": "git-plus@8.0.2",
   "_inCache": true,
   "_location": "/git-plus",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
+    "raw": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
-    "spec": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
+    "rawSpec": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
+    "spec": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
-  "_shasum": "6129c87f6e52da1c6931100ed0db8fc886db6986",
+  "_resolved": "file:../d-118729-2248-xufi1c.p4cjif6r/package.tgz",
+  "_shasum": "c649bd8ff78bc62baf66efc8a9c7f337da8c79e5",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118721-2257-18nznar.ne0bl6jemi/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118721-2257-1da9dot.ly9wrn3ik9",
+  "_spec": "/private/tmp/d-118729-2248-xufi1c.p4cjif6r/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118729-2248-1o4p4bm.47hkmuc8fr",
   "atomTranspilers": [
     {
       "glob": "{lib,spec}/**/*.js",
@@ -132,5 +132,5 @@
     "flow": "flow",
     "test": "eslint --fix \"lib/**/*.js\" \"spec/**/*.js\" && apm test"
   },
-  "version": "8.0.1"
+  "version": "8.0.2"
 }
