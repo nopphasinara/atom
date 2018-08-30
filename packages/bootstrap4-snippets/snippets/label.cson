@@ -1,8 +1,0 @@
-'.text.html':
-  'Label':
-    'prefix': 'bs4-label'
-    'body': '<span class="label label-${1:default}">$2</span>'
-
-  'Label Pills':
-    'prefix': 'bs4-label-pill'
-    'body': '<span class="label label-pill label-${1:default}">$2</span>'

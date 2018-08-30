@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+        "raw": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
-        "spec": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+        "rawSpec": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
+        "spec": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118730-1888-2e5w4t.a6eqshh0k9"
+      "/private/tmp/apm-install-dir-118730-22504-ffu0bd.635cc2qpvi"
     ]
   ],
-  "_from": "../d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+  "_from": "../d-118730-22504-14k3oap.lzorms4i/package.tgz",
   "_id": "tool-bar@1.1.8",
   "_inCache": true,
   "_location": "/tool-bar",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+    "raw": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
-    "spec": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+    "rawSpec": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
+    "spec": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
+  "_resolved": "file:../d-118730-22504-14k3oap.lzorms4i/package.tgz",
   "_shasum": "81482f98e9242c0788bf814718aaf98698b7baa3",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118730-1888-1khtp1y.wxz1kk2o6r/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118730-1888-2e5w4t.a6eqshh0k9",
+  "_spec": "/private/tmp/d-118730-22504-14k3oap.lzorms4i/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118730-22504-ffu0bd.635cc2qpvi",
   "bugs": {
     "url": "https://github.com/suda/toolbar/issues"
   },

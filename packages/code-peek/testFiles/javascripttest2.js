@@ -1,7 +1,0 @@
-getTest();
-
-function getTest() {
-
-}
-
-teststuff();

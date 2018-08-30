@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+        "raw": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
-        "spec": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+        "rawSpec": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
+        "spec": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118623-44472-1ce3jd6.atctxlmcxr"
+      "/private/tmp/apm-install-dir-118730-25240-xg4enw.dov18aor"
     ]
   ],
-  "_from": "../d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+  "_from": "../d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
   "_id": "language-htaccess@0.2.0",
   "_inCache": true,
   "_location": "/language-htaccess",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+    "raw": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
-    "spec": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+    "rawSpec": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
+    "spec": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
+  "_resolved": "file:../d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
   "_shasum": "9eec893af274f03e9b61278708322017f46dfabe",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118623-44472-1iudw8u.yx5o0tfbt9/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118623-44472-1ce3jd6.atctxlmcxr",
+  "_spec": "/private/tmp/d-118730-25240-7pka16.vwgjjaif6r/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118730-25240-xg4enw.dov18aor",
   "bugs": {
     "url": "https://github.com/muchweb/atom-language-htaccess/issues"
   },
