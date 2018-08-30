@@ -1,0 +1,11 @@
+'.text.html.php':
+  '<?php...':
+    'prefix': 'ph'
+    'body': '''
+    <?php$1
+    '''
+  '<?php...?>':
+    'prefix': 'php'
+    'body': '''
+    <?php${1: $2 }?>$0
+    '''
