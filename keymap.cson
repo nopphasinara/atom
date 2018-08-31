@@ -39,6 +39,8 @@
   'cmd-;': 'gc:tab-stop'
   'f11': 'remote-sync:download-file'
   'shift-f11': 'remote-sync:upload-file'
+  'alt-cmd-a': 'aligner:align'
+  'alt-cmd-tab': 'editor:auto-indent'
 
 '.go-to-line atom-text-editor[mini]':
   'cmd-w': 'unset!'
@@ -74,6 +76,8 @@
   'ctrl-shift-U': 'emmet:update-tag'
   'ctrl-shift-W': 'emmet:wrap-with-abbreviation'
   'ctrl-shift-M': 'emmet:matching-pair'
+  'alt-e': 'emmet:select-next-item'
+  'shift-alt-E': 'emmet:select-previous-item'
 
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'

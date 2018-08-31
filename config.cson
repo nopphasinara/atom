@@ -2,6 +2,11 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
+  aligner:
+    alignComments: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
+    gotoKey: "ctrl"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -53,9 +58,22 @@
       "advanced-open-file"
       "project-manager"
       "emmet"
+      "sort-lines"
+      "change-case"
+      "aligner"
+      "split-diff"
+      "git-status"
+      "browser-plus"
+      "git-plus"
+      "atom-autocomplete-php"
+      "hyperclick"
     ]
     projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "2-dark-syntax"
+    ]
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
@@ -70,6 +88,20 @@
     userId: "8fdd849b-d7cf-4849-8bfe-e5affc3a992b"
   "fuzzy-finder":
     searchAllPanes: true
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  "hyperlink-hyperclick":
+    protocols: [
+      "http"
+      "https"
+      "mailto"
+      "atom"
+      "ftp"
+      "ssh"
+      "sftp"
+    ]
+  "js-hyperclick":
+    jumpToImport: true
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
@@ -82,6 +114,8 @@
     sortBy: "title"
   "remote-sync":
     foldLogPanel: true
+  "split-diff":
+    turnOffSoftWrap: true
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

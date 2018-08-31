@@ -1,0 +1,7 @@
+'.text.html':
+
+  'Images':
+    'prefix': 'img-'
+    'body': """
+    <img src="${3:...}" class="img-${1:fluid}${2: pull-xs-left}" alt="${4:...}">
+    """

@@ -1,0 +1,19 @@
+'.text.html':
+
+  'Jumbotron':
+    'prefix': 'jumbotron'
+    'body': """
+    <div class="jumbotron">
+      <h1 class="display-3">$1</h1>
+      <p class="lead">$2</p>
+    </div>
+    """
+
+  'Jumbotron fluid':
+    'prefix': 'jumbotron-fluid'
+    'body': """
+    <div class="jumbotron">
+      <h1 class="display-3">$1</h1>
+      <p class="lead">$2</p>
+    </div>
+    """
