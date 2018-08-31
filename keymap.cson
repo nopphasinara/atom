@@ -12,6 +12,7 @@
   'cmd-f': 'find-and-replace:show'
   'ctrl-g': 'go-to-line:toggle'
   'shift-cmd-O': 'project-manager:list-projects'
+  'ctrl-cmd-p': 'project-manager:edit-projects'
 
 '.project-manager input':
   'enter': 'core:confirm'
@@ -36,6 +37,8 @@
   'alt-4': 'gc:tab-stop'
   'alt-,': 'gc:tab-stop'
   'cmd-;': 'gc:tab-stop'
+  'f11': 'remote-sync:download-file'
+  'shift-f11': 'remote-sync:upload-file'
 
 '.go-to-line atom-text-editor[mini]':
   'cmd-w': 'unset!'
@@ -81,6 +84,7 @@
   'cmd-c': 'tree-view:copy'
   'cmd-x': 'tree-view:cut'
   'cmd-v': 'tree-view:paste'
+  'enter': 'tree-view:expand-item'
   'right': 'tree-view:expand-item'
   'left': 'tree-view:collapse-directory'
 

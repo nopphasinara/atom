@@ -13,10 +13,17 @@ module.exports =
 
     @toolBar.addButton
       icon: 'document-text'
-      callback: 'advanced-open-file:toggle'
-      tooltip: 'Open File'
+      callback: 'gc:control-files'
+      tooltip: 'Control Files'
       iconset: 'ion'
       type: 'button'
+
+    # @toolBar.addButton
+    #   icon: 'document-text'
+    #   callback: 'advanced-open-file:toggle'
+    #   tooltip: 'Open File'
+    #   iconset: 'ion'
+    #   type: 'button'
 
     # @toolBar.addButton
     #   icon: 'folder'
@@ -31,8 +38,6 @@ module.exports =
     #   tooltip: 'Save File'
     #   iconset: 'ion'
     #   type: 'button'
-
-    @toolBar.addSpacer()
 
     # @toolBar.addButton
     #   icon: 'json'

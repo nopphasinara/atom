@@ -9,3 +9,10 @@
     'body': '''
     <?php${1: $2 }?>$0
     '''
+
+'.source.php':
+  'print_r':
+    'prefix': 'pr'
+    'body': '''
+    echo \'<pre>\'; print_r($1); echo \'</pre>\';
+    '''

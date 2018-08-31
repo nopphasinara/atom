@@ -54,7 +54,7 @@
       "project-manager"
       "emmet"
     ]
-    projectHome: "/Users/Shared/.dotfiles/projects"
+    projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
@@ -65,7 +65,7 @@
     softWrap: true
     tabType: "soft"
   emmet:
-    extensionsPath: "/Users/Shared/.atom/packages/toolkits/emmet"
+    extensionsPath: "/Users/Shared/atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "8fdd849b-d7cf-4849-8bfe-e5affc3a992b"
   "fuzzy-finder":
