@@ -91,6 +91,7 @@
 '.tree-view':
   'escape': 'tree-view:unfocus'
   'alt-cmd-c': 'tree-view:copy-full-path'
+  'r': 'tree-view:rename'
   'm': 'tree-view:move'
   'a': 'tree-view:add-file'
   'shift-A': 'tree-view:add-folder'
