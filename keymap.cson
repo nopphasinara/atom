@@ -13,6 +13,8 @@
   'ctrl-g': 'go-to-line:toggle'
   'shift-cmd-O': 'project-manager:list-projects'
   'ctrl-cmd-p': 'project-manager:edit-projects'
+  'alt-cmd-left': 'window:focus-previous-pane'
+  'alt-cmd-right': 'window:focus-next-pane'
 
 '.project-manager input':
   'enter': 'core:confirm'
