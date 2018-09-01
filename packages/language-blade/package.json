@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+        "spec": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11882-28187-qd1zy1.v7cofos9k9"
+    ]
+  ],
+  "_from": "../d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+  "_id": "language-blade@0.41.2",
+  "_inCache": true,
+  "_location": "/language-blade",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+    "spec": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+  "_shasum": "b9b8d0990572ca19cb2cd3954136e4fa0bf386d4",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11882-28187-1ndil7d.ok2fgsnhfr/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11882-28187-qd1zy1.v7cofos9k9",
+  "bugs": {
+    "url": "https://github.com/jawee/language-blade/issues"
+  },
+  "dependencies": {},
+  "description": "Syntax highlighter for the Blade templating engine used in Laravel",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jawee/language-blade#readme",
+  "license": "MIT",
+  "main": "./lib/language-blade",
+  "name": "language-blade",
+  "optionalDependencies": {},
+  "readme": "# Blade templating support in Atom\n\nOriginally [Converted](http://atom.io/docs/latest/converting-a-text-mate-bundle) from [Blade textmate tmbundle](https://github.com/outofcontrol/Blade.tmbundle)\n\nContributions are greatly appreciated. Please fork this repository and open a\npull request to add snippets, make grammar tweaks, etc.\n\n## Contributing\n\n1. Fork it\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Add some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create new Pull Request\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawee/language-blade.git"
+  },
+  "version": "0.41.2"
+}

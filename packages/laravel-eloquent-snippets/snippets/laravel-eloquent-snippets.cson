@@ -1,0 +1,37 @@
+'.text.html.php':
+  # Belongs to many
+  'Eloquent Belongs-to-many':
+    'prefix': 'belm'
+    'body': """
+    public function ${1:relationship}()
+    {
+      return $this->belongsToMany($1::class, ${2:table});
+    }
+    """
+  # Belongs to
+  'Eloquent Belongs to':
+    'prefix': 'belo'
+    'body': """
+    public function ${1:relationship}()
+    {
+      return $this->belongsTo($1::class);
+    }
+    """
+  # Has many
+  'Eloquent Has many':
+    'prefix': 'hasm'
+    'body': """
+    public function ${1:relationship}()
+    {
+      return $this->hasMany($1::class);
+    }
+    """
+  # Has one
+  'Eloquent Has one':
+    'prefix': 'haso'
+    'body': """
+    public function ${1:relationship}()
+    {
+      return $this->hasOne($1::class);
+    }
+    """

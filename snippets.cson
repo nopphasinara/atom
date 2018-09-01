@@ -1,4 +1,4 @@
-'.text.html.php':
+'.text.html.php, .text.html.php.blade':
   '<?php...':
     'prefix': 'ph'
     'body': '''
@@ -9,6 +9,21 @@
     'body': '''
     <?php${1: $2 }?>$0
     '''
+
+'.text.html.php.blade':
+  '@component()':
+    'prefix': 'component'
+    'body': '''
+    @component('${1:components}${2:}')
+      ${3:}
+    @endcomponent$0
+    '''
+  '@json()':
+    'prefix': 'json'
+    'body': '''
+    @json(${1:\\$array})$0
+    '''
+
 
 '.source.php':
   'print_r':

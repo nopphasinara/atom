@@ -6,7 +6,6 @@
     alignComments: true
   "atom-autocomplete-php":
     binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
-    gotoKey: "ctrl"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -120,6 +119,11 @@
   "tool-bar": {}
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".dotenv.source":
   editor:
     softWrap: false
