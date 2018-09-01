@@ -70,10 +70,6 @@
     ]
     projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "2-dark-syntax"
-    ]
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
