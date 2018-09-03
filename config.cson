@@ -66,6 +66,7 @@
       "git-plus"
       "atom-autocomplete-php"
       "hyperclick"
+      "sass-autocompile"
     ]
     projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
@@ -109,6 +110,9 @@
     sortBy: "title"
   "remote-sync":
     foldLogPanel: true
+  "sass-autocompile":
+    compileOnSave: false
+    showAdditionalCompilationInfo: false
   "split-diff":
     turnOffSoftWrap: true
   "symbols-view":

@@ -168,3 +168,8 @@
 
 '.platform-darwin .advanced-open-file atom-text-editor':
   'cmd-z': 'advanced-open-file:undo'
+
+
+'.platform-darwin atom-workspace atom-text-editor:not(.mini)':
+  'alt-cmd-s': 'sass-autocompile:compile-to-file'
+  'shift-alt-cmd-S': 'sass-autocompile:compile-direct'
