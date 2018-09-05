@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
+        "raw": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
-        "spec": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
+        "rawSpec": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
+        "spec": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118731-6512-wj8qw0.izm8v3g14i"
+      "/private/tmp/apm-install-dir-11885-16869-tojruq.afrsh5mi"
     ]
   ],
-  "_from": "../d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
-  "_id": "tool-bar@1.1.9",
+  "_from": "../d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
+  "_id": "tool-bar@1.1.10",
   "_inCache": true,
   "_location": "/tool-bar",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
+    "raw": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
-    "spec": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
+    "rawSpec": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
+    "spec": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
-  "_shasum": "7198337a55da37589719826073c8f600ef9459d6",
+  "_resolved": "file:../d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
+  "_shasum": "4d546d89f254d588b45787d1e539549bf2408c1b",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118731-6512-apdwr3.qm0pyqr529/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118731-6512-wj8qw0.izm8v3g14i",
+  "_spec": "/private/tmp/d-11885-16869-1upjopi.pk39q0vn29/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11885-16869-tojruq.afrsh5mi",
   "bugs": {
     "url": "https://github.com/suda/toolbar/issues"
   },
@@ -79,5 +79,5 @@
   "scripts": {
     "lint": "eslint --format tap . && remark ."
   },
-  "version": "1.1.9"
+  "version": "1.1.10"
 }

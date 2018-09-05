@@ -5,7 +5,7 @@
   aligner:
     alignComments: true
   "atom-autocomplete-php":
-    binPhp: "/usr/local/Cellar/php/7.2.5/bin/php"
+    binPhp: "/usr/local/bin/php"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
