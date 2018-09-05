@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+        "raw": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
-        "spec": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+        "rawSpec": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
+        "spec": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118524-2921-1n69vci.lnx819vn29"
+      "/private/tmp/apm-install-dir-11881-19357-1xi5yaa.nffb9be29"
     ]
   ],
-  "_from": "../d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+  "_from": "../d-11881-19357-z5mh9.msocelv7vi/package.tgz",
   "_id": "aligner-php@1.2.0",
   "_inCache": true,
   "_location": "/aligner-php",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+    "raw": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
-    "spec": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+    "rawSpec": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
+    "spec": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
+  "_resolved": "file:../d-11881-19357-z5mh9.msocelv7vi/package.tgz",
   "_shasum": "ad44a1859c0d14d403d023cdc4f83d201b6ba05e",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118524-2921-1giixou.c4ww8z1tt9/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118524-2921-1n69vci.lnx819vn29",
+  "_spec": "/private/tmp/d-11881-19357-z5mh9.msocelv7vi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-19357-1xi5yaa.nffb9be29",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-php/issues"
   },

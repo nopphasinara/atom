@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+        "raw": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
-        "spec": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+        "rawSpec": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
+        "spec": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-118524-2992-xbtuno.wsng6wdn29"
+      "/private/tmp/apm-install-dir-11881-19676-lfc0lf.iue4fb6gvi"
     ]
   ],
-  "_from": "../d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+  "_from": "../d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
   "_id": "aligner-coffeescript@1.0.1",
   "_inCache": true,
   "_location": "/aligner-coffeescript",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+    "raw": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
-    "spec": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+    "rawSpec": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
+    "spec": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
+  "_resolved": "file:../d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
   "_shasum": "2f60f60f67dde0c474d59b34a34ee9764535a445",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-118524-2992-d1ezq3.wdy0all3di/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-118524-2992-xbtuno.wsng6wdn29",
+  "_spec": "/private/tmp/d-11881-19676-1trmpcc.v6q94ibe29/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-19676-lfc0lf.iue4fb6gvi",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-coffeescript/issues"
   },

@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+        "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-11881-20899-1htgv85.gtn1a46lxr"
+    ]
+  ],
+  "_from": "../d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+  "_id": "one-dark-ui@1.12.5",
+  "_inCache": true,
+  "_location": "/one-dark-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+    "spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+  "_shasum": "e075c0ea4287eacd36214a5775ea14b0c03d19fb",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/d-11881-20899-mx5w39.wrq18gds4i/package.tgz",
+  "_where": "/private/var/folders/_z/qj8040sj6vlc7wnjkw2ndpvw0000gn/T/apm-install-dir-11881-20899-1htgv85.gtn1a46lxr",
+  "bugs": {
+    "url": "https://github.com/atom/one-dark-ui/issues"
+  },
+  "configSchema": {
+    "fontSize": {
+      "title": "Font Size",
+      "description": "Change the font size for the UI.",
+      "type": "integer",
+      "default": 12,
+      "enum": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "order": 1
+    },
+    "tabSizing": {
+      "title": "Tab Sizing",
+      "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Maximum mode the tabs will expand to take up the full width. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
+      "type": "string",
+      "default": "Even",
+      "enum": [
+        "Even",
+        "Maximum",
+        "Minimum"
+      ],
+      "order": 2
+    },
+    "tabCloseButton": {
+      "title": "Tab Close Button",
+      "description": "Choose the position of the close button shown in tabs.",
+      "type": "string",
+      "default": "Right",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "order": 3
+    },
+    "hideDockButtons": {
+      "title": "Hide dock toggle buttons",
+      "description": "Note: When hiding the toggle buttons, opening a dock needs to be done by using the keyboard or other alternatives.",
+      "type": "boolean",
+      "default": "false",
+      "order": 4
+    },
+    "stickyHeaders": {
+      "title": "Make tree-view project headers sticky",
+      "type": "boolean",
+      "default": "false",
+      "order": 5
+    }
+  },
+  "dependencies": {},
+  "description": "Atom One dark UI theme",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "homepage": "https://github.com/atom/one-dark-ui#readme",
+  "keywords": [
+    "dark",
+    "adaptive",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "lib/main",
+  "name": "one-dark-ui",
+  "optionalDependencies": {},
+  "readme": "## One Dark UI theme [![Build Status](https://travis-ci.org/atom/one-dark-ui.svg?branch=master)](https://travis-ci.org/atom/one-dark-ui)\n\nA dark UI theme that adapts to most syntax themes.\n\n![One dark UI](https://cloud.githubusercontent.com/assets/378023/26246818/08255b76-3cd6-11e7-9f6d-6ae3e16a89a9.png)\n\n> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).\n\n\n### Install\n\nThis theme comes bundled with Atom and can be activated by going to the __Settings > Themes__ section and selecting \"One Dark\" from the __UI Themes__ drop-down menu.\n\n\n### Settings\n\nIn the theme settings you can:\n\n- Change the __Font Size__ to scale the whole UI up or down.\n- Choose between 3 __Tab Sizing__ modes.\n- Hide the  __dock buttons__.\n\nTo make changes, go to `Settings > Themes > One Dark UI > Settings` or the cog icon next to the theme picker.\n\n\n### Customize\n\nIt's also possible to resize only certain areas by adding the following to your `styles.less` (Use DevTools to find the right selectors):\n\n```css\n.theme-one-dark-ui {\n  .tab-bar { font-size: 18px; }\n  .tree-view { font-size: 14px; }\n  .status-bar { font-size: 12px; }\n}\n```\n\n\n### FAQ\n\n__Why do the colors change when I switch Syntax themes?__\nThis UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a light background color, it only uses its hue, but otherwise stays dark. This lets you use dark-light combos.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/one-dark-ui.git"
+  },
+  "theme": "ui",
+  "version": "1.12.5"
+}

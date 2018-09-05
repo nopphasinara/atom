@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+        "raw": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
-        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+        "rawSpec": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
+        "spec": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5867-cmjucb.nzv9529"
+      "/private/tmp/apm-install-dir-11881-32575-oc3v6u.kf1ctprpb9"
     ]
   ],
-  "_from": "../d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+  "_from": "../d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
   "_id": "hyperlink-hyperclick@2.0.0",
   "_inCache": true,
   "_location": "/hyperlink-hyperclick",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+    "raw": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
-    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+    "rawSpec": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
+    "spec": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11864-5867-ph10gi.80d6b9be29/package.tgz",
+  "_resolved": "file:../d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
   "_shasum": "2d784a9fff20ebe07d025c7637a8de392c8e3185",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5867-ph10gi.80d6b9be29/package.tgz",
-  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5867-cmjucb.nzv9529",
+  "_spec": "/private/tmp/d-11881-32575-1yfk61k.y5yfgmygb9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-32575-oc3v6u.kf1ctprpb9",
   "atomTestRunner": "atom-jasmine3-test-runner",
   "author": {
     "name": "Tony Brix"

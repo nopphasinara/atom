@@ -1,7 +1,7 @@
 {
   "filter.commentTrigger": "class",
-  "filter.commentAfter": "<!-- <%= attr('id', '/ #') %><%= attr('class', '/ .') %> -->",
+  "filter.commentAfter": "<!-- <%= attr('class', '/ .') %> -->",
   "css.alignVendor": true,
-  "css.keywordAliases": "i:important, d:default, in:inherit",
-  "css.keywords": "important, default, inherit"
+  "css.keywordAliases": "i:important, d:default, in:inherit, g:global, e:export, r:require",
+  "css.keywords": "important, default, inherit, global, export, require"
 }
