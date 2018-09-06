@@ -85,7 +85,7 @@
   "fuzzy-finder":
     searchAllPanes: true
   hyperclick:
-    darwinTriggerKeys: "altKey"
+    darwinTriggerKeys: "ctrlKey"
   "hyperlink-hyperclick":
     protocols: [
       "http"

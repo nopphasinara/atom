@@ -26,6 +26,15 @@
 
 
 '.source.php':
+  'function':
+    'prefix': 'fn'
+    'body': '''
+    ${2:}${1:function} ${3:functionName}(${4:})
+    {
+      ${5://}
+    }$0
+    '''
+
   'print_r':
     'prefix': 'pr'
     'body': '''
