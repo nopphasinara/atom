@@ -137,6 +137,9 @@
 ".htaccess.source":
   editor:
     softWrap: false
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".ini.source":
   editor:
     softWrap: false
