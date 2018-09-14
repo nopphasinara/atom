@@ -20,6 +20,7 @@
   'enter': 'core:confirm'
 
 '.platform-darwin atom-text-editor':
+  'alt-cmd-p': 'unset!'
   'cmd-f3': 'unset!'
   'cmd-shift-f3': 'unset!'
   'cmd-alt-e': 'unset!'
