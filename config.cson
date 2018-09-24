@@ -67,6 +67,7 @@
       "atom-autocomplete-php"
       "hyperclick"
       "sass-autocompile"
+      "atom-beautify"
     ]
     projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
