@@ -1,0 +1,28 @@
+'.text.html':
+
+  'Alerts':
+    'prefix': 'alert'
+    'body': """
+    <div class="alert alert-${1:success}" role="alert">
+      $2
+    </div>
+    """
+
+  'Alerts link':
+    'prefix': 'alert-link'
+    'body': """
+    <div class="alert alert-${1:success}" role="alert">
+      $2<a href="${3:#}" class="alert-link">$4</a>.
+    </div>
+    """
+
+  'Alerts dismissing':
+    'prefix': 'alert-dismissible'
+    'body': """
+    <div class="alert alert-${1:warning} alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      $2
+    </div>
+    """

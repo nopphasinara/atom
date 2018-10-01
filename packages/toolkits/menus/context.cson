@@ -135,6 +135,11 @@
           }
           { "type": "separator" }
           {
+            "label": "Minify Direct"
+            "command": "atom-minify:minify-direct"
+          }
+          { "type": "separator" }
+          {
             "label": "Update Tag"
             "command": "emmet:update-tag"
           }

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/js-hyperclick/versions/1.13.3/tarball",
   "_shasum": "9129baef6f7fac064b6bd20bd5f2ddc0369e9c17",
   "_spec": "https://www.atom.io/api/packages/js-hyperclick/versions/1.13.3/tarball",
-  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11891-10356-10kmq65.bqp4",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11891-11669-1i35nwc.0tsq",
   "bundleDependencies": false,
   "dependencies": {
     "acorn-to-esprima": "^1.0.4",

@@ -11,7 +11,7 @@ export default {
     }
   },
 
-  activate() {
+  activate () {
     this.changeUseBladeComments = atom.config.observe('language-blade.useBladeComments', enabled => {
       const opts = {scopeSelector: ['.text.html.php.blade']}
       if (enabled) {
@@ -24,7 +24,7 @@ export default {
     })
   },
 
-  deactivate() {
+  deactivate () {
     this.changeUseBladeComments.dispose()
   }
 }

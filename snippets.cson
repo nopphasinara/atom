@@ -1,8 +1,42 @@
-'.source.php':
-  'collect()':
-    'prefix': 'collect'
+'.text.html.php, .text.html.php.blade':
+  '<?php...':
+    'prefix': 'ph'
     'body': '''
-    \\$${1:collect} = \\$${1:collect}->${2:map}(function (\\$${3:item}, \\$${4:key}) {
-      $5
-    });$0
+    <?php$1
+    '''
+  '<?php...?>':
+    'prefix': 'php'
+    'body': '''
+    <?php${1: $2 }?>$0
+    '''
+
+'.text.html.php.blade':
+  '@component()':
+    'prefix': 'component'
+    'body': '''
+    @component('${1:components}${2:}')
+      ${3:}
+    @endcomponent$0
+    '''
+  '@json()':
+    'prefix': 'json'
+    'body': '''
+    @json(${1:\\$array})$0
+    '''
+
+
+'.source.php':
+  'function':
+    'prefix': 'fn'
+    'body': '''
+    ${2:}${1:function} ${3:functionName}(${4:})
+    {
+      ${5://}
+    }$0
+    '''
+
+  'print_r':
+    'prefix': 'pr'
+    'body': '''
+    echo \'<pre>\'; print_r($1); echo \'</pre>\';
     '''

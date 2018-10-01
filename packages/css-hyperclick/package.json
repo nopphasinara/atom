@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+        "raw": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
-        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+        "rawSpec": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
+        "spec": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5887-pjrz1e.tfh3v50zfr"
+      "/private/tmp/apm-install-dir-11881-33457-apq66k.f589s02j4i"
     ]
   ],
-  "_from": "../d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+  "_from": "../d-11881-33457-r05ft4.o884k21emi/package.tgz",
   "_id": "css-hyperclick@0.1.5",
   "_inCache": true,
   "_location": "/css-hyperclick",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+    "raw": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
-    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+    "rawSpec": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
+    "spec": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
+  "_resolved": "file:../d-11881-33457-r05ft4.o884k21emi/package.tgz",
   "_shasum": "7b0a0adf9991ca8283250651a31037535988d37b",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-11864-5887-1f7rnv1.o0zp6kzkt9/package.tgz",
-  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-11864-5887-pjrz1e.tfh3v50zfr",
+  "_spec": "/private/tmp/d-11881-33457-r05ft4.o884k21emi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-33457-apq66k.f589s02j4i",
   "author": {
     "name": "Alasdair McLeay",
     "email": "alasdair.mcleay@me.com",

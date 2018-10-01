@@ -131,7 +131,7 @@ module.exports =
     atom.commands.add 'atom-text-editor', 'gc:tab-stop', ->
       editor = atom.workspace.getActiveTextEditor()
       selections = editor.getSelections()
-      options = { skip: true, move: 1, reverse: true, infix: '' }
+      options = { skip: true, reverse: false, move: 1, infix: '' }
       gc.mutateSelectedText(selections, '${{{replacement}}}', options)
 
     atom.commands.add 'atom-text-editor', 'gc:php-echo', ->

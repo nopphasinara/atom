@@ -1,143 +1,121 @@
 "*":
-  ProviderCoffee:
-    config: null
-  ProviderJavascript:
-    config: null
   "advanced-open-file":
-    defaultInputValue: "none"
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-hot-package-loader":
-    autoWatchTarget: true
-    detectTargetOnStart: true
-    onlyInDevMode: false
+  aligner:
+    alignComments: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     defaultProvider: "Symbol"
     minimumWordLength: 1
-    similarSuggestionRemoval: "textOrSnippet"
-  "blade-spacer":
-    workInAllFiles: true
   "bracket-matcher":
-    alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    automaticallyUpdate: false
-    closeEmptyWindows: false
     disabledPackages: [
       "autosave"
       "background-tips"
       "deprecation-cop"
-      "about"
-      "archive-view"
+      "encoding-selector"
       "exception-reporting"
-      "language-csharp"
-      "language-c"
-      "language-java"
-      "language-objective-c"
-      "language-toml"
       "metrics"
-      "spell-check"
-      "styleguide"
       "timecop"
       "welcome"
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
-      "project-manager"
-      "advanced-open-file"
-      "alignment"
-      "markdown-preview"
-      "sass-autocompile"
-      "archive-view"
-      "autoflow"
-      "bookmarks"
-      "bracket-matcher"
-      "command-palette"
-      "dev-live-reload"
-      "encoding-selector"
-      "find-and-replace"
-      "fuzzy-finder"
-      "git-diff"
-      "github"
-      "go-to-line"
       "grammar-selector"
+      "go-to-line"
       "image-view"
       "keybinding-resolver"
       "link"
+      "markdown-preview"
       "notifications"
       "open-on-github"
-      "settings-view"
-      "snippets"
       "spell-check"
       "styleguide"
       "symbols-view"
       "tree-view"
-      "tool-bar"
-      "emmet"
+      "git-diff"
+      "archive-view"
       "autocomplete-plus"
-      "split-diff"
-      "hyperclick"
-      "change-case"
+      "autoflow"
+      "bookmarks"
+      "bracket-matcher"
+      "dev-live-reload"
+      "find-and-replace"
+      "fuzzy-finder"
+      "github"
+      "tool-bar"
+      "advanced-open-file"
+      "project-manager"
+      "emmet"
       "sort-lines"
+      "change-case"
+      "aligner"
+      "split-diff"
+      "git-status"
+      "browser-plus"
+      "git-plus"
+      "atom-autocomplete-php"
+      "hyperclick"
+      "sass-autocompile"
+      "atom-beautify"
     ]
-    projectHome: "~/.dotfiles/projects"
+    projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "one-dark-vivid-syntax"
-    ]
     titleBar: "custom"
   editor:
-    fontFamily: "'Menlo', 'master-icons'"
-    fontSize: 14
-    lineHeight: 1.6
+    fontFamily: "Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
     tabType: "soft"
   emmet:
-    extensionsPath: "~/.atom/packages/toolkits/emmet"
+    extensionsPath: "/Users/Shared/atom/packages/toolkits/emmet"
   "exception-reporting":
-    userId: "000d46de-7d57-4358-b418-14d7465390a0"
-  "find-and-replace":
-    liveSearchMinimumCharacters: 1
+    userId: "8fdd849b-d7cf-4849-8bfe-e5affc3a992b"
   "fuzzy-finder":
-    preserveLastSearch: true
     searchAllPanes: true
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
+  "hyperlink-hyperclick":
+    protocols: [
+      "http"
+      "https"
+      "mailto"
+      "atom"
+      "ftp"
+      "ssh"
+      "sftp"
+    ]
+  "js-hyperclick":
+    jumpToImport: true
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
     hideDockButtons: true
+  "package-generator":
+    createInDevMode: true
+    packageSyntax: "coffeescript"
   "project-manager":
-    prettifyTitle: false
-    savePathsRelativeToHome: true
     showPath: false
     sortBy: "title"
   "remote-sync":
-    autoHideLogPanel: true
     foldLogPanel: true
   "sass-autocompile":
-    autoHidePanelDelay: 2000
-    compactFilenamePattern: "$1.css"
-    compileCompact: true
-    compileCompressed: false
     compileOnSave: false
-    nestedFilenamePattern: "$1.css"
-    precision: 3
     showAdditionalCompilationInfo: false
   "split-diff":
     turnOffSoftWrap: true
-  "status-bar":
-    fullWidth: false
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
@@ -153,33 +131,20 @@
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".css.scss.source":
   editor:
-    autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
-    softWrap: false
-".css.source":
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".dotenv.source":
   editor:
-    autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
     softWrap: false
-".php.source":
+".htaccess.source":
+  editor:
+    softWrap: false
+".html.php.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+".ini.source":
+  editor:
+    softWrap: false
 ".sass.source":
   editor:
     autoIndentOnPaste: true
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
-    softWrap: false
-".scss.source":
-  editor:
-    autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
-    softWrap: false
-".source.sql":
-  editor:
-    softWrap: false
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"

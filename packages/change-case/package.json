@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+        "raw": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
-        "spec": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+        "rawSpec": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
+        "spec": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
         "type": "local"
       },
-      "/private/tmp/apm-install-dir-11861-21405-11gpiml.6u05zpk3xr"
+      "/private/tmp/apm-install-dir-11881-19201-1m6j0zr.c7y7vz33di"
     ]
   ],
-  "_from": "../d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+  "_from": "../d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
   "_id": "change-case@0.6.5",
   "_inCache": true,
   "_location": "/change-case",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+    "raw": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
-    "spec": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+    "rawSpec": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
+    "spec": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
+  "_resolved": "file:../d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
   "_shasum": "309c6849aa1f961753c0fe7d66e2cd09bef9765e",
   "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-11861-21405-1cd60kx.3wz59oogvi/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-11861-21405-11gpiml.6u05zpk3xr",
+  "_spec": "/private/tmp/d-11881-19201-g6nbry.yc1vklz0k9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-19201-1m6j0zr.c7y7vz33di",
   "activationCommands": {
     "atom-workspace atom-text-editor": [
       "change-case:camel",

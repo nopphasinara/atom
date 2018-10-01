@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+        "raw": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
-        "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+        "rawSpec": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
+        "spec": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118522-19362-i4vstq.9ivh6t7qfr"
+      "/private/tmp/apm-install-dir-118730-25499-5pa620.1f5odmquxr"
     ]
   ],
-  "_from": "../d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+  "_from": "../d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
   "_id": "emmet@2.4.3",
   "_inCache": true,
   "_location": "/emmet",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+    "raw": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
-    "spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+    "rawSpec": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
+    "spec": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
+  "_resolved": "file:../d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
   "_shasum": "43fafacc11b3b6ae5716868fe539dd398b53430e",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/d-118522-19362-13xbzxh.d5e2d9rudi/package.tgz",
-  "_where": "/private/var/folders/s6/ytz5c6l56559k1hfl3hgf7f00000gn/T/apm-install-dir-118522-19362-i4vstq.9ivh6t7qfr",
+  "_spec": "/private/tmp/d-118730-25499-gtf708.mssfrsh5mi/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-118730-25499-5pa620.1f5odmquxr",
   "bugs": {
     "url": "https://github.com/emmetio/emmet-atom/issues"
   },

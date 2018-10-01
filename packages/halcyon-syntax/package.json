@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+        "spec": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+        "type": "local"
+      },
+      "/private/tmp/apm-install-dir-11881-20781-trzcpb.ko9tivygb9"
+    ]
+  ],
+  "_from": "../d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+  "_id": "halcyon-syntax@0.2.0",
+  "_inCache": true,
+  "_location": "/halcyon-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+    "spec": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+  "_shasum": "fb3a63d488b82d8593a4a51aeb19caafd0ef46e4",
+  "_shrinkwrap": null,
+  "_spec": "/private/tmp/d-11881-20781-5375o5.5e9pki6bt9/package.tgz",
+  "_where": "/private/tmp/apm-install-dir-11881-20781-trzcpb.ko9tivygb9",
+  "bugs": {
+    "url": "https://github.com/bchiang7/halcyon-atom-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A dark theme based on the Ayu Mirage theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bchiang7/halcyon-atom-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "halcyon-syntax",
+  "optionalDependencies": {},
+  "readme": "# Halcyon Syntax Theme for Atom\n\n[![apm](https://img.shields.io/apm/v/halcyon-syntax.svg?style=flat-square)](https://atom.io/packages/halcyon-syntax)\n[![apm](https://img.shields.io/apm/dm/halcyon-syntax.svg?style=flat-square)](https://atom.io/packages/halcyon-syntax)\n[![apm](https://img.shields.io/apm/l/halcyon-syntax.svg?style=flat-square)](https://atom.io/packages/halcyon-syntax)\n\n![demo](https://raw.githubusercontent.com/bchiang7/halcyon-atom-syntax/master/images/demo.png)\n\nPairs well with Atom's One Dark UI Theme\n\n## Installation\n\n### Via Preferences\n\n1. Go to `Preferences > Install` and choose `Themes`\n2. Search for `halcyon-syntax` and install it\n3. Go to `Preferences > Themes` and choose Halcyon as the syntax theme\n\n### Via APM\n\n`apm install halcyon-syntax`\n\n## Shameless Plug\n\nHalcyon is also available for Sublime Text, VS Code, iTerm, and more! Check out all available options [here](https://brittanychiang.com/halcyon-site/).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bchiang7/halcyon-atom-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.0"
+}

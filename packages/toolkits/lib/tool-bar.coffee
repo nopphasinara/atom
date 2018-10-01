@@ -13,10 +13,17 @@ module.exports =
 
     @toolBar.addButton
       icon: 'document-text'
-      callback: 'advanced-open-file:toggle'
-      tooltip: 'Open File'
+      callback: 'gc:control-files'
+      tooltip: 'Control Files'
       iconset: 'ion'
       type: 'button'
+
+    # @toolBar.addButton
+    #   icon: 'document-text'
+    #   callback: 'advanced-open-file:toggle'
+    #   tooltip: 'Open File'
+    #   iconset: 'ion'
+    #   type: 'button'
 
     # @toolBar.addButton
     #   icon: 'folder'
@@ -32,8 +39,6 @@ module.exports =
     #   iconset: 'ion'
     #   type: 'button'
 
-    @toolBar.addSpacer()
-
     # @toolBar.addButton
     #   icon: 'json'
     #   callback: 'pretty-json:prettify'
@@ -41,12 +46,12 @@ module.exports =
     #   iconset: 'mdi'
     #   type: 'button'
 
-    # @toolBar.addButton
-    #   callback: 'atom-minify:minify-to-min-file'
-    #   text: '<i class="gc"></i>'
-    #   html: true
-    #   tooltip: 'Minified'
-    #   type: 'button'
+    @toolBar.addButton
+      callback: 'atom-minify:minify-direct'
+      text: '<i class="gc"></i>'
+      html: true
+      tooltip: 'Minified'
+      type: 'button'
 
     @toolBar.addButton
       callback:
