@@ -9,6 +9,11 @@
     'body': '''
     <?php${1: $2 }?>$0
     '''
+  'print_r':
+    'prefix': 'print_r'
+    'body': '''
+    <?php echo \\'<pre>\\'; print_r($1); echo \\'</pre>\\'; ?>$0
+    '''
 
 '.text.html.php.blade':
   '@component()':

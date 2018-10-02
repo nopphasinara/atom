@@ -134,19 +134,19 @@
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
 ".dotenv.source":
   editor:
-    softWrap: false
+    softWrap: true
 ".htaccess.source":
   editor:
-    softWrap: false
+    softWrap: true
 ".html.php.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
 ".ini.source":
   editor:
-    softWrap: false
+    softWrap: true
 ".plain.text":
   editor:
-    softWrap: false
+    softWrap: true
 ".sass.source":
   editor:
     autoIndentOnPaste: true
