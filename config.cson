@@ -144,6 +144,9 @@
 ".ini.source":
   editor:
     softWrap: false
+".plain.text":
+  editor:
+    softWrap: false
 ".sass.source":
   editor:
     autoIndentOnPaste: true
