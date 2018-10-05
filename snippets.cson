@@ -1,3 +1,11 @@
+'.text':
+  'subscribers':
+    'prefix': 'subscribers'
+    'body': '''
+    You\\'re receiving this newsletter because you have signed up for it on our website$0
+    '''
+
+
 '.text.html.php, .text.html.php.blade':
   '<?php...':
     'prefix': 'ph'
