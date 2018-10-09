@@ -1,0 +1,41 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      {
+        'label': 'Titanium Build'
+        'submenu': [
+          {
+            'label': 'iPhone Simulator'
+            'command': 'titanium-build:run-iphone'
+          }
+          {
+            'label': 'Android'
+            'submenu': [
+              {
+                'label': 'Emulator'
+                'command': 'titanium-build:run-android-emulators'
+              }
+              {
+                'label': 'Device'
+                'command': 'titanium-build:run-android-devices'
+              }
+            ]
+          }
+          {
+            'label': 'Clean'
+            'command': 'titanium-build:clean'
+          }
+          {
+            'label': 'Terminate build.'
+            'command': 'build:stop'
+          }
+          {
+            'label': 'Rebuild'
+            'command': 'build:trigger'
+          }
+        ]
+      }
+    ]
+  }
+]

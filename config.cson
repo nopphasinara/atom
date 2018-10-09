@@ -19,6 +19,7 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    automaticallyUpdate: false
     disabledPackages: [
       "autosave"
       "background-tips"
@@ -71,9 +72,13 @@
     ]
     projectHome: "/Users/Shared/dotfiles/projects"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
     titleBar: "custom"
   editor:
-    fontFamily: "Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "DejaVu Sans Mono, Menlo, monospace, master-icons"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
