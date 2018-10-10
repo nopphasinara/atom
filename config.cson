@@ -78,7 +78,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "DejaVu Sans Mono, Menlo, monospace, master-icons"
+    fontFamily: "Menlo, monospace, master-icons"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
