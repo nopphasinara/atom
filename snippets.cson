@@ -39,6 +39,24 @@
 
 
 '.source.php':
+  'public function':
+    'prefix': 'pb-fn'
+    'body': '''
+    public function ${1:functionName}($2)
+    {
+      ${3://}
+    }$0
+    '''
+
+  'private function':
+    'prefix': 'pv-fn'
+    'body': '''
+    private function ${1:functionName}($2)
+    {
+      ${3://}
+    }$0
+    '''
+
   'function':
     'prefix': 'fn'
     'body': '''
