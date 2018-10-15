@@ -70,7 +70,7 @@
       "sass-autocompile"
       "atom-beautify"
     ]
-    projectHome: "/Users/Shared/dotfiles/projects"
+    projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -85,7 +85,7 @@
     softWrap: true
     tabType: "soft"
   emmet:
-    extensionsPath: "/Users/Shared/atom/packages/toolkits/emmet"
+    extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "8fdd849b-d7cf-4849-8bfe-e5affc3a992b"
   "fuzzy-finder":

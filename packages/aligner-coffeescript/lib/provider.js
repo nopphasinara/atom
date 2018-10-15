@@ -1,5 +1,5 @@
 module.exports = {
-  selector: ['.source.coffee', '.source.litcoffee'],
+  selector: ['.source.coffee', '.source.litcoffee', '.source.coffee.embedded.html'],
   id: 'aligner-coffeescript', // package name
   config: {
     "=-alignment": {
