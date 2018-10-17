@@ -7,6 +7,15 @@
 
 
 '.text.html.php, .text.html.php.blade':
+  '<?php if () { ?>..<?php } else { ?>..<?php } ?>':
+    'prefix': 'ifelse'
+    'body': '''
+    <?php if ($1) { ?>
+      $2
+    <?php } else { ?>
+      $3
+    <?php } ?>$0
+    '''
   '<?php...':
     'prefix': 'ph'
     'body': '''
