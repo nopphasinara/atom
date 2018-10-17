@@ -51,6 +51,25 @@ module.exports = {
       "description": "Add 1 whitespace to the right of the character",
       "type": "boolean",
       "default": true
+    },
+    "from-alignment": {
+      "title": "Padding for 'from'",
+      "description": "Pad left or right of the operator",
+      "type": "string",
+      "default": "left",
+      "enum": ["left", "right"]
+    },
+    "from-leftSpace": {
+      "title": "Left space for 'from'",
+      "description": "Add 1 whitespace to the left of the operator",
+      "type": "boolean",
+      "default": true
+    },
+    "from-rightSpace": {
+      "title": "Right space for 'from'",
+      "description": "Add 1 whitespace to the right of the operator",
+      "type": "boolean",
+      "default": true
     }
   },
   privateConfig: {
@@ -60,5 +79,6 @@ module.exports = {
     ",-scope": "delimiter",
     ",-multiple-number-alignment": "right",
     ",-multiple-string-alignment": "left",
+    "from-scope": "keyword.control",
   }
 };

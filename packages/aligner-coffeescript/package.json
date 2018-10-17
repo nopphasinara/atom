@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-  "_id": "aligner-coffeescript@1.1.0",
+  "_from": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_id": "aligner-coffeescript@1.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-PVPT6penPOuj0iUZYuU03KYv8Q8qgtGz3z+Z79cJjUVb004L6YZJsMDpLpSsjvqD+LQcDYpDQnhCkVAmAoZ+QQ==",
+  "_integrity": "sha512-OruJtIBwYZWM1VZo453EQtU7xzb5msyXj7D+UWY7EPRqlx3xcFMetKKpnY+JCslHC69OlyCXFHx1FqMnHSv1oQ==",
   "_location": "/aligner-coffeescript",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball"
+    "raw": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-  "_shasum": "b40b5f53b6bff21eb45cb55dc85a232cce4ce254",
-  "_spec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.1.0/tarball",
-  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-118913-5827-98d8zk.mgb4q",
+  "_resolved": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_shasum": "162797f395c9341c097ee3af337f10e0a7652d97",
+  "_spec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-118917-11149-higb3h.lutjq",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-coffeescript/issues"
   },
@@ -51,5 +51,5 @@
     "type": "git",
     "url": "git+ssh://git@github.com/adrianlee44/atom-aligner-coffeescript.git"
   },
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
