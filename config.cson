@@ -70,7 +70,6 @@
       "sass-autocompile"
       "atom-beautify"
     ]
-    projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -79,6 +78,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, monospace, master-icons"
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -104,6 +104,8 @@
     ]
   "js-hyperclick":
     jumpToImport: true
+  "language-applescript":
+    autoCompile: false
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
@@ -129,6 +131,10 @@
   "tool-bar": {}
   welcome:
     showOnStartup: false
+".applescript.source":
+  editor:
+    commentEnd: ""
+    commentStart: "-- "
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
