@@ -15,69 +15,69 @@
     text-rendering: optimizeLegibility !important;
   }
 
-  // .syntax--comment {
-  //   font-style: normal !important;
-  // }
-  //
-  // .syntax--hyperlink {
-  //   text-decoration: none !important;
-  // }
-  //
-  // .cursor {
-  //   // border-color: lime !important;
-  // }
-  //
-  // .cursors {
-  //   opacity: 1 !important;
-  //
-  //   &.blink-off {
-  //     opacity: 0 !important;
-  //   }
-  // }
-  //
-  // .bracket-matcher {
-  //   .region {
-  //     opacity: 1 !important;
-  //     // border-bottom-color: lime !important;
-  //     border-bottom-style: dotted !important;
-  //   }
-  // }
-  //
-  // .gutter {
-  //   &.line-numbers {
-  //     opacity: 1 !important;
-  //
-  //     .line-number {
-  //       padding-left: 14px !important;
-  //
-  //       &[class*="git-line-"] {
-  //         padding-left: 12px !important;
-  //       }
-  //
-  //       &.git-line-added {
-  //         // border-color: @text-color-success !important;
-  //       }
-  //       &.git-line-modified {
-  //         // border-color: @text-color-warning !important;
-  //       }
-  //       &.git-line-removed {
-  //         // border-color: @text-color-removed !important;
-  //       }
-  //
-  //       &.bracket-matcher {
-  //         opacity: 1 !important !important;
-  //       }
-  //
-  //       &.cursor-line {
-  //         opacity: 1 !important;
-  //
-  //         &.cursor-line-no-selection {
-  //           opacity: 1 !important;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .syntax--comment {
+    font-style: normal !important;
+  }
+
+  .syntax--hyperlink {
+    text-decoration: none !important;
+  }
+
+  .cursor {
+    border-color: lime !important;
+  }
+
+  .cursors {
+    opacity: 1 !important;
+
+    &.blink-off {
+      opacity: 0 !important;
+    }
+  }
+
+  .bracket-matcher {
+    .region {
+      opacity: 1 !important;
+      border-bottom-color: lime !important;
+      border-bottom-style: solid !important;
+    }
+  }
+
+  .gutter {
+    &.line-numbers {
+      opacity: 1 !important;
+
+      .line-number {
+        padding-left: 14px !important;
+
+        &[class*="git-line-"] {
+          padding-left: 12px !important;
+        }
+
+        &.git-line-added {
+          // border-color: @text-color-success !important;
+        }
+        &.git-line-modified {
+          // border-color: @text-color-warning !important;
+        }
+        &.git-line-removed {
+          // border-color: @text-color-removed !important;
+        }
+
+        &.bracket-matcher {
+          opacity: 1 !important !important;
+        }
+
+        &.cursor-line {
+          opacity: 1 !important;
+
+          &.cursor-line-no-selection {
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 
