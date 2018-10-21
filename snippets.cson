@@ -80,3 +80,9 @@
     'body': '''
     echo \'<pre>\'; print_r($1); echo \'</pre>\';
     '''
+
+  'if ()...;':
+    'prefix': 'if-in'
+    'body': '''
+    if ($1)$2;$0
+    '''
