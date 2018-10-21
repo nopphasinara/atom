@@ -36,6 +36,7 @@
   'cmd-g': 'find-and-replace:find-next'
   'shift-cmd-G': 'find-and-replace:find-previous'
   'cmd-u': 'find-and-replace:select-undo'
+  'alt-cmd-c': 'gc:copy-filename'
   'ctrl-c': 'gc:copy'
   'ctrl-v': 'gc:paste'
   'alt-4': 'gc:tab-stop'
