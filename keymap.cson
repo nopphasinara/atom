@@ -83,6 +83,7 @@
   'ctrl-shift-M': 'emmet:matching-pair'
   'alt-e': 'emmet:select-next-item'
   'shift-alt-E': 'emmet:select-previous-item'
+  'alt-cmd-c': 'editor:copy-path'
 
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
