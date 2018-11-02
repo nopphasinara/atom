@@ -1,6 +1,7 @@
 {
   "filter.commentTrigger": "id, class",
-  "filter.commentAfter": "\n<!-- <%= attr('id', '/ #') %><%= attr('class', '/ .') %> -->",
+  "filter.commentBefore": "<!-- <%= attr('id', '#') %><%= attr('class', '.') %> -->\n",
+  "filter.commentAfter": "\n<!-- / <%= attr('id', '#') %><%= attr('class', '.') %> -->",
   "css.alignVendor": true,
   "css.keywordAliases": "i:important, d:default, in:inherit, g:global, e:export, r:require, t:transparent, n:normal",
   "css.keywords": "important, default, inherit, global, export, require, transparent, normal",
