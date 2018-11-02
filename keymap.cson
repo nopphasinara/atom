@@ -69,6 +69,8 @@
   'alt-\+': 'gc:dplus'
   'alt-space': 'gc:spaces'
   'shift-alt-space': 'gc:insert-space'
+  'alt-0': 'gc:insert-parenthesis'
+  'alt-9': 'gc:insert-parenthesis'
   'shift-alt-enter': 'gc:insert-p'
   'alt-enter': 'gc:insert-br'
   'cmd-?': 'gc:html-comment'

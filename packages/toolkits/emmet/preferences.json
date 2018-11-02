@@ -1,7 +1,13 @@
 {
-  "filter.commentTrigger": "class",
-  "filter.commentAfter": "<!-- <%= attr('class', '/ .') %> -->",
+  "filter.commentTrigger": "id, class",
+  "filter.commentAfter": "\n<!-- <%= attr('id', '/ #') %><%= attr('class', '/ .') %> -->",
   "css.alignVendor": true,
-  "css.keywordAliases": "i:important, d:default, in:inherit, g:global, e:export, r:require",
-  "css.keywords": "important, default, inherit, global, export, require"
+  "css.keywordAliases": "i:important, d:default, in:inherit, g:global, e:export, r:require, t:transparent, n:normal",
+  "css.keywords": "important, default, inherit, global, export, require, transparent, normal",
+  "sass.propertyEnd": ";",
+  "css.color.case": "upper",
+  "css.color.short": false,
+  "css.fuzzySearch": true,
+  "css.fuzzySearchMinScore": 0.7,
+  "css.syntaxes": "css, less, sass, scss"
 }

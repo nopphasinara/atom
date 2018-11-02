@@ -1,9 +1,11 @@
 {
 	"html": {
 		"tag_case": "lower",
+    "tag_nl": true,
 		"attr_case": "lower",
 		"attr_quotes": "double",
-		"inline_break": "1"
+		"inline_break": "1",
+    "self_closing_tag": true
 	},
 
   "xhtml": "html",
