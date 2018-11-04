@@ -9,64 +9,85 @@ module.exports = {
       title: 'Padding for =>',
       description: 'Pad left or right of the character',
       type: 'string',
-      "enum": ['left', 'right'],
-      "default": 'left'
+      enum: ['left', 'right'],
+      default: 'left'
     },
     '=>-leftSpace': {
       title: 'Left space for =>',
       description: 'Add 1 whitespace to the left',
       type: 'boolean',
-      "default": true
+      default: true
     },
     '=>-rightSpace': {
       title: 'Right space for =>',
       description: 'Add 1 whitespace to the right',
       type: 'boolean',
-      "default": true
+      default: true
     },
     '=-alignment': {
       title: 'Padding for =',
       description: 'Pad left or right of the character',
       type: 'string',
-      "enum": ['left', 'right'],
-      "default": 'left'
+      enum: ['left', 'right'],
+      default: 'left'
     },
     '=-leftSpace': {
       title: 'Left space for =',
       description: 'Add 1 whitespace to the left',
       type: 'boolean',
-      "default": true
+      default: true
     },
     '=-rightSpace': {
       title: 'Right space for =',
       description: 'Add 1 whitespace to the right',
       type: 'boolean',
-      "default": true
+      default: true
     },
     '==-alignment': {
       title: 'Padding for == (including ===)',
       description: 'Pad left or right of the character',
       type: 'string',
-      "enum": ['left', 'right'],
-      "default": 'left'
+      enum: ['left', 'right'],
+      default: 'left'
     },
     '==-leftSpace': {
       title: 'Left space for == (including ===)',
       description: 'Add 1 whitespace to the left',
       type: 'boolean',
-      "default": true
+      default: true
     },
     '==-rightSpace': {
       title: 'Right space for == (including ===)',
       description: 'Add 1 whitespace to the right',
       type: 'boolean',
-      "default": true
+      default: true
+    },
+    ',-alignment': {
+      title: 'Padding for ,',
+      description: 'Pad left or right of the character',
+      type: 'string',
+      default: 'right',
+      'enum': ['left', 'right']
+    },
+    ',-leftSpace': {
+      title: 'Left space for ,',
+      description: 'Add 1 whitespace to the left of the character',
+      type: 'boolean',
+      default: false
+    },
+    ',-rightSpace': {
+      title: 'Right space for ,',
+      description: 'Add 1 whitespace to the right of the character',
+      type: 'boolean',
+      default: true
     }
   },
   privateConfig: {
     '=>-scope': 'key',
-    '=-scope': 'assignment',
+    '=-prefixes': ['+', '-', '%', '/', '*', '.'],
+    '=-scope': 'assignment|operator',
     '==-scope': 'operator',
-    '==-prefixes': ['=']
+    '==-prefixes': ['='],
+    ',-scope': 'separator'
   }
 };

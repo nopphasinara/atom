@@ -91,6 +91,8 @@
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
   'ctrl-escape': 'autocomplete-plus:activate'
+  # 'key1': 'html-entitize:encode'
+  # 'key2': 'html-entitize:decode'
 
 
 '.platform-darwin .tree-view':

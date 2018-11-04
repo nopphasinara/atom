@@ -10,7 +10,6 @@
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
-    defaultProvider: "Symbol"
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true

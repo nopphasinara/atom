@@ -6,6 +6,66 @@
     '''
 
 
+# All comments snippets
+'.source.css':
+  'Block comment':
+    'prefix': 'block-comment'
+    'body': '''
+    /*
+     * ${1:Comment heading}
+     *
+     * ${2:Describe the relevant details do that up here if it's important enough.}
+     */
+     $0
+    '''
+  'Line comment':
+    'prefix': 'line-comment'
+    'body': '''
+    /* ${1:Describe the relevant details.} */$0
+    '''
+  'Inline comment':
+    'prefix': 'inline-comment'
+    'body': '''
+    // ${1:Describe the relevant details.}$0
+    '''
+  'New stylesheet':
+    'prefix': 'insert-stylesheet'
+    'body': '''
+    ${1:element} {
+      ${2:/* Positioning */}
+      ${3:/* Box-model */}
+      ${4:/* Typography */}
+      ${5:/* Visual */}
+      ${6:/* Misc */}
+    }$0
+    '''
+
+
+'.source.css.scss':
+  '@include':
+    'prefix': 'inc'
+    'body': '''
+    @include ${2:$1;}$0
+    '''
+  '@include media-breakpoint-...':
+    'prefix': 'incme'
+    'body': '''
+    @include media-breakpoint-${1:up|down}($2) {
+      $3
+    }$0
+    '''
+  '@extend':
+    'prefix': 'ext'
+    'body': '''
+    @extend $1;$0
+    '''
+  '@import':
+    'prefix': 'imp'
+    'body': '''
+    @import "$1";$0
+    '''
+
+
 '.text.html.php, .text.html.php.blade':
   '<?php if () { ?>..<?php } else { ?>..<?php } ?>':
     'prefix': 'ifelse'

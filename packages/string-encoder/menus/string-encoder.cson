@@ -1,0 +1,93 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    label: 'String Encoder'
+    submenu: [
+      {
+        label: 'Base64 - Encode'
+        command: 'string-encoder:base64-encode'
+      }
+      {
+        label: 'Base64 - Decode'
+        command: 'string-encoder:base64-decode'
+      }
+      {
+        label: 'HTML Entities - Encode'
+        command: 'string-encoder:html-entities-encode'
+      }
+      {
+        label: 'HTML Entities - Decode'
+        command: 'string-encoder:html-entities-decode'
+      }
+      {
+        label: 'URI - Encode'
+        command: 'string-encoder:uri-encode'
+      }
+      {
+        label: 'URI - Decode'
+        command: 'string-encoder:uri-decode'
+      }
+      {
+        label: 'MD5'
+        command: 'string-encoder:md5'
+      }
+
+      {
+        label: 'SHA256'
+        command: 'string-encoder:sha256'
+      }
+
+      {
+        label: 'SHA512'
+        command: 'string-encoder:sha512'
+      }
+    ]
+  ]
+menu: [
+  {
+    label: 'Packages'
+    submenu: [
+      label: 'String Encoder'
+      submenu: [
+        {
+          label: 'Base64 - Encoder'
+          command: 'string-encoder:base64-encode'
+        }
+        {
+          label: 'Base64 - Decode'
+          command: 'string-encoder:base64-decode'
+        }
+        {
+          label: 'HTML Entities - Encoder'
+          command: 'string-encoder:html-entities-encode'
+        }
+        {
+          label: 'HTML Entities - Decode'
+          command: 'string-encoder:html-entities-decode'
+        }
+        {
+          label: 'URI - Encoder'
+          command: 'string-encoder:uri-encode'
+        }
+        {
+          label: 'URI - Decode'
+          command: 'string-encoder:uri-decode'
+        }
+        {
+          label: 'MD5'
+          command: 'string-encoder:md5'
+        }
+
+        {
+          label: 'SHA256'
+          command: 'string-encoder:sha256'
+        }
+
+        {
+          label: 'SHA512'
+          command: 'string-encoder:sha512'
+        }
+      ]
+    ]
+  }
+]
