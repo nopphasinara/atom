@@ -12,6 +12,7 @@
     confirmCompletion: "enter"
     minimumWordLength: 1
   "bracket-matcher":
+    alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
@@ -68,6 +69,7 @@
       "hyperclick"
       "sass-autocompile"
       "atom-beautify"
+      "nms-color-bracket"
     ]
     telemetryConsent: "no"
     themes: [

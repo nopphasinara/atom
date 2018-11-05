@@ -93,6 +93,7 @@
   'ctrl-escape': 'autocomplete-plus:activate'
   # 'key1': 'html-entitize:encode'
   # 'key2': 'html-entitize:decode'
+  'ctrl-b': 'bracket-matcher:select-inside-brackets'
 
 
 '.platform-darwin .tree-view':

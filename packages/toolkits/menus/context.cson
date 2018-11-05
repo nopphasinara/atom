@@ -194,6 +194,11 @@
             'command': 'aligner:align'
           }
           { "type": "separator" }
+          {
+            'label': 'Toggle Brackets Color'
+            'command': 'nms-color-bracket:toggle'
+          }
+          { "type": "separator" }
         ]
       }
     ]
