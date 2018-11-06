@@ -1,3 +1,10 @@
+'*':
+  'line ———':
+    'prefix': 'line'
+    'body': '''
+    ${1:————————————————————————————————}$0
+    '''
+
 '.text':
   'subscribers':
     'prefix': 'subscribers'

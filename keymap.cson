@@ -76,6 +76,7 @@
   'cmd-?': 'gc:html-comment'
   'alt-/': 'gc:block-comment'
   'alt-?': 'gc:inline-comment'
+  'alt-cmd-enter': 'gc:insert-linebreak'
   'shift-enter': 'emmet:expand-abbreviation'
   'ctrl-backspace': 'emmet:remove-tag'
   'ctrl-shift-C': 'emmet:evaluate-math-expression'

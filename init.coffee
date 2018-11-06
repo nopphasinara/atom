@@ -215,3 +215,9 @@ atom.commands.add 'atom-text-editor', 'gc:insert-parenthesis', ->
   selections = editor.getSelections()
   options = { select: false, skip: true }
   gc.mutateSelectedText(selections, '()', options)
+
+atom.commands.add 'atom-text-editor', 'gc:insert-linebreak', ->
+  editor = atom.workspace.getActiveTextEditor()
+  selections = editor.getSelections()
+  options = { select: false, skip: true }
+  gc.mutateSelectedText(selections, '————————————————————————————————', options)
