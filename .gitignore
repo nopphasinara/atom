@@ -12,3 +12,4 @@ packages/atom-autocomplete-php/indexes
 Thumbs.db
 /node_modules
 /recovery
+/split-diff
