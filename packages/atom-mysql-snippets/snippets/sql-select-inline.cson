@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-sinline":
+		prefix: "s-sinline"
+		body: "SELECT `${3/(.).*/$1/}`.$1 FROM `$3` AS `${3/(.).*/$1/}`$0"

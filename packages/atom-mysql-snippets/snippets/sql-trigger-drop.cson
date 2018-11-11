@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-trig-drop":
+		prefix: "s-trig-drop"
+		body: "DROP TRIGGER IF EXISTS `${1:name}`;$0"

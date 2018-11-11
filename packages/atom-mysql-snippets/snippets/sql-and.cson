@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-and":
+		prefix: "s-and"
+		body: "AND ( $1 )$0"

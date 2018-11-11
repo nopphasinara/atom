@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-scount":
+		prefix: "s-scount"
+		body: "SELECT COUNT(${1:*}) FROM `$2` AS `${2/(.).*/$1/}`$0"

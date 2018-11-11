@@ -1,4 +1,8 @@
 "*":
+  Clean2:
+    autoHideTabs: false
+    fullScreen: false
+    hideGutter: false
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
@@ -70,6 +74,8 @@
       "sass-autocompile"
       "atom-beautify"
       "nms-color-bracket"
+      "Clean2"
+      "distraction-free"
     ]
     telemetryConsent: "no"
     themes: [
@@ -77,6 +83,8 @@
       "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
+  "distraction-free":
+    zenMode: {}
   editor:
     fontFamily: "Menlo, monospace, master-icons"
     maxScreenLineLength: 4096

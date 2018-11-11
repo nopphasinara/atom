@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-db-drop":
+		prefix: "s-db-drop"
+		body: "DROP DATABASE `${1:db_name}`;$0"

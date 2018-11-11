@@ -1,0 +1,9 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-i":
+		prefix: "s-i"
+		body: '''
+			INSERT INTO `$1`(`$2`) VALUES
+			($3)${4:,
+			};$0
+		'''

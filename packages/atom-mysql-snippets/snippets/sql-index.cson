@@ -1,0 +1,8 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-idx":
+		prefix: "s-idx"
+		body: '''
+			INDEX `$1_idx` (`${1:email}` ASC$2)${3:,
+			}$0
+		'''

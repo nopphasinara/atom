@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-db":
+		prefix: "s-db"
+		body: "CREATE DATABASE `${1:db_name}` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;$0"

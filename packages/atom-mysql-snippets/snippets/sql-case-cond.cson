@@ -1,0 +1,22 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(case ... end case;)":
+		prefix: "s--case"
+		body: '''
+			CASE
+				${1:-- Example:
+				-- --------------------------------------------------------------------------
+				-- WHEN `my_var` = 5 THEN SELECT 'case equals 5';
+				--
+				-- WHEN `my_var` > 5 THEN BEGIN
+				--   SELECT 'case bigger than 5';
+				-- END;
+				--
+				-- ELSE SELECT 'case default';
+				-- --------------------------------------------------------------------------
+				-- you can use snippets for create a case
+				--   s-case-w  - When
+				--   s-case-wb - When Block
+				}${2:ELSE $0;}
+			END CASE;$0
+		'''

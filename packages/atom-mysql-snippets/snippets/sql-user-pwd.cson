@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(change user password)":
+		prefix: "s-user-pwd"
+		body: "SET PASSWORD ${1:FOR '${2:username}'@'${3:localhost}'} = PASSWORD('${4:password}');$0"

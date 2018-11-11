@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-union":
+		prefix: "s-union"
+		body: '''
+			(
+			  $1
+			) UNION (
+			  $2
+			)$0
+		'''

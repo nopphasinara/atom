@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+  "_id": "distraction-free@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hxrESQxbYqoOIFa+5zEFebUKx7eOtduNRxI63uxF92vsYDN4AeGGPYbnxlBMTI//Jfjh54uh7aSOTirHo3fH4Q==",
+  "_location": "/distraction-free",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+  "_shasum": "bd2075bd67121d5f39f8051d946ea1a9c0c42c21",
+  "_spec": "https://www.atom.io/api/packages/distraction-free/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-1181011-1941-l4i0n9.mpyzo",
+  "activationCommands": {
+    "atom-workspace": [
+      "distraction-free:more-space-to-active-toggle",
+      "distraction-free:zen-toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/n1k0laj/distraction-free/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Distraction free tools for Atom. Zen mode and More space for Active panel",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/n1k0laj/distraction-free#readme",
+  "keywords": [
+    "distraction-free",
+    "writing",
+    "zen"
+  ],
+  "license": "MIT",
+  "main": "./lib/distraction-free",
+  "name": "distraction-free",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1k0laj/distraction-free.git"
+  },
+  "version": "0.1.0"
+}

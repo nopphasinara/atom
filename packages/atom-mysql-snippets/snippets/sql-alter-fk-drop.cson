@@ -1,0 +1,8 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-fk-drop":
+		prefix: "s-alter-fk-drop"
+		body: '''
+			ALTER TABLE `$1`
+			DROP FOREIGN KEY `${2:fk_${3:the_table}_${4:far_table}}`;$0
+		'''

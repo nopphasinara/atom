@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(drop user)":
+		prefix: "s-user-drop"
+		body: "DROP USER '${1:username}'@'${2:localhost}';$0"

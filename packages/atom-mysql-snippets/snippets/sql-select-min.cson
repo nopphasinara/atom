@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-smin":
+		prefix: "s-smin"
+		body: "SELECT MIN(${1:id}) FROM `$2` AS `${2/(.).*/$1/}`$0"

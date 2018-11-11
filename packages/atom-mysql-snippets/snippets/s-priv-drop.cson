@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(remove privileges)":
+		prefix: "s-priv-drop"
+		body: "REVOKE ${1:ALL} ON `${2:db_name}`.`${3:table_name}` FROM '${4:user_name}'@'${5:localhost}';$0"

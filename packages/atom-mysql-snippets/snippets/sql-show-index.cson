@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(show indexes)":
+		prefix: "s-hidx"
+		body: "${2:SHOW INDEX FROM `${1:table}`;}$0"

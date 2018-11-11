@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(add privileges)":
+		prefix: "s-priv-add"
+		body: "GRANT ${1:ALL} PRIVILEGES ON `${2:db_name}`.`${3:table_name}` TO '${4:user_name}'@'${5:localhost}';$0"

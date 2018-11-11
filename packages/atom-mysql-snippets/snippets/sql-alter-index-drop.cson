@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-idx-drop":
+		prefix: "s-alter-idx-drop"
+		body: "ALTER TABLE `${1:table}` DROP INDEX `${3:index_name}`;$0"

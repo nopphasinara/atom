@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-func-list":
+		prefix: "s-func-list"
+		body: "${1:SELECT `name`, `param_list`, `comment` FROM `mysql`.`proc` WHERE `db`=DATABASE() AND `type` = 'FUNCTION';}$0"

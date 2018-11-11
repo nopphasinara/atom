@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-proc-drop":
+		prefix: "s-proc-drop"
+		body: "DROP PROCEDURE IF EXISTS `${1:name}`;$0"

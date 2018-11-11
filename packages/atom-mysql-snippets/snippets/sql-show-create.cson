@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(show create signature)":
+		prefix: "s-hcreate"
+		body: "${2:SHOW CREATE TABLE `${1:table}`;}$0"

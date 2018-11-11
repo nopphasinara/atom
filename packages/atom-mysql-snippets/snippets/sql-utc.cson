@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-utc":
+		prefix: "s-utc"
+		body: "SELECT UNIX_TIMESTAMP(NOW());$0"

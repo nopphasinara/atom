@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(new user, hashed password)":
+		prefix: "s-user-add-hash"
+		body: "CREATE USER '${1:username}'@'${2:localhost}' IDENTIFIED BY PASSWORD '*832EB84CB764129D05D498ED9CA7E5CE9B8F83EB';$0"

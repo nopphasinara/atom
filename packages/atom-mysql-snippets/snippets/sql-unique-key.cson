@@ -1,0 +1,8 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-uk":
+		prefix: "s-uk"
+		body: '''
+			UNIQUE KEY `unique_${1:id}`(`$1`$2)${3:,
+			}$0
+		'''

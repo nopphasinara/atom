@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(list privileges)":
+		prefix: "s-priv-list"
+		body: "SHOW GRANTS FOR '${1:user_name}'@'${2:localhost}'\\G$0"

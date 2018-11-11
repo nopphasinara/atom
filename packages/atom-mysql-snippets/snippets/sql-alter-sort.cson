@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-sort":
+		prefix: "s-alter-sort"
+		body: "ALTER TABLE `${1:table}` ORDER BY `${2:field}`;$0"

@@ -1,0 +1,9 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-ione":
+		prefix: "s-ione"
+		body: '''
+			INSERT INTO `$1` SET
+			`${2:name}` = '${3:value}'${4:,
+			};$0
+		'''

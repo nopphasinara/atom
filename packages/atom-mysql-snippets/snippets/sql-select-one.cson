@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-sone":
+		prefix: "s-sone"
+		body: '''
+			${5:SELECT
+			  *
+			FROM `$1`
+			WHERE `${2:id}` ${3:=} '$4';
+			}$0
+		'''

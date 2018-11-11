@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-j":
+		prefix: "s-j"
+		body: "INNER JOIN `$1` AS `${2:${1/(.)[^_]*(?:_(.))?.*/$1$2/}}` ON ( `${2:${1/(.)[^_]*(?:_(.))?.*/$1$2/}}`.`${4:id}` = `$5`.`${6:id}` )$0"

@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-auto-increment":
+		prefix: "s-alter-auto-increment"
+		body: "ALTER TABLE `${1:table}` AUTO_INCREMENT = ${2:1};$0"

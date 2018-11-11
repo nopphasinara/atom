@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-change":
+		prefix: "s-alter-change"
+		body: "ALTER TABLE `${1:table}` CHANGE `${2:old_name}` `${3:new_name}` ${4:new_type}${5: NOT NULL};$0"
