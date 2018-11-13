@@ -1,5 +1,0 @@
-# Generated with Atomizr – https://atom.io/packages/atomizr
-".source.sql":
-	"(list users)":
-		prefix: "s-user-list"
-		body: "SELECT `user`, `host`, `password` FROM `mysql`.`user`;$0"

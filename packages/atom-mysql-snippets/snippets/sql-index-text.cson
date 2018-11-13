@@ -1,8 +1,0 @@
-# Generated with Atomizr – https://atom.io/packages/atomizr
-".source.sql":
-	"s-idx-txt":
-		prefix: "s-idx-txt"
-		body: '''
-			FULLTEXT INDEX `$1_idx` (`${1:column}` ASC$2)${3:,
-			}$0
-		'''

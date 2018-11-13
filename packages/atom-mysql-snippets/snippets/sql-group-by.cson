@@ -1,5 +1,0 @@
-# Generated with Atomizr – https://atom.io/packages/atomizr
-".source.sql":
-	"s-g":
-		prefix: "s-g"
-		body: "GROUP BY `$1`$0"

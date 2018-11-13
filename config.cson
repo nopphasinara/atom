@@ -1,46 +1,33 @@
 "*":
-  Clean2:
-    autoHideTabs: false
-    fullScreen: false
-    hideGutter: false
   "advanced-open-file":
     fuzzyMatch: true
-    helmDirSwitch: true
-  aligner:
-    alignComments: true
-  "atom-autocomplete-php":
-    binPhp: "/usr/local/bin/php"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     minimumWordLength: 1
   "bracket-matcher":
-    alwaysSkipClosingPairs: true
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    automaticallyUpdate: false
     disabledPackages: [
-      "autosave"
-      "background-tips"
       "deprecation-cop"
-      "encoding-selector"
-      "exception-reporting"
-      "metrics"
-      "timecop"
-      "welcome"
     ]
-    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
-      "grammar-selector"
+      "tool-bar"
+      "autoflow"
+      "bookmarks"
+      "bracket-matcher"
+      "find-and-replace"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
       "go-to-line"
+      "grammar-selector"
       "image-view"
-      "keybinding-resolver"
-      "link"
       "markdown-preview"
       "notifications"
       "open-on-github"
@@ -48,34 +35,13 @@
       "styleguide"
       "symbols-view"
       "tree-view"
-      "git-diff"
-      "archive-view"
-      "autocomplete-plus"
-      "autoflow"
-      "bookmarks"
-      "bracket-matcher"
-      "dev-live-reload"
-      "find-and-replace"
-      "fuzzy-finder"
-      "github"
-      "tool-bar"
       "advanced-open-file"
       "project-manager"
-      "emmet"
       "sort-lines"
       "change-case"
-      "aligner"
-      "split-diff"
-      "git-status"
-      "browser-plus"
-      "git-plus"
-      "atom-autocomplete-php"
-      "hyperclick"
-      "sass-autocompile"
+      "emmet"
       "atom-beautify"
-      "nms-color-bracket"
-      "Clean2"
-      "distraction-free"
+      "sass-autocompile"
     ]
     telemetryConsent: "no"
     themes: [
@@ -83,11 +49,8 @@
       "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
-  "distraction-free":
-    zenMode: {}
   editor:
-    fontFamily: "Menlo, monospace, master-icons"
-    maxScreenLineLength: 4096
+    fontFamily: "Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -96,32 +59,15 @@
   emmet:
     extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
-    userId: "8fdd849b-d7cf-4849-8bfe-e5affc3a992b"
+    userId: "f214f68a-9799-402b-a53c-c3814c28ba21"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
   "fuzzy-finder":
     searchAllPanes: true
-  hyperclick:
-    darwinTriggerKeys: "ctrlKey"
-  "hyperlink-hyperclick":
-    protocols: [
-      "http"
-      "https"
-      "mailto"
-      "atom"
-      "ftp"
-      "ssh"
-      "sftp"
-    ]
-  "js-hyperclick":
-    jumpToImport: true
-  "language-applescript":
-    autoCompile: false
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
     hideDockButtons: true
-  "package-generator":
-    createInDevMode: true
-    packageSyntax: "coffeescript"
   "project-manager":
     showPath: false
     sortBy: "title"
@@ -129,45 +75,15 @@
     foldLogPanel: true
   "sass-autocompile":
     compileOnSave: false
-    showAdditionalCompilationInfo: false
-  "split-diff":
-    turnOffSoftWrap: true
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
     displayMruTabList: false
     enableMruTabSwitching: false
-  "tool-bar": {}
   welcome:
     showOnStartup: false
-".applescript.source":
-  editor:
-    commentEnd: ""
-    commentStart: "-- "
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
-".css.scss.source":
-  editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
-".dotenv.source":
-  editor:
-    softWrap: true
-".htaccess.source":
-  editor:
-    softWrap: true
-".html.php.text":
-  editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
-".ini.source":
-  editor:
-    softWrap: true
-".plain.text":
-  editor:
-    softWrap: true
-".sass.source":
-  editor:
-    autoIndentOnPaste: true
-    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"

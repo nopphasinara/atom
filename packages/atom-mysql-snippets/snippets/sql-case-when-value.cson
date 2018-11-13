@@ -1,5 +1,0 @@
-# Generated with Atomizr – https://atom.io/packages/atomizr
-".source.sql":
-	"(when '...' then ...)":
-		prefix: "s-case-w"
-		body: "WHEN '${1:value}' THEN ${0:-- SELECT 'case $1'};$0"

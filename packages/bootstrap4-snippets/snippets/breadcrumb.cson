@@ -1,9 +1,0 @@
-'.text.html':
-  'Breadcrumb':
-    'prefix': 'bs4-breadcrumb'
-    'body': """
-      <ol class="breadcrumb">
-        <li class="active">$1</li>
-        <li><a href="#">$2</a></li>
-      </ol>
-    """

@@ -1,49 +1,35 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-        "spec": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-        "type": "local"
-      },
-      "/private/tmp/apm-install-dir-11882-29460-u8mrda.661zs8xgvi"
-    ]
-  ],
-  "_from": "../d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
+  "_from": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
   "_id": "blade-snippets@0.2.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-V5f5Fjposn+e0wuhsz5LP8yeHEFAukFZKi/TX+ba1lQeYZr1U4bqOYU12lql15Vv9dEhUDGkhAZHEoYjfra2fw==",
   "_location": "/blade-snippets",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-    "spec": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-    "type": "local"
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball"
   },
   "_requiredBy": [
-    "#USER"
+    "#USER",
+    "/"
   ],
-  "_resolved": "file:../d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
+  "_resolved": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
   "_shasum": "b062d6df7ab506a2dac6c75a1b17e9cca0f26110",
-  "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-11882-29460-1knkxnx.9babp4x6r/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-11882-29460-u8mrda.661zs8xgvi",
+  "_spec": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-1181013-21411-hgknjr.9auso",
   "activationCommands": {
     "atom-workspace": "blade-snippets:toggle"
   },
   "bugs": {
     "url": "https://github.com/slayerfat/atom-blade-snippets/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {},
+  "deprecated": false,
   "description": "Laravel 5 blade snippets! useful snippets for the blade templating engine.",
-  "devDependencies": {},
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
@@ -51,9 +37,6 @@
   "license": "MIT",
   "main": "./lib/blade-snippets",
   "name": "blade-snippets",
-  "optionalDependencies": {},
-  "readme": "#Blade templating snippets for Atom\n\nLaravel 5 blade snippets! useful snippets for the Blade Templating Engine to use in Atom.\n\nConverted from [blade-snippets for sublime](https://github.com/dev4dev/blade-snippets)\nusing the [sublime to atom](https://github.com/james2doyle/sublime-to-atom-snippets) script.\n\n##Usage\n\nThese snippets will trigger only in `*.blade.php` files.\n\nType any snippet and hit TAB to receive incredible results!.\n\necho + TAB = {{ `$var` }}\n\nCheckout the [Available blade snippets.](#available-snippets)\n\nI recommend [this Blade language Package for Atom](https://atom.io/packages/language-blade) to be able to take full advantage of the Blade Templating Engine in this amazing editor.\n\n##Available snippets\n\n| Shortcut  | Result |\n|-----------|--------|\n| **}}** _or_ **echo** _or_\t**print**\t| {{ `$var` }} |\n| **!!**\t_or_ **uecho** _or_\t**uprint** | {!! `$var` !!}\t|\n| **sec**\t_or_ **section** | @section('`name`') <br /><br /> @endsection |\n| **sshow**\t_or_ **secs** | @section('`name`') <br /><br /> @show |\n| **inc**\t_or_ **include** | @include('`view.name`', `['some' => 'data']`)  |\n| **ext**\t_or_ **extends** | @extends('`name`')\t|\n| **yl** _or_ **yield**\t| @yield('`section`') |\n| **par**\t_or_ **parent**\t| @parent\t|\n| **if**\t| @if (`condition`) <br /><br /> @endif   |\n| **ife**\t| @if (`condition`) <br /><br /> @else <br /><br /> @endif  |\n| **for**\t\t| @for (`$i` = `0`; `$i` `<` `…`; `$i++`) <br /><br /> @endfor  |\n| **while**\t\t| @while (`condition`) <br /><br /> @endwhile  |\n| **un** _or_ **unless** | @unless (`condition`) <br /><br /> @endunless  |\n| **fea** _or_ **foreach** | @foreach(`$array` as `$element`) <br /><br /> @endforeach |\n| **fel** _or_ **forelse**| @forelse (`$array` as `$element`) <br /><br /> @endforelse  |\n| **each** | @each ('`item.view`', $`items`, '`item`', '`empty.view`')\n| **trans**\t\t| {!! trans('`language.line`') !!}\t|\n| **route**\t\t| {!! route('`name`') !!}\t|\n| **asset**\t\t| {!! asset('`path`') !!}\t|\n| **action**\t| {!! link_to_action('`Controller@method`') !!}\t|\n| **choice**\t| @choice('`language.line`', $`number`)  |\n| **comment** _or_ **//**\t| {{-- `comment` --}}\t|\n\n\n##Disclaimer\n\nFeel free to contribute!\n\nAs of today, i am a complete noob at making atom packages, if there is any error,\nsuggestion, improvement, etc, to point or make, feel free to do so.\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slayerfat/atom-blade-snippets.git"

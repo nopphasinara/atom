@@ -1,40 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-        "spec": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-        "type": "local"
-      },
-      "/private/tmp/apm-install-dir-11881-19136-7vkae9.x9817qr529"
-    ]
-  ],
-  "_from": "../d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
+  "_from": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
   "_id": "sort-lines@0.18.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-vljL2/DRELx3XIkjQutqZrifFlZuzHLsoKt6QRWSKeH1ja6ZWfKYr9D9mkrCo16Mt3u2sgjbwVOcFejp+8SmBg==",
   "_location": "/sort-lines",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-    "spec": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-    "type": "local"
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball"
   },
   "_requiredBy": [
-    "#USER"
+    "#USER",
+    "/"
   ],
-  "_resolved": "file:../d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
+  "_resolved": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
   "_shasum": "e7a421bc0e8655fa90b46cdc881c60983ade0816",
-  "_shrinkwrap": null,
-  "_spec": "/private/tmp/d-11881-19136-1ud4p78.v440hyf1or/package.tgz",
-  "_where": "/private/tmp/apm-install-dir-11881-19136-7vkae9.x9817qr529",
+  "_spec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-1181013-21168-o9k0zr.h90br",
   "activationCommands": {
     "atom-text-editor": [
       "sort-lines:sort",
@@ -49,12 +34,13 @@
   "bugs": {
     "url": "https://github.com/atom/sort-lines/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "array-shuffle": "^1.0.1",
     "javascript-natural-sort": "^0.7.1"
   },
+  "deprecated": false,
   "description": "Sorts your lines. Never gets tired.",
-  "devDependencies": {},
   "engines": {
     "atom": ">=1.4.0 <2.0.0"
   },
@@ -62,9 +48,6 @@
   "license": "MIT",
   "main": "./lib/sort-lines",
   "name": "sort-lines",
-  "optionalDependencies": {},
-  "readme": "# Sort Lines Package [![Build Status](https://travis-ci.org/atom/sort-lines.svg?branch=master)](https://travis-ci.org/atom/sort-lines)\n\nSorts your lines in Atom. Never gets tired.\n\n![sort-lines-demo](https://f.cloud.github.com/assets/2988/1796891/85e69ff2-6a93-11e3-89ac-31927f604592.gif)\n\n### Installation\n\nFrom within Atom: Settings -> Install -> search for \"sort-lines\" and click \"Install\" OR\n\nFrom CLI: `apm install sort-lines` and restart Atom.\n\n### Commands and Keybindings\n\nAll of the following commands are under the `atom-text-editor` selector.\n\nIf any lines are selected in the active buffer, the commands operate on the selected lines. Otherwise, the commands operate on all lines in the active buffer.\n\n|Command|Description|Keybinding|\n|-------|-----------|----------|\n|`sort-lines:sort`|Sorts the lines (case sensitive)|<kbd>F5</kbd>\n|`sort-lines:case-insensitive-sort`|Sorts the lines (case insensitive)|\n|`sort-lines:natural`|Sorts the lines ([\"natural\" order](https://www.npmjs.com/package/javascript-natural-sort))|\n|`sort-lines:reverse-sort`|Sorts the lines in reverse order (case sensitive)|\n|`sort-lines:by-length`|Sorts the lines by length|\n|`sort-lines:shuffle`|Sorts the lines in random order|\n|`sort-lines:unique`|Removes duplicate lines|\n\nCustom keybindings can be added by referencing the above commands.  To learn more, visit the [Using Atom: Basic Customization](http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings) or [Behind Atom: Keymaps In-Depth](http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth) sections in the flight manual.\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atom/sort-lines.git"

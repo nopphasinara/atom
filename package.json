@@ -1,0 +1,23 @@
+{
+  "name": "atom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopphasinara/atom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nopphasinara/atom/issues"
+  },
+  "homepage": "https://github.com/nopphasinara/atom#readme"
+}

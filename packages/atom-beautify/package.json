@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-beautify/versions/0.33.4/tarball",
   "_shasum": "68c9c7c305aa529c17a24ee0819fb3c5fe9ec5a4",
   "_spec": "https://www.atom.io/api/packages/atom-beautify/versions/0.33.4/tarball",
-  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11891-12066-wzvvpk.1b75t",
+  "_where": "/private/tmp/apm-install-dir-1181013-21469-15807na.0eo4",
   "activationCommands": {
     "atom-workspace": [
       "atom-beautify:help-debug-editor",
