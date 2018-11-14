@@ -1,0 +1,131 @@
+{
+  "_from": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+  "_id": "git-plus@8.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YD6sIq9VBg9o4mnH99oZ/WSD4jOi54ptQ6GG9Bz7SiCQev6MYg79RUf9/5tpJqhX0EC4tJH2Zlo7US1rX7Of6A==",
+  "_location": "/git-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+  "_shasum": "4adbce0fdc75e820294d5ea99e6049376bed0452",
+  "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-1181014-3599-1vbsyqd.2qaw",
+  "atomTranspilers": [
+    {
+      "glob": "{lib,spec}/**/*.js",
+      "transpiler": "atom-babel6-transpiler",
+      "options": {
+        "babel": {
+          "presets": [
+            "env",
+            "flow",
+            "react"
+          ],
+          "plugins": [
+            "transform-object-rest-spread",
+            [
+              "transform-class-properties",
+              {
+                "spec": true
+              }
+            ]
+          ],
+          "babelrc": false
+        }
+      }
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/akonwi/git-plus/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "autosave": {
+      "versions": {
+        "1.0.0": "consumeAutosave"
+      }
+    }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.51",
+    "ansi-to-html": "^0.4.1",
+    "atom-babel6-transpiler": "^1.2.0",
+    "atom-notify": "^1.1.0",
+    "atom-select-list": "^0.7.1",
+    "atom-space-pen-views": "^2.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
+    "fs-plus": "^2.2.0",
+    "fuzzaldrin": "^1.2.0",
+    "linkify-urls": "^2.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "underscore-plus": "^1.6.6"
+  },
+  "deprecated": false,
+  "description": "Do git things without the terminal",
+  "deserializers": {
+    "git-plus/output-view": "deserializeOutputView"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-react": "^7.10.0",
+    "flow-bin": "^0.75.0",
+    "lint": "^1.1.2",
+    "prettier": "^1.13.6",
+    "quibble": "^0.3.0"
+  },
+  "engines": {
+    "atom": ">= 1.17"
+  },
+  "homepage": "https://github.com/akonwi/git-plus#readme",
+  "keywords": [
+    "git"
+  ],
+  "license": "MIT",
+  "main": "./lib/git-plus",
+  "name": "git-plus",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "providedServices": {
+    "git-plus": {
+      "description": "Execute git commands",
+      "versions": {
+        "1.0.0": "provideService"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akonwi/git-plus.git"
+  },
+  "scripts": {
+    "flow": "flow",
+    "test": "eslint --fix \"lib/**/*.js\" \"spec/**/*.js\" && apm test"
+  },
+  "version": "8.1.0"
+}

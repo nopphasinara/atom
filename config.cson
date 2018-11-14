@@ -42,6 +42,7 @@
       "emmet"
       "atom-beautify"
       "sass-autocompile"
+      "git-plus"
     ]
     telemetryConsent: "no"
     themes: [
@@ -64,6 +65,11 @@
     liveSearchMinimumCharacters: 1
   "fuzzy-finder":
     searchAllPanes: true
+  "git-plus":
+    commits:
+      verboseCommits: true
+    general:
+      showFormat: "fuller"
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
