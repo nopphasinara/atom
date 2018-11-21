@@ -1,6 +1,8 @@
 "*":
   "advanced-open-file":
     fuzzyMatch: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -43,6 +45,7 @@
       "atom-beautify"
       "sass-autocompile"
       "git-plus"
+      "atom-autocomplete-php"
     ]
     telemetryConsent: "no"
     themes: [
