@@ -99,3 +99,12 @@
     commentEnd: " --}}"
     commentStart: "{{-- "
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-$"
+".css.scss.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"
+".css.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"
+".sass.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"
