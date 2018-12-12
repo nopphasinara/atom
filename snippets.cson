@@ -123,6 +123,27 @@
 
 
 '.source.php':
+  'Block comment':
+    'prefix': 'block-comment'
+    'body': '''
+    /*
+     * ${1:Comment heading}
+     *
+     * ${2:Describe the relevant details do that up here if it's important enough.}
+     */
+    $0
+    '''
+  'Line comment':
+    'prefix': 'line-comment'
+    'body': '''
+    /* ${1:Describe the relevant details.} */$0
+    '''
+  'Inline comment':
+    'prefix': 'inline-comment'
+    'body': '''
+    // ${1:Describe the relevant details.}$0
+    '''
+
   'public function':
     'prefix': 'pb-fn'
     'body': '''

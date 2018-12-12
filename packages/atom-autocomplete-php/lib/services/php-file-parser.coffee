@@ -1,4 +1,5 @@
-proxy = require "../services/php-proxy.coffee"
+proxy = require "./php-proxy.coffee"
+# proxy = require "../services/php-proxy.coffee"
 config = require "../config.coffee"
 plugins = require "../services/plugin-manager.coffee"
 
@@ -681,7 +682,8 @@ module.exports =
         if not calledClass && not @isFunction
             return
 
-        proxy = require '../services/php-proxy.coffee'
+        proxy = require './php-proxy.coffee'
+        # proxy = require '../services/php-proxy.coffee'
         if @isFunction
           methods = proxy.functions()
         else

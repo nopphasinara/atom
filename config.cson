@@ -48,6 +48,7 @@
       "sass-autocompile"
       "git-plus"
       "atom-autocomplete-php"
+      "split-diff"
     ]
     telemetryConsent: "no"
     themes: [
@@ -74,8 +75,9 @@
   "git-plus":
     commits:
       verboseCommits: true
-    general:
-      showFormat: "fuller"
+    diffs:
+      useSplitDiff: true
+    general: {}
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
@@ -87,6 +89,10 @@
     foldLogPanel: true
   "sass-autocompile":
     compileOnSave: false
+  "split-diff":
+    ignoreWhitespace: true
+    syncHorizontalScroll: true
+    turnOffSoftWrap: true
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
