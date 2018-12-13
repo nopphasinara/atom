@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+  "_id": "language-http@0.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-XPf5R/VogxlcdXTMJj6XBaK08fyiqZpaT/QCJMH4Hlk/b3CSD5d61wr3AT9eyzOq/T17RP5KC7QlSAFVT+chqw==",
+  "_location": "/language-http",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+  "_shasum": "2523e64c5a966547054a20a7d67ea386d6f4b455",
+  "_spec": "https://www.atom.io/api/packages/language-http/versions/0.3.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-1181113-2796-tg0uxy.mqp8q",
+  "bugs": {
+    "url": "https://github.com/romainmenke/language-http/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "HTTP syntax support",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/romainmenke/language-http#readme",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "license": "MIT",
+  "name": "language-http",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romainmenke/language-http.git"
+  },
+  "version": "0.3.1"
+}

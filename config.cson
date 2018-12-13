@@ -1,6 +1,7 @@
 "*":
   "advanced-open-file":
     fuzzyMatch: true
+  "aligner-css": {}
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
   "autocomplete-php":
@@ -49,6 +50,7 @@
       "git-plus"
       "atom-autocomplete-php"
       "split-diff"
+      "aligner"
     ]
     telemetryConsent: "no"
     themes: [

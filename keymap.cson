@@ -47,6 +47,7 @@
   'alt-cmd-a': 'aligner:align'
   'alt-cmd-tab': 'editor:auto-indent'
 
+
 '.go-to-line atom-text-editor[mini]':
   'cmd-w': 'unset!'
   'enter': 'core:confirm'
