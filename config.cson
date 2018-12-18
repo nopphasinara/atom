@@ -51,6 +51,7 @@
       "atom-autocomplete-php"
       "split-diff"
       "aligner"
+      "hyperclick"
     ]
     telemetryConsent: "no"
     themes: [
@@ -80,6 +81,8 @@
     diffs:
       useSplitDiff: true
     general: {}
+  hyperclick:
+    darwinTriggerKeys: "altKey"
   "markdown-preview":
     breakOnSingleNewline: true
   "one-dark-ui":
