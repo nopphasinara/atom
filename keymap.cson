@@ -117,6 +117,7 @@
   'backspace': 'tree-view:remove'
   'up': 'core:move-up'
   'down': 'core:move-down'
+  'alt-cmd-o': 'tree-view:show-in-file-manager'
 
 '.tree-view-dialog atom-text-editor[mini]':
   'enter': 'core:confirm'
