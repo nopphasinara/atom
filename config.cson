@@ -20,6 +20,7 @@
     audioBeep: false
     disabledPackages: [
       "deprecation-cop"
+      "github"
     ]
     packagesWithKeymapsDisabled: [
       "tool-bar"
