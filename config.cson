@@ -56,12 +56,12 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "one-dark-vivid-syntax"
+      "one-dark-syntax"
     ]
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, RobotoMono-Regular, master-icons, monospace"
-    fontSize: 12
+    fontSize: 14
     maxScreenLineLength: 2048
     scrollPastEnd: true
     showIndentGuide: true
