@@ -60,7 +60,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "RobotoMono-Regular, Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "BitstreamVeraSansMono-Roman, RobotoMono-Regular, Menlo, master-icons, Consolas, DejaVu Sans Mono, monospace"
     maxScreenLineLength: 2048
     scrollPastEnd: true
     showIndentGuide: true
