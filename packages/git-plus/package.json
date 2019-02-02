@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-  "_id": "git-plus@8.4.2",
+  "_from": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+  "_id": "git-plus@8.6.0",
   "_inBundle": false,
-  "_integrity": "sha512-999xqgR07sDQg46F614TOd8aGyvrTB/x/894Gu44o/uDRP4Yaf5JpvOgyCb7Wbv8GT8V1Dk57MW4+WBzya8H3g==",
+  "_integrity": "sha512-2ntsRQs7crw6RGABLvzRW1v0wmLsggtREbJq4F6izhl87YLfSz2w00jQV/L/2V/hxd2tbhY0IQoUZcFvaTv5jw==",
   "_location": "/git-plus",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball"
+    "raw": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-  "_shasum": "ef49a017aeeedec8847d9122f360ecacbead65c0",
-  "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.4.2/tarball",
-  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119014-2993-1ftirfw.6uew",
+  "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+  "_shasum": "ddba51fda17198da666e5742faa5155a5b7a846f",
+  "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.6.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11912-9154-syx676.wenoj",
   "atomTranspilers": [
     {
       "glob": "{lib,spec}/**/*.js",
@@ -92,6 +92,7 @@
     "fs-plus": "^2.2.0",
     "fuzzaldrin": "^1.2.0",
     "linkify-urls": "^2.0.0",
+    "node-emoji": "^1.8.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "typescript": "^3.2.2",
@@ -141,5 +142,5 @@
     "debug": "atom-transpiler-debug-tool",
     "test": "eslint --fix \"lib/**/*.js\" \"spec/**/*.js\" && apm test"
   },
-  "version": "8.4.2"
+  "version": "8.6.0"
 }
