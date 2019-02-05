@@ -90,7 +90,7 @@
     '''
 
 
-'.text.html.php, .text.html.php.blade':
+'.text.html.php':
   '<?php if () { ?>..<?php } else { ?>..<?php } ?>':
     'prefix': 'ifelse'
     'body': '''
@@ -114,6 +114,16 @@
     'prefix': 'pr'
     'body': '''
     <?php echo \\'<pre>\\'; print_r($1); echo \\'</pre>\\'; ?>$0
+    '''
+
+
+'.text.html.php.blade':
+  '@php':
+    'prefix': 'php'
+    'body': '''
+    @php
+    ${1://}
+    @endphp$0
     '''
   '@component()':
     'prefix': 'component'
