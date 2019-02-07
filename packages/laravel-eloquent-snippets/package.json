@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+  "_id": "laravel-eloquent-snippets@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-a6Xl7IGS+WQc1cyupPAh17R0ISu6PXGPeNBcSz9qZWTmT3vrbg1s6UXKzUbtDpZ99LAtUx/M3j48Dq84uM8EYA==",
+  "_location": "/laravel-eloquent-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+  "_shasum": "26f608061ccf7ca4a257e011aeae2a10b3574bfa",
+  "_spec": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11918-34491-1p2soz6.seh7",
+  "activationCommands": {
+    "atom-workspace": "laravel-eloquent-snippets:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/jpmurray/laravel-eloquent-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Snippets for Atom to generate Eloquent code based on Adam Wathan's snippets for Sublime Text.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jpmurray/laravel-eloquent-snippets#readme",
+  "license": "MIT",
+  "main": "./lib/laravel-eloquent-snippets",
+  "name": "laravel-eloquent-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmurray/laravel-eloquent-snippets.git"
+  },
+  "version": "2.0.0"
+}
