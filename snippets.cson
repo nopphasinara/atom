@@ -100,6 +100,13 @@
       $3
     <?php } ?>$0
     '''
+  '<?php if () { ?>..<?php } ?>':
+    'prefix': 'if'
+    'body': '''
+    <?php if ($1) { ?>
+      $2
+    <?php } ?>$0
+    '''
   '<?php...':
     'prefix': 'ph'
     'body': '''
