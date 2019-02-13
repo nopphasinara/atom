@@ -1,3 +1,7 @@
+'body':
+  'shift-cmd-O': 'unset!'
+  'shift-cmd-A': 'application:add-project-folder'
+
 '.platform-darwin':
   'cmd-alt-f': 'unset!'
   'cmd-t': 'unset!'
