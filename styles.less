@@ -172,6 +172,22 @@
   }
 }
 
+atom-dock {
+  &.left {
+    > .atom-dock-inner.left.atom-dock-open {
+      > .atom-dock-mask {
+        min-width: 200px !important;
+        max-width: 250px !important;
+
+        > .atom-dock-content-wrapper {
+          min-width: 200px !important;
+          max-width: 250px !important;
+        }
+      }
+    }
+  }
+}
+
 // atom-dock {
 //   &.left {
 //     .tool-panel {

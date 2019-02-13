@@ -56,7 +56,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "one-dark-syntax"
+      "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
   editor:
@@ -88,6 +88,7 @@
     breakOnSingleNewline: true
   "one-dark-ui":
     hideDockButtons: true
+    stickyHeaders: true
   "project-manager":
     showPath: false
     sortBy: "title"
