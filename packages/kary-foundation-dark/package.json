@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+  "_id": "kary-foundation-dark@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-zkFjr5xwtJbSfmvn4UysAWm9KqeEGkvUJSvI8MaY7mpvA1fsTOXZQhz5uGG688JjV/8Af8NToHxnfm1Ge0vV+Q==",
+  "_location": "/kary-foundation-dark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+  "_shasum": "77269f77bf1222091b525f06d7082384b6bcc32f",
+  "_spec": "https://www.atom.io/api/packages/kary-foundation-dark/versions/4.0.0/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119113-22359-1pnr0me.u8uc",
+  "author": {
+    "name": "Kary Foundation, Inc"
+  },
+  "bugs": {
+    "url": "https://github.com/karyfoundation/atom-kf-dark/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Kary Foundation's Dark Theme",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/karyfoundation/atom-kf-dark#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "kary-foundation-dark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karyfoundation/atom-kf-dark.git"
+  },
+  "theme": "syntax",
+  "version": "4.0.0"
+}

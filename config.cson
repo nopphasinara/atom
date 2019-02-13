@@ -12,6 +12,8 @@
     provider: "FuzzyProvider"
   "bracket-matcher":
     highlightMatchingLineNumber: true
+  "city-lights-ui":
+    fontSize: 12
   "command-palette":
     preserveLastSearch: true
   core:
@@ -88,7 +90,6 @@
     breakOnSingleNewline: true
   "one-dark-ui":
     hideDockButtons: true
-    stickyHeaders: true
   "project-manager":
     showPath: false
     sortBy: "title"
