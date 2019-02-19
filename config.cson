@@ -69,6 +69,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabLength: 4
     tabType: "soft"
   emmet:
     extensionsPath: "~/.atom/packages/toolkits/emmet"
