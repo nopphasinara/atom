@@ -90,6 +90,7 @@
     darwinTriggerKeys: "altKey"
   "markdown-preview":
     breakOnSingleNewline: true
+    openPreviewInSplitPane: false
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
