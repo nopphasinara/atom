@@ -2,8 +2,7 @@
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
-  "atom-autocomplete-php":
-    binPhp: "/usr/local/bin/php"
+  "atom-autocomplete-php": {}
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
