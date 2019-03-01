@@ -1,0 +1,84 @@
+// UI Variables
+
+// Text Colors
+@text-color:           hsl(60, 3%, 66%);
+@text-color-subtle:    hsl(60, 3%, 50%);
+@text-color-highlight: hsl(60, 3%, 94%);
+@text-color-selected:  hsl(60, 3%, 94%);
+
+@text-color-info:    hsl(219,  79%, 66%);
+@text-color-success: hsl(140,  88%, 62%);
+@text-color-warning: hsl( 63,  86%, 62%);
+@text-color-error:   hsl(  1, 96%, 67%);
+
+// Base colors
+@base-background-color: hsl(231, 15%, 18%);
+@base-border-color:     hsl(231, 17%, 16%);
+
+// Background colors
+@background-color-info:    darken(@text-color-info, 12%);
+@background-color-success: darken(@text-color-success, 20%);
+@background-color-warning: lighten(@text-color-warning, 6%);
+@background-color-error:   darken(@text-color-error, 4%);
+
+@background-color-highlight: lighten(@base-background-color, 5%);
+@background-color-selected:  lighten(@base-background-color, 10%);
+@app-background-color:       @base-background-color;
+
+// Component colors
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @app-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @base-background-color;
+@tool-panel-border-color:     @base-border-color;
+
+@inset-panel-background-color: @base-background-color;
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: @base-background-color;
+@panel-heading-border-color:     @base-border-color;
+
+@overlay-background-color: @base-background-color;
+@overlay-border-color:     @base-border-color;
+
+@button-background-color:          @base-background-color;
+@button-background-color-hover:    lighten(@button-background-color, 5%);
+@button-background-color-selected: @button-background-color-hover;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    @base-background-color;
+@tab-bar-border-color:        @base-border-color;
+@tab-background-color:        @tab-bar-background-color;
+@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-border-color:            @base-border-color;
+
+@tree-view-background-color: @base-background-color;
+@tree-view-border-color:     @base-border-color;
+
+// Site colors
+@ui-site-color-1: hsl(208, 100%, 50%); // blue
+@ui-site-color-2: hsl(160,  70%, 42%); // green
+@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-4: #FD6DC0;             // pink
+@ui-site-color-5: #F3F8A2;             // yellow
+
+// Sizes
+@font-size: 12px;
+@input-font-size: 13px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+
+@tab-height: 30px;
+
+// Misc
+@component-border-radius: 2px;
+@font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

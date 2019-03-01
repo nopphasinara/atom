@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+  "_id": "bright-dark-syntax@0.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-mfQQxd33idiQr9VVTJ7xKdkbYutd6xQt7IvZOqFNXi5vfkCa9FwCC6vnoTMFeQqp4kBT6xO26LgqheJV1i0eJA==",
+  "_location": "/bright-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+  "_shasum": "e9870a29a7759e10647d192519a7c7c395e21ce5",
+  "_spec": "https://www.atom.io/api/packages/bright-dark-syntax/versions/0.4.1/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11921-14467-1eiiluh.algf",
+  "bugs": {
+    "url": "https://github.com/janneh/bright-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark syntax theme adapted to match Bright Dark UI theme",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "files": [
+    "index.less",
+    "styles/"
+  ],
+  "homepage": "https://github.com/janneh/bright-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "bright-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janneh/bright-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.4.1"
+}
