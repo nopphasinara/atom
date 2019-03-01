@@ -56,10 +56,6 @@
       "hyperclick"
     ]
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "rocket-dark-syntax"
-    ]
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, master-icons, monospace"
@@ -69,7 +65,6 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    tabLength: 4
     tabType: "soft"
   emmet:
     extensionsPath: "~/.atom/packages/toolkits/emmet"
