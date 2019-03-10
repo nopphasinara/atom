@@ -17,7 +17,7 @@
     "atom-ide-terminal":
       allowTransparency: true
       cursorBlink: true
-      fontFamily: "Menlo, master-icons"
+      fontFamily: "iAWriterQuattroV-Regular, Menlo, master-icons, monospace"
     use:
       "atom-ide-code-format": "never"
       "atom-ide-code-highlight": "never"
@@ -96,7 +96,7 @@
     titleBar: "hidden"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Menlo, master-icons, monospace"
+    fontFamily: "iAWriterQuattroV-Regular, Menlo, master-icons, monospace"
     fontSize: 14
     maxScreenLineLength: 2048
     scrollPastEnd: true
