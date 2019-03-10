@@ -1,11 +1,26 @@
 "*":
+  _dart:
+    _firstRun: true
+    _version: "1.0.1"
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
   "atom-autocomplete-php": {}
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+      showDirectoryColumn: true
+    "atom-ide-terminal":
+      cursorBlink: true
+      fontFamily: "Menlo, master-icons"
+    use:
+      "atom-ide-code-format": "never"
+      "atom-ide-code-highlight": "never"
+      hyperclick: "never"
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
+    autoActivationDelay: 500
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     minimumWordLength: 1
@@ -22,8 +37,10 @@
     disabledPackages: [
       "deprecation-cop"
       "github"
+      "linter"
     ]
     fileSystemWatcher: "atom"
+    followSymlinks: false
     ignoredNames: [
       ".git"
       ".hg"
@@ -95,6 +112,8 @@
     general: {}
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "linter-ui-default":
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false

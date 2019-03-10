@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+  "_id": "atom-toolbar@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha512-rm2IoxJji7K+bCbVQT2ISGNf92AKbzwQXif5qDoTUkYg75ATBiWh9PQl3PPuj36hVmSPLK4DpIryOEUGjes8aA==",
+  "_location": "/atom-toolbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+  "_shasum": "6626483fabcc013a46a6c60b4c6d57b7b01364c0",
+  "_spec": "https://www.atom.io/api/packages/atom-toolbar/versions/0.1.6/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11929-8732-hwm4pz.vhgx",
+  "bugs": {
+    "url": "https://github.com/dart-atom/atom-toolbar/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0",
+    "fs-plus": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Displays a configurable toolbar at the top of the workspace.",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/dart-atom/atom-toolbar#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-toolbar",
+  "providedServices": {
+    "atom-toolbar": {
+      "description": "A container for UI elements at the top of the workspace",
+      "versions": {
+        "1.0.0": "provideToolbar"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dart-atom/atom-toolbar.git"
+  },
+  "version": "0.1.6"
+}
