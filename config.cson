@@ -12,7 +12,6 @@
     "atom-ide-datatip":
       datatipDebounceDelay: 100
     "atom-ide-diagnostics-ui":
-      autoVisibility: true
       showDiagnosticTraces: true
       showDirectoryColumn: true
     "atom-ide-terminal":
@@ -135,7 +134,6 @@
   "linter-ui-default":
     hidePanelWhenEmpty: false
     panelHeight: 300
-    showPanel: true
     showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true
