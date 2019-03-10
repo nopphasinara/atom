@@ -7,10 +7,16 @@
   "aligner-css": {}
   "atom-autocomplete-php": {}
   "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
+    "atom-ide-datatip":
+      datatipDebounceDelay: 100
     "atom-ide-diagnostics-ui":
       autoVisibility: true
+      showDiagnosticTraces: true
       showDirectoryColumn: true
     "atom-ide-terminal":
+      allowTransparency: true
       cursorBlink: true
       fontFamily: "Menlo, master-icons"
     use:
@@ -39,7 +45,6 @@
     disabledPackages: [
       "deprecation-cop"
       "github"
-      "linter"
     ]
     fileSystemWatcher: "atom"
     followSymlinks: false
@@ -85,6 +90,8 @@
       "split-diff"
       "aligner"
       "hyperclick"
+      "ide-haskell"
+      "intentions"
     ]
     telemetryConsent: "no"
     titleBar: "hidden"
@@ -114,8 +121,22 @@
     general: {}
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "ide-css":
+    additionalGrammars: [
+      "source.css.sass"
+      "source.css.tyls"
+      "source.css.scss"
+      "source.css.less"
+    ]
+  "ide-html":
+    additionalGrammars: [
+      "text.html.php.blade"
+    ]
   "linter-ui-default":
+    hidePanelWhenEmpty: false
     panelHeight: 300
+    showPanel: true
+    showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
