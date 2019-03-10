@@ -119,6 +119,7 @@
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
+    useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":

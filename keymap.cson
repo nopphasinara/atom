@@ -19,6 +19,7 @@
   'alt-cmd-p': 'project-manager:edit-projects'
   'alt-cmd-left': 'window:focus-previous-pane'
   'alt-cmd-right': 'window:focus-next-pane'
+  'shift-ctrl-P': 'markdown-preview:toggle'
 
 '.project-manager input':
   'enter': 'core:confirm'
