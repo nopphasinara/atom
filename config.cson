@@ -17,6 +17,8 @@
       "atom-ide-code-format": "never"
       "atom-ide-code-highlight": "never"
       hyperclick: "never"
+  "atom-toolbar":
+    visible: false
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
