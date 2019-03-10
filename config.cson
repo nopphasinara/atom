@@ -85,7 +85,7 @@
       "hyperclick"
     ]
     telemetryConsent: "no"
-    titleBar: "custom"
+    titleBar: "hidden"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo, master-icons, monospace"
