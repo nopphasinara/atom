@@ -257,10 +257,6 @@
             'command': 'git-plus-context:add'
           }
           {
-            'label': 'Add Modified'
-            'command': 'git-plus-context:add-modified'
-          }
-          {
             'label': 'Commit'
             'command': 'git-plus-context:commit'
           }
@@ -270,6 +266,10 @@
           }
           {
             'label': 'Add All + Commit'
+            'command': 'git-plus-context:add-all-and-commit'
+          }
+          {
+            'label': 'Push'
             'command': 'git-plus-context:add-all-and-commit'
           }
         ]
