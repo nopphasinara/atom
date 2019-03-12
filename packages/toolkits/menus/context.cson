@@ -254,23 +254,23 @@
         "submenu": [
           {
             'label': 'Add'
-            'command': 'git-plus:add'
+            'command': 'git-plus-context:add'
           }
           {
             'label': 'Add Modified'
-            'command': 'git-plus:add-modified'
+            'command': 'git-plus-context:add-modified'
           }
           {
             'label': 'Commit'
-            'command': 'git-plus:commit'
+            'command': 'git-plus-context:commit'
           }
           {
             'label': 'Add + Commit'
-            'command': 'git-plus:add-and-commit'
+            'command': 'git-plus-context:add-and-commit'
           }
           {
             'label': 'Add All + Commit'
-            'command': 'git-plus:add-all-and-commit'
+            'command': 'git-plus-context:add-all-and-commit'
           }
         ]
       }
