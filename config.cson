@@ -93,6 +93,10 @@
       "intentions"
     ]
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
     titleBar: "hidden"
     uriHandlerRegistration: "always"
   editor:
@@ -150,6 +154,7 @@
     compileOnSave: false
   "split-diff":
     ignoreWhitespace: true
+    muteNotifications: true
     syncHorizontalScroll: true
     turnOffSoftWrap: true
   "symbols-view":
