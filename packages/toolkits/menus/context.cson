@@ -249,6 +249,31 @@
           }
         ]
       }
+      {
+        "label": "Git"
+        "submenu": [
+          {
+            'label': 'Add'
+            'command': 'git-plus:add'
+          }
+          {
+            'label': 'Add Modified'
+            'command': 'git-plus:add-modified'
+          }
+          {
+            'label': 'Commit'
+            'command': 'git-plus:commit'
+          }
+          {
+            'label': 'Add + Commit'
+            'command': 'git-plus:add-and-commit'
+          }
+          {
+            'label': 'Add All + Commit'
+            'command': 'git-plus:add-all-and-commit'
+          }
+        ]
+      }
     ]
 
     ".tree-view": [
