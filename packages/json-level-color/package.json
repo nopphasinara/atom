@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+  "_id": "json-level-color@0.1.4",
+  "_inBundle": false,
+  "_integrity": "sha512-+7MzBgqA2Kyt6CM8KDg8ZB5v+moLOSAOWHRksIaJaKpMAkEJzA3jWXkzhItPzRdV4n8fr4z4lXh4JH5camf+ew==",
+  "_location": "/json-level-color",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+  "_shasum": "2c930803a60f0ae27ed0712ada2441057cda821d",
+  "_spec": "https://www.atom.io/api/packages/json-level-color/versions/0.1.4/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-119212-27058-1bh6546.398q",
+  "bugs": {
+    "url": "https://github.com/bbuck/atom-json-level-color/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Provide customizable colors per level of a JSON object",
+  "engines": {
+    "atom": ">=1.13.0"
+  },
+  "homepage": "https://github.com/bbuck/atom-json-level-color#readme",
+  "issues": {
+    "url": "https://github.com/bbuck/atom-json-level-color/issues"
+  },
+  "keywords": [
+    "JSON",
+    "level",
+    "colorize"
+  ],
+  "license": "MIT",
+  "main": "./lib/json-level-color",
+  "name": "json-level-color",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbuck/atom-json-level-color.git"
+  },
+  "version": "0.1.4"
+}
