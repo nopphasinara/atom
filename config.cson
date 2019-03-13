@@ -27,11 +27,13 @@
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
-    autoActivationDelay: 500
+    autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
     provider: "FuzzyProvider"
+    similarSuggestionRemoval: "textOrSnippet"
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "city-lights-ui":
@@ -42,11 +44,10 @@
     allowPendingPaneItems: false
     audioBeep: false
     disabledPackages: [
+      "background-tips"
+      "metrics"
       "deprecation-cop"
-      "github"
     ]
-    fileSystemWatcher: "atom"
-    followSymlinks: false
     ignoredNames: [
       ".git"
       ".hg"
@@ -92,6 +93,7 @@
       "ide-haskell"
       "intentions"
     ]
+    reopenProjectMenuCount: 5
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -102,7 +104,7 @@
   editor:
     fontFamily: "iAWriterMonoV-Regular, Menlo, master-icons, monospace"
     fontSize: 14
-    maxScreenLineLength: 2048
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -115,6 +117,15 @@
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "._*"
+      "*.db"
+      "*.log"
+      "*.md"
+      ".DS_Store"
+    ]
+    preserveLastSearch: true
     searchAllPanes: true
   "git-plus":
     commits:

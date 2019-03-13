@@ -86,6 +86,20 @@
     'body': '''
     // ${1:Describe the relevant details.}$0
     '''
+  'function ...':
+    'prefix': 'func'
+    'body': '''
+    function ${1:functionName}($2) \{
+      ${3:\/\/}
+    \}$0
+    '''
+  'function ()':
+    'prefix': 'fn'
+    'body': '''
+    function ($1) \{
+      ${2:\/\/}
+    \}$0
+    '''
 
 
 '.source.css.scss':
