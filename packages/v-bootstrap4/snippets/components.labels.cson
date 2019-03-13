@@ -1,0 +1,13 @@
+'.text.html':
+
+  'Labels':
+    'prefix': 'label-'
+    'body': """
+    <span class="label label-${1:default}">$2</span>
+    """
+
+  'Pill labels':
+    'prefix': 'label-pill'
+    'body': """
+    <span class="label label-pill label-${1:default}">$2</span>
+    """
