@@ -106,7 +106,6 @@
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "iAWriterMonoV-Regular, Menlo, master-icons, monospace"
-    fontSize: 14
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
