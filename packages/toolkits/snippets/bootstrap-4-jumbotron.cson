@@ -1,0 +1,19 @@
+'.text.html.basic, .text.html.php':
+
+	'Jumbotron':
+		'prefix': 'jumbotron'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="jumbotron">
+				<h1 class="display-4">${1:Hello, world!}</h1>
+			</div>$2
+		"""
+
+	'Jumbotron Fluid':
+		'prefix': 'jumbotronfluid'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="jumbotron-fluid">
+				<h1 class="display-4">${1:Hello, world!}</h1>
+			</div>$2
+		"""

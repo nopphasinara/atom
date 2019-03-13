@@ -1,0 +1,58 @@
+'.text.html.basic, .text.html.php':
+
+	'Button':
+		'prefix': 'btn'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<a class="btn btn-${1:primary}" href="#" role="button">$2</a>'
+
+	'Button outline':
+		'prefix': 'btnoutline'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<a class="btn btn-outline-${1:primary}" href="#" role="button">$2</a>'
+
+	'Button dropdown':
+		'prefix': 'btndropdown'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				${1:Action}
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">$2</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">$3</a>
+				</div>
+			</div>
+		"""
+
+	'Button split':
+		'prefix': 'btnsplit'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="btn-group">
+				<button type="button" class="btn btn-danger">${1:Action}</button>
+				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">$2</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">$3</a>
+				</div>
+			</div>
+		"""
+
+	'Button group':
+		'prefix': 'btngroup'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="btn-group" role="group" aria-label="Button group">
+				<button type="button" class="btn btn-${1:primary}">$2</button>
+			</div>
+		"""
+
+	'Button toolbar':
+		'prefix': 'btntoolbar'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>'

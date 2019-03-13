@@ -1,0 +1,92 @@
+'.text.html.basic, .text.html.php':
+
+	'Bootstrap Form':
+		'prefix': 'form'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<form action="$1" method="${2:POST}">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="${3:inputEmail4}">${4:Email}</label>
+					<input type="${5:email}" class="form-control" id="${3:inputEmail4}" placeholder="${6:Email}">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Password</label>
+					<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Address</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">Address 2</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">City</label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputState">State</label>
+					<select id="inputState" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Zip</label>
+					<input type="text" class="form-control" id="inputZip">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						Check me out
+					</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
+		"""
+
+	'Bootstrap Form Group':
+		'prefix': 'formgroup'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<fieldset class="form-group">
+			<label for="$1">$2</label>
+			<input type="text" class="form-control" id="$1" placeholder="$4">
+			</fieldset>
+		"""
+
+	'Bootstrap Form Text Input':
+		'prefix': 'forminputtext'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<input type="text" class="form-control" id="$1" placeholder="$2">\n'
+
+	'Bootstrap Form Checkbox':
+		'prefix': 'formcheckbox'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="checkbox">
+			<label>
+				<input id="$1" name="$2" value="$3" type="checkbox" ${4:checked}>
+				$2
+			</label>
+			</div>
+		"""
+
+	'Bootstrap Form Radio':
+		'prefix': 'formradio'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="radio">
+			<label>
+				<input id="$1" name="$2" value="$3" type="radio" ${4:checked}>
+				$4
+			</label>
+			</div>
+		"""

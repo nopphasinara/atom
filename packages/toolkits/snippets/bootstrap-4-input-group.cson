@@ -1,0 +1,23 @@
+'.text.html.basic, .text.html.php':
+
+	'Input group':
+		'prefix': 'inputgroup'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="input-group">
+				<span class="input-group-addon" id="$1">${2:@}</span>
+				<input type="text" class="form-control" name="${3:Username}" placeholder="${4:Enter your username}" aria-describedby="$5">
+			</div>$6
+		"""
+
+	'Button addon':
+		'prefix': 'inputgroupbtn'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+			<div class="input-group">
+				<input type="text" class="form-control" name="${1:Username}" placeholder="${2:Enter your username}">
+				<span class="input-group-btn">
+					<button class="btn btn-secondary" type="button">$3</button>
+				</span>
+			</div>$4
+		"""

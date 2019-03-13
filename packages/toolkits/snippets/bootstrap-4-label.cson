@@ -1,0 +1,11 @@
+'.text.html.basic, .text.html.php':
+
+	'Label':
+		'prefix': 'label'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<span class="label label-${1:default}">$2</span>'
+
+	'Label Pills':
+		'prefix': 'labelpill'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': '<span class="label label-pill label-${1:default}">$2</span>'

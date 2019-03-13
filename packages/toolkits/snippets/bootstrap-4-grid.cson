@@ -1,0 +1,257 @@
+'.text.html.basic, .text.html.php':
+
+	'Bootstrap Container Fluid':
+		'prefix': 'containerfluid'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="container-fluid">
+			$1
+		</div>
+		"""
+
+	'Bootstrap Container':
+		'prefix': 'container'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="container">
+			$1
+		</div>
+		"""
+
+	'Bootstrap Row':
+		'prefix': 'row'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="row">
+			$1
+		</div>
+		"""
+
+	'Bootstrap Column':
+		'prefix': 'col'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col">
+			$1
+		</div>$2
+		"""
+
+	# col-sm-*
+
+	'Bootstrap Small 12-Column':
+		'prefix': 'colsm12'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-12">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 11-Column':
+		'prefix': 'colsm11'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-11">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 10-Column':
+		'prefix': 'colsm10'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-10">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 9-Column':
+		'prefix': 'colsm9'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-9">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 8-Column':
+		'prefix': 'colsm8'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-8">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 7-Column':
+		'prefix': 'colsm7'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-7">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 6-Column':
+		'prefix': 'colsm6'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-6">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 5-Column':
+		'prefix': 'colsm5'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-5">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 4-Column':
+		'prefix': 'colsm4'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-4">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 3-Column':
+		'prefix': 'colsm3'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-3">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 2-Column':
+		'prefix': 'colsm2'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-2">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Small 1-Column':
+		'prefix': 'colsm1'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-sm-1">
+			$1
+		</div>$2
+		"""
+
+	# col-md-*
+
+	'Bootstrap Medium 12-Column':
+		'prefix': 'colmd12'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-12">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 11-Column':
+		'prefix': 'colmd11'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-11">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 10-Column':
+		'prefix': 'colmd10'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-10">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 9-Column':
+		'prefix': 'colmd9'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-9">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 8-Column':
+		'prefix': 'colmd8'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-8">
+			$1
+		</div>
+		"""
+
+	'Bootstrap Medium 7-Column':
+		'prefix': 'colmd7'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-7">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 6-Column':
+		'prefix': 'colmd6'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-6">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 5-Column':
+		'prefix': 'colmd5'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-5">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 4-Column':
+		'prefix': 'colmd4'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-4">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 3-Column':
+		'prefix': 'colmd3'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-3">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 2-Column':
+		'prefix': 'colmd2'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-2">
+			$1
+		</div>$2
+		"""
+
+	'Bootstrap Medium 1-Column':
+		'prefix': 'colmd1'
+		'rightLabelHTML': '<span style="color:#ff0">BS</span>'
+		'body': """
+		<div class="col-md-1">
+			$1
+		</div>$2
+		"""
