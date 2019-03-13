@@ -92,6 +92,9 @@
       "hyperclick"
       "ide-haskell"
       "intentions"
+      "pinegrow-atom"
+      "pin-url"
+      "pinned-tabs"
     ]
     reopenProjectMenuCount: 5
     telemetryConsent: "no"
@@ -114,6 +117,10 @@
     extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "f214f68a-9799-402b-a53c-c3814c28ba21"
+  "file-icons":
+    coloured: false
+    strategies: {}
+    tabPaneIcon: false
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "fuzzy-finder":
@@ -132,7 +139,8 @@
       verboseCommits: true
     diffs:
       useSplitDiff: true
-    general: {}
+    general:
+      enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
   "ide-css":
@@ -156,6 +164,10 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+  "pin-url":
+    links: "[{\"name\":\"Config 1\",\"label\":\"\",\"link\":\"https://github.com/nopphasinara\",\"color\":\"#00f900\"}]"
+  "pinned-tabs":
+    animated: false
   "project-manager":
     showPath: false
     sortBy: "title"
