@@ -133,6 +133,13 @@
     'body': '''
     <meta ${1:name}="$2" content="$3">$0
     '''
+  '<!---->...<!---->':
+    'prefix': 'block'
+    'body': '''
+    <!-- ${1:block container} : START -->
+    $2
+    <!-- ${1:block container} : END -->$0
+    '''
 
 
 '.text.html.php':
