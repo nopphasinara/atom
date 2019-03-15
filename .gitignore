@@ -10,6 +10,6 @@ projects.cson
 packages/atom-autocomplete-php/indexes
 .DS_Store
 Thumbs.db
-/node_modules
-/recovery
-/split-diff
+node_modules
+recovery
+split-diff
