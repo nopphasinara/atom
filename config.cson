@@ -1,7 +1,4 @@
 "*":
-  _dart:
-    _firstRun: true
-    _version: "1.0.1"
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
@@ -17,7 +14,7 @@
     "atom-ide-terminal":
       allowTransparency: true
       cursorBlink: true
-      fontFamily: "iAWriterMonoV-Regular, Menlo, master-icons, monospace"
+      fontFamily: "PanicSans, Menlo, master-icons, monospace"
     use:
       "atom-ide-code-format": "never"
       "atom-ide-code-highlight": "never"
@@ -105,7 +102,7 @@
     titleBar: "hidden"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "iAWriterMonoV-Regular, Menlo, master-icons, monospace"
+    fontFamily: "PanicSans, Menlo, master-icons, monospace"
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
