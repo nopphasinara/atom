@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-  "_id": "sort-lines@0.18.0",
+  "_from": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+  "_id": "sort-lines@0.19.0",
   "_inBundle": false,
-  "_integrity": "sha512-vljL2/DRELx3XIkjQutqZrifFlZuzHLsoKt6QRWSKeH1ja6ZWfKYr9D9mkrCo16Mt3u2sgjbwVOcFejp+8SmBg==",
+  "_integrity": "sha512-8P1sUVDH6gpYDShmXmEt/fuHmN2a/m4w90CSIvLKHCy9RSLS04Z+8j6u/5uorqqGAItO7gzI1J1K/lPNwdlZIQ==",
   "_location": "/sort-lines",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball"
+    "raw": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-  "_shasum": "e7a421bc0e8655fa90b46cdc881c60983ade0816",
-  "_spec": "https://www.atom.io/api/packages/sort-lines/versions/0.18.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-1181013-21168-o9k0zr.h90br",
+  "_resolved": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+  "_shasum": "4dac241f657d591d41cbe86a868c77f7181aba5f",
+  "_spec": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-119215-15980-q3nafm.31emc",
   "activationCommands": {
     "atom-text-editor": [
       "sort-lines:sort",
@@ -28,6 +28,7 @@
       "sort-lines:reverse-sort",
       "sort-lines:by-length",
       "sort-lines:shuffle",
+      "sort-lines:reverse",
       "sort-lines:unique"
     ]
   },
@@ -52,5 +53,5 @@
     "type": "git",
     "url": "git+https://github.com/atom/sort-lines.git"
   },
-  "version": "0.18.0"
+  "version": "0.19.0"
 }
