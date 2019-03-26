@@ -77,6 +77,12 @@ atom.commands.add 'atom-workspace', 'gc:control-files', ->
     # console.error error
   )
 
+atom.commands.add 'atom-text-editor', 'gc:select-outside-bracket', ->
+  editor = atom.workspace.getActiveTextEditor()
+  atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+  atom.commands.dispatch(atom.views.getView(editor), "core:move-right")
+  atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+
 atom.commands.add 'atom-text-editor', 'gc:blade-echo', ->
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()
