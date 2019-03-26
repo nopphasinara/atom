@@ -94,6 +94,7 @@
   'shift-alt-E': 'emmet:select-previous-item'
   'alt-cmd-c': 'editor:copy-path'
   'ctrl-cmd-o': 'tree-view:show-current-file-in-file-manager'
+  'ctrl-b': 'bracket-matcher:select-inside-brackets'
 
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
