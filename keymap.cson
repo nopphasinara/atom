@@ -98,6 +98,10 @@
   'ctrl-cmd-o': 'tree-view:show-current-file-in-file-manager'
   # 'ctrl-b': 'bracket-matcher:select-inside-brackets'
   'ctrl-b': 'gc:select-outside-bracket'
+  'home': 'core:move-to-top'
+  'end': 'core:move-to-bottom'
+  'shift-home': 'core:select-to-top'
+  'shift-end': 'core:select-to-bottom'
 
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
