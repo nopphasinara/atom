@@ -1,5 +1,5 @@
 'context-menu':
-  'atom-text-editor, .tool-panel.tree-view .file':[
+  'atom-text-editor, .tool-panel.tree-view .file':[ 
     label: 'Remote Sync PRO',
     submenu:[
       {label: 'Upload File', command: 'remote-sync-pro:upload-file'}
