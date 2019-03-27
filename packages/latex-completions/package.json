@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+  "_id": "latex-completions@0.3.6",
+  "_inBundle": false,
+  "_integrity": "sha512-KA8VLVvy1XP5d3pLoV8kCa9aUDvf0GMmGgDIjUB3+A2RNPgpWwKh85OX0bYAaL57KDBeRBh7ozZOV8uxq4MU8g==",
+  "_location": "/latex-completions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+  "_shasum": "12b3a76f139576798125c35ef091ba4375860247",
+  "_spec": "https://www.atom.io/api/packages/latex-completions/versions/0.3.6/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119227-9193-19hl388.sstnk",
+  "bugs": {
+    "url": "https://github.com/JunoLab/atom-latex-completions/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fuzzaldrin-plus": "^0.6.0"
+  },
+  "deprecated": false,
+  "description": "Easy input for unicode characters",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JunoLab/atom-latex-completions#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/latex-completions",
+  "name": "latex-completions",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunoLab/atom-latex-completions.git"
+  },
+  "version": "0.3.6"
+}

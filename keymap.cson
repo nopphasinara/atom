@@ -47,8 +47,10 @@
   'alt-4': 'gc:tab-stop'
   'alt-,': 'gc:tab-stop'
   'cmd-;': 'gc:tab-stop'
-  'f11': 'remote-sync:download-file'
-  'shift-f11': 'remote-sync:upload-file'
+  'f11': 'remote-sync-pro:download-file'
+  # 'f11': 'remote-sync:download-file'
+  'shift-f11': 'remote-sync-pro:upload-file'
+  # 'shift-f11': 'remote-sync:upload-file'
   'alt-cmd-a': 'aligner:align'
   'alt-cmd-tab': 'editor:auto-indent'
 

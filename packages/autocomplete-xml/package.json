@@ -1,0 +1,66 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+  "_id": "autocomplete-xml@0.11.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kvnE/ln3ZBqLagWjTcfztPMunrYm7w3sF36OOvHZudBkrOkXufJ0Hq6hpX2sKCTTaebqYxGbFSWXuZuumBc32Q==",
+  "_location": "/autocomplete-xml",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+  "_shasum": "411ba194c86c2dc7275c3c2ab1e7c2889e32b07c",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-xml/versions/0.11.0/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119227-8264-1bmo7nx.uvzlf",
+  "activationCommands": {},
+  "bugs": {
+    "url": "https://github.com/pleonex/atom-autocomplete-xml/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "follow-redirects": "^1.5.10",
+    "uuid": "^3.2.1",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "Autocomplete+ provider for XML via XSD",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/pleonex/atom-autocomplete-xml#readme",
+  "keywords": [
+    "xml",
+    "xsd",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "autocomplete-xml",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pleonex/atom-autocomplete-xml.git"
+  },
+  "version": "0.11.0"
+}

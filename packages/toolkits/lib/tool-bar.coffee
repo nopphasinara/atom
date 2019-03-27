@@ -115,7 +115,8 @@ module.exports =
 
     @toolBar.addButton
       callback:
-        '': 'remote-sync:configure'
+        '': 'remote-sync-pro:configure'
+        # '': 'remote-sync:configure'
         'alt': 'remote-ftp:disconnect'
         'shift': 'remote-ftp:create-ftp-config'
         'shift-alt': 'remote-ftp:create-sftp-config'
@@ -126,14 +127,16 @@ module.exports =
 
     @toolBar.addButton
       icon: 'upload'
-      callback: 'remote-sync:upload-file'
+      callback: 'remote-sync-pro:upload-file'
+      # callback: 'remote-sync:upload-file'
       tooltip: 'Upload File'
       iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
       icon: 'download'
-      callback: 'remote-sync:download-file'
+      callback: 'remote-sync-pro:download-file'
+      # callback: 'remote-sync:download-file'
       tooltip: 'Download File'
       iconset: 'mdi'
       type: 'button'

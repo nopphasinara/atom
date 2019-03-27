@@ -1,0 +1,23 @@
+'context-menu':
+  'atom-text-editor, .tool-panel.tree-view .file':[
+    label: 'Remote Sync PRO',
+    submenu:[
+      {label: 'Upload File', command: 'remote-sync-pro:upload-file'}
+      {label: 'Download File', command: 'remote-sync-pro:download-file'}
+      {label: 'Diff File', command: 'remote-sync-pro:diff-file'}
+      {label: 'Delete File', command: 'remote-sync-pro:delete-file'}
+      {label: 'Monitor File (Upload on External Save)', command: 'remote-sync-pro:monitor-file'}
+    ]
+  ]
+
+  '.tool-panel.tree-view .header.list-item':[
+    label: 'Remote Sync PRO',
+    submenu:[
+      {label: 'Configure', command: 'remote-sync-pro:configure'}
+      {label: 'Upload Folder', command: 'remote-sync-pro:upload-folder'}
+      {label: 'Upload Folder Change', command: 'remote-sync-pro:upload-git-change'}
+      {label: 'Download Folder', command: 'remote-sync-pro:download-folder'}
+      {label: 'Diff Folder', command: 'remote-sync-pro:diff-folder'}
+      {label: 'Delete Folder', command: 'remote-sync-pro:delete-folder'}
+    ]
+  ]

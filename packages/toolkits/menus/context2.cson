@@ -1,0 +1,74 @@
+"context-menu":
+  {
+    "atom-text-editor:not([mini]), .editor:not([mini])": [
+      {
+        "label": "Remote Sync Pro"
+        "submenu": [
+          {
+            "label": "Upload File"
+            "command": "remote-sync-pro:upload-file"
+          }
+          {
+            "label": "Download File"
+            "command": "remote-sync-pro:download-file"
+          }
+          {
+            "label": "Delete File"
+            "command": "remote-sync-pro:delete-file"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync-pro:configure"
+          }
+        ]
+      }
+    ]
+
+    ".entries.list-tree .file.entry.list-item": [
+      {
+        "label": "Remote Sync Pro"
+        "submenu": [
+          {
+            "label": "Upload File"
+            "command": "remote-sync-pro:upload-file"
+          }
+          {
+            "label": "Download File"
+            "command": "remote-sync-pro:download-file"
+          }
+          {
+            "label": "Delete File"
+            "command": "remote-sync-pro:delete-file"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync-pro:configure"
+          }
+        ]
+      }
+    ]
+
+    ".entries.list-tree .header.list-item, .header.list-item.project-root-header": [
+      {
+        "label": "Remote Sync Pro"
+        "submenu": [
+          {
+            "label": "Upload Folder"
+            "command": "remote-sync-pro:upload-folder"
+          }
+          {
+            "label": "Download Folder"
+            "command": "remote-sync-pro:download-folder"
+          }
+          {
+            "label": "Delete Folder"
+            "command": "remote-sync-pro:delete-folder"
+          }
+          {
+            "label": "Configure"
+            "command": "remote-sync-pro:configure"
+          }
+        ]
+      }
+    ]
+  }
