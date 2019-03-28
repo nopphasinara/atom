@@ -9,8 +9,8 @@
 
 .editor {
   * {
+    // letter-spacing: 0.02em !important;
     font-kerning: none !important;
-    letter-spacing: 0.02em !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     -moz-font-smoothing: grayscale !important;
@@ -84,8 +84,7 @@
 
 
 .status-bar {
-  font-size: @font-size-sm;
-
+  // font-size:  @font-size-sm;
   .github-StatusBarTile,
   .line-ending-tile {
     display: none !important;
@@ -97,7 +96,7 @@
   background: @app-background-color !important;
 
   .title {
-    font-size: @font-size-sm;
+    // font-size: @font-size-sm;
   }
 }
 
@@ -115,7 +114,13 @@
     margin-bottom: 0 !important;
 
     &:before {
-      font-size: unit(@tool-bar-font-size, px) !important;
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      // font-size: unit(@tool-bar-font-size, px) !important;
       height: unit(@tool-bar-height, px) !important;
       line-height: unit(@tool-bar-height, px) !important;
     }
@@ -131,50 +136,117 @@
     font-size: @btn-icon-size !important;
     font-style: normal !important;
     font-weight: normal !important;
+
+    font-kerning: none !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
+    -moz-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
-    font-variant: normal !important;
+
+    // -webkit-font-smoothing: antialiased !important;
+    // -moz-osx-font-smoothing: grayscale !important;
+    // text-rendering: optimizeLegibility !important;
+    // font-variant: normal !important;
 
     &.fa {
       font-family: "FontAwesome", "FontAwesome5ProLight", "FontAwesome5ProRegular", "FontAwesome5ProSolid", "FontAwesome5FreeRegular", "FontAwesome5FreeSolid", "FontAwesome5BrandsRegular" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.custom {
       font-family: "fontcustom" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.ico {
       font-family: "icofont" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.icomoon {
       font-family: "icomoon" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.iconic {
       font-family: "iconmonstr-iconic-font", "open-iconic" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.ion {
       font-family: "Ionicons" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.oct {
       font-family: "octicons" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.typ {
       font-family: "typicons" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.das {
       font-family: "dashicons" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
     &.ent {
       font-family: "entypo" !important;
-      font-size: @btn-icon-size !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
     }
   }
 }

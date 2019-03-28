@@ -51,8 +51,6 @@
       "background-tips"
       "metrics"
       "deprecation-cop"
-      "ftp-remote-edit"
-      "remote-ftp"
       "remote-sync"
     ]
     ignoredNames: [
@@ -111,12 +109,11 @@
       "php-debug"
       "atom-debug-ui"
     ]
-    telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "one-dark-vivid-syntax"
+    packagesWithSnippetsDisabled: [
+      "v-bootstrap4"
     ]
-    titleBar: "hidden"
+    telemetryConsent: "no"
+    titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "PanicSans, Menlo, master-icons, monospace"
@@ -184,6 +181,7 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+    stickyHeaders: true
   "php-debug":
     display:
       arraySort: true
