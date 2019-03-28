@@ -79,6 +79,13 @@ atom.commands.add 'atom-workspace', 'gc:control-files', ->
 
 atom.commands.add 'atom-text-editor', 'gc:select-outside-bracket', ->
   editor = atom.workspace.getActiveTextEditor()
+  # cursors = editor.getCursors()
+  # if cursors.length
+  #   for cursor in cursors
+  #     atom.commands.dispatch(atom.views.getView(cursor.editor), "editor.move-to-end-of-line")
+  #     atom.commands.dispatch(atom.views.getView(cursor.editor), "bracket-matcher:select-inside-brackets")
+  #     atom.commands.dispatch(atom.views.getView(cursor.editor), "core:move-right")
+  #     atom.commands.dispatch(atom.views.getView(cursor.editor), "bracket-matcher:select-inside-brackets")
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
   atom.commands.dispatch(atom.views.getView(editor), "core:move-right")
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
