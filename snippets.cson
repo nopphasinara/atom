@@ -100,25 +100,30 @@
       ${2:\/\/}
     \}$0
     '''
+  'alert()':
+    'prefix': 'alert'
+    'body': '''
+    alert(${1:\'$2\'});$0
+    '''
   'console.info()':
     'prefix': 'info'
     'body': '''
-    console.info(${2:\'$1\'});$0
+    console.info(${1:\'$2\'});$0
     '''
   'console.log()':
     'prefix': 'log'
     'body': '''
-    console.log(${2:\'$1\'});$0
+    console.log(${1:\'$2\'});$0
     '''
   'console.error()':
     'prefix': 'error'
     'body': '''
-    console.error(${2:\'$1\'});$0
+    console.error(${1:\'$2\'});$0
     '''
   'console.warn()':
     'prefix': 'warn'
     'body': '''
-    console.warn(${2:\'$1\'});$0
+    console.warn(${1:\'$2\'});$0
     '''
 
 
