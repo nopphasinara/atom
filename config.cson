@@ -17,7 +17,7 @@
     "atom-ide-terminal":
       allowTransparency: true
       cursorBlink: true
-      fontFamily: "PanicSans, Menlo, master-icons, monospace"
+      fontFamily: "PanicSans, Menlo, Material-Design-Icons, master-icons, monospace"
     use:
       "atom-ide-code-format": "never"
       "atom-ide-code-highlight": "never"
@@ -116,7 +116,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "PanicSans, Menlo, master-icons, monospace"
+    fontFamily: "PanicSans, Menlo, Material-Design-Icons, master-icons, monospace"
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
