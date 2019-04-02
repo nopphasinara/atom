@@ -7,4 +7,15 @@
       color: @mono-1;
     }
   }
+
+  .syntax--invalid {
+    &.syntax--deprecated {
+      color: @syntax-deprecated-fg !important;
+      background-color: @syntax-deprecated-bg !important;
+    }
+    &.syntax--illegal {
+      color: @syntax-illegal-fg !important;
+      background-color: @syntax-illegal-bg !important;
+    }
+  }
 }

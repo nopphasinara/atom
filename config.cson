@@ -84,10 +84,12 @@
       "atom-debug-ui"
       "livestyle-atom"
     ]
-    packagesWithSnippetsDisabled: [
-      "v-bootstrap4"
-    ]
+    packagesWithSnippetsDisabled: []
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
