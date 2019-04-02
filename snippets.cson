@@ -24,15 +24,14 @@
     |--------------------------------------------------------------------------
     */$0
     '''
-  'Block comment':
-    'prefix': 'block-comment'
+  'Block':
+    'prefix': 'block'
     'body': '''
     /*
-     * ${1:Comment heading}
-     *
-     * ${2:Describe the relevant details do that up here if it's important enough.}
-     */
-     $0
+    |--------------------------------------------------------------------------
+    | ${1:Comment Heading}
+    |--------------------------------------------------------------------------
+    */$0
     '''
   'Line comment':
     'prefix': 'line-comment'
