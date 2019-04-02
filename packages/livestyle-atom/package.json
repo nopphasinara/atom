@@ -1,0 +1,77 @@
+{
+  "_from": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+  "_id": "livestyle-atom@0.2.10",
+  "_inBundle": false,
+  "_integrity": "sha512-9ipKrVAbHv6mBwGU8kpsoeWdZWCKc5H14Iu4aQ/2utENuAnbtO/N8M2J0zcZNZ8KmemU61BnOwmgWHudvYKshw==",
+  "_location": "/livestyle-atom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+  "_shasum": "a0086b8ee5d5b1464335fde93e38e4a2bba7e79e",
+  "_spec": "https://www.atom.io/api/packages/livestyle-atom/versions/0.2.10/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11933-19144-83fdtl.0q6fv",
+  "author": {
+    "name": "Sergey Chikuyonok",
+    "email": "serge.che@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/livestyle/atom/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "websocketUrl": "ws://127.0.0.1:54000/livestyle"
+  },
+  "dependencies": {
+    "crc": "^3.4.0",
+    "deep-equal": "^1.0.1",
+    "emmet-livestyle": "^0.9.30",
+    "glob": "^6.0.3",
+    "livestyle-analyzer": "^1.0.1",
+    "ws": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "Atom plugin for Emmet LiveStyle",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "http://livestyle.io",
+  "keywords": [
+    "livestyle",
+    "css",
+    "scss",
+    "less",
+    "live",
+    "edit"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "livestyle-atom",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livestyle/atom.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.2.10"
+}

@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+  "_id": "one-dark-material-syntax@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-HiZHc4k7rFwrDPhGpp2sY78pubvtXwcuUmbBtwQ3NIRy2ZlN273DcX1Jyylpq5+lqo5hzx6mVTFhiYCiG61P5w==",
+  "_location": "/one-dark-material-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+  "_shasum": "b023b9b2fcbbae190ffa981e9cedb5c9b4f06ffb",
+  "_spec": "https://www.atom.io/api/packages/one-dark-material-syntax/versions/1.0.3/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11933-42255-1cp148m.y7geg",
+  "bugs": {
+    "url": "https://github.com/Gum-Joe/one-dark-material-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A fork of atom's 'One dark syntax theme', but using a material colour pallet.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/Gum-Joe/one-dark-material-syntax#readme",
+  "keywords": [
+    "dark",
+    "blue",
+    "syntax",
+    "material",
+    "material ui"
+  ],
+  "license": "MIT",
+  "name": "one-dark-material-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gum-Joe/one-dark-material-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.3"
+}

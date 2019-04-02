@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+  "_id": "dimmed-one-dark-syntax@1.9.5",
+  "_inBundle": false,
+  "_integrity": "sha512-+6cV7jqccIQd/u2UAt86i5GdkUT8zTGWgk+72i8R0h9mPMq6GWsI6QqGPvCnCIY5780XF0WnyYuUhMOqCK45PQ==",
+  "_location": "/dimmed-one-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+  "_shasum": "86b6d74ab9292d3e9d628c65ebf283732cef137d",
+  "_spec": "https://www.atom.io/api/packages/dimmed-one-dark-syntax/versions/1.9.5/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11933-42359-1bkte84.o4ek",
+  "bugs": {
+    "url": "https://github.com/uonick/dimmed-one-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark syntax theme (extended)",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/uonick/dimmed-one-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "dimmed-one-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uonick/dimmed-one-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.9.5"
+}

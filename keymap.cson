@@ -103,12 +103,14 @@
   'shift-home': 'core:select-to-top'
   'shift-end': 'core:select-to-bottom'
 
+
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
   'ctrl-escape': 'autocomplete-plus:activate'
   # 'key1': 'html-entitize:encode'
   # 'key2': 'html-entitize:decode'
   'ctrl-b': 'bracket-matcher:select-inside-brackets'
+  'cmd-shift-x': 'autoprefixer'
 
 
 '.platform-darwin .tree-view':
@@ -198,3 +200,10 @@
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
   'alt-cmd-s': 'sass-autocompile:compile-to-file'
   'shift-alt-cmd-S': 'sass-autocompile:compile-direct'
+
+
+'atom-text-editor.has-livestyle-widget':
+  'escape': 'livestyle:hide-widget'
+
+'livestyle-outline':
+  'backspace': 'native!'

@@ -1,0 +1,183 @@
+.syntax--keyword
+{
+    &.syntax--operator.syntax--logical.syntax--php
+    {
+        color: @syntax-color-method;
+    }
+    &.syntax--other
+    {
+        &.syntax--phpdoc.syntax--php
+        {
+            color: @syntax-color-comment;
+        }
+        &.syntax--use.syntax--php
+        {
+            color: @syntax-color-tag;
+        }
+        &.syntax--namespace.syntax--php {
+            color: @syntax-color-tag;
+        }
+    }
+}
+
+.syntax--meta
+{
+    .syntax--function.syntax--parameter.syntax--typehinted.syntax--php
+    {
+        .syntax--storage {
+            &.syntax--type.syntax--php
+            {
+                color: @syntax-color-storage;
+            }
+        }
+    }
+}
+
+
+
+.syntax--entity
+{
+    &.syntax--other.syntax--alias.syntax--php,
+    &.syntax--name.syntax--function.syntax--php
+    {
+        color: @syntax-color-tag;
+    }
+    &.syntax--other.syntax--inherited-class.syntax--php
+    {
+        color: @syntax-color-class;
+    }
+}
+
+
+.syntax--meta
+{
+    &.syntax--function-call
+    {
+
+        &.syntax--object.syntax--php
+        {
+            color: @syntax-color-class;
+        }
+        &.syntax--static.syntax--php
+        {
+            color: @syntax-color-attribute;
+        }
+        &.syntax--php {
+            color: @syntax-color-keyword;
+        }
+    }
+}
+
+.syntax--variable
+{
+    &.syntax--language {
+        &.syntax--this {
+            &.syntax--php {
+                color: @syntax-color-function;
+            }
+        }
+    }
+    &.syntax--other
+    {
+        &.syntax--php
+        {
+            color: @syntax-color-function;
+        }
+        &.syntax--property.syntax--php
+        {
+            color: @syntax-color-tag;
+        }
+    }
+
+}
+
+.syntax--punctuation
+{
+    &.syntax--definition.syntax--variable.syntax--php
+    {
+        color: @syntax-color-function;
+    }
+}
+
+
+.syntax--constant
+{
+    &.syntax--other.syntax--php,
+    &.syntax--language.syntax--php
+    {
+        color: @syntax-color-theme-orange;
+    }
+}
+
+.syntax--support
+{
+    &.syntax--constant.syntax--core.syntax--php
+    {
+        color: @syntax-color-core-constant;
+    }
+    &.syntax--function
+    {
+        color: @syntax-color-keyword;
+        &.syntax--magic.syntax--php
+        {
+            color: @syntax-color-storage;
+        }
+        &.syntax--filter.syntax--php
+        {
+            color: @syntax-color-keyword;
+        }
+    }
+    &.syntax--other.syntax--namespace.syntax--php
+    {
+        color: @syntax-color-class;
+    }
+}
+
+
+.syntax--string.syntax--quoted.syntax--double.syntax--php
+{
+    .syntax--variable.syntax--other.syntax--php,
+    .syntax--punctuation.syntax--definition.syntax--variable.syntax--php
+    {
+        color: @syntax-color-storage;
+    }
+}
+
+
+// stupid atom fixes
+.syntax--meta.syntax--function.syntax--argument.syntax--typehinted.syntax--php {
+    .syntax--invalid,
+    .syntax--illegal {
+        color: @hue-6 !important;
+        background-color: @syntax-bg !important;
+    }
+}
+
+.syntax--meta.syntax--function-call.syntax--php
+> .syntax--entity.syntax--name.syntax--function.syntax--php
+{
+    color: @syntax-color-keyword;
+}
+
+.syntax--meta.syntax--method-call.syntax--static.syntax--php
+{
+    > .syntax--keyword.syntax--other.syntax--class.syntax--php
+    {
+        color: @syntax-color-tag;
+    }
+}
+
+.syntax--keyword.syntax--other.syntax--class.syntax--php
+{
+    color: @syntax-color-tag !important;
+}
+
+.syntax--keyword.syntax--operator.syntax--ternary.syntax--php + .syntax--storage.syntax--type.syntax--php
+{
+    color: @syntax-color-theme-orange !important;
+}
+
+.syntax--keyword.syntax--operator.syntax--return-value.syntax--php + .syntax--storage.syntax--type.syntax--php
+{
+    color: @syntax-color-theme-orange !important;
+}

@@ -1,31 +1,8 @@
 "*":
-  "Atom-SFTP-sync":
-    uploadOnSave: false
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
   "atom-autocomplete-php": {}
-  "atom-ide-ui":
-    "atom-ide-code-format":
-      formatOnType: false
-    "atom-ide-datatip":
-      datatipDebounceDelay: 100
-    "atom-ide-diagnostics-ui":
-      autoVisibility: true
-      showDiagnosticTraces: true
-      showDirectoryColumn: true
-    "atom-ide-terminal":
-      allowTransparency: true
-      cursorBlink: true
-      fontFamily: "Menlo, Material-Design-Icons, master-icons, monospace"
-    use:
-      "atom-ide-code-format": "never"
-      "atom-ide-code-highlight": "never"
-      hyperclick: "never"
-  "atom-toolbar":
-    visible: false
-  "autocomplete-look":
-    minCandidateLength: 2
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
@@ -36,12 +13,9 @@
     minimumWordLength: 1
     provider: "FuzzyProvider"
     similarSuggestionRemoval: "textOrSnippet"
-  "autocomplete-python":
-    useSnippets: "all"
+  autoprefixer: {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
-  "city-lights-ui":
-    fontSize: 12
   "command-palette":
     preserveLastSearch: true
   core:
@@ -108,6 +82,7 @@
       "autocomplete-python"
       "php-debug"
       "atom-debug-ui"
+      "livestyle-atom"
     ]
     packagesWithSnippetsDisabled: [
       "v-bootstrap4"
@@ -127,19 +102,8 @@
     extensionsPath: "~/.atom/packages/toolkits/emmet"
   "exception-reporting":
     userId: "f214f68a-9799-402b-a53c-c3814c28ba21"
-  "file-icons":
-    coloured: false
-    strategies: {}
-    tabPaneIcon: false
   "find-and-replace":
     liveSearchMinimumCharacters: 1
-  "ftp-remote-edit":
-    config: "cd43b52544755a51d9fcc3fde79707b898484812344b736141cd67ed70070beac146415474b7bff6c4a09df139f5672e0932408f716e6623f860740624ed14716ef8ed73b30488967076f5042f62116b70dd0f6c41445602fce8941ef1b2399168259b8e159b989b30e8a5cfaf107971b7a83be3f3c9b107bc440d821b5c02e96bd623f58aa225dbbd1ed3179a88e37068b03460527dccbee5d9dc67917a69ca7d28287fbdcbf324919f95665e593dfe391f9e85605c567fc07fcdbe2783c7718cb64d8aa8513120349479d96ae08b9dec169680e431e50867159f61bbf63257d63abb23a5e1f894600767fd4b4e0d9b8cb22e3dc9127ca52838839809f366e73a9591aa1fd403912a93851eaac9ca543ba6f4407870ba9ab45723bdd49e29aedec535d7ca7472f6ae017ab06985794d770a7a3d2110dc6c84b209f362caf84e19e5f470541fd24d233c"
-    password: "8750f271"
-    tree:
-      showHiddenFiles: true
-      showInDock: false
-      showOnRightSide: false
   "fuzzy-finder":
     ignoredNames: [
       ".git"
@@ -160,21 +124,6 @@
       enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "ide-css":
-    additionalGrammars: [
-      "source.css.sass"
-      "source.css.tyls"
-      "source.css.scss"
-      "source.css.less"
-    ]
-  "ide-html":
-    additionalGrammars: [
-      "text.html.php.blade"
-    ]
-  "linter-ui-default":
-    hidePanelWhenEmpty: false
-    panelHeight: 300
-    showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
@@ -182,14 +131,6 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true
-  "php-debug":
-    display:
-      arraySort: true
-    showWelcome: false
-  "pin-url":
-    links: "[{\"name\":\"Config 1\",\"label\":\"\",\"link\":\"https://github.com/nopphasinara\",\"color\":\"#00f900\"}]"
-  "pinned-tabs":
-    animated: false
   "project-manager":
     showPath: false
     sortBy: "title"

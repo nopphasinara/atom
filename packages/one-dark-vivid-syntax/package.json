@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+  "_id": "one-dark-vivid-syntax@1.8.1",
+  "_inBundle": false,
+  "_integrity": "sha512-6nYU0VsuAqlTNTrXGHlFA3rPp+R03MOZ33RNOgJeulWNMN+2hlcAcRuTO9KsAxGhzJDCYBdsF/VahzurdEkHrg==",
+  "_location": "/one-dark-vivid-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+  "_shasum": "0a55453d30919628e8b2dcb2e28bf4265396a111",
+  "_spec": "https://www.atom.io/api/packages/one-dark-vivid-syntax/versions/1.8.1/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11933-41429-1esuivb.wywgj",
+  "bugs": {
+    "url": "https://github.com/simurai/one-dark-vivid-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A more vivid One Dark Syntax theme",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/simurai/one-dark-vivid-syntax#readme",
+  "keywords": [
+    "vivid",
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-dark-vivid-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simurai/one-dark-vivid-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.8.1"
+}
