@@ -2,9 +2,9 @@
 @import "ui-variables";
 
 // Custom variables
-@btn-icon-size: 20px;
+@btn-icon-size: 28px;
 @font-size-sm: .875em;
-@tool-bar-font-size: 20;
+@tool-bar-font-size: 28px;
 @tool-bar-height: 44;
 
 .editor {
@@ -103,7 +103,7 @@
 
 .tool-bar {
   .btn {
-    min-width: unit(100 / 44, %) !important;
+    min-width: unit(100 / 48, %) !important;
     height: auto !important;
     min-height: auto !important;
     line-height: normal !important;
@@ -132,7 +132,8 @@
   }
 
   .gc {
-    font-family: "master-icons";
+    font-family: "Material-Design-Icons" !important;
+    // font-family: "master-icons" !important;
     font-size: @btn-icon-size !important;
     font-style: normal !important;
     font-weight: normal !important;
@@ -148,6 +149,16 @@
     // text-rendering: optimizeLegibility !important;
     // font-variant: normal !important;
 
+    &.mdi {
+      font-family: "Material-Design-Icons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+    }
     &.fa {
       font-family: "FontAwesome", "FontAwesome5ProLight", "FontAwesome5ProRegular", "FontAwesome5ProSolid", "FontAwesome5FreeRegular", "FontAwesome5FreeSolid", "FontAwesome5BrandsRegular" !important;
       // font-size: @btn-icon-size !important;

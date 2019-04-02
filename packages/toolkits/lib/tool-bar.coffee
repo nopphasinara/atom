@@ -11,12 +11,12 @@ module.exports =
 
     @toolBar.addSpacer()
 
-    @toolBar.addButton
-      icon: 'document-text'
-      callback: 'gc:control-files'
-      tooltip: 'Control Files'
-      iconset: 'ion'
-      type: 'button'
+    # @toolBar.addButton
+    #   icon: 'document-text'
+    #   callback: 'gc:control-files'
+    #   tooltip: 'Control Files'
+    #   iconset: 'ion'
+    #   type: 'button'
 
     # @toolBar.addButton
     #   icon: 'document-text'
@@ -47,83 +47,134 @@ module.exports =
     #   type: 'button'
 
     @toolBar.addButton
+      icon: 'json'
       callback: 'atom-minify:minify-direct'
-      text: '<i class="gc"></i>'
-      html: true
       tooltip: 'Minified'
+      iconset: 'mdi'
       type: 'button'
+    # @toolBar.addButton
+    #   callback: 'atom-minify:minify-direct'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Minified'
+    #   type: 'button'
 
     @toolBar.addButton
+      icon: 'sort'
       callback:
         '': 'sort-lines:sort'
         'shift': 'sort-lines:reverse-sort'
         'shift-alt': 'sort-lines:shuffle'
-      text: '<i class="gc"></i>'
-      html: true
       tooltip: 'Sort Lines (Shift click reverse sort)'
+      iconset: 'mdi'
       type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'sort-lines:sort'
+    #     'shift': 'sort-lines:reverse-sort'
+    #     'shift-alt': 'sort-lines:shuffle'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Sort Lines (Shift click reverse sort)'
+    #   type: 'button'
 
     @toolBar.addButton
+      icon: 'format-letter-case'
       callback:
         '': 'change-case:swap'
         'shift': 'change-case:kebab'
         'shift-alt': 'change-case:camel'
-      text: '<i class="gc">ﱉ</i>'
-      html: true
       tooltip: 'Text Transform'
+      iconset: 'mdi'
       type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'change-case:swap'
+    #     'shift': 'change-case:kebab'
+    #     'shift-alt': 'change-case:camel'
+    #   text: '<i class="gc">ﱉ</i>'
+    #   html: true
+    #   tooltip: 'Text Transform'
+    #   type: 'button'
 
-    @toolBar.addButton
-      callback:
-        '': 'emmet:increment-number-by-1'
-        'alt': 'emmet:decrement-number-by-1'
-        'shift': 'emmet:increment-number-by-10'
-        'shift-alt': 'emmet:decrement-number-by-10'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Install Package'
-      type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'emmet:increment-number-by-1'
+    #     'alt': 'emmet:decrement-number-by-1'
+    #     'shift': 'emmet:increment-number-by-10'
+    #     'shift-alt': 'emmet:decrement-number-by-10'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Install Package'
+    #   type: 'button'
 
     @toolBar.addSpacer()
 
+    # @toolBar.addButton
+    #   icon: 'github-circle'
+    #   callback: 'github:toggle-git-tab'
+    #   tooltip: 'Github Toggle'
+    #   iconset: 'mdi'
+    #   type: 'button'
     @toolBar.addButton
       callback: 'github:toggle-git-tab'
-      text: '<i class="gc">遼</i>'
+      text: '<i class="gc"></i>'
       html: true
       tooltip: 'Github Toggle'
       type: 'button'
 
-    @toolBar.addButton
-      callback:
-        '': 'git-plus:add-and-commit'
-        'alt': 'git-plus:add'
-        'shift': 'git-plus:commit'
-        'shift-alt': 'git-plus:add-all'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Add + Commit'
-      type: 'button'
+    # @toolBar.addButton
+    #   icon: 'plus'
+    #   callback:
+    #     '': 'git-plus:add-and-commit'
+    #     'alt': 'git-plus:add'
+    #     'shift': 'git-plus:commit'
+    #     'shift-alt': 'git-plus:add-all'
+    #   tooltip: 'Add + Commit'
+    #   iconset: 'mdi'
+    #   type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'git-plus:add-and-commit'
+    #     'alt': 'git-plus:add'
+    #     'shift': 'git-plus:commit'
+    #     'shift-alt': 'git-plus:add-all'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Add + Commit'
+    #   type: 'button'
 
-    @toolBar.addButton
-      callback: 'split-diff:toggle'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Split Diff'
-      type: 'button'
+    # @toolBar.addButton
+    #   callback: 'split-diff:toggle'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Split Diff'
+    #   type: 'button'
 
     @toolBar.addSpacer()
 
     @toolBar.addButton
+      icon: 'power-settings'
       callback:
         '': 'remote-sync-pro:configure'
         # '': 'remote-sync:configure'
         'alt': 'remote-ftp:disconnect'
         'shift': 'remote-ftp:create-ftp-config'
         'shift-alt': 'remote-ftp:create-sftp-config'
-      text: '<i class="gc"></i>'
-      html: true
       tooltip: 'FTP Configure'
+      iconset: 'mdi'
       type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'remote-sync-pro:configure'
+    #     # '': 'remote-sync:configure'
+    #     'alt': 'remote-ftp:disconnect'
+    #     'shift': 'remote-ftp:create-ftp-config'
+    #     'shift-alt': 'remote-ftp:create-sftp-config'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'FTP Configure'
+    #   type: 'button'
 
     @toolBar.addButton
       icon: 'upload'
@@ -144,10 +195,10 @@ module.exports =
     @toolBar.addSpacer()
 
     @toolBar.addButton
-      icon: 'keyboard'
+      icon: 'keyboard-outline'
       callback: 'key-binding-resolver:toggle'
       tooltip: 'Toggle Key Binding Resolver'
-      iconset: ''
+      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
@@ -172,17 +223,23 @@ module.exports =
       type: 'button'
 
     @toolBar.addButton
+      icon: 'translate'
       url: 'https://translate.google.com'
-      text: '<i class="gc">擄</i>'
-      html: true
       tooltip: 'Google Translate'
-      type: 'url'
+      iconset: 'mdi'
+      type: 'button'
+    # @toolBar.addButton
+    #   url: 'https://translate.google.com'
+    #   text: '<i class="gc">擄</i>'
+    #   html: true
+    #   tooltip: 'Google Translate'
+    #   type: 'url'
 
     @toolBar.addButton
+      icon: 'auto-fix'
       callback: 'sass-autocompile:compile-to-file'
-      text: '<i class="gc"></i>'
-      html: true
       tooltip: 'Compile SASS'
+      iconset: 'mdi'
       type: 'button'
 
     # @toolBar.addButton
@@ -192,12 +249,12 @@ module.exports =
     #   tooltip: 'Color Picker'
     #   type: 'button'
 
-    @toolBar.addButton
-      callback: 'settings-view:install-packages-and-themes'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Install Package'
-      type: 'button'
+    # @toolBar.addButton
+    #   callback: 'settings-view:install-packages-and-themes'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Install Package'
+    #   type: 'button'
 
     @toolBar.addButton
       icon: 'refresh'
