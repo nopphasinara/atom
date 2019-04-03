@@ -35,6 +35,7 @@
   'cmd-\.': 'editor:log-cursor-scope'
   'ctrl-alt-cmd-g': 'grammar-selector:show'
   'ctrl-shift-O': 'link:open'
+  'cmd-alt-o': 'link:open'
   'cmd-r': 'symbols-view:toggle-file-symbols'
   'alt-cmd-d': 'find-and-replace:select-all'
   'cmd-d': 'find-and-replace:select-next'
