@@ -1,0 +1,79 @@
+{
+  "_from": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+  "_id": "tree-view-auto-collapse@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-kck2LKWZY4yC47vf3gnDDru3VSN53AZHTOMKVGlbR7C29hbpuiC4q6fostV/aQmm8qtQtUFVo/P6jkux5c7KFw==",
+  "_location": "/tree-view-auto-collapse",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+  "_shasum": "406146315346b17aabfc90de84856772b36b0c4a",
+  "_spec": "https://www.atom.io/api/packages/tree-view-auto-collapse/versions/1.0.2/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11933-6486-s9jah0.o1a5m",
+  "author": {
+    "name": "Paweł Golonko",
+    "email": "pgolonko@gmail.com",
+    "url": "http://greenek.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/Greenek/atom-tree-view-auto-collapse/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "keepExpanded": {
+      "title": "Keep Expanded",
+      "description": "List of glob patterns. Directories matching these patterns will be prevented from auto-collapsing.",
+      "type": "array",
+      "default": [],
+      "order": 2
+    },
+    "triggerOnTextEditorClose": {
+      "title": "Auto-Collapse on Editor Tab Closing",
+      "description": "Perform auto-collapse after closing a text editor tab.",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    }
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4"
+  },
+  "deprecated": false,
+  "description": "Helps to keep the tree view clean and clear by collapsing currently unused entries.",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.8.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.8.2",
+    "prettier-eslint": "^8.2.2"
+  },
+  "engines": {
+    "atom": ">=1.18.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Greenek/atom-tree-view-auto-collapse",
+  "keywords": [
+    "file-list",
+    "tree-view"
+  ],
+  "license": "MIT",
+  "main": "./lib/tree-view-auto-collapse",
+  "name": "tree-view-auto-collapse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greenek/atom-tree-view-auto-collapse.git"
+  },
+  "version": "1.0.2"
+}

@@ -1,4 +1,8 @@
 "*":
+  Clean2:
+    autoHideTabs: false
+    hideGutter: false
+    minimapOpacity: 0
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
@@ -85,6 +89,8 @@
       "php-debug"
       "atom-debug-ui"
       "livestyle-atom"
+      "Clean2"
+      "atom-todoist"
     ]
     packagesWithSnippetsDisabled: []
     telemetryConsent: "no"
