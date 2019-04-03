@@ -1,0 +1,60 @@
+@import "syntax-variables";
+
+status-bar {
+  border-top: 1/@rem solid @base-border-color;
+  border-bottom: 1/@rem solid @status-bar-background-color;
+  background: linear-gradient(to top, @status-bar-background-color, tint(@status-bar-background-color, 60%));
+  height: 33/@rem;
+
+  .is-blurred & {
+    background: @base-background-color;
+  }
+}
+
+status-bar .status-bar-right,
+status-bar .status-bar-left {
+  padding-top: @component-padding / 4;
+  padding-bottom: @component-padding / 4;
+}
+
+status-bar .status-bar-right > *,
+status-bar .status-bar-left > * {
+  padding: 0 @component-padding;
+  border-radius: @component-border-radius-small;
+
+  &:hover:not(busy-signal),
+  &:active:not(busy-signal),
+  &:focus:not(busy-signal),
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none;
+  }
+
+  // Hover Rules for some cases that are not clickable
+  &:hover:not(.git-view):not(busy-signal):not(.linter-status-count):not(status-bar-launch-mode):not(status-bar-selection) {
+    color: @text-color-selected;
+    background-color: darken(@tab-background-color, 5%);
+    cursor: pointer;
+
+    a,
+    span {
+      color: @text-color-selected;
+    }
+  }
+}// status-bar .status-bar-right a.inline-block
+
+.inline-block:empty:not(busy-signal):not(status-bar-launch-mode) {
+  display: none;
+}
+
+// Otherwise the clickable area is uneven to the right side
+status-bar-cursor .inline-block {
+  margin-right: 0;
+}
+
+// Don’t make the display of the cursor position jump.
+.cursor-position,
+.selection-count {
+  font-family: var(--editor-font-family);
+}

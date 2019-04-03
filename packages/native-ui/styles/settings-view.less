@@ -1,0 +1,218 @@
+.settings-view .config-menu .button-area {
+  margin: 8px;
+}
+
+@_dimensions-checkbox: 20px;
+
+.settings-view .checkbox {
+  padding-left: @_dimensions-checkbox;
+}
+
+.settings-view input[type="checkbox"] {
+  margin: 1px 0 0 -@_dimensions-checkbox;
+
+  &:after,
+  &:before {
+    display: none; // don’t display the custom lines that simulate the arrow
+  }
+}
+
+.input-checkbox {
+  -webkit-appearance: checkbox;
+}
+
+.editor.mini .placeholder-text,
+.editor.mini::shadow .placeholder-text {
+  color: fadeout(@text-color-ignored, 25%);
+}
+
+.settings-view .package-card .meta-user .avatar {
+  border-radius: 100%;
+}
+
+.settings-view .package-card .meta-user,
+.settings-view .package-card .meta-controls {
+  margin-top: 0;
+}
+
+.settings-view .package-card .meta-controls .btn-group {
+  margin-top: 0 !important;
+}
+
+.settings-view .package-card .btn:hover {
+  cursor: pointer;
+}
+
+.settings-view .package-card {
+  cursor: pointer;
+  overflow: visible;
+  border: none;
+  padding: 0;
+  border-radius: @component-border-radius-small;
+  background-color: @button-background-color;
+  border-bottom: 1/@rem solid @base-border-color;
+}
+
+.package-card .body {
+  padding: @component-padding;
+}
+
+.package-card .meta {
+  padding: @component-padding;
+  border-top: 1/@rem solid @base-border-color;
+}
+
+.settings-view .package-card .package-version {
+  color: @text-color-subtle;
+}
+
+.settings-view .package-card .package-name {
+  font-weight: bold;
+  font-size: @font-size-h3;
+}
+
+.settings-view .package-card .meta-user .author {
+  color: @text-color;
+  display: inline-block;
+  transform: translateY(2px); // center with avatar
+}
+
+.settings-view .package-card .stats {
+  padding: @component-padding;
+}
+
+// Amount of downloads, amount of likes, etc.
+.settings-view .package-card .stats .stats-item {
+  color: @text-color-subtle;
+  font-size: 0.9em;
+}
+
+.settings-view .package-card .stats .stats-item .icon:before {
+  transform: translateY(2px);
+}
+
+.badge {
+  font-weight: bold;
+  color: contrast(@background-color-highlight);
+  background: @background-color-highlight;
+
+  &.badge-flexible {
+    padding: (@component-padding / 3) @component-padding;
+  }
+}
+
+.settings-view .package-card .meta-controls .status-indicator {
+  width: 3px;
+  border-color: transparent;
+  min-width: 3px;
+}
+
+.settings-view section .section-heading,
+.settings-view .section .section-heading,
+ul.background-message.centered {
+  font-family: @font-family-headlines;
+}
+
+// These are the sections making
+.settings-view .package-detail .section {
+  padding: @component-padding * 2; // same padding as the breadcrumb navigation
+}
+
+.settings-view .packages .search-container {
+  margin-bottom: 40px; // same as padding of parent element
+}
+
+// Better install animations
+.settings-view .package-card .meta-controls .install-button.is-installing,
+.settings-view .package-card .meta-controls .uninstall-button.is-uninstalling {
+  background-image: url(atom://native-ui/images/spinner-128.gif);
+  background-color: @button-background-color;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 8px 50%;
+  padding-left: 30px;
+  animation: none;
+  border-color: @button-border-color;
+  color: @text-color;
+
+  &:before { // don’t show the current icon
+    display: none;
+  }
+}
+
+.alert.alert-info.icon-hourglass {
+  background-image: url(atom://native-ui/images/spinner-128.gif);
+  background-color: @background-color-highlight;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 12px 50%;
+  padding-left: 35px;
+  animation: none;
+  border-color: @base-border-color;
+  color: @text-color-highlight;
+  height: 48px; // somehow necessary because the other box is one pixel higher
+
+  &:before {
+    display: none; // don't show old icon
+  }
+}
+
+.settings-view .config-menu .nav > li > a {
+  cursor: default; // Remove the mouse hand on hover
+  font-size: 1.15rem;
+  padding: @component-padding/1.5 @component-padding*2;
+  color: @text-color-highlight;
+
+  &:hover {
+    cursor: default; // Remove the mouse hand on hover
+    background-color: transparent;
+    color: @text-color-highlight;
+  }
+
+  &:before { // icon
+    margin-right: @component-padding;
+    color: lighten(@text-color-highlight, 45%);
+  }
+}
+
+.settings-view .config-menu .nav > li.active > a {
+  color: @text-color-highlight;
+  background-color: rgba(0,0,0, 0.1);
+}
+
+.settings-view .setting-description {
+  letter-spacing: 0.02rem; // increase legibility
+}
+
+.settings-view div > section.section.settings-panel {
+  border-top: none;
+}
+
+// First-level heading
+.settings-view section .section-heading,
+.settings-view .section .section-heading {
+  font-size: @font-size-h1;
+  font-family: @font-family-headlines;
+}
+
+// Second-level heading
+.settings-view .sub-section .sub-section-heading {
+  font-size: @font-size-h2;
+  font-family: @font-family-headlines;
+}
+
+// Change the seperator icon in the settings breadcrumbs
+.settings-view .breadcrumb > li + li:before {
+  content: "\f078";
+  font-family: "Octicons Regular";
+  padding: 0 @component-padding;
+}
+
+// Add more spacing between input fields and their label text
+.settings-view .control-label {
+  margin-bottom: 1em;
+}
+
+.settings-view .settings-panel .control-group + .control-group {
+  margin-top: 2em;
+}

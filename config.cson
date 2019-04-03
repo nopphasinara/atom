@@ -6,7 +6,8 @@
   "advanced-open-file":
     fuzzyMatch: true
   "aligner-css": {}
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
@@ -30,7 +31,6 @@
       "metrics"
       "deprecation-cop"
       "remote-sync"
-      "atom-autocomplete-php"
       "autocomplete-php"
     ]
     ignoredNames: [
@@ -95,7 +95,7 @@
     packagesWithSnippetsDisabled: []
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
+      "native-ui"
       "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
@@ -134,10 +134,16 @@
       enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "linter-php":
+    executablePath: "/usr/local/bin/php"
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
     useGitHubStyle: true
+  "native-ui":
+    ui: {}
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true

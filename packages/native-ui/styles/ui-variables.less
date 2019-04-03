@@ -1,0 +1,155 @@
+@import "syntax-variables";
+
+@ui-syntax-color                     : @syntax-background-color;
+@ui-s-h                              : hue(@ui-syntax-color);
+@ui-s-s                              : saturation(@ui-syntax-color);
+@ui-s-l                              : lightness(@ui-syntax-color);
+@ui-inv                              : 10%; // inverse lightness if below
+
+.ui-hue() when (@ui-s-s = 0) { // Use blue hue when no saturation
+  @ui-hue: 220;
+}
+
+.ui-hue() when (@ui-s-s > 0) {
+  @ui-hue: @ui-s-h;
+}
+
+.ui-hue();
+
+@text-color                          : hsl(0, 0%, 26%);
+@text-color-subtle                   : hsl(0, 0%, 60%);
+@text-color-highlight                : hsl(0, 0%, 0%);
+@text-color-selected                 : hsl(0, 0%, 100%);
+
+// Colors taken from https://developer.apple.com/macos/human-interface-guidelines/visual-design/color/
+@text-color-info                     : hsl(211, 100%, 51%);
+@text-color-success                  : hsl(104, 68%, 53%);
+@text-color-warning                  : hsl(35, 100%, 50%);
+@text-color-error                    : hsl(3, 100%, 59%);
+
+@text-color-ignored                  : @text-color-subtle;
+@text-color-added                    : @text-color-success;
+@text-color-renamed                  : @text-color-info;
+@text-color-modified                 : @text-color-warning;
+@text-color-removed                  : @text-color-error;
+
+@background-color-info               : @text-color-info;
+@background-color-success            : @text-color-success;
+@background-color-warning            : @text-color-warning;
+@background-color-error              : @text-color-error;
+@background-color-highlight          : hsl(0, 0%, 85%);
+@background-color-selected           : @text-color-info;
+
+@app-background-color                : hsl(0, 0%, 80%);
+
+@base-background-color               : hsl(0, 0%, 92%);
+@base-background-color-transparent   : hsla(0, 0%, 100%, 0.75);
+@base-border-color                   : hsl(0, 0%, 78%);
+@base-border-color-transparent       : hsla(0, 0%, 0%, 0.2);
+
+@pane-item-background-color          : @base-background-color;
+@pane-item-border-color              : @base-border-color;
+
+@input-background-color              : hsl(0, 0%, 100%);
+@input-border-color                  : fadeout(@base-border-color, 10%);
+@input-border-color-active           : hsl(211, 58%, 70%);
+@input-outline-color-active          : hsl(210, 70%, 74%);
+
+@tool-panel-background-color         : @base-background-color;
+@tool-panel-border-color             : @base-border-color;
+
+@panel-heading-background-color      : hsl(0, 0%, 76%);
+@panel-heading-border-color          : transparent;
+
+@overlay-background-color            : hsl(0, 0%, 92%);
+@overlay-border-color                : @base-border-color;
+
+@button-background-color             : @input-background-color;
+@button-background-color-selected    : @button-background-color;
+@button-border-color                 : hsl(0, 0%, 82%);
+@button-border-color--bottom         : hsl(0, 0%, 70%);
+@button-text-color                   : @text-color;
+@button-text-color-inverted          : @text-color-selected;
+
+@tab-bar-border-color                : hsl(0, 0%, 54%);
+@tab-bar-border-color-transparent    : hsla(0, 0%, 0%, 0.3);
+@tab-background-color                : hsl(0, 0%, 70%);
+@tab-bar-background-color            : @tab-background-color;
+@tab-background-color-active         : hsl(0, 0%, 82%);
+@tab-bar-background-color--blurred   : @tab-background-color-active;
+@tab-background-color-hover          : hsl(0, 0%, 65%);
+@tab-border-color                    : @tab-bar-border-color;
+@tab-text-color                      : @text-color-highlight;
+
+@resize-handle-color-hover           : @base-border-color-transparent;
+@resize-handle-color-active          : @tab-bar-border-color-transparent;
+
+@tip-background-color                : hsl(@ui-hue, 10%, 30%);
+@tip-text-color                      : @text-color-selected;
+@tip-arrow-color                     : hsl(@ui-hue, 10%, 30%);
+
+@status-bar-background-color         : @tab-background-color-active;
+@status-bar-border-color             : @tab-bar-border-color-transparent;
+
+@tree-view-background-color          : transparent;
+@tree-view-border-color              : @tab-bar-border-color-transparent;
+@tree-view-background-color-highlight: linear-gradient(to right, rgba(0,0,0, 0.18), rgba(0,0,0, 0.15), rgba(0,0,0, 0.22));
+
+@scrollbar-color                     : hsl(0, 0%, 76%);
+@scrollbar-background-color          : hsl(0, 0%, 98%);
+@scrollbar-active-color              : hsl(0, 0%, 49%);
+
+@syntax-background-lightness         : lightness(@syntax-background-color);
+.seamless-scrollbar-lightness() when (@syntax-background-lightness >= 50%) {
+  @seamless-scrollbar-color          : fade(darken(@syntax-background-color, 32%), 20%);
+  @seamless-scrollbar-border-color   : fade(darken(@syntax-background-color, 64%), 20%);
+  @seamless-scrollbar-active-color   : lighten(@seamless-scrollbar-color, 50%);
+}
+.seamless-scrollbar-lightness() when(@syntax-background-lightness < 50%) {
+  @seamless-scrollbar-color          : fade(lighten(@syntax-background-color, 32%), 20%);
+  @seamless-scrollbar-border-color   : fade(lighten(@syntax-background-color, 64%), 20%);
+  @seamless-scrollbar-active-color   : darken(@seamless-scrollbar-color, 50%);
+}
+.seamless-scrollbar-lightness();
+
+@ui-site-color-1                     : @background-color-success; // green
+@ui-site-color-2                     : @background-color-info; // blue
+@ui-site-color-3                     : @background-color-warning; // orange
+@ui-site-color-4                     : hsl(292, 89%, 57%); // purple
+@ui-site-color-5                     : hsl(54, 91%, 53%); // yellow
+
+@background-close-button-hover       : hsla(0, 0%, 0%, 0.12);
+
+@modular-scale: 1.2;
+
+@font-size                           : 12px;
+@font-size-small                     : @font-size / @modular-scale;
+@input-font-size                     : 1.15em;
+@disclosure-arrow-size               : 12px;
+@font-size-h1                        : round(@font-size * (@modular-scale * @modular-scale * @modular-scale * @modular-scale));
+@font-size-h2                        : round(@font-size * (@modular-scale * @modular-scale * @modular-scale));
+@font-size-h3                        : round(@font-size * (@modular-scale * @modular-scale));
+@font-size-h4                        : round(@font-size * @modular-scale);
+
+@component-padding                   : @font-size;
+@component-icon-padding              : 6px;
+@component-icon-size                 : 16px;
+@component-line-height               : @font-size * 2;
+@component-border-radius             : 6px;
+@component-border-radius-small       : @component-border-radius / 2;
+@component-border-radius-large       : @component-border-radius * 2;
+
+@tab-height                          : 24px;
+@height__list-item                   : @tab-height;
+
+// Make it possible to convert pixel to relative units
+@html-font-size                      : unit(@font-size); // Your base font-size in pixels
+@em                                  : @html-font-size * 1em; // Shorthand for outputting ems, e.g. “12/@em”
+@rem                                 : @html-font-size * 1rem; // Shorthand for outputting ems, e.g. “12/@rem
+
+@font-family                         : ".SFNSText", "Lucida Grande", "Segoe UI", sans-serif;
+@font-family-headlines               : ".SFNSDisplay", "Lucida Grande", "Segoe UI", sans-serif;
+
+@transition--default                 : 0.15s ease-out;
+@opacity-blurred                     : 0.5;
+@background-git-view                 : hsl(@ui-hue, @ui-s-s, 25%);

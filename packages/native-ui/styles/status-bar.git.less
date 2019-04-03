@@ -1,0 +1,27 @@
+.github-StatusBarTileController {
+  background-color: @background-git-view;
+  margin-left: @component-padding;
+
+  &:hover {
+    background-color: @background-git-view !important; // keep the color
+  }
+}
+
+.github-StatusBarTileController .inline-block,
+.github-StatusBarTileController a {
+  color: @text-color-selected;
+
+  &:hover { // indicate clickability
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.github-StatusBarTileController .inline-block:only-child,
+.github-StatusBarTileController .github-branch.inline-block {
+  margin-left: 0;
+}
+
+.github-StatusBarTileController .icon:before {
+  margin-right: @component-padding / 2;
+}
