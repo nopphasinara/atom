@@ -26,6 +26,8 @@
       "metrics"
       "deprecation-cop"
       "remote-sync"
+      "atom-autocomplete-php"
+      "autocomplete-php"
     ]
     ignoredNames: [
       ".git"

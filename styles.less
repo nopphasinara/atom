@@ -2,10 +2,10 @@
 @import "ui-variables";
 
 // Custom variables
-@btn-icon-size: 28px;
+@btn-icon-size: 1.1em;
 @font-size-sm: .875em;
-@tool-bar-font-size: 28px;
-@tool-bar-height: 44;
+@tool-bar-font-size: 1em;
+@tool-bar-height: 48;
 
 .editor {
   * {
@@ -103,7 +103,7 @@
 
 .tool-bar {
   .btn {
-    min-width: unit(100 / 48, %) !important;
+    min-width: unit(100 / 50, %) !important;
     height: auto !important;
     min-height: auto !important;
     line-height: normal !important;
@@ -111,9 +111,12 @@
     background: transparent !important;
     border-radius: 0 !important;
     margin-top: 0 !important;
+    margin-right: 0 !important;
     margin-bottom: 0 !important;
+    margin-left: 0 !important;
 
     &:before {
+      font-weight: normal !important;
       font-kerning: none !important;
       -webkit-font-smoothing: antialiased !important;
       -moz-osx-font-smoothing: grayscale !important;

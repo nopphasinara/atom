@@ -13,6 +13,32 @@
     '''
 
 
+# Coffeescript
+'.source.coffee':
+  'Toolbar MDI Button':
+    'prefix': 'mdi-button'
+    'body': '''
+    @toolBar.addButton
+      callback:
+        \'\': \'$1\'
+      text: \'<i class="gc">${2:全}</i>\'
+      html: true
+      tooltip: \'$3\'
+      type: \'button\'
+    '''
+  'Toolbar Iconset Button':
+    'prefix': 'icon-set-button'
+    'body': '''
+    @toolBar.addButton
+      callback:
+        \'\': \'$1\'
+      tooltip: \'$2\'
+      icon: \'${3:icon}\'
+      iconset: \'${4:mdi}\'
+      type: \'button\'
+    '''
+
+
 # All comments snippets
 '.source.css':
   'Section comment':
