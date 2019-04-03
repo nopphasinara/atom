@@ -94,10 +94,6 @@
     ]
     packagesWithSnippetsDisabled: []
     telemetryConsent: "no"
-    themes: [
-      "native-ui"
-      "one-dark-vivid-syntax"
-    ]
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
@@ -134,10 +130,11 @@
       enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "isotope-ui": {}
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
