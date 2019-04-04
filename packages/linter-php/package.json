@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
   "_shasum": "b16a00e2066a6dde8d9d377ae57b54d1510d11b8",
   "_spec": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-11933-8159-1iwpy0v.274v",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11934-18493-3pk6n9.0tzxg",
   "activationHooks": [
     "language-php:grammar-used"
   ],
