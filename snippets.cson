@@ -20,22 +20,22 @@
     'body': '''
     @toolBar.addButton
       callback:
-        \'\': \'$1\'
-      text: \'<i class="gc">${2:全}</i>\'
+        \'\': \'$2\'
+      text: \'<i class="gc">${1:全}</i>\'
       html: true
       tooltip: \'$3\'
-      type: \'button\'
+      type: \'button\'$0
     '''
   'Toolbar Iconset Button':
     'prefix': 'icon-set-button'
     'body': '''
     @toolBar.addButton
       callback:
-        \'\': \'$1\'
-      tooltip: \'$2\'
-      icon: \'${3:icon}\'
-      iconset: \'${4:mdi}\'
-      type: \'button\'
+        \'\': \'$3\'
+      tooltip: \'$4\'
+      icon: \'${1:icon}\'
+      iconset: \'${2:mdi}\'
+      type: \'button\'$0
     '''
 
 

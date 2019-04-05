@@ -19,13 +19,13 @@ module.exports =
       type: 'button'
 
     @toolBar.addButton
-      icon: 'sort'
       callback:
         '': 'sort-lines:sort'
         'shift': 'sort-lines:reverse-sort'
         'shift-alt': 'sort-lines:shuffle'
+      text: '<i class="gc"></i>'
+      html: true
       tooltip: 'Sort Lines (Shift click reverse sort)'
-      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
@@ -60,7 +60,7 @@ module.exports =
       callback:
         '': 'remote-sync-pro:configure'
         'alt': 'remote-ftp:disconnect'
-      text: '<i class="gc"></i>'
+      text: '<i class="gc"></i>'
       html: true
       tooltip: 'Remote FTP'
       type: 'button'
@@ -92,10 +92,11 @@ module.exports =
       type: 'button'
 
     @toolBar.addButton
-      icon: 'target'
-      callback: 'editor:log-cursor-scope'
+      callback:
+        '': 'editor:log-cursor-scope'
+      text: '<i class="gc">勇</i>'
+      html: true
       tooltip: 'Cursor Scope'
-      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
@@ -127,17 +128,19 @@ module.exports =
       type: 'button'
 
     @toolBar.addButton
-      icon: 'auto-fix'
-      callback: 'sass-autocompile:compile-to-file'
+      callback:
+        '': 'sass-autocompile:compile-to-file'
+      text: '<i class="gc"></i>'
+      html: true
       tooltip: 'Compile SASS'
-      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
-      icon: 'refresh'
-      callback: 'window:reload'
+      callback:
+        '': 'window:reload'
+      text: '<i class="gc"></i>'
+      html: true
       tooltip: 'Reload Window'
-      iconset: 'ion'
       type: 'button'
 
     @toolBar.addButton
