@@ -134,7 +134,6 @@
       enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "isotope-ui": {}
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
@@ -143,27 +142,12 @@
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
     useGitHubStyle: true
-  "native-ui":
-    ui: {}
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true
   "project-manager":
     showPath: false
     sortBy: "title"
-  "remote-ftp":
-    connector:
-      autoUploadOnSave: "never"
-    notifications:
-      enableTransfer: true
-      enableWatchFileChange: true
-    statusbar:
-      enable: true
-      position: "right"
-    tree:
-      showViewOnStartup: false
-  "remote-sync":
-    foldLogPanel: true
   "remote-sync-pro":
     foldLogPanel: true
   "sass-autocompile":
