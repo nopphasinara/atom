@@ -101,7 +101,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Menlo-Regular, Material-Design-Icons, FontAwesome5Free-Regular, FontAwesome5Free-Solid, FontAwesome5Brands-Regular"
+    fontFamily: "Menlo-Regular, Material-Design-Icons, FontAwesome5Free-Solid"
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
