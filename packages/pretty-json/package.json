@@ -1,31 +1,31 @@
 {
-  "_from": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-  "_id": "pretty-json@2.0.3",
+  "_from": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+  "_id": "pretty-json@2.1.2",
   "_inBundle": false,
-  "_integrity": "sha512-F+RINxYb6UT51xizoky/e+WYzVEH5Fi+RcVppHcV9po3tDxRbhp1l7wxjKzkwX9t+46bjuzXS4VmxV92CsUoQg==",
+  "_integrity": "sha512-LN3AeAKCfdUspOfsjKZl2tvRnN0LuFf3mzF/yGtcdW0E+CvteTeakDtL/daTHh+Y9gzZiMunliE5SQpknE2G1Q==",
   "_location": "/pretty-json",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball"
+    "raw": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-  "_shasum": "e5ba831f362e2dce2b387995d8b9dd21d4eef139",
-  "_spec": "https://www.atom.io/api/packages/pretty-json/versions/2.0.3/tarball",
-  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11934-18493-x1i6md.pc91h",
+  "_resolved": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+  "_shasum": "55774d659a45992fd7a589247f03378bf64e608f",
+  "_spec": "https://www.atom.io/api/packages/pretty-json/versions/2.1.2/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119311-2693-1xys3p4.rbqp",
   "bugs": {
     "url": "https://github.com/federomero/pretty-json/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "bignumber.js": "^7.2.1",
+    "bignumber.js": "^8.1.1",
     "json-bigint": "^0.3.0",
     "json-stable-stringify": "^1.0.1",
     "jsonminify": "^0.4.1"
@@ -33,12 +33,12 @@
   "deprecated": false,
   "description": "Format JSON",
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
   },
   "engines": {
     "atom": "*"
@@ -60,5 +60,5 @@
     "url": "git+https://github.com/federomero/pretty-json.git"
   },
   "scripts": {},
-  "version": "2.0.3"
+  "version": "2.1.2"
 }
