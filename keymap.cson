@@ -1,28 +1,29 @@
 'body':
-  'shift-cmd-O': 'unset!'
-  'shift-cmd-A': 'application:add-project-folder'
+  'shift-cmd-o': 'project-manager:list-projects'
+  'shift-cmd-a': 'application:add-project-folder'
 
 '.platform-darwin':
   'cmd-alt-f': 'unset!'
   'cmd-t': 'unset!'
-  'shift-cmd-B': 'unset!'
+  'shift-cmd-b': 'unset!'
   'cmd-p': 'fuzzy-finder:toggle-file-finder'
   'cmd-b': 'fuzzy-finder:toggle-buffer-finder'
   'shift-cmd-escape': 'tree-view:reveal-active-file'
   'cmd-escape': 'tree-view:toggle-focus'
-  'ctrl-shift-cmd-R': 'dev-live-reload:reload-all'
-  'shift-cmd-R': 'window:reload'
-  'shift-cmd-F': 'project-find:show'
+  'ctrl-shift-cmd-r': 'dev-live-reload:reload-all'
+  'shift-cmd-r': 'window:reload'
+  'shift-cmd-f': 'project-find:show'
   'cmd-f': 'find-and-replace:show'
   'ctrl-g': 'go-to-line:toggle'
-  'shift-cmd-O': 'project-manager:list-projects'
+  'shift-cmd-o': 'project-plus:toggle-project-finder'
+  # 'shift-cmd-o': 'project-manager:list-projects'
   'alt-cmd-p': 'project-manager:edit-projects'
   'alt-cmd-left': 'window:focus-previous-pane'
   'alt-cmd-right': 'window:focus-next-pane'
-  'shift-ctrl-P': 'markdown-preview:toggle'
+  'shift-ctrl-p': 'markdown-preview:toggle'
 
-'.project-manager input':
-  'enter': 'core:confirm'
+# '.project-manager input':
+#   'enter': 'core:confirm'
 
 '.platform-darwin atom-text-editor':
   'alt-cmd-p': 'unset!'
@@ -31,16 +32,16 @@
   'cmd-alt-e': 'unset!'
   'cmd-e': 'unset!'
   'cmd-k cmd-d': 'unset!'
-  'ctrl-shift-U': 'unset!'
+  'ctrl-shift-u': 'unset!'
   'cmd-\.': 'editor:log-cursor-scope'
   'ctrl-alt-cmd-g': 'grammar-selector:show'
-  'ctrl-shift-O': 'link:open'
+  'ctrl-shift-o': 'link:open'
   'cmd-alt-o': 'link:open'
   'cmd-r': 'symbols-view:toggle-file-symbols'
   'alt-cmd-d': 'find-and-replace:select-all'
   'cmd-d': 'find-and-replace:select-next'
   'cmd-g': 'find-and-replace:find-next'
-  'shift-cmd-G': 'find-and-replace:find-previous'
+  'shift-cmd-g': 'find-and-replace:find-previous'
   'cmd-u': 'find-and-replace:select-undo'
   'alt-cmd-c': 'gc:copy-filename'
   'ctrl-c': 'gc:copy'
@@ -63,10 +64,10 @@
 
 '.platform-darwin atom-text-editor:not([mini])':
   'cmd-e': 'emmet:balance-inward'
-  'shift-cmd-E': 'emmet:balance-outward'
+  'shift-cmd-e': 'emmet:balance-outward'
 
 'atom-text-editor:not([mini])':
-  'ctrl-shift-K': 'unset!'
+  'ctrl-shift-k': 'unset!'
   'alt-\[': 'gc:blade-e'
   'alt-\]': 'gc:blade-echo'
   'alt-1': 'gc:blade-echo'
@@ -88,13 +89,13 @@
   'alt-cmd-enter': 'gc:insert-linebreak'
   'shift-enter': 'emmet:expand-abbreviation'
   'ctrl-backspace': 'emmet:remove-tag'
-  'ctrl-shift-C': 'emmet:evaluate-math-expression'
-  'ctrl-shift-J': 'emmet:merge-lines'
-  'ctrl-shift-U': 'emmet:update-tag'
-  'ctrl-shift-W': 'emmet:wrap-with-abbreviation'
-  'ctrl-shift-M': 'emmet:matching-pair'
+  'ctrl-shift-c': 'emmet:evaluate-math-expression'
+  'ctrl-shift-j': 'emmet:merge-lines'
+  'ctrl-shift-u': 'emmet:update-tag'
+  'ctrl-shift-w': 'emmet:wrap-with-abbreviation'
+  'ctrl-shift-m': 'emmet:matching-pair'
   'alt-e': 'emmet:select-next-item'
-  'shift-alt-E': 'emmet:select-previous-item'
+  'shift-alt-e': 'emmet:select-previous-item'
   'alt-cmd-c': 'editor:copy-path'
   'ctrl-cmd-o': 'tree-view:show-current-file-in-file-manager'
   # 'ctrl-b': 'bracket-matcher:select-inside-brackets'
@@ -128,7 +129,7 @@
   'r': 'tree-view:rename'
   'm': 'tree-view:move'
   'a': 'tree-view:add-file'
-  'shift-A': 'tree-view:add-folder'
+  'shift-a': 'tree-view:add-folder'
   'd': 'tree-view:duplicate'
   'backspace': 'tree-view:remove'
   'up': 'core:move-up'
@@ -200,7 +201,7 @@
 
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
   'alt-cmd-s': 'sass-autocompile:compile-to-file'
-  'shift-alt-cmd-S': 'sass-autocompile:compile-direct'
+  'shift-alt-cmd-s': 'sass-autocompile:compile-direct'
 
 
 'atom-text-editor.has-livestyle-widget':

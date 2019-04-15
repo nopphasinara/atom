@@ -1,10 +1,7 @@
 "*":
-  Clean2:
-    autoHideTabs: false
-    hideGutter: false
-    minimapOpacity: 0
   "advanced-open-file":
     fuzzyMatch: true
+    helmDirSwitch: true
   "aligner-css": {}
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
@@ -45,6 +42,7 @@
       "*.last-run"
     ]
     packagesWithKeymapsDisabled: [
+      "project-viewer"
       "tool-bar"
       "autoflow"
       "bookmarks"
@@ -64,7 +62,6 @@
       "symbols-view"
       "tree-view"
       "advanced-open-file"
-      "project-manager"
       "sort-lines"
       "change-case"
       "emmet"
@@ -91,6 +88,10 @@
       "livestyle-atom"
       "Clean2"
       "atom-todoist"
+      "project-view"
+      "project-folder"
+      "project-manager"
+      "project-plus"
     ]
     packagesWithSnippetsDisabled: []
     telemetryConsent: "no"
@@ -144,14 +145,22 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
-    stickyHeaders: true
+    stickyHeaders: false
   "project-manager":
+    alwaysOpenInSameWindow: false
     showPath: false
     sortBy: "title"
+  "project-plus":
+    autoDiscover: false
+    newWindow: true
+    notifications: false
   "remote-sync-pro":
     foldLogPanel: true
   "sass-autocompile":
     compileOnSave: false
+  "scroll-through-time":
+    direction: "up"
+    modifierKey: "altKey"
   "split-diff":
     ignoreWhitespace: true
     muteNotifications: true

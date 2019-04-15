@@ -43,16 +43,16 @@ function getListener(options) {
 
     previousScroll += e["delta" + mainAxis];
     clearTimeout(timeout);
-    timeout = setTimeout(() => (previousScroll = 0), 50);
+    timeout = setTimeout(() => (previousScroll = 0), 20);
 
-    if (previousScroll > 50) {
-      previousScroll -= 50;
+    if (previousScroll > 20) {
+      previousScroll -= 20;
       let editor;
       if ((editor = atom.workspace.getActiveTextEditor())) {
         editor[reversed ? "redo" : "undo"]();
       }
-    } else if (previousScroll < -50) {
-      previousScroll += 50;
+    } else if (previousScroll < -20) {
+      previousScroll += 20;
       let editor;
       if ((editor = atom.workspace.getActiveTextEditor())) {
         editor[reversed ? "undo" : "redo"]();
