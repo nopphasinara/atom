@@ -29,7 +29,9 @@
       "deprecation-cop"
       "remote-sync"
       "autocomplete-php"
+      "welcome"
     ]
+    fileSystemWatcher: "atom"
     ignoredNames: [
       ".git"
       ".hg"
@@ -95,12 +97,12 @@
       "snippet-manager"
     ]
     packagesWithSnippetsDisabled: []
+    projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "one-dark-vivid-syntax"
     ]
-    titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo-Regular, MA2, FontAwesome5Free-Solid, Material-Design-Icons, master-icons"
