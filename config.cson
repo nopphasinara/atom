@@ -92,6 +92,7 @@
       "project-folder"
       "project-manager"
       "project-plus"
+      "snippet-manager"
     ]
     packagesWithSnippetsDisabled: []
     telemetryConsent: "no"

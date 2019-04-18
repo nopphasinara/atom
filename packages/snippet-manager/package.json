@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+  "_id": "snippet-manager@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-52f5TDLuFBeVt/M8WOKjwozk7U8HyXbgd4BhMq2aonztjsWIya0g6wio/J46G99tOD7r1EOO5HzP7yFx0aJB3A==",
+  "_location": "/snippet-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+  "_shasum": "82454ae251ef5a33bd94ecf4c5d3e64dcf34eaf8",
+  "_spec": "https://www.atom.io/api/packages/snippet-manager/versions/1.2.0/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-119318-30995-1y83wua.kxjt",
+  "bugs": {
+    "url": "https://github.com/mb3online/atom-snippet-manager/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "dotenv": "^4.0.0",
+    "mkdirp": "^0.5.1",
+    "prettier": "^1.8.2",
+    "ramda": "^0.25.0",
+    "season": "^5.4.1"
+  },
+  "deprecated": false,
+  "description": "A simple Atom package to manage snippet files automatically",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mb3online/atom-snippet-manager#readme",
+  "keywords": [
+    "snippets",
+    "snippet manager"
+  ],
+  "license": "MIT",
+  "main": "./lib/snippet-manager",
+  "name": "snippet-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mb3online/atom-snippet-manager.git"
+  },
+  "version": "1.2.0"
+}
