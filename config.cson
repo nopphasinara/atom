@@ -28,7 +28,6 @@
       "metrics"
       "deprecation-cop"
       "remote-sync"
-      "autocomplete-php"
       "welcome"
     ]
     fileSystemWatcher: "atom"
@@ -103,6 +102,7 @@
       "one-dark-ui"
       "one-dark-vivid-syntax"
     ]
+    titleBar: "hidden"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo-Regular, MA2, FontAwesome5Free-Solid, Material-Design-Icons, master-icons"
@@ -172,6 +172,7 @@
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
+    addNewTabsAtEnd: false
     displayMruTabList: false
     enableMruTabSwitching: false
   welcome:
