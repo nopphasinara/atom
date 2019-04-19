@@ -80,6 +80,28 @@
       ${6:/* Misc */}
     }$0
     '''
+  'Cover Image':
+    'prefix': 'cover-img'
+    'body': '''
+    ${1:.img-content} {
+      width: 50%;
+      font-size: 0;
+      line-height: 0;
+      position: relative;
+      letter-spacing: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    ${1:.img-content} img {
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }$0
+    '''
 
 '.source.js':
   'Section comment':
@@ -183,12 +205,37 @@
     'body': '''
     <meta ${1:name}="$2" content="$3">$0
     '''
+  'holder.js image':
+    'prefix': 'holder-img'
+    'body': '''
+    <img data-src="holder.js/${1:${2:300}x${3:300}}?${4:random=${5:yes}}" alt="${6:...}">$0
+    '''
+  'placeimg image':
+    'prefix': 'place-img'
+    'body': '''
+    <img src="https://placeimg.com/${1:300}/${2:300}/${3:any|animals|arch|nature|people|tech}/${4:grayscale|sepia}" alt="${5:...}">$0
+    '''
   '<!---->...<!---->':
     'prefix': 'block'
     'body': '''
     <!-- ${1:block container} : START -->
     $2
     <!-- ${1:block container} : END -->$0
+    '''
+  'div>container':
+    'prefix': 'div-container'
+    'body': '''
+    <!-- #${1:foo} -->
+    <div id="${1:foo}">
+      ${2:<div class="container">
+        ${3:<div class="row">
+          ${4:<div class="col">
+            $5
+          </div>}
+        </div>}
+      </div>}
+    </div>
+    <!-- / #${1:foo} -->$0
     '''
 
 
