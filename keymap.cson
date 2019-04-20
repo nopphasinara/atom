@@ -2,6 +2,9 @@
   'shift-cmd-o': 'project-manager:list-projects'
   'shift-cmd-a': 'application:add-project-folder'
 
+'atom-workspace':
+  'ctrl-c ctrl-b': 'multiline-bracket:apply'
+
 '.platform-darwin':
   'cmd-alt-f': 'unset!'
   'cmd-t': 'unset!'
@@ -43,7 +46,6 @@
   'cmd-g': 'find-and-replace:find-next'
   'shift-cmd-g': 'find-and-replace:find-previous'
   'cmd-u': 'find-and-replace:select-undo'
-  'alt-cmd-c': 'gc:copy-filename'
   'ctrl-c': 'gc:copy'
   'ctrl-v': 'gc:paste'
   'alt-4': 'gc:tab-stop'
@@ -104,6 +106,7 @@
   'end': 'core:move-to-bottom'
   'shift-home': 'core:select-to-top'
   'shift-end': 'core:select-to-bottom'
+  'ctrl-cmd-c': 'gc:copy-filename'
 
 
 'atom-text-editor':

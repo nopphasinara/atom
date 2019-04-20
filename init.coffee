@@ -69,13 +69,13 @@ global.gc = {
 }
 
 
-atom.commands.add 'atom-workspace', 'gc:control-files', ->
-  editor = atom.workspace.getActiveTextEditor()
-  atom.commands.dispatch(atom.views.getView(editor), "application:new-window")
-
-  exec('open -a Atom "$HOME/Dropbox/Control-Master.txt" "$HOME/Google Drives/nopphasin/Fineart Drive/Control-Fineart.txt" "$HOME/Google Drives/nopphasin/Fineart Drive/Plesk_Oynx.txt"', (error, stdout, stderr) ->
-    # console.error error
-  )
+# atom.commands.add 'atom-workspace', 'gc:control-files', ->
+#   editor = atom.workspace.getActiveTextEditor()
+#   atom.commands.dispatch(atom.views.getView(editor), "application:new-window")
+#
+#   exec('open -a Atom "$HOME/Dropbox/Control-Master.txt" "$HOME/Google Drives/nopphasin/Fineart Drive/Control-Fineart.txt" "$HOME/Google Drives/nopphasin/Fineart Drive/Plesk_Oynx.txt"', (error, stdout, stderr) ->
+#     # console.error error
+#   )
 
 atom.commands.add 'atom-text-editor', 'gc:select-outside-bracket', ->
   editor = atom.workspace.getActiveTextEditor()

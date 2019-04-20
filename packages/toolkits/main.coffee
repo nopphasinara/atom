@@ -3,6 +3,7 @@ global.GC = {}
 {$, $$, SelectListView} = require 'atom-space-pen-views'
 
 ToolkitsToolBar = require './lib/tool-bar'
+# ToolkitsDoubleBracketsWithSpaces = require './lib/double-brackets-with-spaces'
 # ToolkitsCommands = require './lib/commands'
 # ToolkitsChangeCase = require './lib/change-case'
 # ToolkitsSortLines = require './lib/sort-lines'
@@ -15,6 +16,7 @@ module.exports =
     # ToolkitsChangeCase.activate(state)
     # ToolkitsSortLines.activate(state)
     # ToolKitsLessAutocompile.activate(state)
+    # ToolkitsDoubleBracketsWithSpaces.activate(state)
 
   deactivate: (state) ->
     # alert('deactivated')
