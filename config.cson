@@ -29,8 +29,8 @@
       "deprecation-cop"
       "remote-sync"
       "welcome"
+      "busy-signal"
     ]
-    fileSystemWatcher: "atom"
     ignoredNames: [
       ".git"
       ".hg"
