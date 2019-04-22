@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-  "_id": "language-blade@0.41.4",
+  "_from": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+  "_id": "language-blade@0.42.0",
   "_inBundle": false,
-  "_integrity": "sha512-xsIzuGAEBEv9A+FtRyJxj+kPFkpjAHqsn99ESYgU2aqpd0NZCCql5nKv8mmhIXbT8ftnqTOmMGieQ3q99YrZXg==",
+  "_integrity": "sha512-1lcU2ZCo0hFAyP07xt/pfuNVF+5IT3H2MUflkGVNIC/wDiakIoHKZT2WND1oWJNWmqlkNZCxkSkJJi9FGx/D9w==",
   "_location": "/language-blade",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball"
+    "raw": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-  "_shasum": "ebd7515c788fd82343a76335e076479303ac020a",
-  "_spec": "https://www.atom.io/api/packages/language-blade/versions/0.41.4/tarball",
-  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11934-18493-132e3lx.31xl",
+  "_resolved": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+  "_shasum": "eecb0902ff38baa23600418aa01098c450801b5f",
+  "_spec": "https://www.atom.io/api/packages/language-blade/versions/0.42.0/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119322-3811-12yzp4o.fz0v",
   "bugs": {
     "url": "https://github.com/jawee/language-blade/issues"
   },
@@ -37,5 +37,5 @@
     "type": "git",
     "url": "git+https://github.com/jawee/language-blade.git"
   },
-  "version": "0.41.4"
+  "version": "0.42.0"
 }
