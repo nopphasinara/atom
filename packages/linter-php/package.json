@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-  "_id": "linter-php@1.6.0",
+  "_from": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+  "_id": "linter-php@1.6.1",
   "_inBundle": false,
-  "_integrity": "sha512-Pag9PYq5nvEiIM4Zw0qjiQTiDtts4n3Ru3JR6Bys7MNBripMUsY9JoXektjSSuQZ3M6uMcrryH5d/H2xvDjlAw==",
+  "_integrity": "sha512-X3QanDTF6QA/EVTqn491+EWSVhbclDpL25j9LNiGuiHnYHKDk4sKOwzHl8H8QRtFU7z44v70M9hl1YXjR6/ZsA==",
   "_location": "/linter-php",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball"
+    "raw": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-  "_shasum": "b16a00e2066a6dde8d9d377ae57b54d1510d11b8",
-  "_spec": "https://www.atom.io/api/packages/linter-php/versions/1.6.0/tarball",
-  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-11934-18493-3pk6n9.0tzxg",
+  "_resolved": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+  "_shasum": "d22186a2567dfd43bab4971084affee4206252ca",
+  "_spec": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
+  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119323-2534-13t00ha.ux1t",
   "activationHooks": [
     "language-php:grammar-used"
   ],
@@ -52,22 +52,22 @@
     }
   },
   "dependencies": {
-    "atom-linter": "^10.0.0",
-    "atom-package-deps": "^5.0.0"
+    "atom-linter": "10.0.0",
+    "atom-package-deps": "5.1.0"
   },
   "deprecated": false,
   "description": "Lint PHP on the fly, using php -l",
   "devDependencies": {
-    "@commitlint/cli": "^7.3.2",
-    "@commitlint/config-conventional": "^7.3.1",
-    "@commitlint/travis-cli": "^7.3.2",
-    "@semantic-release/apm-config": "^6.0.1",
-    "eslint": "^4.6.0",
-    "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "husky": "^1.3.1",
-    "jasmine-fix": "^1.3.0",
-    "semantic-release": "^15.13.3"
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@commitlint/travis-cli": "7.5.2",
+    "@semantic-release/apm-config": "6.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.17.2",
+    "husky": "1.3.1",
+    "jasmine-fix": "1.3.1",
+    "semantic-release": "15.13.3"
   },
   "engines": {
     "atom": ">=1.7.0 <2.0.0"
@@ -105,6 +105,7 @@
   "package-deps": [
     "linter:2.0.0"
   ],
+  "private": true,
   "providedServices": {
     "linter": {
       "versions": {
@@ -115,6 +116,21 @@
   "release": {
     "extends": "@semantic-release/apm-config"
   },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "semanticCommits": true,
+    "rangeStrategy": "pin",
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "^eslint"
+        ],
+        "groupName": "ESLint packages"
+      }
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AtomLinter/linter-php.git"
@@ -123,5 +139,5 @@
     "lint": "eslint .",
     "test": "apm test"
   },
-  "version": "1.6.0"
+  "version": "1.6.1"
 }
