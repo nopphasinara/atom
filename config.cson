@@ -5,6 +5,8 @@
   "aligner-css": {}
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
+  "autocomplete-ctags":
+    minimumPrefixLength: 1
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
@@ -153,7 +155,7 @@
     hideDockButtons: true
     stickyHeaders: false
   "project-manager":
-    alwaysOpenInSameWindow: false
+    alwaysOpenInSameWindow: true
     showPath: false
     sortBy: "title"
   "project-plus":
