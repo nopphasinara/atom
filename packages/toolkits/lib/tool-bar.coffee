@@ -58,7 +58,7 @@ module.exports =
 
     @toolBar.addButton
       callback:
-        '': 'remote-sync-pro:configure'
+        '': 'remote-sync:configure'
         'alt': 'remote-ftp:disconnect'
       text: '<i class="gc"></i>'
       html: true
@@ -67,7 +67,7 @@ module.exports =
 
     @toolBar.addButton
       callback:
-        '': 'remote-sync-pro:upload-file'
+        '': 'remote-sync:upload-file'
       text: '<i class="gc"></i>'
       html: true
       tooltip: 'Upload File'
@@ -75,7 +75,7 @@ module.exports =
 
     @toolBar.addButton
       callback:
-        '': 'remote-sync-pro:download-file'
+        '': 'remote-sync:download-file'
       text: '<i class="gc"></i>'
       html: true
       tooltip: 'Download File'
