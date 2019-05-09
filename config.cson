@@ -29,9 +29,7 @@
       "background-tips"
       "metrics"
       "deprecation-cop"
-      "remote-sync"
       "welcome"
-      "busy-signal"
     ]
     ignoredNames: [
       ".git"
