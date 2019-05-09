@@ -7,7 +7,10 @@
     "atom-space-pen-views": "^2.2.0",
     "bluebird": "^3.5.3",
     "fs-plus": "^3.1.1",
-    "fuzzaldrin-plus": "^0.6.0"
+    "fuzzaldrin-plus": "^0.6.0",
+    "mobx": "^5.9.4",
+    "tildify": "^2.0.0",
+    "untildify": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
