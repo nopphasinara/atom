@@ -63,6 +63,7 @@
   'cmd-w': 'unset!'
   'enter': 'core:confirm'
   'escape': 'core:cancel'
+  # 'shift-enter': 'project-manager:alt-confirm'
 
 '.platform-darwin atom-text-editor:not([mini])':
   'cmd-e': 'emmet:balance-inward'
