@@ -293,6 +293,14 @@
     'body': '''
     @json(${1:\\$array})$0
     '''
+  '@section()':
+    'prefix': 'section'
+    'body': '''
+    @section('${1:name}'${2:, '$3'})${4:${5:...}@endsection}$0
+    '''
+  '@section':
+    'prefix': 'sec'
+    'disabled': true
 
 
 '.source.php':
