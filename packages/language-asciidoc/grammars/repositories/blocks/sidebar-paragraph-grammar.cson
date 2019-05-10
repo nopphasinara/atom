@@ -1,0 +1,70 @@
+key: 'sidebar-paragraph'
+
+patterns: [
+
+  # Matches sidebar paragraph.
+  #
+  # Examples:
+  #
+  #   [sidebar]
+  #   ****
+  #   A multi-line *sidebar*.
+  #   ****
+  #
+  # or
+  #
+  #   [sidebar]
+  #   --
+  #   A multi-line *sidebar*.
+  #   --
+  #
+  # or
+  #
+  #   [sidebar]
+  #   A multi-line *sidebar*.
+  #
+  name: 'markup.block.sidebar.asciidoc'
+  begin: '(?=(?>(?:^\\[(sidebar)((?:,|#|\\.|%)[^\\]]+)*\\]$)))'
+  patterns: [
+    match: '^\\[(sidebar)((?:,|#|\\.|%)([^,\\]]+))*\\]$'
+    captures:
+      0:
+        patterns: [
+          include: '#block-attribute-inner'
+        ]
+  ,
+    include: '#block-title'
+  ,
+    comment: 'sidebar block'
+    begin: '^(\\*{4,})$'
+    patterns: [
+      include: '$self'
+    ]
+    end: '^(\\1)$'
+  ,
+    comment: 'open block'
+    begin: '^(-{2})$'
+    patterns: [
+      include: '$self'
+    ]
+    end: '^(\\1)$'
+  ,
+    include: '#inlines'
+  ]
+  end: '((?<=--|\\*\\*\\*\\*)$|^\\p{Blank}*$)'
+,
+  # Matches sidebar block
+  #
+  # Examples
+  #
+  # ****
+  # As an aside, I love Asciidoc
+  # ****
+  #
+  name: 'markup.block.sidebar.asciidoc'
+  begin: '^(\\*{4,})$'
+  patterns: [
+    include: '$self'
+  ]
+  end: '^(\\1)$'
+]
