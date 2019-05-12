@@ -2,7 +2,7 @@
 @import "ui-variables";
 
 // Custom variables
-@btn-icon-size: 1.1em;
+@btn-icon-size: 1em;
 @font-size-sm: .875em;
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
@@ -50,10 +50,10 @@
       opacity: 1 !important;
 
       .line-number {
-        padding-left: 14px !important;
+        // padding-left: 14px !important;
 
         &[class*="git-line-"] {
-          padding-left: 12px !important;
+          // padding-left: 12px !important;
         }
 
         &.git-line-added {
@@ -114,6 +114,7 @@
     margin-right: 0 !important;
     margin-bottom: 0 !important;
     margin-left: 0 !important;
+    vertical-align: middle !important;
 
     &:before {
       font-weight: normal !important;
@@ -126,16 +127,19 @@
       // font-size: unit(@tool-bar-font-size, px) !important;
       height: unit(@tool-bar-height, px) !important;
       line-height: unit(@tool-bar-height, px) !important;
+      vertical-align: middle !important;
     }
   }
 
   .tool-bar-spacer {
     height: auto !important;
     border-image: none !important;
+    vertical-align: middle !important;
   }
 
   .gc {
-    font-family: "Material-Design-Icons" !important;
+    font-family: "boxicons", "Material-Design-Icons" !important;
+    // font-family: "Material-Design-Icons" !important;
     // font-family: "master-icons" !important;
     font-size: @btn-icon-size !important;
     font-style: normal !important;
@@ -151,7 +155,20 @@
     // -moz-osx-font-smoothing: grayscale !important;
     // text-rendering: optimizeLegibility !important;
     // font-variant: normal !important;
+    vertical-align: middle !important;
 
+    &.bi {
+      font-family: "boxicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
     &.mdi {
       font-family: "Material-Design-Icons" !important;
       // font-size: @btn-icon-size !important;
@@ -161,9 +178,11 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.fa {
-      font-family: "FontAwesome", "FontAwesome5ProLight", "FontAwesome5ProRegular", "FontAwesome5ProSolid", "FontAwesome5FreeRegular", "FontAwesome5FreeSolid", "FontAwesome5BrandsRegular" !important;
+      font-family: "FontAwesome", "FontAwesome5Free-Solid" !important;
       // font-size: @btn-icon-size !important;
 
       font-kerning: none !important;
@@ -171,6 +190,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.custom {
       font-family: "fontcustom" !important;
@@ -181,6 +202,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.ico {
       font-family: "icofont" !important;
@@ -191,6 +214,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.icomoon {
       font-family: "icomoon" !important;
@@ -201,6 +226,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.iconic {
       font-family: "iconmonstr-iconic-font", "open-iconic" !important;
@@ -211,6 +238,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.ion {
       font-family: "Ionicons" !important;
@@ -221,6 +250,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.oct {
       font-family: "octicons" !important;
@@ -231,6 +262,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.typ {
       font-family: "typicons" !important;
@@ -241,6 +274,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.das {
       font-family: "dashicons" !important;
@@ -251,6 +286,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
     &.ent {
       font-family: "entypo" !important;
@@ -261,6 +298,8 @@
       -moz-osx-font-smoothing: grayscale !important;
       -moz-font-smoothing: grayscale !important;
       text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
     }
   }
 }

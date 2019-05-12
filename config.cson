@@ -108,7 +108,7 @@
   "double-brackets-with-spaces":
     single: "only-imports"
   editor:
-    fontFamily: "Menlo-Regular, MicrosoftSansSerif, san-serif, boxicons, master-icons"
+    fontFamily: "Menlo-Regular, MicrosoftSansSerif, san-serif, boxicons, Material-Design-Icons, mastericons"
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
