@@ -159,6 +159,8 @@
     autoDiscover: false
     newWindow: true
     notifications: false
+  "remote-sync":
+    foldLogPanel: true
   "remote-sync-pro":
     foldLogPanel: true
   "sass-autocompile":
