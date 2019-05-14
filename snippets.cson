@@ -222,6 +222,11 @@
     $2
     <!-- ${1:block container} : END -->$0
     '''
+  'script src':
+    'prefix': 'script-src'
+    'body': '''
+    <script ${2:async }src="$1"></script>$0
+    '''
   'div>container':
     'prefix': 'div-container'
     'body': '''
