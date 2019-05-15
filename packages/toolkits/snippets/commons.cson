@@ -54,42 +54,63 @@
   'Fineart Develop':
     'prefix': 'artname'
     'body': 'Fineart Develop$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'fineartdevelop@gmail.com':
     'prefix': 'artemail'
     'body': 'fineartdevelop@gmail.com$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'fineartdevelop':
     'prefix': 'artuser'
     'body': 'fineartdevelop$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'Nopphasin Arayasirikul':
     'prefix': 'defname'
     'body': 'Nopphasin Arayasirikul$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'nopphasin.arayasirikul@gmail.com':
     'prefix': 'defemail'
     'body': 'nopphasin.arayasirikul@gmail.com$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'nopphasinara':
     'prefix': 'defuser'
     'body': 'nopphasinara$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
+  '26/354 Moo 4 Soi Khao Makok 1, Huay Yai, Banglamung, Chonburi 20150':
+    'prefix': 'defaddren'
+    'body': '26/354 Moo 4 Soi Khao Makok 1, Huay Yai, Banglamung, Chonburi 20150$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
+  '26/354 หมู่ 4 ซอยเขามะกอก 1 ต.ห้วยใหญ่ อ.บางละมุง จ.ชลบุรี 20150':
+    'prefix': 'defaddrth'
+    'body': '26/354 หมู่ 4 ซอยเขามะกอก 1 ต.ห้วยใหญ่ อ.บางละมุง จ.ชลบุรี 20150$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'Goldfish Creative':
     'prefix': 'gctname'
     'body': 'Goldfish Creative$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'goldfishcreative.thailand@gmail.com':
     'prefix': 'gctemail'
     'body': 'goldfishcreative.thailand@gmail.com$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'gcreativeth':
     'prefix': 'gctuser'
     'body': 'goldfishcreativethailand$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'Reproduction Gallery':
     'prefix': 'rpgname'
     'body': 'Reproduction Gallery$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'sales@reproduction-gallery.com':
     'prefix': 'rpgemail'
     'body': 'sales@reproduction-gallery.com$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   'Reproduction Galleries LLC':
     'prefix': 'rpgcomp'
     'body': 'Reproduction Galleries LLC$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
   '5933 NE Win Sivers Drive, #205 Portland, OR 97220 USA':
     'prefix': 'rpgaddr'
     'body': '5933 NE Win Sivers Drive, #205 Portland, OR 97220 USA$0'
+    'rightLabelHTML': '<span class="snippet-label common">Common</span>'
 
 
 # CSON and JSON
