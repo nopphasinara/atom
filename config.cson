@@ -13,10 +13,8 @@
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
-    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
     provider: "FuzzyProvider"
-    similarSuggestionRemoval: "textOrSnippet"
   autoprefixer: {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -95,6 +93,7 @@
       "project-plus"
       "snippet-manager"
       "multiline-bracket"
+      "autocomplete-plus"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"

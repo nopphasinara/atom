@@ -1,0 +1,33 @@
+'.source.json':
+  'com.github.atom':
+    'prefix': 'com.github.atom'
+    'body': 'com.github.atom$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.adobe.Photoshop':
+    'prefix': 'com.adobe.Photoshop'
+    'body': 'com.adobe.Photoshop$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.apple.finder':
+    'prefix': 'com.apple.finder'
+    'body': 'com.apple.finder$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.apple.Firefox':
+    'prefix': 'com.apple.Firefox'
+    'body': 'com.apple.Firefox$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.apple.Safari':
+    'prefix': 'com.apple.Safari'
+    'body': 'com.apple.Safari$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.google.Chrome':
+    'prefix': 'com.google.Chrome'
+    'body': 'com.google.Chrome$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.googlecode.iterm2':
+    'prefix': 'com.googlecode.iterm2'
+    'body': 'com.googlecode.iterm2$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.adobe.illustrator':
+    'prefix': 'com.adobe.illustrator'
+    'body': 'com.adobe.illustrator$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'

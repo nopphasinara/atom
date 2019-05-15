@@ -369,3 +369,55 @@ atom-dock {
 		background: @syntax-background-color;
 	}
 } */
+
+.snippet-label {
+  font-family: "Menlo-Regular", "MicrosoftSansSerif", "san-serif", "boxicons", "Material-Design-Icons", "mastericons" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+
+  font-kerning: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -moz-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+
+  vertical-align: middle !important;
+  display: block !important;
+
+  &.primary {
+    color: @hue-2 !important;
+  }
+  &.secondary {
+    color: @mono-2 !important;
+  }
+  &.success {
+    color: @hue-4 !important;
+  }
+  &.info {
+    color: @hue-2 !important;
+  }
+  &.warning {
+    color: @hue-6-2 !important;
+  }
+  &.danger {
+    color: @hue-5 !important;
+  }
+  &.light {
+    color: @mono-1 !important;
+  }
+  &.dark {
+    color: @mono-3 !important;
+  }
+
+  &.bi {
+    color: @hue-6-2 !important;
+    font-size: 1.875em !important;
+    font-weight: normal !important;
+    line-height: @ui-size !important;
+    padding-top: 6px !important;
+  }
+
+  &.common {
+    color: @hue-2 !important;
+  }
+}
