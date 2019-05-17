@@ -140,6 +140,8 @@
       enableStatusBarIcon: false
   hyperclick:
     darwinTriggerKeys: "altKey"
+  linter:
+    lintOnChange: false
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
