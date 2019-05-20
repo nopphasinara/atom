@@ -245,6 +245,13 @@
 
 
 '.text.html.php':
+  '<?php foreach () { ?>..<?php } ?>':
+    'prefix': 'foreach'
+    'body': '''
+    <?php foreach (${1:\$var} as ${2:\$key}${4: => ${3:\$value}}) { ?>
+      $5
+    <?php } ?>$0
+    '''
   '<?php if () { ?>..<?php } else { ?>..<?php } ?>':
     'prefix': 'ifelse'
     'body': '''
