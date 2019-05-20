@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-  "_id": "autoprefixer@4.0.1",
+  "_from": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+  "_id": "autoprefixer@4.0.2",
   "_inBundle": false,
-  "_integrity": "sha512-c2h09xqK+0KhycdJwX4/QBiisYei0xzEvAabEkGuxYY795xSWeMe1DP4H1MONleiEdryOtVDPObX8V4FBFVP0w==",
+  "_integrity": "sha512-dyc70GRPAeFrgxx4nIiGQcwrRoyfkcu6fIWZKM0BjFww8Q5lbuHh1mnieMSQCZxEFvSsLG2zxA1d04NwDDGlrg==",
   "_location": "/autoprefixer",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball"
+    "raw": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-  "_shasum": "38b2a5fdf2e803f4958071f65ea8594bccebb83b",
-  "_spec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.1/tarball",
-  "_where": "/private/var/folders/h1/t8rkwbm95414s8z346lv08cm0000gp/T/apm-install-dir-119414-56251-7i73mk.dddd8",
+  "_resolved": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+  "_shasum": "d6469bb751cc5b53720b0039711bd43bded409ed",
+  "_spec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
+  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-119420-5290-16p9lnm.lk97h",
   "activationCommands": {
     "atom-workspace": [
       "core:save",
@@ -66,7 +66,7 @@
   "scripts": {
     "test": "xo"
   },
-  "version": "4.0.1",
+  "version": "4.0.2",
   "xo": {
     "globals": [
       "atom"
