@@ -1,16 +1,8 @@
 
 // Config -----------------------------------
-// @base: #141A2D;
 @base: #1C2236;
-// @base: #1d2733;
-
-// @base: #1D2732;
-// @base: #242739;
-// @base: #1D2437;
-// @base: #1C2838;
 // @base: #2D2F39;
-// @base: #1E233C;
-// @base: #2E323A;
+
 @syntax-hue:          hue(@base);
 // @syntax-hue:          230;
 @syntax-saturation:   saturation(@base) - 6;
@@ -26,19 +18,31 @@
 
 // Colors -----------------------------------
 @purple: #ae94c0;
-@yellow: #efc371;
+@orange: #f8a623;
+@cyan: #c9feff;
+@green: #c6feb9;
+@blue: hsl(212, 99%, 75%);
+@yellow: #fcdf51;
+@darkred: hsl(5, 91%, 73%);
+@red: hsl(348, 45%, 66%);
 
-@hue-1:   hsl(191, 91%, 73%); // <-cyan
-@hue-2:   hsl(212, 99%, 75%); // <-blue
-@hue-3:   hsl( hue(@purple), saturation(@purple) + 20, lightness(@purple) + 3 ); // <-purple
+@hue-1:   hsl( hue(@cyan), saturation(@cyan) + 5, lightness(@cyan) - 12 ); // <-cyan
+// @hue-1:   hsl(191, 91%, 73%); // <-cyan
+@hue-2:   hsl( hue(@blue), saturation(@blue), lightness(@blue) + 2 ); // <-blue
+// @hue-2:   hsl(212, 99%, 75%); // <-blue
+@hue-3:   hsl( hue(@purple), saturation(@purple) + 25, lightness(@purple) + 5 ); // <-purple
 // @hue-3:   hsl(286, 82%, 79%); // <-purple
-@hue-4:   hsl(118, 69%, 78%); // <-green
+@hue-4:   hsl( hue(@green), saturation(@green) - 10, lightness(@green) - 8 ); // <-green
+// @hue-4:   hsl(118, 69%, 78%); // <-green
 
-@hue-5:   hsl(  5, 91%, 73%); // <-red 1
-@hue-5-2: hsl(348, 45%, 66%); // <-red 2
+@hue-5:   hsl( hue(@darkred), saturation(@darkred), lightness(@darkred) ); // <-red 1
+// @hue-5:   hsl(  5, 91%, 73%); // <-red 1
+@hue-5-2: hsl( hue(@red), saturation(@red), lightness(@red) ); // <-red 2
+// @hue-5-2: hsl(348, 45%, 66%); // <-red 2
 
-@hue-6:   hsl( 48, 71%, 76%); // <-orange 1
-@hue-6-2: hsl( hue(@yellow), saturation(@yellow), lightness(@yellow)); // <-orange 2
+@hue-6:   hsl( hue(@yellow), saturation(@yellow) - 10, lightness(@yellow) + 3 ); // <-orange 1
+// @hue-6:   hsl( 48, 71%, 76%); // <-orange 1
+@hue-6-2: hsl( hue(@orange), saturation(@orange) - 10, lightness(@orange) + 12 ); // <-orange 2
 // @hue-6-2: hsl( 41, 98%, 70%); // <-orange 2
 
 
