@@ -146,6 +146,7 @@
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
     panelHeight: 300
+    showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false

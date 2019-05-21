@@ -4,14 +4,14 @@
 
 @import "syntax-variables";
 
-.ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
+.ui-syntax-color() { @syntax-background-color: hsl(220, 24%, 20%); } .ui-syntax-color(); // fallback color
 @ui-syntax-color: @syntax-background-color;
 
 // Color guards -----------------
 @ui-s-h: hue(@ui-syntax-color);
 @ui-s-s: saturation(@ui-syntax-color);
 @ui-s-l: lightness(@ui-syntax-color);
-@ui-inv: 10%; // inverse lightness if below
+@ui-inv: 0%; // inverse lightness if below
 
 .ui-hue() when (@ui-s-s = 0) { @ui-hue: 220; } // Use blue hue when no saturation
 .ui-hue() when (@ui-s-s > 0) { @ui-hue: @ui-s-h; }
@@ -24,7 +24,7 @@
 .ui-saturation();
 
 .ui-lightness() when (@ui-s-l <  @ui-inv) {
-  @ui-lightness: @ui-s-l + 8%; // increase lightness when too dark
+  @ui-lightness: @ui-s-l + 4%; // increase lightness when too dark
   @ui-lightness-border: @ui-lightness*.3;
 }
 .ui-lightness() when (@ui-s-l >= @ui-inv) {

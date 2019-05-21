@@ -1,7 +1,9 @@
 
 // Config -----------------------------------
-@base: #1C2236;
+// @base: #1C2236;
 // @base: #2D2F39;
+
+@base: #2A2838;
 
 @syntax-hue:          hue(@base);
 // @syntax-hue:          230;
@@ -17,7 +19,7 @@
 @mono-3: hsl(@syntax-hue, 12%, 44%);
 
 // Colors -----------------------------------
-@purple: #ae94c0;
+@purple: #9071FB;
 @orange: #f8a623;
 @cyan: #c9feff;
 @green: #c6feb9;
@@ -26,11 +28,11 @@
 @darkred: hsl(5, 91%, 73%);
 @red: hsl(348, 45%, 66%);
 
-@hue-1:   hsl( hue(@cyan), saturation(@cyan) + 5, lightness(@cyan) - 12 ); // <-cyan
+@hue-1:   hsl( hue(@cyan), saturation(@cyan) - 15, lightness(@cyan) - 12 ); // <-cyan
 // @hue-1:   hsl(191, 91%, 73%); // <-cyan
-@hue-2:   hsl( hue(@blue), saturation(@blue), lightness(@blue) + 2 ); // <-blue
+@hue-2:   hsl( hue(@blue), saturation(@blue) + 15, lightness(@blue) + 3 ); // <-blue
 // @hue-2:   hsl(212, 99%, 75%); // <-blue
-@hue-3:   hsl( hue(@purple), saturation(@purple) + 25, lightness(@purple) + 5 ); // <-purple
+@hue-3:   hsl( hue(@purple), saturation(@purple) + 5, lightness(@purple) + 12 ); // <-purple
 // @hue-3:   hsl(286, 82%, 79%); // <-purple
 @hue-4:   hsl( hue(@green), saturation(@green) - 10, lightness(@green) - 8 ); // <-green
 // @hue-4:   hsl(118, 69%, 78%); // <-green
