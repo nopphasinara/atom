@@ -94,6 +94,7 @@
       "snippet-manager"
       "multiline-bracket"
       "autocomplete-plus"
+      "autocomplete"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
