@@ -13,8 +13,10 @@
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    extraWordCharacters: ""
+    maxVisibleSuggestions: 20
     minimumWordLength: 1
-    provider: "FuzzyProvider"
+    similarSuggestionRemoval: "textOrSnippet"
   autoprefixer: {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
