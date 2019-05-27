@@ -97,6 +97,7 @@
       "multiline-bracket"
       "autocomplete-plus"
       "autocomplete"
+      "atom-js-console"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
