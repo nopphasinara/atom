@@ -1,0 +1,16 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'.atom-text-editor':
+  'shift-cmd-e shift-cmd-u': 'escape-utils:url-encode'
+  'shift-cmd-e cmd-u': 'escape-utils:url-decode'
+  'shift-cmd-e shift-cmd-b': 'escape-utils:base64-encode'
+  'shift-cmd-e cmd-b': 'escape-utils:base64-decode'
+  'shift-cmd-e shift-cmd-h': 'escape-utils:html-encode'
+  'shift-cmd-e cmd-h': 'escape-utils:html-decode'

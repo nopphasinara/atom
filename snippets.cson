@@ -384,3 +384,248 @@
     'body': '''
     if ($1)$2;$0
     '''
+
+'.source.json':
+  # Karabiner conditions
+  'ke-conditions-app':
+    'prefix': 'ke-conditions-app'
+    'body': '''
+    {
+      "type": "frontmost_application_${1:if}${2:unless}",
+      "bundle_identifiers": [
+        $4${3:"^com.apple.finder$",
+        "^com.googlecode.iterm2$",
+        "^com.github.atom$",
+        "^com.sublimetext.3$",
+        "^com.google.Chrome$",
+        "^com.apple.Safari$",
+        "^org.mozilla.firefox$",
+        "^com.apple.Firefox$",
+        "^com.adobe.Photoshop$"}
+      ]
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-conditions-variable':
+    'prefix': 'ke-conditions-variable'
+    'body': '''
+    {
+      "type": "variable_${1:if}${2:unless}",
+      "name": "$3",
+      "value": "$4"
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-parameters':
+    'prefix': 'ke-parameters'
+    'body': '''
+    ${1:"parameters": \\{
+      ${2:"basic.to_if_alone_timeout_milliseconds": 1000,
+      "basic.to_if_held_down_threshold_milliseconds": 500,
+      "basic.to_delayed_action_delay_milliseconds": 500,
+      "basic.simultaneous_threshold_milliseconds": 50}
+    \\},}$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-from':
+    'prefix': 'ke-from'
+    'body': '''
+    {
+      "from": \\{
+        "key_code": "$5"${1:,
+        "modifiers": \\{
+          ${4:"mandatory": \\[
+            $6
+          \\]${3:,
+          }}${2:"optional": \\[
+            $7
+          \\]}
+        \\}}
+      \\}$8,
+      "type": "basic"
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-from-mouse':
+    'prefix': 'ke-from-mouse'
+    'body': '''
+    {
+      "from": \\{
+        "pointing_button": "$5"${1:,
+        "modifiers": \\{
+          ${4:"mandatory": \\[
+            $6
+          \\]${3:,
+          }}${2:"optional": \\[
+            $7
+          \\]}
+        \\}}
+      \\}$8,
+      "type": "basic"
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-from-simultaneous':
+    'prefix': 'ke-from-simultaneous'
+    'body': '''
+    {
+      "from": \\{
+        "simultaneous": [
+          $5
+        ]${1:,
+        "modifiers": \\{
+          ${4:"mandatory": \\[
+            $6
+          \\]${3:,
+          }}${2:"optional": \\[
+            $7
+          \\]}
+        \\}}
+      \\}$8,
+      "type": "basic"
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-to':
+    'prefix': 'ke-to'
+    'body': '''
+    ${1:"to": \\[
+      $2\\{
+        "key_code": "",
+        "modifiers": \\[
+          ""
+        \\],
+        "lazy": "false",
+        "repeat": "true",
+        "halt": "false"
+      \\},
+      \\{
+        "set_variable": \\{
+          "name": "pressed",
+          "value": 1
+        \\}
+      \\},
+      \\{
+        "shell_command": ""
+      \\}
+    \\],}$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'ke-binding':
+    'prefix': 'ke-binding'
+    'body': '''
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": ""
+          },
+          {
+            "key_code": ""
+          }
+        ],
+        "key_code": "",
+        "modifiers": {
+          "mandatory": [
+            "any"
+          ],
+          "optional": [
+            "any"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "",
+          "modifiers": [
+            ""
+          ],
+          "lazy": "false /* When true, the modifier does not send own key events until another key is pressed together, lazy parameter works with modifier */",
+          "repeat": "true /* When true, key_up event is sent when you release the key, you have to set repeat in the last to event if you have multiple to events */",
+          "halt": "false /* When true, exists in to_if_alone or to_if_held_down, the to_after_key_up is suppressed when to_if_alone or to_if_held_down is triggered */"
+        },
+        {
+          "set_variable": {
+            "name": "pressed",
+            "value": 1
+          }
+        },
+        {
+          "shell_command": ""
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "/* The events are posted at the from key is released, to_if_alone is canceled if other events is happen while the from key is pressed down, the cancellation also happens when you press from key long, to_if_alone posts both key_down and key_up events at the same time, you cannot use key repeat for to_if_alone events */",
+          "modifiers": [
+            ""
+          ],
+          "halt": false
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "key_code": "/* to_if_held_down posts events when the from key is held down, If to events are specified, to events are released before to_if_held_down are posted */",
+          "modifiers": [
+            ""
+          ],
+          "halt": true
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "key_code": "",
+          "modifiers": [
+            ""
+          ]
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "pressed /* events are sent after to_delayed_action_delay_milliseconds */",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "pressed /* events are sent if press another key between and canceled to_if_invoked */",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com.apple.finder$",
+            "^com.googlecode.iterm2$",
+            "^com.github.atom$",
+            "^com.sublimetext.3$",
+            "^com.google.Chrome$",
+            "^com.apple.Safari$",
+            "^org.mozilla.firefox$",
+            "^com.apple.Firefox$",
+            "^com.adobe.Photoshop$"
+          ]
+        },
+        {
+          "type": "variable_if",
+          "name": "",
+          "value": ""
+        }
+      ],
+      "parameters": {
+        "basic.to_if_alone_timeout_milliseconds": 1000,
+        "basic.to_if_held_down_threshold_milliseconds": 500,
+        "basic.to_delayed_action_delay_milliseconds": 500,
+        "basic.simultaneous_threshold_milliseconds": 50
+      }
+      "type": "basic"
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'

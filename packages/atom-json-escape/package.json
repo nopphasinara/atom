@@ -1,0 +1,15 @@
+{
+  "name": "atom-json-escape",
+  "main": "./lib/atom-json-escape",
+  "version": "2.1.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": "atom-json-escape:toggle"
+  },
+  "repository": "https://github.com/atom/atom-json-escape",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {}
+}
