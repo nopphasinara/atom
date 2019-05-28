@@ -151,7 +151,6 @@
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
-    panelHeight: 300
     showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true
@@ -205,6 +204,24 @@
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"
 ".json.source":
   editor:
+    completions: [
+      "key_code"
+      "pointing_button"
+      "variable_if"
+      "frontmost_application_if"
+      "bundle_identifiers"
+      "manipulators"
+      "modifiers"
+      "mandatory"
+      "optional"
+      "to_if_alone"
+      "to_if_invoked"
+      "to_if_canceled"
+      "to_if_held_down"
+      "to_if_alone_timeout_milliseconds"
+      "to_if_held_down_threshold_milliseconds"
+      "to_after_key_up"
+    ]
     softWrap: false
     tabType: "soft"
 ".sass.source":

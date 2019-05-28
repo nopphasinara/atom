@@ -211,6 +211,16 @@ atom.commands.add 'atom-text-editor', 'gc:insert-br', ->
   options = { select: false, skip: true }
   gc.mutateSelectedText(selections, '<br>', options)
 
+atom.commands.add 'atom-text-editor', 'gc:insert-property', ->
+  snippetBody = '"${1:key}": "$2",$0'
+  atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+atom.commands.add 'atom-text-editor', 'gc:insert-property-array', ->
+  snippetBody = '"${1:key}": [$2],$0'
+  atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+atom.commands.add 'atom-text-editor', 'gc:insert-property-object', ->
+  snippetBody = '"${1:key}": \{$2\},$0'
+  atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+
 atom.commands.add 'atom-text-editor', 'gc:insert-p', ->
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()

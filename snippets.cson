@@ -103,77 +103,6 @@
     }$0
     '''
 
-'.source.js':
-  'Section comment':
-    'prefix': 'section-comment'
-    'body': '''
-    /*
-    |--------------------------------------------------------------------------
-    | ${1:Comment Heading}
-    |--------------------------------------------------------------------------
-    */$0
-    '''
-  'Block comment':
-    'prefix': 'block-comment'
-    'body': '''
-    /*
-     * ${1:Comment heading}
-     *
-     * ${2:Describe the relevant details do that up here if it's important enough.}
-     */
-     $0
-    '''
-  'Line comment':
-    'prefix': 'line-comment'
-    'body': '''
-    /* ${1:Describe the relevant details.} */$0
-    '''
-  'Inline comment':
-    'prefix': 'inline-comment'
-    'body': '''
-    // ${1:Describe the relevant details.}$0
-    '''
-  'function ...':
-    'prefix': 'func'
-    'body': '''
-    function ${1:functionName}($2) \{
-      ${3:\/\/}
-    \}$0
-    '''
-  'function ()':
-    'prefix': 'fn'
-    'body': '''
-    function ($1) \{
-      ${2:\/\/}
-    \}$0
-    '''
-  'alert()':
-    'prefix': 'alert'
-    'body': '''
-    alert(${1:\'$2\'});$0
-    '''
-  'console.info()':
-    'prefix': 'info'
-    'body': '''
-    console.info(${1:\'$2\'});$0
-    '''
-  'console.log()':
-    'prefix': 'log'
-    'body': '''
-    console.log(${1:\'$2\'});$0
-    '''
-  'console.error()':
-    'prefix': 'error'
-    'body': '''
-    console.error(${1:\'$2\'});$0
-    '''
-  'console.warn()':
-    'prefix': 'warn'
-    'body': '''
-    console.warn(${1:\'$2\'});$0
-    '''
-
-
 '.source.css.scss':
   '@include':
     'prefix': 'inc'
@@ -385,8 +314,206 @@
     if ($1)$2;$0
     '''
 
+
+# Javascript
+'.source.js':
+  '"key": "value"':
+    'prefix': 'pr-'
+    'body': '${1:key}: ${3:\'$2\'},$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  '"key": {...}':
+    'prefix': 'pr-obj'
+    'body': '${1:key}: \{$2\},$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  '"key": [...]':
+    'prefix': 'pr-arr'
+    'body': '${1:key}: \[$2\],$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'Section comment':
+    'prefix': 'section-comment'
+    'body': '''
+    /*
+    |--------------------------------------------------------------------------
+    | ${1:Comment Heading}
+    |--------------------------------------------------------------------------
+    */$0
+    '''
+  'Block comment':
+    'prefix': 'block-comment'
+    'body': '''
+    /*
+     * ${1:Comment heading}
+     *
+     * ${2:Describe the relevant details do that up here if it's important enough.}
+     */
+     $0
+    '''
+  'Line comment':
+    'prefix': 'line-comment'
+    'body': '''
+    /* ${1:Describe the relevant details.} */$0
+    '''
+  'Inline comment':
+    'prefix': 'inline-comment'
+    'body': '''
+    // ${1:Describe the relevant details.}$0
+    '''
+  'function ...':
+    'prefix': 'func'
+    'body': '''
+    function ${1:functionName}($2) \{
+      ${3:\/\/}
+    \}$0
+    '''
+  'function ()':
+    'prefix': 'fn'
+    'body': '''
+    function ($1) \{
+      ${2:\/\/}
+    \}$0
+    '''
+  'alert()':
+    'prefix': 'alert'
+    'body': '''
+    alert(${1:\'$2\'});$0
+    '''
+  'console.info()':
+    'prefix': 'info'
+    'body': '''
+    console.info(${1:\'$2\'});$0
+    '''
+  'console.log()':
+    'prefix': 'log'
+    'body': '''
+    console.log(${1:\'$2\'});$0
+    '''
+  'console.error()':
+    'prefix': 'error'
+    'body': '''
+    console.error(${1:\'$2\'});$0
+    '''
+  'console.warn()':
+    'prefix': 'warn'
+    'body': '''
+    console.warn(${1:\'$2\'});$0
+    '''
+
+
+# JSON
 '.source.json':
-  # Karabiner conditions
+  '"key": "value"':
+    'prefix': 'pr-'
+    'body': '"${1:key}": ${3:"$2"},$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  '"key": {...}':
+    'prefix': 'pr-obj'
+    'body': '"${1:key}": \{$2\},$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  '"key": [...]':
+    'prefix': 'pr-arr'
+    'body': '"${1:key}": \[$2\],$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+
+  # Karabiner
+  'com.apple.finder':
+    'prefix': 'bundle.com.apple.finder'
+    'body': 'com.apple.finder$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.googlecode.iterm2':
+    'prefix': 'bundle.com.googlecode.iterm2'
+    'body': 'com.googlecode.iterm2$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.github.atom':
+    'prefix': 'bundle.com.github.atom'
+    'body': 'com.github.atom$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.sublimetext.3':
+    'prefix': 'bundle.com.sublimetext.3'
+    'body': 'com.sublimetext.3$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.google.Chrome':
+    'prefix': 'bundle.com.google.Chrome'
+    'body': 'com.google.Chrome$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.apple.Safari':
+    'prefix': 'bundle.com.apple.Safari'
+    'body': 'com.apple.Safari$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'org.mozilla.firefox':
+    'prefix': 'bundle.org.mozilla.firefox'
+    'body': 'org.mozilla.firefox$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.apple.Firefox':
+    'prefix': 'bundle.com.apple.Firefox'
+    'body': 'com.apple.Firefox$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'com.adobe.Photoshop':
+    'prefix': 'bundle.com.adobe.Photoshop'
+    'body': 'com.adobe.Photoshop$0'
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'bundle':
+    'prefix': 'bundle'
+    'body': '''
+    "^com.apple.finder$",
+    "^com.googlecode.iterm2$",
+    "^com.github.atom$",
+    "^com.sublimetext.3$",
+    "^com.google.Chrome$",
+    "^com.apple.Safari$",
+    "^org.mozilla.firefox$",
+    "^com.apple.Firefox$",
+    "^com.adobe.Photoshop$",$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'bundle-editors':
+    'prefix': 'bundle-editors'
+    'body': '''
+    "^com.github.atom$",
+    "^com.sublimetext.3$",$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'bundle-browsers':
+    'prefix': 'bundle-browsers'
+    'body': '''
+    "^com.google.Chrome$",
+    "^com.apple.Safari$",
+    "^org.mozilla.firefox$",
+    "^com.apple.Firefox$",$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'basic':
+    'prefix': 'basic'
+    'body': '''
+    "basic.to_if_alone_timeout_milliseconds": ${1:1000},
+    "basic.to_if_held_down_threshold_milliseconds": ${2:500},
+    "basic.to_delayed_action_delay_milliseconds": ${3:500},
+    "basic.simultaneous_threshold_milliseconds": ${4:50},$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'basic-alone':
+    'prefix': 'basic-alone'
+    'body': '''
+    "basic.to_if_alone_timeout_milliseconds": ${1:1000},$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'basic-held-down':
+    'prefix': 'basic-held-down'
+    'body': '''
+    "basic.to_if_held_down_threshold_milliseconds": ${1:500},$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'basic-delay':
+    'prefix': 'basic-delay'
+    'body': '''
+    "basic.to_delayed_action_delay_milliseconds": ${1:500},$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'basic-simultaneous':
+    'prefix': 'basic-simultaneous'
+    'body': '''
+    "basic.simultaneous_threshold_milliseconds": ${1:50},$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label bi"></span>'
   'ke-conditions-app':
     'prefix': 'ke-conditions-app'
     'body': '''
@@ -419,12 +546,12 @@
   'ke-parameters':
     'prefix': 'ke-parameters'
     'body': '''
-    ${1:"parameters": \\{
-      ${2:"basic.to_if_alone_timeout_milliseconds": 1000,
-      "basic.to_if_held_down_threshold_milliseconds": 500,
-      "basic.to_delayed_action_delay_milliseconds": 500,
-      "basic.simultaneous_threshold_milliseconds": 50}
-    \\},}$0
+    "parameters": \\{
+      $0"basic.to_if_alone_timeout_milliseconds": 250,
+      "basic.to_if_held_down_threshold_milliseconds": 250,
+      "basic.to_delayed_action_delay_milliseconds": 250,
+      "basic.simultaneous_threshold_milliseconds": 50
+    \\},$1
     '''
     'rightLabelHTML': '<span class="snippet-label bi"></span>'
   'ke-from':
@@ -489,9 +616,9 @@
   'ke-to':
     'prefix': 'ke-to'
     'body': '''
-    ${1:"to": \\[
-      $2\\{
-        "key_code": "",
+    "to": \\[
+      \\{
+        "${1:key_code}": "$0",
         "modifiers": \\[
           ""
         \\],
@@ -508,7 +635,7 @@
       \\{
         "shell_command": ""
       \\}
-    \\],}$0
+    \\],
     '''
     'rightLabelHTML': '<span class="snippet-label bi"></span>'
   'ke-binding':
