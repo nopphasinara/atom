@@ -9,6 +9,13 @@ module.exports =
       tooltip: 'Command Palette'
       type: 'button'
 
+    @toolBar.addButton
+      callback: 'todo-show:toggle'
+      text: '<i class="gc"></i>'
+      html: true
+      tooltip: 'Todo Show'
+      type: 'button'
+
     @toolBar.addSpacer()
 
     @toolBar.addButton

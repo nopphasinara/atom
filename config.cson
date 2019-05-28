@@ -99,6 +99,7 @@
       "autocomplete"
       "atom-js-console"
       "escape-utils"
+      "todo-show"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
@@ -186,6 +187,9 @@
     addNewTabsAtEnd: false
     displayMruTabList: false
     enableMruTabSwitching: false
+  "todo-show":
+    autoRefresh: false
+    statusBarIndicator: true
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
