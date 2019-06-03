@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
   "_shasum": "d6469bb751cc5b53720b0039711bd43bded409ed",
   "_spec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-  "_where": "/private/var/folders/xg/g2zlpc8910j479bgpxffn59h0000gn/T/apm-install-dir-119420-5290-16p9lnm.lk97h",
+  "_where": "/private/var/folders/z1/9vh__cbx11g_cp9wc8cckzdw0000gn/T/apm-install-dir-11954-31264-1y8qitc.as6u",
   "activationCommands": {
     "atom-workspace": [
       "core:save",

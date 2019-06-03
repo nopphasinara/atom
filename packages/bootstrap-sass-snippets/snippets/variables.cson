@@ -69,6 +69,12 @@
         'Line height base':
             'prefix': 'line-height-base'
             'body': '$line-height-base: $1;'
+        'Font-size small':
+            'prefix': 'font-size-small'
+            'body': '$font-size-small: $1;'
+        'Font-size small':
+            'prefix': 'font-size-small'
+            'body': '$font-size-small: $1;'
 
         # h1 - h6
         'h1 font-size':
@@ -100,7 +106,7 @@
             'body': '$headings-line-height: $1;'
         'Font-weight for headings':
             'prefix': 'headings-font-weight'
-            'body': '$headings-font-weight: $1;'
+            'body': '$headings-font-weight: $1;'                          
 
 
     # Components
