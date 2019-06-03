@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "event-kit": "^2.5.3",
     "fuzzaldrin-plus": "^0.6.0",
-    "mobx": "^5.9.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "tildify": "^2.0.0",
     "untildify": "^4.0.0"
   },
@@ -16,8 +16,11 @@
     "atom-space-pen-views": "^2.2.0",
     "bluebird": "^3.5.5",
     "disposify": "^1.0.0",
+    "event-kit": "^2.5.3",
     "fs-plus": "^3.1.1",
     "lodash": "^4.17.11",
+    "mobx": "^5.9.4",
+    "module": "^1.2.5",
     "sb-event-kit": "^3.0.0",
     "sb-react-table": "^1.0.2",
     "season": "^6.0.2",
