@@ -41,7 +41,7 @@
   'ctrl-alt-cmd-g': 'grammar-selector:show'
   'ctrl-shift-o': 'link:open'
   'cmd-alt-o': 'link:open'
-  'cmd-r': 'symbols-view:toggle-file-symbols'
+  'cmd-k': 'symbols-view:toggle-file-symbols'
   'alt-cmd-d': 'find-and-replace:select-all'
   'cmd-d': 'find-and-replace:select-next'
   'cmd-g': 'find-and-replace:find-next'
@@ -105,7 +105,7 @@
   'alt-tab': 'emmet:next-edit-point'
   'shift-alt-tab': 'emmet:prev-edit-point'
   'alt-cmd-c': 'editor:copy-path'
-  'ctrl-cmd-o': 'tree-view:show-current-file-in-file-manager'
+  'ctrl-cmd-r': 'tree-view:show-current-file-in-file-manager'
   # 'ctrl-b': 'bracket-matcher:select-inside-brackets'
   'ctrl-b': 'gc:select-outside-bracket'
   'cmd-\.': 'gc:select-outside-bracket'
@@ -117,6 +117,7 @@
   # '. ,': 'gc:insert-property'
   # '. ;': 'gc:insert-property-object'
   # 'shift-. shift-;': 'gc:insert-property-array'
+  'ctrl-cmd-j': 'prettify:prettify'
 
 
 'atom-text-editor':

@@ -100,6 +100,7 @@
       "atom-js-console"
       "escape-utils"
       "todo-show"
+      "asciidoc-preview"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
