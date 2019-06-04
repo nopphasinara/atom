@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
   "_shasum": "4dac241f657d591d41cbe86a868c77f7181aba5f",
   "_spec": "https://www.atom.io/api/packages/sort-lines/versions/0.19.0/tarball",
-  "_where": "/private/var/folders/z1/9vh__cbx11g_cp9wc8cckzdw0000gn/T/apm-install-dir-11954-31264-1l7sk1a.5agd",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-11954-13978-bfa9lh.ohxrk",
   "activationCommands": {
     "atom-text-editor": [
       "sort-lines:sort",

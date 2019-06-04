@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/multiline-bracket/versions/0.2.0/tarball",
   "_shasum": "b8e4a8a53bd50c625f1a3868e0f485671bee89fb",
   "_spec": "https://www.atom.io/api/packages/multiline-bracket/versions/0.2.0/tarball",
-  "_where": "/private/var/folders/z1/9vh__cbx11g_cp9wc8cckzdw0000gn/T/apm-install-dir-11954-31264-6cx5vp.fq6y",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-11954-13978-58g9qk.oa31o",
   "activationCommands": {
     "atom-workspace": "multiline-bracket:apply"
   },
