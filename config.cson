@@ -7,6 +7,8 @@
     binPhp: "/usr/local/bin/php"
   "autocomplete-ctags":
     minimumPrefixLength: 1
+  "autocomplete-modules":
+    includeExtension: true
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
