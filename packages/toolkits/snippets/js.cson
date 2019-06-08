@@ -1,0 +1,6 @@
+'.source.js':
+  'prefix': 'req'
+  'body': '''
+  const ${1:module} = require('${2:module}');$0
+  '''
+  'rightLabelHTML': '<span class="snippet-label bi"></span>'
