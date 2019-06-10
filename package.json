@@ -11,9 +11,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "tildify": "^2.0.0",
-    "untildify": "^4.0.0"
-  },
-  "devDependencies": {
+    "untildify": "^4.0.0",
     "asciidoctor": "^2.0.3",
     "atom-package-deps": "^5.1.0",
     "atom-space-pen-views": "^2.2.0",
@@ -22,12 +20,13 @@
     "event-kit": "^2.5.3",
     "fs-plus": "^3.1.1",
     "lodash": "^4.17.11",
-    "mobx": "^5.9.4",
+    "mobx": "^5.10.1",
     "module": "^1.2.5",
     "sb-event-kit": "^3.0.0",
     "sb-react-table": "^1.0.2",
     "season": "^6.0.2",
-    "underscore-plus": "^1.7.0"
+    "underscore-plus": "^1.7.0",
+    "async": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

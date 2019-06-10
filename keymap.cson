@@ -18,15 +18,12 @@
   'shift-cmd-f': 'project-find:show'
   'cmd-f': 'find-and-replace:show'
   'ctrl-g': 'go-to-line:toggle'
-  # 'shift-cmd-o': 'project-plus:toggle-project-finder'
   'shift-cmd-o': 'project-manager:list-projects'
   'alt-cmd-p': 'project-manager:edit-projects'
   'alt-cmd-left': 'window:focus-previous-pane'
   'alt-cmd-right': 'window:focus-next-pane'
   'shift-ctrl-p': 'markdown-preview:toggle'
 
-# '.project-manager input':
-#   'enter': 'core:confirm'
 
 '.platform-darwin atom-text-editor':
   'alt-cmd-p': 'unset!'
@@ -36,8 +33,7 @@
   'cmd-e': 'unset!'
   'cmd-k cmd-d': 'unset!'
   'ctrl-shift-u': 'unset!'
-  'cmd-\.': ''
-  # 'cmd-\.': 'editor:log-cursor-scope'
+  # 'cmd-\.': ''
   'ctrl-alt-cmd-g': 'grammar-selector:show'
   'ctrl-shift-o': 'link:open'
   'cmd-alt-o': 'link:open'
@@ -52,9 +48,7 @@
   'alt-4': 'gc:tab-stop'
   'alt-,': 'gc:tab-stop'
   'cmd-;': 'gc:tab-stop'
-  # 'f11': 'remote-sync-pro:download-file'
   'f11': 'remote-sync:download-file'
-  # 'shift-f11': 'remote-sync-pro:upload-file'
   'shift-f11': 'remote-sync:upload-file'
   'alt-cmd-a': 'aligner:align'
   'alt-cmd-tab': 'editor:auto-indent'
@@ -64,7 +58,6 @@
   'cmd-w': 'unset!'
   'enter': 'core:confirm'
   'escape': 'core:cancel'
-  # 'shift-enter': 'project-manager:alt-confirm'
 
 '.platform-darwin atom-text-editor:not([mini])':
   'cmd-e': 'emmet:balance-inward'
@@ -106,7 +99,6 @@
   'shift-alt-tab': 'emmet:prev-edit-point'
   'alt-cmd-c': 'editor:copy-path'
   'ctrl-cmd-r': 'tree-view:show-current-file-in-file-manager'
-  # 'ctrl-b': 'bracket-matcher:select-inside-brackets'
   'ctrl-b': 'gc:select-outside-bracket'
   'cmd-\.': 'gc:select-outside-bracket'
   'home': 'core:move-to-top'
@@ -114,17 +106,12 @@
   'shift-home': 'core:select-to-top'
   'shift-end': 'core:select-to-bottom'
   'ctrl-cmd-c': 'gc:copy-filename'
-  # '. ,': 'gc:insert-property'
-  # '. ;': 'gc:insert-property-object'
-  # 'shift-. shift-;': 'gc:insert-property-array'
   'ctrl-cmd-j': 'prettify:prettify'
 
 
 'atom-text-editor':
   'cmd-backspace': 'editor:delete-line'
   'ctrl-escape': 'autocomplete-plus:activate'
-  # 'key1': 'html-entitize:encode'
-  # 'key2': 'html-entitize:decode'
   'ctrl-b': 'bracket-matcher:select-inside-brackets'
   'cmd-shift-x': 'autoprefixer'
 
@@ -136,6 +123,7 @@
   'enter': 'tree-view:expand-item'
   'right': 'tree-view:expand-item'
   'left': 'tree-view:collapse-directory'
+
 
 '.tree-view':
   'escape': 'tree-view:unfocus'

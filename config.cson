@@ -192,6 +192,7 @@
   "todo-show":
     autoRefresh: false
     statusBarIndicator: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
