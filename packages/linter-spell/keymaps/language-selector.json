@@ -1,0 +1,11 @@
+{
+  ".platform-darwin atom-text-editor": {
+    "ctrl-shift-y": "linter-spell:show-language-selector"
+  },
+  ".platform-win32 atom-text-editor": {
+    "ctrl-shift-y": "linter-spell:show-language-selector"
+  },
+  ".platform-linux atom-text-editor": {
+    "alt-y": "linter-spell:show-language-selector"
+  }
+}

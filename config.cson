@@ -32,6 +32,7 @@
       "metrics"
       "deprecation-cop"
       "welcome"
+      "spell-check"
     ]
     ignoredNames: [
       ".git"
@@ -104,6 +105,7 @@
       "todo-show"
       "asciidoc-preview"
       "formatter"
+      "linter-spell"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
@@ -151,8 +153,11 @@
   hyperclick:
     darwinTriggerKeys: "altKey"
   linter: {}
-  "linter-php":
-    executablePath: "/usr/local/bin/php"
+  "linter-csslint": {}
+  "linter-jshint": {}
+  "linter-php": {}
+  "linter-spell":
+    spellPath: "/usr/local/bin/hunspell"
   "linter-ui-default":
     showDecorations: false
     showProviderName: true
