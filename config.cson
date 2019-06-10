@@ -147,6 +147,7 @@
       useSplitDiff: true
     general:
       enableStatusBarIcon: false
+      showBranchInTreeView: false
   hyperclick:
     darwinTriggerKeys: "altKey"
   linter:
