@@ -32,7 +32,6 @@
       "metrics"
       "deprecation-cop"
       "welcome"
-      "spell-check"
     ]
     ignoredNames: [
       ".git"
