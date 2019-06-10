@@ -103,6 +103,7 @@
       "escape-utils"
       "todo-show"
       "asciidoc-preview"
+      "formatter"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
@@ -147,14 +148,13 @@
       useSplitDiff: true
     general:
       enableStatusBarIcon: false
-      showBranchInTreeView: false
   hyperclick:
     darwinTriggerKeys: "altKey"
-  linter:
-    lintOnChange: false
+  linter: {}
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-ui-default":
+    showDecorations: false
     showProviderName: true
   "markdown-preview":
     breakOnSingleNewline: true

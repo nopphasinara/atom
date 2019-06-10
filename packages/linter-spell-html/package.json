@@ -1,0 +1,110 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+  "_id": "linter-spell-html@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-jN/MyRZS4Mvxvx213TQ9DQ/oFHKx3tOXCFb/N39dPsj0QfEUcnQkeLTAOIqD0uhra9KgJtfUNA6c6Cby5Q6omQ==",
+  "_location": "/linter-spell-html",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+  "_shasum": "8ce5287e9bd460c65c74b23305679ac38aeed797",
+  "_spec": "https://www.atom.io/api/packages/linter-spell-html/versions/0.7.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-119510-15642-4n9io1.faqmn",
+  "activationHooks": [
+    "language-html:grammar-used"
+  ],
+  "author": {
+    "name": "Tarn Burton",
+    "email": "twburton@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-spell-html/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "checkComments": {
+      "description": "Spell check in HTML comments.",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "words": {
+      "title": "HTML Words",
+      "description": "HTML specific word list. Precede word with '!' to make word case sensitive.",
+      "type": "array",
+      "default": [],
+      "order": 2
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.0",
+    "linter-spell-word-list": "^0.5.0",
+    "lodash": "^4.13.0"
+  },
+  "deprecated": false,
+  "description": "HTML spell checking using linter-spell.",
+  "devDependecies": {
+    "semver": "^5.3.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-spell-html#readme",
+  "keywords": [
+    "html",
+    "lint",
+    "linter",
+    "spellcheck",
+    "spelling"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "linter-spell-html",
+  "package-deps": [
+    "linter-spell"
+  ],
+  "providedServices": {
+    "linter-spell-grammar": {
+      "versions": {
+        "1.0.0": "provideGrammar"
+      }
+    },
+    "linter-spell-dictionary": {
+      "versions": {
+        "1.0.0": "provideDictionary"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-spell-html.git"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "atom",
+      "latex",
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "expect",
+      "it",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waitsFor",
+      "waitsForPromise"
+    ]
+  },
+  "version": "0.7.0"
+}
