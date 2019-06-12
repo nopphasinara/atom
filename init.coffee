@@ -244,3 +244,37 @@ atom.commands.add 'atom-text-editor', 'gc:insert-linebreak', ->
   selections = editor.getSelections()
   options = { select: false, skip: true }
   gc.mutateSelectedText(selections, '————————————————————————————————', options)
+
+
+# listenToKeyPressed = (editor) ->
+#   # editor.onDidChange (e) ->
+#   #   console.log editor
+#   #   console.log editor.getBuffer()
+#   #   console.log editor.getBuffer().getChangesSinceCheckpoint()
+#   #   console.log e
+#   #   # console.log e[0].oldExtent
+#   #   # console.log e[0].oldExtent.toString()
+#   #   #
+#   #   #
+#
+# listenToBuffers = (editor) ->
+#   editor.buffer.onDidStopChanging (e) ->
+#     isMatches = false
+#     console.log e
+#     if e.changes.length > 0
+#       for change in e.changes
+#         console.log change.newText
+#         if change.newText == '////'
+#           isMatches = true
+#
+#
+#     if isMatches == true
+#       editor.selectLeft(4)
+#       editor.insertText("// foo\n////////////////////////////////////////")
+#       editor.moveLeft(41)
+#       editor.selectLeft(4)
+#
+# atom.workspace.observeActiveTextEditor ->
+#   editor = atom.workspace.getActiveTextEditor()
+#   # listenToKeyPressed(editor)
+#   # listenToBuffers(editor)
