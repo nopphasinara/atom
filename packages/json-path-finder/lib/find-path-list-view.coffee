@@ -5,7 +5,7 @@ unflatten = require('flat').unflatten
 flatten = require 'flat'
 {SelectListView} = require 'atom-space-pen-views'
 
-tempFilePath = Path.join Os.tmpDir(), "find-json-view.json"
+tempFilePath = Path.join Os.tmpdir(), "find-json-view.json"
 
 module.exports =
 class FindPathListView extends SelectListView

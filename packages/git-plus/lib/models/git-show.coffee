@@ -8,7 +8,7 @@ fs = require 'fs-plus'
 git = require '../git'
 
 showCommitFilePath = (objectHash) ->
-  Path.join Os.tmpDir(), "#{objectHash}.diff"
+  Path.join Os.tmpdir(), "#{objectHash}.diff"
 
 isEmpty = (string) -> string is ''
 

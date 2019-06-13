@@ -1,10 +1,19 @@
+# @toolBar.addButton
+#   callback:
+#     '': 'editor:toggle-soft-wrap'
+#   text: '<i class="gc"></i>'
+#   html: true
+#   tooltip: 'Toggle Soft Wrap'
+#   type: 'button'
+
 module.exports =
   activate: (toolBar) ->
     @toolBar = toolBar 'toolkits'
 
     @toolBar.addButton
-      callback: 'command-palette:toggle'
-      text: '<i class="gc"></i>'
+      callback:
+        '': 'command-palette:toggle'
+      text: '<i class="gc"></i>'
       html: true
       tooltip: 'Command Palette'
       type: 'button'
@@ -72,23 +81,31 @@ module.exports =
       tooltip: 'Remote FTP'
       type: 'button'
 
-    @toolBar.addButton
-      callback:
-        '': 'remote-sync:upload-file'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Upload File'
-      type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'remote-sync:upload-file'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Upload File'
+    #   type: 'button'
 
-    @toolBar.addButton
-      callback:
-        '': 'remote-sync:download-file'
-      text: '<i class="gc"></i>'
-      html: true
-      tooltip: 'Download File'
-      type: 'button'
+    # @toolBar.addButton
+    #   callback:
+    #     '': 'remote-sync:download-file'
+    #   text: '<i class="gc"></i>'
+    #   html: true
+    #   tooltip: 'Download File'
+    #   type: 'button'
 
     @toolBar.addSpacer()
+
+    @toolBar.addButton
+      callback:
+        '': 'json-path-finder:show-result-flatten'
+      text: '<i class="gc"></i>'
+      html: true
+      tooltip: 'Show Result Flatten'
+      type: 'button'
 
     @toolBar.addButton
       callback:
@@ -107,17 +124,19 @@ module.exports =
       type: 'button'
 
     @toolBar.addButton
-      icon: 'wrap'
-      callback: 'editor:toggle-soft-wrap'
+      callback:
+        '': 'editor:toggle-soft-wrap'
+      text: '<i class="gc"></i>'
+      html: true
       tooltip: 'Toggle Soft Wrap'
-      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
-      icon: 'eye'
-      callback: 'markdown-preview:toggle'
+      callback:
+        '': 'markdown-preview:toggle'
+      text: '<i class="gc"></i>'
+      html: true
       tooltip: 'Markdown Preview'
-      iconset: 'mdi'
       type: 'button'
 
     @toolBar.addButton
@@ -127,12 +146,12 @@ module.exports =
       tooltip: 'CSS Autoprefixer'
       type: 'button'
 
-    @toolBar.addButton
-      icon: 'translate'
-      url: 'https://translate.google.com'
-      tooltip: 'Google Translate'
-      iconset: 'mdi'
-      type: 'button'
+    # @toolBar.addButton
+    #   icon: 'translate'
+    #   url: 'https://translate.google.com'
+    #   tooltip: 'Google Translate'
+    #   iconset: 'mdi'
+    #   type: 'button'
 
     @toolBar.addButton
       callback:

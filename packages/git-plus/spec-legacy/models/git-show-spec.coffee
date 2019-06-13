@@ -24,7 +24,7 @@ describe "GitShow", ->
   it "writes the output to a file", ->
     spyOn(fs, 'writeFile').andCallFake ->
       fs.writeFile.mostRecentCall.args[3]()
-    outputFile = Path.join Os.tmpDir(), "foobar-hash.diff"
+    outputFile = Path.join Os.tmpdir(), "foobar-hash.diff"
     waitsForPromise ->
       GitShow repo, 'foobar-hash', pathToRepoFile
     runs ->
