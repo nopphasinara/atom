@@ -1,6 +1,5 @@
 import "@babel/polyfill";
 import { CompositeDisposable, Disposable } from "atom";
-import { OutputViewContainer } from "./views/output-view/container";
 import { TreeViewBranchManager } from "./views/tree-view-branches";
 import git from "./git";
 import configurations from "./config";
@@ -147,6 +146,10 @@ module.exports = {
           "git-plus:delete-local-branch": () => git.getRepo().then(repo => GitDeleteBranch(repo)),
           "git-plus:delete-remote-branch": () => {
             git.getRepo().then(repo => GitDeleteBranch(repo, { remote: true }));
+          },
+          "git-plus:delete-branch-local-and-remote": () => {
+            git.getRepo().then(repo => GitDeleteBranch(repo))
+              .then(repo => GitDeleteBranch(repo, { remote: true }));
           },
           "git-plus:cherry-pick": () => git.getRepo().then(repo => GitCherryPick(repo)),
           "git-plus:diff": () => {
