@@ -81,6 +81,7 @@
       "escape-utils"
       "todo-show"
       "json-path-finder"
+      "markdown-pdf"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
