@@ -32,6 +32,7 @@
       "metrics"
       "deprecation-cop"
       "welcome"
+      "markdown-preview"
     ]
     ignoredNames: [
       ".git"
@@ -82,6 +83,7 @@
       "todo-show"
       "json-path-finder"
       "markdown-pdf"
+      "markdown-preview-plus"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
@@ -141,6 +143,17 @@
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
+    useGitHubStyle: true
+  "markdown-preview-plus":
+    markdownItConfig:
+      breakOnSingleNewline: true
+      useToc: true
+    previewConfig:
+      closePreviewWithEditor: false
+      previewSplitPaneDir: "none"
+    saveConfig:
+      saveToPDFOptions:
+        printBackground: true
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true

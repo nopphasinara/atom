@@ -1,0 +1,13 @@
+{
+  "extends": "../src/tsconfig.json",
+  "include": [
+    "./**.ts",
+    "./**.d.ts",
+    "../src/types/season.d.ts",
+    "../src/config.ts"
+  ],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

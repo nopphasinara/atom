@@ -1,0 +1,14 @@
+{
+  "extends": "../src/tsconfig.json",
+  "include": [
+    "./**.ts",
+    "./**.d.ts",
+    "../src/types/electron.d.ts",
+    "../src/util-common.ts"
+  ],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["mathjax"]
+  }
+}
