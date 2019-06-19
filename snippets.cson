@@ -13,6 +13,16 @@
     '''
 
 
+# Shell
+'.text.plain,
+.source.shell':
+  '#!/bin/bash':
+    'prefix': 'bash'
+    'body': '''
+    #!/bin/bash$0
+    '''
+
+
 # Coffeescript
 '.source.coffee':
   'Toolbar MDI Button':
