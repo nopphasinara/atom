@@ -21,6 +21,13 @@
     'body': '''
     #!/bin/bash$0
     '''
+  'for..in':
+    'prefix': 'for-in'
+    'body': '''
+    for ${1:item} in ${2:items}; do
+      ${3:# ...}
+    done$0
+    '''
 
 
 # Coffeescript
