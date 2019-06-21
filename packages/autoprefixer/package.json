@@ -1,29 +1,30 @@
 {
-  "_from": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-  "_id": "autoprefixer@4.0.2",
+  "_from": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+  "_id": "autoprefixer@4.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-dyc70GRPAeFrgxx4nIiGQcwrRoyfkcu6fIWZKM0BjFww8Q5lbuHh1mnieMSQCZxEFvSsLG2zxA1d04NwDDGlrg==",
+  "_integrity": "sha512-6iXAQTwdIBGlUvmwjnxh77rjiDi9z6rN32vJlhlcTnokg/rNiaxjOWMe4OsiF76d+dj0KnSQxvEQ9xQomdHh+w==",
   "_location": "/autoprefixer",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball"
+    "raw": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-  "_shasum": "d6469bb751cc5b53720b0039711bd43bded409ed",
-  "_spec": "https://www.atom.io/api/packages/autoprefixer/versions/4.0.2/tarball",
-  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-11954-13978-1nlj9lj.dleo",
+  "_resolved": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+  "_shasum": "d643f2644ac58e6a7b3d841c4721fbdae1be69ef",
+  "_spec": "https://www.atom.io/api/packages/autoprefixer/versions/4.1.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-119521-15918-1kz01ga.qllwk",
   "activationCommands": {
     "atom-workspace": [
       "core:save",
-      "autoprefixer"
+      "autoprefixer:prefix",
+      "autoprefixer:remove-prefixes"
     ]
   },
   "author": {
@@ -39,7 +40,8 @@
     "autoprefixer": "^9.5.1",
     "postcss": "^7.0.16",
     "postcss-safe-parser": "^4.0.1",
-    "postcss-scss": "^2.0.0"
+    "postcss-scss": "^2.0.0",
+    "postcss-unprefix": "^2.1.4"
   },
   "deprecated": false,
   "description": "Prefix CSS and SCSS",
@@ -66,7 +68,7 @@
   "scripts": {
     "test": "xo"
   },
-  "version": "4.0.2",
+  "version": "4.1.0",
   "xo": {
     "globals": [
       "atom"
