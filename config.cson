@@ -5,6 +5,7 @@
   "aligner-css": {}
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
+  "atom-json-editor": {}
   "autocomplete-ctags":
     minimumPrefixLength: 1
   "autocomplete-modules":
@@ -137,9 +138,7 @@
   "linter-php": {}
   "linter-spell":
     spellPath: "/usr/local/bin/hunspell"
-  "linter-ui-default":
-    showDecorations: false
-    showProviderName: true
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
