@@ -85,6 +85,7 @@
       "json-path-finder"
       "markdown-pdf"
       "markdown-preview-plus"
+      "formatter"
     ]
     packagesWithSnippetsDisabled: []
     projectHome: "~/.dotfiles/projects"
@@ -157,7 +158,8 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
-  "pretty-json": {}
+  "pretty-json":
+    prettifyOnSaveJSON: true
   "project-manager":
     showPath: false
     sortBy: "title"
@@ -191,6 +193,7 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace: {}
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
@@ -222,8 +225,9 @@
       "to_if_held_down_threshold_milliseconds"
       "to_after_key_up"
     ]
-    softWrap: false
+    softWrap: true
     tabType: "soft"
+    ensureSingleTrailingNewline: true
 ".sass.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"
