@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+  "_id": "formatter-json@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-2v9PXVXo0CbXHqzJCK2B+6wuwVp6cPqEXZVtZhGUH9YNPlepcDMnBOa4z08tfkh7m2pOQ8xEudH1a+o96ead9Q==",
+  "_location": "/formatter-json",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+  "_shasum": "695ca171ad7a954aece1d9734f01c3fc411fc85a",
+  "_spec": "https://www.atom.io/api/packages/formatter-json/versions/1.0.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-119522-74487-s18iq4.lflia",
+  "bugs": {
+    "url": "https://github.com/gouvinb/formatter-json/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Formatter for JSON.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/gouvinb/formatter-json#readme",
+  "keywords": [
+    "formatter",
+    "json",
+    "format"
+  ],
+  "license": "MIT",
+  "main": "./lib/formatter-json",
+  "name": "formatter-json",
+  "providedServices": {
+    "formatter": {
+      "versions": {
+        "1.0.0": "provideFormatter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouvinb/formatter-json.git"
+  },
+  "version": "1.0.1"
+}

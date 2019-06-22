@@ -157,6 +157,7 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
+  "pretty-json": {}
   "project-manager":
     showPath: false
     sortBy: "title"
