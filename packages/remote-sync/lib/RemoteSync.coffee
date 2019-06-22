@@ -279,14 +279,14 @@ class RemoteSync
     realPath = path.join(@host.target, realPath).replace(/\\/g, "/")
 
     os = require "os" if not os
-    targetPath = path.join os.tmpdir(), "remote-sync", randomize('A0', 16)
+    targetPath = path.join os.tmpDir(), "remote-sync", randomize('A0', 16)
 
     @getTransport().download realPath, targetPath, =>
       @diff localPath, targetPath
 
   diffFolder: (localPath)->
     os = require "os" if not os
-    targetPath = path.join os.tmpdir(), "remote-sync", randomize('A0', 16)
+    targetPath = path.join os.tmpDir(), "remote-sync", randomize('A0', 16)
     @downloadFolder localPath, targetPath, =>
       @diff localPath, targetPath
 
