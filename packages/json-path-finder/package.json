@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/json-path-finder/versions/0.1.9/tarball",
   "_shasum": "f117ac5eb167a202e054836156f41d944664d407",
   "_spec": "https://www.atom.io/api/packages/json-path-finder/versions/0.1.9/tarball",
-  "_where": "/private/tmp/apm-install-dir-119522-71422-3kyuoq.jbdau",
+  "_where": "/private/tmp/apm-install-dir-119524-7813-1fowt29.chjq",
   "activationCommands": {
     "atom-workspace": [
       "json-path-finder:find",

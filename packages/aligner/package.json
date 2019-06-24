@@ -1,0 +1,72 @@
+{
+  "_from": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+  "_id": "aligner@1.2.4",
+  "_inBundle": false,
+  "_integrity": "sha512-asrrk/7LJvcy/kydZyCCNtY0NzRg7GE+TxpNHmM5QH3jJWg5LEiMeCiaFym0bM2/zl1Foy5v5vTMO6Y6g3f0Eg==",
+  "_location": "/aligner",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+  "_shasum": "2b2b2a3607d8e59cce40e94e6d50dc127db04389",
+  "_spec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-119524-6124-18phajm.s8da",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "alignComments": {
+      "title": "Align comments",
+      "description": "Align trailing comments when aligning characters",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "consumedServices": {
+    "aligner.provider": {
+      "description": "A package for aligning code",
+      "versions": {
+        "1.0.0": "registerProviders"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.6.0",
+    "extend": "^3.0.0"
+  },
+  "deprecated": false,
+  "description": "Easily align multiple lines and blocks with support for different operators and custom configurations",
+  "engines": {
+    "atom": ">=1.9.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "cursor",
+    "selection"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner",
+  "package-deps": [
+    "aligner-javascript"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianlee44/atom-aligner.git"
+  },
+  "version": "1.2.4"
+}

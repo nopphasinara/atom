@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/json-converter/versions/0.2.4/tarball",
   "_shasum": "6888532b03bbe2d737f040e7cd07be81dff06377",
   "_spec": "https://www.atom.io/api/packages/json-converter/versions/0.2.4/tarball",
-  "_where": "/private/tmp/apm-install-dir-119522-71361-1izanbx.x39g",
+  "_where": "/private/tmp/apm-install-dir-119524-7755-q7m3h6.3680k",
   "activationCommands": {
     "atom-workspace": [
       "json-converter:csv-to-elasticsearch-bulk-create-format",

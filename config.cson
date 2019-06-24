@@ -139,7 +139,8 @@
   "linter-php": {}
   "linter-spell":
     spellPath: "/usr/local/bin/hunspell"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
@@ -225,9 +226,9 @@
       "to_if_held_down_threshold_milliseconds"
       "to_after_key_up"
     ]
+    ensureSingleTrailingNewline: true
     softWrap: true
     tabType: "soft"
-    ensureSingleTrailingNewline: true
 ".sass.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…-"

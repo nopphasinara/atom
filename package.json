@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "tree-sitter-json": "^0.14.0",
+    "rx": "^4.1.0",
+    "jquery": "^3.4.0",
+    "sb-react-table": "^1.0.2",
+    "jsonlint": "^1.6.3",
     "disposable-event": "^1.0.3",
     "fuzzaldrin-plus": "^0.6.0",
     "js-beautify": "^1.10.0",
@@ -23,10 +28,12 @@
     "mobx": "^5.10.1",
     "module": "^1.2.5",
     "sb-event-kit": "^3.0.0",
-    "sb-react-table": "^1.0.2",
     "season": "^6.0.2",
     "underscore-plus": "^1.7.0",
-    "async": "^3.0.0"
+    "async": "^3.0.0",
+    "sb-debounce": "^1.0.2",
+    "node-fetch": "^2.6.0",
+    "marked": "^0.6.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

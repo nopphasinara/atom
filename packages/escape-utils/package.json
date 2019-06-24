@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/escape-utils/versions/0.5.3/tarball",
   "_shasum": "87ce1f3a5bcc1acefce22f157be14669e62ce776",
   "_spec": "https://www.atom.io/api/packages/escape-utils/versions/0.5.3/tarball",
-  "_where": "/private/tmp/apm-install-dir-119522-71076-2oqpwj.jlgn7",
+  "_where": "/private/tmp/apm-install-dir-119524-7431-wshco0.yo3cd",
   "activationCommands": {
     "atom-workspace": [
       "escape-utils:url-encode",

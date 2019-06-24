@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.8.1/tarball",
   "_shasum": "1b03489d65825130abd62916606308acab7362ac",
   "_spec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.8.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-119522-71939-iex0k3.x9kej",
+  "_where": "/private/tmp/apm-install-dir-119524-8783-uf6fzq.0134",
   "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
   "bugs": {
     "url": "https://github.com/atom-community/markdown-preview-plus/issues"

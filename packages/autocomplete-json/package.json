@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.2/tarball",
   "_shasum": "89bf55c98cba9e5c967da0f761b9732590a8d208",
   "_spec": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-119522-70557-mk7a8r.8ztbq",
+  "_where": "/private/tmp/apm-install-dir-119524-6814-19ppcc7.7n8y",
   "activationHooks": [
     "language-json:grammar-used",
     "language-json-comments:grammar-used"
