@@ -87,7 +87,9 @@
       "markdown-preview-plus"
       "formatter"
     ]
-    packagesWithSnippetsDisabled: []
+    packagesWithSnippetsDisabled: [
+      "css-snippets"
+    ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     themes: [
@@ -159,8 +161,7 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
-  "pretty-json":
-    prettifyOnSaveJSON: true
+  "pretty-json": {}
   "project-manager":
     showPath: false
     sortBy: "title"
