@@ -20,7 +20,7 @@ global.gc = {
 
     return object
   mutateSelectedText: (selections, text = '{{replacement}}', args = {}) ->
-    options = gc.extend({
+    options = gc.options = gc.extend({
       select: true,
       undo: '',
       skip: false,
@@ -155,6 +155,11 @@ atom.commands.add 'atom-text-editor', 'gc:tab-stop', ->
   selections = editor.getSelections()
   options = { skip: true, reverse: false, move: 1, infix: '' }
   gc.mutateSelectedText(selections, '${{{replacement}}}', options)
+  # atom.commands.dispatch(atom.views.getView(editor), 'core:move-left')
+  editor.moveLeft(1, gc.options);
+  editor.insertText(":", gc.options);
+  editor.moveLeft(1, gc.options);
+  # atom.commands.dispatch(atom.views.getView(editor), 'core:move-left')
 
 atom.commands.add 'atom-text-editor', 'gc:php-echo', ->
   editor = atom.workspace.getActiveTextEditor()

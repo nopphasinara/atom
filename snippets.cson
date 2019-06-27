@@ -331,6 +331,11 @@
     if ($1)$2;$0
     '''
 
+  'preg_replace':
+    'prefix': 'preg_replace'
+    'body': 'preg_replace("$1", "$2", ${3:$string})$0'
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
 
 # Javascript
 '.source.js':

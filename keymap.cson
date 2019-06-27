@@ -1,4 +1,8 @@
+'* body .native-key-bindings':
+  'shift-tab': 'unset!'
+
 'body':
+  'shift-tab': 'unset!'
   'shift-cmd-o': 'project-manager:list-projects'
   'shift-cmd-a': 'application:add-project-folder'
 
@@ -45,7 +49,7 @@
   'cmd-u': 'find-and-replace:select-undo'
   # 'ctrl-c': 'gc:copy'
   # 'ctrl-v': 'gc:paste'
-  'alt-4': 'gc:tab-stop'
+  'ctrl-.': 'gc:tab-stop'
   'alt-,': 'gc:tab-stop'
   'cmd-;': 'gc:tab-stop'
   'f11': 'remote-sync:download-file'
@@ -95,8 +99,8 @@
   'shift-alt-e': 'emmet:select-previous-item'
   'alt-down': 'emmet:next-edit-point'
   'alt-up': 'emmet:prev-edit-point'
-  'alt-tab': 'emmet:next-edit-point'
-  'shift-alt-tab': 'emmet:prev-edit-point'
+  # 'alt-tab': 'emmet:next-edit-point'
+  # 'shift-alt-tab': 'emmet:prev-edit-point'
   'alt-cmd-c': 'editor:copy-path'
   'ctrl-cmd-r': 'tree-view:show-current-file-in-file-manager'
   'ctrl-b': 'gc:select-outside-bracket'
@@ -107,6 +111,9 @@
   'shift-end': 'core:select-to-bottom'
   'ctrl-cmd-c': 'gc:copy-filename'
   'ctrl-cmd-j': 'prettify:prettify'
+  'tab': 'snippets:next-tab-stop'
+  'shift-tab': 'snippets:previous-tab-stop'
+  'ctrl-left': 'snippets:previous-tab-stop'
 
 
 'atom-text-editor':
@@ -168,7 +175,6 @@
 
 '.find-and-replace, .project-find, .project-find .results-view':
   'tab': 'find-and-replace:focus-next'
-  'shift-tab': 'find-and-replace:focus-previous'
 
 '.platform-darwin .find-and-replace .replace-container atom-text-editor':
   'cmd-enter': 'find-and-replace:replace-all'

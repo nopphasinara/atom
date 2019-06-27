@@ -35,6 +35,7 @@
       "welcome"
       "markdown-preview"
     ]
+    fileSystemWatcher: "atom"
     ignoredNames: [
       ".git"
       ".hg"
@@ -86,9 +87,11 @@
       "markdown-pdf"
       "markdown-preview-plus"
       "formatter"
+      "snippets"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
+      "snippets"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -97,7 +100,6 @@
       "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
-    uriHandlerRegistration: "always"
   "double-brackets-with-spaces":
     single: "only-imports"
   editor:
@@ -124,7 +126,9 @@
       ".DS_Store"
     ]
     preserveLastSearch: true
+    scoringSystem: "fast"
     searchAllPanes: true
+    useRipGrep: true
   "git-plus":
     commits:
       verboseCommits: true
@@ -141,8 +145,7 @@
   "linter-php": {}
   "linter-spell":
     spellPath: "/usr/local/bin/hunspell"
-  "linter-ui-default":
-    panelHeight: 300
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false

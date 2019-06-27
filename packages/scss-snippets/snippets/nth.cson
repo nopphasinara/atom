@@ -1,4 +1,0 @@
-'.source.scss':
-  'nth':
-    'prefix': 'nth'
-    'body': 'nth(\$${1:list}, ${2:index})'
