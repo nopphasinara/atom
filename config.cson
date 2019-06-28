@@ -36,7 +36,6 @@
       "markdown-preview"
       "prettier-atom"
     ]
-    fileSystemWatcher: "atom"
     ignoredNames: [
       ".git"
       ".hg"

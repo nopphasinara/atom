@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+  "_id": "language-blade@0.43.1",
+  "_inBundle": false,
+  "_integrity": "sha512-9Sd81J9yaU1AavfIESixnm/iA7v935G1D7w41yGQQAeEoq7Es3W+rd8FBHLBpdfZcIZLl6NS9up1dhajDiPojw==",
+  "_location": "/language-blade",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+  "_shasum": "c6426ea8de0a3844b67f062271097cb55b45c4bc",
+  "_spec": "https://www.atom.io/api/packages/language-blade/versions/0.43.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-119528-18349-1lvx3w5.2hwf",
+  "bugs": {
+    "url": "https://github.com/jawee/language-blade/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Syntax highlighter for the Blade templating engine used in Laravel",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jawee/language-blade#readme",
+  "license": "MIT",
+  "main": "./lib/language-blade",
+  "name": "language-blade",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawee/language-blade.git"
+  },
+  "version": "0.43.1"
+}
