@@ -34,6 +34,7 @@
       "deprecation-cop"
       "welcome"
       "markdown-preview"
+      "prettier-atom"
     ]
     fileSystemWatcher: "atom"
     ignoredNames: [
@@ -88,6 +89,7 @@
       "markdown-preview-plus"
       "formatter"
       "snippets"
+      "prettier-atom"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
@@ -164,6 +166,8 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: false
+  "prettier-atom":
+    formatOnSaveOptions: {}
   "pretty-json": {}
   "project-manager":
     showPath: false

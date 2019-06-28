@@ -1,0 +1,133 @@
+{
+  "_from": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+  "_id": "prettier-atom@0.56.6",
+  "_inBundle": false,
+  "_integrity": "sha512-4f87tXvu0mmFQUnqUKeMse5lY3bTcEwgC3s6jhW88O6zVX12ol8i+kdj8azi+1FL/N0BRQ387l8ncEg4ATfFIQ==",
+  "_location": "/prettier-atom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+  "_shasum": "5de8981e448bef41f042a7f5ea6b126d275fed1e",
+  "_spec": "https://www.atom.io/api/packages/prettier-atom/versions/0.56.6/tarball",
+  "_where": "/private/tmp/apm-install-dir-119528-13155-geeayg.nrfuf",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "bugs": {
+    "url": "https://github.com/prettier/prettier-atom/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeIndie"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.6.2",
+    "atom-text-buffer-point": "^1.0.0",
+    "atom-text-buffer-range": "^1.0.0",
+    "babel-runtime": "^6.26.0",
+    "global-modules": "^1.0.0",
+    "ignore": "^5.0.4",
+    "lodash": "^4.17.10",
+    "loophole": "^1.1.0",
+    "prettier": "1.15.2",
+    "prettier-eslint": "^8.8.2",
+    "prettier-stylelint": "^0.4.2",
+    "read-pkg-up": "^4.0.0",
+    "yarn-global-modules": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "Atom plugin for formatting JavaScript using prettier with (optional) prettier-eslint integration",
+  "devDependencies": {
+    "all-contributors-cli": "^5.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "codecov": "^3.0.2",
+    "commitizen": "^3.0.4",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "flow-bin": "^0.86.0",
+    "flow-typed": "^2.4.0",
+    "husky": "^1.1.4",
+    "jest": "^23.1.0",
+    "nps": "^5.9.0",
+    "opt-cli": "^1.6.0",
+    "prettier-eslint-cli": "^4.7.1",
+    "rimraf": "^2.6.2"
+  },
+  "homepage": "https://github.com/prettier/prettier-atom",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**.js"
+    ],
+    "globals": {
+      "atom": true
+    },
+    "notify": false,
+    "resetMocks": true,
+    "resetModules": true,
+    "roots": [
+      "src"
+    ],
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "atom",
+    "javascript",
+    "prettier",
+    "prettier-eslint",
+    "eslint",
+    "formatter"
+  ],
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "name": "prettier-atom",
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prettier/prettier-atom.git"
+  },
+  "scripts": {
+    "precommit": "opt --in pre-commit --exec \"npm start validate\"",
+    "start": "nps",
+    "test": "nps test"
+  },
+  "version": "0.56.6"
+}
