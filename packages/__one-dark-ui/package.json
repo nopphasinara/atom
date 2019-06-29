@@ -98,7 +98,7 @@
   ],
   "license": "MIT",
   "main": "lib/main",
-  "name": "one-dark-ui",
+  "name": "__one-dark-ui",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atom/one-dark-ui.git"

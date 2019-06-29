@@ -98,7 +98,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "one-dark-vivid-syntax"
+      "one-dark-dim-syntax"
     ]
     titleBar: "custom"
   "double-brackets-with-spaces":
@@ -140,6 +140,9 @@
       showBranchInTreeView: false
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "isotope-ui":
+    lowContrastTooltip: true
+    minimalMode: true
   linter: {}
   "linter-csslint": {}
   "linter-jshint": {}
