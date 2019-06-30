@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+  "_id": "dirtySprite-syntax@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+dAQGy0D/DFIj68enMyi7BB1BjtMt9OQhDRdw5050H/tPrODyyBgA1knprMH1HjJhkhH1+Ok01uiInLrz+Pn5A==",
+  "_location": "/dirtySprite-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+  "_shasum": "9a390ebf3868326c7473875e80e97f122c8e3ac2",
+  "_spec": "https://www.atom.io/api/packages/dirtysprite-syntax/versions/0.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119530-3227-1r3h8wn.dq9eh",
+  "bugs": {
+    "url": "https://github.com/bretth18/dirtySprite-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "dirtySprite for your dirty code",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bretth18/dirtySprite-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "dirtySprite-syntax",
+  "repository": {
+    "url": "git+https://github.com/bretth18/dirtySprite-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.0"
+}
