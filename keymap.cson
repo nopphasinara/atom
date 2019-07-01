@@ -175,6 +175,7 @@
 
 '.find-and-replace, .project-find, .project-find .results-view':
   'tab': 'find-and-replace:focus-next'
+  'shift-tab': 'find-and-replace:focus-previous'
 
 '.platform-darwin .find-and-replace .replace-container atom-text-editor':
   'cmd-enter': 'find-and-replace:replace-all'
