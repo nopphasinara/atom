@@ -35,6 +35,10 @@
       "welcome"
       "markdown-preview"
       "prettier-atom"
+      "linter"
+      "linter-jsonlint"
+      "linter-php"
+      "linter-ui-default"
     ]
     fileSystemWatcher: "atom"
     ignoredNames: [
@@ -144,13 +148,15 @@
   "isotope-ui":
     lowContrastTooltip: true
     minimalMode: true
-  linter: {}
+  linter:
+    lintOnChangeInterval: 1000
   "linter-csslint": {}
   "linter-jshint": {}
   "linter-php": {}
   "linter-spell":
     spellPath: "/usr/local/bin/hunspell"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
