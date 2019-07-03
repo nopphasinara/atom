@@ -69,6 +69,8 @@
 
 'atom-text-editor:not([mini])':
   'ctrl-shift-k': 'unset!'
+  'alt-escape': 'gc:bio-link'
+  'shift-alt-escape': 'gc:bio-link-reverse'
   # 'alt-\[': 'gc:blade-e'
   # 'alt-\]': 'gc:blade-echo'
   # 'alt-1': 'gc:blade-echo'

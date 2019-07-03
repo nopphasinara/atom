@@ -68,6 +68,10 @@ global.gc = {
           options.undo = 'skip'
 }
 
+atom.workspace.observeActiveTextEditor ->
+  editor = atom.workspace.getActiveTextEditor()
+  global.e = gc.activeEditor = editor
+
 
 # atom.commands.add 'atom-workspace', 'gc:control-files', ->
 #   editor = atom.workspace.getActiveTextEditor()
@@ -250,6 +254,85 @@ atom.commands.add 'atom-text-editor', 'gc:insert-linebreak', ->
   options = { select: false, skip: true }
   gc.mutateSelectedText(selections, '————————————————————————————————', options)
 
+atom.commands.add 'atom-text-editor', 'gc:bio-link', ->
+  editor = atom.workspace.getActiveTextEditor()
+  selections = editor.getSelections()
+  options = { select: false, skip: true, reverse: false, infix: '' }
+
+  selectedText = editor.getSelectedText()
+  clipboardText = atom.clipboard.read()
+  if !clipboardText || typeof clipboardText != 'string'
+    clipboardText = ''
+
+  editor.insertText("<a href=\"#{clipboardText}\" title=\"#{selectedText}\">#{selectedText}</a>", gc.options)
+  # snippetBody = '<a href="" title="__replacement__">__replacement__</a>$0'
+  # atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+
+atom.commands.add 'atom-text-editor', 'gc:bio-link-reverse', ->
+  editor = atom.workspace.getActiveTextEditor()
+  selectedText = editor.getSelectedText()
+  expanding(editor)
+  # while selectedText.substr(-1, 1) != '}'
+  #   editor.selectToNextWordBoundary()
+  #   selectedText = editor.getSelectedText()
+
+
+findCharacters = (text = '', find = []) ->
+  if typeof text != 'string'
+    return false
+
+  if !find || find.length == 0
+    return false
+
+  if typeof find == 'string'
+    find = new Array(find)
+
+  isFounded = false
+  for item in find
+    if text.search(item) >= 0
+      isFounded = text.search(item)
+      break
+  return isFounded
+
+gc.firstCharacter = firstCharacter = (text = '') ->
+  if typeof text != 'string'
+    return
+  return text.substr(0, 1)
+
+gc.lastCharacter = lastCharacter = (text = '') ->
+  if typeof text != 'string'
+    return
+  return text.substr(-1)
+
+gc.expanding = expanding = (editor, selectedText = '') ->
+  if typeof selectedText != 'string' || !selectedText
+    selectedText = editor.getSelectedText()
+
+  if lastCharacter(selectedText) != '}'
+    console.log 'no'
+    editor.selectToNextWordBoundary()
+    selectedText = editor.getSelectedText()
+    if findCharacters(selectedText, "\n") == false
+      console.log 'false'
+      expanding(editor, selectedText)
+    else
+      console.log 'stopped'
+      editor.moveLeft()
+  else
+    if firstCharacter(selectedText) != '{'
+      console.log 'no'
+      editor.moveRight()
+      editor.selectToPreviousWordBoundary()
+      selectedText = editor.getSelectedText()
+      if findCharacters(selectedText, "\n") == false
+        console.log 'false'
+        expanding(editor, selectedText)
+      else
+        console.log 'stopped'
+        editor.moveRight()
+    else
+      console.log 'yes'
+      console.log selectedText
 
 # listenToKeyPressed = (editor) ->
 #   # editor.onDidChange (e) ->
