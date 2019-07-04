@@ -1,0 +1,21 @@
+{
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "File Path Picker",
+            "submenu": [{
+                    "label": "Pick File",
+                    "command": "file-path-picker:pick-file"
+                },
+                {
+                    "label": "Pick Base64",
+                    "command": "file-path-picker:pick-base64"
+                },
+                {
+                    "label": "To Base64",
+                    "command": "file-path-picker:to-base64"
+                }
+            ]
+        }]
+    }]
+}

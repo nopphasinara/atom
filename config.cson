@@ -1,7 +1,58 @@
 "*":
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
+    helmDirSwitch: true
   core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "projects.cson"
+      "blob-store/**"
+      "compile-cache/**"
+      "recovery/**"
+      "*.cache"
+      "*.last-run"
+    ]
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+      "archive-view"
+      "project-manager"
+      "advanced-open-file"
+      "file-path-picker"
+      "find-and-replace"
+      "emmet"
+    ]
+    projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
+    titleBar: "hidden"
+  editor:
+    fontFamily: "Menlo, boxicons, Material-Design-Icons, mastericons, Consolas, DejaVu Sans Mono, monospace"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  emmet:
+    extensionsPath: "~/.dotfiles/projects/emmet"
   "exception-reporting":
-    userId: "f2336191-f77b-469f-b2ee-f9327850c4b0"
+    userId: "f21c6f64-fc65-4893-a898-57036a31e00d"
+  "find-and-replace":
+    autocompleteSearches: true
+    liveSearchMinimumCharacters: 1
+  "one-dark-ui":
+    hideDockButtons: true
+  "project-manager":
+    showPath: false
+    sortBy: "title"
+  "remote-sync":
+    foldLogPanel: true
+  "tool-bar": {}
   welcome:
     showOnStartup: false
