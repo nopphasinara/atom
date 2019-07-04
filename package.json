@@ -35,7 +35,8 @@
     "toolbar": "*",
     "tree-sitter-json": "^0.14.0",
     "underscore-plus": "^1.7.0",
-    "untildify": "^4.0.0"
+    "untildify": "^4.0.0",
+    "braces": ">=2.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
