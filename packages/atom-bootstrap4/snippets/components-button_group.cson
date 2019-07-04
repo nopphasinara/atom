@@ -59,3 +59,13 @@
         </div>
       </div>
     """
+
+  'Button group - Bootstrap 4':
+    'prefix': 'btngrvr'
+    'body': """
+      <div class="btn-group-vertical" role="group" aria-label="${1:Basic example}">
+        <button type="button" class="btn btn-secondary">${2:Left}</button>
+        <button type="button" class="btn btn-secondary">${2:Middle}</button>
+        <button type="button" class="btn btn-secondary">${2:Right}</button>
+      </div>
+    """

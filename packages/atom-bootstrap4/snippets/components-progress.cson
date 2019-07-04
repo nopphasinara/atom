@@ -19,7 +19,7 @@
       <progress class="progress progress-striped progress-${1:success|info|warning|danger}" value="${2:25}" max="100">${2:25}%</progress>
     """
 
-  'Progress striped animated - Bootstrap 4':
+  'Progress - Bootstrap 4':
     'prefix': 'prostan'
     'body': """
       <progress class="progress progress-striped progress-animated" value="${1:10}" max="100">$2</progress>

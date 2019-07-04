@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/advanced-open-file/versions/0.16.8/tarball",
   "_shasum": "6a7fe4baad56eca96c79909d017ababfba0de984",
   "_spec": "https://www.atom.io/api/packages/advanced-open-file/versions/0.16.8/tarball",
-  "_where": "/private/tmp/apm-install-dir-119524-6065-1e941sx.xsox",
+  "_where": "/private/tmp/apm-install-dir-11964-9300-mb1lrt.wwit",
   "activationCommands": {
     "atom-workspace": [
       "advanced-open-file:toggle"
@@ -50,8 +50,8 @@
   "devDependencies": {
     "babel": "^5.8.35",
     "babel-eslint": "^5.0.0",
-    "eslint": "^4.18.2",
-    "jquery": "^3.4.0",
+    "eslint": "^1.10.3",
+    "jquery": "^3.3.1",
     "temp": "^0.8.3"
   },
   "engines": {

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
   "_shasum": "d22186a2567dfd43bab4971084affee4206252ca",
   "_spec": "https://www.atom.io/api/packages/linter-php/versions/1.6.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-119524-8652-1u18d9o.84eo",
+  "_where": "/private/tmp/apm-install-dir-11964-9300-1n596fy.mxf1",
   "activationHooks": [
     "language-php:grammar-used"
   ],

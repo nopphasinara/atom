@@ -1,0 +1,94 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+  "_id": "linter-jsonlint@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-VqKualJQnOR9KCAq/jcOCPctrmwrmQTatdxHKAjUeT8Hf7acjL6/V590nvPK3FCeBTrFfo0QUsgMn5+vZunAmg==",
+  "_location": "/linter-jsonlint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+  "_shasum": "de4ebd003b93813eb614321fcbeccada47d92e2f",
+  "_spec": "https://www.atom.io/api/packages/linter-jsonlint/versions/1.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-11964-9300-1j8dlme.llox",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-jsonlint/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-package-deps": "^5.0.0",
+    "jsonlint": "~1.6.2"
+  },
+  "deprecated": false,
+  "description": "A plugin for Atom Linter providing an interface to jsonlint",
+  "devDependencies": {
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "extends": "airbnb-base",
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-jsonlint#readme",
+  "keywords": [
+    "json",
+    "lint",
+    "jsonlint"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "linter-jsonlint",
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "private": true,
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-jsonlint.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "1.4.0"
+}
