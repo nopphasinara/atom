@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "concat-stream": ">=1.5.2",
     "asciidoctor": ">=2.0.3",
     "async": ">=3.1.0",
     "atom-package-deps": ">=5.1.0",
     "atom-space-pen-views": ">=2.2.0",
     "bluebird": ">=3.5.5",
+    "braces": ">=3.0.2",
+    "concat-stream": ">=1.5.2",
     "disposable-event": ">=1.0.3",
     "disposify": ">=1.0.0",
+    "emmet": "^1.6.3",
     "event-kit": ">=2.5.3",
     "fs-plus": ">=3.1.1",
     "fuzzaldrin-plus": ">=0.6.0",
@@ -20,6 +22,7 @@
     "jsonlint": ">=1.6.3",
     "link": ">=0.1.5",
     "lodash": ">=4.17.11",
+    "lodash.debounce": ">=4.0.8",
     "marked": ">=0.6.3",
     "mobx": ">=5.11.0",
     "module": ">=1.2.5",
@@ -28,7 +31,6 @@
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6",
     "rx": ">=4.1.0",
-    "lodash.debounce": ">=4.0.8",
     "sb-debounce": ">=1.0.2",
     "sb-event-kit": ">=3.0.0",
     "sb-react-table": ">=1.0.2",
@@ -37,8 +39,7 @@
     "toolbar": ">=0.0.5",
     "tree-sitter-json": ">=0.14.0",
     "underscore-plus": ">=1.7.0",
-    "untildify": ">=4.0.0",
-    "braces": ">=3.0.2"
+    "untildify": ">=4.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
