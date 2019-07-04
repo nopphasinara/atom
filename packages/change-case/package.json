@@ -1,0 +1,85 @@
+{
+  "_from": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+  "_id": "change-case@0.6.5",
+  "_inBundle": false,
+  "_integrity": "sha512-eXnvdAzvxlGP107GSgfcSEXGuZq37wFpQ+NH8tVtsIfhfq+h0Ec23cM4HRRFBgXtXtHDkBYNVf2a+z6tgbXmcA==",
+  "_location": "/change-case",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+  "_shasum": "309c6849aa1f961753c0fe7d66e2cd09bef9765e",
+  "_spec": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-11964-16018-scx5gl.xc73",
+  "activationCommands": {
+    "atom-workspace atom-text-editor": [
+      "change-case:camel",
+      "change-case:constant",
+      "change-case:dot",
+      "change-case:lower",
+      "change-case:lowerFirst",
+      "change-case:param",
+      "change-case:pascal",
+      "change-case:path",
+      "change-case:sentence",
+      "change-case:snake",
+      "change-case:switch",
+      "change-case:swap",
+      "change-case:title",
+      "change-case:upper",
+      "change-case:upperFirst",
+      "change-case:kebab"
+    ]
+  },
+  "author": {
+    "name": "Rob Hurring"
+  },
+  "bugs": {
+    "url": "https://github.com/robhurring/atom-change-case/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Philip Blyth"
+    },
+    {
+      "name": "Sergey Fedorov"
+    },
+    {
+      "name": "Timo Sand",
+      "email": "timo.j.sand@gmail.com"
+    },
+    {
+      "name": "Moritz Kneilmann"
+    },
+    {
+      "name": "李昕亮"
+    }
+  ],
+  "dependencies": {
+    "change-case": "~3.0.0"
+  },
+  "deprecated": false,
+  "description": "Change the case of selected text using node-change-case",
+  "engines": {
+    "atom": ">= 1.6.0 < 2.0.0"
+  },
+  "homepage": "https://github.com/robhurring/atom-change-case#readme",
+  "license": "MIT",
+  "main": "./lib/change-case",
+  "name": "change-case",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robhurring/atom-change-case.git"
+  },
+  "version": "0.6.5"
+}

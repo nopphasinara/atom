@@ -3,6 +3,15 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
+  "autocomplete-plus":
+    autoActivationDelay: 100
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
+    minimumWordLength: 1
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  "command-palette":
+    preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -29,6 +38,26 @@
       "file-path-picker"
       "find-and-replace"
       "emmet"
+      "autocomplete-plus"
+      "autoflow"
+      "bookmarks"
+      "bracket-matcher"
+      "dev-live-reload"
+      "encoding-selector"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "grammar-selector"
+      "image-view"
+      "keybinding-resolver"
+      "markdown-preview"
+      "notifications"
+      "open-on-github"
+      "spell-check"
+      "styleguide"
+      "symbols-view"
+      "tree-view"
+      "change-case"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -44,8 +73,23 @@
   "exception-reporting":
     userId: "f21c6f64-fc65-4893-a898-57036a31e00d"
   "find-and-replace":
-    autocompleteSearches: true
     liveSearchMinimumCharacters: 1
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
+    useRipGrep: true
+  "git-diff": {}
+  github:
+    showDiffIconGutter: true
+  "grammar-selector": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+  metrics:
+    dev:
+      sendMetricsInDevMode: true
+      verboseMode: true
+  notifications:
+    showErrorsInDevMode: true
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
@@ -53,6 +97,25 @@
     sortBy: "title"
   "remote-sync":
     foldLogPanel: true
+  "settings-view":
+    packageUpdateConcurrency: 1
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
   "tool-bar": {}
+  "tree-view":
+    alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+".coffee.source":
+  editor:
+    autoIndentOnPaste: true
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+".sass.source":
+  editor:
+    autoIndentOnPaste: true

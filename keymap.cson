@@ -151,6 +151,8 @@
   "ctrl-alt-shift-right": "unset!"
   "ctrl-alt-backspace": "unset!"
   "ctrl-alt-delete": "unset!"
+  'ctrl-space': 'unset!'
+  'ctrl-cmd-m': 'markdown-preview:toggle'
 
 "atom-workspace atom-text-editor:not([mini])":
   "alt-cmd-z": "unset!"
@@ -159,7 +161,7 @@
   "cmd-enter": "editor:newline-below"
   "cmd-shift-enter": "editor:newline-above"
   "alt-enter": "editor:newline"
-  "shift-enter": "native!"
+  # "shift-enter": "native!"
   "cmd-]": "editor:indent-selected-rows"
   "cmd-[": "editor:outdent-selected-rows"
   "ctrl-cmd-up": "editor:move-line-up"
@@ -222,23 +224,8 @@
   'shift-alt-e': 'emmet:select-previous-item'
   'alt-down': 'emmet:next-edit-point'
   'alt-up': 'emmet:prev-edit-point'
-
-# "atom-text-editor:not([mini])":
-#   # Emmet set
-#   'shift-enter': 'emmet:expand-abbreviation'
-#   "alt-tab": "emmet:expand-abbreviation"
-#   'cmd-e': 'emmet:balance-inward'
-#   'shift-cmd-e': 'emmet:balance-outward'
-#   'ctrl-backspace': 'emmet:remove-tag'
-#   'ctrl-shift-c': 'emmet:evaluate-math-expression'
-#   'ctrl-shift-j': 'emmet:merge-lines'
-#   'ctrl-shift-u': 'emmet:update-tag'
-#   'ctrl-shift-w': 'emmet:wrap-with-abbreviation'
-#   'ctrl-shift-m': 'emmet:matching-pair'
-#   'alt-e': 'emmet:select-next-item'
-#   'shift-alt-e': 'emmet:select-previous-item'
-#   'alt-down': 'emmet:next-edit-point'
-#   'alt-up': 'emmet:prev-edit-point'
+  "alt-escape": "nerd:bio-link"
+  "shift-alt-escape": "nerd:bio-link-reverse"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"
@@ -255,6 +242,8 @@
   "cmd-g": "find-and-replace:find-next"
   "ctrl-alt-cmd-g": "grammar-selector:show"
   "shift-ctrl-l": "unset!"
+  'cmd-r': 'symbols-view:toggle-file-symbols'
+  "cmd-.": "nerd:select-outside-bracket"
 
 ".project-manager input":
   "enter": "core:confirm"
@@ -321,6 +310,9 @@
   'enter': 'core:confirm'
   'escape': 'core:cancel'
 
-# '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
-#   'alt-cmd-s': 'sass-autocompile:compile-to-file'
-#   'shift-alt-cmd-s': 'sass-autocompile:compile-direct'
+'.platform-darwin atom-workspace atom-text-editor:not(.mini)':
+  'alt-cmd-s': 'sass-autocompile:compile-to-file'
+  'shift-alt-cmd-s': 'sass-autocompile:compile-direct'
+
+'atom-text-editor.autocomplete-active':
+  'escape': 'autocomplete-plus:cancel'

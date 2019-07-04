@@ -1,3 +1,11 @@
+// Custom variables
+@btn-icon-size: 1em;
+@font-size-sm: .875em;
+@tool-bar-font-size: 1em;
+@tool-bar-height: 48;
+
+
+// Editor
 atom-text-editor {
   // letter-spacing: 0.02em !important;
   font-kerning: none !important;
@@ -14,10 +22,298 @@ atom-text-editor {
     -moz-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
   }
-}
 
-atom-text-editor {
   .syntax--comment {
     font-style: normal !important;
+  }
+
+  .syntax--hyperlink {
+    text-decoration: none !important;
+  }
+
+  .cursor {
+    border-color: lime !important;
+  }
+
+  .cursors {
+    opacity: 1 !important;
+
+    &.blink-off {
+      opacity: 0 !important;
+    }
+  }
+
+  .bracket-matcher {
+    .region {
+      opacity: 1 !important;
+      border-bottom-color: lime !important;
+      border-bottom-style: solid !important;
+    }
+  }
+}
+
+.status-bar {
+  // font-size:  @font-size-sm;
+  .github-StatusBarTile,
+  .line-ending-tile {
+    display: none !important;
+  }
+}
+
+// Toolbar
+.tool-bar {
+  .btn {
+    min-width: unit(100 / 50, %) !important;
+    height: auto !important;
+    min-height: auto !important;
+    line-height: normal !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    vertical-align: middle !important;
+
+    &:before {
+      font-weight: normal !important;
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      // font-size: unit(@tool-bar-font-size, px) !important;
+      height: unit(@tool-bar-height, px) !important;
+      line-height: unit(@tool-bar-height, px) !important;
+      vertical-align: middle !important;
+    }
+  }
+
+  .tool-bar-spacer {
+    height: auto !important;
+    border-image: none !important;
+    vertical-align: middle !important;
+  }
+
+  .gc {
+    font-family: "boxicons", "Material-Design-Icons" !important;
+    // font-family: "Material-Design-Icons" !important;
+    // font-family: "master-icons" !important;
+    font-size: @btn-icon-size !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+
+    font-kerning: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -moz-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+
+    // -webkit-font-smoothing: antialiased !important;
+    // -moz-osx-font-smoothing: grayscale !important;
+    // text-rendering: optimizeLegibility !important;
+    // font-variant: normal !important;
+    vertical-align: middle !important;
+
+    &.bi {
+      font-family: "boxicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.mdi {
+      font-family: "Material-Design-Icons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.fa {
+      font-family: "FontAwesome", "FontAwesome5Free-Solid" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.custom {
+      font-family: "fontcustom" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.ico {
+      font-family: "icofont" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.icomoon {
+      font-family: "icomoon" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.iconic {
+      font-family: "iconmonstr-iconic-font", "open-iconic" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.ion {
+      font-family: "Ionicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.oct {
+      font-family: "octicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.typ {
+      font-family: "typicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.das {
+      font-family: "dashicons" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+    &.ent {
+      font-family: "entypo" !important;
+      // font-size: @btn-icon-size !important;
+
+      font-kerning: none !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+      -moz-font-smoothing: grayscale !important;
+      text-rendering: optimizeLegibility !important;
+
+      vertical-align: middle !important;
+    }
+  }
+}
+
+
+// Snippet Labels
+.snippet-label {
+  font-family: "Menlo-Regular", "MicrosoftSansSerif", "san-serif", "boxicons", "Material-Design-Icons", "mastericons" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+
+  font-kerning: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -moz-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+
+  vertical-align: middle !important;
+  display: block !important;
+
+  &.primary {
+    // color: @hue-2 !important;
+  }
+  &.secondary {
+    // color: @mono-2 !important;
+  }
+  &.success {
+    // color: @hue-4 !important;
+  }
+  &.info {
+    // color: @hue-2 !important;
+  }
+  &.warning {
+    // color: @hue-6-2 !important;
+  }
+  &.danger {
+    // color: @hue-5 !important;
+  }
+  &.light {
+    // color: @mono-1 !important;
+  }
+  &.dark {
+    // color: @mono-3 !important;
+  }
+
+  &.bi {
+    // color: @hue-6-2 !important;
+    font-size: 1.875em !important;
+    font-weight: normal !important;
+    line-height: @font-size !important;
+    padding-top: 6px !important;
+  }
+
+  &.common {
+    // color: @hue-2 !important;
   }
 }
