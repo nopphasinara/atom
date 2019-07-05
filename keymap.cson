@@ -226,6 +226,8 @@
   'alt-up': 'emmet:prev-edit-point'
   "alt-escape": "nerd:bio-link"
   "shift-alt-escape": "nerd:bio-link-reverse"
+  "shift-cmd-escape": "tree-view:reveal-active-file"
+  "cmd-escape": "tree-view:toggle-focus"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"
