@@ -242,6 +242,7 @@
 ".platform-darwin atom-text-editor":
   "cmd-d": "find-and-replace:select-next"
   "cmd-g": "find-and-replace:find-next"
+  "shift-cmd-g": "find-and-replace:find-previous"
   "ctrl-alt-cmd-g": "grammar-selector:show"
   "shift-ctrl-l": "unset!"
   'cmd-r': 'symbols-view:toggle-file-symbols'
