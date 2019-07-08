@@ -58,6 +58,7 @@
       "symbols-view"
       "tree-view"
       "change-case"
+      "git-gui"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -75,6 +76,14 @@
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "._*"
+      "Thumbs.db"
+      "*.md"
+      "*.log"
+      "error_log"
+    ]
     preserveLastSearch: true
     searchAllPanes: true
     useRipGrep: true
