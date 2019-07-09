@@ -59,6 +59,10 @@
       "tree-view"
       "change-case"
       "git-gui"
+      "git-plus"
+      "git-line"
+      "hyperclick"
+      "split-diff"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -88,9 +92,15 @@
     searchAllPanes: true
     useRipGrep: true
   "git-diff": {}
+  "git-plus":
+    experimental:
+      autoFetchNotify: true
+    general: {}
   github:
     showDiffIconGutter: true
   "grammar-selector": {}
+  hyperclick:
+    darwinTriggerKeys: "altKey"
   "markdown-preview":
     breakOnSingleNewline: true
   metrics:
@@ -108,6 +118,8 @@
     foldLogPanel: true
   "settings-view":
     packageUpdateConcurrency: 1
+  "split-diff":
+    turnOffSoftWrap: true
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
