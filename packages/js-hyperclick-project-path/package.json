@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+  "_id": "js-hyperclick-project-path@1.12.0",
+  "_inBundle": false,
+  "_integrity": "sha512-mKM2QNgpg0CipqOrdbKfIG0skvxupqchBQjYBrM+LT3e2//6IEOnfE+Ta3zocFbGZM0Z/rO4xUkkKFeY2Y157Q==",
+  "_location": "/js-hyperclick-project-path",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+  "_shasum": "c9719e3917a34c59a98c9b2edbba1651a0d2ab56",
+  "_spec": "https://www.atom.io/api/packages/js-hyperclick-project-path/versions/1.12.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119610-3920-1h973k4.mal3",
+  "bugs": {
+    "url": "https://github.com/rohithb/js-hyperclick-project-path/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "acorn-to-esprima": "^1.0.4",
+    "babel-core": "^6.17.0",
+    "babylon": "^6.11.4",
+    "escope": "^3.2.0",
+    "resolve": "^1.1.6"
+  },
+  "deprecated": false,
+  "description": "A hyperclick provider that lets you jump to where variables are defined with project path support.",
+  "devDependencies": {
+    "eslint": "^3.7.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/rohithb/js-hyperclick-project-path#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/js-hyperclick",
+  "moduleRoots": [
+    "lib"
+  ],
+  "name": "js-hyperclick-project-path",
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohithb/js-hyperclick-project-path.git"
+  },
+  "version": "1.12.0"
+}

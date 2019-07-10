@@ -1,3 +1,10 @@
+url = require('url')
+{shell} = require('electron')
+_ = require('underscore-plus')
+link = require 'link'
+# link = require './packages/link/lib/link.js'
+
+
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
 
@@ -22,10 +29,23 @@ atom.commands.add 'atom-text-editor', 'nerd:bio-link', ->
   if !selectedText || !clipboardText
     return
 
-  atom.packages.activePackages.snippets?.mainModule?.insert "<a href=\"#{clipboardText}\" title=\"${1:#{selectedText}}\">${2:#{selectedText}}</a>$0"
-  # editor.insertText("<a href=\"#{clipboardText}\" title=\"#{selectedText}\">#{selectedText}</a>")
-  # editor.moveLeft(6 + selectedText.length)
-  # editor.selectLeft(selectedText.length)
+  snippets = atom.packages.getActivePackage('snippets')
+  if (snippets)
+    snippetsService = snippets.mainModule
+    snippetsService.insert "<a href=\"#{clipboardText}\"${1: ${2:title=\"${3:#{selectedText}}\"}}>${4:#{selectedText}}</a>$0"
+  # atom.packages.activePackages.snippets?.mainModule?.insert "<a href=\"#{clipboardText}\" title=\"${1:#{selectedText}}\">${2:#{selectedText}}</a>$0"
+
+
+# Open link
+atom.commands.add 'atom-text-editor', 'nerd:link-open', ->
+  editor = atom.workspace.getActiveTextEditor()
+  selectedText = editor.getSelectedText()
+  if selectedText
+    {protocol} = url.parse(selectedText)
+    if protocol == 'http:' || protocol == 'https:'
+      shell.openExternal(selectedText)
+  else
+    link.openLink()
 
 
 # sss

@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+  "_id": "hyperlink-hyperclick@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-FSe1kshWFmZDuWxTpm0cOSOVY3fir5f2ooKKJTBiBwd9Cmpfq4tudZZXNLerDTLPDK9fGkTiHN2lCiryqe9WcA==",
+  "_location": "/hyperlink-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+  "_shasum": "ab4ef227b4d61940550cdd8e55e83f1942013ae6",
+  "_spec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119610-3883-12lcf7l.hmmj",
+  "atomTestRunner": "atom-jasmine3-test-runner",
+  "author": {
+    "name": "Tony Brix"
+  },
+  "bugs": {
+    "url": "https://github.com/UziTech/hyperlink-hyperclick/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Hyperlink plugin for the Atom Hyperclick package",
+  "devDependencies": {
+    "atom-jasmine3-test-runner": "^4.1.2",
+    "eslint": "^5.12.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/UziTech/hyperlink-hyperclick#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "hyperlink-hyperclick",
+  "providedServices": {
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UziTech/hyperlink-hyperclick.git"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "version": "3.0.0"
+}

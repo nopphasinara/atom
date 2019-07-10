@@ -3,6 +3,12 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
+  "atom-autocomplete-php":
+    gotoKey: "ctrl"
+  "autocomplete-js-import":
+    fileRelativePaths: false
+    fuzzy:
+      enabled: true
   "autocomplete-plus":
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
@@ -63,6 +69,8 @@
       "git-line"
       "hyperclick"
       "split-diff"
+      "atom-autocomplete-php"
+      "sort-lines"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -77,6 +85,7 @@
     extensionsPath: "~/.dotfiles/projects/emmet"
   "exception-reporting":
     userId: "f21c6f64-fc65-4893-a898-57036a31e00d"
+  "file-hyperclick": {}
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "fuzzy-finder":
@@ -101,6 +110,12 @@
   "grammar-selector": {}
   hyperclick:
     darwinTriggerKeys: "altKey"
+  "hyperlink-hyperclick":
+    priority: 100
+  "js-hyperclick":
+    jumpToImport: true
+  "js-hyperclick-project-path":
+    jumpToImport: true
   "markdown-preview":
     breakOnSingleNewline: true
   metrics:

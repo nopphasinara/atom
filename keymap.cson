@@ -225,6 +225,7 @@
   'alt-down': 'emmet:next-edit-point'
   'alt-up': 'emmet:prev-edit-point'
   "alt-escape": "nerd:bio-link"
+  "alt-eject": "nerd:bio-link"
   "shift-alt-escape": "nerd:bio-link-reverse"
   "shift-cmd-escape": "tree-view:reveal-active-file"
   "cmd-escape": "tree-view:toggle-focus"
@@ -247,6 +248,7 @@
   "shift-ctrl-l": "unset!"
   'cmd-r': 'symbols-view:toggle-file-symbols'
   "cmd-.": "nerd:select-outside-bracket"
+  "shift-ctrl-o": "nerd:link-open"
 
 ".project-manager input":
   "enter": "core:confirm"

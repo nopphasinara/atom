@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+  "_id": "path-hyperclick@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-1fIUPgJV0arP/BHqilYehgyzeFOk2BYzs1wEfLoDe3fyWepjtceEgfcW10hXzMHYqJ2QPOD9jzcFkuaMyrOH/g==",
+  "_location": "/path-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+  "_shasum": "87bed34a2e4cb73c0475a34366cd9aa5fc7614e0",
+  "_spec": "https://www.atom.io/api/packages/path-hyperclick/versions/0.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119610-3502-2rkobr.lgkqw",
+  "bugs": {
+    "url": "https://github.com/wingyplus/path-hyperclick/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "File jumper with hyperclick",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/wingyplus/path-hyperclick#readme",
+  "keywords": [
+    "hyperclick",
+    "path",
+    "file"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "path-hyperclick",
+  "package-deps": [
+    "hyperclick"
+  ],
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingyplus/path-hyperclick.git"
+  },
+  "version": "0.3.0"
+}

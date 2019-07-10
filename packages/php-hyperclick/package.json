@@ -1,0 +1,61 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+  "_id": "php-hyperclick@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-+3T1N3Z6MBnLNatsUwH+xFNQtiRXWiAYKjLufOAJMJ1je4V1Cvf/f5ZoKqp+e3iDJXv6Vlt+qLQhf4OF73ty+g==",
+  "_location": "/php-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+  "_shasum": "63633bec1de01e49e45a7ed0c79c63ed2a5627a1",
+  "_spec": "https://www.atom.io/api/packages/php-hyperclick/versions/1.2.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-119610-3398-rwvda7.l1i9o",
+  "author": {
+    "name": "Hari KT"
+  },
+  "bugs": {
+    "url": "https://github.com/harikt/php-hyperclick/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hyperclick": ">=0.0.20"
+  },
+  "deprecated": false,
+  "description": "Hyperclick provider for PHP. Open file when classname is clicked",
+  "devDependencies": {
+    "hyperclick-interfaces": "0.0.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/harikt/php-hyperclick#readme",
+  "keywords": [
+    "hyperclick",
+    "php"
+  ],
+  "license": "MIT",
+  "main": "./lib/php-hyperclick-package",
+  "name": "php-hyperclick",
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harikt/php-hyperclick.git"
+  },
+  "version": "1.2.1"
+}
