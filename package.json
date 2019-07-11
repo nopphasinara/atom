@@ -43,7 +43,13 @@
     "fuzzy": ">=0.1.3",
     "match-files": ">=0.1.1",
     "sub-atom": ">=1.1.0",
-    "atom-babel6-transpiler": ">=1.2.0"
+    "atom-babel6-transpiler": ">=1.2.0",
+    "lodash.uniq": ">=4.5.0",
+    "md5": ">=2.2.1",
+    "@babel/polyfill": ">=7.4.4",
+    "atom-ts-transpiler": ">=1.5.2",
+    "shell": ">=0.5.0",
+    "url": ">=0.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
