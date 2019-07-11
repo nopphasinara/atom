@@ -21,6 +21,10 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    closeEmptyWindows: false
+    disabledPackages: [
+      "atom-autocomplete-php"
+    ]
     ignoredNames: [
       ".git"
       ".hg"

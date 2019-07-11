@@ -32,6 +32,17 @@
 
 # Coffeescript
 '.source.coffee':
+  'snippet with label':
+    'prefix': 'label-snippet'
+    'body': """
+    '${1:name}':
+      'prefix': '$2'
+      'body': '''
+      $3
+      '''
+      'rightLabelHTML': '<span class="snippet-label ${5:success|bi}">$4</span>$0'
+    """
+    'rightLabelHTML': '<span class="snippet-label success">COMMON</span>'
   'Toolbar MDI Button':
     'prefix': 'mdi-button'
     'body': '''
@@ -262,6 +273,24 @@
 
 
 '.source.php':
+  'die()':
+    'prefix': 'die'
+    'body': '''
+    die($2);$1$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'exit()':
+    'prefix': 'exit'
+    'body': '''
+    exit($2);$1$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'break;':
+    'prefix': 'break'
+    'body': '''
+    break;$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
   'Section comment':
     'prefix': 'section-comment'
     'body': '''

@@ -103,6 +103,9 @@
   "cmd-8": "pane:show-item-8"
   "cmd-9": "pane:show-item-9"
   "shift-cmd-b": "unset!"
+  'cmd-k cmd-n': "unset!"
+  "alt-cmd-left": "window:focus-previous-pane"
+  "alt-cmd-right": "window:focus-next-pane"
 
 "atom-text-editor":
   "alt-left": "editor:move-to-beginning-of-word"
@@ -229,6 +232,7 @@
   "shift-alt-escape": "nerd:bio-link-reverse"
   "shift-cmd-escape": "tree-view:reveal-active-file"
   "cmd-escape": "tree-view:toggle-focus"
+  "alt-cmd-tab": "editor:auto-indent"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"

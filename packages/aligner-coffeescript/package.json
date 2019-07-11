@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_id": "aligner-coffeescript@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-OruJtIBwYZWM1VZo453EQtU7xzb5msyXj7D+UWY7EPRqlx3xcFMetKKpnY+JCslHC69OlyCXFHx1FqMnHSv1oQ==",
+  "_location": "/aligner-coffeescript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_shasum": "162797f395c9341c097ee3af337f10e0a7652d97",
+  "_spec": "https://www.atom.io/api/packages/aligner-coffeescript/versions/1.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119611-7102-3e6mmy.1hem2",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner-coffeescript/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "CoffeeScript support for aligner",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner-coffeescript#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "coffeescript"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner-coffeescript",
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrianlee44/atom-aligner-coffeescript.git"
+  },
+  "version": "1.2.0"
+}
