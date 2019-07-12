@@ -35,3 +35,4 @@ docs/includes
 spec/fixtures/evil-files/
 out/
 /electron/
+snapshot-cache
