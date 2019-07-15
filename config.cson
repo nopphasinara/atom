@@ -13,6 +13,7 @@
     autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -102,8 +103,8 @@
       "error_log"
     ]
     preserveLastSearch: true
+    scoringSystem: "fast"
     searchAllPanes: true
-    useRipGrep: true
   "git-diff": {}
   "git-plus":
     experimental:
