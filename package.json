@@ -28,7 +28,7 @@
     "js-beautify": ">=1.10.0",
     "jsonlint": ">=1.6.3",
     "link": ">=0.1.5",
-    "lodash": ">=4.17.11",
+    "lodash": "^4.17.14",
     "lodash.debounce": ">=4.0.8",
     "lodash.uniq": ">=4.5.0",
     "marked": ">=0.6.3",
