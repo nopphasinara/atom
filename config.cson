@@ -10,7 +10,6 @@
     fuzzy:
       enabled: true
   "autocomplete-plus":
-    autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
     enableExtendedUnicodeSupport: true
@@ -76,6 +75,7 @@
       "split-diff"
       "atom-autocomplete-php"
       "sort-lines"
+      "ftp-remote-edit"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
@@ -93,17 +93,19 @@
   "file-hyperclick": {}
   "find-and-replace":
     liveSearchMinimumCharacters: 1
+  "ftp-remote-edit":
+    config: "cd43b52544755a51d9fcc3fdf59514fdd3091c5b644b34296cd337f0335035b3d90a525c61e7eab0dcaa8eea37ef2f671a3b5c986c733d23e36439442be21a6e76bfa528fb1397d5203fa71e2f75102a3e96513a580d0e5bbeb9d549e6e074d06879d68c0ecbd69b28e6a596fe007836ffa873a4f1deae11a6175a991b0345fa7fd623b9c4e67ed9bb179319c89ce27047a373341773d4adf7d0ee65d8366d89343d3e7cbccafd3cc3d88d7d690479b24c40dbf96d603061c575b6f933bfd55588a00adaf1166e64309632957fe69b93a54d809be122a646205cd63aaffa335d8065bb3babecfc907f4764ef1e5b59dc95a0286191176efa2c3f889e1ef420fa31c884a417cd05973ad2885ca087ce4c2aa4e901786cf599fb522ba8da846eba8ec337c0c17569e1b30979ad66ce3a557e0278663515d26dd5fb56c2218ff14f57bbb36155588c731035b276c4d596f4a456a35394c52d3e82bc965f14f99d82050bc91a51241b4b14164a45b23ab91cbfb3beb0210c25be4376f5bab8719a6e65eaf9700fb86f570f8bfb8f8df996762b64002e841c32beb3defebb91ed3aa93d0da1e201b9"
+    finder:
+      filterKeyForItem: "Path"
+    password: "8750f271"
+    transfer:
+      defaultDownloadPath: "project"
+      defaultUploadPath: "project"
+    tree:
+      showHiddenFiles: true
+      toggleOnStartup: false
   "fuzzy-finder":
-    ignoredNames: [
-      ".git"
-      "._*"
-      "Thumbs.db"
-      "*.md"
-      "*.log"
-      "error_log"
-    ]
     preserveLastSearch: true
-    scoringSystem: "fast"
     searchAllPanes: true
   "git-diff": {}
   "git-plus":

@@ -157,6 +157,12 @@
 
 
 '.text.html':
+  '<link...>':
+    'prefix': 'link'
+    'body': '''
+    <link rel="${1:stylesheet${2:|canonical|icon|search}}" href="$3" type="${4:text/css${5:|image/x-icon}}" media="${6:all}" charset="${7:utf-8}" />$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
   '<meta ...>':
     'prefix': 'meta'
     'body': '''
@@ -202,6 +208,12 @@
 
 
 '.text.html.php':
+  '<link...>':
+    'prefix': 'link'
+    'body': '''
+    <link rel="${1:stylesheet${2:|canonical|icon|search}}" href="$3" type="${4:text/css${5:|image/x-icon}}" media="${6:all}" charset="${7:utf-8}" />$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
   '<?php foreach () { ?>..<?php } ?>':
     'prefix': 'foreach'
     'body': '''
@@ -243,6 +255,12 @@
 
 
 '.text.html.php.blade':
+  '<link...>':
+    'prefix': 'link'
+    'body': '''
+    <link rel="${1:stylesheet${2:|canonical|icon|search}}" href="$3" type="${4:text/css${5:|image/x-icon}}" media="${6:all}" charset="${7:utf-8}" />$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
   '@php':
     'prefix': 'php'
     'body': '''
@@ -273,6 +291,12 @@
 
 
 '.source.php':
+  '<link...>':
+    'prefix': 'link'
+    'body': '''
+    <link rel="${1:stylesheet${2:|canonical|icon|search}}" href="$3" type="${4:text/css${5:|image/x-icon}}" media="${6:all}" charset="${7:utf-8}" />$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
   'die()':
     'prefix': 'die'
     'body': '''

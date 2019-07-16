@@ -1,0 +1,90 @@
+{
+  "_from": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+  "_id": "ftp-remote-edit@0.16.3",
+  "_inBundle": false,
+  "_integrity": "sha512-pCCh/LM0ikwKrwXj5t4xcTLPaXat2SIxWV+cwHFRq15nThM/5BlYJPxpHyOAKlxxwiAe3RGuJ4aTtxQRBlRLeQ==",
+  "_location": "/ftp-remote-edit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+  "_shasum": "6a016932db6adbbf3dfbed55a8213d27e5dcd8e0",
+  "_spec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-119616-14710-yoiq12.zp03",
+  "bugs": {
+    "url": "https://github.com/h3imdall/ftp-remote-edit/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "file-icons.element-icons": {
+      "versions": {
+        "1.0.0": "consumeElementIcons"
+      }
+    }
+  },
+  "dependencies": {
+    "@icetee/ftp": "0.3.11",
+    "atom-select-list": "^0.3.0",
+    "atom-space-pen-views": "^2.2.0",
+    "fs-plus": "^3.1.1",
+    "fuzzaldrin": "^2.1.0",
+    "fuzzaldrin-plus": "^0.5.0",
+    "md5": "^2.2.1",
+    "minimatch": "^3.0.2",
+    "p-queue": "^3.0.0",
+    "progress-stream": "^2.0.0",
+    "short-hash": "^1.0.0",
+    "ssh2": "^0.8.2",
+    "xml-js": "^1.6.11"
+  },
+  "deprecated": false,
+  "description": "Edit remotely files on your ftp/sftp(ssh) server without a project. All your connection information will be encrypted.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/h3imdall/ftp-remote-edit#readme",
+  "keywords": [
+    "ftp",
+    "sftp",
+    "remote",
+    "encrypt"
+  ],
+  "license": "MIT",
+  "main": "./lib/ftp-remote-edit",
+  "name": "ftp-remote-edit",
+  "providedServices": {
+    "ftp-remote.openFile": {
+      "versions": {
+        "0.1.0": "openRemoteFile"
+      }
+    },
+    "ftp-remote.getCurrentServerConfig": {
+      "versions": {
+        "0.1.0": "getCurrentServerConfig"
+      }
+    },
+    "ftp-remote.getCurrentServerName": {
+      "versions": {
+        "0.1.0": "getCurrentServerName"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h3imdall/ftp-remote-edit.git"
+  },
+  "uriHandler": {
+    "method": "handleURI",
+    "deferActivation": false
+  },
+  "version": "0.16.3"
+}
