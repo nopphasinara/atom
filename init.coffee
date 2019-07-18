@@ -44,6 +44,8 @@ atom.commands.add 'atom-text-editor', 'nerd:link-open', ->
     {protocol} = url.parse(selectedText)
     if protocol == 'http:' || protocol == 'https:'
       shell.openExternal(selectedText)
+    else
+      shell.openExternal("http://#{selectedText}")
   else
     link.openLink()
 

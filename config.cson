@@ -76,6 +76,7 @@
       "atom-autocomplete-php"
       "sort-lines"
       "ftp-remote-edit"
+      "duplicate-removal"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"

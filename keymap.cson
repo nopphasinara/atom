@@ -253,6 +253,7 @@
   'cmd-r': 'symbols-view:toggle-file-symbols'
   "cmd-.": "nerd:select-outside-bracket"
   "shift-ctrl-o": "nerd:link-open"
+  "ctrl-cmd-o": "nerd:link-open"
 
 ".project-manager input":
   "enter": "core:confirm"
@@ -314,6 +315,10 @@
   'up': 'core:move-up'
   'down': 'core:move-down'
   'alt-cmd-o': 'tree-view:show-in-file-manager'
+
+'atom-text-editor[mini]':
+  # "cmd-d": "find-and-replace:select-next"
+  "cmd-d": "editor:select-word"
 
 '.tree-view-dialog atom-text-editor[mini]':
   'enter': 'core:confirm'
