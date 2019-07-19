@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@babel/polyfill": ">=7.4.4",
+    "@icetee/ftp": ">=1.0.3",
     "array-shuffle": ">=1.0.1",
     "asciidoctor": ">=2.0.3",
     "async": ">=3.1.0",
@@ -52,10 +53,10 @@
     "toolbar": ">=0.0.5",
     "touch": ">=3.1.0",
     "tree-sitter-json": ">=0.14.0",
+    "typescript": "^2.9.2",
     "underscore-plus": ">=1.7.0",
     "untildify": ">=4.0.0",
-    "url": ">=0.11.0",
-    "@icetee/ftp": ">=1.0.3"
+    "url": ">=0.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
