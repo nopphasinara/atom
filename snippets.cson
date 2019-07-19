@@ -404,6 +404,17 @@
     'prefix': 'pr-arr'
     'body': '${1:key}: \[$2\],$0'
     'rightLabelHTML': '<span class="snippet-label bi"></span>'
+  'Details comment':
+    'prefix': 'details-comment'
+    'body': '''
+    /*
+    ------------------------------------------------------------------------
+    ${1:Comment Heading}
+    ------------------------------------------------------------------------
+    ${2:Description}
+
+    */$0
+    '''
   'Section comment':
     'prefix': 'section-comment'
     'body': '''
