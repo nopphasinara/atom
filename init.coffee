@@ -15,6 +15,28 @@ atom.workspace.observeActiveTextEditor ->
   editor = activeEditor()
 
 
+# Comment wrap with /* ... */
+atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
+  options = {
+    select: true,
+    undo: '',
+    skip: false,
+  }
+  editor = atom.workspace.getActiveTextEditor()
+  selections = editor.getSelections()
+  console.log selections
+  if selections.length > 0
+    for selection in selections
+      insertText = "/*{{replacement}}*/"
+      selectedText = selection.getText()
+      insertText = insertText.replace("{{replacement}}", "#{selectedText}")
+
+      selection.retainSelection = true
+      selection.plantTail()
+      selection.insertText(insertText, options)
+      selection.retainSelection = false
+
+
 #
 atom.commands.add 'atom-text-editor', 'nerd:bio-link', ->
   editor = atom.workspace.getActiveTextEditor()

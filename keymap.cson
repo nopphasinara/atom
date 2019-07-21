@@ -233,6 +233,7 @@
   "shift-cmd-escape": "tree-view:reveal-active-file"
   "cmd-escape": "tree-view:toggle-focus"
   "alt-cmd-tab": "editor:auto-indent"
+  "alt-cmd-/": "nerd:wrap-inline-comment"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"
