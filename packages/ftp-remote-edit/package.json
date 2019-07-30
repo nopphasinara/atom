@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-  "_id": "ftp-remote-edit@0.16.4",
+  "_from": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+  "_id": "ftp-remote-edit@0.17.0",
   "_inBundle": false,
-  "_integrity": "sha512-vqVwhHYwCFkAjF5EUPrUA1gMpzQCLIBiplwjHJfvsuTljkibDpJmdMaBG8OUQEHOUQ788vPiTKVbacVwVAQUqw==",
+  "_integrity": "sha512-XPSKeKLOjCDZCAxky9kMi7YN8UJAUWNNSnCcOPxsynbsnGnaxGCJQZ5wE0R1OHj8pTsh+6NI1TxJhtRkLLOgVA==",
   "_location": "/ftp-remote-edit",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball"
+    "raw": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-  "_shasum": "f7a93097a3f7338baca4f0c664707e99a86c4a31",
-  "_spec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.16.4/tarball",
-  "_where": "/private/tmp/apm-install-dir-119630-8929-u6qrq6.w5qu",
+  "_resolved": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+  "_shasum": "fa3ad92da857fbba2c52f16ad204dc85a57e91dc",
+  "_spec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119630-12296-1a4586p.qema",
   "bugs": {
     "url": "https://github.com/h3imdall/ftp-remote-edit/issues"
   },
@@ -32,9 +32,9 @@
     }
   },
   "dependencies": {
-    "@icetee/ftp": "0.3.11",
     "atom-select-list": "^0.3.0",
     "atom-space-pen-views": "^2.2.0",
+    "basic-ftp": "^3.8.0",
     "fs-plus": "^3.1.1",
     "fuzzaldrin": "^2.1.0",
     "fuzzaldrin-plus": "^0.5.0",
@@ -86,5 +86,5 @@
     "method": "handleURI",
     "deferActivation": false
   },
-  "version": "0.16.4"
+  "version": "0.17.0"
 }
