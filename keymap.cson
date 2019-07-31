@@ -154,8 +154,8 @@
   "ctrl-alt-shift-right": "unset!"
   "ctrl-alt-backspace": "unset!"
   "ctrl-alt-delete": "unset!"
-  'ctrl-space': 'unset!'
-  'ctrl-cmd-m': 'markdown-preview:toggle'
+  "ctrl-space": "unset!"
+  "ctrl-cmd-m": "markdown-preview:toggle"
 
 "atom-workspace atom-text-editor:not([mini])":
   "alt-cmd-z": "unset!"
@@ -163,7 +163,7 @@
   "alt-cmd-ctrl-f": "unset!"
   "cmd-enter": "editor:newline-below"
   "cmd-shift-enter": "editor:newline-above"
-  "alt-enter": "editor:newline"
+  # "alt-enter": "editor:newline"
   # "shift-enter": "native!"
   "cmd-]": "editor:indent-selected-rows"
   "cmd-[": "editor:outdent-selected-rows"
@@ -205,29 +205,30 @@
 
 # Custom Key Bindings
 'atom-text-editor[data-grammar~="jsx"]:not([mini])':
-  'shift-enter': 'emmet:expand-abbreviation-with-tab'
+  "shift-enter": "emmet:expand-abbreviation-with-tab"
 
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
   "cmd-backspace": "editor:delete-line"
   "shift-cmd-i": "file-path-picker:pick-file"
   # Emmet set
-  'shift-enter': 'emmet:expand-abbreviation'
-  "alt-tab": "emmet:expand-abbreviation"
-  'cmd-e': 'emmet:balance-inward'
-  'shift-cmd-e': 'emmet:balance-outward'
-  'ctrl-backspace': 'emmet:remove-tag'
-  'ctrl-shift-c': 'emmet:evaluate-math-expression'
-  'ctrl-shift-j': 'emmet:merge-lines'
-  'ctrl-shift-u': 'emmet:update-tag'
-  'ctrl-shift-w': 'emmet:wrap-with-abbreviation'
-  'ctrl-shift-w': 'emmet:wrap-with-abbreviation'
-  'ctrl-alt-w': 'emmet:wrap-with-abbreviation'
-  'ctrl-shift-m': 'emmet:matching-pair'
-  'alt-e': 'emmet:select-next-item'
-  'shift-alt-e': 'emmet:select-previous-item'
-  'alt-down': 'emmet:next-edit-point'
-  'alt-up': 'emmet:prev-edit-point'
-  "alt-escape": "nerd:bio-link"
+  "shift-enter": "emmet:expand-abbreviation"
+  "alt-tab": "emmet:select-next-item"
+  "shift-alt-tab": "emmet:select-previous-item"
+  "cmd-e": "emmet:balance-inward"
+  "shift-cmd-e": "emmet:balance-outward"
+  "ctrl-backspace": "emmet:remove-tag"
+  "ctrl-shift-c": "emmet:evaluate-math-expression"
+  "ctrl-shift-j": "emmet:merge-lines"
+  "ctrl-shift-u": "emmet:update-tag"
+  "ctrl-shift-w": "emmet:wrap-with-abbreviation"
+  "ctrl-shift-w": "emmet:wrap-with-abbreviation"
+  "ctrl-alt-w": "emmet:wrap-with-abbreviation"
+  "ctrl-shift-m": "emmet:matching-pair"
+  "alt-e": "emmet:select-next-item"
+  "shift-alt-e": "emmet:select-previous-item"
+  "alt-down": "emmet:next-edit-point"
+  "alt-up": "emmet:prev-edit-point"
+  "alt-enter": "nerd:bio-link"
   "alt-eject": "nerd:bio-link"
   "shift-alt-escape": "nerd:bio-link-reverse"
   "shift-cmd-escape": "tree-view:reveal-active-file"
@@ -251,7 +252,7 @@
   "shift-cmd-g": "find-and-replace:find-previous"
   "ctrl-alt-cmd-g": "grammar-selector:show"
   "shift-ctrl-l": "unset!"
-  'cmd-r': 'symbols-view:toggle-file-symbols'
+  "cmd-r": "symbols-view:toggle-file-symbols"
   "cmd-.": "nerd:select-outside-bracket"
   "shift-ctrl-o": "nerd:link-open"
   "ctrl-cmd-o": "nerd:link-open"
@@ -297,37 +298,37 @@
   "shift-tab": "find-and-replace:focus-previous"
 
 '.platform-darwin .tree-view':
-  'cmd-c': 'tree-view:copy'
-  'cmd-x': 'tree-view:cut'
-  'cmd-v': 'tree-view:paste'
-  'enter': 'tree-view:expand-item'
-  'right': 'tree-view:expand-item'
-  'left': 'tree-view:collapse-directory'
+  "cmd-c": "tree-view:copy"
+  "cmd-x": "tree-view:cut"
+  "cmd-v": "tree-view:paste"
+  "enter": "tree-view:expand-item"
+  "right": "tree-view:expand-item"
+  "left": "tree-view:collapse-directory"
 
 '.tree-view':
-  'escape': 'tree-view:unfocus'
-  'alt-cmd-c': 'tree-view:copy-full-path'
-  'r': 'tree-view:rename'
-  'm': 'tree-view:move'
-  'a': 'tree-view:add-file'
-  'shift-a': 'tree-view:add-folder'
-  'd': 'tree-view:duplicate'
-  'backspace': 'tree-view:remove'
-  'up': 'core:move-up'
-  'down': 'core:move-down'
-  'alt-cmd-o': 'tree-view:show-in-file-manager'
+  "escape": "tree-view:unfocus"
+  "alt-cmd-c": "tree-view:copy-full-path"
+  "r": "tree-view:rename"
+  "m": "tree-view:move"
+  "a": "tree-view:add-file"
+  "shift-a": "tree-view:add-folder"
+  "d": "tree-view:duplicate"
+  "backspace": "tree-view:remove"
+  "up": "core:move-up"
+  "down": "core:move-down"
+  "alt-cmd-o": "tree-view:show-in-file-manager"
 
 'atom-text-editor[mini]':
   # "cmd-d": "find-and-replace:select-next"
   "cmd-d": "editor:select-word"
 
 '.tree-view-dialog atom-text-editor[mini]':
-  'enter': 'core:confirm'
-  'escape': 'core:cancel'
+  "enter": "core:confirm"
+  "escape": "core:cancel"
 
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
-  'alt-cmd-s': 'sass-autocompile:compile-to-file'
-  'shift-alt-cmd-s': 'sass-autocompile:compile-direct'
+  "alt-cmd-s": "sass-autocompile:compile-to-file"
+  "shift-alt-cmd-s": "sass-autocompile:compile-direct"
 
 'atom-text-editor.autocomplete-active':
-  'escape': 'autocomplete-plus:cancel'
+  "escape": "autocomplete-plus:cancel"
