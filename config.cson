@@ -80,7 +80,7 @@
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
-    titleBar: "hidden"
+    titleBar: "custom"
   editor:
     fontFamily: "Menlo, boxicons, Material-Design-Icons, mastericons, Consolas, DejaVu Sans Mono, monospace"
     scrollPastEnd: true
