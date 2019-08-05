@@ -24,6 +24,7 @@
     closeEmptyWindows: false
     disabledPackages: [
       "atom-autocomplete-php"
+      "language-dotenv"
     ]
     ignoredNames: [
       ".git"
@@ -83,6 +84,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, boxicons, Material-Design-Icons, mastericons, Consolas, DejaVu Sans Mono, monospace"
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -154,6 +156,10 @@
     alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".coffee.source":
   editor:
     autoIndentOnPaste: true

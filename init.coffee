@@ -19,12 +19,12 @@ atom.workspace.observeActiveTextEditor ->
 atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
   options = {
     select: true,
-    undo: '',
+    # undo: '',
     skip: false,
   }
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()
-  console.log selections
+  # console.log selections
   if selections.length > 0
     for selection in selections
       insertText = "/*{{replacement}}*/"
@@ -35,6 +35,7 @@ atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
       selection.plantTail()
       selection.insertText(insertText, options)
       selection.retainSelection = false
+      selection.editor.groupLastChanges()
 
 
 #
