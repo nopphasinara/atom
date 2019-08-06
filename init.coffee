@@ -9,6 +9,19 @@ global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
 
 
+# addEventListener('fetch', event => {
+#   event.respondWith(handleRequest(event.request))
+# })
+#
+# # Respond to the request
+# # @param {Request} request
+# async function handleRequest(request) {
+#   return new Response('hello world', {
+#     status: 200,
+#   })
+# }
+
+
 mergeObject = (obj = {}, source = {}) ->
   if source && Object.getOwnPropertyNames(source).length > 0
     for key, value of source
@@ -20,8 +33,8 @@ mergeObject = (obj = {}, source = {}) ->
 mutateSelectedText = (selections, options = {}) ->
   options = mergeObject({
     select: true,
-    skip: true,
-    undo: 'skip',
+    skip: false,
+    undo: '',
   }, options)
 
   for selection in selections
