@@ -8,6 +8,33 @@ link = require 'link'
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
 
+
+mergeObject = (obj = {}, source = {}) ->
+  if source && Object.getOwnPropertyNames(source).length > 0
+    for key, value of source
+      object[key] = value
+
+  return obj
+
+
+mutateSelectedText = (selections, options = {}) ->
+  options = mergeObject({
+    select: true,
+    skip: true,
+    undo: 'skip',
+  }, options)
+
+  for selection in selections
+    insertText = "/*{{replacement}}*/"
+    selectedText = selection.getText()
+    insertText = insertText.replace("{{replacement}}", "#{selectedText}")
+
+    selection.retainSelection = true
+    selection.plantTail()
+    selection.insertText(insertText, options)
+    selection.retainSelection = false
+
+
 ## Custom Commands
 
 #
@@ -19,23 +46,14 @@ atom.workspace.observeActiveTextEditor ->
 atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
   options = {
     select: true,
-    # undo: '',
-    skip: false,
+    undo: 'skip',
+    skip: true,
   }
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()
   # console.log selections
-  if selections.length > 0
-    for selection in selections
-      insertText = "/*{{replacement}}*/"
-      selectedText = selection.getText()
-      insertText = insertText.replace("{{replacement}}", "#{selectedText}")
-
-      selection.retainSelection = true
-      selection.plantTail()
-      selection.insertText(insertText, options)
-      selection.retainSelection = false
-      selection.editor.groupLastChanges()
+  if selections && selections.length > 0
+    mutateSelectedText(selections, options)
 
 
 #
