@@ -291,6 +291,12 @@
 
 
 '.source.php':
+  'parse_str($str, $output)':
+    'prefix': 'parse_str'
+    'body': '''
+    parse_str(${1:\\$str}, ${2:\\$output})$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
   '<link...>':
     'prefix': 'link'
     'body': '''
