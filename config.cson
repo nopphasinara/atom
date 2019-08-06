@@ -3,8 +3,7 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-autocomplete-php":
-    gotoKey: "ctrl"
+  "atom-autocomplete-php": {}
   "autocomplete-js-import":
     fileRelativePaths: false
     fuzzy:
@@ -23,8 +22,8 @@
     audioBeep: false
     closeEmptyWindows: false
     disabledPackages: [
-      "atom-autocomplete-php"
       "language-dotenv"
+      "autocomplete-php"
     ]
     ignoredNames: [
       ".git"
