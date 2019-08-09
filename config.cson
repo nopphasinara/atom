@@ -155,6 +155,7 @@
     alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+  "wrap-guide": {}
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
@@ -162,6 +163,9 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".plain.text":
+  "wrap-guide":
+    enabled: false
 ".python.source":
   editor:
     autoIndentOnPaste: true

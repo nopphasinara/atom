@@ -158,6 +158,7 @@
   "ctrl-cmd-m": "markdown-preview:toggle"
 
 "atom-workspace atom-text-editor:not([mini])":
+  "alt-cmd-o": "nerd:reveal-in-finder"
   "alt-cmd-z": "unset!"
   "cmd-<": "editor:scroll-to-cursor"
   "alt-cmd-ctrl-f": "unset!"

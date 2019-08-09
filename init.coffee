@@ -2,11 +2,14 @@ url = require('url')
 {shell} = require('electron')
 _ = require('underscore-plus')
 link = require 'link'
+{exec} = require 'child_process'
 # link = require './packages/link/lib/link.js'
 
 
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
+
+global.exec = exec
 
 
 # addEventListener('fetch', event => {
@@ -110,6 +113,27 @@ atom.commands.add 'atom-text-editor', 'nerd:select-outside-bracket', ->
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
   atom.commands.dispatch(atom.views.getView(editor), "core:move-right")
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+
+
+# Reveal active file in Finder
+atom.commands.add 'atom-text-editor', 'nerd:reveal-in-finder', ->
+  editor = atom.workspace.getActiveTextEditor()
+  filepath = editor.getPath()
+  if filepath
+    treeView = atom.packages.getActivePackage("tree-view")
+    if treeView
+      treeViewService = treeView.mainModule
+      treeViewService.treeView.showCurrentFileInFileManager()
+
+    # exec "ls \"#{filepath}\" 2>/dev/null", (error, stdout, stderr) =>
+    #   if error
+    #     error = error.toString().replace("Error: ", "")
+    #     console.error "exec error: #{error}"
+    #   else
+    #     treeView = atom.packages.getActivePackage("tree-view")
+    #     if treeView
+    #       treeViewService = treeView.mainModule
+    #       treeViewService.treeView.showCurrentFileInFileManager()
 
 
 # In init.coffee
