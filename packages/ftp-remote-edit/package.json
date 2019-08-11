@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-  "_id": "ftp-remote-edit@0.17.0",
+  "_from": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+  "_id": "ftp-remote-edit@0.17.2",
   "_inBundle": false,
-  "_integrity": "sha512-XPSKeKLOjCDZCAxky9kMi7YN8UJAUWNNSnCcOPxsynbsnGnaxGCJQZ5wE0R1OHj8pTsh+6NI1TxJhtRkLLOgVA==",
+  "_integrity": "sha512-HoQbGEU9b/4FQZG1De5NcI2J/ms1H3VfXuAWjEdR+dZd7vqoA5DkXZC08aswmIyJfiJKCNfQbeOrNDq/jfO+rQ==",
   "_location": "/ftp-remote-edit",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball"
+    "raw": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-  "_shasum": "fa3ad92da857fbba2c52f16ad204dc85a57e91dc",
-  "_spec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-119630-1895-9uezri.5ug3m",
+  "_resolved": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+  "_shasum": "558936d548c8abe7fc4650fba47dd9cb99ef2ca3",
+  "_spec": "https://www.atom.io/api/packages/ftp-remote-edit/versions/0.17.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-119711-9800-idyqbj.i446",
   "bugs": {
     "url": "https://github.com/h3imdall/ftp-remote-edit/issues"
   },
@@ -49,7 +49,7 @@
   "deprecated": false,
   "description": "Edit remotely files on your ftp/sftp(ssh) server without a project. All your connection information will be encrypted.",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.17.0 <2.0.0"
   },
   "homepage": "https://github.com/h3imdall/ftp-remote-edit#readme",
   "keywords": [
@@ -86,5 +86,5 @@
     "method": "handleURI",
     "deferActivation": false
   },
-  "version": "0.17.0"
+  "version": "0.17.2"
 }

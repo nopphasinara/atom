@@ -1,3 +1,11 @@
+## 0.17.2
+- Fix error reported in "Uncaught TypeError: FindDialog is not a constructor" (issue-319)
+
+## 0.17.1
+- Enhancement: Improve loading time of package
+- Enhancement: Remove obsolete entries from the configuration
+- Fix error reported in "550 The system cannot find the file specified." (issue-313)
+
 ## 0.17.0
 - Enhancement: Replace ftp library "@icetee/ftp" with "basic-ftp"
 - Fix error reported in "Problem opening a file / timeout per FTP with Atom 1.39.0" (issue-306)

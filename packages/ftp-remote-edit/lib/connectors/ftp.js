@@ -1,6 +1,6 @@
 'use babel';
 
-import { permissionsToRights } from '../helper/helper';
+import { permissionsToRights, parseFTPDate } from '../helper/helper';
 
 const ftpClient = require("basic-ftp")
 const EventEmitter = require('events');
@@ -92,17 +92,14 @@ export default class Ftp extends EventEmitter {
     const self = this;
     self.emit('debug', 'ftp:list', remotePath);
 
-    const showHiddenFiles = atom.config.get('ftp-remote-edit.tree.showHiddenFiles');
-    let path = (showHiddenFiles ? '-al ' + remotePath.trim() : remotePath.trim());
-
-    return self.client.list(path).then((list) => {
+    return self.client.list(remotePath.trim()).then((list) => {
       let newlist = list.map((item, index) => {
         let rigths = permissionsToRights(item.permissions.user.toString() + item.permissions.group.toString() + item.permissions.world.toString());
         return {
           type: (item.isFile) ? '-' : (item.isDirectory) ? 'd' : 'l',
           name: item.name,
           size: item.size,
-          date: new Date(item.date),
+          date: parseFTPDate(item.date),
           rights: {
             group: rigths.group,
             other: rigths.other,

@@ -15,6 +15,7 @@ Simply connect and edit your remote files. The files will be automatically updat
 - Enhancement: Import from FileZilla, Remote-ftp, PHP Storm config file (PR-272)
 - Enhancement: Allow to select default path for download and upload (PR-286)
 - Feature request: FTP with TLS/SSL encryption (issue-45)
+- Enhancement: Improve loading time of package (issue-301)
 [more...](https://github.com/h3imdall/ftp-remote-edit/blob/master/CHANGELOG.md)
 
 ## Getting started
@@ -30,12 +31,14 @@ Simply connect and edit your remote files. The files will be automatically updat
 - Toggle the fuzzy finder with `ctrl-alt-p` (item must be selected in the tree view)
 
 ## Helpfull commands
+
 - Toggle the view with "ftp-remote-edit:toggle"
 - Change master password with "ftp-remote-edit:change-password"
 - Toggle the fuzzy finder with "ftp-remote-edit:finder"
 - Reindex the fuzzy finder cache with "ftp-remote-edit:finder-reindex-cache"
 
 ## URI handler
+
 Add temporary server for ftp/sftp by using uri. It is possible to use it with/without username, password, port and path.
 - atom://ftp-remote-edit/sftp://username:password@host:port/path
 - atom://ftp-remote-edit/ftp://username:password@host:port/path
@@ -43,11 +46,8 @@ Add temporary server for ftp/sftp by using uri. It is possible to use it with/wi
 ## Package preferences
 
 - `Tree View` - `Open On Startup` - Open the view automatically when atom starts.
-- `Tree View` - `Open In Atom Dock` - Open the view as tab in atom dock instead of panel. Only available from Atom 1.17.0
-- `Tree View` - `Show On Right Side` - Show the view on the right side of the editor instead of the left.
 - `Tree View` - `Allow Pending Pane Items` - Allow items to be previewed without adding them to a pane permanently.
 - `Tree View` - `Hide Ignored Files` - Don't show items matched by the `Ignored Names` core config setting.
-- `Tree View` - `Show Hidden Files` - Force FTP Server to show hidden files (e.g. htaccess)
 - `Tree View` - `Sort Folders Before Files` - When listing directory items, list subdirectories before listing files.
 - `Tree View` - `Sort Servers By Name` - When listing servers items, list servers by name rather than by host.
 - `Tree View` - `Auto Reveal Active File` - Auto reveal the current active file on the tree view.
@@ -58,6 +58,7 @@ Add temporary server for ftp/sftp by using uri. It is possible to use it with/wi
 - `Notification` - `Successful Upload` - Show notification on successful upload
 - `Notification` - `Failed Upload` - Open protocol view in case of failed upload.
 - `Development` - `Debug Mode` - Output debug messages to the console.
+- `Development` - `Disable Lazy Loading` - Disable lazy loading of this package.
 
 ## I'd like to support this project
 
