@@ -28,7 +28,7 @@ global.exec = exec
 mergeObject = (obj = {}, source = {}) ->
   if source && Object.getOwnPropertyNames(source).length > 0
     for key, value of source
-      object[key] = value
+      obj[key] = value
 
   return obj
 
