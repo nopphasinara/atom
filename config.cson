@@ -104,7 +104,6 @@
       defaultDownloadPath: "project"
       defaultUploadPath: "path"
     tree:
-      showHiddenFiles: true
       toggleOnStartup: false
   "fuzzy-finder":
     preserveLastSearch: true
