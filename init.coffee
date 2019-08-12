@@ -1,3 +1,18 @@
+# ~/.atom/init.coffee
+
+pathToFunctionsFile = "./functions"
+
+global.functions = require(pathToFunctionsFile)
+
+Object.defineProperty global, 'functions', get: ->
+  delete require.cache[require.resolve(pathToFunctionsFile)]
+  require(pathToFunctionsFile)
+
+atom.workspace.observeTextEditors (editor) ->
+  editor.onDidSave ->
+    functions.onSave(editor)
+
+
 url = require('url')
 {shell} = require('electron')
 _ = require('underscore-plus')
@@ -56,10 +71,13 @@ mutateSelectedText = (selections, options = {}) ->
 #
 atom.workspace.observeActiveTextEditor ->
   editor = activeEditor()
+  # functions.onSave(editor)
 
 
 # Comment wrap with /* ... */
 atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
+  # editor.autoIndentSelectedRows()
+
   options = {
     select: true,
     undo: 'skip',
@@ -162,3 +180,30 @@ atom.commands.add 'atom-text-editor', 'nerd:reveal-in-finder', ->
 #     gitPlus.registerCommand 'atom-text-editor', 'akonwi:use-the-force', ->
 #       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
 #       .then (repo) -> gitPlus.run repo, 'push --force-with-lease'
+
+
+
+# wrapBlock = () ->
+#   editor = atom.workspace.getActiveTextEditor()
+#   rangesToWrap = editor.getSelectedBufferRanges().filter((r) -> !r.isEmpty())
+#   if rangesToWrap.length
+#     rangesToWrap.sort((a, b) ->
+#       return if a.start.row > b.start.row then -1 else 1
+#     ).forEach((range) ->
+#       text = editor.getTextInBufferRange(range)
+#       if (/^\s*\{\s*/.test(text) && /\s*\}\s*/.test(text))
+#         # unwrap each selection from its block
+#         editor.setTextInBufferRange(range, text.replace(/\{\s*/, '').replace(/\s*\}/, ''))
+#       else
+#         # wrap each selection in a block
+#         editor.setTextInBufferRange(range, '{\n' + text + '\n}')
+#     )
+#     editor.autoIndentSelectedRows()
+#   else
+#     # create an empty block at each cursor
+#     editor.insertText('{\n\n}')
+#     editor.selectUp(2)
+#     editor.autoIndentSelectedRows()
+#     editor.moveRight()
+#     editor.moveUp()
+#     editor.moveToEndOfLine()
