@@ -39,6 +39,7 @@
   "cmd-shift-o": "unset!"
   "cmd-shift-t": "pane:reopen-closed-item"
   "cmd-n": "application:new-file"
+  "cmd-t": "application:new-file"
   "cmd-s": "core:save"
   "cmd-shift-s": "core:save-as"
   "cmd-alt-s": "unset!"
