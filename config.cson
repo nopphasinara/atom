@@ -78,12 +78,17 @@
       "ftp-remote-edit"
       "duplicate-removal"
       "livereload"
+      "align-regexp"
+      "simple-align"
+      "atom-alignment"
+      "aligner"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, boxicons, Material-Design-Icons, mastericons, Consolas, DejaVu Sans Mono, monospace"
+    invisibles: {}
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true

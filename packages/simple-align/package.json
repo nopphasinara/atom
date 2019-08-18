@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+  "_id": "simple-align@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6QJCyzyRiGRsJnVLPSQL9f8DVymxtsLHyjlfDM2p5BzwEvvwBCX1bedWOi11x8mfOLCCkI081FzWJTVRih4ugw==",
+  "_location": "/simple-align",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+  "_shasum": "c12fba275eca86cd2834a0f1a26a006728fcf3e7",
+  "_spec": "https://www.atom.io/api/packages/simple-align/versions/0.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119718-1634-w4mb3u.b8pes",
+  "activationCommands": {
+    "atom-workspace": "simple-align:align"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenhauser/atom-simple-align/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Simple multiple cursor alignment",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/stevenhauser/atom-simple-align#readme",
+  "keywords": [
+    "atom",
+    "align",
+    "cursor"
+  ],
+  "license": "MIT",
+  "main": "./lib/simple-align",
+  "name": "simple-align",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenhauser/atom-simple-align.git"
+  },
+  "version": "0.2.0"
+}

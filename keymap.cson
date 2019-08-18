@@ -157,6 +157,9 @@
   "ctrl-alt-delete": "unset!"
   "ctrl-space": "unset!"
   "ctrl-cmd-m": "markdown-preview:toggle"
+  # "alt-cmd-a": "aligner:align"
+  # "alt-cmd-a": "simple-align:align"
+  "alt-cmd-a": "atom-alignment:alignMultiple"
 
 "atom-workspace atom-text-editor:not([mini])":
   "alt-cmd-o": "nerd:reveal-in-finder"
