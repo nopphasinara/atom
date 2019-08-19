@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/tabularize/versions/0.2.5/tarball",
   "_shasum": "a3fd34ad54daa225645b8efe7ea590f25dd20f6f",
   "_spec": "https://www.atom.io/api/packages/tabularize/versions/0.2.5/tarball",
-  "_where": "/private/tmp/apm-install-dir-119718-2511-oqo6e2.k3gkp",
+  "_where": "/private/tmp/apm-install-dir-119719-2779-91ony2.0lw",
   "activationCommands": {
     "atom-text-editor": [
       "tabularize:toggle"

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-alignment/versions/0.13.0/tarball",
   "_shasum": "ae1f722a3e08fac3b2e0fb26fe2fa40b8cbdfc33",
   "_spec": "https://www.atom.io/api/packages/atom-alignment/versions/0.13.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-119718-1981-1uykhuy.wyzl",
+  "_where": "/private/tmp/apm-install-dir-119719-2779-236noq.99svx",
   "activationCommands": {
     "atom-workspace": [
       "atom-alignment:align",

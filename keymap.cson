@@ -251,7 +251,7 @@
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"
   "shift-cmd-f11": "ftp-remote-edit:upload-file"
-  "cmd-f11": "ftp-remote-edit:download-file"
+  "cmd-f11": "ftp-remote-edit:download"
   "cmd-o": "advanced-open-file:toggle"
   "cmd-p": "fuzzy-finder:toggle-file-finder"
   "cmd-f": "find-and-replace:show"

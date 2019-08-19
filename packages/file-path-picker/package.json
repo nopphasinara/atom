@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/file-path-picker/versions/1.0.0/tarball",
   "_shasum": "119e8392899f6777dcb97db959257a6bdbeb28b4",
   "_spec": "https://www.atom.io/api/packages/file-path-picker/versions/1.0.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-11964-10778-ekvvgr.a4utc",
+  "_where": "/private/tmp/apm-install-dir-119719-2779-1sql66o.2juu",
   "activationCommands": {
     "atom-text-editor": [
       "file-path-picker:pick-file",
