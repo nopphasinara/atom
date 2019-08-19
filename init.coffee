@@ -133,6 +133,13 @@ atom.commands.add 'atom-text-editor', 'nerd:select-outside-bracket', ->
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
 
 
+# sss
+atom.commands.add 'atom-text-editor', 'nerd:select-line', ->
+  editor = atom.workspace.getActiveTextEditor()
+  atom.commands.dispatch(atom.views.getView(editor), "editor:select-line")
+  atom.commands.dispatch(atom.views.getView(editor), "core:select-left")
+
+
 # Reveal active file in Finder
 atom.commands.add 'atom-text-editor', 'nerd:reveal-in-finder', ->
   editor = atom.workspace.getActiveTextEditor()
