@@ -290,18 +290,22 @@
 ".platform-darwin .advanced-open-file atom-text-editor":
   "cmd-z": "advanced-open-file:undo"
 
-".platform-darwin .find-and-replace, .platform-darwin .project-find":
+".platform-darwin .find-and-replace":
+  "shift-enter": "find-and-replace:show-previous"
   "alt-cmd-r": "find-and-replace:toggle-regex-option"
   "alt-cmd-c": "find-and-replace:toggle-case-option"
   "alt-cmd-s": "find-and-replace:toggle-selection-option"
   "alt-cmd-w": "find-and-replace:toggle-whole-word-option"
-  "shift-enter": "find-and-replace:show-previous"
-
-".platform-darwin .find-and-replace":
   "alt-enter": "find-and-replace:find-all"
   "cmd-enter": "find-and-replace:confirm"
 
 ".platform-darwin .project-find":
+  "shift-enter": "unset!"
+  "alt-cmd-r": "project-find:toggle-regex-option"
+  "alt-cmd-c": "project-find:toggle-case-option"
+  "alt-cmd-s": "unset!"
+  "alt-cmd-w": "project-find:toggle-whole-word-option"
+  "alt-enter": "unset!"
   "cmd-enter": "project-find:confirm"
 
 ".platform-darwin .find-and-replace .replace-container atom-text-editor":
