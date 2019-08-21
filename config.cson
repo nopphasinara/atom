@@ -98,7 +98,8 @@
     extensionsPath: "~/.dotfiles/projects/emmet"
   "exception-reporting":
     userId: "f21c6f64-fc65-4893-a898-57036a31e00d"
-  "file-hyperclick": {}
+  "file-hyperclick":
+    extension: ".coffee, .less"
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "ftp-remote-edit":
