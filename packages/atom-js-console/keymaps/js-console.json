@@ -1,0 +1,5 @@
+{
+  "atom-workspace": {
+    "ctrl-j ctrl-s": "js-console:toggle"
+  }
+}
