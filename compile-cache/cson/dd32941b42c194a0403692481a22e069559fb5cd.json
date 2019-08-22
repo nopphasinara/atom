@@ -1,0 +1,1 @@
+{".text.html":{"Scrollspy - Bootstrap 4":{"prefix":"scr","body":"<body data-spy=\"scroll\" data-target=\"#${1:navbar-example}\">\n  ${2:...}\n  <div id=\"${1:navbar-example}\">\n    <ul class=\"nav nav-tabs\" role=\"tablist\">\n      ${3:...}\n    </ul>\n  </div>\n  ${2:...}\n</body>"}}}

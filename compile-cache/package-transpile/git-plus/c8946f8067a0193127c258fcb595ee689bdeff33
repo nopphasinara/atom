@@ -1,0 +1,52 @@
+'use strict';
+
+var git = require('../git');
+var notifier = require('../notifier');
+var ActivityLogger = require('../activity-logger').default;
+var Repository = require('../repository').default;
+var BranchListView = require('../views/branch-list-view');
+
+module.exports = function (repo) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { remote: false };
+
+  var args = options.remote ? ['branch', '-r', '--no-color'] : ['branch', '--no-color'];
+  return git.cmd(args, { cwd: repo.getWorkingDirectory() }).then(function (data) {
+    return new BranchListView(data, function (_ref) {
+      var name = _ref.name;
+
+      var args = void 0,
+          notification = void 0;
+      if (options.remote) {
+        var remote = name.substring(0, name.indexOf('/'));
+        var branch = name.substring(name.indexOf('/') + 1);
+        notification = notifier.addInfo('Deleting remote branch ' + branch, { dismissable: true });
+        args = ['push', remote, '--delete', branch];
+      } else {
+        var _branch = name;
+        args = ['branch', '-D', _branch];
+      }
+
+      var message = 'delete ' + (options.remote ? 'remote ' : '') + ' branch \'' + args[args.length - 1] + '\'';
+      var repoName = new Repository(repo).getName();
+
+      git.cmd(args, { cwd: repo.getWorkingDirectory() }).then(function (output) {
+        notification && notification.dismiss();
+        notifier.addSuccess(output);
+        ActivityLogger.record({
+          repoName: repoName,
+          message: message,
+          output: output
+        });
+      }).catch(function (error) {
+        notification && notification.dismiss();
+        notifier.addError(error);
+        ActivityLogger.record({
+          repoName: repoName,
+          message: message,
+          output: error,
+          failed: true
+        });
+      });
+    });
+  });
+};

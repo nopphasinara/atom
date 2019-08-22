@@ -1,0 +1,1 @@
+{".source.scss":{"map-remove":{"prefix":"mr","body":"map-remove($${1:list}, ${2:value})"}}}

@@ -1,0 +1,1 @@
+{"versions":{"1.0.0":{"name":"encode-3986","version":"1.0.0","devDependencies":{"tape":"^4.6.3"},"_hasShrinkwrap":false,"directories":{},"dist":{"shasum":"940d51498f8741ade184b75ad1439b317c0c7a60","tarball":"https://registry.npmjs.org/encode-3986/-/encode-3986-1.0.0.tgz"}}},"name":"encode-3986","dist-tags":{"latest":"1.0.0"},"modified":"2017-03-16T21:44:12.303Z"}

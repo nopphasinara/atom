@@ -1,0 +1,71 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const atom_1 = require("atom");
+const git_es_1 = require("../git-es");
+class TreeViewBranchManager {
+    constructor(treeView) {
+        this.renderedBranches = new Map();
+        this.subscriptions = new atom_1.CompositeDisposable();
+        this.repoSubscriptions = new Map();
+        this.isEnabled = false;
+        this.renderBranch = async (path) => {
+            if (!this.isEnabled)
+                return;
+            const repo = (await git_es_1.getRepoForPath(path));
+            if (!repo)
+                return;
+            const branchName = `[${repo.getShortHead()}]`;
+            const entry = this.treeView.entryForPath(repo.getWorkingDirectory());
+            let div = this.renderedBranches.get(path);
+            if (div) {
+                div.innerText = branchName;
+                entry.querySelector(".project-root-header").appendChild(div);
+                return;
+            }
+            div = document.createElement("div");
+            div.style.display = "inline";
+            div.style.marginLeft = "10px";
+            div.innerText = branchName;
+            entry.querySelector(".project-root-header").appendChild(div);
+            this.renderedBranches.set(repo.getWorkingDirectory(), div);
+            this.updateRepoSubscription(repo.getWorkingDirectory(), repo.onDidChangeStatuses(() => {
+                this.renderBranch(repo.getWorkingDirectory());
+            }));
+        };
+        this.treeView = treeView;
+        atom.config.observe("git-plus.general.showBranchInTreeView", (isEnabled) => {
+            this.isEnabled = isEnabled;
+            if (isEnabled) {
+                this.initialize();
+            }
+            else {
+                this.destroy();
+                this.subscriptions = new atom_1.CompositeDisposable();
+            }
+        });
+    }
+    initialize() {
+        atom.project.getPaths().forEach(this.renderBranch);
+        this.subscriptions.add(atom.project.onDidChangePaths(async (paths) => {
+            await Promise.all(paths.map(this.renderBranch));
+            for (const path of this.renderedBranches.keys()) {
+                if (!paths.includes(path)) {
+                    this.renderedBranches.delete(path);
+                    this.repoSubscriptions.delete(path);
+                }
+            }
+        }));
+    }
+    updateRepoSubscription(path, disposable) {
+        const subscription = this.repoSubscriptions.get(path);
+        if (subscription)
+            subscription.dispose();
+        this.repoSubscriptions.set(path, disposable);
+    }
+    destroy() {
+        this.subscriptions.dispose();
+        this.renderedBranches.forEach(div => div.remove());
+    }
+}
+exports.TreeViewBranchManager = TreeViewBranchManager;
+//# sourceMappingURL=tree-view-branches.js.map

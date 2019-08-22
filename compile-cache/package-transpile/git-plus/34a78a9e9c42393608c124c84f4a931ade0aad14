@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const activity_logger_1 = require("../activity-logger");
+const repository_1 = require("../repository");
+exports.default = async () => {
+    const repo = await repository_1.default.getCurrent();
+    if (!repo) {
+        return atom.notifications.addInfo("No repository found");
+    }
+    const result = await repo.stage(["."], { update: true });
+    activity_logger_1.default.record(Object.assign({ repoName: repo.getName(), message: `add modified files` }, result));
+};
+//# sourceMappingURL=add-modified.js.map

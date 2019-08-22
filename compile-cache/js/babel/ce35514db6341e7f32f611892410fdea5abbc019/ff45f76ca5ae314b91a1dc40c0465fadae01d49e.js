@@ -1,0 +1,10 @@
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+/** @babel */
+
+var EDIT_URI = 'atom://project-manager-edit';
+exports.EDIT_URI = EDIT_URI;
+var SAVE_URI = 'atom://project-manager-save';
+exports.SAVE_URI = SAVE_URI;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zdWRwcmF3YXQvLmF0b20vcGFja2FnZXMvcHJvamVjdC1tYW5hZ2VyL2xpYi92aWV3cy92aWV3LXVyaS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUVPLElBQU0sUUFBUSxHQUFHLDZCQUE2QixDQUFDOztBQUMvQyxJQUFNLFFBQVEsR0FBRyw2QkFBNkIsQ0FBQyIsImZpbGUiOiIvVXNlcnMvc3VkcHJhd2F0Ly5hdG9tL3BhY2thZ2VzL3Byb2plY3QtbWFuYWdlci9saWIvdmlld3Mvdmlldy11cmkuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiogQGJhYmVsICovXG5cbmV4cG9ydCBjb25zdCBFRElUX1VSSSA9ICdhdG9tOi8vcHJvamVjdC1tYW5hZ2VyLWVkaXQnO1xuZXhwb3J0IGNvbnN0IFNBVkVfVVJJID0gJ2F0b206Ly9wcm9qZWN0LW1hbmFnZXItc2F2ZSc7XG4iXX0=

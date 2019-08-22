@@ -1,0 +1,1 @@
+{"menu":[{"label":"Packages","submenu":[{"label":"JSON Path Finder","submenu":[{"label":"Show","command":"json-path-finder:show"},{"label":"Show Result Flatten","command":"json-path-finder:show-result-flatten"}]}]}]}

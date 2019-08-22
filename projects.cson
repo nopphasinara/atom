@@ -1,0 +1,96 @@
+[
+  {
+    title: "- Control"
+    paths: [
+      "/Volumes/Drives/Dropbox/Master.txt"
+      "/Volumes/Drives/Dropbox/control.txt"
+      "/Volumes/Drives/Google Drive/- Fineart/Plesk_Oynx.txt"
+      "/Volumes/Drives/Google Drive/- Fineart/Control-Master.txt"
+      "/Volumes/Drives/Google Drive/- Fineart/Control-Fineart.txt"
+    ]
+  }
+  {
+    title: "~/.atom"
+    paths: [
+      "~/.atom"
+    ]
+  }
+  {
+    title: "~/.ssh"
+    paths: [
+      "~/.ssh"
+    ]
+  }
+  {
+    title: "~/.npm"
+    paths: [
+      "~/.npm"
+    ]
+  }
+  {
+    title: "~/.gem"
+    paths: [
+      "~/.gem"
+    ]
+  }
+  {
+    title: "~/.iterm2"
+    paths: [
+      "~/.iterm2"
+    ]
+  }
+  {
+    title: "~/.composer"
+    paths: [
+      "~/.composer"
+    ]
+  }
+  {
+    title: "~/.config"
+    paths: [
+      "~/.config"
+    ]
+  }
+  {
+    title: "~/.dotfiles"
+    paths: [
+      "~/.dotfiles"
+    ]
+  }
+  {
+    title: "~/www/dashboard"
+    paths: [
+      "~/www/dashboard"
+    ]
+  }
+  {
+    title: "~/www/testing"
+    paths: [
+      "~/www/testing"
+    ]
+  }
+  {
+    title: "~/www/reproduction-gallery.com"
+    paths: [
+      "~/www/reproduction-gallery.com"
+    ]
+  }
+  {
+    title: "~/www/eazyportrait.com"
+    paths: [
+      "~/www/eazyportrait.com"
+    ]
+  }
+  {
+    title: "~/www/ecommerce"
+    paths: [
+      "~/www/ecommerce"
+    ]
+  }
+  {
+    title: "~/www/migrate.reproduction-gallery.com"
+    paths: [
+      "~/www/migrate.reproduction-gallery.com"
+    ]
+  }
+]

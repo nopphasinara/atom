@@ -1,0 +1,104 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const atom_1 = require("atom");
+const SelectList = require("atom-select-list");
+const activity_logger_1 = require("../activity-logger");
+const repository_1 = require("../repository");
+class StashListView {
+    constructor(stashes, handleSelection) {
+        this.disposables = new atom_1.CompositeDisposable();
+        this.isAttached = false;
+        this.destroy = () => {
+            this.disposables.dispose();
+        };
+        this.listView = new SelectList({
+            items: stashes,
+            emptyMessage: "Your stash is empty",
+            filterKeyForItem: stash => stash.content,
+            elementForItem: (stash, _options) => {
+                const li = document.createElement("li");
+                li.textContent = `${stash.index}: ${stash.label}`;
+                return li;
+            },
+            didCancelSelection: () => {
+                this.destroy();
+            },
+            didConfirmSelection: stash => {
+                handleSelection(stash);
+                this.destroy();
+            }
+        });
+        this.disposables.add(new atom_1.Disposable(() => this.listView.destroy()));
+        this.attach();
+    }
+    attach() {
+        this.previouslyFocusedElement = document.activeElement;
+        this.panel = atom.workspace.addModalPanel({ item: this.listView.element });
+        this.listView.focus();
+        this.isAttached = true;
+        this.disposables.add(new atom_1.Disposable(() => {
+            this.panel.destroy();
+            this.previouslyFocusedElement && this.previouslyFocusedElement.focus();
+        }));
+    }
+}
+class StashOptionsView {
+    constructor(stash, handleSelection) {
+        this.disposables = new atom_1.CompositeDisposable();
+        this.isAttached = false;
+        this.destroy = () => {
+            this.disposables.dispose();
+        };
+        this.listView = new SelectList({
+            items: Object.entries(repository_1.StashCommands).map(entry => (Object.assign({ label: entry[0] }, entry[1]))),
+            filterKeyForItem: command => command.label,
+            elementForItem: (command, _options) => {
+                const li = document.createElement("li");
+                const labelDiv = document.createElement("div");
+                labelDiv.classList.add("text-highlight");
+                labelDiv.textContent = command.label;
+                const infoDiv = document.createElement("div");
+                infoDiv.classList.add("text-info");
+                infoDiv.textContent = stash.label;
+                li.append(labelDiv, infoDiv);
+                return li;
+            },
+            didCancelSelection: this.destroy,
+            didConfirmSelection: (command) => {
+                handleSelection(command);
+                this.destroy();
+            }
+        });
+        this.disposables.add(new atom_1.Disposable(() => this.listView.destroy()));
+        this.attach();
+    }
+    attach() {
+        this.previouslyFocusedElement = document.activeElement;
+        this.panel = atom.workspace.addModalPanel({ item: this.listView.element });
+        this.listView.focus();
+        this.isAttached = true;
+        this.disposables.add(new atom_1.Disposable(() => {
+            this.panel.destroy();
+            this.previouslyFocusedElement && this.previouslyFocusedElement.focus();
+        }));
+    }
+    focus() {
+        if (this.isAttached)
+            this.listView.focus();
+    }
+}
+exports.default = async () => {
+    const repo = await repository_1.default.getCurrent();
+    if (!repo)
+        return atom.notifications.addInfo("No repository found");
+    const stashes = await repo.getStashes();
+    new StashListView(stashes, stash => {
+        const optionsView = new StashOptionsView(stash, async (command) => {
+            repo.actOnStash(stash, command).then(result => {
+                activity_logger_1.default.record(Object.assign({ repoName: repo.getName(), message: `stash@{${stash.index}} ${command.pastTense}` }, result));
+            });
+        });
+        optionsView.focus();
+    });
+};
+//# sourceMappingURL=manage-stashes.js.map

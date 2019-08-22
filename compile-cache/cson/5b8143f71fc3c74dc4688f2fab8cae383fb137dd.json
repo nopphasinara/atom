@@ -1,0 +1,1 @@
+{"context-menu":{"atom-text-editor":[{"label":"Toggle php-hyperclick","command":"php-hyperclick:toggle"}]},"menu":[{"label":"Packages","submenu":[{"label":"php-hyperclick","submenu":[{"label":"Toggle","command":"php-hyperclick:toggle"}]}]}]}

@@ -1,0 +1,1 @@
+{".text.html":{"Figure - Bootstrap 4":{"prefix":"fig","body":"<figure class=\"figure\">\n  <img data-src=\"$1\" class=\"img-rounded\" alt=\"$2\">\n  <figcaption class=\"figure-caption\">$3</figcaption>\n</figure>"}}}

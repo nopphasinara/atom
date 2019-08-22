@@ -1,0 +1,614 @@
+"use strict";
+
+require("@babel/polyfill");
+
+var _atom = require("atom");
+
+var _container = require("./views/output-view/container");
+
+var _treeViewBranches = require("./views/tree-view-branches");
+
+var _git = require("./git");
+
+var _git2 = _interopRequireDefault(_git);
+
+var _config = require("./config");
+
+var _config2 = _interopRequireDefault(_config);
+
+var _contextMenu = require("./context-menu");
+
+var _service = require("./service");
+
+var _service2 = _interopRequireDefault(_service);
+
+var _add = require("./models/add");
+
+var _add2 = _interopRequireDefault(_add);
+
+var _addModified = require("./models/add-modified");
+
+var _addModified2 = _interopRequireDefault(_addModified);
+
+var _gitPaletteView = require("./views/git-palette-view");
+
+var _gitPaletteView2 = _interopRequireDefault(_gitPaletteView);
+
+var _treeView = require("./models/tree-view");
+
+var treeViewCommands = _interopRequireWildcard(_treeView);
+
+var _gitCheckoutNewBranch = require("./models/git-checkout-new-branch");
+
+var _gitCheckoutNewBranch2 = _interopRequireDefault(_gitCheckoutNewBranch);
+
+var _gitCheckoutBranch = require("./models/git-checkout-branch");
+
+var _gitCheckoutBranch2 = _interopRequireDefault(_gitCheckoutBranch);
+
+var _gitDeleteBranch = require("./models/git-delete-branch");
+
+var _gitDeleteBranch2 = _interopRequireDefault(_gitDeleteBranch);
+
+var _checkoutFile = require("./models/checkout-file");
+
+var _checkoutFile2 = _interopRequireDefault(_checkoutFile);
+
+var _reset = require("./models/reset");
+
+var _reset2 = _interopRequireDefault(_reset);
+
+var _gitCherryPick = require("./models/git-cherry-pick");
+
+var _gitCherryPick2 = _interopRequireDefault(_gitCherryPick);
+
+var _gitCommit = require("./models/git-commit");
+
+var _gitCommit2 = _interopRequireDefault(_gitCommit);
+
+var _gitCommitAmend = require("./models/git-commit-amend");
+
+var _gitCommitAmend2 = _interopRequireDefault(_gitCommitAmend);
+
+var _gitDiff = require("./models/git-diff");
+
+var _gitDiff2 = _interopRequireDefault(_gitDiff);
+
+var _gitDiffBranches = require("./models/git-diff-branches");
+
+var _gitDiffBranches2 = _interopRequireDefault(_gitDiffBranches);
+
+var _gitDiffBranchFiles = require("./models/git-diff-branch-files");
+
+var _gitDiffBranchFiles2 = _interopRequireDefault(_gitDiffBranchFiles);
+
+var _gitDifftool = require("./models/git-difftool");
+
+var _gitDifftool2 = _interopRequireDefault(_gitDifftool);
+
+var _gitDiffAll = require("./models/git-diff-all");
+
+var _gitDiffAll2 = _interopRequireDefault(_gitDiffAll);
+
+var _fetch = require("./models/fetch");
+
+var _fetch2 = _interopRequireDefault(_fetch);
+
+var _fetchInAllRepos = require("./models/fetch-in-all-repos");
+
+var _fetchInAllRepos2 = _interopRequireDefault(_fetchInAllRepos);
+
+var _gitInit = require("./models/git-init");
+
+var _gitInit2 = _interopRequireDefault(_gitInit);
+
+var _gitLog = require("./models/git-log");
+
+var _gitLog2 = _interopRequireDefault(_gitLog);
+
+var _pull = require("./models/pull");
+
+var _pull2 = _interopRequireDefault(_pull);
+
+var _push = require("./models/push");
+
+var _push2 = _interopRequireDefault(_push);
+
+var _gitRemove = require("./models/git-remove");
+
+var _gitRemove2 = _interopRequireDefault(_gitRemove);
+
+var _gitShow = require("./models/git-show");
+
+var _gitShow2 = _interopRequireDefault(_gitShow);
+
+var _gitStageFiles = require("./models/git-stage-files");
+
+var _gitStageFiles2 = _interopRequireDefault(_gitStageFiles);
+
+var _gitStageHunk = require("./models/git-stage-hunk");
+
+var _gitStageHunk2 = _interopRequireDefault(_gitStageHunk);
+
+var _manageStashes = require("./models/manage-stashes");
+
+var _manageStashes2 = _interopRequireDefault(_manageStashes);
+
+var _gitStashApply = require("./models/git-stash-apply");
+
+var _gitStashApply2 = _interopRequireDefault(_gitStashApply);
+
+var _gitStashDrop = require("./models/git-stash-drop");
+
+var _gitStashDrop2 = _interopRequireDefault(_gitStashDrop);
+
+var _gitStashPop = require("./models/git-stash-pop");
+
+var _gitStashPop2 = _interopRequireDefault(_gitStashPop);
+
+var _gitStashSave = require("./models/git-stash-save");
+
+var _gitStashSave2 = _interopRequireDefault(_gitStashSave);
+
+var _gitStashSaveMessage = require("./models/git-stash-save-message");
+
+var _gitStashSaveMessage2 = _interopRequireDefault(_gitStashSaveMessage);
+
+var _gitStatus = require("./models/git-status");
+
+var _gitStatus2 = _interopRequireDefault(_gitStatus);
+
+var _gitTags = require("./models/git-tags");
+
+var _gitTags2 = _interopRequireDefault(_gitTags);
+
+var _gitRun = require("./models/git-run");
+
+var _gitRun2 = _interopRequireDefault(_gitRun);
+
+var _gitMerge = require("./models/git-merge");
+
+var _gitMerge2 = _interopRequireDefault(_gitMerge);
+
+var _gitRebase = require("./models/git-rebase");
+
+var _gitRebase2 = _interopRequireDefault(_gitRebase);
+
+var _gitOpenChangedFiles = require("./models/git-open-changed-files");
+
+var _gitOpenChangedFiles2 = _interopRequireDefault(_gitOpenChangedFiles);
+
+var _diff = require("./grammars/diff.js");
+
+var _diff2 = _interopRequireDefault(_diff);
+
+var _controller = require("./views/controller");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var currentFile = function currentFile(repo) {
+  var activeEditor = atom.workspace.getActiveTextEditor();
+  if (!activeEditor) return null;
+  return repo.relativize(activeEditor.getPath());
+};
+
+var setDiffGrammar = function setDiffGrammar() {
+  var enableSyntaxHighlighting = atom.config.get("git-plus.diffs.syntaxHighlighting");
+  var wordDiff = atom.config.get("git-plus.diffs.wordDiff");
+  var diffGrammar = null;
+
+  if (wordDiff) {
+    diffGrammar = _diff2.default.wordGrammar;
+  } else {
+    diffGrammar = _diff2.default.lineGrammar;
+  }
+  if (enableSyntaxHighlighting) {
+    while (atom.grammars.grammarForScopeName("source.diff")) {
+      atom.grammars.removeGrammarForScopeName("source.diff");
+    }atom.grammars.addGrammar(diffGrammar);
+  }
+};
+
+var getWorkspaceRepos = function getWorkspaceRepos() {
+  return atom.project.getRepositories().filter(Boolean);
+};
+
+var onPathsChanged = function onPathsChanged(gp) {
+  if (gp) gp.activate();
+};
+
+var getWorkspaceNode = function getWorkspaceNode() {
+  return document.querySelector("atom-workspace");
+};
+
+module.exports = {
+  config: _config2.default,
+  subscriptions: new _atom.CompositeDisposable(),
+  outputView: null,
+  provideService: function provideService() {
+    return _service2.default;
+  },
+
+  activate: function activate(_state) {
+    var _this = this;
+
+    setDiffGrammar();
+    var repos = getWorkspaceRepos();
+
+    atom.project.onDidChangePaths(function (_paths) {
+      return onPathsChanged(_this);
+    });
+
+    if (repos.length === 0 && atom.project.getDirectories().length > 0) this.subscriptions.add(atom.commands.add("atom-workspace", "git-plus:init", function () {
+      return (0, _gitInit2.default)().then(_this.activate);
+    }));
+    if (repos.length > 0) {
+      (0, _contextMenu.initializeContextMenu)();
+      this.subscriptions.add(atom.commands.add("atom-workspace", {
+        "git-plus:menu": function gitPlusMenu() {
+          return new _gitPaletteView2.default();
+        },
+        "git-plus:add": function gitPlusAdd() {
+          return (0, _add2.default)();
+        },
+        "git-plus:add-all": function gitPlusAddAll() {
+          return (0, _add2.default)(true);
+        },
+        "git-plus:add-modified": function gitPlusAddModified() {
+          return (0, _addModified2.default)();
+        },
+        "git-plus:commit": function gitPlusCommit() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCommit2.default)(repo);
+          });
+        },
+        "git-plus:commit-all": function gitPlusCommitAll() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCommit2.default)(repo, { stageChanges: true });
+          });
+        },
+        "git-plus:commit-amend": function gitPlusCommitAmend() {
+          _git2.default.getRepo().then(function (repo) {
+            return new _gitCommitAmend2.default(repo);
+          });
+        },
+        "git-plus:add-and-commit": function gitPlusAddAndCommit() {
+          _git2.default.getRepo().then(function (repo) {
+            return _git2.default.add(repo, { file: currentFile(repo) }).then(function () {
+              return (0, _gitCommit2.default)(repo);
+            });
+          });
+        },
+        "git-plus:add-and-commit-and-push": function gitPlusAddAndCommitAndPush() {
+          _git2.default.getRepo().then(function (repo) {
+            return _git2.default.add(repo, { file: currentFile(repo) }).then(function () {
+              return (0, _gitCommit2.default)(repo, { andPush: true });
+            });
+          });
+        },
+        "git-plus:add-all-and-commit": function gitPlusAddAllAndCommit() {
+          _git2.default.getRepo().then(function (repo) {
+            return _git2.default.add(repo).then(function () {
+              return (0, _gitCommit2.default)(repo);
+            });
+          });
+        },
+        "git-plus:add-all-commit-and-push": function gitPlusAddAllCommitAndPush() {
+          _git2.default.getRepo().then(function (repo) {
+            return _git2.default.add(repo).then(function () {
+              return (0, _gitCommit2.default)(repo, { andPush: true });
+            });
+          });
+        },
+        "git-plus:commit-all-and-push": function gitPlusCommitAllAndPush() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCommit2.default)(repo, { stageChanges: true, andPush: true });
+          });
+        },
+        "git-plus:checkout": function gitPlusCheckout() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCheckoutBranch2.default)(repo);
+          });
+        },
+        "git-plus:checkout-remote": function gitPlusCheckoutRemote() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCheckoutBranch2.default)(repo, { remote: true });
+          });
+        },
+        "git-plus:checkout-current-file": function gitPlusCheckoutCurrentFile() {
+          return (0, _checkoutFile2.default)();
+        },
+        "git-plus:checkout-all-files": function gitPlusCheckoutAllFiles() {
+          return (0, _checkoutFile2.default)(true);
+        },
+        "git-plus:new-branch": function gitPlusNewBranch() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCheckoutNewBranch2.default)(repo);
+          });
+        },
+        "git-plus:delete-local-branch": function gitPlusDeleteLocalBranch() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitDeleteBranch2.default)(repo);
+          });
+        },
+        "git-plus:delete-remote-branch": function gitPlusDeleteRemoteBranch() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitDeleteBranch2.default)(repo, { remote: true });
+          });
+        },
+        "git-plus:cherry-pick": function gitPlusCherryPick() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitCherryPick2.default)(repo);
+          });
+        },
+        "git-plus:diff": function gitPlusDiff() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitDiff2.default)(repo, { file: currentFile(repo) });
+          });
+        },
+        "git-plus:difftool": function gitPlusDifftool() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitDifftool2.default)(repo, { file: currentFile(repo) });
+          });
+        },
+        "git-plus:diff-all": function gitPlusDiffAll() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitDiffAll2.default)(repo);
+          });
+        },
+        "git-plus:fetch": function gitPlusFetch() {
+          return (0, _fetch2.default)();
+        },
+        "git-plus:fetch-prune": function gitPlusFetchPrune() {
+          return (0, _fetch2.default)({ prune: true });
+        },
+        "git-plus:pull": function gitPlusPull() {
+          return (0, _pull2.default)();
+        },
+        "git-plus:push": function gitPlusPush() {
+          return (0, _push2.default)();
+        },
+        "git-plus:push-set-upstream": function gitPlusPushSetUpstream() {
+          return (0, _push2.default)(true);
+        },
+        "git-plus:remove": function gitPlusRemove() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitRemove2.default)(repo, { showSelector: true });
+          });
+        },
+        "git-plus:remove-current-file": function gitPlusRemoveCurrentFile() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitRemove2.default)(repo);
+          });
+        },
+        "git-plus:reset": function gitPlusReset() {
+          return (0, _reset2.default)();
+        },
+        "git-plus:show": function gitPlusShow() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitShow2.default)(repo);
+          });
+        },
+        "git-plus:log": function gitPlusLog() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitLog2.default)(repo);
+          });
+        },
+        "git-plus:log-current-file": function gitPlusLogCurrentFile() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitLog2.default)(repo, { onlyCurrentFile: true });
+          });
+        },
+        "git-plus:stage-hunk": function gitPlusStageHunk() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStageHunk2.default)(repo);
+          });
+        },
+        "git-plus:manage-stashes": _manageStashes2.default,
+        "git-plus:stash-save": function gitPlusStashSave() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStashSave2.default)(repo);
+          });
+        },
+        "git-plus:stash-save-message": function gitPlusStashSaveMessage() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStashSaveMessage2.default)(repo);
+          });
+        },
+        "git-plus:stash-pop": function gitPlusStashPop() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStashPop2.default)(repo);
+          });
+        },
+        "git-plus:stash-apply": function gitPlusStashApply() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStashApply2.default)(repo);
+          });
+        },
+        "git-plus:stash-delete": function gitPlusStashDelete() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStashDrop2.default)(repo);
+          });
+        },
+        "git-plus:status": function gitPlusStatus() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitStatus2.default)(repo);
+          });
+        },
+        "git-plus:tags": function gitPlusTags() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitTags2.default)(repo);
+          });
+        },
+        "git-plus:run": function gitPlusRun() {
+          return _git2.default.getRepo().then(function (repo) {
+            return new _gitRun2.default(repo);
+          });
+        },
+        "git-plus:merge": function gitPlusMerge() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitMerge2.default)(repo);
+          });
+        },
+        "git-plus:merge-remote": function gitPlusMergeRemote() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitMerge2.default)(repo, { remote: true });
+          });
+        },
+        "git-plus:merge-no-fast-forward": function gitPlusMergeNoFastForward() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitMerge2.default)(repo, { noFastForward: true });
+          });
+        },
+        "git-plus:rebase": function gitPlusRebase() {
+          return _git2.default.getRepo().then(function (repo) {
+            return (0, _gitRebase2.default)(repo);
+          });
+        },
+        "git-plus:git-open-changed-files": function gitPlusGitOpenChangedFiles() {
+          _git2.default.getRepo().then(function (repo) {
+            return (0, _gitOpenChangedFiles2.default)(repo);
+          });
+        },
+        "git-plus:toggle-output-view": function gitPlusToggleOutputView() {
+          _controller.viewController.getOutputView().toggle();
+        }
+      }));
+      this.subscriptions.add(atom.commands.add("atom-workspace", "git-plus:fetch-all", {
+        displayName: "Fetch All (Repos & Remotes)",
+        didDispatch: function didDispatch(_event) {
+          return (0, _fetchInAllRepos2.default)();
+        }
+      }));
+      this.subscriptions.add(atom.commands.add(".tree-view", {
+        "git-plus-context:add": function gitPlusContextAdd() {
+          return treeViewCommands.add(_this.treeView);
+        },
+        "git-plus-context:add-and-commit": function gitPlusContextAddAndCommit() {
+          return treeViewCommands.addAndCommit(_this.treeView);
+        },
+        "git-plus-context:checkout-file": function gitPlusContextCheckoutFile() {
+          return treeViewCommands.checkoutFile(_this.treeView);
+        },
+        "git-plus-context:diff": function gitPlusContextDiff() {
+          return treeViewCommands.diff(_this.treeView);
+        },
+        "git-plus-context:diff-all": function gitPlusContextDiffAll() {
+          return treeViewCommands.diff(_this.treeView, true);
+        },
+        "git-plus-context:diff-branches": function gitPlusContextDiffBranches() {
+          return treeViewCommands.diffBranches(_this.treeView);
+        },
+        "git-plus-context:diff-branch-files": function gitPlusContextDiffBranchFiles() {
+          return treeViewCommands.diffFileAgainstBranch(_this.treeView);
+        },
+        "git-plus-context:difftool": function gitPlusContextDifftool() {
+          return treeViewCommands.diffTool(_this.treeView);
+        },
+        "git-plus-context:pull": function gitPlusContextPull() {
+          return treeViewCommands.pull(_this.treeView);
+        },
+        "git-plus-context:push": function gitPlusContextPush() {
+          return treeViewCommands.push(_this.treeView);
+        },
+        "git-plus-context:unstage-file": function gitPlusContextUnstageFile() {
+          return treeViewCommands.unstage(_this.treeView);
+        }
+      }));
+      if (atom.config.get("git-plus.experimental.diffBranches")) {
+        this.subscriptions.add(atom.commands.add("atom-workspace", {
+          "git-plus:diff-branches": function gitPlusDiffBranches() {
+            return _git2.default.getRepo().then(function (repo) {
+              return (0, _gitDiffBranches2.default)(repo);
+            });
+          },
+          "git-plus:diff-branch-files": function gitPlusDiffBranchFiles() {
+            return _git2.default.getRepo().then(function (repo) {
+              return (0, _gitDiffBranchFiles2.default)(repo);
+            });
+          }
+        }));
+      }
+      this.subscriptions.add(atom.commands.add("atom-workspace", "git-plus:stage-files", function () {
+        return _git2.default.getRepo().then(_gitStageFiles2.default);
+      }));
+      this.subscriptions.add(atom.config.observe("git-plus.diffs.syntaxHighlighting", setDiffGrammar), atom.config.observe("git-plus.diffs.wordDiff", setDiffGrammar), atom.config.observe("git-plus.experimental.autoFetch", function (interval) {
+        return _this.autoFetch(interval);
+      }));
+    }
+  },
+  deserializeOutputView: function deserializeOutputView(_state) {
+    return _controller.viewController.getOutputView();
+  },
+  deactivate: function deactivate() {
+    this.subscriptions.dispose();
+    this.statusBarTile && this.statusBarTile.destroy();
+    this.outputView && this.outputView.destroy();
+    clearInterval(this.autoFetchInterval);
+  },
+  autoFetch: function autoFetch(interval) {
+    clearInterval(this.autoFetchInterval);
+    var fetchIntervalMs = interval * 60 * 1000;
+    if (fetchIntervalMs) {
+      this.autoFetchInterval = setInterval(function () {
+        return atom.commands.dispatch(getWorkspaceNode(), "git-plus:fetch-all");
+      }, fetchIntervalMs);
+    }
+  },
+  consumeAutosave: function consumeAutosave(_ref) {
+    var dontSaveIf = _ref.dontSaveIf;
+
+    dontSaveIf(function (paneItem) {
+      return paneItem.getPath().includes("COMMIT_EDITMSG");
+    });
+  },
+  consumeStatusBar: function consumeStatusBar(statusBar) {
+    this.statusBar = statusBar;
+    if (atom.config.get("git-plus.general.enableStatusBarIcon")) this.setupOutputViewToggle(this.statusBar);
+    if (getWorkspaceRepos().length > 0) this.setupBranchesMenuToggle();
+  },
+  consumeTreeView: function consumeTreeView(treeView) {
+    var _this2 = this;
+
+    this.treeView = treeView;
+    this.treeViewBranchManager = new _treeViewBranches.TreeViewBranchManager(treeView);
+
+    this.subscriptions.add(new _atom.Disposable(function () {
+      _this2.treeView = null;
+      _this2.treeViewBranchManager.destroy();
+      _this2.treeViewBranchManager = null;
+    }));
+  },
+  setupOutputViewToggle: function setupOutputViewToggle(statusBar) {
+    var div = document.createElement("div");
+    div.classList.add("inline-block");
+    var icon = document.createElement("span");
+    icon.textContent = "git+";
+    var link = document.createElement("a");
+    link.appendChild(icon);
+    link.onclick = function (_e) {
+      _controller.viewController.getOutputView().toggle();
+    };
+    atom.tooltips.add(div, { title: "Toggle Git-Plus Output" });
+    div.appendChild(link);
+    this.statusBarTile = statusBar.addRightTile({ item: div, priority: 0 });
+  },
+  setupBranchesMenuToggle: function setupBranchesMenuToggle() {
+    var branchDiv = document.querySelector(".git-view .git-branch");
+    if (branchDiv) {
+      branchDiv.addEventListener("click", function (event) {
+        var _atom$config$get = atom.config.get("git-plus.general"),
+            newBranchKey = _atom$config$get.newBranchKey;
+
+        var wasPressed = function wasPressed(key) {
+          return event[key + "Key"];
+        };
+        if (wasPressed(newBranchKey)) {
+          atom.commands.dispatch(getWorkspaceNode(), "git-plus:new-branch");
+        } else atom.commands.dispatch(getWorkspaceNode(), "git-plus:checkout");
+      });
+    }
+  }
+};

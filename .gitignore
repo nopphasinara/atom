@@ -1,20 +1,3 @@
-blob-store
-compile-cache
-dev
-storage
-.apm
-.npm
-projects.cson
-.remote-sync.json
-packages/atom-autocomplete-php/indexes
-.DS_Store
-Thumbs.db
-node_modules
-recovery
-/split-diff/
-.atom-socket*
-
-
 *.swp
 *~
 .DS_Store
@@ -35,4 +18,3 @@ docs/includes
 spec/fixtures/evil-files/
 out/
 /electron/
-snapshot-cache

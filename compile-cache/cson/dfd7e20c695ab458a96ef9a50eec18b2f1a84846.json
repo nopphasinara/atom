@@ -1,0 +1,1 @@
+{".text.html":{"Figures":{"prefix":"figure-","body":"<figure class=\"figure\">\n  <img src=\"${1:...}\" class=\"figure-img img-fluid img-rounded\" alt=\"${2:...}\">\n  <figcaption class=\"figure-caption\">${3:...}</figcaption>\n</figure>"}}}

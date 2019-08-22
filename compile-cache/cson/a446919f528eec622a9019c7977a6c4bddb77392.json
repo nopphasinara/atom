@@ -1,0 +1,1 @@
+{".text.html":{"Breadcrumb":{"prefix":"breadcrumb","body":"<ol class=\"breadcrumb\" style=\"margin-bottom: 5px;\">\n  <li><a href=\"#\">${1:Home}</a></li>\n  <li><a href=\"#\">${2:Library}</a></li>\n  <li class=\"active\">${3:Data}</li>\n</ol>"}}}

@@ -1,0 +1,1 @@
+{".text.html":{"Jumbotron":{"prefix":"jumbotron","body":"<div class=\"jumbotron\">\n  <h1 class=\"display-3\">$1</h1>\n  <p class=\"lead\">$2</p>\n</div>"},"Jumbotron fluid":{"prefix":"jumbotron-fluid","body":"<div class=\"jumbotron\">\n  <h1 class=\"display-3\">$1</h1>\n  <p class=\"lead\">$2</p>\n</div>"}}}

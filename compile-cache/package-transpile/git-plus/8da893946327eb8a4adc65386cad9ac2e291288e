@@ -1,0 +1,44 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const classnames_1 = require("classnames");
+const linkify = require("linkify-urls");
+const React = require("react");
+class Entry extends React.Component {
+    constructor(props) {
+        super(props);
+        this.userToggled = false;
+        this.handleClickToggle = (event) => {
+            event.stopPropagation();
+            this.userToggled = true;
+            this.setState({ collapsed: !this.state.collapsed });
+        };
+        this.state = {
+            collapsed: atom.config.get("git-plus.general.alwaysOpenDockWithResult") && props.isLatest
+                ? false
+                : true
+        };
+    }
+    componentDidUpdate(prevProps, prevState) {
+        if (!this.props.isLatest && prevProps.isLatest && !this.userToggled) {
+            this.setState({ collapsed: true });
+        }
+    }
+    render() {
+        const { failed, message, output, repoName } = this.props.record;
+        const hasOutput = output !== "";
+        return (React.createElement("div", { className: classnames_1.default("record", { "has-output": hasOutput }) },
+            React.createElement("div", { className: "line", onClick: this.handleClickToggle },
+                React.createElement("div", { className: "gutter" }, hasOutput && React.createElement("span", { className: "icon icon-ellipsis" })),
+                React.createElement("div", { className: classnames_1.default("message", { "text-error": failed }) },
+                    "[",
+                    repoName,
+                    "] ",
+                    message)),
+            hasOutput && (React.createElement("div", { className: classnames_1.default("output", { collapsed: this.state.collapsed }) },
+                React.createElement("pre", { dangerouslySetInnerHTML: {
+                        __html: linkify(this.props.ansiConverter.toHtml(output))
+                    } })))));
+    }
+}
+exports.Entry = Entry;
+//# sourceMappingURL=Entry.js.map
