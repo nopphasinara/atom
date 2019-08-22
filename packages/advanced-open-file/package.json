@@ -43,7 +43,8 @@
     "mkdirp": "^0.5.1",
     "osenv": "^0.1.3",
     "stringmap": "~0.2.2",
-    "touch": "^1.0.0"
+    "touch": "^1.0.0",
+    "eslint": ">=4.18.2"
   },
   "deprecated": false,
   "description": "Open and create files and directories easily. Type in a path (with autocomplete) and view directory contents.",
