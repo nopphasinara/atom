@@ -291,6 +291,52 @@
 
 
 '.source.php':
+  'require...':
+    'prefix': 'require'
+    'body': '''
+    require ${1:\\'$2\\'};$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'require_once...':
+    'prefix': 'require_once'
+    'body': '''
+    require_once ${1:\\'$2\\'};$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'include...':
+    'prefix': 'include'
+    'body': '''
+    include ${1:\\'$2\\'};$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'include_once...':
+    'prefix': 'include_once'
+    'body': '''
+    include_once ${1:\\'$2\\'};$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'req':
+    'prefix': 'req'
+  'req1':
+    'prefix': 'req1'
+  'if...function_exists':
+    'prefix': 'if_function_exists'
+    'body': '''
+    if (${2:}function_exists(\\'${1:function_name}\\')) {
+      function ${1:function_name}($3) {
+        ${4:// code}
+      }
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+  'if...defined':
+    'prefix': 'if_defined'
+    'body': '''
+    if (${2:}defined(\\'${1:NAME}\\')) {
+      define('${1:NAME}', ${3:\\'$4\\'});
+    }$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
   'parse_str($str, $output)':
     'prefix': 'parse_str'
     'body': '''

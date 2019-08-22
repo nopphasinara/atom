@@ -168,6 +168,8 @@
   "alt-cmd-a": "atom-alignment:alignMultiple"
 
 "atom-workspace atom-text-editor:not([mini])":
+  "alt-cmd-d": "sass-autocompile:compile-direct"
+  "alt-cmd-s": "sass-autocompile:compile-to-file"
   "alt-cmd-o": "nerd:reveal-in-finder"
   "alt-cmd-z": "unset!"
   "cmd-<": "editor:scroll-to-cursor"
@@ -220,6 +222,8 @@
   "shift-enter": "emmet:expand-abbreviation-with-tab"
 
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
+  "alt-cmd-d": "sass-autocompile:compile-direct"
+  "alt-cmd-s": "sass-autocompile:compile-to-file"
   "cmd-backspace": "editor:delete-line"
   "shift-cmd-i": "file-path-picker:pick-file"
   # Emmet set
@@ -348,6 +352,7 @@
   "escape": "core:cancel"
 
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
+  "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"
   "shift-alt-cmd-s": "sass-autocompile:compile-direct"
 

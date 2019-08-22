@@ -25,10 +25,14 @@
 @syntax-gutter-background-color-selected: lighten(@syntax-bg, 8%);
 
 // Git colors - For git diff info. i.e. in the gutter
-@syntax-color-renamed:  hsl(208, 100%, 60%);
-@syntax-color-added:    hsl(150,  60%, 54%);
+@syntax-color-renamed:  @hue-5;
+@syntax-color-added:    @hue-4;
 @syntax-color-modified: hsl(40,   60%, 70%);
 @syntax-color-removed:  hsl(0,    70%, 60%);
+// @syntax-color-renamed:  hsl(208, 100%, 60%);
+// @syntax-color-added:    hsl(150,  60%, 54%);
+// @syntax-color-modified: hsl(40,   60%, 70%);
+// @syntax-color-removed:  hsl(0,    70%, 60%);
 
 // For language entity colors
 @syntax-color-variable:   @hue-5;
@@ -54,3 +58,7 @@
 @syntax-deprecated-bg: @syntax-color-modified;
 @syntax-illegal-fg:    white;
 @syntax-illegal-bg:    @syntax-color-removed;
+
+
+@scrollbar-width: 14px;
+@scrollbar-border-radius: 8px;

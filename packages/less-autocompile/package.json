@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+  "_id": "less-autocompile@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-dKQqUEHt1ExM/gOpc3VUyPXu6rKf3pVOE7+ODuis9UJeAvvCBwQGkZYxJ2omswE8y6rlORXytL4jG3N5IUdTfw==",
+  "_location": "/less-autocompile",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+  "_shasum": "18a3194945077f683da49d9b9647f20e00e32c3d",
+  "_spec": "https://www.atom.io/api/packages/less-autocompile/versions/1.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119722-40279-pjuwop.nj7n",
+  "bugs": {
+    "url": "https://github.com/lohek/less-autocompile/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^0.9.0",
+    "less": "^2.3.1",
+    "mkdirp": "^0.5.0"
+  },
+  "deprecated": false,
+  "description": "Auto compile LESS",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/lohek/less-autocompile#readme",
+  "license": "MIT",
+  "main": "./lib/less-autocompile",
+  "name": "less-autocompile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lohek/less-autocompile.git"
+  },
+  "version": "1.0.0"
+}
