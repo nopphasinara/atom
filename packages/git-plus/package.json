@@ -97,7 +97,9 @@
     "react-dom": "^16.6.3",
     "typescript": "^3.2.2",
     "underscore-plus": "^1.6.6",
-    "lodash": ">=4.17.13"
+    "lodash": ">=4.17.13",
+    "js-yaml": ">=3.13.1",
+    "jquery": ">=3.4.0"
   },
   "deprecated": false,
   "description": "Do git things without the terminal",
@@ -112,7 +114,9 @@
     "lint": "^1.1.2",
     "prettier": "^1.13.6",
     "quibble": "^0.3.0",
-    "tslint": "^5.11.0"
+    "tslint": "^5.11.0",
+    "js-yaml": ">=3.13.1",
+    "jquery": ">=3.4.0"
   },
   "engines": {
     "atom": ">= 1.28"
