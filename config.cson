@@ -24,7 +24,6 @@
     audioBeep: false
     closeEmptyWindows: false
     disabledPackages: [
-      "language-dotenv"
       "autocomplete-php"
       "autosave"
       "background-tips"
@@ -93,6 +92,7 @@
       "autocomplete-javascript"
       "coffee-compile"
       "atom-import-js"
+      "atom-js-console"
     ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
