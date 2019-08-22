@@ -26,6 +26,9 @@
     disabledPackages: [
       "language-dotenv"
       "autocomplete-php"
+      "autosave"
+      "background-tips"
+      "deprecation-cop"
     ]
     ignoredNames: [
       ".git"
