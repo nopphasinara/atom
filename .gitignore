@@ -18,3 +18,5 @@ docs/includes
 spec/fixtures/evil-files/
 out/
 /electron/
+compile-cache
+.apm/_cacache
