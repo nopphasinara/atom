@@ -24,7 +24,6 @@
     audioBeep: false
     closeEmptyWindows: false
     disabledPackages: [
-      "autocomplete-php"
       "autosave"
       "background-tips"
       "deprecation-cop"
