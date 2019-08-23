@@ -21,3 +21,5 @@ out/
 compile-cache/
 .apm/_cacache/
 ./packages/atom-autocomplete-php/indexes/
+blob-store/
+storage/
