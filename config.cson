@@ -202,3 +202,9 @@
 ".sass.source":
   editor:
     autoIndentOnPaste: true
+".shell-session.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+".shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
