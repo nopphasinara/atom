@@ -21,8 +21,7 @@ electron/
 compile-cache/
 .apm/_cacache/
 packages/atom-autocomplete-php/indexes/
-blob-store/BLOB
-blob-store/MAP
-storage/
+/blob-store
+/storage
 projects.cson
 .atom-socket-secret-*
