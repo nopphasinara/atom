@@ -23,3 +23,5 @@ compile-cache/
 ./packages/atom-autocomplete-php/indexes/
 blob-store/
 storage/
+projects.cson
+.atom-socket-secret-*
