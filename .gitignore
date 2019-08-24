@@ -7,9 +7,11 @@ Thumbs.db
 .svn
 .nvm-version
 .vscode
-node_modules/
 npm-debug.log
 debug.log
+projects.cson
+.atom-socket-secret-*
+node_modules/
 tags/
 atom-shell/
 out/
@@ -23,8 +25,6 @@ compile-cache/
 packages/atom-autocomplete-php/indexes/
 blob-store/
 storage/
-projects.cson
-.atom-socket-secret-*
 split-diff/
 snapshot-cache/
 recovery/
