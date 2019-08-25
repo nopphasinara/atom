@@ -1,1 +1,0 @@
-{"source":".atom-json-editor {\n  padding: 10px;\n  max-height: 100%;\n  overflow-y: auto;\n}\n.atom-json-editor * {\n  word-wrap: break-word;\n  max-width: 400px;\n}\n"}
