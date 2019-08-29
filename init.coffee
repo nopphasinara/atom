@@ -8,7 +8,7 @@ Object.defineProperty global, 'functions', get: ->
   delete require.cache[require.resolve(pathToFunctionsFile)]
   require(pathToFunctionsFile)
 
-atom.workspace.observeActiveTextEditor (editor) ->
+atom.workspace.observeTextEditors (editor) ->
   functions.observed(editor)
 
   editor.onDidSave ->
