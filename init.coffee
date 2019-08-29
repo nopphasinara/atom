@@ -9,7 +9,8 @@ Object.defineProperty global, 'functions', get: ->
   require(pathToFunctionsFile)
 
 atom.workspace.observeTextEditors (editor) ->
-  functions.observed(editor)
+  editor.onDidStopChanging ->
+    functions.observed(editor)
 
   editor.onDidSave ->
     functions.onSave(editor)
