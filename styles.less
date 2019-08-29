@@ -6,6 +6,26 @@
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
 
+@blue: #4daafc;
+// @blue: #03a9f4;
+@light-blue: #edf5fa;
+// @light-blue: #e1f5fe;
+@dark-blue: #0588FF;
+
+@green: #81c784;
+@light-green: #c8e6c9;
+
+@light-gray: #dcdcdc;
+@dark-gray: #555555;
+
+@light: #eeeeee;
+// @light: #f7f7f7;
+
+@yellow: rgba(255, 245, 96, 1);
+@light-yellow: rgba(255, 255, 164, 1);
+
+@fg: #555555;
+
 
 // Editor
 atom-text-editor {
@@ -343,6 +363,66 @@ atom-text-editor {
           -moz-font-smoothing: grayscale !important;
           text-rendering: optimizeLegibility !important;
         }
+      }
+    }
+  }
+}
+
+
+.tree-view {
+  .tree-view-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+atom-dock {
+  &.left {
+    .pane {
+      .tab[data-type="TreeView"] {
+        background-color: @blue !important;
+
+        .title {
+
+        }
+      }
+    }
+  }
+}
+
+
+.tool-bar {
+  background-color: @light-gray !important;
+  // background-color: @green !important;
+
+  .tool-bar-spacer {
+    border-color: lighten(@dark-gray, 40%) !important;
+  }
+
+  .tool-bar-btn {
+    color: @dark-gray;
+
+    &:hover {
+      color: @blue;
+      // color: darken(@dark-gray, 16%);
+    }
+
+    i, i.gc, .gc {
+      vertical-align: baseline !important;
+    }
+  }
+}
+
+
+atom-workspace {
+  atom-panel {
+    &.header {
+      border-color: @light !important;
+
+      .title-bar {
+        color: @fg !important;
+        background-color: @light !important;
       }
     }
   }

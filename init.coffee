@@ -8,9 +8,15 @@ Object.defineProperty global, 'functions', get: ->
   delete require.cache[require.resolve(pathToFunctionsFile)]
   require(pathToFunctionsFile)
 
-atom.workspace.observeTextEditors (editor) ->
+atom.workspace.observeActiveTextEditor (editor) ->
+  functions.observed(editor)
+
   editor.onDidSave ->
     functions.onSave(editor)
+
+# atom.workspace.observeTextEditors (editor) ->
+#   editor.onDidSave ->
+#     functions.onSave(editor)
 
 
 url = require('url')

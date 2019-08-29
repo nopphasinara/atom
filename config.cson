@@ -193,6 +193,12 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".css.less.source":
+  editor:
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+".less.source":
+  editor:
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
 ".plain.text":
   whitespace:
     ensureSingleTrailingNewline: false

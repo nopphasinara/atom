@@ -274,6 +274,7 @@
   "shift-ctrl-l": "unset!"
   "cmd-r": "symbols-view:toggle-file-symbols"
   "cmd-.": "nerd:select-outside-bracket"
+  "shift-cmd-.": "bracket-matcher:select-inside-brackets"
   "shift-ctrl-o": "nerd:link-open"
   "ctrl-cmd-o": "nerd:link-open"
 
