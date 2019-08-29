@@ -7,7 +7,6 @@ module.exports =
     # console.log "Saved!"
     this.activate()
   observed: (editor) ->
-    console.log editor.isAlive()
     console.log editor
   wrapBlock: () ->
     editor = atom.workspace.getActiveTextEditor()

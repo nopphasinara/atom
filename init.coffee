@@ -11,9 +11,8 @@ Object.defineProperty global, 'functions', get: ->
 atom.workspace.observeTextEditors (editor) ->
   editor.onDidStopChanging ->
     functions.observed(editor)
-
   editor.onDidSave ->
-    functions.onSave(editor)
+    functions.observed(editor)
 
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
@@ -129,7 +128,8 @@ atom.commands.add 'atom-text-editor', 'nerd:link-open', ->
     else
       shell.openExternal("http://#{selectedText}")
   else
-    link.openLink()
+    atom.commands.dispatch(atom.views.getView(editor), "link:open")
+    # link.openLink()
 
 
 # sss
