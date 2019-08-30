@@ -25,7 +25,8 @@
 // @base: #353346;
 @cyan: #8be9fd; // <- cyan
 // @cyan: #72D0DD; // <- cyan
-@blue: #6490e3; // <- blue
+@blue: #4daafc; // <- blue
+// @blue: #6490e3; // <- blue
 @purple: #9a7ee8; // <- purple
 @green: #75B88B; // <- green
 @red-1: #CC626C; // <- red
@@ -74,4 +75,10 @@
 @syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
 @syntax-gutter: darken(@syntax-fg, 26%);
 @syntax-guide:  fade(@syntax-fg, 15%);
-@syntax-accent: hsl(@syntax-hue, 100%, 66% );
+@syntax-accent: @hue-2;
+// @syntax-accent: hsl(@syntax-hue, 100%, 66% );
+
+
+@syntax-accent-hue: hue(@syntax-accent);
+@syntax-accent-saturation: saturation(@syntax-accent);
+@syntax-accent-lightness: lightness(@syntax-accent);

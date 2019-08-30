@@ -16,6 +16,7 @@
 
   // Selected state
   .selected:before {
+    // background: @syntax-accent;
     background: @background-color-selected;
   }
 
@@ -24,10 +25,12 @@
     .selected.list-item > .name, // files
     .selected.list-nested-item > .list-item > .name, // folders
     .selected.list-nested-item > .header:before { // arrow icon
-      color: contrast(@button-background-color-selected);
+      color: @accent-text-color;
+      // color: contrast(@button-background-color-selected);
     }
     .selected:before {
-      background: @button-background-color-selected;
+      background: @syntax-accent;
+      // background: @button-background-color-selected;
     }
   }
 }

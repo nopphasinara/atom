@@ -427,3 +427,22 @@ atom-workspace {
     }
   }
 }
+
+
+atom-pane-container {
+  &.panes {
+    .horizontal {
+      .pane {
+        .tab-bar {
+          .tab {
+            &.active {
+              &:before {
+                background-color: @blue !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
