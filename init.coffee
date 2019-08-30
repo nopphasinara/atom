@@ -1,18 +1,18 @@
 # ~/.atom/init.coffee
 
-pathToFunctionsFile = "./functions"
-
-global.functions = require(pathToFunctionsFile)
-
-Object.defineProperty global, 'functions', get: ->
-  delete require.cache[require.resolve(pathToFunctionsFile)]
-  require(pathToFunctionsFile)
-
-atom.workspace.observeTextEditors (editor) ->
-  editor.onDidStopChanging ->
-    functions.observed(editor)
-  editor.onDidSave ->
-    functions.observed(editor)
+# pathToFunctionsFile = "./functions"
+#
+# global.functions = require(pathToFunctionsFile)
+#
+# Object.defineProperty global, 'functions', get: ->
+#   delete require.cache[require.resolve(pathToFunctionsFile)]
+#   require(pathToFunctionsFile)
+#
+# atom.workspace.observeTextEditors (editor) ->
+#   editor.onDidStopChanging ->
+#     functions.observed(editor)
+#   editor.onDidSave ->
+#     functions.observed(editor)
 
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
