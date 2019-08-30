@@ -21,7 +21,9 @@ spec/fixtures/evil-files
 out
 electron
 **/compile-cache
-.apm/_cacache
+.apm/_cacache/
+.apm/_logs/
+.apm/index\-*/
 packages/atom-autocomplete-php/indexes
 blob-store
 storage
