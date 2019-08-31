@@ -1,12 +1,15 @@
 
-@status-bar-height: @ui-tab-height; // same as tabs
+@status-bar-height: @ui-size * 2.5;
+// @status-bar-height: @ui-tab-height; // same as tabs
 @status-bar-padding: @ui-padding;
 
 .status-bar {
   font-size: @ui-size;
   height: @status-bar-height;
   line-height: @status-bar-height;
-  background-color: @level-3-color;
+  // color: @accent-color;
+  background-color: @light-gray;
+  // background-color: @level-3-color;
 
   .flexbox-repaint-hack {
     padding: 0; // override default

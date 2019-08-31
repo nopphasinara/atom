@@ -6,26 +6,6 @@
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
 
-@blue: #4daafc;
-// @blue: #03a9f4;
-@light-blue: #edf5fa;
-// @light-blue: #e1f5fe;
-@dark-blue: #0588FF;
-
-@green: #81c784;
-@light-green: #c8e6c9;
-
-@light-gray: #dcdcdc;
-@dark-gray: #555555;
-
-@light: #eeeeee;
-// @light: #f7f7f7;
-
-@yellow: rgba(255, 245, 96, 1);
-@light-yellow: rgba(255, 255, 164, 1);
-
-@fg: #555555;
-
 
 // Editor
 atom-text-editor {
@@ -139,10 +119,18 @@ atom-text-editor {
     // font-variant: normal !important;
     vertical-align: middle !important;
 
-    &.bi {
-      font-family: "boxicons" !important;
-      // font-size: @btn-icon-size !important;
-
+    &.bi,
+    &.mdi,
+    &.fa,
+    &.custom,
+    &.ico,
+    &.icomoon,
+    &.iconic,
+    &.ion,
+    &.oct,
+    &.typ,
+    &.das,
+    &.ent {
       font-kerning: none !important;
       -webkit-font-smoothing: antialiased !important;
       -moz-osx-font-smoothing: grayscale !important;
@@ -150,138 +138,55 @@ atom-text-editor {
       text-rendering: optimizeLegibility !important;
 
       vertical-align: middle !important;
+    }
+
+    &.bi {
+      font-family: "boxicons" !important;
+      // font-size: @btn-icon-size !important;
     }
     &.mdi {
       font-family: "Material-Design-Icons" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.fa {
       font-family: "FontAwesome", "FontAwesome5Free-Solid" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.custom {
       font-family: "fontcustom" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.ico {
       font-family: "icofont" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.icomoon {
       font-family: "icomoon" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.iconic {
       font-family: "iconmonstr-iconic-font", "open-iconic" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.ion {
       font-family: "Ionicons" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.oct {
       font-family: "octicons" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.typ {
       font-family: "typicons" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.das {
       font-family: "dashicons" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
     &.ent {
       font-family: "entypo" !important;
       // font-size: @btn-icon-size !important;
-
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: grayscale !important;
-      -moz-font-smoothing: grayscale !important;
-      text-rendering: optimizeLegibility !important;
-
-      vertical-align: middle !important;
     }
   }
 }
@@ -300,6 +205,7 @@ atom-text-editor {
   text-rendering: optimizeLegibility !important;
 
   vertical-align: middle !important;
+
   display: block !important;
 
   &.primary {
@@ -381,7 +287,8 @@ atom-dock {
   &.left {
     .pane {
       .tab[data-type="TreeView"] {
-        // background-color: @blue !important;
+        // background-color: @level-3-color !important;
+        // background-color: @accent-text-color !important;
 
         .title {
 

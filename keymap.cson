@@ -208,11 +208,16 @@
   "alt-cmd--": "unset!"
 
 "body .native-key-bindings":
-  "cmd-z": "native!"
-  "shift-cmd-z": "native!"
-  "cmd-x": "native!"
-  "cmd-c": "native!"
-  "cmd-v": "native!"
+  "cmd-z": "core:undo"
+  "shift-cmd-z": "core:redo"
+  "cmd-x": "core:cut"
+  "cmd-c": "core:copy"
+  "cmd-v": "core:paste"
+  # "cmd-z": "native!"
+  # "shift-cmd-z": "native!"
+  # "cmd-x": "native!"
+  # "cmd-c": "native!"
+  # "cmd-v": "native!"
   "alt-tab": "native!"
 
 
