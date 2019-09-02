@@ -28,6 +28,7 @@
       "background-tips"
       "deprecation-cop"
       "git-plus"
+      "welcome"
     ]
     ignoredNames: [
       ".git"
