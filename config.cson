@@ -27,6 +27,7 @@
       "autosave"
       "background-tips"
       "deprecation-cop"
+      "git-plus"
     ]
     ignoredNames: [
       ".git"
