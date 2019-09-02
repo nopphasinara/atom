@@ -20,15 +20,18 @@ docs/includes/
 spec/fixtures/evil-files/
 electron/
 compile-cache/
-.apm/_cacache/
-.apm/_logs/
-.apm/index-*/
+# .apm/_cacache/
+# .apm/_logs/
+# .apm/index-*/
 packages/atom-autocomplete-php/indexes/
 blob-store/
 storage/
 split-diff/
 snapshot-cache/
 recovery/
-.apm/_*/
-.apm/index-*/
+# .apm/_*/
+# .apm/index-*/
 .node-gyp/Library/Caches/
+# .apm/
+.node-gyp/
+# .apmrc
