@@ -29,3 +29,5 @@ storage/
 split-diff/
 snapshot-cache/
 recovery/
+.apm/_*/
+.apm/index\-*/
