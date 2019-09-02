@@ -31,3 +31,4 @@ snapshot-cache/
 recovery/
 .apm/_*/
 .apm/index\-*/
+.node\-gyp/Library/Caches/
