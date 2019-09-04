@@ -157,6 +157,34 @@ atom.commands.add 'atom-text-editor', 'nerd:select-line-copy', ->
   atom.commands.dispatch(atom.views.getView(editor), "core:copy")
 
 
+# sss
+atom.commands.add 'atom-text-editor', 'nerd:toggle-fold', ->
+  editor = atom.workspace.getActiveTextEditor()
+  cursors = editor.getCursors()
+  if cursors.length > 0
+    cursors = cursors.reverse()
+    for cursor in cursors
+      editor.toggleFoldAtBufferRow(cursor.getBufferRow())
+
+atom.commands.add 'atom-text-editor', 'nerd:fold', ->
+  editor = atom.workspace.getActiveTextEditor()
+  cursors = editor.getCursors()
+  if cursors.length > 0
+    cursors = cursors.reverse()
+    for cursor in cursors
+      cursor.editor.foldBufferRow(cursor.getBufferRow(), true)
+      # editor.foldBufferRow(cursor.getScreenRow(), true)
+
+atom.commands.add 'atom-text-editor', 'nerd:unfold', ->
+  editor = atom.workspace.getActiveTextEditor()
+  cursors = editor.getCursors()
+  if cursors.length > 0
+    cursors = cursors.reverse()
+    for cursor in cursors
+      cursor.editor.unfoldBufferRow(cursor.getBufferRow(), true)
+      # editor.unfoldBufferRow(cursor.getScreenRow(), true)
+
+
 # Reveal active file in Finder
 atom.commands.add 'atom-text-editor', 'nerd:reveal-in-finder', ->
   editor = atom.workspace.getActiveTextEditor()
