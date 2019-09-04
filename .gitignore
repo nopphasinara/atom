@@ -23,7 +23,7 @@ compile-cache/
 # .apm/_cacache/
 # .apm/_logs/
 # .apm/index-*/
-/packages/atom-autocomplete-php/indexes/**
+/packages/atom-autocomplete-php/indexes/*
 blob-store/
 storage/
 split-diff/
