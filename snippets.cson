@@ -291,6 +291,12 @@
 
 
 '.source.php':
+  'echo...':
+    'prefix': 'echo'
+    'body': """
+    echo ${1:'$2'};$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">PHP</span>'
   'require...':
     'prefix': 'require'
     'body': '''

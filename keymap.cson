@@ -165,7 +165,13 @@
   # "alt-cmd-a": "simple-align:align"
   "alt-cmd-a": "atom-alignment:alignMultiple"
 
+# "atom-text-editor:not([mini])":
+#   "tab": "unset!"
+# "shift-tab": "unset!"
+
 "atom-workspace atom-text-editor:not([mini])":
+  # "tab": "snippets:next-tab-stop"
+  # "shift-tab": "snippets:previous-tab-stop"
   "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"
   "alt-cmd-o": "nerd:reveal-in-finder"

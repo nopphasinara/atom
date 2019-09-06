@@ -95,6 +95,9 @@
       "atom-import-js"
       "atom-js-console"
     ]
+    packagesWithSnippetsDisabled: [
+      "snippets"
+    ]
     projectHome: "~/.dotfiles/projects"
     telemetryConsent: "no"
     titleBar: "custom"
