@@ -1,4 +1,3 @@
-// @tree-view-background-color: @accent-text-color;
 @tree-view-height: @ui-line-height;
 
 .tree-view {
@@ -25,12 +24,10 @@
     .selected.list-item > .name, // files
     .selected.list-nested-item > .list-item > .name, // folders
     .selected.list-nested-item > .header:before { // arrow icon
-      color: @accent-text-color;
-      // color: contrast(@button-background-color-selected);
+      color: contrast(@button-background-color-selected);
     }
     .selected:before {
-      background: @syntax-accent;
-      // background: @button-background-color-selected;
+      background: @button-background-color-selected;
     }
   }
 }

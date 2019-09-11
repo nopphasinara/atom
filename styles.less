@@ -5,6 +5,11 @@
 @font-size-sm: .875em;
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
+@tool-bar-bg: lighten(@mono-1, 5%);
+@tool-bar-btn: @mono-3;
+@tool-bar-btn-hover: @accent-color;
+@title-bar-bg: lighten(@mono-1, 10%);
+@title-bar-fg: @mono-3;
 
 
 // Editor
@@ -55,7 +60,6 @@ atom-text-editor {
 }
 
 .status-bar {
-  // font-size:  @font-size-sm;
   .github-StatusBarTile,
   .line-ending-tile {
     display: none !important;
@@ -300,19 +304,17 @@ atom-dock {
 
 
 .tool-bar {
-  background-color: @light-gray !important;
-  // background-color: @green !important;
+  background-color: @tool-bar-bg !important;
 
   .tool-bar-spacer {
-    border-color: lighten(@dark-gray, 40%) !important;
+    border-color: darken(@tool-bar-bg, 10%) !important;
   }
 
   .tool-bar-btn {
-    color: @dark-gray;
+    color: @tool-bar-btn !important;
 
     &:hover {
-      color: @blue;
-      // color: darken(@dark-gray, 16%);
+      color: @tool-bar-btn-hover !important;
     }
 
     i, i.gc, .gc {
@@ -325,30 +327,11 @@ atom-dock {
 atom-workspace {
   atom-panel {
     &.header {
-      border-color: @light !important;
+      border-color: @title-bar-bg !important;
 
       .title-bar {
-        color: @fg !important;
-        background-color: @light !important;
-      }
-    }
-  }
-}
-
-
-atom-pane-container {
-  &.panes {
-    .horizontal {
-      .pane {
-        .tab-bar {
-          .tab {
-            &.active {
-              &:before {
-                background-color: @blue !important;
-              }
-            }
-          }
-        }
+        color: @title-bar-fg !important;
+        background-color: @title-bar-bg !important;
       }
     }
   }

@@ -1,5 +1,5 @@
 
-@status-bar-height: @ui-size * 2.5;
+@status-bar-height: @ui-size * 2.4;
 // @status-bar-height: @ui-tab-height; // same as tabs
 @status-bar-padding: @ui-padding;
 
@@ -7,19 +7,7 @@
   font-size: @ui-size;
   height: @status-bar-height;
   line-height: @status-bar-height;
-  // color: @status-bar-text-color;
-  // background-color: @status-bar-color;
   background-color: @level-3-color;
-
-  // * {
-  //   color: @status-bar-text-color;
-  //
-  //   &:hover,
-  //   &:focus {
-  //     color: @status-bar-text-color-active;
-  //     cursor: pointer;
-  //   }
-  // }
 
   .flexbox-repaint-hack {
     padding: 0; // override default
@@ -28,27 +16,20 @@
   // underlines should only be used for external links
   a:hover,
   a:focus {
-    // color: @status-bar-text-color-active;
     text-decoration: none;
-    cursor: pointer;
-    // cursor: default;
+    cursor: default;
   }
 
   .inline-block {
-    // color: @status-bar-text-color;
     margin: 0; // override default
     padding: 0 @status-bar-padding/2;
     vertical-align: top;
 
     &:hover {
       text-decoration: none;
-      // color: @status-bar-text-color;
-      // background-color: @status-bar-color-hover;
       background-color: @level-3-color-hover;
     }
     &:active {
-      // color: @status-bar-text-color;
-      // background-color: @status-bar-color-active;
       background-color: @level-3-color-active;
     }
 
@@ -100,8 +81,7 @@
     &:hover,
     &:focus {
       text-decoration: none;
-      cursor: pointer;
-      // cursor: default;
+      cursor: default;
     }
   }
 
