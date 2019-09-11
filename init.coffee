@@ -54,21 +54,34 @@ mergeObject = (obj = {}, source = {}) ->
   return obj
 
 
+getOptions = (options = {}) ->
+  options = mergeObject({
+    select: true,
+    skip: false,
+    undo: '',
+    useSnippet: false,
+  }, options)
+
+  return options
+
+
 mutateSelectedText = (selections, options = {}) ->
   options = mergeObject({
     select: true,
     skip: false,
     undo: '',
+    useSnippet: false,
   }, options)
 
   for selection in selections
-    insertText = "/*{{replacement}}*/"
-    selectedText = selection.getText()
-    insertText = insertText.replace("{{replacement}}", "#{selectedText}")
-
+    options.selectedText = selectedText = selection.getText()
     selection.retainSelection = true
     selection.plantTail()
+
+    insertText = "/*{{replacement}}*/"
+    insertText = insertText.replace("{{replacement}}", "#{selectedText}")
     selection.insertText(insertText, options)
+
     selection.retainSelection = false
 
 
@@ -84,16 +97,60 @@ atom.workspace.observeActiveTextEditor ->
 atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
   # editor.autoIndentSelectedRows()
 
-  options = {
+  options = getOptions({
     select: true,
     undo: 'skip',
     skip: true,
-  }
+  })
   editor = atom.workspace.getActiveTextEditor()
   selections = editor.getSelections()
-  # console.log selections
+  callback = (selections, options = {}) ->
+    options = getOptions(options)
+    for selection in selections
+      selectedText = selection.getText()
+      selection.retainSelection = true
+      selection.plantTail()
+      selection.insertText("/* #{selectedText} */", options)
+      selection.cursor.moveLeft(selectedText.length + 3)
+      if selectedText.length > 0
+        selection.selectRight(selectedText.length)
+      selection.retainSelection = false
+
   if selections && selections.length > 0
-    mutateSelectedText(selections, options)
+    callback(selections, options)
+
+
+# Insert <?php echo ...; ?>
+atom.commands.add "atom-text-editor", "nerd:php-echo", ->
+  options = getOptions({
+    select: true,
+    undo: 'skip',
+    skip: true,
+  })
+  editor = atom.workspace.getActiveTextEditor()
+  rootScope = editor.getCursorScope().scopes.shift();
+  selections = editor.getSelections()
+  callback = (selections, options = {}) ->
+    options = getOptions(options)
+    for selection in selections
+      selectedText = selection.getText()
+      insertText = "<?php echo \"#{selectedText}\"; ?>"
+      moveLeft = selectedText.length + 6
+      selectRight = selectedText.length + 2
+      selection.retainSelection = true
+      selection.plantTail()
+      if rootScope == "text.html.php.blade"
+        insertText = "{{ \"#{selectedText}\" }}"
+        moveLeft = selectedText.length + 5
+
+      selection.insertText("#{insertText}", options)
+      selection.cursor.moveLeft(moveLeft)
+      if selectRight > 0
+        selection.selectRight(selectRight)
+      selection.retainSelection = false
+
+  if selections && selections.length > 0
+    callback(selections, options)
 
 
 #

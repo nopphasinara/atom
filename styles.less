@@ -324,6 +324,61 @@ atom-dock {
 }
 
 
+.tooltip {
+  font-size: @ui-size;
+
+  .tooltip-inner {
+    background-color: @accent-color;
+  }
+}
+
+
+/*
+.mixin(1)                   {x: 11}
+.mixin(2)                   {y: 22}
+.mixin(@x) when (default()) {z: @x}
+
+div {
+  .mixin(3);
+}
+
+div.special {
+  .mixin(1);
+}
+
+// output
+div {
+  z: 3;
+}
+div.special {
+  x: 11;
+}
+*/
+
+
+/*
+.mixin(@value) when (ispixel(@value)) {width: @value}
+.mixin(@value) when not(default())    {padding: (@value / 5)}
+
+div-1 {
+  .mixin(100px);
+}
+
+div-2 {
+  .mixin(100%);
+}
+
+// output
+div-1 {
+  width: 100px;
+  padding: 20px;
+}
+div-2 {
+  //
+}
+*/
+
+
 atom-workspace {
   atom-panel {
     &.header {
@@ -332,6 +387,15 @@ atom-workspace {
       .title-bar {
         color: @title-bar-fg !important;
         background-color: @title-bar-bg !important;
+
+        &:after {
+          @content: image-size('/Users/Fineart/Downloads/logo-new-blog.png');
+          @content: data-uri('/Users/Fineart/Downloads/logo-new-blog.png');
+          @content: convert(14cm, px);
+          display: flex;
+          margin-left: 1em;
+          content: '@{content}';
+        }
       }
     }
   }

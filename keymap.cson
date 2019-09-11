@@ -268,6 +268,7 @@
   "cmd-escape": "tree-view:toggle-focus"
   "alt-cmd-tab": "editor:auto-indent"
   "alt-cmd-/": "nerd:wrap-inline-comment"
+  "alt-`": "nerd:php-echo"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"
