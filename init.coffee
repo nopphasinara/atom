@@ -13,6 +13,8 @@
 #     functions.onSave(editor)
 
 
+console.log atom
+
 url = require('url')
 {shell} = require('electron')
 _ = require('underscore-plus')

@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+  "_id": "package-reloader@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-qIhe+lrJWw1/nRIejeAw4IUaBd9Urq42VzDYoo5g0Gk/QOmG1+4iHQbQxDEWdTDgWqSFiIprp2oMV6xaoEUSmg==",
+  "_location": "/package-reloader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+  "_shasum": "c64923c0136f0c8c6cd74310ed8f50f4a17c4e48",
+  "_spec": "https://www.atom.io/api/packages/package-reloader/versions/1.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119812-22912-sthfyh.cuqu",
+  "activationCommands": {
+    "atom-workspace": "package-reloader:reload"
+  },
+  "bugs": {
+    "url": "https://github.com/hokaccha/atom-package-reloader/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Reload atom package for package development",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/hokaccha/atom-package-reloader#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/package-reloader",
+  "name": "package-reloader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hokaccha/atom-package-reloader.git"
+  },
+  "version": "1.0.0"
+}

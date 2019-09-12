@@ -161,6 +161,10 @@
     showErrorsInDevMode: true
   "one-dark-ui":
     hideDockButtons: true
+  "package-reloader":
+    targets: [
+      "toolkits"
+    ]
   "project-manager":
     showPath: false
     sortBy: "title"
