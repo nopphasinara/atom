@@ -1,14 +1,11 @@
 # ~/.atom/functions.coffee
 
 module.exports =
-  activate: () ->
-    this.wrapBlock()
   onSave: (editor) ->
-    # console.log "Saved!"
-    this.activate()
-  observed: (editor) ->
-    console.log editor
-  wrapBlock: () ->
-    editor = atom.workspace.getActiveTextEditor()
-    cursors = editor.getCursors()
-    # console.log cursors
+    console.log "Saved!"
+
+    selections = editor.getSelections()
+    if selections.length > 0
+      console.log selections
+      console.log "selectedText"
+      console.log editor.getSelectedText()

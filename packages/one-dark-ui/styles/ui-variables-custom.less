@@ -4,22 +4,37 @@
 
 @import "syntax-variables";
 
-.ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
+.ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); }
+// fallback color
+.ui-syntax-color();
 @ui-syntax-color: @syntax-background-color;
 
 // Color guards -----------------
 @ui-s-h: hue(@ui-syntax-color);
 @ui-s-s: saturation(@ui-syntax-color);
 @ui-s-l: lightness(@ui-syntax-color);
-@ui-inv: 10%; // inverse lightness if below
+// inverse lightness if below
+@ui-inv: 10%;
 
-.ui-hue() when (@ui-s-s = 0) { @ui-hue: 220; } // Use blue hue when no saturation
-.ui-hue() when (@ui-s-s > 0) { @ui-hue: @ui-s-h; }
+// Use blue hue when no saturation
+.ui-hue() when (@ui-s-s = 0) {
+  @ui-hue: 220;
+}
+.ui-hue() when (@ui-s-s > 0) {
+  @ui-hue: @ui-s-h;
+}
 .ui-hue();
 
-.ui-saturation() when (@ui-s-h <=  80) { @ui-saturation: min(@ui-s-s,  5%); } // minimize saturation for brown
-.ui-saturation() when (@ui-s-h >   80) and (@ui-s-h <  160) { @ui-saturation: min(@ui-s-s, 12%); } // reduce saturation for green
-.ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l <  @ui-inv) { @ui-saturation: min(@ui-s-s, 48%); } // limit max saturation for very dark backgrounds
+// minimize saturation for brown
+.ui-saturation() when (@ui-s-h <=  80) {
+  @ui-saturation: min(@ui-s-s,  5%);
+}
+// reduce saturation for green
+.ui-saturation() when (@ui-s-h >   80) and (@ui-s-h <  160) {
+  @ui-saturation: min(@ui-s-s, 12%);
+}
+// limit max saturation for very dark backgrounds
+.ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l <  @ui-inv) { @ui-saturation: min(@ui-s-s, 48%); }
 .ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l >= @ui-inv) { @ui-saturation: @ui-s-s; }
 .ui-saturation();
 

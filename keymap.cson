@@ -236,6 +236,7 @@
   "shift-enter": "emmet:expand-abbreviation-with-tab"
 
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
+  "alt-cmd-.": "nerd:select-inside-brackets"
   "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"
   "cmd-backspace": "editor:delete-line"
@@ -289,7 +290,8 @@
   "ctrl-alt-cmd-g": "grammar-selector:show"
   "shift-ctrl-l": "unset!"
   "cmd-r": "symbols-view:toggle-file-symbols"
-  "cmd-.": "nerd:select-outside-bracket"
+  "cmd-.": "nerd:select-outside-brackets"
+  "alt-cmd-.": "nerd:select-inside-brackets"
   "shift-cmd-.": "bracket-matcher:select-inside-brackets"
   "shift-ctrl-o": "nerd:link-open"
   "ctrl-cmd-o": "nerd:link-open"

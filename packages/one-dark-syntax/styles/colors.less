@@ -1,9 +1,8 @@
 
 // Config -----------------------------------
 @base:
-  // #222222,
-  #2B303B,
-  // #2C3134,
+  // #2A2D3E,
+  #292D3E,
   #2D3440,
   #22212C,
   #2C323B,
@@ -38,6 +37,7 @@
   hsl(187, 47%, 55%);
 @hue-1: hsl(hue(extract(@cyan, 1)), saturation(extract(@cyan, 1)), lightness(extract(@cyan, 1)));
 @blue:
+  tint(saturate(#82AAFF, -6%), 10%),
   // tint(saturate(#5EADF1, -8%), 10%),
   hsl(207, 82%, 72%),
   hsl(207, 82%, 66%);
@@ -50,15 +50,18 @@
 @green:
   // saturate(#7BE086, -20%),
   // shade(saturate(#A1EF9D, -16%), 10%),
-  hsl(95, 40%, 72%),
+  shade(saturate(#64ec87, -40%), 8%),
+  hsl(95, 40%, 68%),
   hsl(95, 38%, 62%);
 @hue-4: hsl(hue(extract(@green, 1)), saturation(extract(@green, 1)), lightness(extract(@green, 1)));
 @red-1:
+  tint(#F07178, 6%),
   // tint(saturate(#E26B73, -6%), 6%),
   hsl(355, 75%, 71%),
   hsl(355, 65%, 65%);
 @hue-5: hsl(hue(extract(@red-1, 1)), saturation(extract(@red-1, 1)), lightness(extract(@red-1, 1)));
 @red-2:
+  #FF5370,
   hsl(5, 48%, 57%),
   hsl(5, 48%, 51%);
 @hue-5-2: hsl(hue(extract(@red-2, 1)), saturation(extract(@red-2, 1)), lightness(extract(@red-2, 1)));
@@ -68,6 +71,7 @@
   hsl(29, 54%, 61%);
 @hue-6: hsl(hue(extract(@orange-1, 1)), saturation(extract(@orange-1, 1)), lightness(extract(@orange-1, 1)));
 @orange-2:
+  #FFCB6B,
   // tint(saturate(#F3D55A, 64%), 16%),
   hsl(39, 67%, 75%),
   hsl(39, 67%, 69%);

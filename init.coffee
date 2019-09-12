@@ -1,22 +1,16 @@
 # ~/.atom/init.coffee
 
-# pathToFunctionsFile = "./functions"
-#
-# global.functions = require(pathToFunctionsFile)
-#
-# Object.defineProperty global, 'functions', get: ->
-#   delete require.cache[require.resolve(pathToFunctionsFile)]
-#   require(pathToFunctionsFile)
-#
-# atom.workspace.observeTextEditors (editor) ->
-#   editor.onDidStopChanging ->
-#     functions.observed(editor)
-#   editor.onDidSave ->
-#     functions.observed(editor)
+pathToFunctionsFile = "./functions"
 
-# atom.workspace.observeTextEditors (editor) ->
-#   editor.onDidSave ->
-#     functions.onSave(editor)
+global.functions = require(pathToFunctionsFile)
+
+Object.defineProperty global, 'functions', get: ->
+  delete require.cache[require.resolve(pathToFunctionsFile)]
+  require(pathToFunctionsFile)
+
+atom.workspace.observeTextEditors (editor) ->
+  editor.onDidSave ->
+    functions.onSave(editor)
 
 
 url = require('url')
@@ -190,11 +184,30 @@ atom.commands.add 'atom-text-editor', 'nerd:link-open', ->
 
 
 # sss
-atom.commands.add 'atom-text-editor', 'nerd:select-outside-bracket', ->
+atom.commands.add 'atom-text-editor', 'nerd:select-outside-brackets', ->
   editor = atom.workspace.getActiveTextEditor()
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
   atom.commands.dispatch(atom.views.getView(editor), "core:move-right")
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+
+# sss
+atom.commands.add 'atom-text-editor', 'nerd:select-inside-brackets', ->
+  editor = atom.workspace.getActiveTextEditor()
+  atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+  selectedText = editor.getSelectedText()
+  newSelectedText = selectedText
+  if selectedText == '  '
+    return
+  else
+    if selectedText.length > 0
+      newSelectedText = editor.getSelections()[0].plainTail()
+      console.log newSelectedText
+      # # newSelectedText = selectedText.trim(" ")
+      # diffLength = selectedText.length - newSelectedText.length
+      # if diffLength
+      #   editor.moveRight()
+      #   editor.moveLeft(newSelectedText.length + 1)
+      #   editor.selectRight(newSelectedText.length)
 
 
 # sss
