@@ -1,11 +1,11 @@
 'use babel';
 
 export default {
-  activate (state) {
+  activate: (state) => {
     console.log("OK");
   },
 
-  deactivate () {
+  deactivate: () => {
     this.subscriptions.dispose();
   },
 };

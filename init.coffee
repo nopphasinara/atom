@@ -13,8 +13,6 @@
 #     functions.onSave(editor)
 
 
-console.log atom
-
 url = require('url')
 {shell} = require('electron')
 _ = require('underscore-plus')
@@ -40,6 +38,31 @@ global.exec = exec
 #     status: 200,
 #   })
 # }
+
+
+global.getMethods = (obj, options = {}) ->
+  if options.returnAs && options.returnAs.toLowerCase() != 'string'
+    options.returnAs = 'array'
+
+  options = mergeObject({
+    returnAs: 'array',
+  }, options)
+
+  properties = []
+  currentObj = obj
+  if (currentObj = Object.getPrototypeOf(currentObj))
+    Object.getOwnPropertyNames(currentObj).map((item, key) ->
+      properties.push(item)
+    )
+    filtered = properties.filter((item, key) ->
+      return (typeof obj[item] == 'function')
+    )
+
+    if filtered.length > 0
+      if options.returnAs == 'string'
+        return filtered.join(', ')
+      else
+        return filtered
 
 
 mergeObject = (obj = {}, source = {}) ->
@@ -202,8 +225,11 @@ atom.commands.add 'atom-text-editor', 'nerd:select-inside-brackets', ->
     return
   else
     if selectedText.length > 0
-      newSelectedText = editor.getSelections()[0].plainTail()
+      newSelectedText = newSelectedText.replace("\r", "")
+                                       .replace("\n", "")
+                                       .trim("\s")
       console.log newSelectedText
+      editor.setTextInBufferRange(editor.getSelectedBufferRange(), newSelectedText)
       # # newSelectedText = selectedText.trim(" ")
       # diffLength = selectedText.length - newSelectedText.length
       # if diffLength
