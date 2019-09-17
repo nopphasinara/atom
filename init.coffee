@@ -232,7 +232,7 @@ global.havePunctuation = (arr = []) ->
 
 
 global.selectedTextHaveNewline = (text = "") ->
-  if (text && (text.search("\n") >= 0 || text.search("\r") >= 0))
+  if (text && (text.substr(0, 1) == "\n" || text.substr(-1, 1) == "\n"))
     return true
   return false
 
@@ -257,11 +257,43 @@ global.displayNotification = (message = "", type = "info", options = {}) ->
 # sss
 atom.commands.add "atom-text-editor", "nerd:select-inside-brackets", ->
   editor = atom.workspace.getActiveTextEditor()
-  atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
+  atom.commands.dispatch(atom.views.getView(editor), "nerd:select-outside-brackets")
   selections = editor.getSelections()
   if selections.length
     selection = selections[0]
-    console.log selection
+    if selection.getText()
+      selectedText = selection.getText()
+      selectedText = selectedText.substr(1, selectedText.length - 2)
+      newSelectedText = selectedText
+      leftSpace = false
+      rightSpace = false
+      if selectedTextHaveNewline(newSelectedText)
+        selection.editor.moveRight()
+        selection.editor.moveLeft()
+        selection.editor.selectLeft(newSelectedText.length)
+      else
+        if newSelectedText.substr(0, 1) == " "
+          leftSpace = true
+        if newSelectedText.substr(-1, 1) == " "
+          rightSpace = true
+
+        newSelectedText = newSelectedText.trim("\s")
+        if newSelectedText
+          selectLeft = newSelectedText.length
+          diffLength = selectedText.length - newSelectedText.length
+          selection.editor.moveRight()
+          selection.editor.moveLeft()
+          if rightSpace
+            selection.editor.moveLeft()
+          if selection.isSingleScreenLine()
+            # body...
+          else
+            selectLeft = selectLeft + 2
+          selection.editor.selectLeft(selectLeft)
+
+        # displayNotification("#{leftSpace}:#{rightSpace}")
+        # displayNotification("#{newSelectedText}")
+        # displayNotification("#{diffLength}")
 
 
 # sss
