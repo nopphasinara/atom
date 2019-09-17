@@ -1,0 +1,6 @@
+.DS_Store
+npm-debug.log
+node_modules
+/static/*
+/lib/history.json
+/lib/cmd/shell-history.json

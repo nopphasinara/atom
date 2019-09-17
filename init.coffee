@@ -215,27 +215,53 @@ atom.commands.add 'atom-text-editor', 'nerd:select-outside-brackets', ->
   atom.commands.dispatch(atom.views.getView(editor), "core:move-right")
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
 
+
+global.getHeadAndTailCharacters = (text) ->
+  if (text)
+    return [
+      text.substr(0, 1),
+      text.substr(-1, 1),
+    ]
+  return []
+
+
+global.havePunctuation = (arr = []) ->
+  if (arr.length > 0 && (arr.indexOf("}") >= 0 || arr.indexOf(")") >= 0))
+    return true
+  return false
+
+
+global.selectedTextHaveNewline = (text = "") ->
+  if (text && (text.search("\n") >= 0 || text.search("\r") >= 0))
+    return true
+  return false
+
+
+global.displayNotification = (message = "", type = "info", options = {}) ->
+  options = mergeObject({
+    dismissable: false,
+  }, options)
+
+  if (type == "info")
+    atom.notifications.addInfo(message, options)
+  if (type == "warning")
+    atom.notifications.addWarning(message, options)
+  if (type == "error")
+    atom.notifications.addError(message, options)
+  if (type == "fatalError")
+    atom.notifications.addFatalError(message, options)
+  if (type == "success")
+    atom.notifications.addSuccess(message, options)
+
+
 # sss
-atom.commands.add 'atom-text-editor', 'nerd:select-inside-brackets', ->
+atom.commands.add "atom-text-editor", "nerd:select-inside-brackets", ->
   editor = atom.workspace.getActiveTextEditor()
   atom.commands.dispatch(atom.views.getView(editor), "bracket-matcher:select-inside-brackets")
-  selectedText = editor.getSelectedText()
-  newSelectedText = selectedText
-  if selectedText == '  '
-    return
-  else
-    if selectedText.length > 0
-      newSelectedText = newSelectedText.replace("\r", "")
-                                       .replace("\n", "")
-                                       .trim("\s")
-      console.log newSelectedText
-      editor.setTextInBufferRange(editor.getSelectedBufferRange(), newSelectedText)
-      # # newSelectedText = selectedText.trim(" ")
-      # diffLength = selectedText.length - newSelectedText.length
-      # if diffLength
-      #   editor.moveRight()
-      #   editor.moveLeft(newSelectedText.length + 1)
-      #   editor.selectRight(newSelectedText.length)
+  selections = editor.getSelections()
+  if selections.length
+    selection = selections[0]
+    console.log selection
 
 
 # sss

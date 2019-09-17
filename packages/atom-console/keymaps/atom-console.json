@@ -1,0 +1,13 @@
+{
+    "atom-workspace": {
+        "ctrl-alt-x": "atom-console:toggle",
+        "ctrl-alt-c": "atom-console:focus"
+    },
+    ".console": {
+      "enter": "atom-console:send-command",
+      "ctrl-alt-g": "atom-console:stop-tool",
+      "up": "atom-console:get-prev-command",
+      "down": "atom-console:get-next-command",
+      "tab": "atom-console:autocomplete"
+    }
+}

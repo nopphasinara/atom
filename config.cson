@@ -94,6 +94,7 @@
       "coffee-compile"
       "atom-import-js"
       "atom-js-console"
+      "repl-console"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -150,6 +151,8 @@
   "js-hyperclick-project-path":
     jumpToImport: true
   livereload:
+    applyImageLive: true
+    autoStart: true
     useHTTPS: true
   "markdown-preview":
     breakOnSingleNewline: true
