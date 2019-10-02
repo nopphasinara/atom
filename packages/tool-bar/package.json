@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-  "_id": "tool-bar@1.1.12",
+  "_from": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+  "_id": "tool-bar@1.1.13",
   "_inBundle": false,
-  "_integrity": "sha512-DbEc04MkwXUruxOdT7cJCXkYI6ApPbDW2wtUEpNELp1fTStHoQYvVBS+KWYu9klpTbvBUWqiStSYuJGpDepN4A==",
+  "_integrity": "sha512-pjiICpaqM6S8mbGZutsMgfDgkeZiMlpN7Tc0l3ScWqHvQlSGkxdUlZ3fpC2MC6+z69X3x1npuL5HkKknXECggA==",
   "_location": "/tool-bar",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball"
+    "raw": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-  "_shasum": "ead79bd3f51a5ff873cac2f065e185b38cef4a3f",
-  "_spec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.12/tarball",
-  "_where": "/private/tmp/apm-install-dir-119612-1721-lk8pzj.v5k1",
+  "_resolved": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+  "_shasum": "b3f47f94ea8869d1d7d127bf51b73f06bf46c1da",
+  "_spec": "https://www.atom.io/api/packages/tool-bar/versions/1.1.13/tarball",
+  "_where": "/private/tmp/apm-install-dir-11992-36853-19nakp1.wmlik",
   "bugs": {
     "url": "https://github.com/suda/toolbar/issues"
   },
@@ -62,5 +62,5 @@
   "scripts": {
     "lint": "eslint --format tap . && remark ."
   },
-  "version": "1.1.12"
+  "version": "1.1.13"
 }

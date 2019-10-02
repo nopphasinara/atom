@@ -4,6 +4,8 @@
     fuzzyMatch: true
     helmDirSwitch: true
   "atom-autocomplete-php": {}
+  "atom-minify":
+    jsMinifier: "UglifyJS2"
   "autocomplete-js-import":
     fileRelativePaths: false
     fuzzy:
@@ -95,6 +97,7 @@
       "atom-import-js"
       "atom-js-console"
       "repl-console"
+      "atom-minify"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
