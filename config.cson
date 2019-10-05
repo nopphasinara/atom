@@ -98,6 +98,8 @@
       "atom-js-console"
       "repl-console"
       "atom-minify"
+      "atom-html-preview"
+      "preview-plus"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -171,6 +173,8 @@
     targets: [
       "toolkits"
     ]
+  preview:
+    _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
   "project-manager":
     showPath: false
     sortBy: "title"
