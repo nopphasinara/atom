@@ -34,4 +34,4 @@ recovery/
 .node-gyp/Library/Caches/
 # .apm/
 .node-gyp/
-# .apmrc
+.apm/.apmrc
