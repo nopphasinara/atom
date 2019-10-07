@@ -45,12 +45,12 @@
   "alt-cmd-s": "unset!"
   "cmd-w": "core:close"
   "cmd-ctrl-f": "unset!"
-  "cmd-z": "core:undo"
-  "shift-cmd-z": "core:redo"
-  "cmd-y": "core:redo"
-  "cmd-x": "core:cut"
-  "cmd-c": "core:copy"
-  "cmd-v": "core:paste"
+  # "cmd-z": "core:undo"
+  # "shift-cmd-z": "core:redo"
+  # "cmd-y": "core:redo"
+  # "cmd-x": "core:cut"
+  # "cmd-c": "core:copy"
+  # "cmd-v": "core:paste"
   "shift-up": "core:select-up"
   "shift-down": "core:select-down"
   "shift-left": "core:select-left"
@@ -108,6 +108,7 @@
   "shift-cmd-b": "unset!"
   'cmd-k cmd-n': "unset!"
 
+
 "atom-text-editor":
   "alt-left": "editor:move-to-beginning-of-word"
   "alt-right": "editor:move-to-end-of-word"
@@ -164,10 +165,13 @@
   # "alt-cmd-a": "aligner:align"
   # "alt-cmd-a": "simple-align:align"
   "alt-cmd-a": "atom-alignment:alignMultiple"
+  "ctrl-cmd-l": "line-to-console"
 
-# "atom-text-editor:not([mini])":
-#   "tab": "unset!"
-# "shift-tab": "unset!"
+
+"atom-workspace":
+  "ctrl-cmd-c": "repl-console:run"
+  "ctrl-cmd-j": "js-console:toggle"
+
 
 "atom-workspace atom-text-editor:not([mini])":
   # "tab": "snippets:next-tab-stop"
@@ -218,16 +222,16 @@
   "alt-cmd--": "unset!"
 
 "body .native-key-bindings":
-  "cmd-z": "core:undo"
-  "shift-cmd-z": "core:redo"
-  "cmd-x": "core:cut"
-  "cmd-c": "core:copy"
-  "cmd-v": "core:paste"
-  # "cmd-z": "native!"
-  # "shift-cmd-z": "native!"
-  # "cmd-x": "native!"
-  # "cmd-c": "native!"
-  # "cmd-v": "native!"
+  # "cmd-z": "core:undo"
+  # "shift-cmd-z": "core:redo"
+  # "cmd-x": "core:cut"
+  # "cmd-c": "core:copy"
+  # "cmd-v": "core:paste"
+  "cmd-z": "native!"
+  "shift-cmd-z": "native!"
+  "cmd-x": "native!"
+  "cmd-c": "native!"
+  "cmd-v": "native!"
   "alt-tab": "native!"
 
 
