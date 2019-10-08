@@ -25,13 +25,7 @@
     allowPendingPaneItems: false
     audioBeep: false
     closeEmptyWindows: false
-    disabledPackages: [
-      "autosave"
-      "background-tips"
-      "deprecation-cop"
-      "git-plus"
-      "welcome"
-    ]
+    fileSystemWatcher: "experimental"
     ignoredNames: [
       ".git"
       ".hg"
@@ -106,6 +100,8 @@
       "snippets"
     ]
     projectHome: "~/.dotfiles/projects"
+    reopenProjectMenuCount: 25
+    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
@@ -176,6 +172,9 @@
     ]
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
+  "preview-plus":
+    css: "Sass"
+    htmlp: true
   "project-manager":
     showPath: false
     sortBy: "title"

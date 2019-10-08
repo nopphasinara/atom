@@ -109,6 +109,9 @@
   'cmd-k cmd-n': "unset!"
 
 
+"atom-text-editor[data-grammar~=html]":
+  "shift-ctrl-h": "atom-html-preview:toggle"
+
 "atom-text-editor":
   "alt-left": "editor:move-to-beginning-of-word"
   "alt-right": "editor:move-to-end-of-word"

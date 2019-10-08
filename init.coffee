@@ -1,9 +1,8 @@
 # ~/.atom/init.coffee
 
-# pathToFunctionsFile = "./functions"
-#
-# global.functions = require(pathToFunctionsFile)
-#
+pathToFunctionsFile = "./functions.js"
+global.functions = require(pathToFunctionsFile)
+
 # Object.defineProperty global, 'functions', get: ->
 #   delete require.cache[require.resolve(pathToFunctionsFile)]
 #   require(pathToFunctionsFile)
