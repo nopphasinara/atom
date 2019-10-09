@@ -1,8 +1,5 @@
 # ~/.atom/init.coffee
 
-pathToFunctionsFile = "./functions.js"
-global.functions = require(pathToFunctionsFile)
-
 # Object.defineProperty global, 'functions', get: ->
 #   delete require.cache[require.resolve(pathToFunctionsFile)]
 #   require(pathToFunctionsFile)
@@ -20,10 +17,12 @@ link = require 'link'
 # link = require './packages/link/lib/link.js'
 
 
+global.exec = exec
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
 
-global.exec = exec
+pathToFunctionsFile = "./functions.js"
+global.functions = require(pathToFunctionsFile)
 
 
 # addEventListener('fetch', event => {
@@ -39,68 +38,68 @@ global.exec = exec
 # }
 
 
-global.getMethods = (obj, options = {}) ->
-  if options.returnAs && options.returnAs.toLowerCase() != 'string'
-    options.returnAs = 'array'
-
-  options = mergeObject({
-    returnAs: 'array',
-  }, options)
-
-  properties = []
-  currentObj = obj
-  if (currentObj = Object.getPrototypeOf(currentObj))
-    Object.getOwnPropertyNames(currentObj).map((item, key) ->
-      properties.push(item)
-    )
-    filtered = properties.filter((item, key) ->
-      return (typeof obj[item] == 'function')
-    )
-
-    if filtered.length > 0
-      if options.returnAs == 'string'
-        return filtered.join(', ')
-      else
-        return filtered
-
-
-mergeObject = (obj = {}, source = {}) ->
-  if source && Object.getOwnPropertyNames(source).length > 0
-    for key, value of source
-      obj[key] = value
-
-  return obj
-
-
-getOptions = (options = {}) ->
-  options = mergeObject({
-    select: true,
-    skip: false,
-    undo: '',
-    useSnippet: false,
-  }, options)
-
-  return options
-
-
-mutateSelectedText = (selections, options = {}) ->
-  options = mergeObject({
-    select: true,
-    skip: false,
-    undo: '',
-    useSnippet: false,
-  }, options)
-
-  for selection in selections
-    options.selectedText = selectedText = selection.getText()
-    selection.retainSelection = true
-    selection.plantTail()
-
-    insertText = "/*{{replacement}}*/"
-    insertText = insertText.replace("{{replacement}}", "#{selectedText}")
-    selection.insertText(insertText, options)
-
-    selection.retainSelection = false
+# mergeObject = (obj = {}, source = {}) ->
+#   if source && Object.getOwnPropertyNames(source).length > 0
+#     for key, value of source
+#       obj[key] = value
+#
+#   return obj
+#
+#
+# getMethods = (obj, options = {}) ->
+#   if options.returnAs && options.returnAs.toLowerCase() != 'string'
+#     options.returnAs = 'array'
+#
+#   options = mergeObject({
+#     returnAs: 'array',
+#   }, options)
+#
+#   properties = []
+#   currentObj = obj
+#   if (currentObj = Object.getPrototypeOf(currentObj))
+#     Object.getOwnPropertyNames(currentObj).map((item, key) ->
+#       properties.push(item)
+#     )
+#     filtered = properties.filter((item, key) ->
+#       return (typeof obj[item] == 'function')
+#     )
+#
+#     if filtered.length > 0
+#       if options.returnAs == 'string'
+#         return filtered.join(', ')
+#       else
+#         return filtered
+#
+#
+# getOptions = (options = {}) ->
+#   options = mergeObject({
+#     select: true,
+#     skip: false,
+#     undo: '',
+#     useSnippet: false,
+#   }, options)
+#
+#   return options
+#
+#
+# mutateSelectedText = (selections, options = {}) ->
+#   options = mergeObject({
+#     select: true,
+#     skip: false,
+#     undo: '',
+#     useSnippet: false,
+#   }, options)
+#
+#   for selection in selections
+#     options.selectedText = selectedText = selection.getText()
+#     selection.retainSelection = true
+#     selection.plantTail()
+#
+#     insertText = "/*{{replacement}}*/"
+#     insertText = insertText.replace("{{replacement}}", "#{selectedText}")
+#     selection.insertText(insertText, options)
+#
+#     selection.retainSelection = false
 
 
 ## Custom Commands

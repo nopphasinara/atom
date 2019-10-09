@@ -1,0 +1,64 @@
+'.source.js':
+  'Object.Assign':
+    prefix: 'Oas'
+    body:'Object.assign(${1:dest}, ${2:source})'
+
+  'Object.create':
+    prefix: 'Ocr'
+    body: 'Object.create(${1:target})'
+
+  'Object.defineProperties':
+    prefix: 'Odps'
+    body: 'Object.defineProperties(${1:obj}, ${2:props})'
+
+  'Object.defineProperty':
+    prefix: 'Odp'
+    body: 'Object.defineProperty(${1:obj}, ${2:prop}, ${3:description})'
+
+  'Object.freeze':
+    prefix: 'Ofz'
+    body: 'Object.freeze(${1:obj})'
+
+  'Object.getOwnPropertyDescriptor':
+    prefix: 'Ogopd'
+    body: 'Object.getOwnPropertyDescriptor(${1:obj}, ${2:prop})'
+
+  'Object.getOwnPropertyNames':
+    prefix: 'Ogopn'
+    body: 'Object.getOwnPropertyNames(${1:obj})'
+
+  'Object.getOwnPropertySymbols':
+    prefix: 'Ogops'
+    body: 'Object.getOwnPropertySymbols(${1:obj})'
+
+  'Object.hasOwnProperty':
+    prefix: 'Ohop'
+    body: 'Object.hasOwnProperty(${1:obj})'
+
+  'Object.is':
+    prefix: 'Ois'
+    body: 'Object.is(${1:value1}, ${2:value2})'
+
+  'Object.isExtensible':
+    prefix: 'Oie'
+    body: 'Object.isExtensible(${1:obj})'
+
+  'Object.isFrozen':
+    prefix: 'Oif'
+    body: 'Object.isFrozen(${1:obj})'
+
+  'Object.isSealed':
+    prefix: 'Ois'
+    body: 'Object.isSealed(${1:obj})'
+
+  'Object.keys':
+    prefix: 'Ok'
+    body: 'Object.keys(${1:obj})'
+
+  'Object.preventExtensions':
+    prefix: 'Ope'
+    body: 'Object.preventExtensions(${1:obj})'
+
+  'Object.seal':
+    prefix: 'Ose'
+    body: 'Object.seal(${1:obj})'

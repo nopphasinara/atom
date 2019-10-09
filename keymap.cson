@@ -276,6 +276,7 @@
   "alt-cmd-tab": "editor:auto-indent"
   "alt-cmd-/": "nerd:wrap-inline-comment"
   "alt-`": "nerd:php-echo"
+  "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-cmd-o": "project-manager:list-projects"

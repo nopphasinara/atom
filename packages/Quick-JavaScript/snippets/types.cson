@@ -1,0 +1,10 @@
+'.source.js':
+  'Array':
+    prefix: 'A'
+    body: 'Array'
+  'Typeof':
+    prefix: 'ty'
+    body: '''typeof ${1}'''
+  'Instanceof':
+    prefix: 'iof'
+    body: '${1:source} instanceof ${2:Object}'

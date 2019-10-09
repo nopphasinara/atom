@@ -1,450 +1,169 @@
-class Data {
-  constructor() {
-    this.e = atom.workspace.getActiveTextEditor();
-    this.r = this.e.getSelectedBufferRanges();
-    this.t = (range) => {
-      return this.e.getTextInBufferRange(range);
-    };
+const electron = require('electron');
+const shell = electron.shell;
+
+
+function mergeObject(obj, source) {
+  if (source && Object.getOwnPropertyNames(source).length > 0) {
+    for (key of Object.keys(source)) {
+      obj[key] = source[key];
+    }
   }
 
-  getMethods(obj, options) {
-    return global.getMethods(obj, options);
+  return obj;
+}
+
+
+function getMethods(obj, options = {}) {
+  if (options.returnAs && options.returnAs.toLowerCase() != 'array') {
+    options.returnAs = 'string';
+  }
+
+  options = mergeObject({
+    returnAs: 'string',
+  }, options);
+
+  var obj = atom.workspace.getActiveTextEditor();
+  var objPrototypes = getObjectPrototypes(obj);
+  if (obj = objPrototypes) {
+    var properties = [];
+    var objPropertyNames = getObjectPropertyNames(obj);
+    objPropertyNames.map(function (item, index) {
+      properties.push(item);
+    });
+    properties.sort();
+  }
+
+  if (options.returnAs == 'string') {
+    return properties.join('\n');
+  }
+  return properties;
+
+  var properties = [];
+  var currentObj = obj;
+  if (currentObj == Object.getPrototypeOf(currentObj)) {
+    Object.getOwnPropertyNames(currentObj).map(function(item, key) {
+      properties.push(item);
+    });
+
+    var filtered = properties.filter(function(item, key) {
+      return (typeof obj[item] == 'function');
+    });
+
+    if (filtered.length > 0) {
+      if (options.returnAs == 'string') {
+        return filtered.join(', ');
+      } else {
+        return filtered;
+      }
+    }
+  }
+}
+
+
+function getOptions(options) {
+  var options = mergeObject({
+    select: true,
+    skip: false,
+    undo: '',
+    useSnippet: false,
+  }, options);
+
+  return options;
+}
+
+
+function mutateSelectedText(selections, options) {
+  var options = mergeObject({
+    select: true,
+    skip: false,
+    undo: '',
+    useSnippet: false,
+  }, options);
+
+  for (var selection in selections) {
+    if (selections.hasOwnProperty(selection)) {
+      options.selectedText = selectedText = selection.getText();
+      selection.retainSelection = true;
+      selection.plantTail();
+
+      var insertText = "/*{{replacement}}*/";
+      insertText = insertText.replace("{{replacement}}", "#{selectedText}");
+      selection.insertText(insertText, options);
+
+      selection.retainSelection = false;
+    }
+  }
+}
+
+
+function getObjectPrototypes(obj) {
+  return Object.getPrototypeOf(obj);
+}
+
+function getObjectPropertyNames(obj) {
+  return Object.getOwnPropertyNames(obj);
+}
+
+
+class Data {
+  constructor() {
+    console.clear();
+
+
+    this.e = atom.workspace.getActiveTextEditor();
+    this.r = this.e.getSelectedBufferRanges();
+    this.t = function(range) {
+      return this.e.getTextInBufferRange(range);
+    };
+
+    this.registerCommands();
+
+    console.log(getMethods(this.e));
+  }
+
+  registerCommands() {
+    // atom.commands.add('atom-text-editor', 'nerd:show-current-file-in-file-manager', function() {
+    //
+    // });
+    //
+    // atom.commands.add('atom-text-editor', 'nerd:open-atom-src', function() {
+    //   shell.openExternal('https://github.com/atom/atom/tree/master/src');
+    // });
+  }
+
+  getNotificationOptions(options) {
+    var options = mergeObject({
+      description: '',
+      detail: '',
+      stack: '',
+      icon: 'info',
+      dismissable: false,
+    }, options);
+
+    return options;
+  }
+
+  showError(message, options) {
+    var options = mergeObject(this.getNotificationOptions(), mergeObject({
+      icon: 'flame',
+      dismissable: true,
+    }, options));
+    var notification = atom.notifications.addError(message, options);
+    console.log(notification.getOptions());
+    console.log(notification.getDetail());
+    console.log(notification);
+  }
+
+  revealFileInFinder(file) {
+    if (typeof file == 'undefined' || !file) {
+      // console.log(atom.textEditors);
+      // console.log(atom.workspace);
+      // console.log(atom);
+      // this.showError('no file input');
+    }
   }
 }
 global._data = new Data();
-
-
-var newClass = document.body.attributes.class.value;
-newClass = newClass.split(' ');
-var isFounded = newClass.filter((item, index) => {
-  return item == 'is-blurred';
-});
-if (!isFounded.length) {
-  newClass.push('is-blurred');
-}
-newClass = newClass.join(' ');
-document.body.setAttribute('class', newClass);
-
-
-var methods = [
-  'abortTransaction',
-  'addCursor',
-  'addCursorAtBufferPosition',
-  'addCursorAtScreenPosition',
-  'addGutter',
-  'addMarkerLayer',
-  'addSelection',
-  'addSelectionAbove',
-  'addSelectionBelow',
-  'addSelectionForBufferRange',
-  'addSelectionForScreenRange',
-  'anyLineNumberGutterVisible',
-  'autoDecreaseIndentForBufferRow',
-  'autoIndentBufferRow',
-  'autoIndentBufferRows',
-  'autoIndentSelectedRows',
-  'avoidMergingSelections',
-  'backspace',
-  'backwardsScanInBufferRange',
-  'bufferPositionForScreenPosition',
-  'bufferRangeForBufferRow',
-  'bufferRangeForScopeAtCursor',
-  'bufferRangeForScopeAtPosition',
-  'bufferRangeForScreenRange',
-  'bufferRowForScreenRow',
-  'bufferRowsForScreenRows',
-  'buildIndentString',
-  'clearSelections',
-  'clipBufferPosition',
-  'clipBufferRange',
-  'clipScreenPosition',
-  'clipScreenRange',
-  'consolidateSelections',
-  'constructor',
-  'copy',
-  'copyOnlySelectedText',
-  'copySelectedText',
-  'createCheckpoint',
-  'createLastSelectionIfNeeded',
-  'cursorMoved',
-  'cursorsForScreenRowRange',
-  'cutSelectedText',
-  'cutToEndOfBufferLine',
-  'cutToEndOfLine',
-  'decorateCursorLine',
-  'decorateMarker',
-  'decorateMarkerLayer',
-  'decorationsForScreenRowRange',
-  'decorationsStateForScreenRowRange',
-  'delete',
-  'deleteLine',
-  'deleteToBeginningOfLine',
-  'deleteToBeginningOfSubword',
-  'deleteToBeginningOfWord',
-  'deleteToEndOfLine',
-  'deleteToEndOfSubword',
-  'deleteToEndOfWord',
-  'deleteToNextWordBoundary',
-  'deleteToPreviousWordBoundary',
-  'destroy',
-  'destroyFoldsContainingBufferPositions',
-  'destroyFoldsIntersectingBufferRange',
-  'destroyMarker',
-  'didAddDecoration',
-  'doBackgroundWork',
-  'doesShowIndentGuide',
-  'doesShowLineNumbers',
-  'duplicateLines',
-  'emitWillInsertTextEvent',
-  'enableKeyboardInput',
-  'ensureWritable',
-  'expandSelectionsBackward',
-  'expandSelectionsForward',
-  'finalizeSelections',
-  'findMarkers',
-  'foldAll',
-  'foldAllAtIndentLevel',
-  'foldBufferRange',
-  'foldBufferRow',
-  'foldBufferRowRange',
-  'foldCurrentRow',
-  'foldSelectedLines',
-  'getAllowedLocations',
-  'getApproximateLongestScreenRow',
-  'getApproximateRightmostScreenPosition',
-  'getApproximateScreenLineCount',
-  'getAutoHeight',
-  'getAutoWidth',
-  'getBuffer',
-  'getCurrentParagraphBufferRange',
-  'getCursorAtScreenPosition',
-  'getCursorBufferPosition',
-  'getCursorBufferPositions',
-  'getCursors',
-  'getCursorScope',
-  'getCursorScreenPosition',
-  'getCursorScreenPositions',
-  'getCursorsOrderedByBufferPosition',
-  'getCursorSyntaxTreeScope',
-  'getDecorations',
-  'getDefaultCharWidth',
-  'getDefaultMarkerLayer',
-  'getDirectoryPath',
-  'getDoubleWidthCharWidth',
-  'getEditorWidthInChars',
-  'getElement',
-  'getEncoding',
-  'getEofBufferPosition',
-  'getFileName',
-  'getFirstVisibleScreenColumn',
-  'getFirstVisibleScreenRow',
-  'getGrammar',
-  'getGutters',
-  'getHalfWidthCharWidth',
-  'getHeight',
-  'getHighlightDecorations',
-  'getHorizontalScrollbarHeight',
-  'getHorizontalScrollMargin',
-  'getInvisibles',
-  'getKoreanCharWidth',
-  'getLastBufferRow',
-  'getLastCursor',
-  'getLastScreenRow',
-  'getLastSelection',
-  'getLastVisibleScreenRow',
-  'getLineCount',
-  'getLineDecorations',
-  'getLineHeightInPixels',
-  'getLineNumberDecorations',
-  'getLineNumberGutter',
-  'getLongestScreenRow',
-  'getLongTitle',
-  'getMarker',
-  'getMarkerCount',
-  'getMarkerLayer',
-  'getMarkers',
-  'getMaxScreenLineLength',
-  'getMaxScrollTop',
-  'getNonWordCharacters',
-  'getOverlayDecorations',
-  'getPath',
-  'getPlaceholderText',
-  'getPreferredLineLength',
-  'getRightmostScreenPosition',
-  'getRootScopeDescriptor',
-  'getRowsPerPage',
-  'getSaveDialogOptions',
-  'getScreenLineCount',
-  'getScrollBottom',
-  'getScrollHeight',
-  'getScrollLeft',
-  'getScrollLeftColumn',
-  'getScrollPastEnd',
-  'getScrollRight',
-  'getScrollSensitivity',
-  'getScrollTop',
-  'getScrollTopRow',
-  'getScrollWidth',
-  'getSelectedBufferRange',
-  'getSelectedBufferRanges',
-  'getSelectedScreenRange',
-  'getSelectedScreenRanges',
-  'getSelectedText',
-  'getSelectionAtScreenPosition',
-  'getSelections',
-  'getSelectionsOrderedByBufferPosition',
-  'getShowCursorOnSelection',
-  'getSoftTabs',
-  'getSoftWrapColumn',
-  'getSoftWrapHangingIndentLength',
-  'getTabLength',
-  'getTabText',
-  'getText',
-  'getTextInBufferRange',
-  'getTextInRange',
-  'getTitle',
-  'getUndoGroupingInterval',
-  'getURI',
-  'getVerticalScrollbarWidth',
-  'getVerticalScrollMargin',
-  'getVisibleRowRange',
-  'getWidth',
-  'getWordUnderCursor',
-  'groupChangesSinceCheckpoint',
-  'gutterWithName',
-  'handleLanguageModeChange',
-  'hasAtomicSoftTabs',
-  'hasMultipleCursors',
-  'indent',
-  'indentationForBufferRow',
-  'indentLevelForLine',
-  'indentSelectedRows',
-  'insertNewline',
-  'insertNewlineAbove',
-  'insertNewlineBelow',
-  'insertText',
-  'inspect',
-  'intersectsVisibleRowRange',
-  'isAlive',
-  'isBufferRowBlank',
-  'isBufferRowCommented',
-  'isDestroyed',
-  'isEmpty',
-  'isFoldableAtBufferRow',
-  'isFoldableAtScreenRow',
-  'isFoldedAtBufferRow',
-  'isFoldedAtCursorRow',
-  'isFoldedAtScreenRow',
-  'isKeyboardInputEnabled',
-  'isLineNumberGutterVisible',
-  'isMini',
-  'isModified',
-  'isReadOnly',
-  'isSoftWrapped',
-  'joinLines',
-  'lineLengthForScreenRow',
-  'lineTextForBufferRow',
-  'lineTextForScreenRow',
-  'logScreenLines',
-  'lowerCase',
-  'markBufferPosition',
-  'markBufferRange',
-  'markScreenPosition',
-  'markScreenRange',
-  'mergeCursors',
-  'mergeIntersectingSelections',
-  'mergeSelections',
-  'mergeSelectionsOnSameRows',
-  'moveCursors',
-  'moveDown',
-  'moveLeft',
-  'moveLineDown',
-  'moveLineUp',
-  'moveRight',
-  'moveSelectionLeft',
-  'moveSelectionRight',
-  'moveToBeginningOfLine',
-  'moveToBeginningOfNextParagraph',
-  'moveToBeginningOfNextWord',
-  'moveToBeginningOfPreviousParagraph',
-  'moveToBeginningOfScreenLine',
-  'moveToBeginningOfWord',
-  'moveToBottom',
-  'moveToEndOfLine',
-  'moveToEndOfScreenLine',
-  'moveToEndOfWord',
-  'moveToFirstCharacterOfLine',
-  'moveToNextSubwordBoundary',
-  'moveToNextWordBoundary',
-  'moveToPreviousSubwordBoundary',
-  'moveToPreviousWordBoundary',
-  'moveToTop',
-  'moveUp',
-  'mutateSelectedText',
-  'nextNonBlankBufferRow',
-  'normalizeTabsInBufferRange',
-  'observeCursors',
-  'observeDecorations',
-  'observeGrammar',
-  'observeGutters',
-  'observeSelections',
-  'onDidAddCursor',
-  'onDidAddDecoration',
-  'onDidAddGutter',
-  'onDidAddSelection',
-  'onDidChange',
-  'onDidChangeCursorPosition',
-  'onDidChangeEncoding',
-  'onDidChangeGrammar',
-  'onDidChangeIcon',
-  'onDidChangeLineNumberGutterVisible',
-  'onDidChangeMini',
-  'onDidChangeModified',
-  'onDidChangePath',
-  'onDidChangePlaceholderText',
-  'onDidChangeScrollLeft',
-  'onDidChangeScrollTop',
-  'onDidChangeSelectionRange',
-  'onDidChangeSoftWrapped',
-  'onDidChangeTitle',
-  'onDidConflict',
-  'onDidDestroy',
-  'onDidInsertText',
-  'onDidRemoveCursor',
-  'onDidRemoveDecoration',
-  'onDidRemoveGutter',
-  'onDidRemoveSelection',
-  'onDidRequestAutoscroll',
-  'onDidSave',
-  'onDidStopChanging',
-  'onDidTerminatePendingState',
-  'onDidTokenize',
-  'onDidUpdateDecorations',
-  'onWillInsertText',
-  'outdentSelectedRows',
-  'pageDown',
-  'pageUp',
-  'pasteText',
-  'pixelPositionForBufferPosition',
-  'pixelPositionForScreenPosition',
-  'pixelRectForScreenRange',
-  'ratioForCharacter',
-  'redo',
-  'removeSelection',
-  'replaceSelectedText',
-  'revertToCheckpoint',
-  'rowRangeForParagraphAtBufferRow',
-  'save',
-  'saveAs',
-  'scan',
-  'scanInBufferRange',
-  'scheduleComponentUpdate',
-  'scopeDescriptorForBufferPosition',
-  'screenLineForScreenRow',
-  'screenPositionForBufferPosition',
-  'screenPositionForPixelPosition',
-  'screenRangeForBufferRange',
-  'screenRowForBufferRow',
-  'scrollToBottom',
-  'scrollToBufferPosition',
-  'scrollToCursorPosition',
-  'scrollToScreenPosition',
-  'scrollToScreenRange',
-  'scrollToTop',
-  'selectAll',
-  'selectDown',
-  'selectionIntersectsBufferRange',
-  'selectionIntersectsVisibleRowRange',
-  'selectionRangeChanged',
-  'selectionsForScreenRows',
-  'selectLargerSyntaxNode',
-  'selectLeft',
-  'selectLinesContainingCursors',
-  'selectMarker',
-  'selectPageDown',
-  'selectPageUp',
-  'selectRight',
-  'selectSmallerSyntaxNode',
-  'selectToBeginningOfLine',
-  'selectToBeginningOfNextParagraph',
-  'selectToBeginningOfNextWord',
-  'selectToBeginningOfPreviousParagraph',
-  'selectToBeginningOfWord',
-  'selectToBottom',
-  'selectToBufferPosition',
-  'selectToEndOfLine',
-  'selectToEndOfWord',
-  'selectToFirstCharacterOfLine',
-  'selectToNextSubwordBoundary',
-  'selectToNextWordBoundary',
-  'selectToPreviousSubwordBoundary',
-  'selectToPreviousWordBoundary',
-  'selectToScreenPosition',
-  'selectToTop',
-  'selectUp',
-  'selectWordsContainingCursors',
-  'serialize',
-  'setCursorBufferPosition',
-  'setCursorScreenPosition',
-  'setDefaultCharWidth',
-  'setEditorWidthInChars',
-  'setEncoding',
-  'setFirstVisibleScreenColumn',
-  'setFirstVisibleScreenRow',
-  'setGrammar',
-  'setHeight',
-  'setHorizontalScrollMargin',
-  'setIndentationForBufferRow',
-  'setLineHeightInPixels',
-  'setLineNumberGutterVisible',
-  'setMini',
-  'setPlaceholderText',
-  'setReadOnly',
-  'setScrollBottom',
-  'setScrollLeft',
-  'setScrollLeftColumn',
-  'setScrollRight',
-  'setScrollTop',
-  'setScrollTopRow',
-  'setSelectedBufferRange',
-  'setSelectedBufferRanges',
-  'setSelectedScreenRange',
-  'setSelectedScreenRanges',
-  'setSoftTabs',
-  'setSoftWrapped',
-  'setTabLength',
-  'setText',
-  'setTextInBufferRange',
-  'setVerticalScrollMargin',
-  'setVisible',
-  'setWidth',
-  'shouldAutoIndent',
-  'shouldAutoIndentOnPaste',
-  'shouldPromptToSave',
-  'splitSelectionsIntoLines',
-  'subscribeToBuffer',
-  'subscribeToDisplayLayer',
-  'suggestedIndentForBufferRow',
-  'syntaxTreeScopeDescriptorForBufferPosition',
-  'terminatePendingState',
-  'toggleFoldAtBufferRow',
-  'toggleLineCommentForBufferRow',
-  'toggleLineCommentsForBufferRows',
-  'toggleLineCommentsInSelection',
-  'toggleSoftTabs',
-  'toggleSoftWrapped',
-  'tokenForBufferPosition',
-  'tokensForScreenRow',
-  'transact',
-  'transpose',
-  'undo',
-  'unfoldAll',
-  'unfoldBufferRow',
-  'unfoldCurrentRow',
-  'update',
-  'upperCase',
-  'usesSoftTabs',
-];
 
 // module.exports =
 //   onSave: (editor) ->
