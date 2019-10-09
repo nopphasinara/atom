@@ -117,18 +117,16 @@ class Data {
     };
 
     this.registerCommands();
-
-    console.log(getMethods(this.e));
   }
 
   registerCommands() {
     // atom.commands.add('atom-text-editor', 'nerd:show-current-file-in-file-manager', function() {
     //
     // });
-    //
-    // atom.commands.add('atom-text-editor', 'nerd:open-atom-src', function() {
-    //   shell.openExternal('https://github.com/atom/atom/tree/master/src');
-    // });
+
+    atom.commands.add('atom-text-editor', 'nerd:open-atom-src', function() {
+      shell.openExternal('https://github.com/atom/atom/tree/master/src');
+    });
   }
 
   getNotificationOptions(options) {
