@@ -34,6 +34,8 @@ export default {
       if(stderr){
         console.log(stderr);
       }
+
+      console.log('Finished executing code via REPL Console');
     });
   },
 
@@ -111,5 +113,7 @@ export default {
     if(command){
       this.runCommand(command);
     }
+
+    console.log('Finished executing code via REPL Console');
   }
 };

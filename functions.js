@@ -111,10 +111,10 @@ class Data {
 
 
     this.e = atom.workspace.getActiveTextEditor();
-    this.r = this.e.getSelectedBufferRanges();
-    this.t = function(range) {
-      return this.e.getTextInBufferRange(range);
-    };
+    // this.r = this.e.getSelectedBufferRanges();
+    // this.t = function(range) {
+    //   return this.e.getTextInBufferRange(range);
+    // };
 
     this.registerCommands();
   }
