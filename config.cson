@@ -25,6 +25,12 @@
     allowPendingPaneItems: false
     audioBeep: false
     closeEmptyWindows: false
+    disabledPackages: [
+      "about"
+      "background-tips"
+      "autosave"
+      "deprecation-cop"
+    ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
       ".git"
