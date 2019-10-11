@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-  "_id": "repl-console@0.4.3",
+  "_from": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_id": "repl-console@0.4.4",
   "_inBundle": false,
-  "_integrity": "sha512-6xrhq6gMxFmYzyhm6HoyjVY+AjacapHv+nezWeTY3B5vxngZpuPJ4bEx4puEfw0y3v9CgfRvNqwKKI88v1Wi4A==",
+  "_integrity": "sha512-h9ArCinM25knOmGjcm32ua4kQVhaJiazBlsY/PV2++hGdra5M/sRK3A7lSv6XIxj5nes8gn9jh4pXLvq12PxQw==",
   "_location": "/repl-console",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball"
+    "raw": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-  "_shasum": "ce16933ea650b9ed3f079bf3c5ebfaa5147a24f2",
-  "_spec": "https://www.atom.io/api/packages/repl-console/versions/0.4.3/tarball",
-  "_where": "/private/tmp/apm-install-dir-119910-5629-teq1ht.vm1y",
+  "_resolved": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_shasum": "71885df33156676cd645074ca450395328cc50f3",
+  "_spec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-119911-23395-1a9u2ig.l10h",
   "activationCommands": {
     "atom-workspace": "repl-console:run"
   },
@@ -45,5 +45,5 @@
     "type": "git",
     "url": "git+https://github.com/mohan/repl-console.git"
   },
-  "version": "0.4.3"
+  "version": "0.4.4"
 }

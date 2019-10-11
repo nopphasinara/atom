@@ -112,8 +112,8 @@ export default {
 
     if(command){
       this.runCommand(command);
+    } else {
+      console.log('Finished executing code via REPL Console');
     }
-
-    console.log('Finished executing code via REPL Console');
   }
 };
