@@ -166,13 +166,18 @@ class Data {
     var selections = editor.getSelections();
     if (selections) {
       editor.mutateSelectedText((selection, index) => {
-        var cursor = selection.cursor;
-        var buffer = selection.getBufferRange();
+        selection.modifySelection(() => {
+          selection.editor.buffer.setTextInRange(selection.getBufferRange(), '/* '+ selection.getText() +' */');
+        });
       });
     }
   }
 }
 global._data = new Data();
+
+atom.commands.add('atom-text-editor', 'nerd:wrap', () => {
+  _data.wrapInlineComment();
+});
 
 
 // _data.wrapInlineComment();
