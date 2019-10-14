@@ -110,31 +110,31 @@ atom.workspace.observeActiveTextEditor ->
   # functions.onSave(editor)
 
 
-# Comment wrap with /* ... */
-atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
-  # editor.autoIndentSelectedRows()
-
-  options = getOptions({
-    select: true,
-    undo: 'skip',
-    skip: true,
-  })
-  editor = atom.workspace.getActiveTextEditor()
-  selections = editor.getSelections()
-  callback = (selections, options = {}) ->
-    options = getOptions(options)
-    for selection in selections
-      selectedText = selection.getText()
-      selection.retainSelection = true
-      selection.plantTail()
-      selection.insertText("/* #{selectedText} */", options)
-      selection.cursor.moveLeft(selectedText.length + 3)
-      if selectedText.length > 0
-        selection.selectRight(selectedText.length)
-      selection.retainSelection = false
-
-  if selections && selections.length > 0
-    callback(selections, options)
+# # Comment wrap with /* ... */
+# atom.commands.add "atom-text-editor", "nerd:wrap-inline-comment", ->
+#   # editor.autoIndentSelectedRows()
+#
+#   options = getOptions({
+#     select: true,
+#     undo: 'skip',
+#     skip: true,
+#   })
+#   editor = atom.workspace.getActiveTextEditor()
+#   selections = editor.getSelections()
+#   callback = (selections, options = {}) ->
+#     options = getOptions(options)
+#     for selection in selections
+#       selectedText = selection.getText()
+#       selection.retainSelection = true
+#       selection.plantTail()
+#       selection.insertText("/* #{selectedText} */", options)
+#       selection.cursor.moveLeft(selectedText.length + 3)
+#       if selectedText.length > 0
+#         selection.selectRight(selectedText.length)
+#       selection.retainSelection = false
+#
+#   if selections && selections.length > 0
+#     callback(selections, options)
 
 
 # Insert <?php echo ...; ?>

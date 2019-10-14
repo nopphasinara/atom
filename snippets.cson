@@ -214,6 +214,12 @@
 
 
 '.text.html.php':
+  '<?php echo... ?>':
+    'prefix': 'echo'
+    'body': '''
+    <?php echo ${1:\\'$2\\'}; ?>$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
   '<link...>':
     'prefix': 'link'
     'body': '''

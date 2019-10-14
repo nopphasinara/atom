@@ -153,15 +153,30 @@ class Data {
   }
 
   revealFileInFinder(file) {
-    if (typeof file == 'undefined' || !file) {
-      // console.log(atom.textEditors);
-      // console.log(atom.workspace);
-      // console.log(atom);
-      // this.showError('no file input');
+    // if (typeof file == 'undefined' || !file) {
+    //   // console.log(atom.textEditors);
+    //   // console.log(atom.workspace);
+    //   // console.log(atom);
+    //   // this.showError('no file input');
+    // }
+  }
+
+  wrapInlineComment() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var selections = editor.getSelections();
+    if (selections) {
+      editor.mutateSelectedText((selection, index) => {
+        var cursor = selection.cursor;
+        var buffer = selection.getBufferRange();
+      });
     }
   }
 }
 global._data = new Data();
+
+
+_data.wrapInlineComment();
+
 
 // module.exports =
 //   onSave: (editor) ->
