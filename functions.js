@@ -175,7 +175,7 @@ class Data {
 global._data = new Data();
 
 
-_data.wrapInlineComment();
+// _data.wrapInlineComment();
 
 
 // module.exports =
