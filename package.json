@@ -93,6 +93,7 @@
     "simple-align": "file:packages/simple-align",
     "sort-lines": "file:packages/sort-lines",
     "split-diff": "file:packages/split-diff",
+    "ssh2": "^0.8.5",
     "stringmap": ">=0.2.2",
     "sub-atom": ">=1.1.0",
     "tildify": ">=2.0.0",
