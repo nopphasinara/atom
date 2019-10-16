@@ -23,7 +23,13 @@ global.activeEditor = () ->
 
 pathToFunctionsFile = "./functions.js"
 global.functions = require(pathToFunctionsFile)
+Object.defineProperty global, 'functions', ->
+  delete require.cache[require.resolve(pathToFunctionsFile)]
+  require(pathToFunctionsFile)
 
+
+atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
+  _data.wrapInlineComment()
 
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))

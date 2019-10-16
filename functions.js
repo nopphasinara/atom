@@ -1,6 +1,6 @@
+const _ = require('underscore-plus');
 const electron = require('electron');
 const shell = electron.shell;
-
 
 function mergeObject(obj, source) {
   if (source && Object.getOwnPropertyNames(source).length > 0) {
@@ -147,9 +147,6 @@ class Data {
       dismissable: true,
     }, options));
     var notification = atom.notifications.addError(message, options);
-    console.log(notification.getOptions());
-    console.log(notification.getDetail());
-    console.log(notification);
   }
 
   revealFileInFinder(file) {
@@ -165,30 +162,16 @@ class Data {
     var editor = atom.workspace.getActiveTextEditor();
     var selections = editor.getSelections();
     if (selections) {
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
       editor.mutateSelectedText((selection, index) => {
-        selection.modifySelection(() => {
-          selection.editor.buffer.setTextInRange(selection.getBufferRange(), '/* '+ selection.getText() +' */');
-        });
+        snippetsService.insert('/* ${1:'+ selection.getText() +'} */$0', selection.editor, selection.cursor);
       });
     }
   }
 }
+
 global._data = new Data();
-
-atom.commands.add('atom-text-editor', 'nerd:wrap', () => {
-  _data.wrapInlineComment();
-});
-
-
-// _data.wrapInlineComment();
-
-
-// module.exports =
-//   onSave: (editor) ->
-//     console.log "Saved!"
-//
-//     selections = editor.getSelections()
-//     if selections.length > 0
-//       console.log selections
-//       console.log "selectedText"
-//       console.log editor.getSelectedText()
