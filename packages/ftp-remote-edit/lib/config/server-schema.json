@@ -1,0 +1,15 @@
+{
+  "name": "new server",
+  "host": "",
+  "port": "",
+  "user": "",
+  "secure": false,
+  "parent": null,
+  "useAgent": false,
+  "password": "",
+  "sftp": false,
+  "privatekeyfile": "",
+  "remote": "/",
+  "logon": "credentials",
+  "temp": false
+}

@@ -112,6 +112,7 @@
 "atom-text-editor[data-grammar~=html]":
   "shift-ctrl-h": "atom-html-preview:toggle"
 
+
 "atom-text-editor":
   "alt-left": "editor:move-to-beginning-of-word"
   "alt-right": "editor:move-to-end-of-word"
@@ -177,6 +178,9 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
+  "cmd-b": "nerd:markdown-text-bold"
+  "alt-cmd-up": "editor:upper-case"
+  "alt-cmd-down": "editor:lower-case"
   # "tab": "snippets:next-tab-stop"
   # "shift-tab": "snippets:previous-tab-stop"
   "alt-cmd-d": "sass-autocompile:compile-direct"

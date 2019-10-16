@@ -1,0 +1,95 @@
+{
+  "_from": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+  "_id": "json-schema@0.1.15",
+  "_inBundle": false,
+  "_integrity": "sha512-qWXqYTFwnvT0GF5DjoGJmbr1v852pH2gZ+Bu3UMhbcQ4AN4ZjXui7DWVs4PRL+58Kg8OG73X4l5mDgbbPtY3DQ==",
+  "_location": "/json-schema",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+  "_shasum": "f851f25b842d43dd9afce62b13464816d8332b2e",
+  "_spec": "https://www.atom.io/api/packages/json-schema/versions/0.1.15/tarball",
+  "_where": "/private/tmp/apm-install-dir-119916-32571-1qaqxdc.ql9",
+  "bugs": {
+    "url": "https://github.com/OmniSharp/atom-json-schema/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "jsonschema.provider": {
+      "versions": {
+        "0.1.0": "consumeProvider"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
+    "bluebird": "^2.9.27",
+    "del": "^1.2.0",
+    "fuzzaldrin": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.5",
+    "is-my-json-valid": "^2.12.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.0",
+    "loopback": "^2.22.2",
+    "loopback-datasource-juggler": "^2.40.1",
+    "loophole": "^1.1.0",
+    "merge-stream": "^0.1.8",
+    "node-fetch": "^1.3.1",
+    "react": "^0.13.3",
+    "rx": "^2.5.3",
+    "semver": "^5.0.0",
+    "through2": "^2.0.0",
+    "tsd": "~0.6.1",
+    "typescript": "^1.5.0-beta"
+  },
+  "deprecated": false,
+  "description": "Json Schema enhancements for Atom",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/OmniSharp/atom-json-schema#readme",
+  "license": "MIT",
+  "main": "./lib/json-schema",
+  "name": "json-schema",
+  "package-dependencies": {
+    "linter": ">=1.0.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "description": "Json Schema based auto completions.",
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmniSharp/atom-json-schema.git"
+  },
+  "scripts": {
+    "postinstall": "gulp npm-postinstall",
+    "prepublish": "gulp npm-prepublish"
+  },
+  "version": "0.1.15"
+}

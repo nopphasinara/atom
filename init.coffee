@@ -31,6 +31,9 @@ Object.defineProperty global, 'functions', ->
 atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
   _data.wrapInlineComment()
 
+atom.commands.add 'atom-text-editor', 'nerd:markdown-text-bold', ->
+  _data.markdownTextBold()
+
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
 # })

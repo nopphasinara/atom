@@ -1,6 +1,16 @@
 @import "ui-variables";
 
 // Custom variables
+@font-icons:
+"boxicons", "Material Design Icons",
+"Material Icons",
+"fontcustom",
+"master-icons",
+"FontAwesome",
+"octicons",
+"OpenWeb Icons",
+"Typicons",
+"Symbol", "Apple Symbols";
 @btn-icon-size: 1em;
 @font-size-sm: .875em;
 @tool-bar-font-size: 1em;
@@ -10,6 +20,219 @@
 @tool-bar-btn-hover: @accent-color;
 @title-bar-bg: lighten(@mono-1, 10%);
 @title-bar-fg: @mono-3;
+
+
+.markdown-preview {
+  @markdown-font: "Lato", "system-ui", extract(@font-icons, 2), extract(@font-icons, 1);
+  @markdown-fg: shade(@mono-1, 70%);
+  @markdown-bg: #ffffff;
+  @markdown-link-fg: @accent-color !important;
+  @markdown-heading: shade(@mono-1, 60%);
+  @markdown-heading-font: "Lato", "system-ui";
+  @markdown-heading-weight: bold;
+  @markdown-code-fg: shade(@mono-1, 40%);
+  @markdown-code-bg: tint(@mono-1, 80%);
+  @markdown-code-selection-bg: tint(@markdown-code-bg, 30%);
+
+  &.markdown-preview {
+    font-family: @markdown-font;
+    color: @markdown-fg;
+    background-color: @markdown-bg;
+
+    strong {
+      color: inherit;
+    }
+
+    b {
+      color: shade(@hue-4, 60%);
+      background-color: tint(@hue-4, 40%);
+      padding: .3em .6em .25em .6em;
+      -webkit-border-radius: .3em;
+      -moz-border-radius: .3em;
+      border-radius: .3em;
+      box-shadow: .1em .1em .3em tint(@mono-1, 40%);
+      font-weight: normal;
+
+      &:after,
+      &::before {
+        // font-family: @markdown-font, extract(@font-icons, 3), extract(@font-icons, 2), extract(@font-icons, 1);
+        line-height: normal;
+        vertical-align: baseline;
+        display: inline-block;
+        zoom: -1;
+        text-decoration: none;
+      }
+
+      &:before {
+        padding-right: .2em;
+        content: "";
+      }
+    }
+
+    a,
+    a:visited,
+    a:active,
+    a:focus,
+    a:hover {
+      color: @markdown-link-fg;
+    }
+
+    a {
+      &:after,
+      &::before {
+        font-family: @markdown-font, extract(@font-icons, 3), extract(@font-icons, 2), extract(@font-icons, 1);
+        line-height: normal;
+        vertical-align: baseline;
+        display: inline-block;
+        zoom: -1;
+        text-decoration: none;
+      }
+
+      &:not([title="IMAGE"]):not([title="BLANK"]):not([title="#"]) {
+        &:after {
+          margin-left: .3em;
+          content: "";
+        }
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: @markdown-heading-font;
+      // font-weight: @markdown-heading-weight;
+      color: @markdown-heading;
+    }
+  }
+
+  &:not([data-use-github-style]) {
+    table {
+      width: 100%;
+    }
+
+    td {
+      vertical-align: top;
+      color: @markdown-fg;
+    }
+
+    th {
+      vertical-align: middle;
+      color: @markdown-code-bg;
+      background-color: @ui-bg;
+      text-align: center;
+    }
+
+    atom-text-editor {
+      background-color: @markdown-code-bg;
+
+      &.has-selection {
+        .selection {
+          background-color: @markdown-code-selection-bg;
+        }
+      }
+    }
+  }
+
+  > .editor,
+  > .editor * {
+    color: @markdown-code-fg;
+  }
+}
+
+/* .markdownFont {
+font-family: "system-ui", extract(@font-icons, 3), extract(@font-icons, 2), extract(@font-icons, 1);
+
+
+.markdownLinksIcon {
+a {
+&:after {
+content: "                ﮳   ";
+}
+}
+}
+
+.markdownLinks {
+a {
+&:active,
+&:focus,
+&:hover {
+text-decoration: underline !important;
+}
+
+color: #176093 !important;
+
+* {
+vertical-align: baseline !important;
+}
+
+&:before,
+&:after {
+display: inline-block !important;
+zoom: -1 !important;
+line-height: normal !important;
+vertical-align: baseline !important;
+padding: 8px 10px 5px 8px !important;
+.borderRadius();
+}
+}
+
+.markdownLinksIcon();
+}
+
+.markdown-preview {
+line-height: auto !important;
+
+* {
+.markdownFont();
+}
+
+&.markdown-preview {
+background-color: #ffffff !important;
+
+* {
+color: #4e4e4e !important;
+}
+
+.markdownLinks();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Lato", "system-ui";
+font-weight: inherit;
+color: inherit;
+}
+
+small {
+font-size: .725em;
+}
+
+.code {
+.borderRadius();
+padding: 1em 1.2em 1em 1.2em;
+color: shade(@mono-1, 40%) !important;
+background-color: tint(@mono-1, 80%) !important;
+
+atom-text-editor,
+.editor {
+color: shade(@mono-1, 40%) !important;
+
+* {
+color: shade(@mono-1, 40%) !important;
+}
+}
+}
+}} */
+
+
+.borderRadius {
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -msie-border-radius: 4px !important;
+  border-radius: 4px !important;
+}
 
 
 // Editor
@@ -104,7 +327,7 @@ atom-text-editor {
   }
 
   .gc {
-    font-family: "boxicons", "Material-Design-Icons" !important;
+    font-family: extract(@font-icons, 1), extract(@font-icons, 2), extract(@font-icons, 3) !important;
     // font-family: "Material-Design-Icons" !important;
     // font-family: "master-icons" !important;
     font-size: @btn-icon-size !important;
@@ -339,19 +562,19 @@ atom-dock {
 .mixin(@x) when (default()) {z: @x}
 
 div {
-  .mixin(3);
+.mixin(3);
 }
 
 div.special {
-  .mixin(1);
+.mixin(1);
 }
 
 // output
 div {
-  z: 3;
+z: 3;
 }
 div.special {
-  x: 11;
+x: 11;
 }
 */
 
@@ -361,20 +584,20 @@ div.special {
 .mixin(@value) when not(default())    {padding: (@value / 5)}
 
 div-1 {
-  .mixin(100px);
+.mixin(100px);
 }
 
 div-2 {
-  .mixin(100%);
+.mixin(100%);
 }
 
 // output
 div-1 {
-  width: 100px;
-  padding: 20px;
+width: 100px;
+padding: 20px;
 }
 div-2 {
-  //
+//
 }
 */
 
