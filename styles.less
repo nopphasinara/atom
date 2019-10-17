@@ -22,18 +22,19 @@
 @title-bar-fg: @mono-3;
 
 
-.markdown-preview {
-  @markdown-font: "Lato", "system-ui", extract(@font-icons, 2), extract(@font-icons, 1);
-  @markdown-fg: shade(@mono-1, 70%);
-  @markdown-bg: #ffffff;
-  @markdown-link-fg: @accent-color !important;
-  @markdown-heading: shade(@mono-1, 60%);
-  @markdown-heading-font: "Lato", "system-ui";
-  @markdown-heading-weight: bold;
-  @markdown-code-fg: shade(@mono-1, 40%);
-  @markdown-code-bg: tint(@mono-1, 80%);
-  @markdown-code-selection-bg: tint(@markdown-code-bg, 30%);
+@markdown-font: "Lato", "system-ui", extract(@font-icons, 2), extract(@font-icons, 1);
+@markdown-fg: shade(@mono-1, 70%);
+@markdown-bg: #ffffff;
+@markdown-link-fg: @accent-color !important;
+@markdown-heading: shade(@mono-1, 60%);
+@markdown-heading-font: "Lato", "system-ui";
+@markdown-heading-weight: bold;
+@markdown-code-fg: shade(@mono-1, 40%);
+@markdown-code-bg: tint(@mono-1, 80%);
+@markdown-code-selection-bg: tint(@markdown-code-bg, 30%);
 
+
+.markdown-preview {
   &.markdown-preview {
     font-family: @markdown-font;
     color: @markdown-fg;
@@ -134,6 +135,92 @@
   > .editor,
   > .editor * {
     color: @markdown-code-fg;
+  }
+}
+
+html[data-markdown-preview-plus-context="live-preview"] {
+  .update-preview {
+    font-family: @markdown-font;
+    color: @markdown-fg;
+    background-color: @markdown-bg;
+
+    hr {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    strong {
+      color: inherit;
+    }
+
+    b {
+      color: shade(@hue-4, 60%);
+      background-color: tint(@hue-4, 40%);
+      padding: .3em .6em .25em .6em;
+      -webkit-border-radius: .3em;
+      -moz-border-radius: .3em;
+      border-radius: .3em;
+      box-shadow: .1em .1em .3em tint(@mono-1, 40%);
+      font-weight: normal;
+
+      &:after,
+      &::before {
+        font-family: @markdown-font, extract(@font-icons, 3), extract(@font-icons, 2), extract(@font-icons, 1);
+        line-height: normal;
+        vertical-align: baseline;
+        display: inline-block;
+        zoom: -1;
+        text-decoration: none;
+      }
+
+      &:before {
+        padding-right: .2em;
+        content: "";
+      }
+    }
+
+    a,
+    a:visited,
+    a:active,
+    a:focus,
+    a:hover {
+      color: @markdown-link-fg;
+      text-decoration: none;
+    }
+
+    a {
+      &:after,
+      &::before {
+        font-family: @markdown-font, extract(@font-icons, 3), extract(@font-icons, 2), extract(@font-icons, 1);
+        line-height: normal;
+        vertical-align: baseline;
+        display: inline-block;
+        zoom: -1;
+        text-decoration: none;
+      }
+
+      &:not([title="IMAGE"]):not([title="BLANK"]):not([title="#"]) {
+        &:after {
+          margin-left: .3em;
+          content: "";
+        }
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: @markdown-heading-font;
+      // font-weight: @markdown-heading-weight;
+      // color: @markdown-heading;
+    }
+
+    .editor-colors {
+      color: @markdown-code-fg;
+      background-color: @markdown-code-bg;
+
+      &.lang-text {
+
+      }
+    }
   }
 }
 

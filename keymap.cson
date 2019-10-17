@@ -178,6 +178,7 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
+  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
   "cmd-b": "nerd:markdown-text-bold"
   "alt-cmd-up": "editor:upper-case"
   "alt-cmd-down": "editor:lower-case"

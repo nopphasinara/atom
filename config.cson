@@ -30,6 +30,7 @@
       "background-tips"
       "autosave"
       "deprecation-cop"
+      "markdown-preview"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -101,6 +102,8 @@
       "atom-html-preview"
       "preview-plus"
       "atom-line-to-console"
+      "markdown-helper"
+      "markdown-preview-plus"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -164,6 +167,19 @@
     useHTTPS: true
   "markdown-preview":
     breakOnSingleNewline: true
+  "markdown-preview-plus":
+    markdownItConfig:
+      breakOnSingleNewline: true
+    previewConfig:
+      closePreviewWithEditor: false
+    saveConfig:
+      saveToPDFOptions:
+        printBackground: true
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnChange: true
+      syncPreviewOnEditorScroll: true
+    useGitHubStyle: true
   metrics:
     dev:
       sendMetricsInDevMode: true
@@ -204,6 +220,9 @@
     addNewTabsAtEnd: true
     displayMruTabList: false
     enableMruTabSwitching: false
+  "tidy-markdown":
+    ensureFirstHeaderIsH1: false
+    runOnSave: false
   "tool-bar": {}
   "tree-view":
     alwaysOpenExisting: true

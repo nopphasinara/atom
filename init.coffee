@@ -34,6 +34,9 @@ atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
 atom.commands.add 'atom-text-editor', 'nerd:markdown-text-bold', ->
   _data.markdownTextBold()
 
+atom.commands.add 'atom-text-editor', 'nerd:markdown-wrap-with-link', ->
+  _data.markdownWrapWithLink()
+
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
 # })

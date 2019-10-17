@@ -133,7 +133,7 @@ module.exports =
 
     @toolBar.addButton
       callback:
-        '': 'markdown-preview:toggle'
+        '': 'markdown-preview-plus:toggle'
       text: '<i class="gc"></i>'
       html: true
       tooltip: 'Markdown Preview'

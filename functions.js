@@ -173,6 +173,24 @@ class Data {
     }
   }
 
+  markdownWrapWithLink() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = editor.getCursorScope().scopes.shift();
+    if (rootScope == 'source.gfm') {
+      var selections = editor.getSelections();
+      if (selections) {
+        var snippets = atom.packages.getActivePackage('snippets');
+        if (snippets) {
+          var snippetsService = snippets.mainModule;
+        }
+
+        editor.mutateSelectedText((selection, index) => {
+          snippetsService.insert('[${1:'+ selection.getText() +'}]("${2:'+ selection.getText() +'}" "${3:#}")$0', selection.editor, selection.cursor);
+        });
+      }
+    }
+  }
+
   markdownTextBold() {
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = editor.getCursorScope().scopes.shift();
