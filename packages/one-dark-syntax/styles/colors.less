@@ -2,6 +2,8 @@
 // Config -----------------------------------
 @base:
   // #2A2D3E,
+  shade(#444267, 30%),
+  #292D3F,
   #292D3E,
   #2D3440,
   #22212C,
@@ -37,6 +39,7 @@
   hsl(187, 47%, 55%);
 @hue-1: hsl(hue(extract(@cyan, 1)), saturation(extract(@cyan, 1)), lightness(extract(@cyan, 1)));
 @blue:
+	tint(saturate(#80A8FF, 6%), 32%),
   tint(saturate(#82AAFF, -6%), 10%),
   // tint(saturate(#5EADF1, -8%), 10%),
   hsl(207, 82%, 72%),
