@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-  "_id": "markdown-preview-plus@3.11.0",
+  "_from": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+  "_id": "markdown-preview-plus@3.11.1",
   "_inBundle": false,
-  "_integrity": "sha512-lPzVdqre/ocnliMDLzPyyoM7aIskqWyqLgmGIMCUWbHyDqxPwo1M5oL5MwXVKM9ofF8WpZGez/sbPf0MZXJPHQ==",
+  "_integrity": "sha512-B/GOLo11xJdI4BY7HWH/B/kAQ0Ke7KsxlTxaXKIprc7m8o6XbZaFZCZcGuuo7OHrV6bsAhRzaKoaqMHcoEhggA==",
   "_location": "/markdown-preview-plus",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball"
+    "raw": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-  "_shasum": "301ac20f63ca5d556e9d00790b787492b98b5e38",
-  "_spec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-119918-6079-1y3cfbq.rwyq",
+  "_resolved": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+  "_shasum": "852716176a5113ebfd69702f09b4955146c6047f",
+  "_spec": "https://www.atom.io/api/packages/markdown-preview-plus/versions/3.11.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-119931-9527-1dnfb6m.4xa6",
   "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
   "bugs": {
     "url": "https://github.com/atom-community/markdown-preview-plus/issues"
@@ -102,5 +102,5 @@
     "test": "npm run typecheck && npm run lint && npm run prettier-check",
     "typecheck": "tsc --noEmit -p src && tsc --noEmit -p src-client && tsc --noEmit -p spec"
   },
-  "version": "3.11.0"
+  "version": "3.11.1"
 }
