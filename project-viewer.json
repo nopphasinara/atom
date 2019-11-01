@@ -1,7 +1,7 @@
 {
   "info": {
     "version": "1.1.0",
-    "updated": "2019-11-01T19:48:00.753Z"
+    "updated": "2019-11-01T21:13:43.399Z"
   },
   "root": [
     {
@@ -53,6 +53,17 @@
         "/Volumes/Data/www/soho-art.com",
         "/Volumes/Data/www/staging.soho-art.com",
         "/Volumes/Data/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Karabiner",
+      "icon": "icon-keyboard",
+      "color": "#248232",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Users/sudprawat/.dotfiles/settings/karabiner"
       ]
     }
   ]
