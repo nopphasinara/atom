@@ -683,7 +683,7 @@ world</p>
       )
       preview = await expectPreviewInSplitPane()
 
-      await preview.renderPromise
+      await preview.initialRenderPromise
 
       expect(await usesGithubStyle(preview)).to.be.false
     })
@@ -704,7 +704,7 @@ world</p>
       expect(await usesGithubStyle(preview)).to.be.true
     })
 
-    it('updates the rendering style immediately when the configuration is changed', async function() {
+    it.only('updates the rendering style immediately when the configuration is changed', async function() {
       const editor = await atom.workspace.open(
         path.join(tempPath, 'subdir/simple.md'),
       )
@@ -718,9 +718,11 @@ world</p>
       expect(await usesGithubStyle(preview)).to.be.false
 
       atom.config.set('markdown-preview-plus.useGitHubStyle', true)
+      await waitsFor(async () => (await usesGithubStyle(preview)) === true)
       expect(await usesGithubStyle(preview)).to.be.true
 
       atom.config.set('markdown-preview-plus.useGitHubStyle', false)
+      await waitsFor(async () => (await usesGithubStyle(preview)) === false)
       expect(await usesGithubStyle(preview)).to.be.false
     })
   })
@@ -878,7 +880,7 @@ world</p>
       atom.views
         .getView(atom.workspace)
         .appendChild(atom.views.getView(preview))
-      await preview.renderPromise
+      await preview.initialRenderPromise
     })
     afterEach(() => {
       preview.destroy()

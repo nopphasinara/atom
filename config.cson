@@ -31,6 +31,10 @@
       "autosave"
       "deprecation-cop"
       "markdown-preview"
+      "project-manager"
+      "git-diff"
+      "tidy-markdown"
+      "split-diff"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -104,6 +108,8 @@
       "atom-line-to-console"
       "markdown-helper"
       "markdown-preview-plus"
+      "project-plus"
+      "snippet-injector"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -114,7 +120,7 @@
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
-    fontFamily: "Menlo, boxicons, Material-Design-Icons, mastericons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "Menlo, boxicons, Material-Design-Icons, fontcustom, master-icons, Font Awesome, octicons, Typicons, Symbol, Apple Symbols, Consolas, DejaVu Sans Mono, sans-serif, monospace"
     invisibles: {}
     maxScreenLineLength: 4096
     scrollPastEnd: true
@@ -198,8 +204,22 @@
     css: "Sass"
     htmlp: true
   "project-manager":
+    prettifyTitle: false
     showPath: false
     sortBy: "title"
+  "project-plus":
+    autoDiscover: false
+    newWindow: true
+    notifications: false
+  "project-viewer":
+    disclaimer:
+      v140: false
+    hideHeader: true
+    openNewWindow: true
+    rootSortBy: "alphabetically"
+    statusBar: true
+    visibilityActive: false
+    visibilityOption: "Remember state"
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
@@ -212,6 +232,8 @@
     sourceMap: true
   "settings-view":
     packageUpdateConcurrency: 1
+  "snippet-injector":
+    atomSync: true
   "split-diff":
     turnOffSoftWrap: true
   "symbols-view":

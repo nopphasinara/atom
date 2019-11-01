@@ -1,0 +1,33 @@
+{
+  "info": {
+    "version": "1.1.0",
+    "updated": "2019-11-01T07:52:48.773Z"
+  },
+  "root": [
+    {
+      "type": "project",
+      "name": "reproduction-gallery.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/reproduction-gallery.com",
+        "/Users/Fineart/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "soho-art.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/staging.soho-art.com",
+        "/Volumes/Data/www/soho-art.com",
+        "/Users/Fineart/Alias/Controls"
+      ]
+    }
+  ]
+}

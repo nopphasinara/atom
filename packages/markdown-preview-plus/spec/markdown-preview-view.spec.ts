@@ -43,14 +43,14 @@ describe('MarkdownPreviewView', function() {
     const mpv = new MarkdownPreviewViewFile(filePath)
     window.workspaceDiv.appendChild(mpv.element)
     previews.add(mpv)
-    await mpv.renderPromise
+    await mpv.initialRenderPromise
     return mpv
   }
   const createMarkdownPreviewViewEditor = async function(editor: TextEditor) {
     const mpv = MarkdownPreviewViewEditor.create(editor)
     window.workspaceDiv.appendChild(mpv.element)
     previews.add(mpv)
-    await mpv.renderPromise
+    await mpv.initialRenderPromise
     return mpv
   }
 
@@ -91,7 +91,7 @@ describe('MarkdownPreviewView', function() {
   describe('::constructor', () =>
     it('shows an error message when there is an error', async function() {
       // tslint:disable-next-line: no-unsafe-any
-      ;(preview as any).showError(new Error('Not a real file'))
+      await (preview as any).showError(new Error('Not a real file'))
       expect(await previewText(preview)).to.contain('Failed')
     }))
 
@@ -108,7 +108,7 @@ describe('MarkdownPreviewView', function() {
       ) as MarkdownPreviewView
       window.workspaceDiv.appendChild(newPreview.element)
       expect(newPreview.getPath()).to.equal(preview.getPath())
-      await newPreview.renderPromise
+      await newPreview.initialRenderPromise
     })
 
     it('does not recreate a preview when the file no longer exists', async function() {
@@ -145,7 +145,7 @@ describe('MarkdownPreviewView', function() {
 
       window.workspaceDiv.appendChild(newPreview.element)
       await waitsFor(() => newPreview.getPath() === preview.getPath())
-      await newPreview.renderPromise
+      await newPreview.initialRenderPromise
     })
   })
 
@@ -748,7 +748,7 @@ var x = 0;
 
       expect(fs.existsSync(outputPath)).to.be.false
 
-      await preview.renderPromise
+      await preview.initialRenderPromise
 
       let textEditor: TextEditor
       const openedPromise = new Promise(function(resolve) {

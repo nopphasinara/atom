@@ -1,6 +1,17 @@
 const _ = require('underscore-plus');
+const path = require('path');
+const fs = require('fs-plus');
 const electron = require('electron');
-const shell = electron.shell;
+const {
+  BrowserWindow,
+  Menu,
+  app,
+  clipboard,
+  dialog,
+  ipcMain,
+  shell,
+  screen,
+} = require('electron');
 
 function mergeObject(obj, source) {
   if (source && Object.getOwnPropertyNames(source).length > 0) {
@@ -175,7 +186,7 @@ class Data {
 
   markdownWrapWithLink() {
     var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = editor.getCursorScope().scopes.shift();
+    var rootScope = this.getRootScope(editor);
     if (rootScope == 'source.gfm') {
       var selections = editor.getSelections();
       if (selections) {
@@ -193,7 +204,7 @@ class Data {
 
   markdownTextBold() {
     var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = editor.getCursorScope().scopes.shift();
+    var rootScope = this.getRootScope(editor);
     if (rootScope == 'source.gfm') {
       var selections = editor.getSelections();
       if (selections) {
@@ -208,6 +219,32 @@ class Data {
       }
     }
   }
+
+  getRootScope(editor) {
+    if (typeof editor == 'object' && editor) {
+      return editor.getCursorScope().scopes.shift();
+    }
+
+    return;
+  }
+
+  openProjectFiles() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    var files = [
+      '~/.atom/project-viewer.json',
+      '~/.atom/projects.cson',
+    ];
+    files.forEach((file, index) => {
+      exec("ls "+ file +" 2>/dev/null", (err, stdout, stderr) => {
+        if (stdout) {
+          // exec("atom '"+ stdout +"'");
+        }
+      });
+    });
+  }
 }
 
 global._data = new Data();
+
+_data.openProjectFiles();
