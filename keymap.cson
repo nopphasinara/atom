@@ -284,7 +284,8 @@
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
-  "shift-cmd-o": "project-manager:list-projects"
+  "shift-cmd-o": "project-viewer:toggleSelectList"
+  # "shift-cmd-o": "project-manager:list-projects"
   "alt-cmd-p": "project-manager:edit-projects"
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"

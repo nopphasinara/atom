@@ -1,9 +1,22 @@
 {
   "info": {
     "version": "1.1.0",
-    "updated": "2019-11-01T07:52:48.773Z"
+    "updated": "2019-11-01T19:48:00.753Z"
   },
   "root": [
+    {
+      "type": "project",
+      "name": "โต๊ะจีนชลบุรี.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/โต๊ะจีนชลบุรี.com",
+        "/Volumes/Drives/Google Drive/- Work Storage/โต๊ะจีนชลบุรี.com",
+        "/Volumes/Data/www/www1.โต๊ะจีนชลบุรี.com"
+      ]
+    },
     {
       "type": "project",
       "name": "reproduction-gallery.com",
@@ -27,6 +40,19 @@
         "/Volumes/Data/www/staging.soho-art.com",
         "/Volumes/Data/www/soho-art.com",
         "/Users/Fineart/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "soho-art.com",
+      "icon": "icon-repo",
+      "color": "#ffdb80",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/soho-art.com",
+        "/Volumes/Data/www/staging.soho-art.com",
+        "/Volumes/Data/Alias/Controls"
       ]
     }
   ]

@@ -109,6 +109,7 @@
       "markdown-helper"
       "markdown-preview-plus"
       "project-plus"
+      "project-viewer"
       "snippet-injector"
     ]
     packagesWithSnippetsDisabled: [
@@ -218,7 +219,6 @@
     openNewWindow: true
     rootSortBy: "alphabetically"
     statusBar: true
-    visibilityActive: false
     visibilityOption: "Remember state"
   "remote-sync":
     autoHideLogPanel: true
