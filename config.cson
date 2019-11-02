@@ -219,6 +219,7 @@
     openNewWindow: true
     rootSortBy: "alphabetically"
     statusBar: true
+    visibilityActive: false
     visibilityOption: "Remember state"
   "remote-sync":
     autoHideLogPanel: true

@@ -284,9 +284,12 @@
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
+  "shift-alt-cmd-o": "project-viewer:togglePanel"
   "shift-cmd-o": "project-viewer:toggleSelectList"
   # "shift-cmd-o": "project-manager:list-projects"
-  "alt-cmd-p": "project-manager:edit-projects"
+  "alt-cmd-p": "project-viewer:openDatabase"
+  "shift-alt-cmd-p": "project-viewer:createNewProject"
+  # "alt-cmd-p": "project-manager:edit-projects"
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"
   "shift-cmd-f11": "ftp-remote-edit:upload-file"

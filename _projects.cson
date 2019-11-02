@@ -1,0 +1,116 @@
+[
+  {
+    title: "- Control"
+    paths: [
+      "/Volumes/Drives/Dropbox"
+    ]
+  }
+  {
+    title: "- Fineart"
+    paths: [
+      "/Volumes/Drives/Google Drive/- Fineart"
+    ]
+  }
+  {
+    title: "~/.atom"
+    paths: [
+      "~/.atom"
+    ]
+  }
+  {
+    title: "~/.ssh"
+    paths: [
+      "~/.ssh"
+    ]
+  }
+  {
+    title: "~/.config"
+    paths: [
+      "~/.config"
+    ]
+  }
+  {
+    title: "~/.dotfiles"
+    paths: [
+      "~/.dotfiles"
+    ]
+  }
+  {
+    title: "~/.dotfiles/settings/Karabiner"
+    paths: [
+      "~/.dotfiles/settings/Karabiner"
+    ]
+  }
+  {
+    title: "~/www/dashboard"
+    paths: [
+      "~/www/dashboard"
+    ]
+  }
+  {
+    title: "~/www/โต๊ะจีนชลบุรี.com"
+    paths: [
+      "~/www/โต๊ะจีนชลบุรี.com"
+    ]
+  }
+  {
+    title: "~/www/realestate.local"
+    paths: [
+      "~/www/realestate.local"
+    ]
+  }
+  {
+    title: "~/www/soho-art.com"
+    paths: [
+      "~/www/soho-art.com"
+    ]
+  }
+  {
+    title: "staging.soho-art.com"
+    paths: [
+      "~/www/staging.soho-art.com"
+    ]
+  }
+  {
+    title: "~/www/grunt-project"
+    paths: [
+      "~/www/grunt-project"
+    ]
+  }
+  {
+    title: "~/www/gulp-project"
+    paths: [
+      "~/www/gulp-project"
+    ]
+  }
+  {
+    title: "~/www/testing"
+    paths: [
+      "~/www/testing"
+    ]
+  }
+  {
+    title: "~/www/reproduction-gallery.com"
+    paths: [
+      "~/www/reproduction-gallery.com"
+    ]
+  }
+  {
+    title: "~/www/eazyportrait.com"
+    paths: [
+      "~/www/eazyportrait.com"
+    ]
+  }
+  {
+    title: "~/www/ecommerce"
+    paths: [
+      "~/www/ecommerce"
+    ]
+  }
+  {
+    title: "~/www/migrate.reproduction-gallery.com"
+    paths: [
+      "~/www/migrate.reproduction-gallery.com"
+    ]
+  }
+]
