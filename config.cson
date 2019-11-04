@@ -35,6 +35,7 @@
       "git-diff"
       "tidy-markdown"
       "split-diff"
+      "git-plus"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
