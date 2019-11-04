@@ -37,20 +37,18 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/staging.soho-art.com",
         "/Volumes/Data/www/soho-art.com",
         "/Volumes/Data/Alias/Controls"
       ]
     },
     {
       "type": "project",
-      "name": "soho-art.com",
+      "name": "staging.soho-art.com",
       "icon": "icon-repo",
       "color": "#ffdb80",
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/soho-art.com",
         "/Volumes/Data/www/staging.soho-art.com",
         "/Volumes/Data/Alias/Controls"
       ]
@@ -63,7 +61,7 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Users/sudprawat/.dotfiles/settings/karabiner"
+        "~/.dotfiles/settings/karabiner"
       ]
     }
   ]
