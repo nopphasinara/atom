@@ -6,7 +6,7 @@
   "root": [
     {
       "type": "project",
-      "name": ".dorfiles",
+      "name": ".dotfiles",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
