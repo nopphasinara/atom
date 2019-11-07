@@ -112,6 +112,7 @@
       "project-plus"
       "project-viewer"
       "snippet-injector"
+      "ask-stack"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -234,8 +235,6 @@
     sourceMap: true
   "settings-view":
     packageUpdateConcurrency: 1
-  "snippet-injector":
-    atomSync: true
   "split-diff":
     turnOffSoftWrap: true
   "symbols-view":

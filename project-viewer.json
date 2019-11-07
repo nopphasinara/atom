@@ -17,6 +17,43 @@
     },
     {
       "type": "project",
+      "name": ".atom",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "~/.atom"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "abacus-gallery.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/abacus-gallery.com",
+        "/Volumes/Data/Google Drives/- Fineart/abacus-gallery.com",
+        "/Volumes/Data/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "staging.abacus-gallery.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/staging.abacus-gallery.com",
+        "/Volumes/Data/Google Drives/- Fineart/abacus-gallery.com",
+        "/Volumes/Data/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
       "name": "โต๊ะจีนชลบุรี.com",
       "icon": "icon-repo",
       "color": "#f7b05b",

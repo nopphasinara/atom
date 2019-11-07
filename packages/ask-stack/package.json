@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+  "_id": "ask-stack@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-o86sN5AJyH9YLsF2UMGPI7IQ4kNYldF6/bmq1Jc94czQajfwrmt2A/2CZgP5CCxQkE2KT3eJqbO5wf5JFzhHaA==",
+  "_location": "/ask-stack",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+  "_shasum": "f88a7f953d39611e84cf1a0631c28b830d9c66b6",
+  "_spec": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-119107-67174-zyyr1d.r62e",
+  "activationCommands": {
+    "atom-text-editor": [
+      "ask-stack:ask-question"
+    ]
+  },
+  "author": {
+    "name": "Christophe Naud-Dulude",
+    "url": "https://github.com/Chris911"
+  },
+  "bugs": {
+    "url": "https://github.com/Chris911/Ask-Stack-Atom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "event-kit": "~1.2.0",
+    "highlight.js": "8.x",
+    "request": "2.x"
+  },
+  "deprecated": false,
+  "description": "Quickly get answers and code samples from Stack Overflow in Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/Chris911/Ask-Stack-Atom#readme",
+  "license": "MIT",
+  "main": "./lib/ask-stack",
+  "name": "ask-stack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris911/Ask-Stack-Atom.git"
+  },
+  "version": "2.2.0"
+}
