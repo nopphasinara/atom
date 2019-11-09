@@ -170,6 +170,8 @@
     jumpToImport: true
   "js-hyperclick-project-path":
     jumpToImport: true
+  "language-applescript":
+    autoCompile: false
   livereload:
     applyImageLive: true
     autoStart: true
@@ -257,6 +259,10 @@
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
+".applescript.source":
+  editor:
+    commentEnd: " *)"
+    commentStart: "(* "
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
