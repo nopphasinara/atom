@@ -255,14 +255,14 @@
     showOnStartup: false
   whitespace: {}
   "wrap-guide": {}
-".blade.html.php.text":
-  editor:
-    commentEnd: " --}}"
-    commentStart: "{{-- "
 ".applescript.source":
   editor:
     commentEnd: " *)"
     commentStart: "(* "
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
