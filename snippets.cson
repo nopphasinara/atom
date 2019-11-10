@@ -315,6 +315,25 @@
 
 
 '.source.php':
+  'phpdoc':
+    'prefix': 'doc'
+    'body': '''
+    /**
+     * ${1:Register a binding with the container.}
+     *
+     * @param  string|array  $abstract
+     * @param  \Closure|string|null  $concrete
+     * @param  bool  $shared
+     * @return void
+     *
+     * @throws \Exception
+     */
+    public function ${2:bind}(${3:\$abstract, \$concrete = null, \$shared = false})
+    {
+        ${4://}
+    }$0
+    '''
+    'leftLabelHTML': '<span class="snippet-label success">PHP</span>'
   'echo...':
     'prefix': 'echo'
     'body': """
