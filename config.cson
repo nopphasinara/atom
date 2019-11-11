@@ -287,3 +287,6 @@
 ".shell.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+  whitespace:
+    removeTrailingWhitespace: false
+    ensureSingleTrailingNewline: true
