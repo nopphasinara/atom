@@ -288,5 +288,5 @@
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
   whitespace:
-    removeTrailingWhitespace: false
     ensureSingleTrailingNewline: true
+    removeTrailingWhitespace: false
