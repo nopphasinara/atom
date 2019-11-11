@@ -6,23 +6,13 @@
   "root": [
     {
       "type": "project",
-      "name": ".dotfiles",
+      "name": "-",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
       "config": {},
       "paths": [
-        "~/.dotfiles"
-      ]
-    },
-    {
-      "type": "project",
-      "name": ".atom",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
+        "~/.dotfiles",
         "~/.atom"
       ]
     },
@@ -35,18 +25,6 @@
       "config": {},
       "paths": [
         "/Volumes/Data/www/abacus-gallery.com",
-        "/Volumes/Data/Google Drives/- Fineart/abacus-gallery.com",
-        "/Volumes/Data/Alias/Controls"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging.abacus-gallery.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
         "/Volumes/Data/www/staging.abacus-gallery.com",
         "/Volumes/Data/Google Drives/- Fineart/abacus-gallery.com",
         "/Volumes/Data/Alias/Controls"
@@ -79,6 +57,18 @@
     },
     {
       "type": "project",
+      "name": "reproduction-galleries.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/reproduction-galleries.com",
+        "/Volumes/Data/Alias/Controls"
+      ]
+    },
+    {
+      "type": "project",
       "name": "soho-art.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
@@ -86,17 +76,6 @@
       "config": {},
       "paths": [
         "/Volumes/Data/www/soho-art.com",
-        "/Volumes/Data/Alias/Controls"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging.soho-art.com",
-      "icon": "icon-repo",
-      "color": "#ffdb80",
-      "devMode": false,
-      "config": {},
-      "paths": [
         "/Volumes/Data/www/staging.soho-art.com",
         "/Volumes/Data/Alias/Controls"
       ]
