@@ -14,6 +14,7 @@
       "paths": [
         "~/.dotfiles",
         "~/.oh-my-zsh",
+        "~/.config",
         "~/.atom"
       ]
     },
