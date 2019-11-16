@@ -182,7 +182,7 @@ module.exports =
         '': 'ask-stack:ask-question'
       text: '<i class="gc"></i>'
       html: true
-      tooltip: 'Dev Tools'
+      tooltip: 'Ask Stack'
       type: 'button'
 
     @toolBar.addSpacer()
