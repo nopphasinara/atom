@@ -17,6 +17,7 @@ link = require 'link'
 # link = require './packages/link/lib/link.js'
 
 
+global.pinnedCopySelectedText = null
 global.exec = exec
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
@@ -36,6 +37,12 @@ atom.commands.add 'atom-text-editor', 'nerd:markdown-text-bold', ->
 
 atom.commands.add 'atom-text-editor', 'nerd:markdown-wrap-with-link', ->
   _data.markdownWrapWithLink()
+
+atom.commands.add 'atom-text-editor', 'nerd:pinned-copy-selected-text', ->
+  _data.pinnedCopySelectedText()
+
+atom.commands.add 'atom-text-editor', 'nerd:load-pinned-copy-selected-text', ->
+  _data.loadPinnedCopySelectedText()
 
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))

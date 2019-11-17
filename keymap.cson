@@ -178,6 +178,8 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
+  "shift-cmd-c": "nerd:pinned-copy-selected-text"
+  "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
   "alt-cmd-enter": "nerd:markdown-wrap-with-link"
   "cmd-b": "nerd:markdown-text-bold"
   "alt-cmd-up": "editor:upper-case"

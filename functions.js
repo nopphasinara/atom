@@ -243,8 +243,29 @@ class Data {
       });
     });
   }
+
+  pinnedCopySelectedText() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    var selectedText = editor.getSelectedText();
+    if (selectedText) {
+      global.pinnedCopySelectedText = selectedText;
+    }
+    return selectedText;
+  }
+
+  loadPinnedCopySelectedText() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    var selectedText = global.pinnedCopySelectedText;
+    if (selectedText) {
+      editor.insertText(selectedText);
+    }
+    return selectedText;
+  }
 }
 
 global._data = new Data();
 
-_data.openProjectFiles();
+// _data.pinnedCopySelectedText();
+// console.log(pinnedCopySelectedText);
