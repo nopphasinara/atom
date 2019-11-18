@@ -130,6 +130,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabType: "soft"
   emmet:
     extensionsPath: "~/.dotfiles/projects/emmet"
   "exception-reporting":
