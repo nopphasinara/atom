@@ -44,6 +44,9 @@ atom.commands.add 'atom-text-editor', 'nerd:pinned-copy-selected-text', ->
 atom.commands.add 'atom-text-editor', 'nerd:load-pinned-copy-selected-text', ->
   _data.loadPinnedCopySelectedText()
 
+atom.commands.add 'atom-text-editor', 'nerd:plain-text-commend', ->
+  _data.plainTextCommend()
+
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
 # })

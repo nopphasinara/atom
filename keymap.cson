@@ -249,6 +249,9 @@
 'atom-text-editor[data-grammar~="jsx"]:not([mini])':
   "shift-enter": "emmet:expand-abbreviation-with-tab"
 
+'atom-text-editor[data-grammar~="text"][data-grammar~="plain"]:not([mini])':
+  "cmd-/": "nerd:plain-text-commend"
+
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
   "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"

@@ -220,6 +220,24 @@ class Data {
     }
   }
 
+  plainTextCommend() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'text.plain') {
+      var selections = editor.getSelections();
+      if (selections) {
+        var snippets = atom.packages.getActivePackage('snippets');
+        if (snippets) {
+          var snippetsService = snippets.mainModule;
+        }
+
+        editor.mutateSelectedText((selection, index) => {
+          snippetsService.insert('## ${1:'+ selection.getText() +'}\n# ---------------- #$0', selection.editor, selection.cursor);
+        });
+      }
+    }
+  }
+
   getRootScope(editor) {
     if (typeof editor == 'object' && editor) {
       return editor.getCursorScope().scopes.shift();
@@ -269,3 +287,5 @@ global._data = new Data();
 
 // _data.pinnedCopySelectedText();
 // console.log(pinnedCopySelectedText);
+
+// _data.plainTextCommend();

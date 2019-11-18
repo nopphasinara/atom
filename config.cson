@@ -273,6 +273,9 @@
   editor:
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
 ".plain.text":
+  editor:
+    commentEnd: ""
+    commentStart: "# "
   whitespace:
     ensureSingleTrailingNewline: false
 ".python.source":
