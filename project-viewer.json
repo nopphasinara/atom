@@ -34,6 +34,18 @@
     },
     {
       "type": "project",
+      "name": "museum-reproductions.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/www/museum-reproductions.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
       "name": "โต๊ะจีนชลบุรี.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
