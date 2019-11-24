@@ -220,7 +220,7 @@ class Data {
     }
   }
 
-  plainTextCommend() {
+  plainTextComment() {
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = this.getRootScope(editor);
     if (rootScope == 'text.plain') {
@@ -229,10 +229,46 @@ class Data {
         var snippets = atom.packages.getActivePackage('snippets');
         if (snippets) {
           var snippetsService = snippets.mainModule;
-        }
 
+          editor.mutateSelectedText((selection, index) => {
+            var selectedText = '';
+            if (selection.getText() && selection.getText() != '') {
+              selectedText = selection.getText();
+            }
+            snippetsService.insert('## ${1:'+ selectedText +'}\n# ---------------- #$0', selection.editor, selection.cursor);
+          });
+        }
+      } else {
         editor.mutateSelectedText((selection, index) => {
-          snippetsService.insert('## ${1:'+ selection.getText() +'}\n# ---------------- #$0', selection.editor, selection.cursor);
+          var selectedText = '';
+          snippetsService.insert('## ${1:'+ selectedText +'}\n# ---------------- #$0', editor, editor.cursor);
+        });
+      }
+    }
+  }
+
+  markdownCodeBlock() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm') {
+      var selections = editor.getSelections();
+      if (selections) {
+        var snippets = atom.packages.getActivePackage('snippets');
+        if (snippets) {
+          var snippetsService = snippets.mainModule;
+
+          editor.mutateSelectedText((selection, index) => {
+            var selectedText = '';
+            if (selection.getText() && selection.getText() != '') {
+              selectedText = selection.getText();
+            }
+            snippetsService.insert('```\n${1:'+ selectedText +'}\n```$0', selection.editor, selection.cursor);
+          });
+        }
+      } else {
+        editor.mutateSelectedText((selection, index) => {
+          var selectedText = '';
+          snippetsService.insert('## ${1:'+ selectedText +'}\n# ---------------- #$0', editor, editor.cursor);
         });
       }
     }

@@ -180,8 +180,6 @@
 "atom-workspace atom-text-editor:not([mini])":
   "shift-cmd-c": "nerd:pinned-copy-selected-text"
   "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
-  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
-  "cmd-b": "nerd:markdown-text-bold"
   "alt-cmd-up": "editor:upper-case"
   "alt-cmd-down": "editor:lower-case"
   # "tab": "snippets:next-tab-stop"
@@ -250,7 +248,12 @@
   "shift-enter": "emmet:expand-abbreviation-with-tab"
 
 'atom-text-editor[data-grammar~="text"][data-grammar~="plain"]:not([mini])':
-  "cmd-/": "nerd:plain-text-commend"
+  "cmd-/": "nerd:plain-text-comment"
+
+'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"]:not([mini])':
+  "cmd-b": "nerd:markdown-text-bold"
+  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
+  "cmd-?": "nerd:markdown-code-block"
 
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
   "alt-cmd-d": "sass-autocompile:compile-direct"
