@@ -123,7 +123,7 @@
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
-    fontFamily: "Menlo, boxicons, Material-Design-Icons, fontcustom, master-icons, Font Awesome, octicons, Typicons, Symbol, Apple Symbols, Consolas, DejaVu Sans Mono, sans-serif, monospace"
+    fontFamily: "Menlo, Sarabun, boxicons, Material-Design-Icons, fontcustom, master-icons, Font Awesome, octicons, Typicons, Symbol, Apple Symbols, Consolas, DejaVu Sans Mono, sans-serif, monospace"
     invisibles: {}
     maxScreenLineLength: 4096
     scrollPastEnd: true

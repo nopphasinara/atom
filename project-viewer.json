@@ -13,8 +13,6 @@
       "config": {},
       "paths": [
         "~/.dotfiles",
-        "~/.oh-my-zsh",
-        "~/.config",
         "~/.atom"
       ]
     },
@@ -53,7 +51,18 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "www1.xn--82ce5arg8cm8f1bf5a5ive.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
         "/Volumes/Data/Alias/www/www1.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
