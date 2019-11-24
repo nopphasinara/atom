@@ -26,8 +26,8 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/abacus-gallery.com",
-        "/Volumes/Data/www/staging.abacus-gallery.com",
+        "/Volumes/Data/Alias/www/abacus-gallery.com",
+        "/Volumes/Data/Alias/www/staging.abacus-gallery.com",
         "/Volumes/Drives/Google Drive/- Fineart/abacus-gallery.com/docs",
         "/Volumes/Data/Projects/controls"
       ]
@@ -40,22 +40,22 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/museum-reproductions.com",
+        "/Volumes/Data/Alias/www/museum-reproductions.com",
         "/Volumes/Drives/Google Drive/- Fineart/museum-reproductions.com/docs",
         "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
-      "name": "โต๊ะจีนชลบุรี.com",
+      "name": "xn--82ce5arg8cm8f1bf5a5ive.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/โต๊ะจีนชลบุรี.com",
-        "/Volumes/Drives/Google Drive/- Work Storage/โต๊ะจีนชลบุรี.com",
-        "/Volumes/Data/www/www1.โต๊ะจีนชลบุรี.com"
+        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/www1.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {
@@ -66,7 +66,7 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/reproduction-gallery.com",
+        "/Volumes/Data/Alias/www/reproduction-gallery.com",
         "/Volumes/Data/Projects/controls"
       ]
     },
@@ -78,7 +78,7 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/reproduction-galleries.com",
+        "/Volumes/Data/Alias/www/reproduction-galleries.com",
         "/Volumes/Data/Projects/controls"
       ]
     },
@@ -90,8 +90,8 @@
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/www/soho-art.com",
-        "/Volumes/Data/www/staging.soho-art.com",
+        "/Volumes/Data/Alias/www/soho-art.com",
+        "/Volumes/Data/Alias/www/staging.soho-art.com",
         "/Volumes/Data/Google Drives/- Fineart/Soho-Art.com",
         "/Volumes/Data/Projects/controls"
       ]
