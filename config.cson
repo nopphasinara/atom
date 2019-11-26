@@ -24,7 +24,6 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    closeEmptyWindows: false
     disabledPackages: [
       "about"
       "background-tips"
@@ -37,7 +36,6 @@
       "split-diff"
       "git-plus"
     ]
-    fileSystemWatcher: "experimental"
     ignoredNames: [
       ".git"
       ".hg"
@@ -119,7 +117,6 @@
     ]
     projectHome: "~/.dotfiles/projects"
     reopenProjectMenuCount: 25
-    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
@@ -287,10 +284,10 @@
     autoIndentOnPaste: true
 ".shell-session.text":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
 ".shell.source":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: false

@@ -13,7 +13,8 @@
       "config": {},
       "paths": [
         "~/.dotfiles",
-        "~/.atom"
+        "~/.atom",
+        "/Volumes/Data/Alias/controls"
       ]
     },
     {
@@ -25,6 +26,18 @@
       "config": {},
       "paths": [
         "/Volumes/Data/Alias/www/abacus-gallery.com",
+        "/Volumes/Drives/Google Drive/- Fineart/abacus-gallery.com/docs",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "staging.abacus-gallery.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
         "/Volumes/Data/Alias/www/staging.abacus-gallery.com",
         "/Volumes/Drives/Google Drive/- Fineart/abacus-gallery.com/docs",
         "/Volumes/Data/Projects/controls"
@@ -112,8 +125,20 @@
       "config": {},
       "paths": [
         "/Volumes/Data/Alias/www/soho-art.com",
+        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "staging.soho-art.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
         "/Volumes/Data/Alias/www/staging.soho-art.com",
-        "/Volumes/Data/Google Drives/- Fineart/Soho-Art.com",
+        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
         "/Volumes/Data/Projects/controls"
       ]
     },

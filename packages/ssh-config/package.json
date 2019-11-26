@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+  "_id": "ssh-config@0.14.0",
+  "_inBundle": false,
+  "_integrity": "sha512-A0C3fuwAiAKP0uxWnxfWjjEup2IMoY28QHBKWBoD3Jqx0UIg2JcBSOunQy1T2d6ygI0BR0PpxBbPKOkitaqt0g==",
+  "_location": "/ssh-config",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+  "_shasum": "823f9552bc489d5036813a67527e3d4d91c23062",
+  "_spec": "https://www.atom.io/api/packages/ssh-config/versions/0.14.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-1191026-77559-4pe8wr.tk5ap",
+  "bugs": {
+    "url": "https://github.com/lalyos/ssh-config/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "ssh config syntax",
+  "devDependencies": {
+    "coffeelint": "1.16.0"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/lalyos/ssh-config#readme",
+  "license": "MIT",
+  "name": "ssh-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalyos/ssh-config.git"
+  },
+  "version": "0.14.0"
+}
