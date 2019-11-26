@@ -1,0 +1,17 @@
+'.source.js':
+  'use strict':
+    prefix: 'us'
+    body: "'use strict';"
+  'Debugger':
+    prefix: 'debug'
+    # use double quotes or else this will not work
+    body: "debugger"
+  'Arguments':
+    prefix: 'args'
+    body: "arguments"
+  'toJSON':
+    prefix: 'toJSON'
+    body: 'toJSON()'
+  'yield':
+    prefix: 'yield'
+    body: 'yield ${0}'
