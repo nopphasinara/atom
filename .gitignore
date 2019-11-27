@@ -34,3 +34,5 @@ recovery/
 .node-gyp/Library/Caches/
 # .apm/
 .node-gyp/
+.apm/*
+!.apm/.gitignore
