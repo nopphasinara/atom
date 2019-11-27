@@ -77,7 +77,7 @@
       "config": {},
       "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com/alpha.xn--82ce5arg8cm8f1bf5a5ive.com"
+        "/Volumes/Data/Alias/www/alpha.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {
@@ -89,7 +89,7 @@
       "config": {},
       "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com/alpha2.xn--82ce5arg8cm8f1bf5a5ive.com"
+        "/Volumes/Data/Alias/www/alpha2.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {
@@ -101,19 +101,7 @@
       "config": {},
       "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com/alpha3.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com/xn--82ce5arg8cm8f1bf5a5ive.com"
+        "/Volumes/Data/Alias/www/alpha3.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {
