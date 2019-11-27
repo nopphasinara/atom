@@ -1,8 +1,2 @@
-**
+.*
 !.gitignore
-!_cacache
-_cacache/**
-!_locks
-_locks/**
-!index-*
-index-*/**

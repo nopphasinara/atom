@@ -386,6 +386,9 @@
   "down": "core:move-down"
   "alt-cmd-o": "tree-view:show-in-file-manager"
 
+'.tree-view li[is="tree-view-file"]':
+  "shift-f11": "remote-sync:upload-file"
+
 'atom-text-editor[mini]':
   # "cmd-d": "find-and-replace:select-next"
   "cmd-d": "editor:select-word"
