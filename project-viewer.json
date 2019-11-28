@@ -106,6 +106,18 @@
     },
     {
       "type": "project",
+      "name": "alpha4.xn--82ce5arg8cm8f1bf5a5ive.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/alpha4.xn--82ce5arg8cm8f1bf5a5ive.com"
+      ]
+    },
+    {
+      "type": "project",
       "name": "reproduction-gallery.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
