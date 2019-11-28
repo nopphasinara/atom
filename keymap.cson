@@ -178,15 +178,18 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
-  "shift-cmd-c": "nerd:pinned-copy-selected-text"
-  "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
+  # "shift-cmd-c": "nerd:pinned-copy-selected-text"
+  # "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
+  # # "alt-cmd-o": "nerd:reveal-in-finder"
+  # "shift-cmd-l": "nerd:bio-link"
+  # "alt-cmd-[": "nerd:toggle-fold"
+  # "alt-cmd-]": "nerd:toggle-fold"
   "alt-cmd-up": "editor:upper-case"
   "alt-cmd-down": "editor:lower-case"
   # "tab": "snippets:next-tab-stop"
   # "shift-tab": "snippets:previous-tab-stop"
   "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"
-  "alt-cmd-o": "nerd:reveal-in-finder"
   "alt-cmd-z": "unset!"
   "cmd-<": "editor:scroll-to-cursor"
   "ctrl-alt-cmd-f": "unset!"
@@ -202,14 +205,9 @@
   "shift-ctrl-j": "editor:join-lines"
   "cmd-j": "emmet:merge-lines"
   "shift-cmd-d": "editor:duplicate-lines"
-  "shift-cmd-l": "nerd:bio-link"
   # "shift-cmd-l": "unset!"
   "shift-ctrl-up": "editor:add-selection-above"
   "shift-ctrl-down": "editor:add-selection-below"
-  "alt-cmd-[": "nerd:toggle-fold"
-  "alt-cmd-]": "nerd:toggle-fold"
-  # "alt-cmd-[": "nerd:fold"
-  # "alt-cmd-]": "nerd:unfold"
   # "alt-cmd-[": "editor:fold-current-row"
   # "alt-cmd-]": "editor:unfold-current-row"
   "alt-cmd-{": "editor:fold-all"
@@ -242,18 +240,6 @@
   "cmd-v": "native!"
   "alt-tab": "native!"
 
-
-# Custom Key Bindings
-'atom-text-editor[data-grammar~="jsx"]:not([mini])':
-  "shift-enter": "emmet:expand-abbreviation-with-tab"
-
-'atom-text-editor[data-grammar~="text"][data-grammar~="plain"]:not([mini])':
-  "cmd-/": "nerd:plain-text-comment"
-
-'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"]:not([mini])':
-  "cmd-b": "nerd:markdown-text-bold"
-  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
-  "cmd-?": "nerd:markdown-code-block"
 
 "atom-text-editor:not([mini]), .platform-darwin atom-text-editor:not([mini]), atom-workspace atom-text-editor:not([mini]), .platform-darwin atom-workspace atom-text-editor:not(.mini)":
   "alt-cmd-d": "sass-autocompile:compile-direct"
@@ -390,17 +376,48 @@
   "shift-f11": "remote-sync:upload-file"
 
 'atom-text-editor[mini]':
+  # srart nerd
+  "shift-cmd-c": "nerd:pinned-copy-selected-text"
+  "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
+  # "alt-cmd-o": "nerd:reveal-in-finder"
+  "shift-cmd-l": "nerd:bio-link"
+  "alt-cmd-[": "nerd:toggle-fold"
+  "alt-cmd-]": "nerd:toggle-fold"
+  # end nerd
+
   # "cmd-d": "find-and-replace:select-next"
   "cmd-d": "editor:select-word"
+
+
+## Key bindings by grammar.
+
+# JSX
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  "shift-enter": "emmet:expand-abbreviation-with-tab"
+
+# Plain Text
+'atom-text-editor[data-grammar~="text"][data-grammar~="plain"]:not([mini])':
+  "cmd-/": "nerd:plain-text-comment"
+
+# Markdown
+'atom-text-editor[data-grammar~="source"]:not([mini]),
+ atom-text-editor[data-grammar~="gfm"]:not([mini])':
+  "cmd-i": "nerd:markdown-text-italic"
+  "cmd-b": "nerd:markdown-text-bold"
+  "cmd-?": "nerd:markdown-code-block"
+  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
+
 
 '.tree-view-dialog atom-text-editor[mini]':
   "enter": "core:confirm"
   "escape": "core:cancel"
 
+
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
   "alt-cmd-d": "sass-autocompile:compile-direct"
   "alt-cmd-s": "sass-autocompile:compile-to-file"
   "shift-alt-cmd-s": "sass-autocompile:compile-direct"
+
 
 'atom-text-editor.autocomplete-active':
   "escape": "autocomplete-plus:cancel"

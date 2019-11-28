@@ -1,3 +1,13 @@
+const customAutoTextItems = [
+  {
+    id: 1,
+    text: 'xn--82ce5arg8cm8f1bf5a5ive.com',
+  },
+  {
+    id: 2,
+    text: 'โต๊ะจีนชลบุรี',
+  },
+];
 const _ = require('underscore-plus');
 const path = require('path');
 const fs = require('fs-plus');
@@ -214,7 +224,25 @@ class Data {
         }
 
         editor.mutateSelectedText((selection, index) => {
-          snippetsService.insert('**${1:'+ selection.getText() +'}**$0', selection.editor, selection.cursor);
+          snippetsService.insert('__${1:'+ selection.getText() +'}__$0', selection.editor, selection.cursor);
+        });
+      }
+    }
+  }
+
+  markdownTextItalic() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm') {
+      var selections = editor.getSelections();
+      if (selections) {
+        var snippets = atom.packages.getActivePackage('snippets');
+        if (snippets) {
+          var snippetsService = snippets.mainModule;
+        }
+
+        editor.mutateSelectedText((selection, index) => {
+          snippetsService.insert('*${1:'+ selection.getText() +'}*$0', selection.editor, selection.cursor);
         });
       }
     }
@@ -268,7 +296,7 @@ class Data {
       } else {
         editor.mutateSelectedText((selection, index) => {
           var selectedText = '';
-          snippetsService.insert('## ${1:'+ selectedText +'}\n# ---------------- #$0', editor, editor.cursor);
+          snippetsService.insert('```\n${1:'+ selectedText +'}\n```$0', editor, editor.cursor);
         });
       }
     }
@@ -317,11 +345,113 @@ class Data {
     }
     return selectedText;
   }
+
+  buildCustomAutoTextItems() {
+    var list = '<div class="select-list"><ol class="list-group">{{listItems}}</ol></div>';
+    var listItems = '';
+    for (var i = 0; i < customAutoTextItems.length; i++) {
+      var textItem = customAutoTextItems[i];
+      listItems += '<li class="item" data-id="'+ textItem.id +'">'+ textItem.text +'</li>';
+    }
+    return list.replace('{{listItems}}', listItems);
+  }
+  buildCustomAutoTextButtons() {
+    var button = '<div class="block pull-right">{{buttonItems}}</div><div class="clear">&nbsp;</div>';
+    var buttonItems = '';
+    buttonItems += '<button class="inline-block-tight btn" click="close">Cancel</button>';
+    buttonItems += '<button class="inline-block-tight btn" click="confirm">Confirm</button>';
+    return button.replace('{{buttonItems}}', buttonItems);
+  }
+
+  createModal() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    const modalClass = 'customAutoTextModal';
+    const listItems = this.buildCustomAutoTextItems();
+    const buttonItems = this.buildCustomAutoTextButtons();
+
+    var el = document.createElement('div');
+    el.setAttribute('class', modalClass);
+    el.innerHTML = listItems;
+    el.innerHTML += buttonItems;
+
+    var modalContent = el;
+    var modal = workspace.addModalPanel({
+      item: modalContent,
+      visible: true,
+      autoFocus: false,
+      priority: 1,
+    });
+
+    var modalButtons = el.querySelectorAll('button');
+    for (var i = 0; i < modalButtons.length; i++) {
+      var modalButton = modalButtons[i];
+      modalButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        var button = this;
+        modal.destroy();
+      });
+    }
+
+    var modalListItems = el.querySelectorAll('.select-list .list-group .item');
+    for (var i = 0; i < modalListItems.length; i++) {
+      var modalListItem = modalListItems[i];
+      modalListItem.addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        var listItem = this;
+        var listItemText = '';
+        if (listItem.innerText) {
+          listItemText = listItem.innerText;
+        }
+
+        var insertSnippet = function(snippetText = '', editor = null, selection = null, index = 0) {
+          var _editor = editor;
+          var _cursor = editor.cursor;
+          if (selection) {
+            _editor = selection.editor;
+            _cursor = selection.cursor;
+          }
+          if (typeof snippetText == 'undefined' || snippetText == '') {
+            snippetText = '';
+          }
+          snippetsService.insert(snippetText, _editor, _cursor);
+        };
+
+        if (rootScope != 'xxx') {
+          var selections = editor.getSelections();
+          if (selections) {
+            var snippets = atom.packages.getActivePackage('snippets');
+            if (snippets) {
+              var snippetsService = snippets.mainModule;
+
+              editor.mutateSelectedText((selection, index) => {
+                var selectedText = '';
+                selectedText = listItemText;
+                // if (selection.getText() && selection.getText() != '') {
+                //   selectedText = selection.getText();
+                // }
+                insertSnippet('${1:'+ selectedText +'}$0', editor, selection, index);
+              });
+            }
+          } else {
+            editor.mutateSelectedText((selection, index) => {
+              var selectedText = '';
+              selectedText = listItemText;
+              insertSnippet('```\n${1:'+ selectedText +'}\n```$0', editor, null, index);
+            });
+          }
+        }
+
+        modal.destroy();
+      });
+    }
+
+  }
 }
 
 global._data = new Data();
 
-// _data.pinnedCopySelectedText();
-// console.log(pinnedCopySelectedText);
-
-// _data.plainTextCommend();
+_data.createModal();

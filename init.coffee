@@ -22,11 +22,17 @@ global.exec = exec
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()
 
-pathToFunctionsFile = "./functions.js"
-global.functions = require(pathToFunctionsFile)
-Object.defineProperty global, 'functions', ->
-  delete require.cache[require.resolve(pathToFunctionsFile)]
-  require(pathToFunctionsFile)
+filePaths = [
+  {
+    name: "functions",
+    path: "./functions.js",
+  }
+]
+for filePath in filePaths
+  global.functions = require(filePath.path)
+  Object.defineProperty global, filePath.name, ->
+    delete require.cache[require.resolve(filePath.path)]
+    require(filePath.path)
 
 
 atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
@@ -34,6 +40,9 @@ atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
 
 atom.commands.add 'atom-text-editor', 'nerd:markdown-text-bold', ->
   _data.markdownTextBold()
+
+atom.commands.add 'atom-text-editor', 'nerd:markdown-text-italic', ->
+  _data.markdownTextItalic()
 
 atom.commands.add 'atom-text-editor', 'nerd:markdown-wrap-with-link', ->
   _data.markdownWrapWithLink()

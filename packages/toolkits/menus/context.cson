@@ -1,5 +1,21 @@
 "context-menu":
   {
+    "atom-text-editor": [
+      {
+        "label": "Goldfish"
+        "submenu": [
+          {
+            'label': 'XXX'
+            'command': 'application:about'
+          }
+          { "type": "separator" }
+          {
+            'label': 'AAA'
+            'command': 'application:about'
+          }
+        ]
+      }
+    ]
     "atom-text-editor:not([mini]), .editor:not([mini])": [
       {
         "label": "Git"
