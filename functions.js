@@ -407,42 +407,21 @@ class Data {
           listItemText = listItem.innerText;
         }
 
-        var insertSnippet = function(snippetText = '', editor = null, selection = null, index = 0) {
-          var _editor = editor;
-          var _cursor = editor.cursor;
-          if (selection) {
-            _editor = selection.editor;
-            _cursor = selection.cursor;
-          }
-          if (typeof snippetText == 'undefined' || snippetText == '') {
-            snippetText = '';
-          }
-          snippetsService.insert(snippetText, _editor, _cursor);
-        };
+        var snippets = atom.packages.getActivePackage('snippets');
+        if (snippets) {
+          var snippetsService = snippets.mainModule;
 
-        if (rootScope != 'xxx') {
-          var selections = editor.getSelections();
-          if (selections) {
-            var snippets = atom.packages.getActivePackage('snippets');
-            if (snippets) {
-              var snippetsService = snippets.mainModule;
-
-              editor.mutateSelectedText((selection, index) => {
-                var selectedText = '';
-                selectedText = listItemText;
-                // if (selection.getText() && selection.getText() != '') {
-                //   selectedText = selection.getText();
-                // }
-                insertSnippet('${1:'+ selectedText +'}$0', editor, selection, index);
-              });
+          editor.mutateSelectedText((selection, index) => {
+            var _editor = editor;
+            var _cursor = editor.cursor;
+            var selectedText = '';
+            selectedText = '${1:'+ listItemText +'}$0';
+            if (selection.getText()) {
+              _editor = selection.editor;
+              _cursor = selection.cursor;
             }
-          } else {
-            editor.mutateSelectedText((selection, index) => {
-              var selectedText = '';
-              selectedText = listItemText;
-              insertSnippet('```\n${1:'+ selectedText +'}\n```$0', editor, null, index);
-            });
-          }
+            snippetsService.insert(selectedText, _editor, _cursor);
+          });
         }
 
         modal.destroy();
@@ -453,5 +432,3 @@ class Data {
 }
 
 global._data = new Data();
-
-_data.createModal();

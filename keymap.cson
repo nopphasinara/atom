@@ -383,6 +383,7 @@
   "shift-cmd-l": "nerd:bio-link"
   "alt-cmd-[": "nerd:toggle-fold"
   "alt-cmd-]": "nerd:toggle-fold"
+  "cmd-k": "nerd:create-modal"
   # end nerd
 
   # "cmd-d": "find-and-replace:select-next"
