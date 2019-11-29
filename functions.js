@@ -359,7 +359,7 @@ class Data {
     var button = '<div class="block pull-right">{{buttonItems}}</div><div class="clear">&nbsp;</div>';
     var buttonItems = '';
     buttonItems += '<button class="inline-block-tight btn" click="close">Cancel</button>';
-    buttonItems += '<button class="inline-block-tight btn" click="confirm">Confirm</button>';
+    // buttonItems += '<button class="inline-block-tight btn" click="confirm">Confirm</button>';
     return button.replace('{{buttonItems}}', buttonItems);
   }
 
@@ -367,20 +367,20 @@ class Data {
     var workspace = atom.workspace;
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = this.getRootScope(editor);
-    const modalClass = 'customAutoTextModal';
+    const modalId = 'customAutoTextModal';
     const listItems = this.buildCustomAutoTextItems();
     const buttonItems = this.buildCustomAutoTextButtons();
 
     var el = document.createElement('div');
-    el.setAttribute('class', modalClass);
-    el.innerHTML = listItems;
+    el.setAttribute('id', modalId);
+    el.innerHTML += listItems;
     el.innerHTML += buttonItems;
 
     var modalContent = el;
     var modal = workspace.addModalPanel({
       item: modalContent,
       visible: true,
-      autoFocus: false,
+      autoFocus: true,
       priority: 1,
     });
 
@@ -395,37 +395,31 @@ class Data {
       });
     }
 
+
     var modalListItems = el.querySelectorAll('.select-list .list-group .item');
-    for (var i = 0; i < modalListItems.length; i++) {
-      var modalListItem = modalListItems[i];
-      modalListItem.addEventListener('click', function (evt) {
-        evt.preventDefault();
+    if (modalListItems.length > 0) {
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
 
-        var listItem = this;
-        var listItemText = '';
-        if (listItem.innerText) {
-          listItemText = listItem.innerText;
-        }
+      for (var i = 0; i < modalListItems.length; i++) {
+        var modalListItem = modalListItems[i];
+        modalListItem.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          var listItem = this;
+          var listItemText = '';
+          if (listItem.innerText) {
+            listItemText = listItem.innerText;
+          }
 
-        var snippets = atom.packages.getActivePackage('snippets');
-        if (snippets) {
-          var snippetsService = snippets.mainModule;
-
-          editor.mutateSelectedText((selection, index) => {
-            var _editor = editor;
-            var _cursor = editor.cursor;
-            var selectedText = '';
-            selectedText = '${1:'+ listItemText +'}$0';
-            if (selection.getText()) {
-              _editor = selection.editor;
-              _cursor = selection.cursor;
-            }
-            snippetsService.insert(selectedText, _editor, _cursor);
+          editor.mutateSelectedText(function (selection, index) {
+            snippetsService.insert('${1:'+ listItemText +'}$0', selection.editor, selection.cursor);
           });
-        }
 
-        modal.destroy();
-      });
+          modal.destroy();
+        });
+      }
     }
 
   }
