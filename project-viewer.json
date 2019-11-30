@@ -58,6 +58,67 @@
     },
     {
       "type": "project",
+      "name": "reproduction-gallery.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/www/reproduction-gallery.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "reproduction-galleries.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/www/reproduction-galleries.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "soho-art.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/www/soho-art.com",
+        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "staging.soho-art.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/www/staging.soho-art.com",
+        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
+        "/Volumes/Data/Projects/controls"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Karabiner",
+      "icon": "icon-keyboard",
+      "color": "#248232",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "~/.dotfiles/settings/karabiner"
+      ]
+    },
+    {
+      "type": "project",
       "name": "xn--82ce5arg8cm8f1bf5a5ive.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
@@ -130,63 +191,26 @@
     },
     {
       "type": "project",
-      "name": "reproduction-gallery.com",
+      "name": "alpha6.xn--82ce5arg8cm8f1bf5a5ive.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/Alias/www/reproduction-gallery.com",
-        "/Volumes/Data/Projects/controls"
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/alpha6.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {
       "type": "project",
-      "name": "reproduction-galleries.com",
+      "name": "alpha7.xn--82ce5arg8cm8f1bf5a5ive.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
       "config": {},
       "paths": [
-        "/Volumes/Data/Alias/www/reproduction-galleries.com",
-        "/Volumes/Data/Projects/controls"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "soho-art.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Data/Alias/www/soho-art.com",
-        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
-        "/Volumes/Data/Projects/controls"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging.soho-art.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Data/Alias/www/staging.soho-art.com",
-        "/Volumes/Drives/Google Drive/- Fineart/soho-art.com",
-        "/Volumes/Data/Projects/controls"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "Karabiner",
-      "icon": "icon-keyboard",
-      "color": "#248232",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "~/.dotfiles/settings/karabiner"
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/alpha7.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     }
   ]
