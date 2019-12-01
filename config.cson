@@ -179,7 +179,11 @@
   "markdown-preview-plus":
     markdownItConfig:
       breakOnSingleNewline: true
+      forceFullToc: true
+      useEmoji: false
+      useToc: true
     previewConfig:
+      activatePreviewWithEditor: true
       closePreviewWithEditor: false
     saveConfig:
       saveToPDFOptions:
@@ -188,7 +192,6 @@
       syncEditorOnPreviewScroll: true
       syncPreviewOnChange: true
       syncPreviewOnEditorScroll: true
-    useGitHubStyle: true
   metrics:
     dev:
       sendMetricsInDevMode: true
