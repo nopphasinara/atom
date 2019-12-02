@@ -62,6 +62,9 @@ atom.commands.add 'atom-text-editor', 'nerd:markdown-code-block', ->
 atom.commands.add 'atom-workspace', 'nerd:create-modal', ->
   _data.createModal()
 
+atom.commands.add 'atom-workspace', 'nerd:markdown-preview', ->
+  _data.markdownPreview()
+
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
 # })

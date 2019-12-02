@@ -29,12 +29,12 @@
       "background-tips"
       "autosave"
       "deprecation-cop"
-      "markdown-preview"
       "project-manager"
       "git-diff"
       "tidy-markdown"
       "split-diff"
       "git-plus"
+      "markdown-preview-plus"
     ]
     ignoredNames: [
       ".git"
@@ -176,6 +176,7 @@
     useHTTPS: true
   "markdown-preview":
     breakOnSingleNewline: true
+    useGitHubStyle: true
   "markdown-preview-plus":
     markdownItConfig:
       breakOnSingleNewline: true
@@ -192,6 +193,7 @@
       syncEditorOnPreviewScroll: true
       syncPreviewOnChange: true
       syncPreviewOnEditorScroll: true
+    useGitHubStyle: true
   metrics:
     dev:
       sendMetricsInDevMode: true

@@ -423,6 +423,30 @@ class Data {
     }
 
   }
+
+
+  getActiveMarkdownPackage() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    var whichMarkdown = 'markdown-preview';
+    if (typeof atom.packages.getActivePackage('markdown-preview-plus') != 'undefined') {
+      whichMarkdown = 'markdown-preview-plus';
+    }
+
+    return whichMarkdown.toLowerCase();
+  }
+
+  markdownPreview() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (this.getActiveMarkdownPackage() == 'markdown-preview-plus') {
+      atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview-plus:toggle');
+    } else {
+      atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview:toggle');
+    }
+  }
 }
 
 global._data = new Data();
