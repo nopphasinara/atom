@@ -17,7 +17,7 @@ link = require 'link'
 # link = require './packages/link/lib/link.js'
 
 
-global.pinnedCopySelectedText = null
+# atom.pinnedCopySelectedText = null
 global.exec = exec
 global.activeEditor = () ->
   return atom.workspace.getActiveTextEditor()

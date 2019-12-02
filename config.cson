@@ -121,6 +121,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, Sarabun, boxicons, Material-Design-Icons, fontcustom, master-icons, Font Awesome, octicons, Typicons, Symbol, Apple Symbols, Consolas, DejaVu Sans Mono, sans-serif, monospace"
+    fontSize: 16
     invisibles: {}
     maxScreenLineLength: 4096
     scrollPastEnd: true

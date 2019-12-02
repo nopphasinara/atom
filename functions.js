@@ -331,7 +331,7 @@ class Data {
     var rootScope = this.getRootScope(editor);
     var selectedText = editor.getSelectedText();
     if (selectedText) {
-      global.pinnedCopySelectedText = selectedText;
+      atom.pinnedCopySelectedText = selectedText;
     }
     return selectedText;
   }
@@ -339,7 +339,7 @@ class Data {
   loadPinnedCopySelectedText() {
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = this.getRootScope(editor);
-    var selectedText = global.pinnedCopySelectedText;
+    var selectedText = atom.pinnedCopySelectedText;
     if (selectedText) {
       editor.insertText(selectedText);
     }
