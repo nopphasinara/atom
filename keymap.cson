@@ -363,7 +363,6 @@
   "escape": "tree-view:unfocus"
   "alt-cmd-c": "tree-view:copy-full-path"
   "r": "tree-view:rename"
-  "f11": "remote-sync:download-folder"
   "m": "tree-view:move"
   "a": "tree-view:add-file"
   "shift-a": "tree-view:add-folder"
@@ -372,9 +371,10 @@
   "up": "core:move-up"
   "down": "core:move-down"
   "alt-cmd-o": "tree-view:show-in-file-manager"
+  # "f11": "remote-sync:download-folder"
 
-'.tree-view li[is="tree-view-file"]':
-  "shift-f11": "remote-sync:upload-file"
+# '.tree-view li[is="tree-view-file"]':
+#   "shift-f11": "remote-sync:upload-file"
 
 
 'atom-text-editor[mini]':
