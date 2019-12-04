@@ -232,7 +232,6 @@
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
-    monitorFileAnimation: false
   "sass-autocompile":
     autoHidePanelDelay: 1000
     checkOutputFileAlreadyExists: true
