@@ -413,6 +413,12 @@
     'prefix': 'req'
   'req1':
     'prefix': 'req1'
+  'if ()...;':
+    'prefix': 'if_in_line'
+    'body': '''
+    if ($1)$2;$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
   'if...function_exists':
     'prefix': 'if_function_exists'
     'body': '''
@@ -522,12 +528,6 @@
     'prefix': 'pr'
     'body': '''
     echo \'<pre>\'; print_r($1); echo \'</pre>\';
-    '''
-
-  'if ()...;':
-    'prefix': 'if-in'
-    'body': '''
-    if ($1)$2;$0
     '''
 
   'preg_replace':
