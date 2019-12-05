@@ -274,7 +274,7 @@
   "shift-cmd-escape": "tree-view:reveal-active-file"
   "cmd-escape": "tree-view:toggle-focus"
   "alt-cmd-tab": "editor:auto-indent"
-  "alt-cmd-/": "nerd:wrap-inline-comment"
+  "cmd-?": "nerd:wrap-inline-comment"
   "alt-`": "nerd:php-echo"
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
