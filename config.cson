@@ -233,12 +233,11 @@
     autoHideLogPanel: true
     foldLogPanel: true
   "sass-autocompile":
-    autoHidePanelDelay: 1000
     checkOutputFileAlreadyExists: true
+    compileCompressed: false
+    compileExpanded: true
     compileOnSave: false
-    showStartCompilingNotification: true
-    sourceComments: true
-    sourceMap: true
+    showAdditionalCompilationInfo: false
   "settings-view":
     packageUpdateConcurrency: 1
   "split-diff":

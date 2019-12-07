@@ -26,7 +26,7 @@ compile-cache/
 /packages/atom-autocomplete-php/indexes/*
 blob-store/
 storage/
-split-diff/
+/split-diff/
 snapshot-cache/
 recovery/
 # .apm/_*/

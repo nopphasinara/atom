@@ -274,7 +274,7 @@
   "shift-cmd-escape": "tree-view:reveal-active-file"
   "cmd-escape": "tree-view:toggle-focus"
   "alt-cmd-tab": "editor:auto-indent"
-  "cmd-?": "nerd:wrap-inline-comment"
+  "alt-cmd-/": "nerd:wrap-inline-comment"
   "alt-`": "nerd:php-echo"
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
@@ -402,8 +402,8 @@
   "cmd-/": "nerd:plain-text-comment"
 
 # Markdown
-'atom-text-editor[data-grammar~="source"]:not([mini]),
- atom-text-editor[data-grammar~="gfm"]:not([mini])':
+'atom-text-editor[data-grammar~="source"],
+ atom-text-editor[data-grammar~="gfm"]':
   "cmd-i": "nerd:markdown-text-italic"
   "cmd-b": "nerd:markdown-text-bold"
   "cmd-?": "nerd:markdown-code-block"

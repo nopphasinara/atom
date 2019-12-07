@@ -4,6 +4,11 @@
     'body': '''
     ${1:————————————————————————————————}$0
     '''
+  'getEditorAndCursor':
+    'prefix': 'getac'
+    'body': '''
+    var __ = this.getEditorAndCursor(editor, selection);$0
+    '''
 
 '.text':
   'subscribers':
@@ -216,6 +221,11 @@
     'prefix': 'imp'
     'body': '''
     @import "$1";$0
+    '''
+  'extract(...)':
+    'prefix': 'ext'
+    'body': '''
+    extract(${1:\\$var}, ${2:1})$0
     '''
 
 
