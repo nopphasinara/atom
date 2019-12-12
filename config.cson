@@ -271,10 +271,10 @@
     autoIndentOnPaste: true
 ".css.less.source":
   editor:
-    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
 ".less.source":
   editor:
-    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?-…"
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
 ".plain.text":
   editor:
     commentEnd: ""
