@@ -214,7 +214,21 @@ class Data {
 
     editor.mutateSelectedText((selection, index) => {
       var __ = this.getEditorAndCursor(editor, selection);
-      snippetsService.insert('/*${1:'+ __.selectedText +'}*/$0', __.editor, __.cursor);
+      snippetsService.insert('/**${2: ${1:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
+    });
+  }
+
+  wrapBlockComment() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var selections = editor.getSelections();
+    var snippets = atom.packages.getActivePackage('snippets');
+    if (snippets) {
+      var snippetsService = snippets.mainModule;
+    }
+
+    editor.mutateSelectedText((selection, index) => {
+      var __ = this.getEditorAndCursor(editor, selection);
+      snippetsService.insert('/*\n${2: ${1:'+ __.selectedText +'} }\n*/$0', __.editor, __.cursor);
     });
   }
 
@@ -301,6 +315,21 @@ class Data {
         snippetsService.insert('```\n${1:'+ __.selectedText +'}\n```$0', __.editor, __.cursor);
       });
     }
+  }
+
+  doubleSpaces() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    var selections = editor.getSelections();
+    var snippets = atom.packages.getActivePackage('snippets');
+    if (snippets) {
+      var snippetsService = snippets.mainModule;
+    }
+
+    editor.mutateSelectedText((selection, index) => {
+      var __ = this.getEditorAndCursor(editor, selection);
+      snippetsService.insert(' ${1:'+ __.selectedText +'}$0 ', __.editor, __.cursor);
+    });
   }
 
   getRootScope(editor) {

@@ -170,6 +170,8 @@
   # "alt-cmd-a": "simple-align:align"
   "alt-cmd-a": "atom-alignment:alignMultiple"
   "ctrl-cmd-l": "line-to-console"
+  "shift-space": "nerd:double-spaces"
+  "alt-space": "nerd:double-spaces"
 
 
 "atom-workspace":
@@ -275,6 +277,7 @@
   "cmd-escape": "tree-view:toggle-focus"
   "alt-cmd-tab": "editor:auto-indent"
   "alt-cmd-/": "nerd:wrap-inline-comment"
+  "cmd-?": "nerd:wrap-block-comment"
   "alt-`": "nerd:php-echo"
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
 
@@ -330,7 +333,11 @@
   "alt-cmd-s": "find-and-replace:toggle-selection-option"
   "alt-cmd-w": "find-and-replace:toggle-whole-word-option"
   "alt-enter": "find-and-replace:find-all"
-  "cmd-enter": "find-and-replace:confirm"
+  "cmd-enter": "find-and-replace:replace-all"
+  # "cmd-enter": "find-and-replace:confirm"
+  "alt-tab": "snippets:expand"
+  "tab": "find-and-replace:focus-next"
+  "shift-tab": "find-and-replace:focus-previous"
 
 ".platform-darwin .project-find":
   "shift-enter": "unset!"
@@ -341,7 +348,11 @@
   "alt-enter": "unset!"
   "cmd-enter": "project-find:confirm"
 
-".platform-darwin .find-and-replace .replace-container atom-text-editor":
+".platform-darwin .find-and-replace,
+.platform-darwin .find-and-replace  atom-text-editor,
+.platform-darwin .find-and-replace .replace-container,
+.platform-darwin .find-and-replace .replace-container atom-text-editor":
+  "alt-tab": "snippets:expand"
   "cmd-enter": "find-and-replace:replace-all"
 
 ".platform-darwin .project-find .replace-container atom-text-editor":
@@ -350,6 +361,7 @@
 ".find-and-replace, .project-find, .project-find .results-view":
   "tab": "find-and-replace:focus-next"
   "shift-tab": "find-and-replace:focus-previous"
+  "alt-tab": "snippets:expand"
 
 '.platform-darwin .tree-view':
   "cmd-c": "tree-view:copy"

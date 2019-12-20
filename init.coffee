@@ -38,6 +38,9 @@ for filePath in filePaths
 atom.commands.add 'atom-text-editor', 'nerd:wrap-inline-comment', ->
   _data.wrapInlineComment()
 
+atom.commands.add 'atom-text-editor', 'nerd:wrap-block-comment', ->
+  _data.wrapBlockComment()
+
 atom.commands.add 'atom-text-editor', 'nerd:markdown-text-bold', ->
   _data.markdownTextBold()
 
@@ -64,6 +67,9 @@ atom.commands.add 'atom-workspace', 'nerd:create-modal', ->
 
 atom.commands.add 'atom-workspace', 'nerd:markdown-preview', ->
   _data.markdownPreview()
+
+atom.commands.add 'atom-workspace', 'nerd:double-spaces', ->
+  _data.doubleSpaces()
 
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
