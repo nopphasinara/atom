@@ -271,10 +271,14 @@
     autoIndentOnPaste: true
 ".css.less.source":
   editor:
-    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".less.source":
   editor:
-    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".plain.text":
   editor:
     commentEnd: ""
@@ -287,6 +291,15 @@
 ".sass.source":
   editor:
     autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".css.scss.source":
+  editor:
+    autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".shell-session.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"

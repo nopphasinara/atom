@@ -413,6 +413,18 @@
 'atom-text-editor[data-grammar~="text"][data-grammar~="plain"]:not([mini])':
   "cmd-/": "nerd:plain-text-comment"
 
+# SCSS
+'atom-text-editor[data-grammar~="source"][data-grammar~="scss"]:not([mini])':
+  "cmd-?": "nerd:wrap-block-comment"
+
+# CSS
+'atom-text-editor[data-grammar~="source"][data-grammar~="css"]:not([mini])':
+  "cmd-?": "nerd:wrap-block-comment"
+
+# JS
+'atom-text-editor[data-grammar~="source"][data-grammar~="js"]:not([mini])':
+  "cmd-?": "nerd:wrap-block-comment"
+
 # Markdown
 'atom-text-editor[data-grammar~="source"],
  atom-text-editor[data-grammar~="gfm"]':

@@ -228,7 +228,7 @@ class Data {
 
     editor.mutateSelectedText((selection, index) => {
       var __ = this.getEditorAndCursor(editor, selection);
-      snippetsService.insert('/*\n${2: ${1:'+ __.selectedText +'} }\n*/$0', __.editor, __.cursor);
+      snippetsService.insert('/*${2: ${1:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
     });
   }
 

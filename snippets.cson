@@ -559,6 +559,19 @@
     'body': '''
     echo \'<pre>\'; print_r($1); echo \'</pre>\';
     '''
+  'print_var':
+    'prefix': 'pv'
+    'body': '''
+    gct_print_var(${1:\\$var}, ${2:false});$0
+    '''
+
+  'foreach (\\$var as \\$key => \\$val)':
+    'prefix': 'foreach'
+    'body': '''
+    foreach (${1:\\$var} as ${4:${2:\\$key} => ${3:\\$val}}) {
+      ${5://}
+    }$0
+    '''
 
   'preg_replace':
     'prefix': 'preg_replace'
