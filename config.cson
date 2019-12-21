@@ -274,6 +274,12 @@
     commentEnd: " */"
     commentStart: "/* "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".css.scss.source":
+  editor:
+    autoIndentOnPaste: true
+    commentEnd: " */"
+    commentStart: "/* "
+    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".less.source":
   editor:
     commentEnd: " */"
@@ -289,12 +295,6 @@
   editor:
     autoIndentOnPaste: true
 ".sass.source":
-  editor:
-    autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
-    nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
-".css.scss.source":
   editor:
     autoIndentOnPaste: true
     commentEnd: " */"
