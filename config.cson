@@ -271,19 +271,21 @@
     autoIndentOnPaste: true
 ".css.less.source":
   editor:
-    commentEnd: " */"
-    commentStart: "/* "
+    autoIndentOnPaste: true
+    commentEnd: ""
+    commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".css.scss.source":
   editor:
     autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
+    commentEnd: ""
+    commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".less.source":
   editor:
-    commentEnd: " */"
-    commentStart: "/* "
+    autoIndentOnPaste: true
+    commentEnd: ""
+    commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".plain.text":
   editor:
@@ -297,8 +299,8 @@
 ".sass.source":
   editor:
     autoIndentOnPaste: true
-    commentEnd: " */"
-    commentStart: "/* "
+    commentEnd: ""
+    commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".shell-session.text":
   editor:
