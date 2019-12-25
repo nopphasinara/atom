@@ -1,4 +1,4 @@
-@import "ui-variables";
+@import "_packages/one-dark-ui/styles/ui-variables.less";
 
 // Custom variables
 @font-icons:
@@ -15,10 +15,12 @@
 @font-size-sm: .875em;
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
-@tool-bar-bg: lighten(@mono-1, 5%);
+@tool-bar-bg: @mono-1;
+// @tool-bar-bg: lighten(@mono-1, 5%);
 @tool-bar-btn: @mono-3;
 @tool-bar-btn-hover: @accent-color;
-@title-bar-bg: lighten(@mono-1, 10%);
+@title-bar-bg: @mono-1;
+// @title-bar-bg: lighten(@mono-1, 10%);
 @title-bar-fg: @mono-3;
 
 
@@ -696,7 +698,8 @@ div-2 {
 atom-workspace {
   atom-panel {
     &.header {
-      border-color: @title-bar-bg !important;
+      border-color: darken(@title-bar-bg, 3%) !important;
+      // border-color: @title-bar-bg !important;
 
       .title-bar {
         color: @title-bar-fg !important;
@@ -742,5 +745,36 @@ atom-text-editor {
 
   .syntax--comment {
     // color: #FFCB6B !important;
+  }
+}
+
+
+.workspace {
+
+  .vertical {
+
+    .panes {
+
+      .pane {
+
+        .tab-bar {
+          // height: 40px;
+          // line-height: 40px;
+
+          .tab {
+            // height: 40px;
+
+            .title {
+              // padding-top: 1em;
+              // padding-bottom: 1em;
+            }
+
+            &:not(.active) {
+              // background-color: red;
+            }
+          }
+        }
+      }
+    }
   }
 }

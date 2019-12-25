@@ -118,7 +118,12 @@
     projectHome: "~/.dotfiles/projects"
     reopenProjectMenuCount: 25
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dimmed-one-dark-syntax"
+    ]
     titleBar: "custom"
+  "dark-flat-ui": {}
   editor:
     fontFamily: "Menlo, Sarabun, Pridi, Mitr, Maitree, Kanit, K2D, boxicons, Material-Design-Icons, fontcustom, master-icons, Font Awesome, octicons, Typicons, Symbol, Apple Symbols, Consolas, DejaVu Sans Mono, sans-serif, monospace"
     fontSize: 14
@@ -165,6 +170,11 @@
     darwinTriggerKeys: "altKey"
   "hyperlink-hyperclick":
     priority: 100
+  "hypest-dark":
+    hideDockButtons: true
+    scrollbars: true
+    syntaxTheme: "Always match dark theme"
+    tabCloseButton: "Right"
   "js-hyperclick":
     jumpToImport: true
   "js-hyperclick-project-path":
@@ -203,6 +213,7 @@
     showErrorsInDevMode: true
   "one-dark-ui":
     hideDockButtons: true
+    stickyHeaders: true
   "package-reloader":
     targets: [
       "toolkits"
@@ -240,6 +251,8 @@
     showAdditionalCompilationInfo: false
   "settings-view":
     packageUpdateConcurrency: 1
+  "slim-dark-ui":
+    layoutMode: "Spacious"
   "split-diff":
     turnOffSoftWrap: true
   "symbols-view":
