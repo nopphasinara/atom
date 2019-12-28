@@ -13,6 +13,8 @@
 "Symbol", "Apple Symbols";
 @btn-icon-size: 1em;
 @font-size-sm: .875em;
+@syntax-accent: fade(@hue-5-2, 80);
+// @accent-color: fade(@hue-5-2, 80);
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
 @tool-bar-bg: @mono-1;
@@ -620,21 +622,21 @@ atom-dock {
 
 
 .tool-bar {
-  background-color: @tool-bar-bg !important;
+  background-color: @tool-bar-bg;
 
   .tool-bar-spacer {
     border-color: darken(@tool-bar-bg, 10%) !important;
   }
 
   .tool-bar-btn {
-    color: @tool-bar-btn !important;
+    color: @tool-bar-btn;
 
     &:hover {
-      color: @tool-bar-btn-hover !important;
+      color: @tool-bar-btn-hover;
     }
 
     i, i.gc, .gc {
-      vertical-align: baseline !important;
+      vertical-align: baseline;
     }
   }
 }
@@ -644,7 +646,11 @@ atom-dock {
   font-size: @ui-size;
 
   .tooltip-inner {
-    background-color: @accent-color;
+     // color: @syntax-accent;
+  }
+
+  .tooltip-arrow {
+    // border-color: @syntax-accent;
   }
 }
 

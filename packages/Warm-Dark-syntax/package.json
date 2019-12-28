@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+  "_id": "Warm-Dark-syntax@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wVw2C429ea/9oGYKOdr26Y7pNhhmM2jRiNybLICLRriM2mG+setS1W8aua0EoYL6AlEe9OcgKyEJGW80ulEPTQ==",
+  "_location": "/Warm-Dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+  "_shasum": "427c4fd80e3256f50e5e3d3845a0c4857e9dacde",
+  "_spec": "https://www.atom.io/api/packages/warm-dark-syntax/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-1191127-3952-n7um5r.0fhc8",
+  "bugs": {
+    "url": "https://github.com/colortom/warm-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "dark syntax theme with warm colors",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/colortom/warm-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "warm",
+    "clear",
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "Warm-Dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colortom/warm-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.1.0"
+}

@@ -120,7 +120,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "dimmed-one-dark-syntax"
+      "one-dark-dim-syntax"
     ]
     titleBar: "custom"
   "dark-flat-ui": {}
