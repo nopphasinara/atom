@@ -111,6 +111,10 @@
     'prefix': 'rpgaddr'
     'body': '${1:5933 NE Win Sivers Drive, #205 Portland, OR 97220 USA}$0'
     'rightLabelHTML': '<span class="snippet-label common">Common</span>'
+  'โต๊ะจีนชลบุรีดอทคอม':
+    'prefix': 'chddomthf'
+    'body': '${1:โต๊ะจีนชลบุรีดอทคอม}$0'
+    'rightLabelHTML': '<span class="snippet-label common"></span>'
 
 
 # CSON and JSON

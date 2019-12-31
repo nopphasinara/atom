@@ -394,15 +394,15 @@
     'prefix': 'doc'
     'body': '''
     /**
-     * ${1:Register a binding with the container.}
-     *
-     * @param  string|array  $abstract
-     * @param  \Closure|string|null  $concrete
-     * @param  bool  $shared
-     * @return void
-     *
-     * @throws \Exception
-     */
+    * ${1:Register a binding with the container.}
+    *
+    * @param  string|array  $abstract
+    * @param  \Closure|string|null  $concrete
+    * @param  bool  $shared
+    * @return void
+    *
+    * @throws \Exception
+    */
     public function ${2:bind}(${3:\$abstract, \$concrete = null, \$shared = false})
     {
         ${4://}
@@ -510,10 +510,10 @@
     'prefix': 'block-comment'
     'body': '''
     /*
-     * ${1:Comment heading}
-     *
-     * ${2:Describe the relevant details do that up here if it's important enough.}
-     */
+    * ${1:Comment heading}
+    *
+    * ${2:Describe the relevant details do that up here if it's important enough.}
+    */
     $0
     '''
   'Line comment':
@@ -530,8 +530,7 @@
   'public function':
     'prefix': 'pb-fn'
     'body': '''
-    public function ${1:functionName}($2)
-    {
+    public function ${1:functionName}($2) {
       ${3://}
     }$0
     '''
@@ -539,8 +538,7 @@
   'private function':
     'prefix': 'pv-fn'
     'body': '''
-    private function ${1:functionName}($2)
-    {
+    private function ${1:functionName}($2) {
       ${3://}
     }$0
     '''
@@ -548,8 +546,7 @@
   'function()':
     'prefix': 'fn'
     'body': '''
-    function ${1:functionName}(${2:args})
-    {
+    function ${1:functionName}(${2:args}) {
       ${3://}
     }$0
     '''
