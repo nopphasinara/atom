@@ -213,7 +213,6 @@
     showErrorsInDevMode: true
   "one-dark-ui":
     hideDockButtons: true
-    stickyHeaders: true
   "package-reloader":
     targets: [
       "toolkits"
