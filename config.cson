@@ -33,7 +33,6 @@
       "git-diff"
       "tidy-markdown"
       "split-diff"
-      "git-plus"
       "markdown-preview-plus"
     ]
     ignoredNames: [
@@ -162,7 +161,8 @@
       useSplitDiff: true
     experimental:
       autoFetchNotify: true
-    general: {}
+    general:
+      showBranchInTreeView: false
   github:
     showDiffIconGutter: true
   "grammar-selector": {}
