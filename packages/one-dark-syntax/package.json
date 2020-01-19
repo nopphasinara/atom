@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+  "_id": "one-dark-syntax@1.8.4",
+  "_inBundle": false,
+  "_integrity": "sha512-zBdZ/IQVmU/pw6nOPIOGnDXwFRMQ9uwuaLoW5xCznMoMR89nIFFVc+WhZC7K/E+RICCrSdrzH18Afr3RJS0sjA==",
+  "_location": "/one-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+  "_shasum": "c4c255168b5cb4fa78b6df1e911d1203c6246375",
+  "_spec": "https://www.atom.io/api/packages/one-dark-syntax/versions/1.8.4/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120019-5068-ho8izk.52hi",
+  "bugs": {
+    "url": "https://github.com/atom/one-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark syntax theme",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/atom/one-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/one-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.8.4"
+}
