@@ -1,0 +1,73 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+  "_id": "atom-css-unit-converter@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-S/IW1N1e9WGP7cR2+3RNlL554mBMfX6SUW1eMOqF8BYo27NOBSdqd5apQLM4V1ioNR967oupcEShjYA8QqThAg==",
+  "_location": "/atom-css-unit-converter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+  "_shasum": "66161a94ca6f457e63bfd328eda29584c71737a7",
+  "_spec": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120019-61964-1jh3bmf.n4vs",
+  "activationCommands": {
+    "atom-text-editor": [
+      "atom-css-unit-converter:px-to-em",
+      "atom-css-unit-converter:px-to-rem",
+      "atom-css-unit-converter:em-to-px",
+      "atom-css-unit-converter:em-to-rem",
+      "atom-css-unit-converter:rem-to-px",
+      "atom-css-unit-converter:rem-to-em",
+      "atom-css-unit-converter:converter-ui"
+    ]
+  },
+  "author": {
+    "name": "Seth Lopez",
+    "url": "http://sethlopez.me"
+  },
+  "bugs": {
+    "url": "https://github.com/sethlopezme/atom-css-unit-converter/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0",
+    "space-pen": "^5.1.1"
+  },
+  "deprecated": false,
+  "description": "Performs conversions between different CSS lengths.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/sethlopezme/atom-css-unit-converter#readme",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "unit",
+    "convert",
+    "converter",
+    "conversion",
+    "px",
+    "em",
+    "rem"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-css-unit-converter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethlopezme/atom-css-unit-converter.git"
+  },
+  "version": "1.1.1"
+}

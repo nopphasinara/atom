@@ -4,6 +4,8 @@
     fuzzyMatch: true
     helmDirSwitch: true
   "atom-autocomplete-php": {}
+  "atom-css-unit-converter":
+    decimalLength: 2
   "atom-minify":
     jsMinifier: "UglifyJS2"
   "autocomplete-js-import":
@@ -19,6 +21,9 @@
     highlightMatchingLineNumber: true
   "coffee-compile":
     compileOnSaveWithoutPreview: true
+  "color-indent":
+    color:
+      customColor: "#70a4e3"
   "command-palette":
     preserveLastSearch: true
   core:
@@ -29,12 +34,9 @@
       "background-tips"
       "autosave"
       "deprecation-cop"
-      "project-manager"
       "git-diff"
-      "tidy-markdown"
-      "split-diff"
-      "markdown-preview-plus"
     ]
+    fileSystemWatcher: "experimental"
     ignoredNames: [
       ".git"
       ".hg"
@@ -110,6 +112,8 @@
       "project-viewer"
       "snippet-injector"
       "ask-stack"
+      "atom-css-unit-converter"
+      "Chromo-Color-Previews"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -293,6 +297,9 @@
     commentEnd: ""
     commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".json.source":
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".less.source":
   editor:
     autoIndentOnPaste: true

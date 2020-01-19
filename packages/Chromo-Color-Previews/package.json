@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+  "_id": "Chromo-Color-Previews@1.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ZVTZfe8Ymb6Sy5W6sNLk8BbvoTDY2k5mK1XBmrW/kcQU8NP1qY73kRQ+KLt/Etl7bC55fIaRJWgkl4p2zQBSTw==",
+  "_location": "/Chromo-Color-Previews",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+  "_shasum": "e82205e9816f10e14aab80a81a6f6fc1e8094edc",
+  "_spec": "https://www.atom.io/api/packages/chromo-color-previews/versions/1.7.0/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120019-73798-vf5ki4.i9b8",
+  "activationCommands": {
+    "atom-workspace": "color-preview:toggle"
+  },
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "bugs": {
+    "url": "https://github.com/Vertagon-Softworks/Chromo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Displays color previews for hex, rgb(a), hsl(a), named colors, gradients, and all 255 ansi color codes in the gutter as colored pills.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Vertagon-Softworks/Chromo#readme",
+  "keywords": [
+    "chromo",
+    "hex",
+    "color",
+    "preview",
+    "gutter",
+    "rgb",
+    "ansi",
+    "gradient",
+    "pills"
+  ],
+  "license": "MIT",
+  "main": "./lib/color-preview",
+  "name": "Chromo-Color-Previews",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vertagon-Softworks/Chromo.git"
+  },
+  "version": "1.7.0"
+}

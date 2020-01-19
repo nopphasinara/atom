@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle color-conversion",
+        "command": "color-conversion:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "color-conversion",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "color-conversion:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

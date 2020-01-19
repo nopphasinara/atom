@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+  "_id": "color-conversion@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+fDdLhPbTrJI2vQ15+gzaJ4XAWUjL8WxuvjL0cCx9LWSftX8xLSn5Hj9887tjL7+cJVZsMmgy5IVuiNkwLzRzw==",
+  "_location": "/color-conversion",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+  "_shasum": "31ce08e57fa70280d2ca0acf1a23d063a2100c52",
+  "_spec": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120019-62098-12f5igf.kcpt",
+  "activationCommands": {
+    "atom-workspace": [
+      "color-conversion:selection-to-rgba",
+      "color-conversion:selection-to-hsla",
+      "color-conversion:selection-to-hex"
+    ]
+  },
+  "author": {
+    "name": "Andrei Bazavan",
+    "url": "rokyed"
+  },
+  "bugs": {
+    "url": "https://github.com/rokyed/color-conversion/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A short description of your package",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/rokyed/color-conversion#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/color-conversion",
+  "name": "color-conversion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokyed/color-conversion.git"
+  },
+  "version": "0.4.0"
+}

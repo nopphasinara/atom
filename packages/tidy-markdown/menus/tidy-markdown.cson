@@ -1,8 +1,0 @@
-'menu': [
-  {
-    'label': 'Packages'
-    'submenu': [
-      { 'label': 'Tidy Markdown', 'command': 'tidy-markdown:run' }
-    ]
-  }
-]
