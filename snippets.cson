@@ -4,26 +4,36 @@
     'body': '''
     (\\\\(|\\\\[)(\\\\n?)\\\\s+|(\\\\n?)\\\\s+(\\\\]|\\\\))$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'reg0':
     'prefix': 'reg0'
     'body': '''
     (\\\\(|\\\\[)\\\\s+|(\\\\n?)\\\\s+(\\\\]|\\\\))$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'reg1':
     'prefix': 'regex1'
     'body': '''
     (\\\\(|\\\\[)\\\\s+|\\\\n?\\\\s+(\\\\n?\\\\]|\\\\n?\\\\))$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'reg2':
     'prefix': 'regex2'
     'body': '''
     (\\\\(|\\\\[)\\\\s+|\\\\n?\\\\s+(\\\\n?\\\\]|\\\\n?\\\\))$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'line ———':
     'prefix': 'line'
     'body': '''
     ${1:————————————————————————————————}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'getEditorAndCursor':
     'prefix': 'getac'
     'body': '''
@@ -58,6 +68,8 @@
     'body': '''
     #!/bin/bash$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'for..in':
     'prefix': 'for-in'
     'body': '''
@@ -65,6 +77,8 @@
       ${3:# ...}
     done$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'if..':
     'prefix': 'if'
     'body': '''
@@ -72,6 +86,8 @@
       ${2:# statements}
     fi$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'if..else':
     'prefix': 'if-else'
     'body': '''
@@ -81,18 +97,24 @@
       ${3:# statements}
     fi$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'else..':
     'prefix': 'else'
     'body': '''
     else
       ${1:# statements}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'else..if':
     'prefix': 'else-if'
     'body': '''
     elif [[ ${1:condition} ]]; then
       ${2:# statements}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'while..':
     'prefix': 'while'
     'body': '''
@@ -100,6 +122,8 @@
       ${2:# statements}
     done$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'case':
     'prefix': 'case'
     'body': '''
@@ -142,6 +166,8 @@
       tooltip: \'$3\'
       type: \'button\'$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Toolbar Iconset Button':
     'prefix': 'icon-set-button'
     'body': '''
@@ -166,6 +192,8 @@
     |--------------------------------------------------------------------------
     */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Block':
     'prefix': 'block'
     'body': '''
@@ -175,16 +203,22 @@
     |--------------------------------------------------------------------------
     */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Line comment':
     'prefix': 'line-comment'
     'body': '''
     /* ${1:Describe the relevant details.} */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Inline comment':
     'prefix': 'inline-comment'
     'body': '''
     // ${1:Describe the relevant details.}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'New stylesheet':
     'prefix': 'insert-stylesheet'
     'body': '''
@@ -196,6 +230,8 @@
       ${6:/* Misc */}
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Cover Image':
     'prefix': 'cover-img'
     'body': '''
@@ -225,6 +261,8 @@
     'body': '''
     @include ${2:$1;}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@include media-breakpoint-...':
     'prefix': 'incme'
     'body': '''
@@ -232,16 +270,22 @@
       $3
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@extend':
     'prefix': 'ext'
     'body': '''
     @extend $1;$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@import':
     'prefix': 'imp'
     'body': '''
     @import "$1";$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'extract(...)':
     'prefix': 'ext'
     'body': '''
@@ -261,16 +305,22 @@
     'body': '''
     <meta ${1:name}="$2" content="$3">$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'holder.js image':
     'prefix': 'holder-img'
     'body': '''
     <img data-src="holder.js/${1:${2:300}x${3:300}}?${4:random=${5:yes}}" alt="${6:...}">$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'placeimg image':
     'prefix': 'place-img'
     'body': '''
     <img src="https://placeimg.com/${1:300}/${2:300}/${3:any|animals|arch|nature|people|tech}/${4:grayscale|sepia}" alt="${5:...}">$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '<!---->...<!---->':
     'prefix': 'block'
     'body': '''
@@ -278,11 +328,15 @@
     $2
     <!-- ${1:block container} : END -->$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'script src':
     'prefix': 'script-src'
     'body': '''
     <script ${2:async }src="$1"></script>$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'div>container':
     'prefix': 'div-container'
     'body': '''
@@ -320,6 +374,8 @@
       $5
     <?php } ?>$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '<?php if () { ?>..<?php } else { ?>..<?php } ?>':
     'prefix': 'ifelse'
     'body': '''
@@ -329,6 +385,8 @@
       $3
     <?php } ?>$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '<?php if () { ?>..<?php } ?>':
     'prefix': 'if'
     'body': '''
@@ -336,16 +394,22 @@
       $2
     <?php } ?>$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '<?php...':
     'prefix': 'ph'
     'body': '''
     <?php$1
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '<?php...?>':
     'prefix': 'php'
     'body': '''
     <?php${1: $2 }?>$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'print_r':
     'prefix': 'pr'
     'body': '''
@@ -367,6 +431,8 @@
     ${1://}
     @endphp$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@component()':
     'prefix': 'component'
     'body': '''
@@ -374,16 +440,22 @@
       ${3:}
     @endcomponent$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@json()':
     'prefix': 'json'
     'body': '''
     @json(${1:\\$array})$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@section()':
     'prefix': 'section'
     'body': '''
     @section('${1:name}'${2:, '$3'})${4:${5:...}@endsection}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   '@section':
     'prefix': 'sec'
     'disabled': true
@@ -399,66 +471,106 @@
     * @param  string|array  $abstract
     * @param  \Closure|string|null  $concrete
     * @param  bool  $shared
-    * @return void
     *
-    * @throws \Exception
+    * @return void
     */
-    public function ${2:bind}(${3:\$abstract, \$concrete = null, \$shared = false})
-    {
-        ${4://}
-    }$0
+    $0
     '''
-    'leftLabelHTML': '<span class="snippet-label success">PHP</span>'
-  'echo...':
-    'prefix': 'echo'
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+
+  'fn':
+    'prefix': 'fn'
     'body': """
-    echo ${1:'$2'};$0
+    function ${1:foobar}(${2:${3:\$args${4: = null}}${5:, ...}}) {
+      ${6://}
+    }$0
     """
-    'leftLabelHTML': '<span class="snippet-label success">PHP</span>'
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+
+  'if...fn...exists':
+    'prefix': 'fne'
+    'body': """
+    if ( !function_exists( '${1:foobar}' ) ) {
+      function ${1:foobar}(${2:${3:\$args${4: = null}}${5:, ...}}) {
+        ${6://}
+      }$0
+    }
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+
+  'e':
+    'prefix': 'e'
+    'body': """
+    echo ${2:'$1'};$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+
+  'ec':
+    'prefix': 'ec'
+    'body': """
+    echo ${2:'$1'};$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+
+  'echo':
+    'prefix': 'echo'
+
   'require...':
     'prefix': 'require'
     'body': '''
     require ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'require_once...':
     'prefix': 'require_once'
     'body': '''
     require_once ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'include...':
     'prefix': 'include'
     'body': '''
     include ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'include_once...':
     'prefix': 'include_once'
     'body': '''
     include_once ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'req':
     'prefix': 'req'
+
   'req1':
     'prefix': 'req1'
+
   'if ()...;':
     'prefix': 'if_in_line'
     'body': '''
     if ($1)$2;$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
-  'if...function_exists':
-    'prefix': 'if_function_exists'
-    'body': '''
-    if (${2:}function_exists(\\'${1:function_name}\\')) {
-      function ${1:function_name}($3) {
-        ${4:// code}
-      }
-    }$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
+  # 'if...function_exists':
+  #   'prefix': 'if_function_exists'
+  #   'body': '''
+  #   if (${2:}function_exists(\\'${1:function_name}\\')) {
+  #     function ${1:function_name}($3) {
+  #       ${4:// code}
+  #     }
+  #   }$0
+  #   '''
+  #   'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'if...defined':
     'prefix': 'if_defined'
     'body': '''
@@ -467,36 +579,49 @@
     }$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'parse_str($str, $output)':
     'prefix': 'parse_str'
     'body': '''
     parse_str(${1:\\$str}, ${2:\\$output})$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   '<link...>':
     'prefix': 'link'
     'body': '''
     <link rel="${1:stylesheet${2:|canonical|icon|search}}" href="$3" type="${4:text/css${5:|image/x-icon}}" media="${6:all}" charset="${7:utf-8}" />$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">CSS</span>'
+
   'die()':
-    'prefix': 'die'
+    'prefix': 'd'
     'body': '''
-    die($2);$1$0
+    die${2:($1)};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'exit()':
-    'prefix': 'exit'
+    'prefix': 'x'
     'body': '''
-    exit($2);$1$0
+    exit${2:($1)};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'break;':
-    'prefix': 'break'
+    'prefix': 'b'
     'body': '''
     break;$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
+  'return;':
+    'prefix': 'r'
+    'body': '''
+    ${1:return${2:\\ ${3:void}}};$0
+    '''
+    'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
   'Section comment':
     'prefix': 'section-comment'
     'body': '''
@@ -506,8 +631,10 @@
     |--------------------------------------------------------------------------
     */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Block comment':
-    'prefix': 'block-comment'
+    'prefix': 'block'
     'body': '''
     /*
     * ${1:Comment heading}
@@ -516,16 +643,21 @@
     */
     $0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Line comment':
     'prefix': 'line-comment'
     'body': '''
     /* ${1:Describe the relevant details.} */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Inline comment':
     'prefix': 'inline-comment'
     'body': '''
     // ${1:Describe the relevant details.}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'public function':
     'prefix': 'pb-fn'
@@ -534,6 +666,7 @@
       ${3://}
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'private function':
     'prefix': 'pv-fn'
@@ -542,6 +675,7 @@
       ${3://}
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'function()':
     'prefix': 'function'
@@ -550,19 +684,34 @@
       ${3://}
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'fun':
     'prefix': 'fun'
 
+  'WP Exit':
+    'prefix': 'wpe'
+    'body': '''
+    // Exit if accessed directly
+    if ( !defined( 'ABSPATH' ) ) {
+    	exit;
+    }$0
+    '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'print_r':
-    'prefix': 'pr'
+    'prefix': 'p_r'
     'body': '''
     echo \'<pre>\'; print_r($1); echo \'</pre>\';
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'print_var':
-    'prefix': 'pv'
+    'prefix': 'p_v'
     'body': '''
     gct_print_var(${1:\\$var}, ${2:false});$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'foreach (\\$var as \\$key => \\$val)':
     'prefix': 'foreach'
@@ -571,6 +720,7 @@
       ${5://}
     }$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'preg_replace':
     'prefix': 'preg_replace'
@@ -609,6 +759,8 @@
 
     */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Section comment':
     'prefix': 'section-comment'
     'body': '''
@@ -618,6 +770,8 @@
     |--------------------------------------------------------------------------
     */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Block comment':
     'prefix': 'block-comment'
     'body': '''
@@ -628,16 +782,22 @@
      */
      $0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Line comment':
     'prefix': 'line-comment'
     'body': '''
     /* ${1:Describe the relevant details.} */$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'Inline comment':
     'prefix': 'inline-comment'
     'body': '''
     // ${1:Describe the relevant details.}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'function ...':
     'prefix': 'func'
     'body': '''
@@ -645,6 +805,8 @@
       ${3:\/\/}
     \}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'function ()':
     'prefix': 'fn'
     'body': '''
@@ -652,145 +814,38 @@
       ${2:\/\/}
     \}$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'alert()':
     'prefix': 'alert'
     'body': '''
     alert(${1:\'$2\'});$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'console.info()':
     'prefix': 'info'
     'body': '''
     console.info(${1:\'$2\'});$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'console.log()':
     'prefix': 'log'
     'body': '''
     console.log(${1:\'$2\'});$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'console.error()':
     'prefix': 'error'
     'body': '''
     console.error(${1:\'$2\'});$0
     '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+
   'console.warn()':
     'prefix': 'warn'
     'body': '''
     console.warn(${1:\'$2\'});$0
     '''
-
-
-# JSON
-'.source.json':
-  '"key": "value"':
-    'prefix': 'pr-'
-    'body': '"${1:key}": ${3:"$2"},$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  '"key": {...}':
-    'prefix': 'pr-obj'
-    'body': '"${1:key}": \{$2\},$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  '"key": [...]':
-    'prefix': 'pr-arr'
-    'body': '"${1:key}": \[$2\],$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-
-  # Karabiner
-  'com.apple.finder':
-    'prefix': 'bundle.com.apple.finder'
-    'body': 'com.apple.finder$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.googlecode.iterm2':
-    'prefix': 'bundle.com.googlecode.iterm2'
-    'body': 'com.googlecode.iterm2$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.github.atom':
-    'prefix': 'bundle.com.github.atom'
-    'body': 'com.github.atom$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.sublimetext.3':
-    'prefix': 'bundle.com.sublimetext.3'
-    'body': 'com.sublimetext.3$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.google.Chrome':
-    'prefix': 'bundle.com.google.Chrome'
-    'body': 'com.google.Chrome$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.apple.Safari':
-    'prefix': 'bundle.com.apple.Safari'
-    'body': 'com.apple.Safari$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'org.mozilla.firefox':
-    'prefix': 'bundle.org.mozilla.firefox'
-    'body': 'org.mozilla.firefox$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.apple.Firefox':
-    'prefix': 'bundle.com.apple.Firefox'
-    'body': 'com.apple.Firefox$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'com.adobe.Photoshop':
-    'prefix': 'bundle.com.adobe.Photoshop'
-    'body': 'com.adobe.Photoshop$0'
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'bundle':
-    'prefix': 'bundle'
-    'body': '''
-    "^com.apple.finder$",
-    "^com.googlecode.iterm2$",
-    "^com.github.atom$",
-    "^com.sublimetext.3$",
-    "^com.google.Chrome$",
-    "^com.apple.Safari$",
-    "^org.mozilla.firefox$",
-    "^com.apple.Firefox$",
-    "^com.adobe.Photoshop$",$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'bundle-editors':
-    'prefix': 'bundle-editors'
-    'body': '''
-    "^com.github.atom$",
-    "^com.sublimetext.3$",$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'bundle-browsers':
-    'prefix': 'bundle-browsers'
-    'body': '''
-    "^com.google.Chrome$",
-    "^com.apple.Safari$",
-    "^org.mozilla.firefox$",
-    "^com.apple.Firefox$",$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'basic':
-    'prefix': 'basic'
-    'body': '''
-    "basic.to_if_alone_timeout_milliseconds": ${1:1000},
-    "basic.to_if_held_down_threshold_milliseconds": ${2:500},
-    "basic.to_delayed_action_delay_milliseconds": ${3:500},
-    "basic.simultaneous_threshold_milliseconds": ${4:50},$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'basic-alone':
-    'prefix': 'basic-alone'
-    'body': '''
-    "basic.to_if_alone_timeout_milliseconds": ${1:1000},$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'basic-held-down':
-    'prefix': 'basic-held-down'
-    'body': '''
-    "basic.to_if_held_down_threshold_milliseconds": ${1:500},$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'basic-delay':
-    'prefix': 'basic-delay'
-    'body': '''
-    "basic.to_delayed_action_delay_milliseconds": ${1:500},$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'
-  'basic-simultaneous':
-    'prefix': 'basic-simultaneous'
-    'body': '''
-    "basic.simultaneous_threshold_milliseconds": ${1:50},$0
-    '''
-    'rightLabelHTML': '<span class="snippet-label bi"></span>'

@@ -13,10 +13,11 @@
     fuzzy:
       enabled: true
   "autocomplete-plus":
+    autoActivationDelay: 20
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
-    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
+    moveToCancel: false
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "coffee-compile":
