@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
   "_shasum": "31ce08e57fa70280d2ca0acf1a23d063a2100c52",
   "_spec": "https://www.atom.io/api/packages/color-conversion/versions/0.4.0/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120019-62098-12f5igf.kcpt",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-59050-1h059tt.b3yy",
   "activationCommands": {
     "atom-workspace": [
       "color-conversion:selection-to-rgba",

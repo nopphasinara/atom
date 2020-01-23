@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-js-console/versions/1.2.2/tarball",
   "_shasum": "57cea3c0a5aaae52acdaa6110d6eed4ee2877a48",
   "_spec": "https://www.atom.io/api/packages/atom-js-console/versions/1.2.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-11997-59539-1799u9z.rflr",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-57154-1o0418p.5yi6",
   "activationCommands": {
     "atom-workspace": "js-console:toggle"
   },

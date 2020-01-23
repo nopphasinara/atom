@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
   "_shasum": "fcb3c7a0232a17f642526f5057ccd76fdbda5054",
   "_spec": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
-  "_where": "/private/tmp/apm-install-dir-119722-30103-1j695i.0f9ib",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-63499-6wq8kw.ynbj9",
   "bugs": {
     "url": "https://github.com/armin-pfaeffle/sass-autocompile/issues"
   },

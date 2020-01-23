@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
   "_shasum": "58bbb496dc5515f5c87ad35dfe2eacc514b46a67",
   "_spec": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-1191126-2386-17ygdm2.cb8pi",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-54162-pogw9v.kamie",
   "activationCommands": {
     "atom-text-editor": [
       "hydrogen:start-local-kernel",
