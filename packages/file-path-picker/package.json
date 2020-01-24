@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/file-path-picker/versions/1.0.0/tarball",
   "_shasum": "119e8392899f6777dcb97db959257a6bdbeb28b4",
   "_spec": "https://www.atom.io/api/packages/file-path-picker/versions/1.0.0/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-60196-1vm0thh.cj32k",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120024-71603-1j2u9nc.i32",
   "activationCommands": {
     "atom-text-editor": [
       "file-path-picker:pick-file",

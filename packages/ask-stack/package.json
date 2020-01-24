@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
   "_shasum": "f88a7f953d39611e84cf1a0631c28b830d9c66b6",
   "_spec": "https://www.atom.io/api/packages/ask-stack/versions/2.2.0/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120023-56368-o15ipj.etnza",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120024-68249-1g5ta4y.8p62",
   "activationCommands": {
     "atom-text-editor": [
       "ask-stack:ask-question"
