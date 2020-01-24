@@ -286,9 +286,6 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
-".js.source":
-  whitespace:
-    ensureSingleTrailingNewline: false
 ".css.less.source":
   editor:
     autoIndentOnPaste: true
@@ -301,6 +298,9 @@
     commentEnd: ""
     commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".js.source":
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".json.source":
   whitespace:
     ensureSingleTrailingNewline: false
