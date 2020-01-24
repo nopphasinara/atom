@@ -286,6 +286,9 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".js.source":
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".css.less.source":
   editor:
     autoIndentOnPaste: true
