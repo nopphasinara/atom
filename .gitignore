@@ -35,4 +35,5 @@ recovery/
 # .apm/
 .node-gyp/
 .apm/*
+.apm/**
 !.apm/.gitignore
