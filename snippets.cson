@@ -63,6 +63,16 @@
 # Shell
 '.text.plain,
 .source.shell':
+  'function':
+    'prefix': 'fn'
+    'body': '''
+    function ${1:foobar}() {
+      ${2:# code}
+    }$0
+    '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+    'rightLabelHTML': '<span class="snippet-label common"></span>'
+
   '#!/bin/bash':
     'prefix': 'bash'
     'body': '''
