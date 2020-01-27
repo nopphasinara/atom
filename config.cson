@@ -301,6 +301,7 @@
 ".js.source":
   whitespace:
     ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: true
 ".json.source":
   whitespace:
     ensureSingleTrailingNewline: false
@@ -333,4 +334,4 @@
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
   whitespace:
     ensureSingleTrailingNewline: true
-    removeTrailingWhitespace: false
+    removeTrailingWhitespace: true
