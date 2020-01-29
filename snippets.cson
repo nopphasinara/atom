@@ -501,7 +501,7 @@
   'if...fn...exists':
     'prefix': 'fne'
     'body': """
-    if ( !function_exists( '${1:foobar}' ) ) {
+    if (!function_exists('${1:foobar}')) {
       function ${1:foobar}(${2:${3:\$args${4: = null}}${5:, ...}}) {
         ${6://}
       }$0
@@ -530,35 +530,32 @@
     'prefix': 'echo'
 
   'require...':
-    'prefix': 'require'
+    'prefix': 'req'
     'body': '''
     require ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'require_once...':
-    'prefix': 'require_once'
+    'prefix': 'reo'
     'body': '''
     require_once ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'include...':
-    'prefix': 'include'
+    'prefix': 'inc'
     'body': '''
     include ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'include_once...':
-    'prefix': 'include_once'
+    'prefix': 'ino'
     'body': '''
     include_once ${1:\\'$2\\'};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
-
-  'req':
-    'prefix': 'req'
 
   'req1':
     'prefix': 'req1'
@@ -736,6 +733,57 @@
     'prefix': 'preg_replace'
     'body': 'preg_replace("$1", "$2", ${3:$string})$0'
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
+
+  'Create new class':
+    'prefix': 'class'
+    'body': '''
+    /**
+    * ${1:ClassName} Class.
+    */
+    class ${1:ClassName} {
+
+      /**
+    	* Holds the plugin instance.
+    	*
+    	* @var ${1:ClassName}
+    	*/
+    	public static $instance = null;
+
+      /**
+    	* Ensures only one instance of the plugin class is loaded or can be loaded.
+    	*
+    	* @return ${1:ClassName} An instance of the class.
+    	*/
+    	public static function instance() {
+    		if ( is_null( self::$instance ) ) {
+    			self::$instance = new self();
+
+    			/**
+    			* Fires when ${1:ClassName} fully loaded and instantiated.
+    			*/
+    			define(\\'${1:ClassName}_Tests\\', true);
+    		}
+
+    		return self::$instance;
+    	}
+
+
+      /**
+    	* Initializing ${1:ClassName}.
+    	*/
+    	private function __construct() {
+        //
+    	}
+    }
+
+    if (!defined(\\'${1:ClassName}\\')) {
+    	// In tests we run the instance manually.
+    	\\$${1:ClassName} = ${1:ClassName}::instance();
+    }
+    $0
+    '''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+    'rightLabelHTML': '<span class="snippet-label common">Create new class</span>'
 
 
 # Javascript
