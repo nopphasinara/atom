@@ -35,7 +35,7 @@
       "background-tips"
       "autosave"
       "deprecation-cop"
-      "git-diff"
+      "welcome"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -160,7 +160,8 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
-  "git-diff": {}
+  "git-diff":
+    showIconsInEditorGutter: true
   "git-plus":
     diffs:
       useSplitDiff: true
