@@ -13,11 +13,15 @@
     fuzzy:
       enabled: true
   "autocomplete-plus":
-    autoActivationDelay: 20
+    autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    enableExtendedUnicodeSupport: true
+    extraWordCharacters: ".~!@#$%&+?-_"
     minimumWordLength: 1
     moveToCancel: false
+    similarSuggestionRemoval: "textOrSnippet"
+    useAlternateScoring: false
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "coffee-compile":
@@ -36,6 +40,7 @@
       "autosave"
       "deprecation-cop"
       "welcome"
+      "exception-reporting"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -146,6 +151,9 @@
     extension: ".coffee, .less"
   "find-and-replace":
     liveSearchMinimumCharacters: 1
+    searchContextLineCountAfter: 1
+    searchContextLineCountBefore: 1
+    useRipgrep: true
   "ftp-remote-edit":
     config: "cd43b52544755a51d9fcc3fdf59514fcd3081c5b644b34296cd337f0335035b3d90a525c61e7eab0dcaa8eea37ef2f671a3b5c986c733d23e36439442be21a6e76bfa528fb1397d5203fa71e2f75102a3e96513a580d0e5bbeb9d549e6e074d06879d68c0ecbd69b28e6a596fe007836ffa873a4f1deae11a6175a991b0345fa7fd623b9c4f46dc0ad5e9d4bd98ff57b5df56b6053339af4a6c0dc67fc3f7cc57a796576aec3a27b9f9b8e6f6d187cb91c1edbe5242e1b3bb36fd7b40380d45bc8d81fd4ee163120378064df29ae8897e51c95c5aa24b55b3356c726a2f6265ecb33fc3bbdecacd9305a75e753151ed1d9e375238f076bb42e32c99f0ff77de730cd95bf1ad708ce34dc8a1da294db0e2cb9fd0d3721f4d9f15422f881d268e699c222dcda787deeb4423ae13fcc3649305d6c7e7705d87ddbac56c02f85fb034fa3e367574f87720b22af7ec7c899bfe74eaa5b968e722bcdb38a574b8893c80c17d15c0e7459511a630852f56aa808b7afbef262112fee0d76a1fded7dde747aebee2015ab2a1a4197ff8f91b5ce76626f16379a044da8f7ccf7bc80a876be2f5dfef708e6a3fb0c3b5911618dc0dbe5f027c992d6ea3f3563ba75ff605c8f5d4c5081df8b4d6148a8b822c0d66e287c86cfd4ede90d5899b1d1b590522e918d2543efe2914ef458dc0fa52c70bf5bbf1346d59c7d26aeda33810071aa830a375e6e68fe8d0061e3419c03f899f30b76c8fc7dcf6fbcf83d0b101604a8b0d9ea6934a53dd00d0d029aa58cd8476a087dcd289171fafe05bf4c217c25c4cc5a9000c98432427fadbf63995e7e285efffc558fbf8039cb52348b53171e56e11dd93e49e3d2e21b595dd779390e3a2548b3c133d1d848a61b3a716c238d7890a5101f89d4612b3a83324e933d4ac06d7e13533a80254bd0a93a50ed3d0d9314ffd886e9b9e89d752953573376a3ae0d7ad431f4e55f1bf65de2e3e10125680b589280dbb216fbb403414a32186628a6c748d83008b889aa1abb32c3ce5c54036d52a45fe71b38c7309e5090e8e2a608a10294c109438466d61ab8b65ca488cd15dc4af4cae0e92e860f8c35a3bcbbc028b0b86d19c2e1a712ae06562272d716f604f1e5f46037694a87cda74a3554e446edffc1cf343f6af7ef171879b8e64402a646bdac5c764cb6cfda63cf8c4ef29aae5247e6cb3ff4231a69bc9d5a636445d2c3522f3249c2522be822"
     finder: {}
@@ -159,6 +167,7 @@
       toggleOnStartup: false
   "fuzzy-finder":
     preserveLastSearch: true
+    scoringSystem: "alternate"
     searchAllPanes: true
   "git-diff":
     showIconsInEditorGutter: true
@@ -248,6 +257,7 @@
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
+    monitorFileAnimation: false
   "sass-autocompile":
     checkOutputFileAlreadyExists: true
     compileCompressed: false

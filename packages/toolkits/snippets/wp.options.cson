@@ -1,0 +1,449 @@
+'.source.php':
+  'active_plugins':
+    'prefix': 'active_plugins'
+    'body': '${1:get_option}(${2:\'${3:active_plugins}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'admin_email':
+    'prefix': 'admin_email'
+    'body': '${1:get_option}(${2:\'${3:admin_email}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'admin_email_lifespan':
+    'prefix': 'admin_email_lifespan'
+    'body': '${1:get_option}(${2:\'${3:admin_email_lifespan}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'avatar_default':
+    'prefix': 'avatar_default'
+    'body': '${1:get_option}(${2:\'${3:avatar_default}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'avatar_rating':
+    'prefix': 'avatar_rating'
+    'body': '${1:get_option}(${2:\'${3:avatar_rating}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'blog_charset':
+    'prefix': 'blog_charset'
+    'body': '${1:get_option}(${2:\'${3:blog_charset}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'blog_public':
+    'prefix': 'blog_public'
+    'body': '${1:get_option}(${2:\'${3:blog_public}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'blogdescription':
+    'prefix': 'blogdescription'
+    'body': '${1:get_option}(${2:\'${3:blogdescription}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'blogname':
+    'prefix': 'blogname'
+    'body': '${1:get_option}(${2:\'${3:blogname}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'category_base':
+    'prefix': 'category_base'
+    'body': '${1:get_option}(${2:\'${3:category_base}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'close_comments_days_old':
+    'prefix': 'close_comments_days_old'
+    'body': '${1:get_option}(${2:\'${3:close_comments_days_old}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'close_comments_for_old_posts':
+    'prefix': 'close_comments_for_old_posts'
+    'body': '${1:get_option}(${2:\'${3:close_comments_for_old_posts}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comment_max_links':
+    'prefix': 'comment_max_links'
+    'body': '${1:get_option}(${2:\'${3:comment_max_links}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comment_moderation':
+    'prefix': 'comment_moderation'
+    'body': '${1:get_option}(${2:\'${3:comment_moderation}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comment_order':
+    'prefix': 'comment_order'
+    'body': '${1:get_option}(${2:\'${3:comment_order}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comment_registration':
+    'prefix': 'comment_registration'
+    'body': '${1:get_option}(${2:\'${3:comment_registration}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comment_whitelist':
+    'prefix': 'comment_whitelist'
+    'body': '${1:get_option}(${2:\'${3:comment_whitelist}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comments_notify':
+    'prefix': 'comments_notify'
+    'body': '${1:get_option}(${2:\'${3:comments_notify}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'comments_per_page':
+    'prefix': 'comments_per_page'
+    'body': '${1:get_option}(${2:\'${3:comments_per_page}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'cron':
+    'prefix': 'cron'
+    'body': '${1:get_option}(${2:\'${3:cron}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'date_format':
+    'prefix': 'date_format'
+    'body': '${1:get_option}(${2:\'${3:date_format}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'db_version':
+    'prefix': 'db_version'
+    'body': '${1:get_option}(${2:\'${3:db_version}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_category':
+    'prefix': 'default_category'
+    'body': '${1:get_option}(${2:\'${3:default_category}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_comment_status':
+    'prefix': 'default_comment_status'
+    'body': '${1:get_option}(${2:\'${3:default_comment_status}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_comments_page':
+    'prefix': 'default_comments_page'
+    'body': '${1:get_option}(${2:\'${3:default_comments_page}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_email_category':
+    'prefix': 'default_email_category'
+    'body': '${1:get_option}(${2:\'${3:default_email_category}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_link_category':
+    'prefix': 'default_link_category'
+    'body': '${1:get_option}(${2:\'${3:default_link_category}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_ping_status':
+    'prefix': 'default_ping_status'
+    'body': '${1:get_option}(${2:\'${3:default_ping_status}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_pingback_flag':
+    'prefix': 'default_pingback_flag'
+    'body': '${1:get_option}(${2:\'${3:default_pingback_flag}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_post_format':
+    'prefix': 'default_post_format'
+    'body': '${1:get_option}(${2:\'${3:default_post_format}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'default_role':
+    'prefix': 'default_role'
+    'body': '${1:get_option}(${2:\'${3:default_role}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'finished_splitting_shared_terms':
+    'prefix': 'finished_splitting_shared_terms'
+    'body': '${1:get_option}(${2:\'${3:finished_splitting_shared_terms}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'fresh_site':
+    'prefix': 'fresh_site'
+    'body': '${1:get_option}(${2:\'${3:fresh_site}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'gmt_offset':
+    'prefix': 'gmt_offset'
+    'body': '${1:get_option}(${2:\'${3:gmt_offset}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'hack_file':
+    'prefix': 'hack_file'
+    'body': '${1:get_option}(${2:\'${3:hack_file}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'home':
+    'prefix': 'home'
+    'body': '${1:get_option}(${2:\'${3:home}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'html_type':
+    'prefix': 'html_type'
+    'body': '${1:get_option}(${2:\'${3:html_type}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'image_default_align':
+    'prefix': 'image_default_align'
+    'body': '${1:get_option}(${2:\'${3:image_default_align}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'image_default_link_type':
+    'prefix': 'image_default_link_type'
+    'body': '${1:get_option}(${2:\'${3:image_default_link_type}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'image_default_size':
+    'prefix': 'image_default_size'
+    'body': '${1:get_option}(${2:\'${3:image_default_size}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'initial_db_version':
+    'prefix': 'initial_db_version'
+    'body': '${1:get_option}(${2:\'${3:initial_db_version}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'large_size_h':
+    'prefix': 'large_size_h'
+    'body': '${1:get_option}(${2:\'${3:large_size_h}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'large_size_w':
+    'prefix': 'large_size_w'
+    'body': '${1:get_option}(${2:\'${3:large_size_w}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'link_manager_enabled':
+    'prefix': 'link_manager_enabled'
+    'body': '${1:get_option}(${2:\'${3:link_manager_enabled}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'links_updated_date_format':
+    'prefix': 'links_updated_date_format'
+    'body': '${1:get_option}(${2:\'${3:links_updated_date_format}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'mailserver_login':
+    'prefix': 'mailserver_login'
+    'body': '${1:get_option}(${2:\'${3:mailserver_login}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'mailserver_pass':
+    'prefix': 'mailserver_pass'
+    'body': '${1:get_option}(${2:\'${3:mailserver_pass}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'mailserver_port':
+    'prefix': 'mailserver_port'
+    'body': '${1:get_option}(${2:\'${3:mailserver_port}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'mailserver_url':
+    'prefix': 'mailserver_url'
+    'body': '${1:get_option}(${2:\'${3:mailserver_url}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'medium_large_size_h':
+    'prefix': 'medium_large_size_h'
+    'body': '${1:get_option}(${2:\'${3:medium_large_size_h}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'medium_large_size_w':
+    'prefix': 'medium_large_size_w'
+    'body': '${1:get_option}(${2:\'${3:medium_large_size_w}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'medium_size_h':
+    'prefix': 'medium_size_h'
+    'body': '${1:get_option}(${2:\'${3:medium_size_h}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'medium_size_w':
+    'prefix': 'medium_size_w'
+    'body': '${1:get_option}(${2:\'${3:medium_size_w}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'moderation_notify':
+    'prefix': 'moderation_notify'
+    'body': '${1:get_option}(${2:\'${3:moderation_notify}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'page_comments':
+    'prefix': 'page_comments'
+    'body': '${1:get_option}(${2:\'${3:page_comments}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'page_for_posts':
+    'prefix': 'page_for_posts'
+    'body': '${1:get_option}(${2:\'${3:page_for_posts}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'page_on_front':
+    'prefix': 'page_on_front'
+    'body': '${1:get_option}(${2:\'${3:page_on_front}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'permalink_structure':
+    'prefix': 'permalink_structure'
+    'body': '${1:get_option}(${2:\'${3:permalink_structure}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'ping_sites':
+    'prefix': 'ping_sites'
+    'body': '${1:get_option}(${2:\'${3:ping_sites}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'posts_per_page':
+    'prefix': 'posts_per_page'
+    'body': '${1:get_option}(${2:\'${3:posts_per_page}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'posts_per_rss':
+    'prefix': 'posts_per_rss'
+    'body': '${1:get_option}(${2:\'${3:posts_per_rss}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'recently_activated':
+    'prefix': 'recently_activated'
+    'body': '${1:get_option}(${2:\'${3:recently_activated}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'recovery_keys':
+    'prefix': 'recovery_keys'
+    'body': '${1:get_option}(${2:\'${3:recovery_keys}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'recovery_mode_email_last_sent':
+    'prefix': 'recovery_mode_email_last_sent'
+    'body': '${1:get_option}(${2:\'${3:recovery_mode_email_last_sent}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'require_name_email':
+    'prefix': 'require_name_email'
+    'body': '${1:get_option}(${2:\'${3:require_name_email}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'rewrite_rules':
+    'prefix': 'rewrite_rules'
+    'body': '${1:get_option}(${2:\'${3:rewrite_rules}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'rss_use_excerpt':
+    'prefix': 'rss_use_excerpt'
+    'body': '${1:get_option}(${2:\'${3:rss_use_excerpt}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'show_avatars':
+    'prefix': 'show_avatars'
+    'body': '${1:get_option}(${2:\'${3:show_avatars}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'show_comments_cookies_opt_in':
+    'prefix': 'show_comments_cookies_opt_in'
+    'body': '${1:get_option}(${2:\'${3:show_comments_cookies_opt_in}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'show_on_front':
+    'prefix': 'show_on_front'
+    'body': '${1:get_option}(${2:\'${3:show_on_front}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'sidebars_widgets':
+    'prefix': 'sidebars_widgets'
+    'body': '${1:get_option}(${2:\'${3:sidebars_widgets}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'site_icon':
+    'prefix': 'site_icon'
+    'body': '${1:get_option}(${2:\'${3:site_icon}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'siteurl':
+    'prefix': 'siteurl'
+    'body': '${1:get_option}(${2:\'${3:siteurl}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'start_of_week':
+    'prefix': 'start_of_week'
+    'body': '${1:get_option}(${2:\'${3:start_of_week}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'sticky_posts':
+    'prefix': 'sticky_posts'
+    'body': '${1:get_option}(${2:\'${3:sticky_posts}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'stylesheet':
+    'prefix': 'stylesheet'
+    'body': '${1:get_option}(${2:\'${3:stylesheet}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'tag_base':
+    'prefix': 'tag_base'
+    'body': '${1:get_option}(${2:\'${3:tag_base}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'template':
+    'prefix': 'template'
+    'body': '${1:get_option}(${2:\'${3:template}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'theme_mods_twentytwenty':
+    'prefix': 'theme_mods_twentytwenty'
+    'body': '${1:get_option}(${2:\'${3:theme_mods_twentytwenty}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'thread_comments':
+    'prefix': 'thread_comments'
+    'body': '${1:get_option}(${2:\'${3:thread_comments}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'thread_comments_depth':
+    'prefix': 'thread_comments_depth'
+    'body': '${1:get_option}(${2:\'${3:thread_comments_depth}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'thumbnail_crop':
+    'prefix': 'thumbnail_crop'
+    'body': '${1:get_option}(${2:\'${3:thumbnail_crop}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'thumbnail_size_h':
+    'prefix': 'thumbnail_size_h'
+    'body': '${1:get_option}(${2:\'${3:thumbnail_size_h}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'thumbnail_size_w':
+    'prefix': 'thumbnail_size_w'
+    'body': '${1:get_option}(${2:\'${3:thumbnail_size_w}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'time_format':
+    'prefix': 'time_format'
+    'body': '${1:get_option}(${2:\'${3:time_format}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'timezone_string':
+    'prefix': 'timezone_string'
+    'body': '${1:get_option}(${2:\'${3:timezone_string}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'upload_path':
+    'prefix': 'upload_path'
+    'body': '${1:get_option}(${2:\'${3:upload_path}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'upload_url_path':
+    'prefix': 'upload_url_path'
+    'body': '${1:get_option}(${2:\'${3:upload_url_path}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'uploads_use_yearmonth_folders':
+    'prefix': 'uploads_use_yearmonth_folders'
+    'body': '${1:get_option}(${2:\'${3:uploads_use_yearmonth_folders}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'use_balanceTags':
+    'prefix': 'use_balanceTags'
+    'body': '${1:get_option}(${2:\'${3:use_balanceTags}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'use_smilies':
+    'prefix': 'use_smilies'
+    'body': '${1:get_option}(${2:\'${3:use_smilies}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'use_trackback':
+    'prefix': 'use_trackback'
+    'body': '${1:get_option}(${2:\'${3:use_trackback}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'users_can_register':
+    'prefix': 'users_can_register'
+    'body': '${1:get_option}(${2:\'${3:users_can_register}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'v1_user_roles':
+    'prefix': 'v1_user_roles'
+    'body': '${1:get_option}(${2:\'${3:v1_user_roles}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_archives':
+    'prefix': 'widget_archives'
+    'body': '${1:get_option}(${2:\'${3:widget_archives}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_calendar':
+    'prefix': 'widget_calendar'
+    'body': '${1:get_option}(${2:\'${3:widget_calendar}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_categories':
+    'prefix': 'widget_categories'
+    'body': '${1:get_option}(${2:\'${3:widget_categories}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_custom_html':
+    'prefix': 'widget_custom_html'
+    'body': '${1:get_option}(${2:\'${3:widget_custom_html}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_media_audio':
+    'prefix': 'widget_media_audio'
+    'body': '${1:get_option}(${2:\'${3:widget_media_audio}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_media_gallery':
+    'prefix': 'widget_media_gallery'
+    'body': '${1:get_option}(${2:\'${3:widget_media_gallery}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_media_image':
+    'prefix': 'widget_media_image'
+    'body': '${1:get_option}(${2:\'${3:widget_media_image}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_media_video':
+    'prefix': 'widget_media_video'
+    'body': '${1:get_option}(${2:\'${3:widget_media_video}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_meta':
+    'prefix': 'widget_meta'
+    'body': '${1:get_option}(${2:\'${3:widget_meta}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_nav_menu':
+    'prefix': 'widget_nav_menu'
+    'body': '${1:get_option}(${2:\'${3:widget_nav_menu}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_pages':
+    'prefix': 'widget_pages'
+    'body': '${1:get_option}(${2:\'${3:widget_pages}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_recent-comments':
+    'prefix': 'widget_recent-comments'
+    'body': '${1:get_option}(${2:\'${3:widget_recent-comments}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_recent-posts':
+    'prefix': 'widget_recent-posts'
+    'body': '${1:get_option}(${2:\'${3:widget_recent-posts}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_rss':
+    'prefix': 'widget_rss'
+    'body': '${1:get_option}(${2:\'${3:widget_rss}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_search':
+    'prefix': 'widget_search'
+    'body': '${1:get_option}(${2:\'${3:widget_search}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_tag_cloud':
+    'prefix': 'widget_tag_cloud'
+    'body': '${1:get_option}(${2:\'${3:widget_tag_cloud}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'widget_text':
+    'prefix': 'widget_text'
+    'body': '${1:get_option}(${2:\'${3:widget_text}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
+  'wp_page_for_privacy_policy':
+    'prefix': 'wp_page_for_privacy_policy'
+    'body': '${1:get_option}(${2:\'${3:wp_page_for_privacy_policy}\'})$0'
+    'leftLabelHTML': '<span class="snippet-label warning">Option</span>'
