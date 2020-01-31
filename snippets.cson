@@ -512,16 +512,11 @@
 
   'e':
     'prefix': 'e'
-    'body': """
-    echo ${2:'$1'};$0
-    """
-    'leftLabelHTML': '<span class="snippet-label success">void</span>'
-    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
 
   'ec':
     'prefix': 'ec'
     'body': """
-    echo ${2:'$1'};$0
+    echo ${1:'$2'};$0
     """
     'leftLabelHTML': '<span class="snippet-label success">void</span>'
     'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
@@ -609,21 +604,21 @@
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'exit()':
-    'prefix': 'x'
+    'prefix': 'ex'
     'body': '''
     exit${2:($1)};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'break;':
-    'prefix': 'b'
+    'prefix': 'br'
     'body': '''
     break;$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'return;':
-    'prefix': 'r'
+    'prefix': 'ret'
     'body': '''
     ${1:return${2:\\ ${3:void}}};$0
     '''
@@ -716,14 +711,14 @@
     'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'print_r':
-    'prefix': 'p_r'
+    'prefix': 'pr'
     'body': '''
     echo \'<pre>\'; print_r($1); echo \'</pre>\';
     '''
     'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
   'print_var':
-    'prefix': 'p_v'
+    'prefix': 'pv'
     'body': '''
     gct_print_var(${1:\\$var}, ${2:false});$0
     '''
@@ -794,7 +789,7 @@
     'leftLabelHTML': '<span class="snippet-label common">void</span>'
     'rightLabelHTML': '<span class="snippet-label common">Create new class</span>'
   'print result test':
-    'prefix': 'prt'
+    'prefix': 'prr'
     'body': '''
     \\$ret = ${1:null};
     echo '<pre>'; print_r($ret); echo '</pre>';$0
@@ -836,6 +831,11 @@
     if (!defined(${2:\\'$1\\'})) {
       $3
     }$0
+    '''
+  'print class methods':
+    'prefix': 'prcm'
+    'body': '''
+    echo '<pre>'; print_r(get_class_methods(${1:foo})); echo '</pre>';$0
     '''
 
 
