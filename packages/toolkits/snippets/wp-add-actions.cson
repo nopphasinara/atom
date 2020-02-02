@@ -1,0 +1,2809 @@
+".source.php":
+  "add_action('activated_plugin', callback)":
+    "prefix": "add-action-activated_plugin"
+    "body": "add_action('activated_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activate_blog', callback)":
+    "prefix": "add-action-activate_blog"
+    "body": "add_action('activate_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activate_header', callback)":
+    "prefix": "add-action-activate_header"
+    "body": "add_action('activate_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activate_plugin', callback)":
+    "prefix": "add-action-activate_plugin"
+    "body": "add_action('activate_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activate_wp_head', callback)":
+    "prefix": "add-action-activate_wp_head"
+    "body": "add_action('activate_wp_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activate_PLUGIN', callback)":
+    "prefix": "add-action-activate_PLUGIN"
+    "body": "add_action('activate_PLUGIN', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('activity_box_end', callback)":
+    "prefix": "add-action-activity_box_end"
+    "body": "add_action('activity_box_end', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('added_existing_user', callback)":
+    "prefix": "add-action-added_existing_user"
+    "body": "add_action('added_existing_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('added_option', callback)":
+    "prefix": "add-action-added_option"
+    "body": "add_action('added_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('added_term_relationship', callback)":
+    "prefix": "add-action-added_term_relationship"
+    "body": "add_action('added_term_relationship', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('added_usermeta', callback)":
+    "prefix": "add-action-added_usermeta"
+    "body": "add_action('added_usermeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('added_META_TYPE_meta', callback)":
+    "prefix": "add-action-added_META_TYPE_meta"
+    "body": "add_action('added_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_admin_bar_menus', callback)":
+    "prefix": "add-action-add_admin_bar_menus"
+    "body": "add_action('add_admin_bar_menus', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_attachment', callback)":
+    "prefix": "add-action-add_attachment"
+    "body": "add_action('add_attachment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_category_form_pre', callback)":
+    "prefix": "add-action-add_category_form_pre"
+    "body": "add_action('add_category_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_inline_data', callback)":
+    "prefix": "add-action-add_inline_data"
+    "body": "add_action('add_inline_data', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_link', callback)":
+    "prefix": "add-action-add_link"
+    "body": "add_action('add_link', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_link_category_form_pre', callback)":
+    "prefix": "add-action-add_link_category_form_pre"
+    "body": "add_action('add_link_category_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_meta_boxes', callback)":
+    "prefix": "add-action-add_meta_boxes"
+    "body": "add_action('add_meta_boxes', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_meta_boxes_comment', callback)":
+    "prefix": "add-action-add_meta_boxes_comment"
+    "body": "add_action('add_meta_boxes_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_meta_boxes_link', callback)":
+    "prefix": "add-action-add_meta_boxes_link"
+    "body": "add_action('add_meta_boxes_link', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_meta_boxes_POST_TYPE', callback)":
+    "prefix": "add-action-add_meta_boxes_POST_TYPE"
+    "body": "add_action('add_meta_boxes_POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_option', callback)":
+    "prefix": "add-action-add_option"
+    "body": "add_action('add_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_option_OPTION', callback)":
+    "prefix": "add-action-add_option_OPTION"
+    "body": "add_action('add_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_site_option', callback)":
+    "prefix": "add-action-add_site_option"
+    "body": "add_action('add_site_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_site_option_OPTION', callback)":
+    "prefix": "add-action-add_site_option_OPTION"
+    "body": "add_action('add_site_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_tag_form', callback)":
+    "prefix": "add-action-add_tag_form"
+    "body": "add_action('add_tag_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_tag_form_fields', callback)":
+    "prefix": "add-action-add_tag_form_fields"
+    "body": "add_action('add_tag_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_tag_form_pre', callback)":
+    "prefix": "add-action-add_tag_form_pre"
+    "body": "add_action('add_tag_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_term_relationship', callback)":
+    "prefix": "add-action-add_term_relationship"
+    "body": "add_action('add_term_relationship', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_user_role', callback)":
+    "prefix": "add-action-add_user_role"
+    "body": "add_action('add_user_role', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_user_to_blog', callback)":
+    "prefix": "add-action-add_user_to_blog"
+    "body": "add_action('add_user_to_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('add_META_TYPE_meta', callback)":
+    "prefix": "add-action-add_META_TYPE_meta"
+    "body": "add_action('add_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('adminmenu', callback)":
+    "prefix": "add-action-adminmenu"
+    "body": "add_action('adminmenu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_action_ACTION', callback)":
+    "prefix": "add-action-admin_action_ACTION"
+    "body": "add_action('admin_action_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_bar_init', callback)":
+    "prefix": "add-action-admin_bar_init"
+    "body": "add_action('admin_bar_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_bar_menu', callback)":
+    "prefix": "add-action-admin_bar_menu"
+    "body": "add_action('admin_bar_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_color_scheme_picker', callback)":
+    "prefix": "add-action-admin_color_scheme_picker"
+    "body": "add_action('admin_color_scheme_picker', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_enqueue_scripts', callback)":
+    "prefix": "add-action-admin_enqueue_scripts"
+    "body": "add_action('admin_enqueue_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_footer', callback)":
+    "prefix": "add-action-admin_footer"
+    "body": "add_action('admin_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_footer-widgets-php', callback)":
+    "prefix": "add-action-admin_footer-widgets-php"
+    "body": "add_action('admin_footer-widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_footer-HOOK_SUFFIX', callback)":
+    "prefix": "add-action-admin_footer-HOOK_SUFFIX"
+    "body": "add_action('admin_footer-HOOK_SUFFIX', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_head', callback)":
+    "prefix": "add-action-admin_head"
+    "body": "add_action('admin_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_head-media-upload-popup', callback)":
+    "prefix": "add-action-admin_head-media-upload-popup"
+    "body": "add_action('admin_head-media-upload-popup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_head-HOOK_SUFFIX', callback)":
+    "prefix": "add-action-admin_head-HOOK_SUFFIX"
+    "body": "add_action('admin_head-HOOK_SUFFIX', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_head_CONTENT_FUNC', callback)":
+    "prefix": "add-action-admin_head_CONTENT_FUNC"
+    "body": "add_action('admin_head_CONTENT_FUNC', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_init', callback)":
+    "prefix": "add-action-admin_init"
+    "body": "add_action('admin_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_menu', callback)":
+    "prefix": "add-action-admin_menu"
+    "body": "add_action('admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_notices', callback)":
+    "prefix": "add-action-admin_notices"
+    "body": "add_action('admin_notices', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_page_access_denied', callback)":
+    "prefix": "add-action-admin_page_access_denied"
+    "body": "add_action('admin_page_access_denied', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_post', callback)":
+    "prefix": "add-action-admin_post"
+    "body": "add_action('admin_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_post_nopriv', callback)":
+    "prefix": "add-action-admin_post_nopriv"
+    "body": "add_action('admin_post_nopriv', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_post_nopriv_ACTION', callback)":
+    "prefix": "add-action-admin_post_nopriv_ACTION"
+    "body": "add_action('admin_post_nopriv_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_post_ACTION', callback)":
+    "prefix": "add-action-admin_post_ACTION"
+    "body": "add_action('admin_post_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_footer_scripts', callback)":
+    "prefix": "add-action-admin_print_footer_scripts"
+    "body": "add_action('admin_print_footer_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_footer_scripts-widgets-php', callback)":
+    "prefix": "add-action-admin_print_footer_scripts-widgets-php"
+    "body": "add_action('admin_print_footer_scripts-widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_footer_scripts-HOOK_SUFFIX', callback)":
+    "prefix": "add-action-admin_print_footer_scripts-HOOK_SUFFIX"
+    "body": "add_action('admin_print_footer_scripts-HOOK_SUFFIX', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_scripts', callback)":
+    "prefix": "add-action-admin_print_scripts"
+    "body": "add_action('admin_print_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_scripts-media-upload-popup', callback)":
+    "prefix": "add-action-admin_print_scripts-media-upload-popup"
+    "body": "add_action('admin_print_scripts-media-upload-popup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_scripts-widgets-php', callback)":
+    "prefix": "add-action-admin_print_scripts-widgets-php"
+    "body": "add_action('admin_print_scripts-widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_scripts-HOOK_SUFFIX', callback)":
+    "prefix": "add-action-admin_print_scripts-HOOK_SUFFIX"
+    "body": "add_action('admin_print_scripts-HOOK_SUFFIX', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_styles', callback)":
+    "prefix": "add-action-admin_print_styles"
+    "body": "add_action('admin_print_styles', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_styles-media-upload-popup', callback)":
+    "prefix": "add-action-admin_print_styles-media-upload-popup"
+    "body": "add_action('admin_print_styles-media-upload-popup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_styles-widgets-php', callback)":
+    "prefix": "add-action-admin_print_styles-widgets-php"
+    "body": "add_action('admin_print_styles-widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_print_styles-HOOK_SUFFIX', callback)":
+    "prefix": "add-action-admin_print_styles-HOOK_SUFFIX"
+    "body": "add_action('admin_print_styles-HOOK_SUFFIX', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('admin_xml_ns', callback)":
+    "prefix": "add-action-admin_xml_ns"
+    "body": "add_action('admin_xml_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after-TAXONOMY-table', callback)":
+    "prefix": "add-action-after-TAXONOMY-table"
+    "body": "add_action('after-TAXONOMY-table', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_db_upgrade', callback)":
+    "prefix": "add-action-after_db_upgrade"
+    "body": "add_action('after_db_upgrade', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_delete_post', callback)":
+    "prefix": "add-action-after_delete_post"
+    "body": "add_action('after_delete_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_menu_locations_table', callback)":
+    "prefix": "add-action-after_menu_locations_table"
+    "body": "add_action('after_menu_locations_table', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_mu_upgrade', callback)":
+    "prefix": "add-action-after_mu_upgrade"
+    "body": "add_action('after_mu_upgrade', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_password_reset', callback)":
+    "prefix": "add-action-after_password_reset"
+    "body": "add_action('after_password_reset', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_plugin_row', callback)":
+    "prefix": "add-action-after_plugin_row"
+    "body": "add_action('after_plugin_row', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_plugin_row_PLUGIN_FILE', callback)":
+    "prefix": "add-action-after_plugin_row_PLUGIN_FILE"
+    "body": "add_action('after_plugin_row_PLUGIN_FILE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_setup_theme', callback)":
+    "prefix": "add-action-after_setup_theme"
+    "body": "add_action('after_setup_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_signup_form', callback)":
+    "prefix": "add-action-after_signup_form"
+    "body": "add_action('after_signup_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_signup_site', callback)":
+    "prefix": "add-action-after_signup_site"
+    "body": "add_action('after_signup_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_signup_user', callback)":
+    "prefix": "add-action-after_signup_user"
+    "body": "add_action('after_signup_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_switch_theme', callback)":
+    "prefix": "add-action-after_switch_theme"
+    "body": "add_action('after_switch_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_theme_row', callback)":
+    "prefix": "add-action-after_theme_row"
+    "body": "add_action('after_theme_row', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_theme_row_STYLESHEET', callback)":
+    "prefix": "add-action-after_theme_row_STYLESHEET"
+    "body": "add_action('after_theme_row_STYLESHEET', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('after_wp_tiny_mce', callback)":
+    "prefix": "add-action-after_wp_tiny_mce"
+    "body": "add_action('after_wp_tiny_mce', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_batch_delete_count', callback)":
+    "prefix": "add-action-akismet_batch_delete_count"
+    "body": "add_action('akismet_batch_delete_count', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_comment_check_response', callback)":
+    "prefix": "add-action-akismet_comment_check_response"
+    "body": "add_action('akismet_comment_check_response', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_delete_commentmeta_batch', callback)":
+    "prefix": "add-action-akismet_delete_commentmeta_batch"
+    "body": "add_action('akismet_delete_commentmeta_batch', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_delete_comment_batch', callback)":
+    "prefix": "add-action-akismet_delete_comment_batch"
+    "body": "add_action('akismet_delete_comment_batch', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_https_disabled', callback)":
+    "prefix": "add-action-akismet_https_disabled"
+    "body": "add_action('akismet_https_disabled', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_https_request_failure', callback)":
+    "prefix": "add-action-akismet_https_request_failure"
+    "body": "add_action('akismet_https_request_failure', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_https_request_pre', callback)":
+    "prefix": "add-action-akismet_https_request_pre"
+    "body": "add_action('akismet_https_request_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_http_request_pre', callback)":
+    "prefix": "add-action-akismet_http_request_pre"
+    "body": "add_action('akismet_http_request_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_request_failure', callback)":
+    "prefix": "add-action-akismet_request_failure"
+    "body": "add_action('akismet_request_failure', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_scheduled_recheck', callback)":
+    "prefix": "add-action-akismet_scheduled_recheck"
+    "body": "add_action('akismet_scheduled_recheck', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_spam_caught', callback)":
+    "prefix": "add-action-akismet_spam_caught"
+    "body": "add_action('akismet_spam_caught', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_ssl_disabled', callback)":
+    "prefix": "add-action-akismet_ssl_disabled"
+    "body": "add_action('akismet_ssl_disabled', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_submit_nonspam_comment', callback)":
+    "prefix": "add-action-akismet_submit_nonspam_comment"
+    "body": "add_action('akismet_submit_nonspam_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('akismet_submit_spam_comment', callback)":
+    "prefix": "add-action-akismet_submit_spam_comment"
+    "body": "add_action('akismet_submit_spam_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('all_admin_notices', callback)":
+    "prefix": "add-action-all_admin_notices"
+    "body": "add_action('all_admin_notices', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('archive_blog', callback)":
+    "prefix": "add-action-archive_blog"
+    "body": "add_action('archive_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('atom_author', callback)":
+    "prefix": "add-action-atom_author"
+    "body": "add_action('atom_author', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('atom_comments_ns', callback)":
+    "prefix": "add-action-atom_comments_ns"
+    "body": "add_action('atom_comments_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('atom_entry', callback)":
+    "prefix": "add-action-atom_entry"
+    "body": "add_action('atom_entry', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('atom_head', callback)":
+    "prefix": "add-action-atom_head"
+    "body": "add_action('atom_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('atom_ns', callback)":
+    "prefix": "add-action-atom_ns"
+    "body": "add_action('atom_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('attachment_submitbox_misc_actions', callback)":
+    "prefix": "add-action-attachment_submitbox_misc_actions"
+    "body": "add_action('attachment_submitbox_misc_actions', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('attachment_updated', callback)":
+    "prefix": "add-action-attachment_updated"
+    "body": "add_action('attachment_updated', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_bad_hash', callback)":
+    "prefix": "add-action-auth_cookie_bad_hash"
+    "body": "add_action('auth_cookie_bad_hash', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_bad_session_token', callback)":
+    "prefix": "add-action-auth_cookie_bad_session_token"
+    "body": "add_action('auth_cookie_bad_session_token', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_bad_username', callback)":
+    "prefix": "add-action-auth_cookie_bad_username"
+    "body": "add_action('auth_cookie_bad_username', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_expired', callback)":
+    "prefix": "add-action-auth_cookie_expired"
+    "body": "add_action('auth_cookie_expired', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_malformed', callback)":
+    "prefix": "add-action-auth_cookie_malformed"
+    "body": "add_action('auth_cookie_malformed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_cookie_valid', callback)":
+    "prefix": "add-action-auth_cookie_valid"
+    "body": "add_action('auth_cookie_valid', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('auth_redirect', callback)":
+    "prefix": "add-action-auth_redirect"
+    "body": "add_action('auth_redirect', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('automatic_updates_complete', callback)":
+    "prefix": "add-action-automatic_updates_complete"
+    "body": "add_action('automatic_updates_complete', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('before_delete_post', callback)":
+    "prefix": "add-action-before_delete_post"
+    "body": "add_action('before_delete_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('before_signup_form', callback)":
+    "prefix": "add-action-before_signup_form"
+    "body": "add_action('before_signup_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('before_signup_header', callback)":
+    "prefix": "add-action-before_signup_header"
+    "body": "add_action('before_signup_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('before_wp_tiny_mce', callback)":
+    "prefix": "add-action-before_wp_tiny_mce"
+    "body": "add_action('before_wp_tiny_mce', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('begin_fetch_post_thumbnail_html', callback)":
+    "prefix": "add-action-begin_fetch_post_thumbnail_html"
+    "body": "add_action('begin_fetch_post_thumbnail_html', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('block_editor_meta_box_hidden_fields', callback)":
+    "prefix": "add-action-block_editor_meta_box_hidden_fields"
+    "body": "add_action('block_editor_meta_box_hidden_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('blog_privacy_selector', callback)":
+    "prefix": "add-action-blog_privacy_selector"
+    "body": "add_action('blog_privacy_selector', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('bulk_edit_custom_box', callback)":
+    "prefix": "add-action-bulk_edit_custom_box"
+    "body": "add_action('bulk_edit_custom_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('change_locale', callback)":
+    "prefix": "add-action-change_locale"
+    "body": "add_action('change_locale', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('check_admin_referer', callback)":
+    "prefix": "add-action-check_admin_referer"
+    "body": "add_action('check_admin_referer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('check_ajax_referer', callback)":
+    "prefix": "add-action-check_ajax_referer"
+    "body": "add_action('check_ajax_referer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('check_comment_flood', callback)":
+    "prefix": "add-action-check_comment_flood"
+    "body": "add_action('check_comment_flood', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('check_passwords', callback)":
+    "prefix": "add-action-check_passwords"
+    "body": "add_action('check_passwords', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_attachment_cache', callback)":
+    "prefix": "add-action-clean_attachment_cache"
+    "body": "add_action('clean_attachment_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_comment_cache', callback)":
+    "prefix": "add-action-clean_comment_cache"
+    "body": "add_action('clean_comment_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_network_cache', callback)":
+    "prefix": "add-action-clean_network_cache"
+    "body": "add_action('clean_network_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_object_term_cache', callback)":
+    "prefix": "add-action-clean_object_term_cache"
+    "body": "add_action('clean_object_term_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_page_cache', callback)":
+    "prefix": "add-action-clean_page_cache"
+    "body": "add_action('clean_page_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_post_cache', callback)":
+    "prefix": "add-action-clean_post_cache"
+    "body": "add_action('clean_post_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_site_cache', callback)":
+    "prefix": "add-action-clean_site_cache"
+    "body": "add_action('clean_site_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_taxonomy_cache', callback)":
+    "prefix": "add-action-clean_taxonomy_cache"
+    "body": "add_action('clean_taxonomy_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_term_cache', callback)":
+    "prefix": "add-action-clean_term_cache"
+    "body": "add_action('clean_term_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clean_user_cache', callback)":
+    "prefix": "add-action-clean_user_cache"
+    "body": "add_action('clean_user_cache', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('clear_auth_cookie', callback)":
+    "prefix": "add-action-clear_auth_cookie"
+    "body": "add_action('clear_auth_cookie', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('commentrss2_item', callback)":
+    "prefix": "add-action-commentrss2_item"
+    "body": "add_action('commentrss2_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('commentsrss2_head', callback)":
+    "prefix": "add-action-commentsrss2_head"
+    "body": "add_action('commentsrss2_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comments_atom_head', callback)":
+    "prefix": "add-action-comments_atom_head"
+    "body": "add_action('comments_atom_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_add_author_url', callback)":
+    "prefix": "add-action-comment_add_author_url"
+    "body": "add_action('comment_add_author_url', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_atom_entry', callback)":
+    "prefix": "add-action-comment_atom_entry"
+    "body": "add_action('comment_atom_entry', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_closed', callback)":
+    "prefix": "add-action-comment_closed"
+    "body": "add_action('comment_closed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_duplicate_trigger', callback)":
+    "prefix": "add-action-comment_duplicate_trigger"
+    "body": "add_action('comment_duplicate_trigger', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_flood_trigger', callback)":
+    "prefix": "add-action-comment_flood_trigger"
+    "body": "add_action('comment_flood_trigger', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form', callback)":
+    "prefix": "add-action-comment_form"
+    "body": "add_action('comment_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_after', callback)":
+    "prefix": "add-action-comment_form_after"
+    "body": "add_action('comment_form_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_after_fields', callback)":
+    "prefix": "add-action-comment_form_after_fields"
+    "body": "add_action('comment_form_after_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_before', callback)":
+    "prefix": "add-action-comment_form_before"
+    "body": "add_action('comment_form_before', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_before_fields', callback)":
+    "prefix": "add-action-comment_form_before_fields"
+    "body": "add_action('comment_form_before_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_comments_closed', callback)":
+    "prefix": "add-action-comment_form_comments_closed"
+    "body": "add_action('comment_form_comments_closed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_logged_in_after', callback)":
+    "prefix": "add-action-comment_form_logged_in_after"
+    "body": "add_action('comment_form_logged_in_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_must_log_in_after', callback)":
+    "prefix": "add-action-comment_form_must_log_in_after"
+    "body": "add_action('comment_form_must_log_in_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_form_top', callback)":
+    "prefix": "add-action-comment_form_top"
+    "body": "add_action('comment_form_top', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_id_not_found', callback)":
+    "prefix": "add-action-comment_id_not_found"
+    "body": "add_action('comment_id_not_found', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_loop_start', callback)":
+    "prefix": "add-action-comment_loop_start"
+    "body": "add_action('comment_loop_start', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_on_draft', callback)":
+    "prefix": "add-action-comment_on_draft"
+    "body": "add_action('comment_on_draft', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_on_password_protected', callback)":
+    "prefix": "add-action-comment_on_password_protected"
+    "body": "add_action('comment_on_password_protected', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_on_trash', callback)":
+    "prefix": "add-action-comment_on_trash"
+    "body": "add_action('comment_on_trash', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_post', callback)":
+    "prefix": "add-action-comment_post"
+    "body": "add_action('comment_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_remove_author_url', callback)":
+    "prefix": "add-action-comment_remove_author_url"
+    "body": "add_action('comment_remove_author_url', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_NEW_STATUS_COMMENT->COMMENT_TYPE', callback)":
+    "prefix": "add-action-comment_NEW_STATUS_COMMENT->COMMENT_TYPE"
+    "body": "add_action('comment_NEW_STATUS_COMMENT->COMMENT_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('comment_OLD_STATUS_TO_NEW_STATUS', callback)":
+    "prefix": "add-action-comment_OLD_STATUS_TO_NEW_STATUS"
+    "body": "add_action('comment_OLD_STATUS_TO_NEW_STATUS', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('core_upgrade_preamble', callback)":
+    "prefix": "add-action-core_upgrade_preamble"
+    "body": "add_action('core_upgrade_preamble', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('created_category', callback)":
+    "prefix": "add-action-created_category"
+    "body": "add_action('created_category', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('created_term', callback)":
+    "prefix": "add-action-created_term"
+    "body": "add_action('created_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('created_TAXONOMY', callback)":
+    "prefix": "add-action-created_TAXONOMY"
+    "body": "add_action('created_TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('create_category', callback)":
+    "prefix": "add-action-create_category"
+    "body": "add_action('create_category', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('create_term', callback)":
+    "prefix": "add-action-create_term"
+    "body": "add_action('create_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('create_TAXONOMY', callback)":
+    "prefix": "add-action-create_TAXONOMY"
+    "body": "add_action('create_TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_controls_enqueue_scripts', callback)":
+    "prefix": "add-action-customize_controls_enqueue_scripts"
+    "body": "add_action('customize_controls_enqueue_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_controls_init', callback)":
+    "prefix": "add-action-customize_controls_init"
+    "body": "add_action('customize_controls_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_controls_print_footer_scripts', callback)":
+    "prefix": "add-action-customize_controls_print_footer_scripts"
+    "body": "add_action('customize_controls_print_footer_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_controls_print_scripts', callback)":
+    "prefix": "add-action-customize_controls_print_scripts"
+    "body": "add_action('customize_controls_print_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_controls_print_styles', callback)":
+    "prefix": "add-action-customize_controls_print_styles"
+    "body": "add_action('customize_controls_print_styles', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_post_value_set', callback)":
+    "prefix": "add-action-customize_post_value_set"
+    "body": "add_action('customize_post_value_set', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_post_value_set_SETTING_ID', callback)":
+    "prefix": "add-action-customize_post_value_set_SETTING_ID"
+    "body": "add_action('customize_post_value_set_SETTING_ID', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_preview_init', callback)":
+    "prefix": "add-action-customize_preview_init"
+    "body": "add_action('customize_preview_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_preview_THIS->ID', callback)":
+    "prefix": "add-action-customize_preview_THIS->ID"
+    "body": "add_action('customize_preview_THIS->ID', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_preview_THIS->TYPE', callback)":
+    "prefix": "add-action-customize_preview_THIS->TYPE"
+    "body": "add_action('customize_preview_THIS->TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_register', callback)":
+    "prefix": "add-action-customize_register"
+    "body": "add_action('customize_register', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_control', callback)":
+    "prefix": "add-action-customize_render_control"
+    "body": "add_action('customize_render_control', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_control_THIS->ID', callback)":
+    "prefix": "add-action-customize_render_control_THIS->ID"
+    "body": "add_action('customize_render_control_THIS->ID', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_panel', callback)":
+    "prefix": "add-action-customize_render_panel"
+    "body": "add_action('customize_render_panel', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_panel_THIS->ID', callback)":
+    "prefix": "add-action-customize_render_panel_THIS->ID"
+    "body": "add_action('customize_render_panel_THIS->ID', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_partials_after', callback)":
+    "prefix": "add-action-customize_render_partials_after"
+    "body": "add_action('customize_render_partials_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_partials_before', callback)":
+    "prefix": "add-action-customize_render_partials_before"
+    "body": "add_action('customize_render_partials_before', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_section', callback)":
+    "prefix": "add-action-customize_render_section"
+    "body": "add_action('customize_render_section', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_render_section_THIS->ID', callback)":
+    "prefix": "add-action-customize_render_section_THIS->ID"
+    "body": "add_action('customize_render_section_THIS->ID', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_save', callback)":
+    "prefix": "add-action-customize_save"
+    "body": "add_action('customize_save', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_save_after', callback)":
+    "prefix": "add-action-customize_save_after"
+    "body": "add_action('customize_save_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_save_validation_before', callback)":
+    "prefix": "add-action-customize_save_validation_before"
+    "body": "add_action('customize_save_validation_before', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_save_ID_BASE', callback)":
+    "prefix": "add-action-customize_save_ID_BASE"
+    "body": "add_action('customize_save_ID_BASE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('customize_update_THIS->TYPE', callback)":
+    "prefix": "add-action-customize_update_THIS->TYPE"
+    "body": "add_action('customize_update_THIS->TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('custom_header_options', callback)":
+    "prefix": "add-action-custom_header_options"
+    "body": "add_action('custom_header_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('dbx_post_advanced', callback)":
+    "prefix": "add-action-dbx_post_advanced"
+    "body": "add_action('dbx_post_advanced', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('dbx_post_sidebar', callback)":
+    "prefix": "add-action-dbx_post_sidebar"
+    "body": "add_action('dbx_post_sidebar', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deactivated_plugin', callback)":
+    "prefix": "add-action-deactivated_plugin"
+    "body": "add_action('deactivated_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deactivate_blog', callback)":
+    "prefix": "add-action-deactivate_blog"
+    "body": "add_action('deactivate_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deactivate_plugin', callback)":
+    "prefix": "add-action-deactivate_plugin"
+    "body": "add_action('deactivate_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deactivate_PLUGIN', callback)":
+    "prefix": "add-action-deactivate_PLUGIN"
+    "body": "add_action('deactivate_PLUGIN', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_comment', callback)":
+    "prefix": "add-action-deleted_comment"
+    "body": "add_action('deleted_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_link', callback)":
+    "prefix": "add-action-deleted_link"
+    "body": "add_action('deleted_link', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_option', callback)":
+    "prefix": "add-action-deleted_option"
+    "body": "add_action('deleted_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_plugin', callback)":
+    "prefix": "add-action-deleted_plugin"
+    "body": "add_action('deleted_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_post', callback)":
+    "prefix": "add-action-deleted_post"
+    "body": "add_action('deleted_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_postmeta', callback)":
+    "prefix": "add-action-deleted_postmeta"
+    "body": "add_action('deleted_postmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_site_transient', callback)":
+    "prefix": "add-action-deleted_site_transient"
+    "body": "add_action('deleted_site_transient', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_term_relationships', callback)":
+    "prefix": "add-action-deleted_term_relationships"
+    "body": "add_action('deleted_term_relationships', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_term_taxonomy', callback)":
+    "prefix": "add-action-deleted_term_taxonomy"
+    "body": "add_action('deleted_term_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_transient', callback)":
+    "prefix": "add-action-deleted_transient"
+    "body": "add_action('deleted_transient', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_user', callback)":
+    "prefix": "add-action-deleted_user"
+    "body": "add_action('deleted_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_usermeta', callback)":
+    "prefix": "add-action-deleted_usermeta"
+    "body": "add_action('deleted_usermeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_META_TYPEmeta', callback)":
+    "prefix": "add-action-deleted_META_TYPEmeta"
+    "body": "add_action('deleted_META_TYPEmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('deleted_META_TYPE_meta', callback)":
+    "prefix": "add-action-deleted_META_TYPE_meta"
+    "body": "add_action('deleted_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_attachment', callback)":
+    "prefix": "add-action-delete_attachment"
+    "body": "add_action('delete_attachment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_category', callback)":
+    "prefix": "add-action-delete_category"
+    "body": "add_action('delete_category', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_comment', callback)":
+    "prefix": "add-action-delete_comment"
+    "body": "add_action('delete_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_link', callback)":
+    "prefix": "add-action-delete_link"
+    "body": "add_action('delete_link', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_option', callback)":
+    "prefix": "add-action-delete_option"
+    "body": "add_action('delete_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_option_OPTION', callback)":
+    "prefix": "add-action-delete_option_OPTION"
+    "body": "add_action('delete_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_plugin', callback)":
+    "prefix": "add-action-delete_plugin"
+    "body": "add_action('delete_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_post', callback)":
+    "prefix": "add-action-delete_post"
+    "body": "add_action('delete_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_postmeta', callback)":
+    "prefix": "add-action-delete_postmeta"
+    "body": "add_action('delete_postmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_site_option', callback)":
+    "prefix": "add-action-delete_site_option"
+    "body": "add_action('delete_site_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_site_option_OPTION', callback)":
+    "prefix": "add-action-delete_site_option_OPTION"
+    "body": "add_action('delete_site_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_site_transient_TRANSIENT', callback)":
+    "prefix": "add-action-delete_site_transient_TRANSIENT"
+    "body": "add_action('delete_site_transient_TRANSIENT', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_term', callback)":
+    "prefix": "add-action-delete_term"
+    "body": "add_action('delete_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_term_relationships', callback)":
+    "prefix": "add-action-delete_term_relationships"
+    "body": "add_action('delete_term_relationships', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_term_taxonomy', callback)":
+    "prefix": "add-action-delete_term_taxonomy"
+    "body": "add_action('delete_term_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_transient_TRANSIENT', callback)":
+    "prefix": "add-action-delete_transient_TRANSIENT"
+    "body": "add_action('delete_transient_TRANSIENT', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_user', callback)":
+    "prefix": "add-action-delete_user"
+    "body": "add_action('delete_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_usermeta', callback)":
+    "prefix": "add-action-delete_usermeta"
+    "body": "add_action('delete_usermeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_user_form', callback)":
+    "prefix": "add-action-delete_user_form"
+    "body": "add_action('delete_user_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_widget', callback)":
+    "prefix": "add-action-delete_widget"
+    "body": "add_action('delete_widget', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_META_TYPEmeta', callback)":
+    "prefix": "add-action-delete_META_TYPEmeta"
+    "body": "add_action('delete_META_TYPEmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_META_TYPE_meta', callback)":
+    "prefix": "add-action-delete_META_TYPE_meta"
+    "body": "add_action('delete_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('delete_TAXONOMY', callback)":
+    "prefix": "add-action-delete_TAXONOMY"
+    "body": "add_action('delete_TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('doing_it_wrong_run', callback)":
+    "prefix": "add-action-doing_it_wrong_run"
+    "body": "add_action('doing_it_wrong_run', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('do_feed_FEED', callback)":
+    "prefix": "add-action-do_feed_FEED"
+    "body": "add_action('do_feed_FEED', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('do_meta_boxes', callback)":
+    "prefix": "add-action-do_meta_boxes"
+    "body": "add_action('do_meta_boxes', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('do_robots', callback)":
+    "prefix": "add-action-do_robots"
+    "body": "add_action('do_robots', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('do_robotstxt', callback)":
+    "prefix": "add-action-do_robotstxt"
+    "body": "add_action('do_robotstxt', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('dynamic_sidebar', callback)":
+    "prefix": "add-action-dynamic_sidebar"
+    "body": "add_action('dynamic_sidebar', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('dynamic_sidebar_after', callback)":
+    "prefix": "add-action-dynamic_sidebar_after"
+    "body": "add_action('dynamic_sidebar_after', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('dynamic_sidebar_before', callback)":
+    "prefix": "add-action-dynamic_sidebar_before"
+    "body": "add_action('dynamic_sidebar_before', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_category', callback)":
+    "prefix": "add-action-edited_category"
+    "body": "add_action('edited_category', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_term', callback)":
+    "prefix": "add-action-edited_term"
+    "body": "add_action('edited_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_terms', callback)":
+    "prefix": "add-action-edited_terms"
+    "body": "add_action('edited_terms', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_term_taxonomies', callback)":
+    "prefix": "add-action-edited_term_taxonomies"
+    "body": "add_action('edited_term_taxonomies', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_term_taxonomy', callback)":
+    "prefix": "add-action-edited_term_taxonomy"
+    "body": "add_action('edited_term_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edited_TAXONOMY', callback)":
+    "prefix": "add-action-edited_TAXONOMY"
+    "body": "add_action('edited_TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_attachment', callback)":
+    "prefix": "add-action-edit_attachment"
+    "body": "add_action('edit_attachment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_category', callback)":
+    "prefix": "add-action-edit_category"
+    "body": "add_action('edit_category', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_category_form', callback)":
+    "prefix": "add-action-edit_category_form"
+    "body": "add_action('edit_category_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_category_form_fields', callback)":
+    "prefix": "add-action-edit_category_form_fields"
+    "body": "add_action('edit_category_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_category_form_pre', callback)":
+    "prefix": "add-action-edit_category_form_pre"
+    "body": "add_action('edit_category_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_comment', callback)":
+    "prefix": "add-action-edit_comment"
+    "body": "add_action('edit_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_form_advanced', callback)":
+    "prefix": "add-action-edit_form_advanced"
+    "body": "add_action('edit_form_advanced', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_form_after_editor', callback)":
+    "prefix": "add-action-edit_form_after_editor"
+    "body": "add_action('edit_form_after_editor', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_form_after_title', callback)":
+    "prefix": "add-action-edit_form_after_title"
+    "body": "add_action('edit_form_after_title', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_form_before_permalink', callback)":
+    "prefix": "add-action-edit_form_before_permalink"
+    "body": "add_action('edit_form_before_permalink', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_form_top', callback)":
+    "prefix": "add-action-edit_form_top"
+    "body": "add_action('edit_form_top', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_link', callback)":
+    "prefix": "add-action-edit_link"
+    "body": "add_action('edit_link', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_link_category_form', callback)":
+    "prefix": "add-action-edit_link_category_form"
+    "body": "add_action('edit_link_category_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_link_category_form_fields', callback)":
+    "prefix": "add-action-edit_link_category_form_fields"
+    "body": "add_action('edit_link_category_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_link_category_form_pre', callback)":
+    "prefix": "add-action-edit_link_category_form_pre"
+    "body": "add_action('edit_link_category_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_page_form', callback)":
+    "prefix": "add-action-edit_page_form"
+    "body": "add_action('edit_page_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_post', callback)":
+    "prefix": "add-action-edit_post"
+    "body": "add_action('edit_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_post_POST->POST_TYPE', callback)":
+    "prefix": "add-action-edit_post_POST->POST_TYPE"
+    "body": "add_action('edit_post_POST->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_tag_form', callback)":
+    "prefix": "add-action-edit_tag_form"
+    "body": "add_action('edit_tag_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_tag_form_fields', callback)":
+    "prefix": "add-action-edit_tag_form_fields"
+    "body": "add_action('edit_tag_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_tag_form_pre', callback)":
+    "prefix": "add-action-edit_tag_form_pre"
+    "body": "add_action('edit_tag_form_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_term', callback)":
+    "prefix": "add-action-edit_term"
+    "body": "add_action('edit_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_terms', callback)":
+    "prefix": "add-action-edit_terms"
+    "body": "add_action('edit_terms', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_term_taxonomies', callback)":
+    "prefix": "add-action-edit_term_taxonomies"
+    "body": "add_action('edit_term_taxonomies', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_term_taxonomy', callback)":
+    "prefix": "add-action-edit_term_taxonomy"
+    "body": "add_action('edit_term_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_user_created_user', callback)":
+    "prefix": "add-action-edit_user_created_user"
+    "body": "add_action('edit_user_created_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_user_profile', callback)":
+    "prefix": "add-action-edit_user_profile"
+    "body": "add_action('edit_user_profile', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_user_profile_update', callback)":
+    "prefix": "add-action-edit_user_profile_update"
+    "body": "add_action('edit_user_profile_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('edit_TAXONOMY', callback)":
+    "prefix": "add-action-edit_TAXONOMY"
+    "body": "add_action('edit_TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('embed_content', callback)":
+    "prefix": "add-action-embed_content"
+    "body": "add_action('embed_content', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('embed_content_meta', callback)":
+    "prefix": "add-action-embed_content_meta"
+    "body": "add_action('embed_content_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('embed_footer', callback)":
+    "prefix": "add-action-embed_footer"
+    "body": "add_action('embed_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('embed_head', callback)":
+    "prefix": "add-action-embed_head"
+    "body": "add_action('embed_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('end_fetch_post_thumbnail_html', callback)":
+    "prefix": "add-action-end_fetch_post_thumbnail_html"
+    "body": "add_action('end_fetch_post_thumbnail_html', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('enqueue_block_assets', callback)":
+    "prefix": "add-action-enqueue_block_assets"
+    "body": "add_action('enqueue_block_assets', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('enqueue_block_editor_assets', callback)":
+    "prefix": "add-action-enqueue_block_editor_assets"
+    "body": "add_action('enqueue_block_editor_assets', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('enqueue_embed_scripts', callback)":
+    "prefix": "add-action-enqueue_embed_scripts"
+    "body": "add_action('enqueue_embed_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('export_filters', callback)":
+    "prefix": "add-action-export_filters"
+    "body": "add_action('export_filters', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('export_wp', callback)":
+    "prefix": "add-action-export_wp"
+    "body": "add_action('export_wp', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('generate_rewrite_rules', callback)":
+    "prefix": "add-action-generate_rewrite_rules"
+    "body": "add_action('generate_rewrite_rules', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('get_footer', callback)":
+    "prefix": "add-action-get_footer"
+    "body": "add_action('get_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('get_header', callback)":
+    "prefix": "add-action-get_header"
+    "body": "add_action('get_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('get_search_form', callback)":
+    "prefix": "add-action-get_search_form"
+    "body": "add_action('get_search_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('get_sidebar', callback)":
+    "prefix": "add-action-get_sidebar"
+    "body": "add_action('get_sidebar', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('get_template_part_SLUG', callback)":
+    "prefix": "add-action-get_template_part_SLUG"
+    "body": "add_action('get_template_part_SLUG', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('granted_super_admin', callback)":
+    "prefix": "add-action-granted_super_admin"
+    "body": "add_action('granted_super_admin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('grant_super_admin', callback)":
+    "prefix": "add-action-grant_super_admin"
+    "body": "add_action('grant_super_admin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('heartbeat_nopriv_tick', callback)":
+    "prefix": "add-action-heartbeat_nopriv_tick"
+    "body": "add_action('heartbeat_nopriv_tick', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('heartbeat_tick', callback)":
+    "prefix": "add-action-heartbeat_tick"
+    "body": "add_action('heartbeat_tick', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('http_api_curl', callback)":
+    "prefix": "add-action-http_api_curl"
+    "body": "add_action('http_api_curl', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('http_api_debug', callback)":
+    "prefix": "add-action-http_api_debug"
+    "body": "add_action('http_api_debug', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('init', callback)":
+    "prefix": "add-action-init"
+    "body": "add_action('init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_plugins_pre_upload', callback)":
+    "prefix": "add-action-install_plugins_pre_upload"
+    "body": "add_action('install_plugins_pre_upload', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_plugins_pre_TAB', callback)":
+    "prefix": "add-action-install_plugins_pre_TAB"
+    "body": "add_action('install_plugins_pre_TAB', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_plugins_table_header', callback)":
+    "prefix": "add-action-install_plugins_table_header"
+    "body": "add_action('install_plugins_table_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_plugins_upload', callback)":
+    "prefix": "add-action-install_plugins_upload"
+    "body": "add_action('install_plugins_upload', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_plugins_TAB', callback)":
+    "prefix": "add-action-install_plugins_TAB"
+    "body": "add_action('install_plugins_TAB', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_themes_pre_TAB', callback)":
+    "prefix": "add-action-install_themes_pre_TAB"
+    "body": "add_action('install_themes_pre_TAB', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_themes_table_header', callback)":
+    "prefix": "add-action-install_themes_table_header"
+    "body": "add_action('install_themes_table_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('install_themes_TAB', callback)":
+    "prefix": "add-action-install_themes_TAB"
+    "body": "add_action('install_themes_TAB', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('invite_user', callback)":
+    "prefix": "add-action-invite_user"
+    "body": "add_action('invite_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('in_admin_footer', callback)":
+    "prefix": "add-action-in_admin_footer"
+    "body": "add_action('in_admin_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('in_admin_header', callback)":
+    "prefix": "add-action-in_admin_header"
+    "body": "add_action('in_admin_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('in_plugin_update_message-FILE', callback)":
+    "prefix": "add-action-in_plugin_update_message-FILE"
+    "body": "add_action('in_plugin_update_message-FILE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('in_theme_update_message-THEME_KEY', callback)":
+    "prefix": "add-action-in_theme_update_message-THEME_KEY"
+    "body": "add_action('in_theme_update_message-THEME_KEY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('in_widget_form', callback)":
+    "prefix": "add-action-in_widget_form"
+    "body": "add_action('in_widget_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-categories-php', callback)":
+    "prefix": "add-action-load-categories-php"
+    "body": "add_action('load-categories-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-edit-link-categories-php', callback)":
+    "prefix": "add-action-load-edit-link-categories-php"
+    "body": "add_action('load-edit-link-categories-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-edit-tags-php', callback)":
+    "prefix": "add-action-load-edit-tags-php"
+    "body": "add_action('load-edit-tags-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-importer-IMPORTER', callback)":
+    "prefix": "add-action-load-importer-IMPORTER"
+    "body": "add_action('load-importer-IMPORTER', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-page-new-php', callback)":
+    "prefix": "add-action-load-page-new-php"
+    "body": "add_action('load-page-new-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-page-php', callback)":
+    "prefix": "add-action-load-page-php"
+    "body": "add_action('load-page-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-widgets-php', callback)":
+    "prefix": "add-action-load-widgets-php"
+    "body": "add_action('load-widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-PAGENOW', callback)":
+    "prefix": "add-action-load-PAGENOW"
+    "body": "add_action('load-PAGENOW', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-PAGE_HOOK', callback)":
+    "prefix": "add-action-load-PAGE_HOOK"
+    "body": "add_action('load-PAGE_HOOK', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load-PLUGIN_PAGE', callback)":
+    "prefix": "add-action-load-PLUGIN_PAGE"
+    "body": "add_action('load-PLUGIN_PAGE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load_feed_engine', callback)":
+    "prefix": "add-action-load_feed_engine"
+    "body": "add_action('load_feed_engine', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('load_textdomain', callback)":
+    "prefix": "add-action-load_textdomain"
+    "body": "add_action('load_textdomain', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_enqueue_scripts', callback)":
+    "prefix": "add-action-login_enqueue_scripts"
+    "body": "add_action('login_enqueue_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_footer', callback)":
+    "prefix": "add-action-login_footer"
+    "body": "add_action('login_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_form', callback)":
+    "prefix": "add-action-login_form"
+    "body": "add_action('login_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_form_ACTION', callback)":
+    "prefix": "add-action-login_form_ACTION"
+    "body": "add_action('login_form_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_head', callback)":
+    "prefix": "add-action-login_head"
+    "body": "add_action('login_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_header', callback)":
+    "prefix": "add-action-login_header"
+    "body": "add_action('login_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('login_init', callback)":
+    "prefix": "add-action-login_init"
+    "body": "add_action('login_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('loop_end', callback)":
+    "prefix": "add-action-loop_end"
+    "body": "add_action('loop_end', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('loop_no_results', callback)":
+    "prefix": "add-action-loop_no_results"
+    "body": "add_action('loop_no_results', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('loop_start', callback)":
+    "prefix": "add-action-loop_start"
+    "body": "add_action('loop_start', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('lostpassword_form', callback)":
+    "prefix": "add-action-lostpassword_form"
+    "body": "add_action('lostpassword_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('lostpassword_post', callback)":
+    "prefix": "add-action-lostpassword_post"
+    "body": "add_action('lostpassword_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('lost_password', callback)":
+    "prefix": "add-action-lost_password"
+    "body": "add_action('lost_password', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_delete_blog', callback)":
+    "prefix": "add-action-make_delete_blog"
+    "body": "add_action('make_delete_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_ham_blog', callback)":
+    "prefix": "add-action-make_ham_blog"
+    "body": "add_action('make_ham_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_ham_user', callback)":
+    "prefix": "add-action-make_ham_user"
+    "body": "add_action('make_ham_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_spam_blog', callback)":
+    "prefix": "add-action-make_spam_blog"
+    "body": "add_action('make_spam_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_spam_user', callback)":
+    "prefix": "add-action-make_spam_user"
+    "body": "add_action('make_spam_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('make_undelete_blog', callback)":
+    "prefix": "add-action-make_undelete_blog"
+    "body": "add_action('make_undelete_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_comments_custom_column', callback)":
+    "prefix": "add-action-manage_comments_custom_column"
+    "body": "add_action('manage_comments_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_comments_nav', callback)":
+    "prefix": "add-action-manage_comments_nav"
+    "body": "add_action('manage_comments_nav', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_link_custom_column', callback)":
+    "prefix": "add-action-manage_link_custom_column"
+    "body": "add_action('manage_link_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_media_custom_column', callback)":
+    "prefix": "add-action-manage_media_custom_column"
+    "body": "add_action('manage_media_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_pages_custom_column', callback)":
+    "prefix": "add-action-manage_pages_custom_column"
+    "body": "add_action('manage_pages_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_plugins_custom_column', callback)":
+    "prefix": "add-action-manage_plugins_custom_column"
+    "body": "add_action('manage_plugins_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_posts_custom_column', callback)":
+    "prefix": "add-action-manage_posts_custom_column"
+    "body": "add_action('manage_posts_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_posts_extra_tablenav', callback)":
+    "prefix": "add-action-manage_posts_extra_tablenav"
+    "body": "add_action('manage_posts_extra_tablenav', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_sites_custom_column', callback)":
+    "prefix": "add-action-manage_sites_custom_column"
+    "body": "add_action('manage_sites_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_themes_custom_column', callback)":
+    "prefix": "add-action-manage_themes_custom_column"
+    "body": "add_action('manage_themes_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_users_extra_tablenav', callback)":
+    "prefix": "add-action-manage_users_extra_tablenav"
+    "body": "add_action('manage_users_extra_tablenav', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('manage_POST->POST_TYPE_posts_custom_column', callback)":
+    "prefix": "add-action-manage_POST->POST_TYPE_posts_custom_column"
+    "body": "add_action('manage_POST->POST_TYPE_posts_custom_column', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('mature_blog', callback)":
+    "prefix": "add-action-mature_blog"
+    "body": "add_action('mature_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('media_buttons', callback)":
+    "prefix": "add-action-media_buttons"
+    "body": "add_action('media_buttons', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('media_upload_TAB', callback)":
+    "prefix": "add-action-media_upload_TAB"
+    "body": "add_action('media_upload_TAB', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('media_upload_TYPE', callback)":
+    "prefix": "add-action-media_upload_TYPE"
+    "body": "add_action('media_upload_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('metadata_lazyloader_queued_objects', callback)":
+    "prefix": "add-action-metadata_lazyloader_queued_objects"
+    "body": "add_action('metadata_lazyloader_queued_objects', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('ms_loaded', callback)":
+    "prefix": "add-action-ms_loaded"
+    "body": "add_action('ms_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('ms_network_not_found', callback)":
+    "prefix": "add-action-ms_network_not_found"
+    "body": "add_action('ms_network_not_found', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('ms_site_not_found', callback)":
+    "prefix": "add-action-ms_site_not_found"
+    "body": "add_action('ms_site_not_found', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('muplugins_loaded', callback)":
+    "prefix": "add-action-muplugins_loaded"
+    "body": "add_action('muplugins_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('mu_activity_box_end', callback)":
+    "prefix": "add-action-mu_activity_box_end"
+    "body": "add_action('mu_activity_box_end', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('mu_plugin_loaded', callback)":
+    "prefix": "add-action-mu_plugin_loaded"
+    "body": "add_action('mu_plugin_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('mu_rightnow_end', callback)":
+    "prefix": "add-action-mu_rightnow_end"
+    "body": "add_action('mu_rightnow_end', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('myblogs_allblogs_options', callback)":
+    "prefix": "add-action-myblogs_allblogs_options"
+    "body": "add_action('myblogs_allblogs_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_admin_edit_ACTION', callback)":
+    "prefix": "add-action-network_admin_edit_ACTION"
+    "body": "add_action('network_admin_edit_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_admin_menu', callback)":
+    "prefix": "add-action-network_admin_menu"
+    "body": "add_action('network_admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_admin_notices', callback)":
+    "prefix": "add-action-network_admin_notices"
+    "body": "add_action('network_admin_notices', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_plugin_loaded', callback)":
+    "prefix": "add-action-network_plugin_loaded"
+    "body": "add_action('network_plugin_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_site_new_created_user', callback)":
+    "prefix": "add-action-network_site_new_created_user"
+    "body": "add_action('network_site_new_created_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_site_new_form', callback)":
+    "prefix": "add-action-network_site_new_form"
+    "body": "add_action('network_site_new_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_site_users_after_list_table', callback)":
+    "prefix": "add-action-network_site_users_after_list_table"
+    "body": "add_action('network_site_users_after_list_table', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_site_users_created_user', callback)":
+    "prefix": "add-action-network_site_users_created_user"
+    "body": "add_action('network_site_users_created_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_user_new_created_user', callback)":
+    "prefix": "add-action-network_user_new_created_user"
+    "body": "add_action('network_user_new_created_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('network_user_new_form', callback)":
+    "prefix": "add-action-network_user_new_form"
+    "body": "add_action('network_user_new_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('opml_head', callback)":
+    "prefix": "add-action-opml_head"
+    "body": "add_action('opml_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('page_attributes_meta_box_template', callback)":
+    "prefix": "add-action-page_attributes_meta_box_template"
+    "body": "add_action('page_attributes_meta_box_template', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('page_attributes_misc_attributes', callback)":
+    "prefix": "add-action-page_attributes_misc_attributes"
+    "body": "add_action('page_attributes_misc_attributes', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_comment_query', callback)":
+    "prefix": "add-action-parse_comment_query"
+    "body": "add_action('parse_comment_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_network_query', callback)":
+    "prefix": "add-action-parse_network_query"
+    "body": "add_action('parse_network_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_query', callback)":
+    "prefix": "add-action-parse_query"
+    "body": "add_action('parse_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_request', callback)":
+    "prefix": "add-action-parse_request"
+    "body": "add_action('parse_request', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_site_query', callback)":
+    "prefix": "add-action-parse_site_query"
+    "body": "add_action('parse_site_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_tax_query', callback)":
+    "prefix": "add-action-parse_tax_query"
+    "body": "add_action('parse_tax_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('parse_term_query', callback)":
+    "prefix": "add-action-parse_term_query"
+    "body": "add_action('parse_term_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('password_reset', callback)":
+    "prefix": "add-action-password_reset"
+    "body": "add_action('password_reset', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('permalink_structure_changed', callback)":
+    "prefix": "add-action-permalink_structure_changed"
+    "body": "add_action('permalink_structure_changed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('personal_options', callback)":
+    "prefix": "add-action-personal_options"
+    "body": "add_action('personal_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('personal_options_update', callback)":
+    "prefix": "add-action-personal_options_update"
+    "body": "add_action('personal_options_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('phpmailer_init', callback)":
+    "prefix": "add-action-phpmailer_init"
+    "body": "add_action('phpmailer_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pingback_post', callback)":
+    "prefix": "add-action-pingback_post"
+    "body": "add_action('pingback_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('plugins_loaded', callback)":
+    "prefix": "add-action-plugins_loaded"
+    "body": "add_action('plugins_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('plugin_loaded', callback)":
+    "prefix": "add-action-plugin_loaded"
+    "body": "add_action('plugin_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('populate_options', callback)":
+    "prefix": "add-action-populate_options"
+    "body": "add_action('populate_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post-html-upload-ui', callback)":
+    "prefix": "add-action-post-html-upload-ui"
+    "body": "add_action('post-html-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post-plupload-upload-ui', callback)":
+    "prefix": "add-action-post-plupload-upload-ui"
+    "body": "add_action('post-plupload-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post-upload-ui', callback)":
+    "prefix": "add-action-post-upload-ui"
+    "body": "add_action('post-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('posts_selection', callback)":
+    "prefix": "add-action-posts_selection"
+    "body": "add_action('posts_selection', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_action_ACTION', callback)":
+    "prefix": "add-action-post_action_ACTION"
+    "body": "add_action('post_action_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_comment_status_meta_box-options', callback)":
+    "prefix": "add-action-post_comment_status_meta_box-options"
+    "body": "add_action('post_comment_status_meta_box-options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_edit_form_tag', callback)":
+    "prefix": "add-action-post_edit_form_tag"
+    "body": "add_action('post_edit_form_tag', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_locked_dialog', callback)":
+    "prefix": "add-action-post_locked_dialog"
+    "body": "add_action('post_locked_dialog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_lock_lost_dialog', callback)":
+    "prefix": "add-action-post_lock_lost_dialog"
+    "body": "add_action('post_lock_lost_dialog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_stuck', callback)":
+    "prefix": "add-action-post_stuck"
+    "body": "add_action('post_stuck', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_submitbox_minor_actions', callback)":
+    "prefix": "add-action-post_submitbox_minor_actions"
+    "body": "add_action('post_submitbox_minor_actions', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_submitbox_misc_actions', callback)":
+    "prefix": "add-action-post_submitbox_misc_actions"
+    "body": "add_action('post_submitbox_misc_actions', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_submitbox_start', callback)":
+    "prefix": "add-action-post_submitbox_start"
+    "body": "add_action('post_submitbox_start', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_unstuck', callback)":
+    "prefix": "add-action-post_unstuck"
+    "body": "add_action('post_unstuck', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('post_updated', callback)":
+    "prefix": "add-action-post_updated"
+    "body": "add_action('post_updated', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre-html-upload-ui', callback)":
+    "prefix": "add-action-pre-html-upload-ui"
+    "body": "add_action('pre-html-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre-plupload-upload-ui', callback)":
+    "prefix": "add-action-pre-plupload-upload-ui"
+    "body": "add_action('pre-plupload-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre-upload-ui', callback)":
+    "prefix": "add-action-pre-upload-ui"
+    "body": "add_action('pre-upload-ui', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('preprocess_signup_form', callback)":
+    "prefix": "add-action-preprocess_signup_form"
+    "body": "add_action('preprocess_signup_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_auto_update', callback)":
+    "prefix": "add-action-pre_auto_update"
+    "body": "add_action('pre_auto_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_comment_on_post', callback)":
+    "prefix": "add-action-pre_comment_on_post"
+    "body": "add_action('pre_comment_on_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_current_active_plugins', callback)":
+    "prefix": "add-action-pre_current_active_plugins"
+    "body": "add_action('pre_current_active_plugins', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_delete_site_option_OPTION', callback)":
+    "prefix": "add-action-pre_delete_site_option_OPTION"
+    "body": "add_action('pre_delete_site_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_delete_term', callback)":
+    "prefix": "add-action-pre_delete_term"
+    "body": "add_action('pre_delete_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_comments', callback)":
+    "prefix": "add-action-pre_get_comments"
+    "body": "add_action('pre_get_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_networks', callback)":
+    "prefix": "add-action-pre_get_networks"
+    "body": "add_action('pre_get_networks', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_posts', callback)":
+    "prefix": "add-action-pre_get_posts"
+    "body": "add_action('pre_get_posts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_search_form', callback)":
+    "prefix": "add-action-pre_get_search_form"
+    "body": "add_action('pre_get_search_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_sites', callback)":
+    "prefix": "add-action-pre_get_sites"
+    "body": "add_action('pre_get_sites', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_terms', callback)":
+    "prefix": "add-action-pre_get_terms"
+    "body": "add_action('pre_get_terms', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_get_users', callback)":
+    "prefix": "add-action-pre_get_users"
+    "body": "add_action('pre_get_users', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_network_site_new_created_user', callback)":
+    "prefix": "add-action-pre_network_site_new_created_user"
+    "body": "add_action('pre_network_site_new_created_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_ping', callback)":
+    "prefix": "add-action-pre_ping"
+    "body": "add_action('pre_ping', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_post_update', callback)":
+    "prefix": "add-action-pre_post_update"
+    "body": "add_action('pre_post_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_trackback_post', callback)":
+    "prefix": "add-action-pre_trackback_post"
+    "body": "add_action('pre_trackback_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_uninstall_plugin', callback)":
+    "prefix": "add-action-pre_uninstall_plugin"
+    "body": "add_action('pre_uninstall_plugin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_user_query', callback)":
+    "prefix": "add-action-pre_user_query"
+    "body": "add_action('pre_user_query', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('pre_user_search', callback)":
+    "prefix": "add-action-pre_user_search"
+    "body": "add_action('pre_user_search', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('print_default_editor_scripts', callback)":
+    "prefix": "add-action-print_default_editor_scripts"
+    "body": "add_action('print_default_editor_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('print_media_templates', callback)":
+    "prefix": "add-action-print_media_templates"
+    "body": "add_action('print_media_templates', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('private_to_published', callback)":
+    "prefix": "add-action-private_to_published"
+    "body": "add_action('private_to_published', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('profile_personal_options', callback)":
+    "prefix": "add-action-profile_personal_options"
+    "body": "add_action('profile_personal_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('profile_update', callback)":
+    "prefix": "add-action-profile_update"
+    "body": "add_action('profile_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('publish_page', callback)":
+    "prefix": "add-action-publish_page"
+    "body": "add_action('publish_page', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('publish_phone', callback)":
+    "prefix": "add-action-publish_phone"
+    "body": "add_action('publish_phone', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('publish_post', callback)":
+    "prefix": "add-action-publish_post"
+    "body": "add_action('publish_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('quick_edit_custom_box', callback)":
+    "prefix": "add-action-quick_edit_custom_box"
+    "body": "add_action('quick_edit_custom_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rdf_header', callback)":
+    "prefix": "add-action-rdf_header"
+    "body": "add_action('rdf_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rdf_item', callback)":
+    "prefix": "add-action-rdf_item"
+    "body": "add_action('rdf_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rdf_ns', callback)":
+    "prefix": "add-action-rdf_ns"
+    "body": "add_action('rdf_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('registered_post_type', callback)":
+    "prefix": "add-action-registered_post_type"
+    "body": "add_action('registered_post_type', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('registered_taxonomy', callback)":
+    "prefix": "add-action-registered_taxonomy"
+    "body": "add_action('registered_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('registered_taxonomy_for_object_type', callback)":
+    "prefix": "add-action-registered_taxonomy_for_object_type"
+    "body": "add_action('registered_taxonomy_for_object_type', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('register_form', callback)":
+    "prefix": "add-action-register_form"
+    "body": "add_action('register_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('register_new_user', callback)":
+    "prefix": "add-action-register_new_user"
+    "body": "add_action('register_new_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('register_post', callback)":
+    "prefix": "add-action-register_post"
+    "body": "add_action('register_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('register_sidebar', callback)":
+    "prefix": "add-action-register_sidebar"
+    "body": "add_action('register_sidebar', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('remove_user_from_blog', callback)":
+    "prefix": "add-action-remove_user_from_blog"
+    "body": "add_action('remove_user_from_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('remove_user_role', callback)":
+    "prefix": "add-action-remove_user_role"
+    "body": "add_action('remove_user_role', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('requests-HOOK', callback)":
+    "prefix": "add-action-requests-HOOK"
+    "body": "add_action('requests-HOOK', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('resetpass_form', callback)":
+    "prefix": "add-action-resetpass_form"
+    "body": "add_action('resetpass_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('restore_previous_locale', callback)":
+    "prefix": "add-action-restore_previous_locale"
+    "body": "add_action('restore_previous_locale', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('restrict_manage_comments', callback)":
+    "prefix": "add-action-restrict_manage_comments"
+    "body": "add_action('restrict_manage_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('restrict_manage_posts', callback)":
+    "prefix": "add-action-restrict_manage_posts"
+    "body": "add_action('restrict_manage_posts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('restrict_manage_users', callback)":
+    "prefix": "add-action-restrict_manage_users"
+    "body": "add_action('restrict_manage_users', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_after_insert_attachment', callback)":
+    "prefix": "add-action-rest_after_insert_attachment"
+    "body": "add_action('rest_after_insert_attachment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_after_insert_comment', callback)":
+    "prefix": "add-action-rest_after_insert_comment"
+    "body": "add_action('rest_after_insert_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_after_insert_user', callback)":
+    "prefix": "add-action-rest_after_insert_user"
+    "body": "add_action('rest_after_insert_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_after_insert_THIS->POST_TYPE', callback)":
+    "prefix": "add-action-rest_after_insert_THIS->POST_TYPE"
+    "body": "add_action('rest_after_insert_THIS->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_after_insert_THIS->TAXONOMY', callback)":
+    "prefix": "add-action-rest_after_insert_THIS->TAXONOMY"
+    "body": "add_action('rest_after_insert_THIS->TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_api_init', callback)":
+    "prefix": "add-action-rest_api_init"
+    "body": "add_action('rest_api_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_delete_comment', callback)":
+    "prefix": "add-action-rest_delete_comment"
+    "body": "add_action('rest_delete_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_delete_revision', callback)":
+    "prefix": "add-action-rest_delete_revision"
+    "body": "add_action('rest_delete_revision', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_delete_user', callback)":
+    "prefix": "add-action-rest_delete_user"
+    "body": "add_action('rest_delete_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_delete_THIS->POST_TYPE', callback)":
+    "prefix": "add-action-rest_delete_THIS->POST_TYPE"
+    "body": "add_action('rest_delete_THIS->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_delete_THIS->TAXONOMY', callback)":
+    "prefix": "add-action-rest_delete_THIS->TAXONOMY"
+    "body": "add_action('rest_delete_THIS->TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_insert_attachment', callback)":
+    "prefix": "add-action-rest_insert_attachment"
+    "body": "add_action('rest_insert_attachment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_insert_comment', callback)":
+    "prefix": "add-action-rest_insert_comment"
+    "body": "add_action('rest_insert_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_insert_user', callback)":
+    "prefix": "add-action-rest_insert_user"
+    "body": "add_action('rest_insert_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_insert_THIS->POST_TYPE', callback)":
+    "prefix": "add-action-rest_insert_THIS->POST_TYPE"
+    "body": "add_action('rest_insert_THIS->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rest_insert_THIS->TAXONOMY', callback)":
+    "prefix": "add-action-rest_insert_THIS->TAXONOMY"
+    "body": "add_action('rest_insert_THIS->TAXONOMY', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('retreive_password', callback)":
+    "prefix": "add-action-retreive_password"
+    "body": "add_action('retreive_password', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('retrieve_password', callback)":
+    "prefix": "add-action-retrieve_password"
+    "body": "add_action('retrieve_password', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('retrieve_password_key', callback)":
+    "prefix": "add-action-retrieve_password_key"
+    "body": "add_action('retrieve_password_key', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('revoked_super_admin', callback)":
+    "prefix": "add-action-revoked_super_admin"
+    "body": "add_action('revoked_super_admin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('revoke_super_admin', callback)":
+    "prefix": "add-action-revoke_super_admin"
+    "body": "add_action('revoke_super_admin', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rightnow_end', callback)":
+    "prefix": "add-action-rightnow_end"
+    "body": "add_action('rightnow_end', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss2_comments_ns', callback)":
+    "prefix": "add-action-rss2_comments_ns"
+    "body": "add_action('rss2_comments_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss2_head', callback)":
+    "prefix": "add-action-rss2_head"
+    "body": "add_action('rss2_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss2_item', callback)":
+    "prefix": "add-action-rss2_item"
+    "body": "add_action('rss2_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss2_ns', callback)":
+    "prefix": "add-action-rss2_ns"
+    "body": "add_action('rss2_ns', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss_head', callback)":
+    "prefix": "add-action-rss_head"
+    "body": "add_action('rss_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss_item', callback)":
+    "prefix": "add-action-rss_item"
+    "body": "add_action('rss_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('rss_tag_pre', callback)":
+    "prefix": "add-action-rss_tag_pre"
+    "body": "add_action('rss_tag_pre', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('sanitize_comment_cookies', callback)":
+    "prefix": "add-action-sanitize_comment_cookies"
+    "body": "add_action('sanitize_comment_cookies', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('sanitize_title', callback)":
+    "prefix": "add-action-sanitize_title"
+    "body": "add_action('sanitize_title', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('save_post', callback)":
+    "prefix": "add-action-save_post"
+    "body": "add_action('save_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('save_post_POST->POST_TYPE', callback)":
+    "prefix": "add-action-save_post_POST->POST_TYPE"
+    "body": "add_action('save_post_POST->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('send_headers', callback)":
+    "prefix": "add-action-send_headers"
+    "body": "add_action('send_headers', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('setted_site_transient', callback)":
+    "prefix": "add-action-setted_site_transient"
+    "body": "add_action('setted_site_transient', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('setted_transient', callback)":
+    "prefix": "add-action-setted_transient"
+    "body": "add_action('setted_transient', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('setup_theme', callback)":
+    "prefix": "add-action-setup_theme"
+    "body": "add_action('setup_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_auth_cookie', callback)":
+    "prefix": "add-action-set_auth_cookie"
+    "body": "add_action('set_auth_cookie', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_comment_cookies', callback)":
+    "prefix": "add-action-set_comment_cookies"
+    "body": "add_action('set_comment_cookies', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_current_user', callback)":
+    "prefix": "add-action-set_current_user"
+    "body": "add_action('set_current_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_logged_in_cookie', callback)":
+    "prefix": "add-action-set_logged_in_cookie"
+    "body": "add_action('set_logged_in_cookie', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_object_terms', callback)":
+    "prefix": "add-action-set_object_terms"
+    "body": "add_action('set_object_terms', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_site_transient_TRANSIENT', callback)":
+    "prefix": "add-action-set_site_transient_TRANSIENT"
+    "body": "add_action('set_site_transient_TRANSIENT', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_transient_TRANSIENT', callback)":
+    "prefix": "add-action-set_transient_TRANSIENT"
+    "body": "add_action('set_transient_TRANSIENT', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('set_user_role', callback)":
+    "prefix": "add-action-set_user_role"
+    "body": "add_action('set_user_role', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('show_user_profile', callback)":
+    "prefix": "add-action-show_user_profile"
+    "body": "add_action('show_user_profile', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('shutdown', callback)":
+    "prefix": "add-action-shutdown"
+    "body": "add_action('shutdown', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('sidebar_admin_page', callback)":
+    "prefix": "add-action-sidebar_admin_page"
+    "body": "add_action('sidebar_admin_page', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('sidebar_admin_setup', callback)":
+    "prefix": "add-action-sidebar_admin_setup"
+    "body": "add_action('sidebar_admin_setup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('signup_blogform', callback)":
+    "prefix": "add-action-signup_blogform"
+    "body": "add_action('signup_blogform', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('signup_extra_fields', callback)":
+    "prefix": "add-action-signup_extra_fields"
+    "body": "add_action('signup_extra_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('signup_finished', callback)":
+    "prefix": "add-action-signup_finished"
+    "body": "add_action('signup_finished', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('signup_header', callback)":
+    "prefix": "add-action-signup_header"
+    "body": "add_action('signup_header', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('signup_hidden_fields', callback)":
+    "prefix": "add-action-signup_hidden_fields"
+    "body": "add_action('signup_hidden_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('spammed_comment', callback)":
+    "prefix": "add-action-spammed_comment"
+    "body": "add_action('spammed_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('spam_comment', callback)":
+    "prefix": "add-action-spam_comment"
+    "body": "add_action('spam_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('split_shared_term', callback)":
+    "prefix": "add-action-split_shared_term"
+    "body": "add_action('split_shared_term', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('start_previewing_theme', callback)":
+    "prefix": "add-action-start_previewing_theme"
+    "body": "add_action('start_previewing_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('stop_previewing_theme', callback)":
+    "prefix": "add-action-stop_previewing_theme"
+    "body": "add_action('stop_previewing_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('submitlink_box', callback)":
+    "prefix": "add-action-submitlink_box"
+    "body": "add_action('submitlink_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('submitpage_box', callback)":
+    "prefix": "add-action-submitpage_box"
+    "body": "add_action('submitpage_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('submitpost_box', callback)":
+    "prefix": "add-action-submitpost_box"
+    "body": "add_action('submitpost_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('switch_blog', callback)":
+    "prefix": "add-action-switch_blog"
+    "body": "add_action('switch_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('switch_locale', callback)":
+    "prefix": "add-action-switch_locale"
+    "body": "add_action('switch_locale', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('switch_theme', callback)":
+    "prefix": "add-action-switch_theme"
+    "body": "add_action('switch_theme', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('template_redirect', callback)":
+    "prefix": "add-action-template_redirect"
+    "body": "add_action('template_redirect', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('the_post', callback)":
+    "prefix": "add-action-the_post"
+    "body": "add_action('the_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('the_widget', callback)":
+    "prefix": "add-action-the_widget"
+    "body": "add_action('the_widget', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('tool_box', callback)":
+    "prefix": "add-action-tool_box"
+    "body": "add_action('tool_box', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trackback_post', callback)":
+    "prefix": "add-action-trackback_post"
+    "body": "add_action('trackback_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('transition_comment_status', callback)":
+    "prefix": "add-action-transition_comment_status"
+    "body": "add_action('transition_comment_status', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('transition_post_status', callback)":
+    "prefix": "add-action-transition_post_status"
+    "body": "add_action('transition_post_status', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trashed_comment', callback)":
+    "prefix": "add-action-trashed_comment"
+    "body": "add_action('trashed_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trashed_post', callback)":
+    "prefix": "add-action-trashed_post"
+    "body": "add_action('trashed_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trashed_post_comments', callback)":
+    "prefix": "add-action-trashed_post_comments"
+    "body": "add_action('trashed_post_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trash_comment', callback)":
+    "prefix": "add-action-trash_comment"
+    "body": "add_action('trash_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('trash_post_comments', callback)":
+    "prefix": "add-action-trash_post_comments"
+    "body": "add_action('trash_post_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('twentysixteen_credits', callback)":
+    "prefix": "add-action-twentysixteen_credits"
+    "body": "add_action('twentysixteen_credits', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unarchive_blog', callback)":
+    "prefix": "add-action-unarchive_blog"
+    "body": "add_action('unarchive_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('uninstall_FILE', callback)":
+    "prefix": "add-action-uninstall_FILE"
+    "body": "add_action('uninstall_FILE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unload_textdomain', callback)":
+    "prefix": "add-action-unload_textdomain"
+    "body": "add_action('unload_textdomain', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unmature_blog', callback)":
+    "prefix": "add-action-unmature_blog"
+    "body": "add_action('unmature_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unregistered_post_type', callback)":
+    "prefix": "add-action-unregistered_post_type"
+    "body": "add_action('unregistered_post_type', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unregistered_taxonomy', callback)":
+    "prefix": "add-action-unregistered_taxonomy"
+    "body": "add_action('unregistered_taxonomy', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unregistered_taxonomy_for_object_type', callback)":
+    "prefix": "add-action-unregistered_taxonomy_for_object_type"
+    "body": "add_action('unregistered_taxonomy_for_object_type', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unspammed_comment', callback)":
+    "prefix": "add-action-unspammed_comment"
+    "body": "add_action('unspammed_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('unspam_comment', callback)":
+    "prefix": "add-action-unspam_comment"
+    "body": "add_action('unspam_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrashed_comment', callback)":
+    "prefix": "add-action-untrashed_comment"
+    "body": "add_action('untrashed_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrashed_post', callback)":
+    "prefix": "add-action-untrashed_post"
+    "body": "add_action('untrashed_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrashed_post_comments', callback)":
+    "prefix": "add-action-untrashed_post_comments"
+    "body": "add_action('untrashed_post_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrash_comment', callback)":
+    "prefix": "add-action-untrash_comment"
+    "body": "add_action('untrash_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrash_post', callback)":
+    "prefix": "add-action-untrash_post"
+    "body": "add_action('untrash_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('untrash_post_comments', callback)":
+    "prefix": "add-action-untrash_post_comments"
+    "body": "add_action('untrash_post_comments', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update-core-custom_ACTION', callback)":
+    "prefix": "add-action-update-core-custom_ACTION"
+    "body": "add_action('update-core-custom_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update-custom_ACTION', callback)":
+    "prefix": "add-action-update-custom_ACTION"
+    "body": "add_action('update-custom_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('updated_option', callback)":
+    "prefix": "add-action-updated_option"
+    "body": "add_action('updated_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('updated_postmeta', callback)":
+    "prefix": "add-action-updated_postmeta"
+    "body": "add_action('updated_postmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('updated_usermeta', callback)":
+    "prefix": "add-action-updated_usermeta"
+    "body": "add_action('updated_usermeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('updated_META_TYPE_meta', callback)":
+    "prefix": "add-action-updated_META_TYPE_meta"
+    "body": "add_action('updated_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_blog_public', callback)":
+    "prefix": "add-action-update_blog_public"
+    "body": "add_action('update_blog_public', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_option', callback)":
+    "prefix": "add-action-update_option"
+    "body": "add_action('update_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_option_OPTION', callback)":
+    "prefix": "add-action-update_option_OPTION"
+    "body": "add_action('update_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_postmeta', callback)":
+    "prefix": "add-action-update_postmeta"
+    "body": "add_action('update_postmeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_site_option', callback)":
+    "prefix": "add-action-update_site_option"
+    "body": "add_action('update_site_option', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_site_option_OPTION', callback)":
+    "prefix": "add-action-update_site_option_OPTION"
+    "body": "add_action('update_site_option_OPTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_usermeta', callback)":
+    "prefix": "add-action-update_usermeta"
+    "body": "add_action('update_usermeta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_wpmu_options', callback)":
+    "prefix": "add-action-update_wpmu_options"
+    "body": "add_action('update_wpmu_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('update_META_TYPE_meta', callback)":
+    "prefix": "add-action-update_META_TYPE_meta"
+    "body": "add_action('update_META_TYPE_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('upgrader_process_complete', callback)":
+    "prefix": "add-action-upgrader_process_complete"
+    "body": "add_action('upgrader_process_complete', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('upload_ui_over_quota', callback)":
+    "prefix": "add-action-upload_ui_over_quota"
+    "body": "add_action('upload_ui_over_quota', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_admin_menu', callback)":
+    "prefix": "add-action-user_admin_menu"
+    "body": "add_action('user_admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_admin_notices', callback)":
+    "prefix": "add-action-user_admin_notices"
+    "body": "add_action('user_admin_notices', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_edit_form_tag', callback)":
+    "prefix": "add-action-user_edit_form_tag"
+    "body": "add_action('user_edit_form_tag', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_new_form', callback)":
+    "prefix": "add-action-user_new_form"
+    "body": "add_action('user_new_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_new_form_tag', callback)":
+    "prefix": "add-action-user_new_form_tag"
+    "body": "add_action('user_new_form_tag', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_profile_update_errors', callback)":
+    "prefix": "add-action-user_profile_update_errors"
+    "body": "add_action('user_profile_update_errors', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_register', callback)":
+    "prefix": "add-action-user_register"
+    "body": "add_action('user_register', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('user_request_action_confirmed', callback)":
+    "prefix": "add-action-user_request_action_confirmed"
+    "body": "add_action('user_request_action_confirmed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('validate_password_reset', callback)":
+    "prefix": "add-action-validate_password_reset"
+    "body": "add_action('validate_password_reset', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('welcome_panel', callback)":
+    "prefix": "add-action-welcome_panel"
+    "body": "add_action('welcome_panel', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('widgets-php', callback)":
+    "prefix": "add-action-widgets-php"
+    "body": "add_action('widgets-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('widgets_admin_page', callback)":
+    "prefix": "add-action-widgets_admin_page"
+    "body": "add_action('widgets_admin_page', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('widgets_init', callback)":
+    "prefix": "add-action-widgets_init"
+    "body": "add_action('widgets_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp', callback)":
+    "prefix": "add-action-wp"
+    "body": "add_action('wp', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp-mail-php', callback)":
+    "prefix": "add-action-wp-mail-php"
+    "body": "add_action('wp-mail-php', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmuadminedit', callback)":
+    "prefix": "add-action-wpmuadminedit"
+    "body": "add_action('wpmuadminedit', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmuadminresult', callback)":
+    "prefix": "add-action-wpmuadminresult"
+    "body": "add_action('wpmuadminresult', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmublogsaction', callback)":
+    "prefix": "add-action-wpmublogsaction"
+    "body": "add_action('wpmublogsaction', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmueditblogaction', callback)":
+    "prefix": "add-action-wpmueditblogaction"
+    "body": "add_action('wpmueditblogaction', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_activate_blog', callback)":
+    "prefix": "add-action-wpmu_activate_blog"
+    "body": "add_action('wpmu_activate_blog', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_activate_user', callback)":
+    "prefix": "add-action-wpmu_activate_user"
+    "body": "add_action('wpmu_activate_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_blog_updated', callback)":
+    "prefix": "add-action-wpmu_blog_updated"
+    "body": "add_action('wpmu_blog_updated', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_delete_user', callback)":
+    "prefix": "add-action-wpmu_delete_user"
+    "body": "add_action('wpmu_delete_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_new_user', callback)":
+    "prefix": "add-action-wpmu_new_user"
+    "body": "add_action('wpmu_new_user', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_options', callback)":
+    "prefix": "add-action-wpmu_options"
+    "body": "add_action('wpmu_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_update_blog_options', callback)":
+    "prefix": "add-action-wpmu_update_blog_options"
+    "body": "add_action('wpmu_update_blog_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_upgrade_page', callback)":
+    "prefix": "add-action-wpmu_upgrade_page"
+    "body": "add_action('wpmu_upgrade_page', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wpmu_upgrade_site', callback)":
+    "prefix": "add-action-wpmu_upgrade_site"
+    "body": "add_action('wpmu_upgrade_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_add_nav_menu_item', callback)":
+    "prefix": "add-action-wp_add_nav_menu_item"
+    "body": "add_action('wp_add_nav_menu_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_after_admin_bar_render', callback)":
+    "prefix": "add-action-wp_after_admin_bar_render"
+    "body": "add_action('wp_after_admin_bar_render', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_ajax_crop_image_pre_save', callback)":
+    "prefix": "add-action-wp_ajax_crop_image_pre_save"
+    "body": "add_action('wp_ajax_crop_image_pre_save', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_ajax_nopriv_ACTION', callback)":
+    "prefix": "add-action-wp_ajax_nopriv_ACTION"
+    "body": "add_action('wp_ajax_nopriv_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_ajax_ACTION', callback)":
+    "prefix": "add-action-wp_ajax_ACTION"
+    "body": "add_action('wp_ajax_ACTION', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_authenticate', callback)":
+    "prefix": "add-action-wp_authenticate"
+    "body": "add_action('wp_authenticate', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_before_admin_bar_render', callback)":
+    "prefix": "add-action-wp_before_admin_bar_render"
+    "body": "add_action('wp_before_admin_bar_render', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_blacklist_check', callback)":
+    "prefix": "add-action-wp_blacklist_check"
+    "body": "add_action('wp_blacklist_check', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_create_nav_menu', callback)":
+    "prefix": "add-action-wp_create_nav_menu"
+    "body": "add_action('wp_create_nav_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_creating_autosave', callback)":
+    "prefix": "add-action-wp_creating_autosave"
+    "body": "add_action('wp_creating_autosave', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_dashboard_setup', callback)":
+    "prefix": "add-action-wp_dashboard_setup"
+    "body": "add_action('wp_dashboard_setup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_default_scripts', callback)":
+    "prefix": "add-action-wp_default_scripts"
+    "body": "add_action('wp_default_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_default_styles', callback)":
+    "prefix": "add-action-wp_default_styles"
+    "body": "add_action('wp_default_styles', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_delete_nav_menu', callback)":
+    "prefix": "add-action-wp_delete_nav_menu"
+    "body": "add_action('wp_delete_nav_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_delete_post_revision', callback)":
+    "prefix": "add-action-wp_delete_post_revision"
+    "body": "add_action('wp_delete_post_revision', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_delete_site', callback)":
+    "prefix": "add-action-wp_delete_site"
+    "body": "add_action('wp_delete_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_edit_form_attachment_display', callback)":
+    "prefix": "add-action-wp_edit_form_attachment_display"
+    "body": "add_action('wp_edit_form_attachment_display', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_enqueue_code_editor', callback)":
+    "prefix": "add-action-wp_enqueue_code_editor"
+    "body": "add_action('wp_enqueue_code_editor', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_enqueue_editor', callback)":
+    "prefix": "add-action-wp_enqueue_editor"
+    "body": "add_action('wp_enqueue_editor', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_enqueue_media', callback)":
+    "prefix": "add-action-wp_enqueue_media"
+    "body": "add_action('wp_enqueue_media', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_enqueue_scripts', callback)":
+    "prefix": "add-action-wp_enqueue_scripts"
+    "body": "add_action('wp_enqueue_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_feed_options', callback)":
+    "prefix": "add-action-wp_feed_options"
+    "body": "add_action('wp_feed_options', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_footer', callback)":
+    "prefix": "add-action-wp_footer"
+    "body": "add_action('wp_footer', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_head', callback)":
+    "prefix": "add-action-wp_head"
+    "body": "add_action('wp_head', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_initialize_site', callback)":
+    "prefix": "add-action-wp_initialize_site"
+    "body": "add_action('wp_initialize_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_insert_comment', callback)":
+    "prefix": "add-action-wp_insert_comment"
+    "body": "add_action('wp_insert_comment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_insert_post', callback)":
+    "prefix": "add-action-wp_insert_post"
+    "body": "add_action('wp_insert_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_insert_site', callback)":
+    "prefix": "add-action-wp_insert_site"
+    "body": "add_action('wp_insert_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_install', callback)":
+    "prefix": "add-action-wp_install"
+    "body": "add_action('wp_install', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_loaded', callback)":
+    "prefix": "add-action-wp_loaded"
+    "body": "add_action('wp_loaded', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_login', callback)":
+    "prefix": "add-action-wp_login"
+    "body": "add_action('wp_login', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_login_failed', callback)":
+    "prefix": "add-action-wp_login_failed"
+    "body": "add_action('wp_login_failed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_logout', callback)":
+    "prefix": "add-action-wp_logout"
+    "body": "add_action('wp_logout', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_mail_failed', callback)":
+    "prefix": "add-action-wp_mail_failed"
+    "body": "add_action('wp_mail_failed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_maybe_auto_update', callback)":
+    "prefix": "add-action-wp_maybe_auto_update"
+    "body": "add_action('wp_maybe_auto_update', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_meta', callback)":
+    "prefix": "add-action-wp_meta"
+    "body": "add_action('wp_meta', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_network_dashboard_setup', callback)":
+    "prefix": "add-action-wp_network_dashboard_setup"
+    "body": "add_action('wp_network_dashboard_setup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_playlist_scripts', callback)":
+    "prefix": "add-action-wp_playlist_scripts"
+    "body": "add_action('wp_playlist_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_print_footer_scripts', callback)":
+    "prefix": "add-action-wp_print_footer_scripts"
+    "body": "add_action('wp_print_footer_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_print_scripts', callback)":
+    "prefix": "add-action-wp_print_scripts"
+    "body": "add_action('wp_print_scripts', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_print_styles', callback)":
+    "prefix": "add-action-wp_print_styles"
+    "body": "add_action('wp_print_styles', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_privacy_personal_data_erased', callback)":
+    "prefix": "add-action-wp_privacy_personal_data_erased"
+    "body": "add_action('wp_privacy_personal_data_erased', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_privacy_personal_data_export_file', callback)":
+    "prefix": "add-action-wp_privacy_personal_data_export_file"
+    "body": "add_action('wp_privacy_personal_data_export_file', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_privacy_personal_data_export_file_created', callback)":
+    "prefix": "add-action-wp_privacy_personal_data_export_file_created"
+    "body": "add_action('wp_privacy_personal_data_export_file_created', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_register_sidebar_widget', callback)":
+    "prefix": "add-action-wp_register_sidebar_widget"
+    "body": "add_action('wp_register_sidebar_widget', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_restore_post_revision', callback)":
+    "prefix": "add-action-wp_restore_post_revision"
+    "body": "add_action('wp_restore_post_revision', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_roles_init', callback)":
+    "prefix": "add-action-wp_roles_init"
+    "body": "add_action('wp_roles_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_set_comment_status', callback)":
+    "prefix": "add-action-wp_set_comment_status"
+    "body": "add_action('wp_set_comment_status', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_tiny_mce_init', callback)":
+    "prefix": "add-action-wp_tiny_mce_init"
+    "body": "add_action('wp_tiny_mce_init', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_trash_post', callback)":
+    "prefix": "add-action-wp_trash_post"
+    "body": "add_action('wp_trash_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_uninitialize_site', callback)":
+    "prefix": "add-action-wp_uninitialize_site"
+    "body": "add_action('wp_uninitialize_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_unregister_sidebar_widget', callback)":
+    "prefix": "add-action-wp_unregister_sidebar_widget"
+    "body": "add_action('wp_unregister_sidebar_widget', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_update_comment_count', callback)":
+    "prefix": "add-action-wp_update_comment_count"
+    "body": "add_action('wp_update_comment_count', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_update_nav_menu', callback)":
+    "prefix": "add-action-wp_update_nav_menu"
+    "body": "add_action('wp_update_nav_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_update_nav_menu_item', callback)":
+    "prefix": "add-action-wp_update_nav_menu_item"
+    "body": "add_action('wp_update_nav_menu_item', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_update_site', callback)":
+    "prefix": "add-action-wp_update_site"
+    "body": "add_action('wp_update_site', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_upgrade', callback)":
+    "prefix": "add-action-wp_upgrade"
+    "body": "add_action('wp_upgrade', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_user_dashboard_setup', callback)":
+    "prefix": "add-action-wp_user_dashboard_setup"
+    "body": "add_action('wp_user_dashboard_setup', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_validate_site_data', callback)":
+    "prefix": "add-action-wp_validate_site_data"
+    "body": "add_action('wp_validate_site_data', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_validate_site_deletion', callback)":
+    "prefix": "add-action-wp_validate_site_deletion"
+    "body": "add_action('wp_validate_site_deletion', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('wp_verify_nonce_failed', callback)":
+    "prefix": "add-action-wp_verify_nonce_failed"
+    "body": "add_action('wp_verify_nonce_failed', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call', callback)":
+    "prefix": "add-action-xmlrpc_call"
+    "body": "add_action('xmlrpc_call', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_blogger_deletePost', callback)":
+    "prefix": "add-action-xmlrpc_call_success_blogger_deletePost"
+    "body": "add_action('xmlrpc_call_success_blogger_deletePost', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_blogger_editPost', callback)":
+    "prefix": "add-action-xmlrpc_call_success_blogger_editPost"
+    "body": "add_action('xmlrpc_call_success_blogger_editPost', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_blogger_newPost', callback)":
+    "prefix": "add-action-xmlrpc_call_success_blogger_newPost"
+    "body": "add_action('xmlrpc_call_success_blogger_newPost', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_mw_editPost', callback)":
+    "prefix": "add-action-xmlrpc_call_success_mw_editPost"
+    "body": "add_action('xmlrpc_call_success_mw_editPost', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_mw_newMediaObject', callback)":
+    "prefix": "add-action-xmlrpc_call_success_mw_newMediaObject"
+    "body": "add_action('xmlrpc_call_success_mw_newMediaObject', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_mw_newPost', callback)":
+    "prefix": "add-action-xmlrpc_call_success_mw_newPost"
+    "body": "add_action('xmlrpc_call_success_mw_newPost', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_deleteCategory', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_deleteCategory"
+    "body": "add_action('xmlrpc_call_success_wp_deleteCategory', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_deleteComment', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_deleteComment"
+    "body": "add_action('xmlrpc_call_success_wp_deleteComment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_deletePage', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_deletePage"
+    "body": "add_action('xmlrpc_call_success_wp_deletePage', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_editComment', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_editComment"
+    "body": "add_action('xmlrpc_call_success_wp_editComment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_newCategory', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_newCategory"
+    "body": "add_action('xmlrpc_call_success_wp_newCategory', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_call_success_wp_newComment', callback)":
+    "prefix": "add-action-xmlrpc_call_success_wp_newComment"
+    "body": "add_action('xmlrpc_call_success_wp_newComment', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_publish_post', callback)":
+    "prefix": "add-action-xmlrpc_publish_post"
+    "body": "add_action('xmlrpc_publish_post', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('xmlrpc_rsd_apis', callback)":
+    "prefix": "add-action-xmlrpc_rsd_apis"
+    "body": "add_action('xmlrpc_rsd_apis', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('_admin_menu', callback)":
+    "prefix": "add-action-_admin_menu"
+    "body": "add_action('_admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('_core_updated_successfully', callback)":
+    "prefix": "add-action-_core_updated_successfully"
+    "body": "add_action('_core_updated_successfully', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('_network_admin_menu', callback)":
+    "prefix": "add-action-_network_admin_menu"
+    "body": "add_action('_network_admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('_user_admin_menu', callback)":
+    "prefix": "add-action-_user_admin_menu"
+    "body": "add_action('_user_admin_menu', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('_wp_put_post_revision', callback)":
+    "prefix": "add-action-_wp_put_post_revision"
+    "body": "add_action('_wp_put_post_revision', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('ARGS', callback)":
+    "prefix": "add-action-ARGS"
+    "body": "add_action('ARGS', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('HOOK', callback)":
+    "prefix": "add-action-HOOK"
+    "body": "add_action('HOOK', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('NEW_STATUS_POST->POST_TYPE', callback)":
+    "prefix": "add-action-NEW_STATUS_POST->POST_TYPE"
+    "body": "add_action('NEW_STATUS_POST->POST_TYPE', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('OLD_STATUS_TO_NEW_STATUS', callback)":
+    "prefix": "add-action-OLD_STATUS_TO_NEW_STATUS"
+    "body": "add_action('OLD_STATUS_TO_NEW_STATUS', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('PAGE_HOOK', callback)":
+    "prefix": "add-action-PAGE_HOOK"
+    "body": "add_action('PAGE_HOOK', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAG', callback)":
+    "prefix": "add-action-TAG"
+    "body": "add_action('TAG', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_add_form', callback)":
+    "prefix": "add-action-TAXONOMY_add_form"
+    "body": "add_action('TAXONOMY_add_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_add_form_fields', callback)":
+    "prefix": "add-action-TAXONOMY_add_form_fields"
+    "body": "add_action('TAXONOMY_add_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_edit_form', callback)":
+    "prefix": "add-action-TAXONOMY_edit_form"
+    "body": "add_action('TAXONOMY_edit_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_edit_form_fields', callback)":
+    "prefix": "add-action-TAXONOMY_edit_form_fields"
+    "body": "add_action('TAXONOMY_edit_form_fields', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_pre_add_form', callback)":
+    "prefix": "add-action-TAXONOMY_pre_add_form"
+    "body": "add_action('TAXONOMY_pre_add_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_pre_edit_form', callback)":
+    "prefix": "add-action-TAXONOMY_pre_edit_form"
+    "body": "add_action('TAXONOMY_pre_edit_form', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_term_edit_form_tag', callback)":
+    "prefix": "add-action-TAXONOMY_term_edit_form_tag"
+    "body": "add_action('TAXONOMY_term_edit_form_tag', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_term_edit_form_top', callback)":
+    "prefix": "add-action-TAXONOMY_term_edit_form_top"
+    "body": "add_action('TAXONOMY_term_edit_form_top', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_action('TAXONOMY_term_new_form_tag', callback)":
+    "prefix": "add-action-TAXONOMY_term_new_form_tag"
+    "body": "add_action('TAXONOMY_term_new_form_tag', ${1:callback})$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"

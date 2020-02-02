@@ -1,0 +1,2809 @@
+".string":
+  "activated_plugin":
+    "prefix": "activated_plugin"
+    "body": "activated_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activate_blog":
+    "prefix": "activate_blog"
+    "body": "activate_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activate_header":
+    "prefix": "activate_header"
+    "body": "activate_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activate_plugin":
+    "prefix": "activate_plugin"
+    "body": "activate_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activate_wp_head":
+    "prefix": "activate_wp_head"
+    "body": "activate_wp_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activate_PLUGIN":
+    "prefix": "activate_PLUGIN"
+    "body": "activate_PLUGIN$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "activity_box_end":
+    "prefix": "activity_box_end"
+    "body": "activity_box_end$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "added_existing_user":
+    "prefix": "added_existing_user"
+    "body": "added_existing_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "added_option":
+    "prefix": "added_option"
+    "body": "added_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "added_term_relationship":
+    "prefix": "added_term_relationship"
+    "body": "added_term_relationship$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "added_usermeta":
+    "prefix": "added_usermeta"
+    "body": "added_usermeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "added_META_TYPE_meta":
+    "prefix": "added_META_TYPE_meta"
+    "body": "added_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_admin_bar_menus":
+    "prefix": "add_admin_bar_menus"
+    "body": "add_admin_bar_menus$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_attachment":
+    "prefix": "add_attachment"
+    "body": "add_attachment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_category_form_pre":
+    "prefix": "add_category_form_pre"
+    "body": "add_category_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_inline_data":
+    "prefix": "add_inline_data"
+    "body": "add_inline_data$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_link":
+    "prefix": "add_link"
+    "body": "add_link$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_link_category_form_pre":
+    "prefix": "add_link_category_form_pre"
+    "body": "add_link_category_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_meta_boxes":
+    "prefix": "add_meta_boxes"
+    "body": "add_meta_boxes$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_meta_boxes_comment":
+    "prefix": "add_meta_boxes_comment"
+    "body": "add_meta_boxes_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_meta_boxes_link":
+    "prefix": "add_meta_boxes_link"
+    "body": "add_meta_boxes_link$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_meta_boxes_POST_TYPE":
+    "prefix": "add_meta_boxes_POST_TYPE"
+    "body": "add_meta_boxes_POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_option":
+    "prefix": "add_option"
+    "body": "add_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_option_OPTION":
+    "prefix": "add_option_OPTION"
+    "body": "add_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_site_option":
+    "prefix": "add_site_option"
+    "body": "add_site_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_site_option_OPTION":
+    "prefix": "add_site_option_OPTION"
+    "body": "add_site_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_tag_form":
+    "prefix": "add_tag_form"
+    "body": "add_tag_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_tag_form_fields":
+    "prefix": "add_tag_form_fields"
+    "body": "add_tag_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_tag_form_pre":
+    "prefix": "add_tag_form_pre"
+    "body": "add_tag_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_term_relationship":
+    "prefix": "add_term_relationship"
+    "body": "add_term_relationship$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_user_role":
+    "prefix": "add_user_role"
+    "body": "add_user_role$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_user_to_blog":
+    "prefix": "add_user_to_blog"
+    "body": "add_user_to_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "add_META_TYPE_meta":
+    "prefix": "add_META_TYPE_meta"
+    "body": "add_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "adminmenu":
+    "prefix": "adminmenu"
+    "body": "adminmenu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_action_ACTION":
+    "prefix": "admin_action_ACTION"
+    "body": "admin_action_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_bar_init":
+    "prefix": "admin_bar_init"
+    "body": "admin_bar_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_bar_menu":
+    "prefix": "admin_bar_menu"
+    "body": "admin_bar_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_color_scheme_picker":
+    "prefix": "admin_color_scheme_picker"
+    "body": "admin_color_scheme_picker$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_enqueue_scripts":
+    "prefix": "admin_enqueue_scripts"
+    "body": "admin_enqueue_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_footer":
+    "prefix": "admin_footer"
+    "body": "admin_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_footer-widgets-php":
+    "prefix": "admin_footer-widgets-php"
+    "body": "admin_footer-widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_footer-HOOK_SUFFIX":
+    "prefix": "admin_footer-HOOK_SUFFIX"
+    "body": "admin_footer-HOOK_SUFFIX$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_head":
+    "prefix": "admin_head"
+    "body": "admin_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_head-media-upload-popup":
+    "prefix": "admin_head-media-upload-popup"
+    "body": "admin_head-media-upload-popup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_head-HOOK_SUFFIX":
+    "prefix": "admin_head-HOOK_SUFFIX"
+    "body": "admin_head-HOOK_SUFFIX$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_head_CONTENT_FUNC":
+    "prefix": "admin_head_CONTENT_FUNC"
+    "body": "admin_head_CONTENT_FUNC$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_init":
+    "prefix": "admin_init"
+    "body": "admin_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_menu":
+    "prefix": "admin_menu"
+    "body": "admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_notices":
+    "prefix": "admin_notices"
+    "body": "admin_notices$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_page_access_denied":
+    "prefix": "admin_page_access_denied"
+    "body": "admin_page_access_denied$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_post":
+    "prefix": "admin_post"
+    "body": "admin_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_post_nopriv":
+    "prefix": "admin_post_nopriv"
+    "body": "admin_post_nopriv$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_post_nopriv_ACTION":
+    "prefix": "admin_post_nopriv_ACTION"
+    "body": "admin_post_nopriv_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_post_ACTION":
+    "prefix": "admin_post_ACTION"
+    "body": "admin_post_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_footer_scripts":
+    "prefix": "admin_print_footer_scripts"
+    "body": "admin_print_footer_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_footer_scripts-widgets-php":
+    "prefix": "admin_print_footer_scripts-widgets-php"
+    "body": "admin_print_footer_scripts-widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_footer_scripts-HOOK_SUFFIX":
+    "prefix": "admin_print_footer_scripts-HOOK_SUFFIX"
+    "body": "admin_print_footer_scripts-HOOK_SUFFIX$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_scripts":
+    "prefix": "admin_print_scripts"
+    "body": "admin_print_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_scripts-media-upload-popup":
+    "prefix": "admin_print_scripts-media-upload-popup"
+    "body": "admin_print_scripts-media-upload-popup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_scripts-widgets-php":
+    "prefix": "admin_print_scripts-widgets-php"
+    "body": "admin_print_scripts-widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_scripts-HOOK_SUFFIX":
+    "prefix": "admin_print_scripts-HOOK_SUFFIX"
+    "body": "admin_print_scripts-HOOK_SUFFIX$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_styles":
+    "prefix": "admin_print_styles"
+    "body": "admin_print_styles$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_styles-media-upload-popup":
+    "prefix": "admin_print_styles-media-upload-popup"
+    "body": "admin_print_styles-media-upload-popup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_styles-widgets-php":
+    "prefix": "admin_print_styles-widgets-php"
+    "body": "admin_print_styles-widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_print_styles-HOOK_SUFFIX":
+    "prefix": "admin_print_styles-HOOK_SUFFIX"
+    "body": "admin_print_styles-HOOK_SUFFIX$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "admin_xml_ns":
+    "prefix": "admin_xml_ns"
+    "body": "admin_xml_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after-TAXONOMY-table":
+    "prefix": "after-TAXONOMY-table"
+    "body": "after-TAXONOMY-table$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_db_upgrade":
+    "prefix": "after_db_upgrade"
+    "body": "after_db_upgrade$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_delete_post":
+    "prefix": "after_delete_post"
+    "body": "after_delete_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_menu_locations_table":
+    "prefix": "after_menu_locations_table"
+    "body": "after_menu_locations_table$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_mu_upgrade":
+    "prefix": "after_mu_upgrade"
+    "body": "after_mu_upgrade$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_password_reset":
+    "prefix": "after_password_reset"
+    "body": "after_password_reset$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_plugin_row":
+    "prefix": "after_plugin_row"
+    "body": "after_plugin_row$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_plugin_row_PLUGIN_FILE":
+    "prefix": "after_plugin_row_PLUGIN_FILE"
+    "body": "after_plugin_row_PLUGIN_FILE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_setup_theme":
+    "prefix": "after_setup_theme"
+    "body": "after_setup_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_signup_form":
+    "prefix": "after_signup_form"
+    "body": "after_signup_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_signup_site":
+    "prefix": "after_signup_site"
+    "body": "after_signup_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_signup_user":
+    "prefix": "after_signup_user"
+    "body": "after_signup_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_switch_theme":
+    "prefix": "after_switch_theme"
+    "body": "after_switch_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_theme_row":
+    "prefix": "after_theme_row"
+    "body": "after_theme_row$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_theme_row_STYLESHEET":
+    "prefix": "after_theme_row_STYLESHEET"
+    "body": "after_theme_row_STYLESHEET$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "after_wp_tiny_mce":
+    "prefix": "after_wp_tiny_mce"
+    "body": "after_wp_tiny_mce$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_batch_delete_count":
+    "prefix": "akismet_batch_delete_count"
+    "body": "akismet_batch_delete_count$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_comment_check_response":
+    "prefix": "akismet_comment_check_response"
+    "body": "akismet_comment_check_response$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_delete_commentmeta_batch":
+    "prefix": "akismet_delete_commentmeta_batch"
+    "body": "akismet_delete_commentmeta_batch$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_delete_comment_batch":
+    "prefix": "akismet_delete_comment_batch"
+    "body": "akismet_delete_comment_batch$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_https_disabled":
+    "prefix": "akismet_https_disabled"
+    "body": "akismet_https_disabled$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_https_request_failure":
+    "prefix": "akismet_https_request_failure"
+    "body": "akismet_https_request_failure$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_https_request_pre":
+    "prefix": "akismet_https_request_pre"
+    "body": "akismet_https_request_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_http_request_pre":
+    "prefix": "akismet_http_request_pre"
+    "body": "akismet_http_request_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_request_failure":
+    "prefix": "akismet_request_failure"
+    "body": "akismet_request_failure$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_scheduled_recheck":
+    "prefix": "akismet_scheduled_recheck"
+    "body": "akismet_scheduled_recheck$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_spam_caught":
+    "prefix": "akismet_spam_caught"
+    "body": "akismet_spam_caught$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_ssl_disabled":
+    "prefix": "akismet_ssl_disabled"
+    "body": "akismet_ssl_disabled$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_submit_nonspam_comment":
+    "prefix": "akismet_submit_nonspam_comment"
+    "body": "akismet_submit_nonspam_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "akismet_submit_spam_comment":
+    "prefix": "akismet_submit_spam_comment"
+    "body": "akismet_submit_spam_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "all_admin_notices":
+    "prefix": "all_admin_notices"
+    "body": "all_admin_notices$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "archive_blog":
+    "prefix": "archive_blog"
+    "body": "archive_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "atom_author":
+    "prefix": "atom_author"
+    "body": "atom_author$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "atom_comments_ns":
+    "prefix": "atom_comments_ns"
+    "body": "atom_comments_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "atom_entry":
+    "prefix": "atom_entry"
+    "body": "atom_entry$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "atom_head":
+    "prefix": "atom_head"
+    "body": "atom_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "atom_ns":
+    "prefix": "atom_ns"
+    "body": "atom_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "attachment_submitbox_misc_actions":
+    "prefix": "attachment_submitbox_misc_actions"
+    "body": "attachment_submitbox_misc_actions$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "attachment_updated":
+    "prefix": "attachment_updated"
+    "body": "attachment_updated$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_bad_hash":
+    "prefix": "auth_cookie_bad_hash"
+    "body": "auth_cookie_bad_hash$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_bad_session_token":
+    "prefix": "auth_cookie_bad_session_token"
+    "body": "auth_cookie_bad_session_token$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_bad_username":
+    "prefix": "auth_cookie_bad_username"
+    "body": "auth_cookie_bad_username$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_expired":
+    "prefix": "auth_cookie_expired"
+    "body": "auth_cookie_expired$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_malformed":
+    "prefix": "auth_cookie_malformed"
+    "body": "auth_cookie_malformed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_cookie_valid":
+    "prefix": "auth_cookie_valid"
+    "body": "auth_cookie_valid$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "auth_redirect":
+    "prefix": "auth_redirect"
+    "body": "auth_redirect$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "automatic_updates_complete":
+    "prefix": "automatic_updates_complete"
+    "body": "automatic_updates_complete$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "before_delete_post":
+    "prefix": "before_delete_post"
+    "body": "before_delete_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "before_signup_form":
+    "prefix": "before_signup_form"
+    "body": "before_signup_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "before_signup_header":
+    "prefix": "before_signup_header"
+    "body": "before_signup_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "before_wp_tiny_mce":
+    "prefix": "before_wp_tiny_mce"
+    "body": "before_wp_tiny_mce$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "begin_fetch_post_thumbnail_html":
+    "prefix": "begin_fetch_post_thumbnail_html"
+    "body": "begin_fetch_post_thumbnail_html$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "block_editor_meta_box_hidden_fields":
+    "prefix": "block_editor_meta_box_hidden_fields"
+    "body": "block_editor_meta_box_hidden_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "blog_privacy_selector":
+    "prefix": "blog_privacy_selector"
+    "body": "blog_privacy_selector$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "bulk_edit_custom_box":
+    "prefix": "bulk_edit_custom_box"
+    "body": "bulk_edit_custom_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "change_locale":
+    "prefix": "change_locale"
+    "body": "change_locale$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "check_admin_referer":
+    "prefix": "check_admin_referer"
+    "body": "check_admin_referer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "check_ajax_referer":
+    "prefix": "check_ajax_referer"
+    "body": "check_ajax_referer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "check_comment_flood":
+    "prefix": "check_comment_flood"
+    "body": "check_comment_flood$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "check_passwords":
+    "prefix": "check_passwords"
+    "body": "check_passwords$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_attachment_cache":
+    "prefix": "clean_attachment_cache"
+    "body": "clean_attachment_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_comment_cache":
+    "prefix": "clean_comment_cache"
+    "body": "clean_comment_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_network_cache":
+    "prefix": "clean_network_cache"
+    "body": "clean_network_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_object_term_cache":
+    "prefix": "clean_object_term_cache"
+    "body": "clean_object_term_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_page_cache":
+    "prefix": "clean_page_cache"
+    "body": "clean_page_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_post_cache":
+    "prefix": "clean_post_cache"
+    "body": "clean_post_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_site_cache":
+    "prefix": "clean_site_cache"
+    "body": "clean_site_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_taxonomy_cache":
+    "prefix": "clean_taxonomy_cache"
+    "body": "clean_taxonomy_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_term_cache":
+    "prefix": "clean_term_cache"
+    "body": "clean_term_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clean_user_cache":
+    "prefix": "clean_user_cache"
+    "body": "clean_user_cache$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "clear_auth_cookie":
+    "prefix": "clear_auth_cookie"
+    "body": "clear_auth_cookie$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "commentrss2_item":
+    "prefix": "commentrss2_item"
+    "body": "commentrss2_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "commentsrss2_head":
+    "prefix": "commentsrss2_head"
+    "body": "commentsrss2_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comments_atom_head":
+    "prefix": "comments_atom_head"
+    "body": "comments_atom_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_add_author_url":
+    "prefix": "comment_add_author_url"
+    "body": "comment_add_author_url$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_atom_entry":
+    "prefix": "comment_atom_entry"
+    "body": "comment_atom_entry$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_closed":
+    "prefix": "comment_closed"
+    "body": "comment_closed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_duplicate_trigger":
+    "prefix": "comment_duplicate_trigger"
+    "body": "comment_duplicate_trigger$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_flood_trigger":
+    "prefix": "comment_flood_trigger"
+    "body": "comment_flood_trigger$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form":
+    "prefix": "comment_form"
+    "body": "comment_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_after":
+    "prefix": "comment_form_after"
+    "body": "comment_form_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_after_fields":
+    "prefix": "comment_form_after_fields"
+    "body": "comment_form_after_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_before":
+    "prefix": "comment_form_before"
+    "body": "comment_form_before$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_before_fields":
+    "prefix": "comment_form_before_fields"
+    "body": "comment_form_before_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_comments_closed":
+    "prefix": "comment_form_comments_closed"
+    "body": "comment_form_comments_closed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_logged_in_after":
+    "prefix": "comment_form_logged_in_after"
+    "body": "comment_form_logged_in_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_must_log_in_after":
+    "prefix": "comment_form_must_log_in_after"
+    "body": "comment_form_must_log_in_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_form_top":
+    "prefix": "comment_form_top"
+    "body": "comment_form_top$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_id_not_found":
+    "prefix": "comment_id_not_found"
+    "body": "comment_id_not_found$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_loop_start":
+    "prefix": "comment_loop_start"
+    "body": "comment_loop_start$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_on_draft":
+    "prefix": "comment_on_draft"
+    "body": "comment_on_draft$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_on_password_protected":
+    "prefix": "comment_on_password_protected"
+    "body": "comment_on_password_protected$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_on_trash":
+    "prefix": "comment_on_trash"
+    "body": "comment_on_trash$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_post":
+    "prefix": "comment_post"
+    "body": "comment_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_remove_author_url":
+    "prefix": "comment_remove_author_url"
+    "body": "comment_remove_author_url$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_NEW_STATUS_COMMENT->COMMENT_TYPE":
+    "prefix": "comment_NEW_STATUS_COMMENT->COMMENT_TYPE"
+    "body": "comment_NEW_STATUS_COMMENT->COMMENT_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "comment_OLD_STATUS_TO_NEW_STATUS":
+    "prefix": "comment_OLD_STATUS_TO_NEW_STATUS"
+    "body": "comment_OLD_STATUS_TO_NEW_STATUS$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "core_upgrade_preamble":
+    "prefix": "core_upgrade_preamble"
+    "body": "core_upgrade_preamble$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "created_category":
+    "prefix": "created_category"
+    "body": "created_category$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "created_term":
+    "prefix": "created_term"
+    "body": "created_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "created_TAXONOMY":
+    "prefix": "created_TAXONOMY"
+    "body": "created_TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "create_category":
+    "prefix": "create_category"
+    "body": "create_category$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "create_term":
+    "prefix": "create_term"
+    "body": "create_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "create_TAXONOMY":
+    "prefix": "create_TAXONOMY"
+    "body": "create_TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_controls_enqueue_scripts":
+    "prefix": "customize_controls_enqueue_scripts"
+    "body": "customize_controls_enqueue_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_controls_init":
+    "prefix": "customize_controls_init"
+    "body": "customize_controls_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_controls_print_footer_scripts":
+    "prefix": "customize_controls_print_footer_scripts"
+    "body": "customize_controls_print_footer_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_controls_print_scripts":
+    "prefix": "customize_controls_print_scripts"
+    "body": "customize_controls_print_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_controls_print_styles":
+    "prefix": "customize_controls_print_styles"
+    "body": "customize_controls_print_styles$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_post_value_set":
+    "prefix": "customize_post_value_set"
+    "body": "customize_post_value_set$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_post_value_set_SETTING_ID":
+    "prefix": "customize_post_value_set_SETTING_ID"
+    "body": "customize_post_value_set_SETTING_ID$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_preview_init":
+    "prefix": "customize_preview_init"
+    "body": "customize_preview_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_preview_THIS->ID":
+    "prefix": "customize_preview_THIS->ID"
+    "body": "customize_preview_THIS->ID$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_preview_THIS->TYPE":
+    "prefix": "customize_preview_THIS->TYPE"
+    "body": "customize_preview_THIS->TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_register":
+    "prefix": "customize_register"
+    "body": "customize_register$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_control":
+    "prefix": "customize_render_control"
+    "body": "customize_render_control$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_control_THIS->ID":
+    "prefix": "customize_render_control_THIS->ID"
+    "body": "customize_render_control_THIS->ID$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_panel":
+    "prefix": "customize_render_panel"
+    "body": "customize_render_panel$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_panel_THIS->ID":
+    "prefix": "customize_render_panel_THIS->ID"
+    "body": "customize_render_panel_THIS->ID$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_partials_after":
+    "prefix": "customize_render_partials_after"
+    "body": "customize_render_partials_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_partials_before":
+    "prefix": "customize_render_partials_before"
+    "body": "customize_render_partials_before$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_section":
+    "prefix": "customize_render_section"
+    "body": "customize_render_section$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_render_section_THIS->ID":
+    "prefix": "customize_render_section_THIS->ID"
+    "body": "customize_render_section_THIS->ID$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_save":
+    "prefix": "customize_save"
+    "body": "customize_save$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_save_after":
+    "prefix": "customize_save_after"
+    "body": "customize_save_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_save_validation_before":
+    "prefix": "customize_save_validation_before"
+    "body": "customize_save_validation_before$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_save_ID_BASE":
+    "prefix": "customize_save_ID_BASE"
+    "body": "customize_save_ID_BASE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "customize_update_THIS->TYPE":
+    "prefix": "customize_update_THIS->TYPE"
+    "body": "customize_update_THIS->TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "custom_header_options":
+    "prefix": "custom_header_options"
+    "body": "custom_header_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "dbx_post_advanced":
+    "prefix": "dbx_post_advanced"
+    "body": "dbx_post_advanced$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "dbx_post_sidebar":
+    "prefix": "dbx_post_sidebar"
+    "body": "dbx_post_sidebar$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deactivated_plugin":
+    "prefix": "deactivated_plugin"
+    "body": "deactivated_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deactivate_blog":
+    "prefix": "deactivate_blog"
+    "body": "deactivate_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deactivate_plugin":
+    "prefix": "deactivate_plugin"
+    "body": "deactivate_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deactivate_PLUGIN":
+    "prefix": "deactivate_PLUGIN"
+    "body": "deactivate_PLUGIN$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_comment":
+    "prefix": "deleted_comment"
+    "body": "deleted_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_link":
+    "prefix": "deleted_link"
+    "body": "deleted_link$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_option":
+    "prefix": "deleted_option"
+    "body": "deleted_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_plugin":
+    "prefix": "deleted_plugin"
+    "body": "deleted_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_post":
+    "prefix": "deleted_post"
+    "body": "deleted_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_postmeta":
+    "prefix": "deleted_postmeta"
+    "body": "deleted_postmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_site_transient":
+    "prefix": "deleted_site_transient"
+    "body": "deleted_site_transient$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_term_relationships":
+    "prefix": "deleted_term_relationships"
+    "body": "deleted_term_relationships$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_term_taxonomy":
+    "prefix": "deleted_term_taxonomy"
+    "body": "deleted_term_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_transient":
+    "prefix": "deleted_transient"
+    "body": "deleted_transient$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_user":
+    "prefix": "deleted_user"
+    "body": "deleted_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_usermeta":
+    "prefix": "deleted_usermeta"
+    "body": "deleted_usermeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_META_TYPEmeta":
+    "prefix": "deleted_META_TYPEmeta"
+    "body": "deleted_META_TYPEmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "deleted_META_TYPE_meta":
+    "prefix": "deleted_META_TYPE_meta"
+    "body": "deleted_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_attachment":
+    "prefix": "delete_attachment"
+    "body": "delete_attachment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_category":
+    "prefix": "delete_category"
+    "body": "delete_category$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_comment":
+    "prefix": "delete_comment"
+    "body": "delete_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_link":
+    "prefix": "delete_link"
+    "body": "delete_link$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_option":
+    "prefix": "delete_option"
+    "body": "delete_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_option_OPTION":
+    "prefix": "delete_option_OPTION"
+    "body": "delete_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_plugin":
+    "prefix": "delete_plugin"
+    "body": "delete_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_post":
+    "prefix": "delete_post"
+    "body": "delete_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_postmeta":
+    "prefix": "delete_postmeta"
+    "body": "delete_postmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_site_option":
+    "prefix": "delete_site_option"
+    "body": "delete_site_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_site_option_OPTION":
+    "prefix": "delete_site_option_OPTION"
+    "body": "delete_site_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_site_transient_TRANSIENT":
+    "prefix": "delete_site_transient_TRANSIENT"
+    "body": "delete_site_transient_TRANSIENT$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_term":
+    "prefix": "delete_term"
+    "body": "delete_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_term_relationships":
+    "prefix": "delete_term_relationships"
+    "body": "delete_term_relationships$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_term_taxonomy":
+    "prefix": "delete_term_taxonomy"
+    "body": "delete_term_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_transient_TRANSIENT":
+    "prefix": "delete_transient_TRANSIENT"
+    "body": "delete_transient_TRANSIENT$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_user":
+    "prefix": "delete_user"
+    "body": "delete_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_usermeta":
+    "prefix": "delete_usermeta"
+    "body": "delete_usermeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_user_form":
+    "prefix": "delete_user_form"
+    "body": "delete_user_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_widget":
+    "prefix": "delete_widget"
+    "body": "delete_widget$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_META_TYPEmeta":
+    "prefix": "delete_META_TYPEmeta"
+    "body": "delete_META_TYPEmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_META_TYPE_meta":
+    "prefix": "delete_META_TYPE_meta"
+    "body": "delete_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "delete_TAXONOMY":
+    "prefix": "delete_TAXONOMY"
+    "body": "delete_TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "doing_it_wrong_run":
+    "prefix": "doing_it_wrong_run"
+    "body": "doing_it_wrong_run$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "do_feed_FEED":
+    "prefix": "do_feed_FEED"
+    "body": "do_feed_FEED$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "do_meta_boxes":
+    "prefix": "do_meta_boxes"
+    "body": "do_meta_boxes$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "do_robots":
+    "prefix": "do_robots"
+    "body": "do_robots$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "do_robotstxt":
+    "prefix": "do_robotstxt"
+    "body": "do_robotstxt$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "dynamic_sidebar":
+    "prefix": "dynamic_sidebar"
+    "body": "dynamic_sidebar$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "dynamic_sidebar_after":
+    "prefix": "dynamic_sidebar_after"
+    "body": "dynamic_sidebar_after$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "dynamic_sidebar_before":
+    "prefix": "dynamic_sidebar_before"
+    "body": "dynamic_sidebar_before$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_category":
+    "prefix": "edited_category"
+    "body": "edited_category$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_term":
+    "prefix": "edited_term"
+    "body": "edited_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_terms":
+    "prefix": "edited_terms"
+    "body": "edited_terms$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_term_taxonomies":
+    "prefix": "edited_term_taxonomies"
+    "body": "edited_term_taxonomies$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_term_taxonomy":
+    "prefix": "edited_term_taxonomy"
+    "body": "edited_term_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edited_TAXONOMY":
+    "prefix": "edited_TAXONOMY"
+    "body": "edited_TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_attachment":
+    "prefix": "edit_attachment"
+    "body": "edit_attachment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_category":
+    "prefix": "edit_category"
+    "body": "edit_category$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_category_form":
+    "prefix": "edit_category_form"
+    "body": "edit_category_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_category_form_fields":
+    "prefix": "edit_category_form_fields"
+    "body": "edit_category_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_category_form_pre":
+    "prefix": "edit_category_form_pre"
+    "body": "edit_category_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_comment":
+    "prefix": "edit_comment"
+    "body": "edit_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_form_advanced":
+    "prefix": "edit_form_advanced"
+    "body": "edit_form_advanced$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_form_after_editor":
+    "prefix": "edit_form_after_editor"
+    "body": "edit_form_after_editor$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_form_after_title":
+    "prefix": "edit_form_after_title"
+    "body": "edit_form_after_title$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_form_before_permalink":
+    "prefix": "edit_form_before_permalink"
+    "body": "edit_form_before_permalink$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_form_top":
+    "prefix": "edit_form_top"
+    "body": "edit_form_top$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_link":
+    "prefix": "edit_link"
+    "body": "edit_link$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_link_category_form":
+    "prefix": "edit_link_category_form"
+    "body": "edit_link_category_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_link_category_form_fields":
+    "prefix": "edit_link_category_form_fields"
+    "body": "edit_link_category_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_link_category_form_pre":
+    "prefix": "edit_link_category_form_pre"
+    "body": "edit_link_category_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_page_form":
+    "prefix": "edit_page_form"
+    "body": "edit_page_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_post":
+    "prefix": "edit_post"
+    "body": "edit_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_post_POST->POST_TYPE":
+    "prefix": "edit_post_POST->POST_TYPE"
+    "body": "edit_post_POST->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_tag_form":
+    "prefix": "edit_tag_form"
+    "body": "edit_tag_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_tag_form_fields":
+    "prefix": "edit_tag_form_fields"
+    "body": "edit_tag_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_tag_form_pre":
+    "prefix": "edit_tag_form_pre"
+    "body": "edit_tag_form_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_term":
+    "prefix": "edit_term"
+    "body": "edit_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_terms":
+    "prefix": "edit_terms"
+    "body": "edit_terms$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_term_taxonomies":
+    "prefix": "edit_term_taxonomies"
+    "body": "edit_term_taxonomies$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_term_taxonomy":
+    "prefix": "edit_term_taxonomy"
+    "body": "edit_term_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_user_created_user":
+    "prefix": "edit_user_created_user"
+    "body": "edit_user_created_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_user_profile":
+    "prefix": "edit_user_profile"
+    "body": "edit_user_profile$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_user_profile_update":
+    "prefix": "edit_user_profile_update"
+    "body": "edit_user_profile_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "edit_TAXONOMY":
+    "prefix": "edit_TAXONOMY"
+    "body": "edit_TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "embed_content":
+    "prefix": "embed_content"
+    "body": "embed_content$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "embed_content_meta":
+    "prefix": "embed_content_meta"
+    "body": "embed_content_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "embed_footer":
+    "prefix": "embed_footer"
+    "body": "embed_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "embed_head":
+    "prefix": "embed_head"
+    "body": "embed_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "end_fetch_post_thumbnail_html":
+    "prefix": "end_fetch_post_thumbnail_html"
+    "body": "end_fetch_post_thumbnail_html$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "enqueue_block_assets":
+    "prefix": "enqueue_block_assets"
+    "body": "enqueue_block_assets$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "enqueue_block_editor_assets":
+    "prefix": "enqueue_block_editor_assets"
+    "body": "enqueue_block_editor_assets$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "enqueue_embed_scripts":
+    "prefix": "enqueue_embed_scripts"
+    "body": "enqueue_embed_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "export_filters":
+    "prefix": "export_filters"
+    "body": "export_filters$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "export_wp":
+    "prefix": "export_wp"
+    "body": "export_wp$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "generate_rewrite_rules":
+    "prefix": "generate_rewrite_rules"
+    "body": "generate_rewrite_rules$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "get_footer":
+    "prefix": "get_footer"
+    "body": "get_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "get_header":
+    "prefix": "get_header"
+    "body": "get_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "get_search_form":
+    "prefix": "get_search_form"
+    "body": "get_search_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "get_sidebar":
+    "prefix": "get_sidebar"
+    "body": "get_sidebar$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "get_template_part_SLUG":
+    "prefix": "get_template_part_SLUG"
+    "body": "get_template_part_SLUG$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "granted_super_admin":
+    "prefix": "granted_super_admin"
+    "body": "granted_super_admin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "grant_super_admin":
+    "prefix": "grant_super_admin"
+    "body": "grant_super_admin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "heartbeat_nopriv_tick":
+    "prefix": "heartbeat_nopriv_tick"
+    "body": "heartbeat_nopriv_tick$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "heartbeat_tick":
+    "prefix": "heartbeat_tick"
+    "body": "heartbeat_tick$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "http_api_curl":
+    "prefix": "http_api_curl"
+    "body": "http_api_curl$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "http_api_debug":
+    "prefix": "http_api_debug"
+    "body": "http_api_debug$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "init":
+    "prefix": "init"
+    "body": "init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_plugins_pre_upload":
+    "prefix": "install_plugins_pre_upload"
+    "body": "install_plugins_pre_upload$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_plugins_pre_TAB":
+    "prefix": "install_plugins_pre_TAB"
+    "body": "install_plugins_pre_TAB$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_plugins_table_header":
+    "prefix": "install_plugins_table_header"
+    "body": "install_plugins_table_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_plugins_upload":
+    "prefix": "install_plugins_upload"
+    "body": "install_plugins_upload$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_plugins_TAB":
+    "prefix": "install_plugins_TAB"
+    "body": "install_plugins_TAB$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_themes_pre_TAB":
+    "prefix": "install_themes_pre_TAB"
+    "body": "install_themes_pre_TAB$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_themes_table_header":
+    "prefix": "install_themes_table_header"
+    "body": "install_themes_table_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "install_themes_TAB":
+    "prefix": "install_themes_TAB"
+    "body": "install_themes_TAB$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "invite_user":
+    "prefix": "invite_user"
+    "body": "invite_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "in_admin_footer":
+    "prefix": "in_admin_footer"
+    "body": "in_admin_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "in_admin_header":
+    "prefix": "in_admin_header"
+    "body": "in_admin_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "in_plugin_update_message-FILE":
+    "prefix": "in_plugin_update_message-FILE"
+    "body": "in_plugin_update_message-FILE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "in_theme_update_message-THEME_KEY":
+    "prefix": "in_theme_update_message-THEME_KEY"
+    "body": "in_theme_update_message-THEME_KEY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "in_widget_form":
+    "prefix": "in_widget_form"
+    "body": "in_widget_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-categories-php":
+    "prefix": "load-categories-php"
+    "body": "load-categories-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-edit-link-categories-php":
+    "prefix": "load-edit-link-categories-php"
+    "body": "load-edit-link-categories-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-edit-tags-php":
+    "prefix": "load-edit-tags-php"
+    "body": "load-edit-tags-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-importer-IMPORTER":
+    "prefix": "load-importer-IMPORTER"
+    "body": "load-importer-IMPORTER$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-page-new-php":
+    "prefix": "load-page-new-php"
+    "body": "load-page-new-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-page-php":
+    "prefix": "load-page-php"
+    "body": "load-page-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-widgets-php":
+    "prefix": "load-widgets-php"
+    "body": "load-widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-PAGENOW":
+    "prefix": "load-PAGENOW"
+    "body": "load-PAGENOW$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-PAGE_HOOK":
+    "prefix": "load-PAGE_HOOK"
+    "body": "load-PAGE_HOOK$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load-PLUGIN_PAGE":
+    "prefix": "load-PLUGIN_PAGE"
+    "body": "load-PLUGIN_PAGE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load_feed_engine":
+    "prefix": "load_feed_engine"
+    "body": "load_feed_engine$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "load_textdomain":
+    "prefix": "load_textdomain"
+    "body": "load_textdomain$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_enqueue_scripts":
+    "prefix": "login_enqueue_scripts"
+    "body": "login_enqueue_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_footer":
+    "prefix": "login_footer"
+    "body": "login_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_form":
+    "prefix": "login_form"
+    "body": "login_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_form_ACTION":
+    "prefix": "login_form_ACTION"
+    "body": "login_form_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_head":
+    "prefix": "login_head"
+    "body": "login_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_header":
+    "prefix": "login_header"
+    "body": "login_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "login_init":
+    "prefix": "login_init"
+    "body": "login_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "loop_end":
+    "prefix": "loop_end"
+    "body": "loop_end$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "loop_no_results":
+    "prefix": "loop_no_results"
+    "body": "loop_no_results$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "loop_start":
+    "prefix": "loop_start"
+    "body": "loop_start$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "lostpassword_form":
+    "prefix": "lostpassword_form"
+    "body": "lostpassword_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "lostpassword_post":
+    "prefix": "lostpassword_post"
+    "body": "lostpassword_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "lost_password":
+    "prefix": "lost_password"
+    "body": "lost_password$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_delete_blog":
+    "prefix": "make_delete_blog"
+    "body": "make_delete_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_ham_blog":
+    "prefix": "make_ham_blog"
+    "body": "make_ham_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_ham_user":
+    "prefix": "make_ham_user"
+    "body": "make_ham_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_spam_blog":
+    "prefix": "make_spam_blog"
+    "body": "make_spam_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_spam_user":
+    "prefix": "make_spam_user"
+    "body": "make_spam_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "make_undelete_blog":
+    "prefix": "make_undelete_blog"
+    "body": "make_undelete_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_comments_custom_column":
+    "prefix": "manage_comments_custom_column"
+    "body": "manage_comments_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_comments_nav":
+    "prefix": "manage_comments_nav"
+    "body": "manage_comments_nav$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_link_custom_column":
+    "prefix": "manage_link_custom_column"
+    "body": "manage_link_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_media_custom_column":
+    "prefix": "manage_media_custom_column"
+    "body": "manage_media_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_pages_custom_column":
+    "prefix": "manage_pages_custom_column"
+    "body": "manage_pages_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_plugins_custom_column":
+    "prefix": "manage_plugins_custom_column"
+    "body": "manage_plugins_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_posts_custom_column":
+    "prefix": "manage_posts_custom_column"
+    "body": "manage_posts_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_posts_extra_tablenav":
+    "prefix": "manage_posts_extra_tablenav"
+    "body": "manage_posts_extra_tablenav$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_sites_custom_column":
+    "prefix": "manage_sites_custom_column"
+    "body": "manage_sites_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_themes_custom_column":
+    "prefix": "manage_themes_custom_column"
+    "body": "manage_themes_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_users_extra_tablenav":
+    "prefix": "manage_users_extra_tablenav"
+    "body": "manage_users_extra_tablenav$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "manage_POST->POST_TYPE_posts_custom_column":
+    "prefix": "manage_POST->POST_TYPE_posts_custom_column"
+    "body": "manage_POST->POST_TYPE_posts_custom_column$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "mature_blog":
+    "prefix": "mature_blog"
+    "body": "mature_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "media_buttons":
+    "prefix": "media_buttons"
+    "body": "media_buttons$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "media_upload_TAB":
+    "prefix": "media_upload_TAB"
+    "body": "media_upload_TAB$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "media_upload_TYPE":
+    "prefix": "media_upload_TYPE"
+    "body": "media_upload_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "metadata_lazyloader_queued_objects":
+    "prefix": "metadata_lazyloader_queued_objects"
+    "body": "metadata_lazyloader_queued_objects$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "ms_loaded":
+    "prefix": "ms_loaded"
+    "body": "ms_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "ms_network_not_found":
+    "prefix": "ms_network_not_found"
+    "body": "ms_network_not_found$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "ms_site_not_found":
+    "prefix": "ms_site_not_found"
+    "body": "ms_site_not_found$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "muplugins_loaded":
+    "prefix": "muplugins_loaded"
+    "body": "muplugins_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "mu_activity_box_end":
+    "prefix": "mu_activity_box_end"
+    "body": "mu_activity_box_end$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "mu_plugin_loaded":
+    "prefix": "mu_plugin_loaded"
+    "body": "mu_plugin_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "mu_rightnow_end":
+    "prefix": "mu_rightnow_end"
+    "body": "mu_rightnow_end$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "myblogs_allblogs_options":
+    "prefix": "myblogs_allblogs_options"
+    "body": "myblogs_allblogs_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_admin_edit_ACTION":
+    "prefix": "network_admin_edit_ACTION"
+    "body": "network_admin_edit_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_admin_menu":
+    "prefix": "network_admin_menu"
+    "body": "network_admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_admin_notices":
+    "prefix": "network_admin_notices"
+    "body": "network_admin_notices$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_plugin_loaded":
+    "prefix": "network_plugin_loaded"
+    "body": "network_plugin_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_site_new_created_user":
+    "prefix": "network_site_new_created_user"
+    "body": "network_site_new_created_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_site_new_form":
+    "prefix": "network_site_new_form"
+    "body": "network_site_new_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_site_users_after_list_table":
+    "prefix": "network_site_users_after_list_table"
+    "body": "network_site_users_after_list_table$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_site_users_created_user":
+    "prefix": "network_site_users_created_user"
+    "body": "network_site_users_created_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_user_new_created_user":
+    "prefix": "network_user_new_created_user"
+    "body": "network_user_new_created_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "network_user_new_form":
+    "prefix": "network_user_new_form"
+    "body": "network_user_new_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "opml_head":
+    "prefix": "opml_head"
+    "body": "opml_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "page_attributes_meta_box_template":
+    "prefix": "page_attributes_meta_box_template"
+    "body": "page_attributes_meta_box_template$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "page_attributes_misc_attributes":
+    "prefix": "page_attributes_misc_attributes"
+    "body": "page_attributes_misc_attributes$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_comment_query":
+    "prefix": "parse_comment_query"
+    "body": "parse_comment_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_network_query":
+    "prefix": "parse_network_query"
+    "body": "parse_network_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_query":
+    "prefix": "parse_query"
+    "body": "parse_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_request":
+    "prefix": "parse_request"
+    "body": "parse_request$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_site_query":
+    "prefix": "parse_site_query"
+    "body": "parse_site_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_tax_query":
+    "prefix": "parse_tax_query"
+    "body": "parse_tax_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "parse_term_query":
+    "prefix": "parse_term_query"
+    "body": "parse_term_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "password_reset":
+    "prefix": "password_reset"
+    "body": "password_reset$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "permalink_structure_changed":
+    "prefix": "permalink_structure_changed"
+    "body": "permalink_structure_changed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "personal_options":
+    "prefix": "personal_options"
+    "body": "personal_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "personal_options_update":
+    "prefix": "personal_options_update"
+    "body": "personal_options_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "phpmailer_init":
+    "prefix": "phpmailer_init"
+    "body": "phpmailer_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pingback_post":
+    "prefix": "pingback_post"
+    "body": "pingback_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "plugins_loaded":
+    "prefix": "plugins_loaded"
+    "body": "plugins_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "plugin_loaded":
+    "prefix": "plugin_loaded"
+    "body": "plugin_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "populate_options":
+    "prefix": "populate_options"
+    "body": "populate_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post-html-upload-ui":
+    "prefix": "post-html-upload-ui"
+    "body": "post-html-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post-plupload-upload-ui":
+    "prefix": "post-plupload-upload-ui"
+    "body": "post-plupload-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post-upload-ui":
+    "prefix": "post-upload-ui"
+    "body": "post-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "posts_selection":
+    "prefix": "posts_selection"
+    "body": "posts_selection$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_action_ACTION":
+    "prefix": "post_action_ACTION"
+    "body": "post_action_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_comment_status_meta_box-options":
+    "prefix": "post_comment_status_meta_box-options"
+    "body": "post_comment_status_meta_box-options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_edit_form_tag":
+    "prefix": "post_edit_form_tag"
+    "body": "post_edit_form_tag$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_locked_dialog":
+    "prefix": "post_locked_dialog"
+    "body": "post_locked_dialog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_lock_lost_dialog":
+    "prefix": "post_lock_lost_dialog"
+    "body": "post_lock_lost_dialog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_stuck":
+    "prefix": "post_stuck"
+    "body": "post_stuck$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_submitbox_minor_actions":
+    "prefix": "post_submitbox_minor_actions"
+    "body": "post_submitbox_minor_actions$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_submitbox_misc_actions":
+    "prefix": "post_submitbox_misc_actions"
+    "body": "post_submitbox_misc_actions$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_submitbox_start":
+    "prefix": "post_submitbox_start"
+    "body": "post_submitbox_start$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_unstuck":
+    "prefix": "post_unstuck"
+    "body": "post_unstuck$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "post_updated":
+    "prefix": "post_updated"
+    "body": "post_updated$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre-html-upload-ui":
+    "prefix": "pre-html-upload-ui"
+    "body": "pre-html-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre-plupload-upload-ui":
+    "prefix": "pre-plupload-upload-ui"
+    "body": "pre-plupload-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre-upload-ui":
+    "prefix": "pre-upload-ui"
+    "body": "pre-upload-ui$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "preprocess_signup_form":
+    "prefix": "preprocess_signup_form"
+    "body": "preprocess_signup_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_auto_update":
+    "prefix": "pre_auto_update"
+    "body": "pre_auto_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_comment_on_post":
+    "prefix": "pre_comment_on_post"
+    "body": "pre_comment_on_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_current_active_plugins":
+    "prefix": "pre_current_active_plugins"
+    "body": "pre_current_active_plugins$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_delete_site_option_OPTION":
+    "prefix": "pre_delete_site_option_OPTION"
+    "body": "pre_delete_site_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_delete_term":
+    "prefix": "pre_delete_term"
+    "body": "pre_delete_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_comments":
+    "prefix": "pre_get_comments"
+    "body": "pre_get_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_networks":
+    "prefix": "pre_get_networks"
+    "body": "pre_get_networks$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_posts":
+    "prefix": "pre_get_posts"
+    "body": "pre_get_posts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_search_form":
+    "prefix": "pre_get_search_form"
+    "body": "pre_get_search_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_sites":
+    "prefix": "pre_get_sites"
+    "body": "pre_get_sites$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_terms":
+    "prefix": "pre_get_terms"
+    "body": "pre_get_terms$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_get_users":
+    "prefix": "pre_get_users"
+    "body": "pre_get_users$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_network_site_new_created_user":
+    "prefix": "pre_network_site_new_created_user"
+    "body": "pre_network_site_new_created_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_ping":
+    "prefix": "pre_ping"
+    "body": "pre_ping$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_post_update":
+    "prefix": "pre_post_update"
+    "body": "pre_post_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_trackback_post":
+    "prefix": "pre_trackback_post"
+    "body": "pre_trackback_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_uninstall_plugin":
+    "prefix": "pre_uninstall_plugin"
+    "body": "pre_uninstall_plugin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_user_query":
+    "prefix": "pre_user_query"
+    "body": "pre_user_query$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "pre_user_search":
+    "prefix": "pre_user_search"
+    "body": "pre_user_search$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "print_default_editor_scripts":
+    "prefix": "print_default_editor_scripts"
+    "body": "print_default_editor_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "print_media_templates":
+    "prefix": "print_media_templates"
+    "body": "print_media_templates$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "private_to_published":
+    "prefix": "private_to_published"
+    "body": "private_to_published$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "profile_personal_options":
+    "prefix": "profile_personal_options"
+    "body": "profile_personal_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "profile_update":
+    "prefix": "profile_update"
+    "body": "profile_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "publish_page":
+    "prefix": "publish_page"
+    "body": "publish_page$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "publish_phone":
+    "prefix": "publish_phone"
+    "body": "publish_phone$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "publish_post":
+    "prefix": "publish_post"
+    "body": "publish_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "quick_edit_custom_box":
+    "prefix": "quick_edit_custom_box"
+    "body": "quick_edit_custom_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rdf_header":
+    "prefix": "rdf_header"
+    "body": "rdf_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rdf_item":
+    "prefix": "rdf_item"
+    "body": "rdf_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rdf_ns":
+    "prefix": "rdf_ns"
+    "body": "rdf_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "registered_post_type":
+    "prefix": "registered_post_type"
+    "body": "registered_post_type$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "registered_taxonomy":
+    "prefix": "registered_taxonomy"
+    "body": "registered_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "registered_taxonomy_for_object_type":
+    "prefix": "registered_taxonomy_for_object_type"
+    "body": "registered_taxonomy_for_object_type$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "register_form":
+    "prefix": "register_form"
+    "body": "register_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "register_new_user":
+    "prefix": "register_new_user"
+    "body": "register_new_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "register_post":
+    "prefix": "register_post"
+    "body": "register_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "register_sidebar":
+    "prefix": "register_sidebar"
+    "body": "register_sidebar$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "remove_user_from_blog":
+    "prefix": "remove_user_from_blog"
+    "body": "remove_user_from_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "remove_user_role":
+    "prefix": "remove_user_role"
+    "body": "remove_user_role$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "requests-HOOK":
+    "prefix": "requests-HOOK"
+    "body": "requests-HOOK$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "resetpass_form":
+    "prefix": "resetpass_form"
+    "body": "resetpass_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "restore_previous_locale":
+    "prefix": "restore_previous_locale"
+    "body": "restore_previous_locale$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "restrict_manage_comments":
+    "prefix": "restrict_manage_comments"
+    "body": "restrict_manage_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "restrict_manage_posts":
+    "prefix": "restrict_manage_posts"
+    "body": "restrict_manage_posts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "restrict_manage_users":
+    "prefix": "restrict_manage_users"
+    "body": "restrict_manage_users$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_after_insert_attachment":
+    "prefix": "rest_after_insert_attachment"
+    "body": "rest_after_insert_attachment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_after_insert_comment":
+    "prefix": "rest_after_insert_comment"
+    "body": "rest_after_insert_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_after_insert_user":
+    "prefix": "rest_after_insert_user"
+    "body": "rest_after_insert_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_after_insert_THIS->POST_TYPE":
+    "prefix": "rest_after_insert_THIS->POST_TYPE"
+    "body": "rest_after_insert_THIS->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_after_insert_THIS->TAXONOMY":
+    "prefix": "rest_after_insert_THIS->TAXONOMY"
+    "body": "rest_after_insert_THIS->TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_api_init":
+    "prefix": "rest_api_init"
+    "body": "rest_api_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_delete_comment":
+    "prefix": "rest_delete_comment"
+    "body": "rest_delete_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_delete_revision":
+    "prefix": "rest_delete_revision"
+    "body": "rest_delete_revision$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_delete_user":
+    "prefix": "rest_delete_user"
+    "body": "rest_delete_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_delete_THIS->POST_TYPE":
+    "prefix": "rest_delete_THIS->POST_TYPE"
+    "body": "rest_delete_THIS->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_delete_THIS->TAXONOMY":
+    "prefix": "rest_delete_THIS->TAXONOMY"
+    "body": "rest_delete_THIS->TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_insert_attachment":
+    "prefix": "rest_insert_attachment"
+    "body": "rest_insert_attachment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_insert_comment":
+    "prefix": "rest_insert_comment"
+    "body": "rest_insert_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_insert_user":
+    "prefix": "rest_insert_user"
+    "body": "rest_insert_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_insert_THIS->POST_TYPE":
+    "prefix": "rest_insert_THIS->POST_TYPE"
+    "body": "rest_insert_THIS->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rest_insert_THIS->TAXONOMY":
+    "prefix": "rest_insert_THIS->TAXONOMY"
+    "body": "rest_insert_THIS->TAXONOMY$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "retreive_password":
+    "prefix": "retreive_password"
+    "body": "retreive_password$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "retrieve_password":
+    "prefix": "retrieve_password"
+    "body": "retrieve_password$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "retrieve_password_key":
+    "prefix": "retrieve_password_key"
+    "body": "retrieve_password_key$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "revoked_super_admin":
+    "prefix": "revoked_super_admin"
+    "body": "revoked_super_admin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "revoke_super_admin":
+    "prefix": "revoke_super_admin"
+    "body": "revoke_super_admin$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rightnow_end":
+    "prefix": "rightnow_end"
+    "body": "rightnow_end$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss2_comments_ns":
+    "prefix": "rss2_comments_ns"
+    "body": "rss2_comments_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss2_head":
+    "prefix": "rss2_head"
+    "body": "rss2_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss2_item":
+    "prefix": "rss2_item"
+    "body": "rss2_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss2_ns":
+    "prefix": "rss2_ns"
+    "body": "rss2_ns$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss_head":
+    "prefix": "rss_head"
+    "body": "rss_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss_item":
+    "prefix": "rss_item"
+    "body": "rss_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "rss_tag_pre":
+    "prefix": "rss_tag_pre"
+    "body": "rss_tag_pre$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "sanitize_comment_cookies":
+    "prefix": "sanitize_comment_cookies"
+    "body": "sanitize_comment_cookies$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "sanitize_title":
+    "prefix": "sanitize_title"
+    "body": "sanitize_title$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "save_post":
+    "prefix": "save_post"
+    "body": "save_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "save_post_POST->POST_TYPE":
+    "prefix": "save_post_POST->POST_TYPE"
+    "body": "save_post_POST->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "send_headers":
+    "prefix": "send_headers"
+    "body": "send_headers$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "setted_site_transient":
+    "prefix": "setted_site_transient"
+    "body": "setted_site_transient$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "setted_transient":
+    "prefix": "setted_transient"
+    "body": "setted_transient$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "setup_theme":
+    "prefix": "setup_theme"
+    "body": "setup_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_auth_cookie":
+    "prefix": "set_auth_cookie"
+    "body": "set_auth_cookie$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_comment_cookies":
+    "prefix": "set_comment_cookies"
+    "body": "set_comment_cookies$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_current_user":
+    "prefix": "set_current_user"
+    "body": "set_current_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_logged_in_cookie":
+    "prefix": "set_logged_in_cookie"
+    "body": "set_logged_in_cookie$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_object_terms":
+    "prefix": "set_object_terms"
+    "body": "set_object_terms$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_site_transient_TRANSIENT":
+    "prefix": "set_site_transient_TRANSIENT"
+    "body": "set_site_transient_TRANSIENT$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_transient_TRANSIENT":
+    "prefix": "set_transient_TRANSIENT"
+    "body": "set_transient_TRANSIENT$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "set_user_role":
+    "prefix": "set_user_role"
+    "body": "set_user_role$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "show_user_profile":
+    "prefix": "show_user_profile"
+    "body": "show_user_profile$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "shutdown":
+    "prefix": "shutdown"
+    "body": "shutdown$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "sidebar_admin_page":
+    "prefix": "sidebar_admin_page"
+    "body": "sidebar_admin_page$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "sidebar_admin_setup":
+    "prefix": "sidebar_admin_setup"
+    "body": "sidebar_admin_setup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "signup_blogform":
+    "prefix": "signup_blogform"
+    "body": "signup_blogform$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "signup_extra_fields":
+    "prefix": "signup_extra_fields"
+    "body": "signup_extra_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "signup_finished":
+    "prefix": "signup_finished"
+    "body": "signup_finished$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "signup_header":
+    "prefix": "signup_header"
+    "body": "signup_header$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "signup_hidden_fields":
+    "prefix": "signup_hidden_fields"
+    "body": "signup_hidden_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "spammed_comment":
+    "prefix": "spammed_comment"
+    "body": "spammed_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "spam_comment":
+    "prefix": "spam_comment"
+    "body": "spam_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "split_shared_term":
+    "prefix": "split_shared_term"
+    "body": "split_shared_term$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "start_previewing_theme":
+    "prefix": "start_previewing_theme"
+    "body": "start_previewing_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "stop_previewing_theme":
+    "prefix": "stop_previewing_theme"
+    "body": "stop_previewing_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "submitlink_box":
+    "prefix": "submitlink_box"
+    "body": "submitlink_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "submitpage_box":
+    "prefix": "submitpage_box"
+    "body": "submitpage_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "submitpost_box":
+    "prefix": "submitpost_box"
+    "body": "submitpost_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "switch_blog":
+    "prefix": "switch_blog"
+    "body": "switch_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "switch_locale":
+    "prefix": "switch_locale"
+    "body": "switch_locale$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "switch_theme":
+    "prefix": "switch_theme"
+    "body": "switch_theme$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "template_redirect":
+    "prefix": "template_redirect"
+    "body": "template_redirect$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "the_post":
+    "prefix": "the_post"
+    "body": "the_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "the_widget":
+    "prefix": "the_widget"
+    "body": "the_widget$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "tool_box":
+    "prefix": "tool_box"
+    "body": "tool_box$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trackback_post":
+    "prefix": "trackback_post"
+    "body": "trackback_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "transition_comment_status":
+    "prefix": "transition_comment_status"
+    "body": "transition_comment_status$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "transition_post_status":
+    "prefix": "transition_post_status"
+    "body": "transition_post_status$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trashed_comment":
+    "prefix": "trashed_comment"
+    "body": "trashed_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trashed_post":
+    "prefix": "trashed_post"
+    "body": "trashed_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trashed_post_comments":
+    "prefix": "trashed_post_comments"
+    "body": "trashed_post_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trash_comment":
+    "prefix": "trash_comment"
+    "body": "trash_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "trash_post_comments":
+    "prefix": "trash_post_comments"
+    "body": "trash_post_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "twentysixteen_credits":
+    "prefix": "twentysixteen_credits"
+    "body": "twentysixteen_credits$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unarchive_blog":
+    "prefix": "unarchive_blog"
+    "body": "unarchive_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "uninstall_FILE":
+    "prefix": "uninstall_FILE"
+    "body": "uninstall_FILE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unload_textdomain":
+    "prefix": "unload_textdomain"
+    "body": "unload_textdomain$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unmature_blog":
+    "prefix": "unmature_blog"
+    "body": "unmature_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unregistered_post_type":
+    "prefix": "unregistered_post_type"
+    "body": "unregistered_post_type$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unregistered_taxonomy":
+    "prefix": "unregistered_taxonomy"
+    "body": "unregistered_taxonomy$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unregistered_taxonomy_for_object_type":
+    "prefix": "unregistered_taxonomy_for_object_type"
+    "body": "unregistered_taxonomy_for_object_type$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unspammed_comment":
+    "prefix": "unspammed_comment"
+    "body": "unspammed_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "unspam_comment":
+    "prefix": "unspam_comment"
+    "body": "unspam_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrashed_comment":
+    "prefix": "untrashed_comment"
+    "body": "untrashed_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrashed_post":
+    "prefix": "untrashed_post"
+    "body": "untrashed_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrashed_post_comments":
+    "prefix": "untrashed_post_comments"
+    "body": "untrashed_post_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrash_comment":
+    "prefix": "untrash_comment"
+    "body": "untrash_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrash_post":
+    "prefix": "untrash_post"
+    "body": "untrash_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "untrash_post_comments":
+    "prefix": "untrash_post_comments"
+    "body": "untrash_post_comments$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update-core-custom_ACTION":
+    "prefix": "update-core-custom_ACTION"
+    "body": "update-core-custom_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update-custom_ACTION":
+    "prefix": "update-custom_ACTION"
+    "body": "update-custom_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "updated_option":
+    "prefix": "updated_option"
+    "body": "updated_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "updated_postmeta":
+    "prefix": "updated_postmeta"
+    "body": "updated_postmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "updated_usermeta":
+    "prefix": "updated_usermeta"
+    "body": "updated_usermeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "updated_META_TYPE_meta":
+    "prefix": "updated_META_TYPE_meta"
+    "body": "updated_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_blog_public":
+    "prefix": "update_blog_public"
+    "body": "update_blog_public$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_option":
+    "prefix": "update_option"
+    "body": "update_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_option_OPTION":
+    "prefix": "update_option_OPTION"
+    "body": "update_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_postmeta":
+    "prefix": "update_postmeta"
+    "body": "update_postmeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_site_option":
+    "prefix": "update_site_option"
+    "body": "update_site_option$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_site_option_OPTION":
+    "prefix": "update_site_option_OPTION"
+    "body": "update_site_option_OPTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_usermeta":
+    "prefix": "update_usermeta"
+    "body": "update_usermeta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_wpmu_options":
+    "prefix": "update_wpmu_options"
+    "body": "update_wpmu_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "update_META_TYPE_meta":
+    "prefix": "update_META_TYPE_meta"
+    "body": "update_META_TYPE_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "upgrader_process_complete":
+    "prefix": "upgrader_process_complete"
+    "body": "upgrader_process_complete$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "upload_ui_over_quota":
+    "prefix": "upload_ui_over_quota"
+    "body": "upload_ui_over_quota$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_admin_menu":
+    "prefix": "user_admin_menu"
+    "body": "user_admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_admin_notices":
+    "prefix": "user_admin_notices"
+    "body": "user_admin_notices$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_edit_form_tag":
+    "prefix": "user_edit_form_tag"
+    "body": "user_edit_form_tag$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_new_form":
+    "prefix": "user_new_form"
+    "body": "user_new_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_new_form_tag":
+    "prefix": "user_new_form_tag"
+    "body": "user_new_form_tag$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_profile_update_errors":
+    "prefix": "user_profile_update_errors"
+    "body": "user_profile_update_errors$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_register":
+    "prefix": "user_register"
+    "body": "user_register$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "user_request_action_confirmed":
+    "prefix": "user_request_action_confirmed"
+    "body": "user_request_action_confirmed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "validate_password_reset":
+    "prefix": "validate_password_reset"
+    "body": "validate_password_reset$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "welcome_panel":
+    "prefix": "welcome_panel"
+    "body": "welcome_panel$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "widgets-php":
+    "prefix": "widgets-php"
+    "body": "widgets-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "widgets_admin_page":
+    "prefix": "widgets_admin_page"
+    "body": "widgets_admin_page$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "widgets_init":
+    "prefix": "widgets_init"
+    "body": "widgets_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp":
+    "prefix": "wp"
+    "body": "wp$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp-mail-php":
+    "prefix": "wp-mail-php"
+    "body": "wp-mail-php$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmuadminedit":
+    "prefix": "wpmuadminedit"
+    "body": "wpmuadminedit$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmuadminresult":
+    "prefix": "wpmuadminresult"
+    "body": "wpmuadminresult$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmublogsaction":
+    "prefix": "wpmublogsaction"
+    "body": "wpmublogsaction$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmueditblogaction":
+    "prefix": "wpmueditblogaction"
+    "body": "wpmueditblogaction$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_activate_blog":
+    "prefix": "wpmu_activate_blog"
+    "body": "wpmu_activate_blog$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_activate_user":
+    "prefix": "wpmu_activate_user"
+    "body": "wpmu_activate_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_blog_updated":
+    "prefix": "wpmu_blog_updated"
+    "body": "wpmu_blog_updated$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_delete_user":
+    "prefix": "wpmu_delete_user"
+    "body": "wpmu_delete_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_new_user":
+    "prefix": "wpmu_new_user"
+    "body": "wpmu_new_user$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_options":
+    "prefix": "wpmu_options"
+    "body": "wpmu_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_update_blog_options":
+    "prefix": "wpmu_update_blog_options"
+    "body": "wpmu_update_blog_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_upgrade_page":
+    "prefix": "wpmu_upgrade_page"
+    "body": "wpmu_upgrade_page$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wpmu_upgrade_site":
+    "prefix": "wpmu_upgrade_site"
+    "body": "wpmu_upgrade_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_add_nav_menu_item":
+    "prefix": "wp_add_nav_menu_item"
+    "body": "wp_add_nav_menu_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_after_admin_bar_render":
+    "prefix": "wp_after_admin_bar_render"
+    "body": "wp_after_admin_bar_render$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_ajax_crop_image_pre_save":
+    "prefix": "wp_ajax_crop_image_pre_save"
+    "body": "wp_ajax_crop_image_pre_save$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_ajax_nopriv_ACTION":
+    "prefix": "wp_ajax_nopriv_ACTION"
+    "body": "wp_ajax_nopriv_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_ajax_ACTION":
+    "prefix": "wp_ajax_ACTION"
+    "body": "wp_ajax_ACTION$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_authenticate":
+    "prefix": "wp_authenticate"
+    "body": "wp_authenticate$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_before_admin_bar_render":
+    "prefix": "wp_before_admin_bar_render"
+    "body": "wp_before_admin_bar_render$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_blacklist_check":
+    "prefix": "wp_blacklist_check"
+    "body": "wp_blacklist_check$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_create_nav_menu":
+    "prefix": "wp_create_nav_menu"
+    "body": "wp_create_nav_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_creating_autosave":
+    "prefix": "wp_creating_autosave"
+    "body": "wp_creating_autosave$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_dashboard_setup":
+    "prefix": "wp_dashboard_setup"
+    "body": "wp_dashboard_setup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_default_scripts":
+    "prefix": "wp_default_scripts"
+    "body": "wp_default_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_default_styles":
+    "prefix": "wp_default_styles"
+    "body": "wp_default_styles$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_delete_nav_menu":
+    "prefix": "wp_delete_nav_menu"
+    "body": "wp_delete_nav_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_delete_post_revision":
+    "prefix": "wp_delete_post_revision"
+    "body": "wp_delete_post_revision$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_delete_site":
+    "prefix": "wp_delete_site"
+    "body": "wp_delete_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_edit_form_attachment_display":
+    "prefix": "wp_edit_form_attachment_display"
+    "body": "wp_edit_form_attachment_display$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_enqueue_code_editor":
+    "prefix": "wp_enqueue_code_editor"
+    "body": "wp_enqueue_code_editor$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_enqueue_editor":
+    "prefix": "wp_enqueue_editor"
+    "body": "wp_enqueue_editor$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_enqueue_media":
+    "prefix": "wp_enqueue_media"
+    "body": "wp_enqueue_media$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_enqueue_scripts":
+    "prefix": "wp_enqueue_scripts"
+    "body": "wp_enqueue_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_feed_options":
+    "prefix": "wp_feed_options"
+    "body": "wp_feed_options$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_footer":
+    "prefix": "wp_footer"
+    "body": "wp_footer$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_head":
+    "prefix": "wp_head"
+    "body": "wp_head$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_initialize_site":
+    "prefix": "wp_initialize_site"
+    "body": "wp_initialize_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_insert_comment":
+    "prefix": "wp_insert_comment"
+    "body": "wp_insert_comment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_insert_post":
+    "prefix": "wp_insert_post"
+    "body": "wp_insert_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_insert_site":
+    "prefix": "wp_insert_site"
+    "body": "wp_insert_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_install":
+    "prefix": "wp_install"
+    "body": "wp_install$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_loaded":
+    "prefix": "wp_loaded"
+    "body": "wp_loaded$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_login":
+    "prefix": "wp_login"
+    "body": "wp_login$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_login_failed":
+    "prefix": "wp_login_failed"
+    "body": "wp_login_failed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_logout":
+    "prefix": "wp_logout"
+    "body": "wp_logout$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_mail_failed":
+    "prefix": "wp_mail_failed"
+    "body": "wp_mail_failed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_maybe_auto_update":
+    "prefix": "wp_maybe_auto_update"
+    "body": "wp_maybe_auto_update$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_meta":
+    "prefix": "wp_meta"
+    "body": "wp_meta$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_network_dashboard_setup":
+    "prefix": "wp_network_dashboard_setup"
+    "body": "wp_network_dashboard_setup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_playlist_scripts":
+    "prefix": "wp_playlist_scripts"
+    "body": "wp_playlist_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_print_footer_scripts":
+    "prefix": "wp_print_footer_scripts"
+    "body": "wp_print_footer_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_print_scripts":
+    "prefix": "wp_print_scripts"
+    "body": "wp_print_scripts$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_print_styles":
+    "prefix": "wp_print_styles"
+    "body": "wp_print_styles$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_privacy_personal_data_erased":
+    "prefix": "wp_privacy_personal_data_erased"
+    "body": "wp_privacy_personal_data_erased$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_privacy_personal_data_export_file":
+    "prefix": "wp_privacy_personal_data_export_file"
+    "body": "wp_privacy_personal_data_export_file$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_privacy_personal_data_export_file_created":
+    "prefix": "wp_privacy_personal_data_export_file_created"
+    "body": "wp_privacy_personal_data_export_file_created$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_register_sidebar_widget":
+    "prefix": "wp_register_sidebar_widget"
+    "body": "wp_register_sidebar_widget$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_restore_post_revision":
+    "prefix": "wp_restore_post_revision"
+    "body": "wp_restore_post_revision$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_roles_init":
+    "prefix": "wp_roles_init"
+    "body": "wp_roles_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_set_comment_status":
+    "prefix": "wp_set_comment_status"
+    "body": "wp_set_comment_status$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_tiny_mce_init":
+    "prefix": "wp_tiny_mce_init"
+    "body": "wp_tiny_mce_init$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_trash_post":
+    "prefix": "wp_trash_post"
+    "body": "wp_trash_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_uninitialize_site":
+    "prefix": "wp_uninitialize_site"
+    "body": "wp_uninitialize_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_unregister_sidebar_widget":
+    "prefix": "wp_unregister_sidebar_widget"
+    "body": "wp_unregister_sidebar_widget$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_update_comment_count":
+    "prefix": "wp_update_comment_count"
+    "body": "wp_update_comment_count$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_update_nav_menu":
+    "prefix": "wp_update_nav_menu"
+    "body": "wp_update_nav_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_update_nav_menu_item":
+    "prefix": "wp_update_nav_menu_item"
+    "body": "wp_update_nav_menu_item$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_update_site":
+    "prefix": "wp_update_site"
+    "body": "wp_update_site$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_upgrade":
+    "prefix": "wp_upgrade"
+    "body": "wp_upgrade$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_user_dashboard_setup":
+    "prefix": "wp_user_dashboard_setup"
+    "body": "wp_user_dashboard_setup$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_validate_site_data":
+    "prefix": "wp_validate_site_data"
+    "body": "wp_validate_site_data$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_validate_site_deletion":
+    "prefix": "wp_validate_site_deletion"
+    "body": "wp_validate_site_deletion$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "wp_verify_nonce_failed":
+    "prefix": "wp_verify_nonce_failed"
+    "body": "wp_verify_nonce_failed$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call":
+    "prefix": "xmlrpc_call"
+    "body": "xmlrpc_call$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_blogger_deletePost":
+    "prefix": "xmlrpc_call_success_blogger_deletePost"
+    "body": "xmlrpc_call_success_blogger_deletePost$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_blogger_editPost":
+    "prefix": "xmlrpc_call_success_blogger_editPost"
+    "body": "xmlrpc_call_success_blogger_editPost$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_blogger_newPost":
+    "prefix": "xmlrpc_call_success_blogger_newPost"
+    "body": "xmlrpc_call_success_blogger_newPost$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_mw_editPost":
+    "prefix": "xmlrpc_call_success_mw_editPost"
+    "body": "xmlrpc_call_success_mw_editPost$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_mw_newMediaObject":
+    "prefix": "xmlrpc_call_success_mw_newMediaObject"
+    "body": "xmlrpc_call_success_mw_newMediaObject$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_mw_newPost":
+    "prefix": "xmlrpc_call_success_mw_newPost"
+    "body": "xmlrpc_call_success_mw_newPost$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_deleteCategory":
+    "prefix": "xmlrpc_call_success_wp_deleteCategory"
+    "body": "xmlrpc_call_success_wp_deleteCategory$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_deleteComment":
+    "prefix": "xmlrpc_call_success_wp_deleteComment"
+    "body": "xmlrpc_call_success_wp_deleteComment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_deletePage":
+    "prefix": "xmlrpc_call_success_wp_deletePage"
+    "body": "xmlrpc_call_success_wp_deletePage$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_editComment":
+    "prefix": "xmlrpc_call_success_wp_editComment"
+    "body": "xmlrpc_call_success_wp_editComment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_newCategory":
+    "prefix": "xmlrpc_call_success_wp_newCategory"
+    "body": "xmlrpc_call_success_wp_newCategory$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_call_success_wp_newComment":
+    "prefix": "xmlrpc_call_success_wp_newComment"
+    "body": "xmlrpc_call_success_wp_newComment$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_publish_post":
+    "prefix": "xmlrpc_publish_post"
+    "body": "xmlrpc_publish_post$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "xmlrpc_rsd_apis":
+    "prefix": "xmlrpc_rsd_apis"
+    "body": "xmlrpc_rsd_apis$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "_admin_menu":
+    "prefix": "_admin_menu"
+    "body": "_admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "_core_updated_successfully":
+    "prefix": "_core_updated_successfully"
+    "body": "_core_updated_successfully$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "_network_admin_menu":
+    "prefix": "_network_admin_menu"
+    "body": "_network_admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "_user_admin_menu":
+    "prefix": "_user_admin_menu"
+    "body": "_user_admin_menu$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "_wp_put_post_revision":
+    "prefix": "_wp_put_post_revision"
+    "body": "_wp_put_post_revision$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "ARGS":
+    "prefix": "ARGS"
+    "body": "ARGS$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "HOOK":
+    "prefix": "HOOK"
+    "body": "HOOK$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "NEW_STATUS_POST->POST_TYPE":
+    "prefix": "NEW_STATUS_POST->POST_TYPE"
+    "body": "NEW_STATUS_POST->POST_TYPE$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "OLD_STATUS_TO_NEW_STATUS":
+    "prefix": "OLD_STATUS_TO_NEW_STATUS"
+    "body": "OLD_STATUS_TO_NEW_STATUS$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "PAGE_HOOK":
+    "prefix": "PAGE_HOOK"
+    "body": "PAGE_HOOK$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAG":
+    "prefix": "TAG"
+    "body": "TAG$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_add_form":
+    "prefix": "TAXONOMY_add_form"
+    "body": "TAXONOMY_add_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_add_form_fields":
+    "prefix": "TAXONOMY_add_form_fields"
+    "body": "TAXONOMY_add_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_edit_form":
+    "prefix": "TAXONOMY_edit_form"
+    "body": "TAXONOMY_edit_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_edit_form_fields":
+    "prefix": "TAXONOMY_edit_form_fields"
+    "body": "TAXONOMY_edit_form_fields$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_pre_add_form":
+    "prefix": "TAXONOMY_pre_add_form"
+    "body": "TAXONOMY_pre_add_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_pre_edit_form":
+    "prefix": "TAXONOMY_pre_edit_form"
+    "body": "TAXONOMY_pre_edit_form$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_term_edit_form_tag":
+    "prefix": "TAXONOMY_term_edit_form_tag"
+    "body": "TAXONOMY_term_edit_form_tag$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_term_edit_form_top":
+    "prefix": "TAXONOMY_term_edit_form_top"
+    "body": "TAXONOMY_term_edit_form_top$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
+  "TAXONOMY_term_new_form_tag":
+    "prefix": "TAXONOMY_term_new_form_tag"
+    "body": "TAXONOMY_term_new_form_tag$0"
+    "leftLabelHTML": "<span class=\"snippet-label danger\">action</span>"
