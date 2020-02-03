@@ -63,9 +63,7 @@ export class MarkdownPreviewViewEditorRemote extends MarkdownPreviewView {
   }
 
   public getURI() {
-    return `markdown-preview-plus://remote-editor/${this.windowId}/${
-      this.editorId
-    }`
+    return `markdown-preview-plus://remote-editor/${this.windowId}/${this.editorId}`
   }
 
   public getPath() {
@@ -138,7 +136,7 @@ export class MarkdownPreviewViewEditorRemote extends MarkdownPreviewView {
           util.destroy(this)
         },
         scrollSync: ([firstLine, lastLine]) => {
-          this.handler.scrollSync(firstLine, lastLine)
+          handlePromise(this.handler.scrollSync(firstLine, lastLine))
         },
       }),
     )

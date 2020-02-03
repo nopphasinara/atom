@@ -60,8 +60,9 @@ export class WebviewHandler {
   private zoomLevel = 0
   private replyCallbacks = new Map<number, ReplyCallbackStruct>()
   private replyCallbackId = 0
+  private readonly initPromise: Promise<void>
 
-  constructor(init: () => void) {
+  constructor(init: () => void | Promise<void>) {
     this._element = document.createElement('webview')
     this._element.classList.add('markdown-preview-plus', 'native-key-bindings')
     this._element.disablewebsecurity = 'true'
@@ -86,15 +87,17 @@ export class WebviewHandler {
             const err = e.args[0]
             const newErr = new Error()
             atom.notifications.addFatalError(
-              `Uncaught error ${
-                err.name
-              } in markdown-preview-plus webview client`,
+              `Uncaught error ${err.name} in markdown-preview-plus webview client`,
               {
                 dismissable: true,
                 stack: newErr.stack,
                 detail: `${err.message}\n\nstack:\n${err.stack}`,
               },
             )
+            break
+          }
+          case 'show-context-menu': {
+            atom.contextMenu.showForEvent({ target: this._element })
             break
           }
           // replies
@@ -124,23 +127,24 @@ export class WebviewHandler {
 
     this.disposables.add(
       atom.styles.onDidAddStyleElement(() => {
-        this.updateStyles()
+        handlePromise(this.updateStyles())
       }),
       atom.styles.onDidRemoveStyleElement(() => {
-        this.updateStyles()
+        handlePromise(this.updateStyles())
       }),
       atom.styles.onDidUpdateStyleElement(() => {
-        this.updateStyles()
+        handlePromise(this.updateStyles())
       }),
     )
 
-    const onload = () => {
-      if (this.destroyed) return
-      this._element.setZoomLevel(this.zoomLevel)
-      this.updateStyles()
-      init()
-    }
-    this._element.addEventListener('dom-ready', onload)
+    this.initPromise = new Promise((resolve) => {
+      this._element.addEventListener('dom-ready', () => {
+        if (this.destroyed) return
+        this._element.setZoomLevel(this.zoomLevel)
+        resolve()
+        handlePromise(this.updateStyles().then(init))
+      })
+    })
   }
 
   public get element(): HTMLElement {
@@ -168,22 +172,22 @@ export class WebviewHandler {
     })
   }
 
-  public setSourceMap(map: {
+  public async setSourceMap(map: {
     [line: number]: { tag: string; index: number }[]
   }) {
-    this._element.send<'set-source-map'>('set-source-map', { map })
+    return this.send<'set-source-map'>('set-source-map', { map })
   }
 
-  public setBasePath(path?: string) {
-    this._element.send<'set-base-path'>('set-base-path', { path })
+  public async setBasePath(path?: string) {
+    return this.send<'set-base-path'>('set-base-path', { path })
   }
 
-  public init(params: ChannelMap['init']) {
-    this._element.send<'init'>('init', params)
+  public async init(params: ChannelMap['init']) {
+    return this.send<'init'>('init', params)
   }
 
-  public updateImages(oldSource: string, version: number | undefined) {
-    this._element.send<'update-images'>('update-images', {
+  public async updateImages(oldSource: string, version: number | undefined) {
+    return this.send<'update-images'>('update-images', {
       oldsrc: oldSource,
       v: version,
     })
@@ -192,7 +196,7 @@ export class WebviewHandler {
   public async printToPDF(opts: PrintToPDFOptionsReal) {
     return new Promise<Buffer>((resolve, reject) => {
       // TODO: Complain on Electron
-      this._element.printToPDF(opts as any, (error, data) => {
+      this._element.getWebContents().printToPDF(opts as any, (error, data) => {
         if (error) {
           reject(error)
           return
@@ -202,16 +206,16 @@ export class WebviewHandler {
     })
   }
 
-  public sync(line: number, flash: boolean) {
-    this._element.send<'sync'>('sync', { line, flash })
+  public async sync(line: number, flash: boolean) {
+    return this.send<'sync'>('sync', { line, flash })
   }
 
   public async syncSource() {
     return this.runRequest('sync-source', {})
   }
 
-  public scrollSync(firstLine: number, lastLine: number) {
-    this._element.send<'scroll-sync'>('scroll-sync', { firstLine, lastLine })
+  public async scrollSync(firstLine: number, lastLine: number) {
+    return this.send<'scroll-sync'>('scroll-sync', { firstLine, lastLine })
   }
 
   public zoomIn() {
@@ -242,8 +246,8 @@ export class WebviewHandler {
     this._element.reload()
   }
 
-  public error(msg: string) {
-    this._element.send<'error'>('error', { msg })
+  public async error(msg: string) {
+    return this.send<'error'>('error', { msg })
   }
 
   public async getTeXConfig() {
@@ -254,8 +258,8 @@ export class WebviewHandler {
     return this.runRequest('get-selection', {})
   }
 
-  public updateStyles() {
-    this._element.send<'style'>('style', { styles: getPreviewStyles(true) })
+  public async updateStyles() {
+    return this.send<'style'>('style', { styles: getPreviewStyles(true) })
   }
 
   protected async runRequest<T extends keyof RequestReplyMap>(
@@ -263,16 +267,25 @@ export class WebviewHandler {
     args: { [K in Exclude<keyof ChannelMap[T], 'id'>]: ChannelMap[T][K] },
   ) {
     const id = this.replyCallbackId++
-    return new Promise<RequestReplyMap[T]>((resolve) => {
-      this.replyCallbacks.set(id, {
+    const result = new Promise<RequestReplyMap[T]>((resolve) => {
+      this.replyCallbacks.set(id, ({
         request: request,
         callback: (result: RequestReplyMap[T]) => {
           this.replyCallbacks.delete(id)
           resolve(result)
         },
-      } as ReplyCallbackStruct<T>)
-      const newargs = Object.assign({ id }, args)
-      this._element.send<T>(request, newargs)
+      } as unknown) as ReplyCallbackStruct<T>)
     })
+    const newargs = Object.assign({ id }, args)
+    await this.send<T>(request, newargs as ChannelMap[T])
+    return result
+  }
+
+  protected async send<T extends keyof ChannelMap>(
+    channel: T,
+    value: ChannelMap[T],
+  ): Promise<void> {
+    await this.initPromise
+    this._element.send<T>(channel, value)
   }
 }

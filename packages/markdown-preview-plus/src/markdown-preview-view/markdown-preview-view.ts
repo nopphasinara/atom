@@ -21,7 +21,7 @@ export interface SerializedMPV {
 export abstract class MarkdownPreviewView {
   private static elementMap = new WeakMap<HTMLElement, MarkdownPreviewView>()
 
-  public readonly renderPromise: Promise<void>
+  public readonly initialRenderPromise: Promise<void>
   public runJS!: MarkdownPreviewView['handler']['runJS']
   protected handler!: WebviewHandler
   public get element(): HTMLElement {
@@ -40,17 +40,21 @@ export abstract class MarkdownPreviewView {
     private renderLaTeX: boolean = atomConfig().mathConfig
       .enableLatexRenderingByDefault,
   ) {
-    this.renderPromise = new Promise((resolve) => {
-      this.handler = new WebviewHandler(() => {
+    this.initialRenderPromise = new Promise((resolve) => {
+      this.handler = new WebviewHandler(async () => {
         const config = atomConfig()
-        this.handler.init({
+        await this.handler.init({
           userMacros: loadUserMacros(),
           mathJaxConfig: config.mathConfig,
           context: 'live-preview',
         })
-        this.handler.setBasePath(this.getPath())
+        await this.handler.setBasePath(this.getPath())
         this.emitter.emit('did-change-title')
-        resolve(this.renderMarkdown())
+        resolve(
+          this.renderMarkdown().then(() => {
+            this.loading = false
+          }),
+        )
       })
       this.runJS = this.handler.runJS.bind(this.handler)
       this.imageWatcher = new ImageWatcher(
@@ -180,7 +184,7 @@ export abstract class MarkdownPreviewView {
   }
 
   protected syncPreview(line: number, flash: boolean) {
-    this.handler.sync(line, flash)
+    handlePromise(this.handler.sync(line, flash))
   }
 
   protected openNewWindow() {
@@ -263,15 +267,15 @@ export abstract class MarkdownPreviewView {
         this.changeHandler,
       ),
       atom.config.onDidChange('markdown-preview-plus.useGitHubStyle', () => {
-        this.handler.updateStyles()
+        handlePromise(this.handler.updateStyles())
       }),
       atom.config.onDidChange('markdown-preview-plus.syntaxThemeName', () => {
-        this.handler.updateStyles()
+        handlePromise(this.handler.updateStyles())
       }),
       atom.config.onDidChange(
         'markdown-preview-plus.importPackageStyles',
         () => {
-          this.handler.updateStyles()
+          handlePromise(this.handler.updateStyles())
         },
       ),
 
@@ -283,8 +287,7 @@ export abstract class MarkdownPreviewView {
   }
 
   private async renderMarkdown(): Promise<void> {
-    const source = await this.getMarkdownSource()
-    await this.renderMarkdownText(source)
+    return this.renderMarkdownText(await this.getMarkdownSource())
   }
 
   private async getHTMLToSave(savePath: string) {
@@ -311,21 +314,20 @@ export abstract class MarkdownPreviewView {
       })
 
       if (this.destroyed) return
-      this.loading = false
       await this.handler.update(
         domDocument.documentElement!.outerHTML,
         this.renderLaTeX,
       )
-      this.handler.setSourceMap(
+      await this.handler.setSourceMap(
         util.buildLineMap(markdownIt.getTokens(text, this.renderLaTeX)),
       )
       this.emitter.emit('did-change-markdown')
     } catch (error) {
-      this.showError(error as Error)
+      await this.showError(error as Error)
     }
   }
 
-  private showError(error: Error) {
+  private async showError(error: Error) {
     if (this.destroyed) {
       atom.notifications.addFatalError(
         'Error reported on a destroyed Markdown Preview Plus view',
@@ -336,16 +338,31 @@ export abstract class MarkdownPreviewView {
         },
       )
       return
+    } else if (this.loading) {
+      atom.notifications.addFatalError(
+        'Error reported when Markdown Preview Plus view is loading',
+        {
+          dismissable: true,
+          stack: error.stack,
+          detail: error.message,
+        },
+      )
+      return
+    } else {
+      return this.handler.error(error.message)
     }
-    this.handler.error(error.message)
   }
 
   private async copyToClipboard(): Promise<void> {
-    await this.renderPromise
+    await this.initialRenderPromise
     const selection = await this.handler.getSelection()
-    // Use default copy event handler if there is selected text inside this view
-    if (selection !== undefined) return
-    const src = await this.getMarkdownSource()
-    await copyHtml(src, this.getPath(), this.renderLaTeX)
+    // Use stupid copy event handler if there is selected text inside this view
+    if (selection !== undefined) {
+      // TODO: rich clipboard support
+      atom.clipboard.write(selection)
+    } else {
+      const src = await this.getMarkdownSource()
+      await copyHtml(src, this.getPath(), this.renderLaTeX)
+    }
   }
 }

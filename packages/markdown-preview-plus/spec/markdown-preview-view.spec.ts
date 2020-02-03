@@ -22,7 +22,7 @@ import {
   previewHeadHTML,
   sinonPrivateSpy,
 } from './util'
-import { TextEditorElement, TextEditor } from 'atom'
+import { TextEditorElement, TextEditor, ConfigValues } from 'atom'
 import { PlaceholderView } from '../lib/placeholder-view'
 
 declare module 'atom' {
@@ -43,14 +43,14 @@ describe('MarkdownPreviewView', function() {
     const mpv = new MarkdownPreviewViewFile(filePath)
     window.workspaceDiv.appendChild(mpv.element)
     previews.add(mpv)
-    await mpv.renderPromise
+    await mpv.initialRenderPromise
     return mpv
   }
   const createMarkdownPreviewViewEditor = async function(editor: TextEditor) {
     const mpv = MarkdownPreviewViewEditor.create(editor)
     window.workspaceDiv.appendChild(mpv.element)
     previews.add(mpv)
-    await mpv.renderPromise
+    await mpv.initialRenderPromise
     return mpv
   }
 
@@ -91,7 +91,7 @@ describe('MarkdownPreviewView', function() {
   describe('::constructor', () =>
     it('shows an error message when there is an error', async function() {
       // tslint:disable-next-line: no-unsafe-any
-      ;(preview as any).showError(new Error('Not a real file'))
+      await (preview as any).showError(new Error('Not a real file'))
       expect(await previewText(preview)).to.contain('Failed')
     }))
 
@@ -108,7 +108,7 @@ describe('MarkdownPreviewView', function() {
       ) as MarkdownPreviewView
       window.workspaceDiv.appendChild(newPreview.element)
       expect(newPreview.getPath()).to.equal(preview.getPath())
-      await newPreview.renderPromise
+      await newPreview.initialRenderPromise
     })
 
     it('does not recreate a preview when the file no longer exists', async function() {
@@ -145,7 +145,7 @@ describe('MarkdownPreviewView', function() {
 
       window.workspaceDiv.appendChild(newPreview.element)
       await waitsFor(() => newPreview.getPath() === preview.getPath())
-      await newPreview.renderPromise
+      await newPreview.initialRenderPromise
     })
   })
 
@@ -655,7 +655,6 @@ var x = 0;
           .getAttribute('href')!
         expect(mediaURL).to.exist
         mediaVer = getMediaVersion(css1path, mediaURL)
-        console.log(mediaVer)
         expect(mediaVer).not.to.equal('deleted')
 
         expect(
@@ -670,7 +669,6 @@ var x = 0;
           mediaURL = (await previewFragment(preview, previewHeadHTML))
             .querySelector('link')!
             .getAttribute('href')!
-          console.log(mediaURL)
           return !mediaURL.endsWith(mediaVer)
         })
 
@@ -750,7 +748,7 @@ var x = 0;
 
       expect(fs.existsSync(outputPath)).to.be.false
 
-      await preview.renderPromise
+      await preview.initialRenderPromise
 
       let textEditor: TextEditor
       const openedPromise = new Promise(function(resolve) {
@@ -850,8 +848,8 @@ var x = 0;
       expect(atom.clipboard.read()).to.equal(`\
 <h1>Code Block</h1>
 <pre class="editor-colors lang-javascript"><span><span class="syntax--source syntax--js"><span class="syntax--keyword syntax--control">if</span> a <span class="syntax--keyword syntax--operator syntax--js">===</span> <span class="syntax--constant syntax--numeric">3</span> <span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--begin syntax--bracket syntax--curly">{</span></span></span>
-<span class=""><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>b <span class="syntax--keyword syntax--operator syntax--js">=</span> <span class="syntax--constant syntax--numeric">5</span></span></span>
-<span class=""><span class="syntax--source syntax--js"><span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
+<span><span class="syntax--source syntax--js"><span class="leading-whitespace">  </span>b <span class="syntax--keyword syntax--operator syntax--js">=</span> <span class="syntax--constant syntax--numeric">5</span></span></span>
+<span><span class="syntax--source syntax--js"><span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--end syntax--bracket syntax--curly">}</span></span></span></pre>
 <p>encoding → issue</p>
 `)
     }))
@@ -883,10 +881,108 @@ var x = 0;
       expect(emojis).to.have.lengthOf(11)
       for (const i of emojis) {
         const p = path.normalize(i.getAttribute('src') || '')
-        expect(p.split(path.sep)).includes('twemoji')
+        expect(p.split(path.sep)).includes('twemoji-assets')
         expect(p.split(path.sep)).includes('svg')
         expect(p.endsWith('.svg')).to.be.true
       }
+    })
+  })
+
+  describe('toc', function() {
+    let preview: MarkdownPreviewViewFile
+    let config: Partial<ConfigValues['markdown-preview-plus.markdownItConfig']>
+    let toc: HTMLDivElement
+    let headers: string[]
+    before(() => {
+      config = {
+        useToc: true,
+      }
+    })
+    beforeEach(async () => {
+      atom.config.set('markdown-preview-plus.markdownItConfig', config as any)
+      preview = await createMarkdownPreviewViewFile(filePath)
+      // tslint:disable-next-line: variable-name
+      const toc_ = (await previewFragment(preview)).querySelector<
+        HTMLDivElement
+      >('div.table-of-contents')
+      expect(toc_).not.to.be.null
+      toc = toc_!
+      headers = Array.from(
+        toc.querySelectorAll<HTMLAnchorElement>('li > a'),
+      ).map((x) => x.innerText)
+    })
+    it('renders toc', async function() {
+      expect(Array.from(toc.querySelectorAll('ul'))).to.have.length(2)
+      expect(Array.from(toc.querySelectorAll('li'))).to.have.length(5)
+      expect(
+        Array.from(toc.querySelectorAll<HTMLAnchorElement>('li > a')).map(
+          (x) => x.innerText,
+        ),
+      ).to.include.all.members([
+        'File.markdown',
+        'Level two header with space',
+        'Level two header without space',
+        'Checkbox Lists',
+        'Emoji',
+      ])
+    })
+    describe('tocDepth option', () => {
+      describe('when enabled', () => {
+        before(() => {
+          config.tocDepth = 5
+        })
+        after(() => {
+          delete config.tocDepth
+        })
+        it('is respected', async () => {
+          expect(headers).to.include.all.members([
+            'Level three header',
+            'Level four header',
+            'Level five header',
+          ])
+          expect(headers).to.not.include.members(['Level six header'])
+        })
+      })
+      describe('when not enabled', () => {
+        it('does not affect output', async () => {
+          expect(headers).not.to.include.any.members([
+            'Level three header',
+            'Level four header',
+            'Level five header',
+            'Level six header',
+          ])
+        })
+      })
+    })
+    describe('foceFullToc option', () => {
+      describe('when enabled', () => {
+        before(() => {
+          config.forceFullToc = true
+          config.tocDepth = 6
+        })
+        after(() => {
+          delete config.forceFullToc
+          delete config.tocDepth
+        })
+        it('is respected', async () => {
+          expect(headers).to.include('Out of order header')
+          expect(headers).to.include('File.markdown')
+        })
+      })
+      describe('when disabled', () => {
+        before(() => {
+          config.forceFullToc = false
+          config.tocDepth = 6
+        })
+        after(() => {
+          delete config.forceFullToc
+          delete config.tocDepth
+        })
+        it('out of order headers break toc', async () => {
+          expect(headers).to.include('Out of order header')
+          expect(headers).to.not.include('File.markdown')
+        })
+      })
     })
   })
 
@@ -901,7 +997,6 @@ var x = 0;
       const editor = (await atom.workspace.open('nonexistent.md')) as TextEditor
       editor.setText(`![Some Image](img.png "title" =100x200)`)
       const pv = await createMarkdownPreviewViewEditor(editor)
-      console.log(await previewFragment(pv))
       const [height, width, title] = await pv.runJS<[number, number, string]>(
         `{ let img = document.querySelector('img');
           [img.getAttribute('height'), img.getAttribute('width'), img.getAttribute('title')];
@@ -939,6 +1034,35 @@ var x = 0;
           'fiction</mark><span tabindex="-1" class="critic comment">' +
           '<span>strange but true</span></span>, but it is because ' +
           'Fiction is obliged to stick to possibilities; Truth isn’t.</p>\n',
+      )
+    })
+  })
+
+  describe('Footnote Markup', function() {
+    beforeEach(() => {
+      atom.config.set(
+        'markdown-preview-plus.markdownItConfig.useFootnote',
+        true,
+      )
+    })
+    afterEach(() => {
+      atom.config.unset('markdown-preview-plus.markdownItConfig.useFootnote')
+    })
+    it('renders it', async function() {
+      const pv = await createMarkdownPreviewViewFile(
+        path.join(tempPath, 'subdir/footnote.md'),
+      )
+      const html = await previewHTML(pv)
+      expect(html).to.equal(
+        '<p>The quick brown<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> ' +
+          'fox jumped over the lazy dogs.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]' +
+          '</a></sup></p>\n<hr class="footnotes-sep">\n<section class="footnotes">\n' +
+          '<ol class="footnotes-list">\n<li id="fn1" class="footnote-item">' +
+          '<p>Actually the fox was kind of orange. ' +
+          '<a href="#fnref1" class="footnote-backref">↩︎</a></p>\n</li>\n' +
+          '<li id="fn2" class="footnote-item"><p>Numbers of notes should not matter ' +
+          'for display order. <a href="#fnref2" class="footnote-backref">↩︎</a></p>\n' +
+          '</li>\n</ol>\n</section>\n',
       )
     })
   })
@@ -1091,7 +1215,6 @@ $$
     })
     async function checkTabWidth(expectedWidth: number) {
       const frag = await previewFragment(pv)
-      console.log(frag)
       const tab: HTMLSpanElement | null = frag.querySelector('.hard-tab')
       if (!tab) throw new Error('No hard tab found')
       expect(tab.innerText.length).to.equal(expectedWidth)

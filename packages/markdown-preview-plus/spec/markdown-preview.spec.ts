@@ -250,11 +250,13 @@ describe('Markdown preview plus package', function() {
       describe('when the preview is not the active item and not in the active pane', () =>
         it('re-renders the preview and makes it active', async function() {
           const markdownEditor = atom.workspace.getActiveTextEditor()!
-          const [editorPane, previewPane] = atom.workspace.getPanes()
-          previewPane.splitRight({ copyActiveItem: true })
+          const editorPane = atom.workspace.paneForItem(markdownEditor)!
+          const previewPane = atom.workspace.paneForItem(preview)!
           previewPane.activate()
 
-          await atom.workspace.open()
+          const newEditor = await atom.workspace.open()
+
+          await waitsFor(() => previewPane.getActiveItem() === newEditor)
 
           editorPane.activate()
           markdownEditor.setText('Hey!')
@@ -263,7 +265,10 @@ describe('Markdown preview plus package', function() {
             async () => (await previewText(preview)).indexOf('Hey!') >= 0,
           )
 
-          expect(editorPane.isActive()).to.equal(true)
+          expect(editorPane.isActive()).to.equal(
+            true,
+            'expecting editorPane to be active',
+          )
           expect(previewPane.getActiveItem()).to.equal(preview)
         }))
 
@@ -678,7 +683,7 @@ world</p>
       )
       preview = await expectPreviewInSplitPane()
 
-      await preview.renderPromise
+      await preview.initialRenderPromise
 
       expect(await usesGithubStyle(preview)).to.be.false
     })
@@ -713,9 +718,11 @@ world</p>
       expect(await usesGithubStyle(preview)).to.be.false
 
       atom.config.set('markdown-preview-plus.useGitHubStyle', true)
+      await waitsFor(async () => (await usesGithubStyle(preview)) === true)
       expect(await usesGithubStyle(preview)).to.be.true
 
       atom.config.set('markdown-preview-plus.useGitHubStyle', false)
+      await waitsFor(async () => (await usesGithubStyle(preview)) === false)
       expect(await usesGithubStyle(preview)).to.be.false
     })
   })
@@ -873,7 +880,7 @@ world</p>
       atom.views
         .getView(atom.workspace)
         .appendChild(atom.views.getView(preview))
-      await preview.renderPromise
+      await preview.initialRenderPromise
     })
     afterEach(() => {
       preview.destroy()

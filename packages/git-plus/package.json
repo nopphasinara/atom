@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
   "_shasum": "9acd0a9c845ae0562d3fc38d9d848fcb51516275",
   "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-11964-9300-xpk0j8.r4u5h",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-12013-55671-g0ly8i.ebm9p",
   "atomTranspilers": [
     {
       "glob": "{lib,spec}/**/*.js",
@@ -96,10 +96,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "typescript": "^3.2.2",
-    "underscore-plus": "^1.6.6",
-    "lodash": ">=4.17.13",
-    "js-yaml": ">=3.13.1",
-    "jquery": ">=3.4.0"
+    "underscore-plus": "^1.6.6"
   },
   "deprecated": false,
   "description": "Do git things without the terminal",
@@ -114,9 +111,7 @@
     "lint": "^1.1.2",
     "prettier": "^1.13.6",
     "quibble": "^0.3.0",
-    "tslint": "^5.11.0",
-    "js-yaml": ">=3.13.1",
-    "jquery": ">=3.4.0"
+    "tslint": "^5.11.0"
   },
   "engines": {
     "atom": ">= 1.28"

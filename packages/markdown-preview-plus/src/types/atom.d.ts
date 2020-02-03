@@ -8,9 +8,16 @@ declare module 'atom' {
     bufferRowForScreenRow(row: number): number
     scrollToScreenRange(range: Range, options?: { center: boolean }): void
     onDidTokenize(callback: () => void): Disposable
+    isAlive(): boolean
+    component: {
+      getNextUpdatePromise(): Promise<unknown>
+    }
   }
   interface TextBuffer {
-    getLanguageMode(): { readonly fullyTokenized: boolean }
+    getLanguageMode(): {
+      readonly fullyTokenized?: boolean
+      readonly tree?: boolean
+    }
   }
   interface TextEditorElement {
     setUpdatedSynchronously(val: boolean): void
@@ -23,5 +30,8 @@ declare module 'atom' {
   }
   interface Package {
     getStylesheetPaths(): string[]
+  }
+  interface ContextMenuManager {
+    showForEvent: (ev: { target: HTMLElement }) => void
   }
 }

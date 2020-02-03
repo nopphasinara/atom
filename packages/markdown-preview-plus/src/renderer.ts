@@ -259,14 +259,14 @@ async function highlightCodeBlocks(
         el.setUpdatedSynchronously(true)
         el.style.pointerEvents = 'none'
         el.style.position = 'absolute'
-        el.style.width = '0px'
-        el.style.height = '1px'
-        atom.views.getView(atom.workspace).appendChild(el)
+        el.style.top = '100vh'
+        el.style.width = '100vw'
         atom.grammars.assignLanguageMode(
           ed.getBuffer(),
           scopeForFenceName(fenceName),
         )
         ed.setText(codeBlock.textContent!.replace(/\r?\n$/, ''))
+        atom.views.getView(atom.workspace).appendChild(el)
         await editorTokenized(ed)
         const html = Array.from(el.querySelectorAll('.line:not(.dummy)'))
         preElement.classList.add('editor-colors')
@@ -283,12 +283,14 @@ async function highlightCodeBlocks(
 
 async function editorTokenized(editor: TextEditor) {
   return new Promise((resolve) => {
-    if (editor.getBuffer().getLanguageMode().fullyTokenized) {
-      resolve()
+    const languageMode = editor.getBuffer().getLanguageMode()
+    const nextUpdatePromise = editor.component.getNextUpdatePromise()
+    if (languageMode.fullyTokenized || languageMode.tree) {
+      resolve(nextUpdatePromise)
     } else {
       const disp = editor.onDidTokenize(() => {
         disp.dispose()
-        resolve()
+        resolve(nextUpdatePromise)
       })
     }
   })
