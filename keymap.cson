@@ -114,6 +114,10 @@
 
 
 "atom-text-editor":
+  "ctrl-alt-b": "atom-beautify:beautify-editor"
+  # "ctrl-alt-b": "unset!"
+  "alt-ctrl-l": "unset!"
+  "alt-cmd-l": "unset!"
   "alt-left": "editor:move-to-beginning-of-word"
   "alt-right": "editor:move-to-end-of-word"
   "shift-alt-left": "editor:select-to-beginning-of-word"
@@ -141,7 +145,6 @@
   "shift-alt-f": "unset!"
   "shift-ctrl-alt-f": "unset!"
   "alt-b": "unset!"
-  "ctrl-alt-b": "unset!"
   "shift-alt-b": "unset!"
   "shift-ctrl-alt-b": "unset!"
   "alt-h": "unset!"

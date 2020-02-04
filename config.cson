@@ -120,6 +120,7 @@
       "ask-stack"
       "atom-css-unit-converter"
       "Chromo-Color-Previews"
+      "atom-beautify"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
