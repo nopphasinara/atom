@@ -91,6 +91,30 @@
     },
     {
       "type": "project",
+      "name": "reproduction-studio.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Projects/controls",
+        "/Volumes/Data/Alias/www/reproduction-studio.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "admin.reproduction-studio.com",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Projects/controls",
+        "/Volumes/Data/Alias/www/reproduction-studio.com/admin.reproduction-studio.com/httpdocs"
+      ]
+    },
+    {
+      "type": "project",
       "name": "reproduction-galleries.com",
         "icon": "icon-repo",
       "color": "#f7b05b",
