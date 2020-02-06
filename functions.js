@@ -481,6 +481,44 @@ class Data {
       atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview:toggle');
     }
   }
+
+
+  moveActiveItemToPaneAbove() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+
+    atom.commands.dispatch(atom.views.getView(editor), 'window:move-active-item-to-pane-above').then(function () {
+      atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-below');
+    });
+  }
+  moveActiveItemToPaneBelow() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+
+    atom.commands.dispatch(atom.views.getView(editor), 'window:move-active-item-to-pane-below').then(function () {
+      atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-above');
+    });
+  }
+  moveActiveItemToPaneOnLeft() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+
+    atom.commands.dispatch(atom.views.getView(editor), 'window:move-active-item-to-pane-on-left').then(function () {
+      atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-on-right');
+    });
+  }
+  moveActiveItemToPaneOnRight() {
+    var workspace = atom.workspace;
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+
+    atom.commands.dispatch(atom.views.getView(editor), 'window:move-active-item-to-pane-on-right').then(function () {
+      atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-on-left');
+    });
+  }
 }
 
 global._data = new Data();

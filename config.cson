@@ -41,6 +41,7 @@
       "deprecation-cop"
       "welcome"
       "exception-reporting"
+      "env-from-shell"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -121,6 +122,7 @@
       "atom-css-unit-converter"
       "Chromo-Color-Previews"
       "atom-beautify"
+      "prettier-atom"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -197,6 +199,8 @@
     jumpToImport: true
   "language-applescript":
     autoCompile: false
+  "linter-ui-default":
+    panelHeight: 300
   livereload:
     applyImageLive: true
     autoStart: true
@@ -233,6 +237,9 @@
     targets: [
       "toolkits"
     ]
+  "prettier-atom":
+    formatOnSaveOptions:
+      showInStatusBar: true
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
   "preview-plus":

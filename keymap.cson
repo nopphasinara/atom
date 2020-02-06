@@ -181,6 +181,10 @@
   "ctrl-cmd-c": "repl-console:run"
   "ctrl-cmd-j": "js-console:toggle"
   "cmd-k": "nerd:create-modal"
+  "ctrl-up": "nerd:move-active-item-to-pane-above"
+  "ctrl-right": "nerd:move-active-item-to-pane-on-right"
+  "ctrl-down": "nerd:move-active-item-to-pane-below"
+  "ctrl-left": "nerd:move-active-item-to-pane-on-left"
 
 
 "atom-workspace atom-text-editor:not([mini])":

@@ -71,6 +71,15 @@ atom.commands.add 'atom-workspace', 'nerd:markdown-preview', ->
 atom.commands.add 'atom-workspace', 'nerd:double-spaces', ->
   _data.doubleSpaces()
 
+atom.commands.add 'atom-workspace', 'nerd:move-active-item-to-pane-above', ->
+  _data.moveActiveItemToPaneAbove()
+atom.commands.add 'atom-workspace', 'nerd:move-active-item-to-pane-below', ->
+  _data.moveActiveItemToPaneBelow()
+atom.commands.add 'atom-workspace', 'nerd:move-active-item-to-pane-on-left', ->
+  _data.moveActiveItemToPaneOnLeft()
+atom.commands.add 'atom-workspace', 'nerd:move-active-item-to-pane-on-right', ->
+  _data.moveActiveItemToPaneOnRight()
+
 # addEventListener('fetch', event => {
 #   event.respondWith(handleRequest(event.request))
 # })
