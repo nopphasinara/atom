@@ -44,13 +44,7 @@
       "deprecation-cop"
       "welcome"
       "exception-reporting"
-      "env-from-shell"
-      "language-gfm"
       "markdown-preview"
-      "source-preview-markdown"
-      "preview"
-      "autocomplete-php"
-      "autocomplete-js-import"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
