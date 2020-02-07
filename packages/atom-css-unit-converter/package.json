@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
   "_shasum": "66161a94ca6f457e63bfd328eda29584c71737a7",
   "_spec": "https://www.atom.io/api/packages/atom-css-unit-converter/versions/1.1.1/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120030-8371-1120oxi.0lir",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-12017-25176-1j6shf2.uj87",
   "activationCommands": {
     "atom-text-editor": [
       "atom-css-unit-converter:px-to-em",

@@ -114,6 +114,7 @@
 
 
 "atom-text-editor":
+  "shift-ctrl-cmd-c": "line-to-console"
   "ctrl-alt-b": "atom-beautify:beautify-editor"
   # "ctrl-alt-b": "unset!"
   "alt-ctrl-l": "unset!"

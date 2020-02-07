@@ -9,9 +9,12 @@
   "atom-minify":
     jsMinifier: "UglifyJS2"
   "autocomplete-js-import":
-    fileRelativePaths: false
     fuzzy:
       enabled: true
+    hiddenFiles: true
+    removeExtensions: [
+      ".jsx"
+    ]
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
@@ -43,6 +46,11 @@
       "exception-reporting"
       "env-from-shell"
       "language-gfm"
+      "markdown-preview"
+      "source-preview-markdown"
+      "preview"
+      "autocomplete-php"
+      "autocomplete-js-import"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -124,6 +132,7 @@
       "Chromo-Color-Previews"
       "atom-beautify"
       "prettier-atom"
+      "drawdown-preview"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -133,7 +142,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "one-dark-dim-syntax"
+      "dimmed-one-dark-syntax"
     ]
     titleBar: "custom"
   "dark-flat-ui": {}
@@ -210,14 +219,10 @@
   "markdown-preview":
     useGitHubStyle: true
   "markdown-preview-plus":
-    markdownItConfig:
-      breakOnSingleNewline: true
-      forceFullToc: true
-      useEmoji: false
-      useToc: true
+    markdownItConfig: {}
     previewConfig:
-      activatePreviewWithEditor: true
       closePreviewWithEditor: false
+    renderer: "pandoc"
     saveConfig:
       saveToPDFOptions:
         printBackground: true

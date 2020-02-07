@@ -6,15 +6,26 @@
   "root": [
     {
       "type": "project",
-      "name": "-",
+      "name": "dotfiles",
       "icon": "icon-repo",
       "color": "#f7b05b",
       "devMode": false,
       "config": {},
       "paths": [
-        "~/.dotfiles",
-        "~/.atom",
-        "/Volumes/Data/Alias/controls"
+        "/Volumes/Data/Alias/controls",
+        "~/.dotfiles"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "atom",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/controls",
+        "~/.atom"
       ]
     },
     {

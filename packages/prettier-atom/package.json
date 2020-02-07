@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/prettier-atom/versions/0.58.2/tarball",
   "_shasum": "0e0dde3c4361a355a191f5254990d266e4694145",
   "_spec": "https://www.atom.io/api/packages/prettier-atom/versions/0.58.2/tarball",
-  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-12016-4665-15a0qey.385v",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-12017-32783-1vrrc6w.fnzm",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],

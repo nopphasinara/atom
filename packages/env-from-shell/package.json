@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/env-from-shell/versions/0.3.0/tarball",
   "_shasum": "8d73893bdd4cc82784707a1f30e61d9bbc201603",
   "_spec": "https://www.atom.io/api/packages/env-from-shell/versions/0.3.0/tarball",
-  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-12016-4892-1lgstkc.pbe3",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-12017-28278-xd6dz.x9dwnj",
   "activationCommands": {
     "atom-workspace": [
       "env-from-shell:copy",

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
   "_shasum": "7fe0dd0ab99738f4a12dc90a262778db97517cd2",
   "_spec": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120030-11420-1yw4gsm.hmb1l",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-12017-29932-hgrihn.u2gko",
   "activationHooks": [
     "language-applescript:grammar-used"
   ],
