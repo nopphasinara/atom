@@ -150,172 +150,7 @@ class Data {
     });
   }
 
-  getNotificationOptions(options) {
-    var options = mergeObject({
-      description: '',
-      detail: '',
-      stack: '',
-      icon: 'info',
-      dismissable: false,
-    }, options);
 
-    return options;
-  }
-
-  showError(message, options) {
-    var options = mergeObject(this.getNotificationOptions(), mergeObject({
-      icon: 'flame',
-      dismissable: true,
-    }, options));
-    var notification = atom.notifications.addError(message, options);
-  }
-
-  revealFileInFinder(file) {
-    // if (typeof file == 'undefined' || !file) {
-    //   // console.log(atom.textEditors);
-    //   // console.log(atom.workspace);
-    //   // console.log(atom);
-    //   // this.showError('no file input');
-    // }
-  }
-
-  escapeSnippetCharacters(snippetText = '') {
-    if (snippetText) {
-      snippetText = snippetText.replace(/\{/g, '\\{');
-      snippetText = snippetText.replace(/\}/g, '\\}');
-    }
-
-    return snippetText;
-  }
-
-  getEditorAndCursor(editor, selection) {
-    var __editor = editor;
-    var __cursor = __editor.cursor;
-    var selectedText = '';
-    if (selection.getText()) {
-      __editor = selection.editor;
-      __cursor = selection.cursor;
-      selectedText = this.escapeSnippetCharacters(selection.getText());
-    }
-    return {
-      editor: __editor,
-      cursor: __cursor,
-      selectedText: selectedText,
-    }
-  }
-
-  wrapInlineComment() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var selections = editor.getSelections();
-    var snippets = atom.packages.getActivePackage('snippets');
-    if (snippets) {
-      var snippetsService = snippets.mainModule;
-    }
-
-    editor.mutateSelectedText((selection, index) => {
-      var __ = this.getEditorAndCursor(editor, selection);
-      snippetsService.insert('/**${1: ${2:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
-    });
-  }
-
-  wrapBlockComment() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var selections = editor.getSelections();
-    var snippets = atom.packages.getActivePackage('snippets');
-    if (snippets) {
-      var snippetsService = snippets.mainModule;
-    }
-
-    editor.mutateSelectedText((selection, index) => {
-      var __ = this.getEditorAndCursor(editor, selection);
-      snippetsService.insert('/*${1: ${2:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
-    });
-  }
-
-  markdownWrapWithLink() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = this.getRootScope(editor);
-    if (rootScope == 'source.gfm') {
-      var selections = editor.getSelections();
-      var snippets = atom.packages.getActivePackage('snippets');
-      if (snippets) {
-        var snippetsService = snippets.mainModule;
-      }
-
-      editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
-        snippetsService.insert('[${1:'+ __.selectedText +'}]("${2:'+ __.selectedText +'}" "${3:#}")$0', __.editor, __.cursor);
-      });
-    }
-  }
-
-  markdownTextBold() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = this.getRootScope(editor);
-    if (rootScope == 'source.gfm') {
-      var selections = editor.getSelections();
-      var snippets = atom.packages.getActivePackage('snippets');
-      if (snippets) {
-        var snippetsService = snippets.mainModule;
-      }
-
-      editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
-        snippetsService.insert('__${1:'+ __.selectedText +'}__$0', __.editor, __.cursor);
-      });
-    }
-  }
-
-  markdownTextItalic() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = this.getRootScope(editor);
-    if (rootScope == 'source.gfm') {
-      var selections = editor.getSelections();
-      var snippets = atom.packages.getActivePackage('snippets');
-      if (snippets) {
-        var snippetsService = snippets.mainModule;
-      }
-
-      editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
-        snippetsService.insert('*${1:'+ __.selectedText +'}*$0', __.editor, __.cursor);
-      });
-    }
-  }
-
-  plainTextComment() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = this.getRootScope(editor);
-    if (rootScope == 'text.plain') {
-      var selections = editor.getSelections();
-      var snippets = atom.packages.getActivePackage('snippets');
-      if (snippets) {
-        var snippetsService = snippets.mainModule;
-      }
-
-      editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
-        snippetsService.insert('## ${1:'+ __.selectedText +'}\n# ---------------- #$0', __.editor, __.cursor);
-      });
-    }
-  }
-
-  markdownCodeBlock() {
-    var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = this.getRootScope(editor);
-    if (rootScope == 'source.gfm') {
-      var selections = editor.getSelections();
-      var snippets = atom.packages.getActivePackage('snippets');
-      if (snippets) {
-        var snippetsService = snippets.mainModule;
-      }
-
-      editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
-        snippetsService.insert('```\n${1:'+ __.selectedText +'}\n```$0', __.editor, __.cursor);
-      });
-    }
-  }
 
   doubleSpaces() {
     var editor = atom.workspace.getActiveTextEditor();
@@ -393,6 +228,7 @@ class Data {
     return button.replace('{{buttonItems}}', buttonItems);
   }
 
+
   createModal() {
     /*
 
@@ -459,12 +295,215 @@ class Data {
   }
 
 
+  getNotificationOptions(options) {
+    var options = mergeObject({
+      description: '',
+      detail: '',
+      stack: '',
+      icon: 'info',
+      dismissable: false,
+    }, options);
+
+    return options;
+  }
+
+
+  showError(message, options) {
+    var options = mergeObject(this.getNotificationOptions(), mergeObject({
+      icon: 'flame',
+      dismissable: true,
+    }, options));
+    var notification = atom.notifications.addError(message, options);
+  }
+
+
+  escapeSnippetCharacters(snippetText = '') {
+    if (snippetText) {
+      snippetText = snippetText.replace(/\{/g, '\\{');
+      snippetText = snippetText.replace(/\}/g, '\\}');
+    }
+
+    return snippetText;
+  }
+
+
+  getEditorAndCursor(editor, selection) {
+    var __editor = editor;
+    var __cursor = __editor.cursor;
+    var selectedText = '';
+    if (selection.getText()) {
+      __editor = selection.editor;
+      __cursor = selection.cursor;
+      selectedText = this.escapeSnippetCharacters(selection.getText());
+    }
+    return {
+      editor: __editor,
+      cursor: __cursor,
+      selectedText: selectedText,
+    }
+  }
+
+
+  wrapInlineComment() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var selections = editor.getSelections();
+    var snippets = atom.packages.getActivePackage('snippets');
+    if (snippets) {
+      var snippetsService = snippets.mainModule;
+    }
+
+    editor.mutateSelectedText((selection, index) => {
+      var __ = this.getEditorAndCursor(editor, selection);
+      snippetsService.insert('/**${1: ${2:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
+    });
+  }
+
+
+  wrapBlockComment() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var selections = editor.getSelections();
+    var snippets = atom.packages.getActivePackage('snippets');
+    if (snippets) {
+      var snippetsService = snippets.mainModule;
+    }
+
+    editor.mutateSelectedText((selection, index) => {
+      var __ = this.getEditorAndCursor(editor, selection);
+      snippetsService.insert('/*${1: ${2:'+ __.selectedText +'} }*/$0', __.editor, __.cursor);
+    });
+  }
+
+
+  plainTextComment() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'text.plain') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('## ${1:'+ __.selectedText +'}\n# ---------------- #$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+
+  markdownWrapWithLink() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('[${1:'+ __.selectedText +'}]("${2:'+ __.selectedText +'}" "${3:#}")$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+
+  markdownTextBold() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('__${1:'+ __.selectedText +'}__$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+
+  markdownAddCheckList() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('- [${1: }] ${2:'+ __.selectedText +'}$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+  markdownAddCheckedList() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('- [${1:x}] ${2:'+ __.selectedText +'}$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+
+  markdownTextItalic() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('*${1:'+ __.selectedText +'}*$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+  markdownCodeBlock() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+        snippetsService.insert('```\n${1:'+ __.selectedText +'}\n```$0', __.editor, __.cursor);
+      });
+    }
+  }
+
+
   getActiveMarkdownPackage() {
     var workspace = atom.workspace;
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = this.getRootScope(editor);
     var whichMarkdown = 'markdown-preview';
-    if (typeof atom.packages.getActivePackage('markdown-preview-plus') != 'undefined') {
+    if (atom.packages.isPackageActive('markdown-preview-plus')) {
       whichMarkdown = 'markdown-preview-plus';
     }
 
@@ -475,10 +514,17 @@ class Data {
     var workspace = atom.workspace;
     var editor = atom.workspace.getActiveTextEditor();
     var rootScope = this.getRootScope(editor);
-    if (this.getActiveMarkdownPackage() == 'markdown-preview-plus') {
-      atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview-plus:toggle');
-    } else {
-      atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview:toggle');
+
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      if (this.getActiveMarkdownPackage() == 'markdown-preview-plus') {
+        atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview-plus:toggle');
+      } else {
+        atom.commands.dispatch(atom.views.getView(editor), 'markdown-preview:toggle');
+      }
+      var timeout = setTimeout(() => {
+        atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-on-right');
+        clearTimeout(timeout);
+      }, 1000);
     }
   }
 

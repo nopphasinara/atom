@@ -168,7 +168,6 @@
   "ctrl-alt-backspace": "unset!"
   "ctrl-alt-delete": "unset!"
   "ctrl-space": "unset!"
-  "ctrl-cmd-m": "markdown-preview:toggle"
   # "alt-cmd-a": "aligner:align"
   # "alt-cmd-a": "simple-align:align"
   "alt-cmd-a": "atom-alignment:alignMultiple"
@@ -188,6 +187,7 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
+  "ctrl-cmd-m": "nerd:markdown-preview"
   # "shift-cmd-c": "nerd:pinned-copy-selected-text"
   # "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
   # # "alt-cmd-o": "nerd:reveal-in-finder"
@@ -287,6 +287,7 @@
   "cmd-?": "nerd:wrap-block-comment"
   "alt-`": "nerd:php-echo"
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
+  "ctrl-cmd-m": "bracket-matcher:select-inside-brackets"
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
   "shift-alt-cmd-o": "project-viewer:togglePanel"
@@ -313,7 +314,6 @@
   "cmd-r": "symbols-view:toggle-file-symbols"
   "cmd-.": "nerd:select-outside-brackets"
   "alt-cmd-.": "nerd:select-inside-brackets"
-  "ctrl-cmd-m": "bracket-matcher:select-inside-brackets"
   "shift-ctrl-o": "nerd:link-open"
   "ctrl-cmd-o": "nerd:link-open"
 
@@ -398,8 +398,8 @@
 
 'atom-text-editor[mini]':
   # srart nerd
-  "shift-cmd-c": "nerd:pinned-copy-selected-text"
-  "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
+  # "shift-cmd-c": "nerd:pinned-copy-selected-text"
+  # "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
   # "alt-cmd-o": "nerd:reveal-in-finder"
   "shift-cmd-l": "nerd:bio-link"
   "alt-cmd-[": "nerd:toggle-fold"
@@ -433,12 +433,14 @@
   "cmd-?": "nerd:wrap-block-comment"
 
 # Markdown
-'atom-text-editor[data-grammar~="source"],
- atom-text-editor[data-grammar~="gfm"]':
+'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"],
+atom-text-editor[data-grammar~="text"][data-grammar~="md"]':
   "cmd-i": "nerd:markdown-text-italic"
   "cmd-b": "nerd:markdown-text-bold"
   "cmd-?": "nerd:markdown-code-block"
   "alt-cmd-enter": "nerd:markdown-wrap-with-link"
+  "alt-c alt-c ^c": "nerd:markdown-add-check-list"
+  "alt-c alt-x ^x": "nerd:markdown-add-checked-list"
 
 
 '.tree-view-dialog atom-text-editor[mini]':

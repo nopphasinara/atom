@@ -42,6 +42,7 @@
       "welcome"
       "exception-reporting"
       "env-from-shell"
+      "language-gfm"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -201,12 +202,12 @@
     autoCompile: false
   "linter-ui-default":
     panelHeight: 300
+    showPanel: true
   livereload:
     applyImageLive: true
     autoStart: true
     useHTTPS: true
   "markdown-preview":
-    breakOnSingleNewline: true
     useGitHubStyle: true
   "markdown-preview-plus":
     markdownItConfig:
@@ -272,6 +273,8 @@
     compileExpanded: true
     compileOnSave: false
     showAdditionalCompilationInfo: false
+  "scroll-through-time":
+    modifierKey: "altKey"
   "settings-view":
     packageUpdateConcurrency: 1
   "slim-dark-ui":
@@ -317,6 +320,10 @@
     commentEnd: ""
     commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".gfm.source":
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: true
 ".js.source":
   whitespace:
     ensureSingleTrailingNewline: false

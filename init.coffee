@@ -50,22 +50,25 @@ atom.commands.add 'atom-text-editor', 'nerd:markdown-text-italic', ->
 atom.commands.add 'atom-text-editor', 'nerd:markdown-wrap-with-link', ->
   _data.markdownWrapWithLink()
 
-atom.commands.add 'atom-text-editor', 'nerd:pinned-copy-selected-text', ->
-  _data.pinnedCopySelectedText()
+atom.commands.add 'atom-text-editor', 'nerd:markdown-add-check-list', ->
+  _data.markdownAddCheckList()
 
-atom.commands.add 'atom-text-editor', 'nerd:load-pinned-copy-selected-text', ->
-  _data.loadPinnedCopySelectedText()
+# atom.commands.add 'atom-text-editor', 'nerd:pinned-copy-selected-text', ->
+#   _data.pinnedCopySelectedText()
 
-atom.commands.add 'atom-text-editor', 'nerd:plain-text-comment', ->
-  _data.plainTextComment()
+# atom.commands.add 'atom-text-editor', 'nerd:load-pinned-copy-selected-text', ->
+#   _data.loadPinnedCopySelectedText()
+
+# atom.commands.add 'atom-text-editor', 'nerd:plain-text-comment', ->
+#   _data.plainTextComment()
 
 atom.commands.add 'atom-text-editor', 'nerd:markdown-code-block', ->
   _data.markdownCodeBlock()
 
-atom.commands.add 'atom-workspace', 'nerd:create-modal', ->
-  _data.createModal()
+# atom.commands.add 'atom-workspace', 'nerd:create-modal', ->
+#   _data.createModal()
 
-atom.commands.add 'atom-workspace', 'nerd:markdown-preview', ->
+atom.commands.add 'atom-text-editor', 'nerd:markdown-preview', ->
   _data.markdownPreview()
 
 atom.commands.add 'atom-workspace', 'nerd:double-spaces', ->
