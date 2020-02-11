@@ -205,7 +205,6 @@
     autoCompile: false
   "linter-ui-default":
     panelHeight: 300
-    showPanel: true
   livereload:
     applyImageLive: true
     autoStart: true
@@ -267,11 +266,12 @@
     foldLogPanel: true
     monitorFileAnimation: false
   "sass-autocompile":
+    autoHidePanel: "Never"
     checkOutputFileAlreadyExists: true
     compileCompressed: false
     compileExpanded: true
     compileOnSave: false
-    showAdditionalCompilationInfo: false
+    precision: 2
   "scroll-through-time":
     modifierKey: "altKey"
   "settings-view":
