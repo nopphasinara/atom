@@ -843,7 +843,8 @@
   'print class methods':
     'prefix': 'prcm'
     'body': '''
-    echo '<pre>'; print_r(get_class_methods(${1:foo})); echo '</pre>';$0
+    \$ret = get_class_methods(${1:foo}); sort(\$ret);
+    echo '<pre>'; print_r(\$ret); echo '</pre>';$0
     '''
 
 

@@ -42,6 +42,18 @@
     },
     {
       "type": "project",
+      "name": "quickadminpanel",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Projects/controls",
+        "/Volumes/Data/Alias/www/quickadminpanel"
+      ]
+    },
+    {
+      "type": "project",
       "name": "blog.local",
       "icon": "icon-repo",
       "color": "#f7b05b",
