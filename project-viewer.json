@@ -121,7 +121,7 @@
       "config": {},
       "paths": [
         "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/reproduction-studio.com/admin.reproduction-studio.com"
+        "/Volumes/Data/Alias/www/admin.reproduction-studio.com"
       ]
     },
     {
@@ -173,18 +173,6 @@
     },
     {
       "type": "project",
-      "name": "xn--82ce5arg8cm8f1bf5a5ive.local",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.local"
-      ]
-    },
-    {
-      "type": "project",
       "name": "master.xn--82ce5arg8cm8f1bf5a5ive.com",
       "icon": "icon-repo",
       "color": "#f7b05b",
@@ -193,6 +181,18 @@
       "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
         "/Volumes/Data/Alias/www/master.xn--82ce5arg8cm8f1bf5a5ive.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "xn--82ce5arg8cm8f1bf5a5ive.local",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
+        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.local"
       ]
     },
     {
@@ -217,174 +217,6 @@
       "paths": [
         "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
         "/Volumes/Data/Alias/www/staging.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging1.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/staging1.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging2.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/staging2.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "demo1.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/demo1.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "demo2.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/demo2.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "rosa.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/rosa.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "wp.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/wp.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "live.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/live.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "master1.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/master1.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "torfa.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/torfa.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "torfa2.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/torfa2.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "torfa3.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/torfa3.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "torfa4.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/torfa4.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "torfa5.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/torfa5.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "local.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/local.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     }
   ]
