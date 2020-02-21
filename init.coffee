@@ -368,6 +368,14 @@ atom.commands.add 'atom-text-editor', 'nerd:select-line-copy', ->
   atom.commands.dispatch(atom.views.getView(editor), "editor:select-to-first-character-of-line")
   atom.commands.dispatch(atom.views.getView(editor), "core:copy")
 
+atom.commands.add 'atom-text-editor', 'nerd:select-line-cut', ->
+  editor = atom.workspace.getActiveTextEditor()
+  atom.commands.dispatch(atom.views.getView(editor), "editor:move-to-end-of-line")
+  atom.commands.dispatch(atom.views.getView(editor), "editor:select-to-beginning-of-line")
+  # atom.commands.dispatch(atom.views.getView(editor), "core:select-left")
+  atom.commands.dispatch(atom.views.getView(editor), "editor:select-to-first-character-of-line")
+  atom.commands.dispatch(atom.views.getView(editor), "core:cut")
+
 
 # sss
 atom.commands.add 'atom-text-editor', 'nerd:toggle-fold', ->

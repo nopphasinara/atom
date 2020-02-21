@@ -157,7 +157,7 @@
   "cmd-k cmd-u": "unset!"
   "cmd-k cmd-l": "unset!"
   "ctrl-v": "core:paste"
-  "ctrl-x": "nerd:select-line"
+  "ctrl-x": "nerd:select-line-cut"
   "ctrl-c": "nerd:select-line-copy"
   "cmd-l": "nerd:select-line"
   # "cmd-l": "editor:select-line"
