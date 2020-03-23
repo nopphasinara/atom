@@ -42,6 +42,17 @@
     },
     {
       "type": "project",
+      "name": "jomtien.no",
+      "icon": "icon-repo",
+      "color": "#f7b05b",
+      "devMode": false,
+      "config": {},
+      "paths": [
+        "/Volumes/Data/Alias/www/jomtien.no"
+      ]
+    },
+    {
+      "type": "project",
       "name": "quickadminpanel",
       "icon": "icon-repo",
       "color": "#f7b05b",
