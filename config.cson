@@ -24,12 +24,10 @@
     allowPendingPaneItems: false
     audioBeep: false
     disabledPackages: [
-      "about"
       "background-tips"
       "autosave"
       "deprecation-cop"
       "welcome"
-      "exception-reporting"
       "markdown-preview"
     ]
     fileSystemWatcher: "experimental"
