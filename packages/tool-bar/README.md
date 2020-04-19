@@ -1,8 +1,6 @@
 # Atom Tool Bar
 
-[![Travis CI](https://travis-ci.org/suda/tool-bar.svg?branch=master)](https://travis-ci.org/suda/tool-bar)
-[![Circle CI](https://circleci.com/gh/suda/tool-bar/tree/master.svg?style=shield)](https://circleci.com/gh/suda/tool-bar/tree/master)
-[![AppVeyor](https://ci.appveyor.com/api/projects/status/xtm6u3sn3oil50da?svg=true)](https://ci.appveyor.com/project/suda/tool-bar)
+![CI](https://github.com/suda/tool-bar/workflows/CI/badge.svg)
 [![apm](https://img.shields.io/apm/dm/tool-bar.svg)]()
 [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/suda/tool-bar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -32,7 +30,8 @@ On which edge of the editor should the tool bar appear. Possible options:
 
 ### Icon size
 
-*   Tiny *(12px)*
+*   Infinitesimal *(12px)*
+*   Tiny *(14px)*
 *   Very Small *(16px)*
 *   Small: *(18px)*
 *   Medium: *(21px)*
@@ -278,6 +277,12 @@ The return value of this method shares another method called
 The method `addSpacer` has only one optional property `priority` (defaults
 `50`).
 
+### `.addItem({element, priority})`
+
+Adds a custom HTML element as an item to the tool-bar. Arguments are:
+- `element`: pass your HTML element.
+- `priority`: optional field specifying the position of the item.
+
 ### `.removeItems()`
 
 Use the method `removeItems` to remove the buttons added by your package. This
@@ -332,3 +337,12 @@ using this one. For all contributions credits are due:
 *   [Paul Brown](https://github.com/PaulBrownMagic)
 *   [Raphael Fetzer](https://github.com/pheraph)
 *   [Sven Lohrmann](https://github.com/malnvenshorn)
+*   [Amin Yahyaabadi](https://github.com/aminya)
+*   [Eric Cornelissen](https://github.com/ericcornelissen)
+*   [Jan T. Sott](https://github.com/idleberg)
+*   [Luis Romero](https://github.com/luiscobits)
+*   [Jordan Eldredge](https://github.com/captbaritone)
+*   [Juan Rial](https://github.com/jrial)
+*   [Vadim Kotov](https://github.com/vkotovv)
+*   [Michael Bolin](https://github.com/bolinfest)
+

@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-  "_id": "markdown-preview-enhanced@0.17.7",
+  "_from": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+  "_id": "markdown-preview-enhanced@0.17.8",
   "_inBundle": false,
-  "_integrity": "sha512-dpODbQZhCh8sI4WiuAzZdCVIoex3pswdw3EqgR3cDK3PxZw9haOso9WRs9gVhXG9W6md876r9i1S8maln3JBZw==",
+  "_integrity": "sha512-cA2eHNYIsD5IQTiKVVaO8TnVtKi9k5PsvuBj+KJj5C0X/gm+7GONSSZ7sstO0dFfvi0hLRLpYjL46NtTIw91ow==",
   "_location": "/markdown-preview-enhanced",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball"
+    "raw": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-  "_shasum": "778b8a5df4220fbe8088cef5cb8df5e52e32c73b",
-  "_spec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.7/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120113-43605-xs1awa.wz3g",
+  "_resolved": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+  "_shasum": "a7f52c76e2994c757f96be9aa5f2140b9d578f7a",
+  "_spec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.17.8/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120319-23677-19dj6o.nvirl",
   "activationCommands": {
     "atom-workspace": "markdown-preview-enhanced:toggle"
   },
@@ -34,7 +34,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@shd101wyy/mume": "^0.4.11"
+    "@shd101wyy/mume": "^0.4.12"
   },
   "deprecated": false,
   "description": "One of the 'BEST' markdown preview extensions for Atom editor!",
@@ -119,5 +119,5 @@
     "fix:prettier": "prettier --write \"**/*.*\"",
     "fix:tslint": "tslint --project ."
   },
-  "version": "0.17.7"
+  "version": "0.17.8"
 }
