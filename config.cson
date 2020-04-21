@@ -303,10 +303,10 @@
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".shell-session.text":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
 ".shell.source":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: true
