@@ -310,3 +310,35 @@
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: true
+dash:
+  filenames:
+    "gruntfile.js": [
+      "grunt"
+    ]
+  grammars:
+    JavaScript: [
+      "javascript"
+      "jquery"
+      "jqueryui"
+      "jquerym"
+      "react"
+      "nodejs"
+      "angularjs"
+      "backbone"
+      "marionette"
+      "meteor"
+      "moo"
+      "prototype"
+      "ember"
+      "lodash"
+      "underscore"
+      "sencha"
+      "extjs"
+      "titanium"
+      "knockout"
+      "zepto"
+      "cordova"
+      "phonegap"
+      "yui"
+      "unity3d"
+    ]
