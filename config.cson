@@ -29,6 +29,7 @@
       "deprecation-cop"
       "welcome"
       "markdown-preview"
+      "spell-check"
     ]
     fileSystemWatcher: "experimental"
     ignoredNames: [
@@ -233,6 +234,10 @@
     modifierKey: "altKey"
   "settings-view":
     packageUpdateConcurrency: 1
+  "spell-check":
+    locales: [
+      "en-US"
+    ]
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
