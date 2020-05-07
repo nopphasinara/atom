@@ -31,7 +31,6 @@
       "markdown-preview"
       "spell-check"
     ]
-    fileSystemWatcher: "experimental"
     ignoredNames: [
       ".git"
       ".hg"
@@ -112,12 +111,13 @@
       "atom-beautify"
       "prettier-atom"
       "drawdown-preview"
+      "dash"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
     ]
     projectHome: "~/.dotfiles/projects"
-    reopenProjectMenuCount: 25
+    reopenProjectMenuCount: 10
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -133,6 +133,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
     tabType: "soft"
   emmet:
     extensionsPath: "~/.dotfiles/projects/emmet"
