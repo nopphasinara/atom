@@ -607,14 +607,14 @@
   'die()':
     'prefix': 'd'
     'body': '''
-    die${2:($1)};$0
+    die${1:($2)};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
   'exit()':
     'prefix': 'ex'
     'body': '''
-    exit${2:($1)};$0
+    exit${1:($2)};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
@@ -827,14 +827,14 @@
     defined(\\'$1\\');$0
     '''
   'if_defined':
-    'prefix': 'ifdef'
+    'prefix': 'defif'
     'body': '''
     if (defined(${2:\\'$1\\'})) {
       $3
     }$0
     '''
   'if_not_defined':
-    'prefix': 'ifndef'
+    'prefix': 'ndefif'
     'body': '''
     if (!defined(${2:\\'$1\\'})) {
       $3
