@@ -133,7 +133,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
+    softWrapAtPreferredLineLength: false
     tabType: "soft"
   emmet:
     extensionsPath: "~/.dotfiles/projects/emmet"
@@ -276,6 +276,8 @@
     commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
 ".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
   whitespace:
     ensureSingleTrailingNewline: false
     removeTrailingWhitespace: true
@@ -284,6 +286,8 @@
     ensureSingleTrailingNewline: false
     removeTrailingWhitespace: true
 ".json.source":
+  editor:
+    softWrapAtPreferredLineLength: true
   whitespace:
     ensureSingleTrailingNewline: false
 ".less.source":
@@ -296,6 +300,7 @@
   editor:
     commentEnd: ""
     commentStart: "# "
+    softWrapAtPreferredLineLength: true
   whitespace:
     ensureSingleTrailingNewline: false
 ".python.source":
@@ -310,9 +315,11 @@
 ".shell-session.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    softWrapAtPreferredLineLength: true
 ".shell.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    softWrapAtPreferredLineLength: true
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: true
