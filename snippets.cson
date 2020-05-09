@@ -826,6 +826,11 @@
     'body': '''
     defined(\\'$1\\');$0
     '''
+  'namespace ...':
+    'prefix': 'ns'
+    'body': '''
+    namespace ${1:FooBar};$0
+    '''
   'if_defined':
     'prefix': 'defif'
     'body': '''
