@@ -63,6 +63,17 @@
 # Shell
 '.text.plain,
 .source.shell':
+  'WP Tooltip':
+    'prefix': 'ttip'
+    'body': '''
+    <span data-ac-tip="${1:Tips}"><span class="dashicons ${2:dashicons-admin-generic}"></span></span>$0
+    '''
+  # 'WP Tooltip':
+  #   'prefix': 'ttip'
+  #   'body': '''
+  #   <span data-ac-tip="${1:Tips}" data-hasqtip="0" aria-describedby="qtip-0"><span class="dashicons ${2:dashicons-admin-generic}"></span></span>$0
+  #   '''
+
   'function':
     'prefix': 'fn'
     'body': '''
