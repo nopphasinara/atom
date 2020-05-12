@@ -225,10 +225,12 @@
     foldLogPanel: true
     monitorFileAnimation: false
   "sass-autocompile":
+    autoHidePanelDelay: 100
     checkOutputFileAlreadyExists: true
     compileCompressed: false
     compileExpanded: true
     compileOnSave: false
+    notifications: "Notifications"
     precision: 2
     showAdditionalCompilationInfo: false
   "scroll-through-time":
