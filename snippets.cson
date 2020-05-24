@@ -535,6 +535,14 @@
   'e':
     'prefix': 'e'
 
+  'dod':
+    'prefix': 'dod'
+    'body': """
+    '. $1 .'$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+
   'ec':
     'prefix': 'ec'
     'body': """
