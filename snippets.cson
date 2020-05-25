@@ -633,7 +633,7 @@
   'exit()':
     'prefix': 'ex'
     'body': '''
-    exit${1:($2)};$0
+    ${1:exit$2};$0
     '''
     'rightLabelHTML': '<span class="snippet-label success">PHP</span>'
 
