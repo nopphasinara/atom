@@ -1,0 +1,66 @@
+{
+  "_from": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+  "_id": "toggle-markdown-task@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-TtCcr2ZJi+PDL1Xi8+xeLt4OOUhunVa5gUzr6cVrkD8DVJAaS+tcvCEFcS0azHBUZS3hf250MIYY/fI0L4ehLw==",
+  "_location": "/toggle-markdown-task",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+  "_shasum": "f081444f3b411805c247fb50ebf8750c634b826e",
+  "_spec": "https://www.atom.io/api/packages/toggle-markdown-task/versions/0.7.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-2020426-60718-8l1huv.dfz1",
+  "activationCommands": {
+    "atom-text-editor": [
+      "toggle-markdown-task:toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/jasonrudolph/toggle-markdown-task/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Toggle completion of tasks in GitHub-flavored Markdown files",
+  "devDependencies": {
+    "standard": "*"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jasonrudolph/toggle-markdown-task#readme",
+  "keywords": [
+    "gfm",
+    "list",
+    "markdown",
+    "task",
+    "todo"
+  ],
+  "license": "MIT",
+  "main": "./lib/toggle-markdown-task",
+  "name": "toggle-markdown-task",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonrudolph/toggle-markdown-task.git"
+  },
+  "scripts": {
+    "lint": "standard --verbose",
+    "test": "npm run lint && apm test"
+  },
+  "standard": {
+    "globals": [
+      "atom"
+    ]
+  },
+  "version": "0.7.0"
+}

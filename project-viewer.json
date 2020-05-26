@@ -1,8 +1,4 @@
 {
-  "info": {
-    "version": "1.1.0",
-    "updated": "2019-11-02T18:56:44.194Z"
-  },
   "root": [
     {
       "type": "project",
@@ -192,54 +188,6 @@
       "config": {},
       "paths": [
         "~/.dotfiles/settings/karabiner"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "master.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/master.xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "xn--82ce5arg8cm8f1bf5a5ive.local",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.local"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/xn--82ce5arg8cm8f1bf5a5ive.com"
-      ]
-    },
-    {
-      "type": "project",
-      "name": "staging.xn--82ce5arg8cm8f1bf5a5ive.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
-      "paths": [
-        "/Volumes/Drives/Google Drive/- Work Storage/xn--82ce5arg8cm8f1bf5a5ive.com",
-        "/Volumes/Data/Alias/www/staging.xn--82ce5arg8cm8f1bf5a5ive.com"
       ]
     },
     {

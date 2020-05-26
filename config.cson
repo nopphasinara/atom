@@ -30,6 +30,7 @@
       "welcome"
       "markdown-preview"
       "spell-check"
+      "language-gfm"
     ]
     ignoredNames: [
       ".git"
@@ -112,6 +113,10 @@
       "prettier-atom"
       "drawdown-preview"
       "dash"
+      "markdown-writer"
+      "markdown-image-paste"
+      "markdown-toc"
+      "language-markdown"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -196,11 +201,24 @@
     extendAutocompleteToVariables: true
     mergeColorDuplicates: true
     notifyReloads: false
+  "pp-markdown":
+    cssURL: "markdown10"
   "prettier-atom":
     formatOnSaveOptions:
       showInStatusBar: true
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
+  "project-banner":
+    allowExecution: [
+      "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop"
+    ]
+  "project-manager":
+    showPath: false
+    sortBy: "title"
+  "project-plus":
+    newWindow: true
+    notifications: false
+    showPath: true
   "project-viewer":
     autoHide: true
     autoHideAbsolute: true
@@ -247,6 +265,8 @@
     addNewTabsAtEnd: true
     displayMruTabList: false
     enableMruTabSwitching: false
+  "tidy-markdown":
+    runOnSave: false
   "tool-bar": {}
   "tree-view":
     alwaysOpenExisting: true

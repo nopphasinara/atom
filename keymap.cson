@@ -188,6 +188,7 @@
 
 
 "atom-workspace atom-text-editor:not([mini])":
+  'ctrl-d': 'toggle-markdown-task:toggle'
   "ctrl-cmd-m": "nerd:markdown-preview"
   # "shift-cmd-c": "nerd:pinned-copy-selected-text"
   # "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
@@ -290,13 +291,17 @@
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
   "ctrl-cmd-m": "bracket-matcher:select-inside-brackets"
 
+".project-manager input":
+  "enter": "core:confirm"
+".project-manager atom-text-editor[mini]":
+  "shift-enter": "project-manager:alt-confirm"
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
-  "shift-alt-cmd-o": "project-viewer:togglePanel"
-  "shift-cmd-o": "project-viewer:toggleSelectList"
-  # "shift-cmd-o": "project-manager:list-projects"
-  "alt-cmd-p": "project-viewer:openDatabase"
-  "shift-alt-cmd-p": "project-viewer:createNewProject"
-  # "alt-cmd-p": "project-manager:edit-projects"
+  "alt-cmd-p": "project-manager:edit-projects"
+  "shift-cmd-o": "project-manager:list-projects"
+  # "shift-alt-cmd-o": "project-viewer:togglePanel"
+  # "shift-cmd-o": "project-viewer:toggleSelectList"
+  # "alt-cmd-p": "project-viewer:openDatabase"
+  # "shift-alt-cmd-p": "project-viewer:createNewProject"
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"
   # "shift-cmd-f11": "ftp-remote-edit:upload-file"
@@ -317,12 +322,6 @@
   "alt-cmd-.": "nerd:select-inside-brackets"
   "shift-ctrl-o": "nerd:link-open"
   "ctrl-cmd-o": "nerd:link-open"
-
-".project-manager input":
-  "enter": "core:confirm"
-
-".project-manager atom-text-editor[mini]":
-  "shift-enter": "project-manager:alt-confirm"
 
 ".advanced-open-file atom-text-editor":
   "tab": "advanced-open-file:autocomplete"
@@ -434,14 +433,14 @@
   "cmd-?": "nerd:wrap-block-comment"
 
 # Markdown
-'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"],
-atom-text-editor[data-grammar~="text"][data-grammar~="md"]':
-  "cmd-i": "nerd:markdown-text-italic"
-  "cmd-b": "nerd:markdown-text-bold"
-  "cmd-?": "nerd:markdown-code-block"
-  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
-  "alt-c alt-c ^c": "nerd:markdown-add-check-list"
-  "alt-c alt-x ^x": "nerd:markdown-add-checked-list"
+# 'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"],
+# atom-text-editor[data-grammar~="text"][data-grammar~="md"]':
+#   "cmd-i": "nerd:markdown-text-italic"
+#   "cmd-b": "nerd:markdown-text-bold"
+#   "cmd-?": "nerd:markdown-code-block"
+#   "alt-cmd-enter": "nerd:markdown-wrap-with-link"
+#   "alt-c alt-c ^c": "nerd:markdown-add-check-list"
+#   "alt-c alt-x ^x": "nerd:markdown-add-checked-list"
 
 
 '.tree-view-dialog atom-text-editor[mini]':

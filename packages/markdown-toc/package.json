@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+  "_id": "markdown-toc@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-x5efKbz1HnzoJwzCrQgLRGqaB9Kc9MyjI1RmQjLgjBYik7ypQt5YeSeznB8fVbfGeAwfhor5azW8BlzSgWEExg==",
+  "_location": "/markdown-toc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+  "_shasum": "24ce8bea59fedc3ceca820de71e75409b8fd96c3",
+  "_spec": "https://www.atom.io/api/packages/markdown-toc/versions/0.4.2/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-2020426-62392-qm4nid.eube",
+  "activationCommands": {
+    "atom-workspace": "markdown-toc:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/nok/markdown-toc/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Generate TOC (table of contents) of headlines from parsed markdown file",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nok/markdown-toc",
+  "license": "MIT",
+  "main": "./lib/markdown-toc",
+  "name": "markdown-toc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nok/markdown-toc.git"
+  },
+  "version": "0.4.2"
+}

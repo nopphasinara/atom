@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+  "_id": "markdown-scroll-sync@2.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-bWc+ImdxISoGeaAUSadEcQ8QWCsEaI+tRIx1UzSwi9K1YQ3ccgjCwxCq8fAA8HTI5nlIFy6hcNa95Y5/7gnSWw==",
+  "_location": "/markdown-scroll-sync",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+  "_shasum": "6fbec1ae0719aee51667636a4042336057ce1433",
+  "_spec": "https://www.atom.io/api/packages/markdown-scroll-sync/versions/2.1.2/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-2020426-53307-kovtr5.p0ha",
+  "bugs": {
+    "url": "https://github.com/mark-hahn/markdown-scroll-sync/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "sub-atom": "*"
+  },
+  "deprecated": false,
+  "description": "Auto-scroll markdown-preview tab to match markdown source",
+  "engines": {
+    "atom": ">1.0.0"
+  },
+  "homepage": "https://github.com/mark-hahn/markdown-scroll-sync#readme",
+  "keywords": [
+    "markdown",
+    "preview",
+    "scroll",
+    "sync"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "markdown-scroll-sync",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-hahn/markdown-scroll-sync.git"
+  },
+  "version": "2.1.2"
+}
