@@ -36,7 +36,7 @@
   "description": "A hyperclick provider that lets you jump to where variables are defined.",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "flow-bin": "^0.44.2",
     "husky": "^0.13.3",
     "jest-diff": "^19.0.0",
