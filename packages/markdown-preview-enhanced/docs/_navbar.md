@@ -1,4 +1,0 @@
-- Language / 语言
-  - [English](/)
-  - [简体中文](/zh-cn/)
-  - [正體中文](/zh-tw/)

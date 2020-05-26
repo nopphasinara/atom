@@ -1,0 +1,146 @@
+{
+  "_from": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+  "_id": "markdown-it-preview@0.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-F3/BvOqamAVSL8V2nujgF6xEybfFZl7PZO9LRegz3O4BXvlXAZglfyzocwrfLlviW/FRhQ/KN8r3t711UESylw==",
+  "_location": "/markdown-it-preview",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+  "_shasum": "c5922751c0c6309ac8487acb084e9fc1d11a862a",
+  "_spec": "https://www.atom.io/api/packages/markdown-it-preview/versions/0.2.5/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-2020426-73982-18tvyso.wl9x",
+  "activationCommands": {
+    "atom-workspace": "markdown-it-preview:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/msimmer/markdown-it-preview/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "liveUpdate": {
+      "type": "boolean",
+      "default": true,
+      "description": "Re-render the preview as the contents of the source changes, without requiring the source buffer to be saved. If disabled, the preview is re-rendered only when the buffer is saved to disk."
+    },
+    "openPreviewInSplitPane": {
+      "type": "boolean",
+      "default": true,
+      "description": "Open the preview in a split pane. If disabled, the preview is opened in a new tab in the same pane."
+    },
+    "allowUnsafeProtocols": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allow HTML attributes to use protocols normally considered unsafe such as `file://` and absolute paths on Windows."
+    },
+    "grammars": {
+      "type": "array",
+      "default": [
+        "source.gfm",
+        "source.litcoffee",
+        "text.html.basic",
+        "text.md",
+        "text.plain",
+        "text.plain.null-grammar"
+      ],
+      "description": "List of scopes for languages for which previewing is enabled. See [this README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language."
+    },
+    "useGitHubStyle": {
+      "title": "Use GitHub.com style",
+      "type": "boolean",
+      "default": false,
+      "description": "Use the same CSS styles for preview as the ones used on GitHub.com."
+    },
+    "html": {
+      "title": "Enable HTML",
+      "type": "boolean",
+      "default": false,
+      "description": "Enable HTML tags in source."
+    },
+    "xhtmlOut": {
+      "title": "Generate valid XHTML output",
+      "type": "boolean",
+      "default": false,
+      "description": "Explicitly close all self-closing HTML tags."
+    },
+    "breaks": {
+      "title": "Convert newlines to BR tags",
+      "type": "boolean",
+      "default": false,
+      "description": "Convert newlines in paragraphs into BR tags."
+    },
+    "langPrefix": {
+      "title": "Language prefix",
+      "type": "string",
+      "default": "lang-",
+      "description": "CSS language prefix for fenced blocks. Can be useful for external highlighters."
+    },
+    "linkify": {
+      "title": "Create links from URLs",
+      "type": "boolean",
+      "default": false,
+      "description": "Create A tags from URL-like text."
+    },
+    "typographer": {
+      "title": "Enable typographer",
+      "type": "boolean",
+      "default": false,
+      "description": "Enable some language-neutral replacement and quotes beautification."
+    },
+    "quotes": {
+      "title": "Quotation characters",
+      "type": "array",
+      "default": [
+        "“",
+        "”",
+        "‘",
+        "’"
+      ],
+      "description": "Double and single quotes replacement pairs, when typographer enabled, and smartquotes on."
+    }
+  },
+  "dependencies": {
+    "dompurify": "^1.0.2",
+    "fs-plus": "^3.0.1",
+    "highlights": "^3.1.1",
+    "lodash": "^4.17.4",
+    "markdown-it": "^8.4.0",
+    "temp": "^0.8.1",
+    "wrench": "^1.5.9"
+  },
+  "deprecated": false,
+  "description": "Markdown Preview that supports MarkdownIt plugins on a per-project basis.",
+  "deserializers": {
+    "MarkdownPreviewView": "createMarkdownPreviewView"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/msimmer/markdown-it-preview#readme",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "commonmark"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "markdown-it-preview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msimmer/markdown-it-preview.git"
+  },
+  "version": "0.2.5"
+}

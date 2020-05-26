@@ -1,0 +1,36 @@
+'menu': [
+  'label': 'Packages'
+  'submenu': [
+    'label': 'MarkdownIt Preview'
+    'submenu': [
+      'label': 'Toggle Preview'
+      'command': 'markdown-it-preview:toggle'
+    ]
+  ]
+]
+
+'context-menu':
+  '.markdown-preview': [
+    {label: 'Select All', command: 'markdown-it-preview:select-all'}
+    {label: 'Save As HTML\u2026', command: 'core:save-as'}
+  ]
+  '.markdown-preview.has-selection': [
+    {label: 'Copy', command: 'core:copy'}
+  ]
+  '.markdown-preview:not(.has-selection)': [
+    {label: 'Copy HTML', command: 'core:copy'}
+  ]
+  '.tree-view .file .name[data-name$=\\.markdown]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.md]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mdown]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mkd]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mkdown]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.ron]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.txt]':
+    [{label: 'MarkdownIt Preview', command: 'markdown-it-preview:preview-file'}]

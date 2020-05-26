@@ -189,7 +189,9 @@
 
 "atom-workspace atom-text-editor:not([mini])":
   'ctrl-d': 'toggle-markdown-task:toggle'
-  "ctrl-cmd-m": "nerd:markdown-preview"
+  "ctrl-cmd-m": "markdown-it-preview:toggle"
+  # "ctrl-cmd-m": "nerd:markdown-preview"
+
   # "shift-cmd-c": "nerd:pinned-copy-selected-text"
   # "shift-cmd-v": "nerd:load-pinned-copy-selected-text"
   # # "alt-cmd-o": "nerd:reveal-in-finder"
@@ -456,3 +458,10 @@
 
 'atom-text-editor.autocomplete-active':
   "escape": "autocomplete-plus:cancel"
+
+".platform-darwin atom-text-editor[data-grammar='text md']":
+  "ctrl-x": "markdown:toggle-task"
+  "tab": "markdown:indent-list-item"
+  "shift-tab": "markdown:outdent-list-item"
+  "@": "markdown:link"
+  "!": "markdown:image"

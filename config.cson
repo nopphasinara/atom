@@ -117,6 +117,7 @@
       "markdown-image-paste"
       "markdown-toc"
       "language-markdown"
+      "markdown-it-preview"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -175,14 +176,20 @@
     jumpToImport: true
   "language-applescript":
     autoCompile: false
+  "language-markdown":
+    emphasisShortcuts: false
   "linter-ui-default":
     panelHeight: 300
   livereload:
     applyImageLive: true
     autoStart: true
     useHTTPS: true
+  "markdown-it-preview":
+    breaks: true
+    openPreviewInSplitPane: false
   "markdown-preview":
     useGitHubStyle: true
+  "markdown-writer": {}
   metrics:
     dev:
       sendMetricsInDevMode: true
@@ -318,6 +325,12 @@
     commentEnd: ""
     commentStart: "// "
     nonWordCharacters: "/()\"':,.;<>~!@#$%^&*|+=[]{}`?…-"
+".md.text":
+  editor:
+    softWrapAtPreferredLineLength: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: true
 ".plain.text":
   editor:
     commentEnd: ""

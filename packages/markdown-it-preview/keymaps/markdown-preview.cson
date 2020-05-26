@@ -1,0 +1,16 @@
+'atom-text-editor':
+  'ctrl-shift-m': 'markdown-it-preview:toggle'
+
+'.platform-darwin .markdown-it-preview':
+  'cmd-+': 'markdown-it-preview:zoom-in'
+  'cmd-=': 'markdown-it-preview:zoom-in'
+  'cmd--': 'markdown-it-preview:zoom-out'
+  'cmd-_': 'markdown-it-preview:zoom-out'
+  'cmd-0': 'markdown-it-preview:reset-zoom'
+
+'.platform-win32 .markdown-it-preview, .platform-linux .markdown-it-preview':
+  'ctrl-+': 'markdown-it-preview:zoom-in'
+  'ctrl-=': 'markdown-it-preview:zoom-in'
+  'ctrl--': 'markdown-it-preview:zoom-out'
+  'ctrl-_': 'markdown-it-preview:zoom-out'
+  'ctrl-0': 'markdown-it-preview:reset-zoom'
