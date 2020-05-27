@@ -220,12 +220,11 @@
       "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop"
     ]
   "project-manager":
-    showPath: false
     sortBy: "title"
   "project-plus":
     newWindow: true
     notifications: false
-    showPath: true
+    showPath: false
   "project-viewer":
     autoHide: true
     autoHideAbsolute: true
