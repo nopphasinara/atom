@@ -1,48 +1,34 @@
 {
+  "info": {
+    "version": "1.1.0",
+    "updated": "2020-05-27T15:51:24.974Z"
+  },
   "root": [
     {
       "type": "project",
       "name": "dotfiles",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Alias/controls",
         "~/.dotfiles"
       ]
     },
     {
       "type": "project",
       "name": "atom",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Alias/controls",
         "~/.atom"
       ]
     },
     {
       "type": "project",
       "name": "eazyportrait.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/eazyportrait.com"
+        "/Volumes/Data/Alias/www/eazyportrait.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "jomtien.no",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
         "/Volumes/Data/Alias/www/jomtien.no"
       ]
@@ -50,142 +36,94 @@
     {
       "type": "project",
       "name": "quickadminpanel",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/quickadminpanel"
+        "/Volumes/Data/Alias/www/quickadminpanel",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "blog.local",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/blog.local"
+        "/Volumes/Data/Alias/www/blog.local",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "abacus-gallery.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/abacus-gallery.com"
+        "/Volumes/Data/Alias/www/abacus-gallery.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "staging.abacus-gallery.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/staging.abacus-gallery.com"
+        "/Volumes/Data/Alias/www/staging.abacus-gallery.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "museum-reproductions.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/museum-reproductions.com"
+        "/Volumes/Data/Alias/www/museum-reproductions.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "reproduction-gallery.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/reproduction-gallery.com"
+        "/Volumes/Data/Alias/www/reproduction-gallery.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "reproduction-studio.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/reproduction-studio.com"
+        "/Volumes/Data/Alias/www/reproduction-studio.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "admin.reproduction-studio.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/admin.reproduction-studio.com"
+        "/Volumes/Data/Alias/www/admin.reproduction-studio.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "reproduction-galleries.com",
-        "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/reproduction-galleries.com"
+        "/Volumes/Data/Alias/www/reproduction-galleries.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "soho-art.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/soho-art.com"
+        "/Volumes/Data/Alias/www/soho-art.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "staging.soho-art.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
-        "/Volumes/Data/Projects/controls",
-        "/Volumes/Data/Alias/www/staging.soho-art.com"
+        "/Volumes/Data/Alias/www/staging.soho-art.com",
+        "/Volumes/Data/Projects/controls"
       ]
     },
     {
       "type": "project",
       "name": "Karabiner",
-      "icon": "icon-keyboard",
-      "color": "#248232",
-      "devMode": false,
-      "config": {},
       "paths": [
         "~/.dotfiles/settings/karabiner"
       ]
@@ -193,13 +131,37 @@
     {
       "type": "project",
       "name": "demo.thaiherbshop88887.com",
-      "icon": "icon-repo",
-      "color": "#f7b05b",
-      "devMode": false,
-      "config": {},
       "paths": [
         "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop",
         "/Volumes/Data/Alias/www/thaiherbshop88887.com/demo"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "ugt.universalthailand.com",
+      "paths": [
+        "/Volumes/Data/Alias/www/universalthailand.com/ugt.universalthailand.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "universalthailand.com",
+      "paths": [
+        "/Volumes/Data/Alias/www/universalthailand.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "universal-res.com",
+      "paths": [
+        "/Volumes/Data/Alias/www/universal-res.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "savannasands.com",
+      "paths": [
+        "/Volumes/Data/Alias/www/savannasands.com"
       ]
     }
   ]

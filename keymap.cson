@@ -293,17 +293,18 @@
   "alt-cmd-o": "tree-view:show-current-file-in-file-manager"
   "ctrl-cmd-m": "bracket-matcher:select-inside-brackets"
 
-".project-manager input":
-  "enter": "core:confirm"
-".project-manager atom-text-editor[mini]":
-  "shift-enter": "project-manager:alt-confirm"
+
+# ".project-manager input":
+#   "enter": "core:confirm"
+# ".project-manager atom-text-editor[mini]":
+#   "shift-enter": "project:alt-confirm"
+
+
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
-  "alt-cmd-p": "project-manager:edit-projects"
-  "shift-cmd-o": "project-manager:list-projects"
-  # "shift-alt-cmd-o": "project-viewer:togglePanel"
-  # "shift-cmd-o": "project-viewer:toggleSelectList"
-  # "alt-cmd-p": "project-viewer:openDatabase"
-  # "shift-alt-cmd-p": "project-viewer:createNewProject"
+  "shift-alt-cmd-o": "project-viewer:togglePanel"
+  "shift-cmd-o": "project-viewer:toggleSelectList"
+  "alt-cmd-p": "project-viewer:openDatabase"
+  "shift-alt-cmd-p": "project-viewer:createNewProject"
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"
   # "shift-cmd-f11": "ftp-remote-edit:upload-file"

@@ -28,9 +28,9 @@
       "autosave"
       "deprecation-cop"
       "welcome"
-      "markdown-preview"
       "spell-check"
       "language-gfm"
+      "about"
     ]
     ignoredNames: [
       ".git"
@@ -118,6 +118,10 @@
       "markdown-toc"
       "language-markdown"
       "markdown-it-preview"
+      "project-banner"
+      "project-manager-ide"
+      "project-neue"
+      "project-folder"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -188,7 +192,8 @@
     breaks: true
     openPreviewInSplitPane: false
   "markdown-preview":
-    useGitHubStyle: true
+    breakOnSingleNewline: true
+    openPreviewInSplitPane: false
   "markdown-writer": {}
   metrics:
     dev:
@@ -216,11 +221,15 @@
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
   "project-banner":
-    allowExecution: [
-      "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop"
-    ]
+    panelPosition: "top"
+    showProjectBanner: true
   "project-manager":
+    prettifyTitle: false
+    showPath: false
     sortBy: "title"
+  "project-manager-ide":
+    notifications: false
+    showPath: false
   "project-plus":
     newWindow: true
     notifications: false
@@ -242,7 +251,8 @@
     ]
     panelPosition: "Right (first)"
     rootSortBy: "alphabetically"
-    statusBar: false
+    statusBar: true
+    visibilityActive: false
     visibilityOption: "Remember state"
   "remote-sync":
     autoHideLogPanel: true
