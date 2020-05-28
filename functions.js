@@ -497,6 +497,120 @@ class Data {
     }
   }
 
+  markdownToggleTask() {
+    var editor = atom.workspace.getActiveTextEditor();
+    var rootScope = 'text.md';
+    // var rootScope = this.getRootScope(editor);
+    if (rootScope == 'source.gfm' || rootScope == 'text.md') {
+      var selections = editor.getSelections();
+      var snippets = atom.packages.getActivePackage('snippets');
+      if (snippets) {
+        var snippetsService = snippets.mainModule;
+      }
+
+      editor.mutateSelectedText((selection, index) => {
+        var __ = this.getEditorAndCursor(editor, selection);
+
+        var double = "zzz"+"adasdas ++ dadasdas";
+        var single = 'zzz'+'adsad ++ adadasdsa';
+
+        if (__.selectedText) {
+          snippetsService.insert('- ${1:[${2: }] '+ __.selectedText +'}$0', __.editor, __.cursor);
+        } else {
+          atom.commands.dispatch(atom.views.getView(__.editor), 'toggle-markdown-task:toggle');
+        }
+      });
+    }
+  }
+
+
+  isEmpty(v = '') {
+    if (v.length == 0) {
+      return 'length';
+    }
+
+    if (typeof v == 'boolean' && !v) {
+      return 'boolean';
+    }
+
+    if (typeof v == 'undefined') {
+      return 'undefined';
+    }
+
+    if (isNaN(v) ||  v == null || v == 'null' || v == '') {
+      return 'null';
+    }
+
+    if (typeof v.length == 'undefined') {
+      return 'length';
+    }
+  }
+
+
+  getObjectPrototypes(obj = null, display = 'raw') {
+    var properties = [];
+
+    console.log(this.isEmpty());
+
+    return;
+
+    if (isNaN(obj) ||  typeof obj.length != 'undefined') {
+      console.error('not type of object.');
+    } else {
+
+    }
+
+    if (typeof obj == 'object' && obj) {
+      if (typeof obj.__proto__ != 'undefined') {
+        obj = obj.__proto__;
+      }
+
+      var properties = Object.getOwnPropertyDescriptors(obj);
+      if (properties) {
+        var keys = Object.keys(properties);
+
+        display = (typeof display != 'string') ? 'raw' : display.toLowerCase();
+
+        if (display == 'array') {
+          return Object.keys(properties);
+        } else if (display == 'row') {
+          return keys.join("\n");
+        } else {
+          // Return as raw string.
+          return keys.join(', ');
+        }
+      }
+    }
+
+    return;
+  }
+
+  getObjectProperties(obj = null, display = 'raw') {
+    if (typeof obj.length > 0) {
+      console.error('not type of object.');
+    }
+
+    if (typeof obj == 'object' && obj ) {
+      var properties = Object.getOwnPropertyDescriptors(obj);
+      if (properties) {
+        var keys = Object.keys(properties);
+
+        display = (typeof display != 'string') ? 'raw' : display.toLowerCase();
+
+        if (display == 'array') {
+          return Object.keys(properties);
+        } else if (display == 'row') {
+          return keys.join("\n");
+        } else {
+          // Return as raw string.
+          return keys.join(', ');
+        }
+      }
+    }
+
+    return;
+  }
+
 
   getActiveMarkdownPackage() {
     var workspace = atom.workspace;
@@ -568,3 +682,61 @@ class Data {
 }
 
 global._data = new Data();
+
+
+global._data.markdownToggleTask();
+
+
+// In init.coffee
+// # atom.packages.onDidActivateInitialPackages(() => {
+// #   const gitPlus = atom.packages.getActivePackage('git-plus')
+// #   if (gitPlus) {
+// #     const gp = gitPlus.mainModule.provideService()
+// #     // commands go here, see below
+// #   }
+// # })
+
+// # atom.packages.onDidActivateInitialPackages () ->
+// # if gitPlus = atom.packages.getActivePackage('git-plus')?.mainModule.provideService()
+// #   gitPlus.registerCommand 'atom-text-editor', 'custom-git-commands:undo-last-commit', ->
+// #     gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
+// #     .then (repo) -> gitPlus.run repo, 'reset HEAD~1'
+// #
+// #     gitPlus.registerCommand 'atom-text-editor', 'akonwi:unstage-last-commit', ->
+// #       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
+// #       .then (repo) -> gitPlus.run repo, 'reset HEAD~1'
+// #
+// #     gitPlus.registerCommand 'atom-text-editor', 'akonwi:update-last-commit', ->
+// #       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
+// #       .then (repo) -> gitPlus.run repo, 'commit --all --amend --no-edit'
+// #
+// #     gitPlus.registerCommand 'atom-text-editor', 'akonwi:use-the-force', ->
+// #       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
+// #       .then (repo) -> gitPlus.run repo, 'push --force-with-lease'
+
+
+
+// # wrapBlock = () ->
+// #   editor = atom.workspace.getActiveTextEditor()
+// #   rangesToWrap = editor.getSelectedBufferRanges().filter((r) -> !r.isEmpty())
+// #   if rangesToWrap.length
+// #     rangesToWrap.sort((a, b) ->
+// #       return if a.start.row > b.start.row then -1 else 1
+// #     ).forEach((range) ->
+// #       text = editor.getTextInBufferRange(range)
+// #       if (/^\s*\{\s*/.test(text) && /\s*\}\s*/.test(text))
+// #         # unwrap each selection from its block
+// #         editor.setTextInBufferRange(range, text.replace(/\{\s*/, '').replace(/\s*\}/, ''))
+// #       else
+// #         # wrap each selection in a block
+// #         editor.setTextInBufferRange(range, '{\n' + text + '\n}')
+// #     )
+// #     editor.autoIndentSelectedRows()
+// #   else
+// #     # create an empty block at each cursor
+// #     editor.insertText('{\n\n}')
+// #     editor.selectUp(2)
+// #     editor.autoIndentSelectedRows()
+// #     editor.moveRight()
+// #     editor.moveUp()
+// #     editor.moveToEndOfLine()

@@ -436,14 +436,15 @@
   "cmd-?": "nerd:wrap-block-comment"
 
 # Markdown
-# 'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"],
-# atom-text-editor[data-grammar~="text"][data-grammar~="md"]':
-#   "cmd-i": "nerd:markdown-text-italic"
-#   "cmd-b": "nerd:markdown-text-bold"
-#   "cmd-?": "nerd:markdown-code-block"
-#   "alt-cmd-enter": "nerd:markdown-wrap-with-link"
-#   "alt-c alt-c ^c": "nerd:markdown-add-check-list"
-#   "alt-c alt-x ^x": "nerd:markdown-add-checked-list"
+'atom-text-editor[data-grammar~="source"][data-grammar~="gfm"],
+atom-text-editor[data-grammar~="text"][data-grammar~="md"]':
+  "cmd-i": "nerd:markdown-text-italic"
+  "cmd-b": "nerd:markdown-text-bold"
+  "cmd-?": "nerd:markdown-code-block"
+  "ctrl-d": "nerd:markdown-toggle-task"
+  "alt-cmd-enter": "nerd:markdown-wrap-with-link"
+  "alt-c alt-c ^c": "nerd:markdown-add-check-list"
+  "alt-c alt-x ^x": "nerd:markdown-add-checked-list"
 
 
 '.tree-view-dialog atom-text-editor[mini]':

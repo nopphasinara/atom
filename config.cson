@@ -26,10 +26,7 @@
     disabledPackages: [
       "background-tips"
       "autosave"
-      "deprecation-cop"
       "welcome"
-      "spell-check"
-      "language-gfm"
       "about"
     ]
     ignoredNames: [
@@ -184,6 +181,7 @@
     emphasisShortcuts: false
   "linter-ui-default":
     panelHeight: 300
+    showPanel: true
   livereload:
     applyImageLive: true
     autoStart: true
@@ -194,6 +192,7 @@
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
+    useGitHubStyle: true
   "markdown-writer": {}
   metrics:
     dev:
@@ -272,9 +271,11 @@
   "settings-view":
     packageUpdateConcurrency: 1
   "spell-check":
-    locales: [
-      "en-US"
+    addKnownWords: true
+    localePaths: [
+      "/usr/share/locale"
     ]
+    noticesMode: "popup"
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

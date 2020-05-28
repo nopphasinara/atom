@@ -65,6 +65,9 @@ atom.commands.add 'atom-text-editor', 'nerd:markdown-add-check-list', ->
 atom.commands.add 'atom-text-editor', 'nerd:markdown-code-block', ->
   _data.markdownCodeBlock()
 
+atom.commands.add 'atom-text-editor', 'nerd:markdown-toggle-task', ->
+  _data.markdownToggleTask()
+
 # atom.commands.add 'atom-workspace', 'nerd:create-modal', ->
 #   _data.createModal()
 
@@ -424,58 +427,3 @@ atom.commands.add 'atom-text-editor', 'nerd:reveal-in-finder', ->
     #     if treeView
     #       treeViewService = treeView.mainModule
     #       treeViewService.treeView.showCurrentFileInFileManager()
-
-
-# In init.coffee
-# atom.packages.onDidActivateInitialPackages(() => {
-#   const gitPlus = atom.packages.getActivePackage('git-plus')
-#   if (gitPlus) {
-#     const gp = gitPlus.mainModule.provideService()
-#     // commands go here, see below
-#   }
-# })
-
-# atom.packages.onDidActivateInitialPackages () ->
-# if gitPlus = atom.packages.getActivePackage('git-plus')?.mainModule.provideService()
-#   gitPlus.registerCommand 'atom-text-editor', 'custom-git-commands:undo-last-commit', ->
-#     gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
-#     .then (repo) -> gitPlus.run repo, 'reset HEAD~1'
-#
-#     gitPlus.registerCommand 'atom-text-editor', 'akonwi:unstage-last-commit', ->
-#       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
-#       .then (repo) -> gitPlus.run repo, 'reset HEAD~1'
-#
-#     gitPlus.registerCommand 'atom-text-editor', 'akonwi:update-last-commit', ->
-#       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
-#       .then (repo) -> gitPlus.run repo, 'commit --all --amend --no-edit'
-#
-#     gitPlus.registerCommand 'atom-text-editor', 'akonwi:use-the-force', ->
-#       gitPlus.getRepo() # If there are multiple repos in the project, you will be prompted to select which to use
-#       .then (repo) -> gitPlus.run repo, 'push --force-with-lease'
-
-
-
-# wrapBlock = () ->
-#   editor = atom.workspace.getActiveTextEditor()
-#   rangesToWrap = editor.getSelectedBufferRanges().filter((r) -> !r.isEmpty())
-#   if rangesToWrap.length
-#     rangesToWrap.sort((a, b) ->
-#       return if a.start.row > b.start.row then -1 else 1
-#     ).forEach((range) ->
-#       text = editor.getTextInBufferRange(range)
-#       if (/^\s*\{\s*/.test(text) && /\s*\}\s*/.test(text))
-#         # unwrap each selection from its block
-#         editor.setTextInBufferRange(range, text.replace(/\{\s*/, '').replace(/\s*\}/, ''))
-#       else
-#         # wrap each selection in a block
-#         editor.setTextInBufferRange(range, '{\n' + text + '\n}')
-#     )
-#     editor.autoIndentSelectedRows()
-#   else
-#     # create an empty block at each cursor
-#     editor.insertText('{\n\n}')
-#     editor.selectUp(2)
-#     editor.autoIndentSelectedRows()
-#     editor.moveRight()
-#     editor.moveUp()
-#     editor.moveToEndOfLine()

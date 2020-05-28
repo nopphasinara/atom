@@ -873,14 +873,28 @@
 
 
 # Javascript
-'.source.js':
+'.source.js, .source.js.string':
+  '\'+ ... +\'':
+    'prefix': "\\'"
+    'body': """
+    '+ $1 +'$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">\'+ ... +\'</span>'
+  '"+ ... +"':
+    'prefix': '\\"'
+    'body': """
+    '+ $1 +'$0
+    """
+    'leftLabelHTML': '<span class="snippet-label success">void</span>'
+    'rightLabelHTML': '<span class="snippet-label success">\'+ ... +\'</span>'
   'dod':
     'prefix': 'dod'
     'body': """
     '+ $1 +'$0
     """
     'leftLabelHTML': '<span class="snippet-label success">void</span>'
-    'rightLabelHTML': '<span class="snippet-label success">echo \'...\';</span>'
+    'rightLabelHTML': '<span class="snippet-label success">\'+ ... +\'</span>'
   'console.clear()':
     'prefix': 'clear-console'
     'body': '''

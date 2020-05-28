@@ -20,6 +20,13 @@
     },
     {
       "type": "project",
+      "name": "Karabiner",
+      "paths": [
+        "~/.dotfiles/settings/karabiner"
+      ]
+    },
+    {
+      "type": "project",
       "name": "eazyportrait.com",
       "paths": [
         "/Volumes/Data/Alias/www/eazyportrait.com",
@@ -123,16 +130,10 @@
     },
     {
       "type": "project",
-      "name": "Karabiner",
-      "paths": [
-        "~/.dotfiles/settings/karabiner"
-      ]
-    },
-    {
-      "type": "project",
       "name": "demo.thaiherbshop88887.com",
       "paths": [
         "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop",
+        "/Volumes/Drives/Google Drive/Data/Web/Wordpress/Documents and  Tutorials",
         "/Volumes/Data/Alias/www/thaiherbshop88887.com/demo"
       ]
     },
