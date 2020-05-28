@@ -499,8 +499,7 @@ class Data {
 
   markdownToggleTask() {
     var editor = atom.workspace.getActiveTextEditor();
-    var rootScope = 'text.md';
-    // var rootScope = this.getRootScope(editor);
+    var rootScope = this.getRootScope(editor);
     if (rootScope == 'source.gfm' || rootScope == 'text.md') {
       var selections = editor.getSelections();
       var snippets = atom.packages.getActivePackage('snippets');
@@ -509,15 +508,12 @@ class Data {
       }
 
       editor.mutateSelectedText((selection, index) => {
-        var __ = this.getEditorAndCursor(editor, selection);
+        // var __ = this.getEditorAndCursor(editor, selection);
 
-        var double = "zzz"+"adasdas ++ dadasdas";
-        var single = 'zzz'+'adsad ++ adadasdsa';
-
-        if (__.selectedText) {
-          snippetsService.insert('- ${1:[${2: }] '+ __.selectedText +'}$0', __.editor, __.cursor);
+        if (selection.isEmpty()) {
+          atom.commands.dispatch(atom.views.getView(selection.editor), 'toggle-markdown-task:toggle');
         } else {
-          atom.commands.dispatch(atom.views.getView(__.editor), 'toggle-markdown-task:toggle');
+          snippetsService.insert('- [ ] '+ selection.getText() +'$0', selection.editor, selection.cursor);
         }
       });
     }
