@@ -680,9 +680,6 @@ class Data {
 global._data = new Data();
 
 
-global._data.markdownToggleTask();
-
-
 // In init.coffee
 // # atom.packages.onDidActivateInitialPackages(() => {
 // #   const gitPlus = atom.packages.getActivePackage('git-plus')
