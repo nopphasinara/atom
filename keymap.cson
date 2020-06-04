@@ -178,6 +178,7 @@
 
 
 "atom-workspace":
+  "alt-cmd-`": "native!"
   "ctrl-cmd-c": "repl-console:run"
   "ctrl-cmd-j": "js-console:toggle"
   "cmd-k": "nerd:create-modal"
