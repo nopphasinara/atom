@@ -295,21 +295,30 @@
   "ctrl-cmd-m": "bracket-matcher:select-inside-brackets"
 
 
-# ".project-manager input":
-#   "enter": "core:confirm"
-# ".project-manager atom-text-editor[mini]":
-#   "shift-enter": "project:alt-confirm"
+".project-manager input":
+  "enter": "core:confirm"
+".project-manager atom-text-editor[mini]":
+  "shift-enter": "project:alt-confirm"
 
 
 "atom-workspace, .platform-darwin, .platform-darwin atom-workspace":
-  "shift-alt-cmd-o": "project-viewer:togglePanel"
-  "shift-cmd-o": "project-viewer:toggleSelectList"
-  "alt-cmd-p": "project-viewer:openDatabase"
-  "shift-alt-cmd-p": "project-viewer:createNewProject"
+  "shift-cmd-o": "project-plus:toggle-project-finder"
+  "alt-cmd-p": "project-plus:edit-projects"
+
+  # "shift-cmd-o": "project-manager:list-projects"
+  # "alt-cmd-p": "project-manager:edit-projects"
+
+  # "shift-alt-cmd-o": "project-viewer:togglePanel"
+  # "shift-cmd-o": "project-viewer:toggleSelectList"
+  # "alt-cmd-p": "project-viewer:openDatabase"
+  # "shift-alt-cmd-p": "project-viewer:createNewProject"
+
   "shift-f11": "remote-sync:upload-file"
   "f11": "remote-sync:download-file"
+
   # "shift-cmd-f11": "ftp-remote-edit:upload-file"
   # "cmd-f11": "ftp-remote-edit:download"
+
   "cmd-o": "advanced-open-file:toggle"
   "cmd-p": "fuzzy-finder:toggle-file-finder"
   "cmd-f": "find-and-replace:show"

@@ -6,6 +6,8 @@
   "atom-autocomplete-php": {}
   "atom-css-unit-converter":
     decimalLength: 2
+  "atomic-management":
+    enforceConfiguredPackages: false
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
@@ -28,6 +30,8 @@
       "autosave"
       "welcome"
       "about"
+      "project-manager"
+      "project-dropdown"
     ]
     ignoredNames: [
       ".git"
@@ -119,6 +123,20 @@
       "project-manager-ide"
       "project-neue"
       "project-folder"
+      "project-view"
+      "open-project-file"
+      "project-find-filter-defaults"
+      "project-runner"
+      "hyphperclick"
+      "php-extract-method"
+      "wordpress-autocomplete"
+      "php-integrator-refactoring-legacy-php56"
+      "atom-php-navigation"
+      "php-cs-fixer"
+      "php-integrator-refactoring"
+      "php-unit-integrator"
+      "atom-laravel-log"
+      "sweetprojects"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -179,6 +197,7 @@
     autoCompile: false
   "language-markdown":
     emphasisShortcuts: false
+  "linter-phpmd": {}
   "linter-ui-default":
     panelHeight: 300
     showPanel: true
@@ -206,6 +225,7 @@
     targets: [
       "toolkits"
     ]
+  "php-cs-fixer": {}
   pigments:
     autocompleteSuggestionsFromValue: true
     extendAutocompleteToColorValue: true
@@ -220,8 +240,20 @@
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
   "project-banner":
+    allowExecution: [
+      "/Volumes/Drives/Google Drive/Goldfish's Shared/Works/Thai Herb Shop"
+    ]
     panelPosition: "top"
     showProjectBanner: true
+  "project-find-filter-defaults":
+    fileDirectoryFilter: "!node_modules, !.git"
+  "project-folder":
+    configPath: "~/.atom/project-folder.cson"
+    projectRootDirectories: [
+      "~/.dotfiles/projects"
+      "~/www"
+      "/Volumes/Data/Alias"
+    ]
   "project-manager":
     prettifyTitle: false
     showPath: false
@@ -230,12 +262,12 @@
     notifications: false
     showPath: false
   "project-plus":
+    autoDiscover: false
     newWindow: true
     notifications: false
-    showPath: false
+  "project-view":
+    displayPath: false
   "project-viewer":
-    autoHide: true
-    autoHideAbsolute: true
     customHoverColor: "#D2562C"
     customSelectedColor: "#D2562C"
     customWidth: 320
@@ -244,10 +276,6 @@
     hideHeader: true
     keepWindowSize: true
     openNewWindow: true
-    packagesReload: [
-      "pigments"
-      "colorio"
-    ]
     panelPosition: "Right (first)"
     rootSortBy: "alphabetically"
     statusBar: true

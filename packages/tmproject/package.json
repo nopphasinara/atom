@@ -1,0 +1,70 @@
+{
+  "_from": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+  "_id": "tmproject@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fGyf5La6b5AdigLXxb3sUcRZBCcz1aCSbKLLbBeKhu3KFe4Mz0vhP0Ub5vvILgWOyi+ZArk3PBnbt8ukNn99sQ==",
+  "_location": "/tmproject",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+  "_shasum": "ae29d8b216f7c7df605257b98f2730acc53f26c9",
+  "_spec": "https://www.atom.io/api/packages/tmproject/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-69212-18fly3u.szyx",
+  "bugs": {
+    "url": "https://github.com/nju33/atom-tmproject/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "tmp": "^0.0.30"
+  },
+  "deprecated": false,
+  "description": "An Atom package that add temporary project",
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nju33/atom-tmproject#readme",
+  "keywords": [
+    "temp",
+    "tmp",
+    "temporary",
+    "project",
+    "tree"
+  ],
+  "license": "MIT",
+  "main": "./lib/tmproject",
+  "name": "tmproject",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nju33/atom-tmproject.git"
+  },
+  "version": "0.1.0",
+  "xo": {
+    "space": 2,
+    "envs": [
+      "browser"
+    ],
+    "globals": [
+      "atom",
+      "describe",
+      "beforeEach",
+      "it",
+      "expect",
+      "runs"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+  "_id": "doctrine@0.3.4",
+  "_inBundle": false,
+  "_integrity": "sha512-ZjcsrRbewtXPXLsRVhn8pvsFlPwPIKkQMipe9/4W/vTVF05Binxy+0XWtpKb4TZk/8pSyQYGPCMkdqj53h47AQ==",
+  "_location": "/doctrine",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+  "_shasum": "c77b8a27b2fdce766892415f3ac06776042c4c7e",
+  "_spec": "https://www.atom.io/api/packages/doctrine/versions/0.3.4/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-85872-zj85wr.5rb3",
+  "bugs": {
+    "url": "https://github.com/Cronos87/atom-doctrine/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Doctrine support for Atom",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Cronos87/atom-doctrine#readme",
+  "keywords": [
+    "doctrine",
+    "orm",
+    "php"
+  ],
+  "license": "MIT",
+  "name": "doctrine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cronos87/atom-doctrine.git"
+  },
+  "version": "0.3.4"
+}

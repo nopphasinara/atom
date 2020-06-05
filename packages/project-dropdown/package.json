@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/q6/966hwd0559nf72_fgn53p1000000gq/T/d-1161024-6357-1kcrto8/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/q6/966hwd0559nf72_fgn53p1000000gq/T/d-1161024-6357-1kcrto8/package.tgz",
+        "spec": "/private/var/folders/q6/966hwd0559nf72_fgn53p1000000gq/T/d-1161024-6357-1kcrto8/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/q6/966hwd0559nf72_fgn53p1000000gq/T/apm-install-dir-1161024-6357-1gwfh5c"
+    ]
+  ],
+  "_from": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+  "_id": "project-dropdown@0.13.0",
+  "_inBundle": false,
+  "_inCache": true,
+  "_installable": true,
+  "_integrity": "sha512-lz6SWe2nRFbFLivdIbgN/T0bl7ookQrwFhmToBk+K/gmiqW0Fjnp2+ez9MKM+zrW6u6Bn6krfR+YJzkJa8ih9w==",
+  "_location": "/project-dropdown",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+  "_shasum": "e92fb5013ed5a6db167a02832dfb8fd682abaca8",
+  "_shrinkwrap": null,
+  "_spec": "https://www.atom.io/api/packages/project-dropdown/versions/0.13.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-47245-1gb1mhu.9pag",
+  "bugs": {
+    "url": "https://github.com/crot4lus/project-dropdown/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "deprecated": false,
+  "description": "Atom package for project management, enables a dropdown above the file tree that switches between the various project directories.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/crot4lus/project-dropdown#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/project-dropdown.js",
+  "name": "project-dropdown",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crot4lus/project-dropdown.git"
+  },
+  "version": "0.13.0"
+}

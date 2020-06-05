@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Project Find with Filter Defaults",
+        "command": "project-find-filter-defaults:show"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Project Find with Filter Defaults",
+          "submenu": [
+            {
+              "label": "Show",
+              "command": "project-find-filter-defaults:show"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

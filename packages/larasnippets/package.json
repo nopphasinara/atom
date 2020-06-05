@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+  "_id": "larasnippets@0.44.0",
+  "_inBundle": false,
+  "_integrity": "sha512-MaGRXtOS5WLasHaUQFDioslTq7pW6UdHHCXFGjzrAbWYx+T4/ngAXuSjEGx7w1XARFoOhJlAGAoqoLBUgwkEig==",
+  "_location": "/larasnippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+  "_shasum": "6bae754f1dd06c53c71b1f4f611c00eded8e9796",
+  "_spec": "https://www.atom.io/api/packages/larasnippets/versions/0.44.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-85974-tsivx3.l54dd",
+  "bugs": {
+    "url": "https://github.com/paulredmond/atom-larasnippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Laravel snippets + php snippets",
+  "devDependencies": {
+    "cson": "^4.0.0",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/paulredmond/atom-larasnippets#readme",
+  "keywords": [
+    "snippets",
+    "laravel",
+    "php"
+  ],
+  "license": "MIT",
+  "name": "larasnippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulredmond/atom-larasnippets.git"
+  },
+  "scripts": {
+    "docs": "node docs.js"
+  },
+  "version": "0.44.0"
+}

@@ -1,0 +1,74 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+  "_id": "php-integrator-refactoring@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-qMJXPWk1V0UcpPYuCCilnO7lPwgajs0vJX+7QXbt2KleCB5cDqJpKctv2lJ3PpOI7XkP5s4FOCBxDw3XrqLIaA==",
+  "_location": "/php-integrator-refactoring",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+  "_shasum": "9f12c0f61a5914093c4a60104cbd0a2d5038094e",
+  "_spec": "https://www.atom.io/api/packages/php-integrator-refactoring/versions/1.4.1/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-85704-1btm2rz.582o",
+  "bugs": {
+    "url": "https://github.com/php-integrator/atom-refactoring/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "^3.0": "setService"
+      }
+    },
+    "snippets": {
+      "versions": {
+        "0.1.0": "setSnippetManager"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.3.1",
+    "atom-space-pen-views": "~2.2"
+  },
+  "deprecated": false,
+  "description": "Provides refactoring capabilities for your PHP source code.",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/php-integrator/atom-refactoring#readme",
+  "keywords": [
+    "php",
+    "refactoring",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/Main",
+  "name": "php-integrator-refactoring",
+  "package-deps": [
+    "intentions"
+  ],
+  "providedServices": {
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-integrator/atom-refactoring.git"
+  },
+  "version": "1.4.1"
+}

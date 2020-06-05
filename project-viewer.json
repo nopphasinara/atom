@@ -1,8 +1,4 @@
 {
-  "info": {
-    "version": "1.1.0",
-    "updated": "2020-05-27T15:51:24.974Z"
-  },
   "root": [
     {
       "type": "project",
@@ -156,6 +152,13 @@
       "name": "universal-res.com",
       "paths": [
         "/Volumes/Data/Alias/www/universal-res.com"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "universal-res.com/sevenseas2",
+      "paths": [
+        "/Volumes/Data/Alias/www/universal-res.com/public_html/sevenseas2"
       ]
     },
     {

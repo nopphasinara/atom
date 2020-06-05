@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Tmproject",
+          "submenu": [
+            {
+              "label": "Create",
+              "command": "Tmproject: Create"
+            },
+            {
+              "label": "Delete",
+              "command": "Tmproject: Delete"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

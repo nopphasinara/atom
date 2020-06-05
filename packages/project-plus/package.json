@@ -1,0 +1,97 @@
+{
+  "_from": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+  "_id": "project-plus@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-RbUCDwXiCOGULEG1Zq4aD+MZpH7LR8CxzGEZkRYlpPkI4naCXYs06BCHSmQpQc2tWXZdzUvwchnm5N1Msc3tdg==",
+  "_location": "/project-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+  "_shasum": "805c389b4f3f2e6471437959d7831fc72be03e09",
+  "_spec": "https://www.atom.io/api/packages/project-plus/versions/1.0.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-57787-1x709dz.ggqm",
+  "bugs": {
+    "url": "https://github.com/mehcode/atom-project-plus/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "showPath": {
+      "type": "boolean",
+      "default": false,
+      "title": "Show Project Path",
+      "description": "Show project folder paths under the name of each project."
+    },
+    "projectHome": {
+      "type": "string",
+      "default": " ",
+      "title": "Project Home",
+      "description": "The directory where projects are assumed to be located. Projects outside of this directory will never be shown in the project finder. NOTE: This is a case-sensitive field."
+    },
+    "newWindow": {
+      "type": "boolean",
+      "default": false,
+      "title": "Open in New Window",
+      "description": "Open projects in a new window by default. `shift-enter` will trigger the opposite behavior."
+    },
+    "autoDiscover": {
+      "type": "boolean",
+      "default": true,
+      "title": "Auto Discover Projects",
+      "description": "In addition to saved projects, the project finder will include all projects that have ever been opened by atom."
+    },
+    "notifications": {
+      "type": "boolean",
+      "default": true,
+      "title": "Notifications",
+      "description": "Show notifications on command completion."
+    }
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "atom-project-util": "^4.1.0",
+    "atom-space-pen-views": "^2.2.0",
+    "fs-plus": "^3.0.0",
+    "fuzzaldrin-plus": "^0.4.1",
+    "minimatch": "^3.0.0",
+    "season": "^6.0.0",
+    "tildify": "^1.1.2",
+    "underscore-plus": "^1.6.6",
+    "untildify": "^3.0.2"
+  },
+  "deprecated": false,
+  "description": "Simply awesome project management in Atom.",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "atom": ">=1.5.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mehcode/atom-project-plus#readme",
+  "keywords": [
+    "project",
+    "productivity",
+    "settings",
+    "workflow"
+  ],
+  "license": "MIT",
+  "main": "./lib/project-plus",
+  "name": "project-plus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehcode/atom-project-plus.git"
+  },
+  "version": "1.0.0"
+}

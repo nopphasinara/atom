@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+  "_id": "atom-laravel-log@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-zSRBq/4UEJ9Sb78v6FoyOXmDwvAvvQWPG076DNkM7PFKtq6JA/xA5JHP3Yctye+gAjt8kuzmAo93QYlPnYAKqg==",
+  "_location": "/atom-laravel-log",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+  "_shasum": "1c78eb7ec70d500465dee6999423061d168862fa",
+  "_spec": "https://www.atom.io/api/packages/atom-laravel-log/versions/0.3.0/tarball",
+  "_where": "/private/var/folders/4z/2l_1kdfx06l3c_fdysyg3pr80000gn/T/apm-install-dir-202055-86321-1p84130.jzhj",
+  "activationCommands": {
+    "atom-workspace": []
+  },
+  "bugs": {
+    "url": "https://github.com/bhaskardabhi/atom-laravel-log/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-notifier": "*",
+    "underscore": "*"
+  },
+  "deprecated": false,
+  "description": "View your laravel logs as Notification",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bhaskardabhi/atom-laravel-log#readme",
+  "keywords": [
+    "laravel",
+    "php",
+    "log"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-laravel-log",
+  "name": "atom-laravel-log",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskardabhi/atom-laravel-log.git"
+  },
+  "version": "0.3.0"
+}

@@ -1,0 +1,29 @@
+# Controller
+'.source.php':
+
+    # Validation
+    'Validation in the controller':
+        'prefix': 'validate'
+        'body': """
+            $this->validate(request(), [
+                $1
+            ]);
+        """
+
+    'Json Response':
+        'prefix': 'rjson'
+        'body': """
+            response()->json($1);
+        """
+
+    'View With':
+        'prefix': 'vieww'
+        'body': """
+            view('$1')${2:->with([$3])};
+        """
+
+    'View':
+        'prefix': 'view'
+        'body': """
+            view('$1', [$2]);
+        """

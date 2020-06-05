@@ -1,0 +1,4 @@
+node_modules/
+spec/
+npm-debug.log
+CHANGELOG.md

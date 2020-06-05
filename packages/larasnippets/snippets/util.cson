@@ -1,0 +1,9 @@
+'*':
+    # Shebang
+    'Shebang (Longer Shortcut)':
+        'prefix': 'shebang'
+        'body': '#!/usr/bin/env ${1:bash}$0'
+
+    'Shebang':
+        'prefix': '#!'
+        'body': '#!/usr/bin/env ${1:bash}$0'
