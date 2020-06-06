@@ -200,7 +200,6 @@
   "linter-phpmd": {}
   "linter-ui-default":
     panelHeight: 300
-    showPanel: true
   livereload:
     applyImageLive: true
     autoStart: true
