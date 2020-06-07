@@ -20,11 +20,11 @@
 @syntax-accent: fade(@hue-5-2, 80);
 @tool-bar-font-size: 1em;
 @tool-bar-height: 48;
-// @tool-bar-bg: @hue-5-2;
-@tool-bar-bg: darken(@mono-1, 5%);
+@tool-bar-bg: @ui-fg;
+// @tool-bar-bg: darken(@mono-1, 5%);
 @tool-bar-btn: darken(@tool-bar-bg, 20%);
-// @tool-bar-btn-hover: darken(@tool-bar-btn, 10%);
-@tool-bar-btn-hover: @accent-color;
+@tool-bar-btn-hover: @ui-bg;
+// @tool-bar-btn-hover: @accent-color;
 @title-bar-bg: @tool-bar-bg;
 // @title-bar-bg: lighten(@mono-1, 10%);
 @title-bar-fg: @tool-bar-btn;
@@ -366,20 +366,6 @@ atom-dock {
 }
 
 
-.tooltip {
-  font-size: @ui-size;
-
-  .tooltip-inner {
-     // color: @syntax-accent !important;
-     // background-color: @syntax-accent !important;
-  }
-
-  .tooltip-arrow {
-    // border-bottom-color: @syntax-accent !important;
-  }
-}
-
-
 atom-workspace {
   atom-panel {
     &.header {
@@ -421,50 +407,6 @@ atom-workspace {
       }
     }
   }
-}
-
-
-.workspace {
-
-  .vertical {
-
-    .panes {
-
-      .pane {
-
-        .tab-bar {
-          // height: 40px;
-          // line-height: 40px;
-
-          .tab {
-            // height: 40px;
-
-            .title {
-              // padding-top: 1em;
-              // padding-bottom: 1em;
-            }
-
-            &:not(.active) {
-              // background-color: red;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-:root {
-  --highlight-color-size: 18px;
-}
-
-.highlight-color-container {
-
-}
-
-.highlight-color-item {
-  border-radius: 0 0 0 0;
 }
 
 

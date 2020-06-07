@@ -3,7 +3,162 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    insertNewlinesForUseStatements: true
+  "atom-beautify":
+    apex:
+      disabled: true
+    arduino:
+      disabled: true
+    blade:
+      brace_style: "expand"
+      indent_inner_html: true
+      wrap_attributes: "force-aligned"
+    c:
+      disabled: true
+    cfml:
+      disabled: true
+    cpp:
+      disabled: true
+    crystal:
+      disabled: true
+    cs:
+      disabled: true
+    css:
+      align_assignments: true
+      convert_quotes: "double"
+      end_with_newline: true
+      force_indentation: true
+      selector_separator_newline: true
+    d:
+      disabled: true
+    ejs:
+      disabled: true
+    elm:
+      disabled: true
+    erb:
+      disabled: true
+    erlang:
+      disabled: true
+    executables:
+      "php-cs-fixer": {}
+    fortran:
+      disabled: true
+    general:
+      beautifyEntireFileOnSave: false
+    gherkin:
+      disabled: true
+    glsl:
+      disabled: true
+    gn:
+      disabled: true
+    go:
+      disabled: true
+    gohtml:
+      disabled: true
+    handlebars:
+      disabled: true
+    haskell:
+      disabled: true
+    html:
+      brace_style: "expand"
+      end_with_newline: true
+      indent_inner_html: true
+      indent_scripts: "separate"
+      wrap_attributes: "force-aligned"
+    jade:
+      disabled: true
+    java:
+      disabled: true
+    js:
+      brace_style: "expand"
+      break_chained_methods: true
+      end_with_comma: true
+      end_with_newline: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      space_after_anon_function: true
+      space_in_paren: true
+      unescape_strings: true
+    json:
+      brace_style: "expand"
+      break_chained_methods: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      space_after_anon_function: true
+      space_in_paren: true
+      unescape_strings: true
+    jsx:
+      disabled: true
+    latex:
+      disabled: true
+    less:
+      align_assignments: true
+      convert_quotes: "double"
+      force_indentation: true
+      preserve_newlines: true
+    lua:
+      disabled: true
+    markdown:
+      commonmark: true
+    marko:
+      disabled: true
+    mustache:
+      disabled: true
+    nunjucks:
+      disabled: true
+    objectivec:
+      disabled: true
+    ocaml:
+      disabled: true
+    pawn:
+      disabled: true
+    puppet:
+      disabled: true
+    r:
+      disabled: true
+    riot:
+      disabled: true
+    rust:
+      disabled: true
+    scss:
+      convert_quotes: "double"
+      force_indentation: true
+      preserve_newlines: true
+    spacebars: {}
+    sql:
+      identifiers: "upper"
+    swig:
+      disabled: true
+    terraform:
+      disabled: true
+    tss:
+      disabled: true
+    tsx:
+      disabled: true
+    twig:
+      disabled: true
+    ux:
+      disabled: true
+    vala:
+      disabled: true
+    verilog:
+      disabled: true
+    vhdl:
+      disabled: true
+    visualforce:
+      disabled: true
+    vue:
+      disabled: true
+    xml:
+      brace_style: "expand"
+      indent_inner_html: true
+      indent_scripts: "separate"
+      wrap_attributes: "force-aligned"
+    xtemplate:
+      disabled: true
+    yaml:
+      disabled: true
   "atom-css-unit-converter":
     decimalLength: 2
   "atomic-management":
@@ -31,7 +186,6 @@
       "welcome"
       "about"
       "project-manager"
-      "project-dropdown"
     ]
     ignoredNames: [
       ".git"
@@ -137,6 +291,7 @@
       "php-unit-integrator"
       "atom-laravel-log"
       "sweetprojects"
+      "intentions"
     ]
     packagesWithSnippetsDisabled: [
       "snippets"
@@ -146,7 +301,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "dimmed-one-dark-syntax"
+      "pure-syntax"
     ]
     titleBar: "custom"
   editor:
@@ -197,10 +352,14 @@
     autoCompile: false
   "language-markdown":
     emphasisShortcuts: false
+  linter:
+    lintPreviewTabs: false
   "linter-phpmd": {}
   "linter-ui-default":
+    alwaysTakeMinimumSpace: true
     panelHeight: 300
-    showPanel: true
+    showProviderName: true
+    showTooltip: false
   livereload:
     applyImageLive: true
     autoStart: true
@@ -221,6 +380,7 @@
     showErrorsInDevMode: true
   "one-dark-ui":
     hideDockButtons: true
+    stickyHeaders: true
   "package-reloader":
     targets: [
       "toolkits"
@@ -237,6 +397,8 @@
   "prettier-atom":
     formatOnSaveOptions:
       showInStatusBar: true
+    useEslint: true
+    useStylelint: true
   preview:
     _analyticsUserId: "b756d05b-402c-419c-9839-3ce92028dec0"
   "project-banner":
