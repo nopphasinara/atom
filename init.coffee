@@ -43,13 +43,13 @@ for filePath in filePaths
     require(filePath.path)
 
 
-atom.workspace.observeTextEditors (editor) ->
-  editor.onDidSave ->
-    for filePath in filePaths
-      global.functions = require(filePath.path)
-      Object.defineProperty global, filePath.name, get: ->
-        delete require.cache[require.resolve(filePath.path)]
-        require(filePath.path)
+# atom.workspace.observeTextEditors (editor) ->
+#   editor.onDidSave ->
+#     for filePath in filePaths
+#       global.functions = require(filePath.path)
+#       Object.defineProperty global, filePath.name, get: ->
+#         delete require.cache[require.resolve(filePath.path)]
+#         require(filePath.path)
 
 
 
