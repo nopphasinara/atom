@@ -1,3 +1,46 @@
+'.text.html.php .source.php .string.quoted.double.php .punctuation.definition.begin.php':
+  '..':
+    'prefix': '..'
+    'body': '"". $0 .'
+'.text.html.php .source.php .string.quoted.double.php .punctuation.definition.end.php':
+  '..':
+    'prefix': '..'
+    'body': '". $0 ."'
+'.text.html.php .source.php .string.quoted.double.php':
+  '..':
+    'prefix': '"..'
+    'body': '"". $0 ."'
+'.text.html.php .source.php':
+  '..':
+    'prefix': '..'
+    'body': '". $0 ."'
+'.text.html.php .source.php .punctuation.terminator.expression.php':
+  '..':
+    'prefix': '"..'
+    'body': '". $0 .""'
+
+'.text.html.php .source.php .string.quoted.single.php .punctuation.definition.begin.php':
+  '..':
+    'prefix': '..'
+    'body': "''. $0 ."
+'.text.html.php .source.php .string.quoted.single.php .punctuation.definition.end.php':
+  '..':
+    'prefix': '..'
+    'body': "'. $0 .'"
+'.text.html.php .source.php .string.quoted.single.php':
+  '..':
+    'prefix': "'.."
+    'body': "''. $0 .'"
+# '.text.html.php .source.php':
+#   '..':
+#     'prefix': '..'
+#     'body': '". $0 ."'
+'.text.html.php .source.php .string.quoted.single.php + .punctuation.terminator.expression.php':
+  '..':
+    'prefix': "'.."
+    'body': "'. $0 .''"
+
+
 '*':
   'reg':
     'prefix': 'reg'
@@ -61,8 +104,7 @@
 
 
 # Shell
-'.text.plain,
-.source.shell':
+'.source.shell':
   'WP Tooltip':
     'prefix': 'ttip'
     'body': '''
@@ -150,10 +192,18 @@
     'body': '''
     case ${1:word} in
       pattern)
+      ${2:...}
       ;;
       *)
+      ${3:...}
       ;;
     esac$0
+    '''
+
+  'echo':
+    'prefix': 'ec'
+    'body': '''
+    echo ${1:"$2"}$0
     '''
 
 
@@ -240,18 +290,35 @@
     '''
     'leftLabelHTML': '<span class="snippet-label common">void</span>'
 
-  'New stylesheet':
-    'prefix': 'insert-stylesheet'
+  'CSS Class Block':
+    'prefix': '.'
     'body': '''
-    ${1:element} {
-      ${2:/* Positioning */}
-      ${3:/* Box-model */}
-      ${4:/* Typography */}
-      ${5:/* Visual */}
-      ${6:/* Misc */}
-    }$0
+    ${1:styleclass} {
+      ${2:${3:/* Positioning */}
+      ${4:/* Box-model */}
+      ${5:/* Typography */}
+      ${6:/* Visual */}
+      ${7:/* Misc */}}
+    \\}$0
     '''
+    'description': ''
     'leftLabelHTML': '<span class="snippet-label common">void</span>'
+    'rightLabelHTML': '<span class="snippet-label common"></span>'
+
+  'CSS ID Block':
+    'prefix': '..'
+    'body': '''
+    ${1:styleid} {
+      ${2:${3:/* Positioning */}
+      ${4:/* Box-model */}
+      ${5:/* Typography */}
+      ${6:/* Visual */}
+      ${7:/* Misc */}}
+    \\}$0
+    '''
+    'description': ''
+    'leftLabelHTML': '<span class="snippet-label common">void</span>'
+    'rightLabelHTML': '<span class="snippet-label common"></span>'
 
   'Cover Image':
     'prefix': 'cover-img'

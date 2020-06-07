@@ -127,26 +127,68 @@ function getObjectPropertyNames(obj) {
 
 
 class Data {
+
   constructor() {
     console.clear();
 
-
     this.e = atom.workspace.getActiveTextEditor();
-    // this.r = this.e.getSelectedBufferRanges();
-    // this.t = function(range) {
-    //   return this.e.getTextInBufferRange(range);
-    // };
 
     this.registerCommands();
   }
 
   registerCommands() {
-    // atom.commands.add('atom-text-editor', 'nerd:show-current-file-in-file-manager', function() {
+
+    var a = atom;
+    var w = atom.workspace;
+    var e = atom.workspace.getActiveTextEditor();
+
+    var remoteSync = atom.packages.getActivePackage('remote-sync');
+
+    // w.panelContainers.modal.onDidAddPanel(() => {
+    //   console.log('OK');
     //
+    //   w.didActivatePaneContainer(() => {
+    //     console.log('didActivatePaneContainer', this);
+    //   });
     // });
 
-    atom.commands.add('atom-text-editor', 'nerd:open-atom-src', function() {
-      shell.openExternal('https://github.com/atom/atom/tree/master/src');
+    atom.workspace.panelContainers.modal.onDidAddPanel((panel = null) => {
+      atom.commands.add('.remote-sync', 'panel:xxx', () => {
+        const editor = atom.workspace.getActiveTextEditor();
+        console.log(editor);
+        // editor.focusNext();
+        atom.commands.dispatch(atom.views.getView(panel.panel.getElement()), 'core:focus-next');
+        // console.log(editor);
+      });
+
+      // console.log(panel.panel.getElement());
+      // console.log(panel.panel);
+      // console.log(panel);
+      // console.log(this);
+    });
+
+    // console.log(w.panelContainers.modal.getPanels());
+    // console.log(w.panelContainers);
+    console.log(w);
+
+    // console.log(remoteSync.viewRegistry.getView());
+    // console.log(remoteSync.viewRegistry);
+
+    // console.log(Object.getPrototypeOf(remoteSync));
+    // console.log(Object.getOwnPropertyNames(remoteSync).join("\n"));
+    // console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(remoteSync)).join("\n"));
+
+    // console.log(remoteSync);
+
+    // Test
+    atom.commands.add('atom-text-editor', {
+      'user:insert-date': (event) => {
+        console.log(event);
+        console.log(this);
+
+        // const editor = this.getModel();
+        // return editor.insertText(new Date().toLocaleString());
+      }
     });
   }
 
@@ -675,6 +717,7 @@ class Data {
       atom.commands.dispatch(atom.views.getView(editor), 'window:focus-pane-on-left');
     });
   }
+
 }
 
 global._data = new Data();
