@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Open javascript console",
-        "command": "js-console:toggle"
+        "label": "Run in REPL Console",
+        "command": "repl-console:run"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "js-console",
+          "label": "REPL Console",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "js-console:toggle"
+              "label": "Run",
+              "command": "repl-console:run"
             }
           ]
         }
