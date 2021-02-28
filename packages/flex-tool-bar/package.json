@@ -1,0 +1,78 @@
+{
+  "_from": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+  "_id": "flex-tool-bar@2.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-D8pcsqmfv2GqQ0K70kX6RqvfjlhlHV9jEkXAsBEPTxHQfWhTQEjmClKF9V5XemQdpCTVt6+tmRcyo/ZwrlIkSA==",
+  "_location": "/flex-tool-bar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+  "_shasum": "cc301168ed66a919cc459e77826796fe93ce3967",
+  "_spec": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-74449-18n4gjh.oo7m",
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/cakecatz/flex-toolbar/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^7.2.1",
+    "change-case": "^4.1.2",
+    "cson": "^7.20.0",
+    "fs-plus": "^3.1.1",
+    "glob-to-regexp": "0.4.1",
+    "json5": "^2.2.0"
+  },
+  "deprecated": false,
+  "description": "Easily Customizable ToolBar for Atom",
+  "devDependencies": {
+    "@semantic-release/apm-config": "^8.0.0",
+    "atom-jasmine3-test-runner": "^5.1.8",
+    "eslint": "^7.20.0",
+    "remark-cli": "^9.0.0",
+    "remark-preset-lint-recommended": "^5.0.0",
+    "semantic-release": "^17.3.9"
+  },
+  "engines": {
+    "atom": ">=1.27.0 <2.0.0"
+  },
+  "homepage": "https://github.com/cakecatz/flex-toolbar#readme",
+  "keywords": [
+    "toolbar",
+    "tool-bar"
+  ],
+  "license": "MIT",
+  "main": "./lib/flex-tool-bar",
+  "name": "flex-tool-bar",
+  "package-deps": [
+    {
+      "name": "tool-bar"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakecatz/flex-toolbar.git"
+  },
+  "scripts": {
+    "lint": "remark . & eslint .",
+    "test": "atom --test ./spec && npm run lint"
+  },
+  "version": "2.2.5"
+}

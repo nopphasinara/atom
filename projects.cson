@@ -1,0 +1,159 @@
+[
+  {
+    title: ".atom",
+    group: "Atom",
+    paths: [
+      "~/.atom",
+    ],
+  },
+  {
+    title: "dotfiles",
+    group: "Dotfiles",
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles",
+    ],
+  },
+  {
+    title: "Karabiner",
+    group: "Dotfiles",
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/config/karabiner",
+    ],
+  },
+  {
+    title: "projects/chrome",
+    group: "Dotfiles",
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/projects/chrome",
+    ],
+  },
+  {
+    title: "projects/extensions",
+    group: "Dotfiles",
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/projects/extensions",
+    ],
+  },
+  {
+    title: "dotzsh",
+    group: "Dotzsh",
+    paths: [
+      "/Volumes/Storage/Projects/dotzsh",
+    ],
+  },
+  {
+    title: "cheatsheets",
+    group: "Github",
+    paths: [
+      "/Volumes/Storage/Projects/github/cheatsheets",
+    ],
+  },
+  {
+    title: "github",
+    group: "Github",
+    paths: [
+      "/Volumes/Storage/Projects/github",
+    ],
+  },
+  {
+    title: "happymishra__JavaScriptTutorials",
+    group: "Github",
+    paths: [
+      "/Volumes/Storage/Projects/github/happymishra__JavaScriptTutorials",
+    ],
+  },
+  {
+    title: "atom-extended",
+    group: "NPM",
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/atom-extended",
+    ],
+  },
+  {
+    title: "chrome-extended",
+    group: "NPM",
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chrome-extended",
+    ],
+  },
+  {
+    title: "atom-awesome",
+    group: "NPM",
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/atom-awesome",
+    ],
+  },
+  {
+    title: "NPM Packages",
+    group: "NPM",
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages",
+    ],
+  },
+  {
+    title: "Projects",
+    group: "Projects",
+    paths: [
+      "/Volumes/Storage/Projects",
+    ],
+  },
+  {
+    title: "app1.laravel.local",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/app1.laravel.local",
+    ],
+  },
+  {
+    title: "dashboard.reproduction-gallery.com",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.local/dashboard",
+    ],
+  },
+  {
+    title: "demo1.reproduction-galleries.com",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/demo1.reproduction-galleries.com",
+    ],
+  },
+  {
+    title: "quick3.reproduction-gallery.local",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.local/quickadmin3",
+    ],
+  },
+  {
+    title: "reproduction-galleries.com",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/reproduction-galleries.com",
+    ],
+  },
+  {
+    title: "reproduction-gallery.com",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.com",
+    ],
+  },
+  {
+    title: "soho-art.com",
+    group: "WWW",
+    paths: [
+      "/Volumes/Storage/www/soho-art.com",
+      "/Volumes/Storage/Projects/controls",
+    ],
+  },
+  {
+    title: "applescript",
+    group: "AppleScript",
+    paths: [
+      "/Volumes/Storage/Projects/github/applescript",
+    ],
+    icon: "icon-apple",
+    color: "#5ae991",
+  },
+]

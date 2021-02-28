@@ -1,0 +1,57 @@
+{
+  "_from": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+  "_id": "turbo-javascript@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ICjFRkWX8Q0kBl2OI2Ebn4s/z00beHyzln53O+84DVuv3xTyDwPo6bpxDzsvOEXK9wxtXuOPCMXTG+Ltyg3xUA==",
+  "_location": "/turbo-javascript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+  "_shasum": "643a56c310f90969feb9aef168ea8bc6e9c29577",
+  "_spec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-34564-mo2lib.in7h",
+  "activationCommands": {
+    "atom-text-editor": [
+      "turbo-javascript:end-line",
+      "turbo-javascript:end-line-comma",
+      "turbo-javascript:end-new-line",
+      "turbo-javascript:wrap-block"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/extrabacon/atom-turbo-javascript/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A collection of commands and snippets for optimizing Javascript and Typescript development productivity",
+  "engines": {
+    "atom": ">0.200.0"
+  },
+  "homepage": "https://github.com/extrabacon/atom-turbo-javascript#readme",
+  "keywords": [
+    "javascript",
+    "snippets",
+    "es6",
+    "productivity"
+  ],
+  "license": "MIT",
+  "main": "./lib/turbo-javascript",
+  "name": "turbo-javascript",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extrabacon/atom-turbo-javascript.git"
+  },
+  "version": "1.4.0"
+}

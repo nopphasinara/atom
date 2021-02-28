@@ -1,0 +1,10 @@
+{
+  "context-menu": {
+    ".tree-view .file, .tree-view .directory": [
+      {
+        "label": "Rename (with refactor support)",
+        "command": "atom-javascript-refactor:refactor"
+      }
+    ]
+  }
+}

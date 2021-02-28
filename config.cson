@@ -1,0 +1,180 @@
+"*":
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
+    enableExtendedUnicodeSupport: true
+    minimumWordLength: 1
+  "bracket-matcher":
+    alwaysSkipClosingPairs: true
+    highlightMatchingLineNumber: true
+  "command-palette":
+    preserveLastSearch: true
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    disabledPackages: [
+      "about"
+      "autosave"
+      "background-tips"
+      "welcome"
+      "styleguide"
+      "metrics"
+    ]
+    packagesWithKeymapsDisabled: [
+      "about"
+      "archive-view"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autocomplete-snippets"
+      "autoflow"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "dalek"
+      "deprecation-cop"
+      "dev-live-reload"
+      "encoding-selector"
+      "exception-reporting"
+      "fuzzy-finder"
+      "github"
+      "git-diff"
+      "go-to-line"
+      "grammar-selector"
+      "image-view"
+      "incompatible-packages"
+      "keybinding-resolver"
+      "line-ending-selector"
+      "link"
+      "markdown-preview"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "spell-check"
+      "status-bar"
+      "styleguide"
+      "symbols-view"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+      "whitespace"
+      "wrap-guide"
+      "language-c"
+      "language-clojure"
+      "language-coffee-script"
+      "language-csharp"
+      "language-css"
+      "language-gfm"
+      "language-git"
+      "language-go"
+      "language-html"
+      "language-hyperlink"
+      "language-java"
+      "language-javascript"
+      "language-json"
+      "language-less"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-rust-bundled"
+      "language-sass"
+      "language-shellscript"
+      "language-source"
+      "language-sql"
+      "language-text"
+      "language-todo"
+      "language-toml"
+      "language-typescript"
+      "language-xml"
+      "language-yaml"
+      "bracket-matcher"
+      "sort-lines"
+      "aligner"
+      "duplicate-removal"
+      "sass-autocompile"
+      "remote-sync"
+      "project-manager"
+      "turbo-javascript"
+      "es6-javascript"
+      "autocomplete-javascript"
+      "atom-autocomplete-php"
+      "tool-bar"
+      "emmet"
+      "hyperclick"
+    ]
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "no"
+    titleBar: "custom"
+  editor:
+    fontFamily: "Menlo, Prompt, Material-Design-Icons, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "240d6a03-a5f3-4471-956e-14156129fa24"
+  "find-and-replace":
+    autocompleteSearches: true
+  "flex-tool-bar":
+    reloadToolBarNotification: false
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  github:
+    showDiffIconGutter: true
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  "js-hyperclick":
+    jumpToImport: true
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "one-dark-ui":
+    hideDockButtons: true
+    stickyHeaders: true
+  "project-manager":
+    prettifyTitle: false
+    sortBy: "title"
+  "remote-sync":
+    autoHideLogPanel: true
+    foldLogPanel: true
+  "sass-autocompile":
+    checkOutputFileAlreadyExists: true
+    compileOnSave: false
+  "status-bar": {}
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  "tool-bar":
+    fullWidth: false
+    iconSize: "18px"
+    useGutter: true
+  "tree-view":
+    alwaysOpenExisting: true
+  welcome:
+    showOnStartup: false
+".coffee.source":
+  editor:
+    autoIndentOnPaste: true
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
+".source.yaml":
+  editor:
+    autoIndentOnPaste: true

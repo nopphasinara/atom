@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+  "_id": "aligner-ruby@1.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-UOm8pAxkUW2NAT3/cdX9N4xf4iibFBHdTx1HMAI7ocWlGN7Ppv6NvB0xSihQwqgl7KT4cH3TnaNwRMFoF44Img==",
+  "_location": "/aligner-ruby",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+  "_shasum": "4a2512d39097ebc25611ff463760e79e1dc9ee6e",
+  "_spec": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-12391-18k6p02.8oi5l",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner-ruby/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Ruby support for aligner",
+  "engines": {
+    "atom": ">=1.9.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner-ruby#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "ruby"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner-ruby",
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrianlee44/atom-aligner-ruby.git"
+  },
+  "version": "1.7.0"
+}

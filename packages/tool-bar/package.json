@@ -1,0 +1,86 @@
+{
+  "_from": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+  "_id": "tool-bar@1.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Q3Ukycgao0wepGZd9GcSwcevWhl9yE/X+xmZ2TXj5YISyLsw6L49RSXLe+wq1IsFOzoPDHKFtH7Xn5qPwg+myg==",
+  "_location": "/tool-bar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+  "_shasum": "6e7d94e6ebbe429877132d0ea4580910f803be8e",
+  "_spec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-68954-oelqzt.aw74i",
+  "bugs": {
+    "url": "https://github.com/suda/toolbar/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Package providing customisable tool bar",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@types/atom": "latest",
+    "babel-eslint": "^10.1.0",
+    "build-commit": "^0.1.1",
+    "csso-cli": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^2.1.1",
+    "remark-cli": "^8.0.0",
+    "remark-preset-lint-recommended": "^4.0.0",
+    "rollup": "^2.11.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-execute": "^1.1.1",
+    "rollup-plugin-terser": "^6.1.0",
+    "shx": "^0.3.2"
+  },
+  "engines": {
+    "atom": ">=1.20.0"
+  },
+  "homepage": "https://github.com/suda/toolbar#readme",
+  "keywords": [
+    "toolbar",
+    "tool-bar",
+    "service"
+  ],
+  "license": "MIT",
+  "main": "./dist/tool-bar",
+  "name": "tool-bar",
+  "providedServices": {
+    "tool-bar": {
+      "description": "A container for buttons at workspace edge",
+      "versions": {
+        "1.0.0": "provideToolBar"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suda/toolbar.git"
+  },
+  "scripts": {
+    "build": "npm run clean && env NODE_ENV=production env BABEL_ENV=production rollup -c",
+    "build-commit": "build-commit -o dist",
+    "clean": "shx rm -rf dist",
+    "debug": "npm run clean && shx cp -r src dist && env NODE_ENV=development env BABEL_ENV=development babel dist --out-dir dist",
+    "dev": "npm run clean && env NODE_ENV=development env BABEL_ENV=production rollup -c -w",
+    "lint": "eslint . --fix --ext js,json && remark *.md",
+    "prepare": "npm run build",
+    "test": "atom --test spec"
+  },
+  "version": "1.4.2"
+}

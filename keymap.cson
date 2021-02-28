@@ -1,0 +1,31 @@
+{
+  "atom-text-editor:not([mini])": {
+    "shift-f11": "remote-sync:upload-file",
+    "f11": "remote-sync:download-file",
+    "cmd-backspace": "editor:delete-line",
+  },
+
+  "atom-text-editor": {
+    "ctrl-.": "editor:log-cursor-scope",
+    "ctrl-alt-.": "editor:log-cursor-syntax-tree-scope",
+    "ctrl-shift-.": "key-binding-resolver:toggle",
+    "alt-cmd-p": "project-manager:edit-projects",
+    "ctrl-alt-cmd-g": "grammar-selector:show",
+  },
+
+  "atom-workspace": {
+    "ctrl-k ctrl-l": "window:reload",
+  },
+
+  ".platform-darwin atom-text-editor": {
+    "alt-cmd-a": "aligner:align",
+  },
+
+  ".platform-darwin": {
+    "cmd-shift-o": "project-manager:list-projects",
+  },
+
+  ".platform-darwin atom-workspace atom-text-editor:not(.mini)": {
+    "alt-cmd-s": "sass-autocompile:compile-to-file",
+  },
+}

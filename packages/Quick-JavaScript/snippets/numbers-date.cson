@@ -1,0 +1,10 @@
+'.source.js':
+  'Number':
+    prefix: 'number'
+    body: 'Number'
+  'Date':
+    prefix: 'date'
+    body: 'Date'
+  'Math':
+    prefix: 'math'
+    body: 'Math'

@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+  "_id": "autocomplete-javascript@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-/b3TblupR6jNloUHCV5n03PQqSE8bXmfBhBuSOROyXjSEm508OpYwKXW+k9jX8Q8NpV0aUrR4Qi4eLjnNya/pA==",
+  "_location": "/autocomplete-javascript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+  "_shasum": "b55fb5d940bb0d0c1eb5e4093364ae629499aa55",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-50290-7k41fd.icn1o",
+  "activationCommands": {
+    "atom-workspace": "autocomplete-javascript:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/guiguan/autocomplete-javascript/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "[WIP] The missing Atom autocompletion support for modern javascript",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/guiguan/autocomplete-javascript#readme",
+  "keywords": [
+    "javascript",
+    "autocomplete",
+    "intellisense",
+    "babel",
+    "babylon"
+  ],
+  "license": "MIT",
+  "main": "./lib/autocomplete-javascript",
+  "name": "autocomplete-javascript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guiguan/autocomplete-javascript.git"
+  },
+  "version": "0.0.2"
+}

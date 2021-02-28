@@ -1,0 +1,16 @@
+{
+  ".source.js": {
+    "function()": {
+      "prefix": "fn",
+      "body": """
+      function ($1) \{$2\}$0
+      """,
+    },
+    "function func_name()": {
+      "prefix": "fa",
+      "body": """
+      function ${1:func_name}($2) \{$3\}$0
+      """,
+    },
+  },
+}

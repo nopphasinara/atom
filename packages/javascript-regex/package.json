@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+  "_id": "javascript-regex@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lcyeRQnG6ToCT+8F0jK4hBiMMLAl/Iv39gCXdEbGwY+memxh6vo1lFBs7bfGS4xuOZGKmEX2PtNCUGIumLiS4g==",
+  "_location": "/javascript-regex",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+  "_shasum": "5832c05e45b14b7f3b72c81f5ab28d0369177fdb",
+  "_spec": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-28631-z2qwne.nn4p",
+  "activationHooks": [
+    "source.js:root-scope-used",
+    "source.ts:root-scope-used",
+    "source.flow:root-scope-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/wizard04wsu/javascript-regex/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "tree-sitter-regex-js": "^2.0.0",
+    "tree-sitter-regex-unicode-js": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Improved syntax for JavaScript regular expressions",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/wizard04wsu/javascript-regex#readme",
+  "keywords": [
+    "syntax",
+    "javascript",
+    "regex"
+  ],
+  "license": "MIT",
+  "main": "./lib/javascript-regex",
+  "name": "javascript-regex",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizard04wsu/javascript-regex.git"
+  },
+  "version": "2.0.0"
+}

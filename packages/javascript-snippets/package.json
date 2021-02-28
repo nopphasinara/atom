@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+  "_id": "javascript-snippets@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-UbcochvbIctGm0YC5wJRwuuqd8sNkbAuJJNaEq1lTDEy0nuYnCTSk+JNW6GIDMTbtuqUuUyww6cHFnZCYfpywg==",
+  "_location": "/javascript-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+  "_shasum": "a30a0bcbbfe78657dcc812058fb629d5bbef66e6",
+  "_spec": "https://www.atom.io/api/packages/javascript-snippets/versions/1.2.1/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-54089-1kxnwug.tpsd",
+  "bugs": {
+    "url": "https://github.com/zenorocha/atom-javascript-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "JavaScript & NodeJS Snippets for Atom",
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "grunt-cli": "0.1.11",
+    "grunt-lintspaces": "0.3.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/zenorocha/atom-javascript-snippets#readme",
+  "license": "MIT",
+  "main": "./lib/javascript-snippets",
+  "name": "javascript-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenorocha/atom-javascript-snippets.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "version": "1.2.1"
+}

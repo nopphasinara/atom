@@ -1,0 +1,11 @@
+module.exports = [
+  {
+    type: "button",
+    icon: "gear",
+    callback: "flex-tool-bar:edit-config-file",
+    tooltip: "Edit Tool Bar",
+  },
+  {
+    type: "spacer",
+  },
+];

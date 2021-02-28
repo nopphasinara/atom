@@ -1,0 +1,149 @@
+{
+  "_from": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+  "_id": "javascript-refactor@0.7.1",
+  "_inBundle": false,
+  "_integrity": "sha512-eeRcip/oqXNGaiSsG+s0EX6favarPxsi4r/VgWmOXiEfa5F9EaEVQPmwun3jeqTAcsy9xj0HrRXk5JXwTCRUPg==",
+  "_location": "/javascript-refactor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+  "_shasum": "d39d7c8d22e96c6c738b77e9083b86a46230e5d9",
+  "_spec": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-44312-1up305r.5xi6i",
+  "activationCommands": {
+    "atom-workspace": "atom-javascript-refactor:refactor"
+  },
+  "author": {
+    "name": "Clint Ayres",
+    "email": "clinton.ayres@gmail.com"
+  },
+  "babel": {
+    "plugins": [
+      "transform-decorators-legacy"
+    ],
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/jurassix/atom-javascript-refactor/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "contributors": [
+    {
+      "name": "Andrew Hutchings",
+      "email": "andrew.hutchings@gmail.com",
+      "url": "https://andrewhutchings.com"
+    }
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "fs-plus": "^2.9.1",
+    "jscodeshift": "^0.3.20",
+    "react-for-atom": "^15.0.2-1",
+    "redux": "^3.5.2",
+    "refactoring-codemods": "0.3.4"
+  },
+  "deprecated": false,
+  "description": "JavaScript refactoring support for Atom",
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "coveralls": "^2.11.11",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "flow-bin": "^0.47.0",
+    "jest": "^20.0.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": [
+      "airbnb",
+      "plugin:flowtype/recommended"
+    ],
+    "parser": "babel-eslint",
+    "globals": {
+      "atom": false
+    },
+    "plugins": [
+      "babel",
+      "flowtype"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": [
+        "warn",
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
+      "react/sort-comp": "off"
+    },
+    "settings": {
+      "import/core-modules": [
+        "atom"
+      ]
+    }
+  },
+  "homepage": "https://github.com/jurassix/atom-javascript-refactor#readme",
+  "keywords": [
+    "refactor",
+    "rename",
+    "move",
+    "javascript",
+    "ide"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-javascript-refactor",
+  "name": "javascript-refactor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurassix/atom-javascript-refactor.git"
+  },
+  "scripts": {
+    "test": "npm run test:flow && npm run test:lint && npm run test:unit",
+    "test:flow": "flow check",
+    "test:lint": "eslint .",
+    "test:unit": "jest --coverage"
+  },
+  "version": "0.7.1"
+}
