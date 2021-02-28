@@ -7,6 +7,13 @@
     ],
   },
   {
+    title: ".atom-dev",
+    group: "Atom",
+    paths: [
+      "/Volumes/Storage/Projects/atom-dev",
+    ],
+  },
+  {
     title: "dotfiles",
     group: "Dotfiles",
     paths: [
