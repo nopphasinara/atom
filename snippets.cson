@@ -1,14 +1,118 @@
 {
-  "*": {
+  ".source.coffee, .coffee, .source": {
     # Snippet
+    "Toolbar Spacer": {
+      "prefix": "spacer",
+      "body": """
+      \\{ type: \\"spacer\\" \\}$0
+      """,
+    },
+    "Toolbar Item": {
+      "prefix": "toolbar-item",
+      "body": """
+      \\{
+        type: \\"\\",
+        callback: \\"\\",
+        callback: [],
+        callback: function (target) \\{
+
+        \\},
+        tooltip: \\"\\",
+        text: \\"\\",
+        html: \\"\\",
+        icon: \\"\\",
+        iconset: \\"\\",
+        style: \\{
+          color: \\"red\\",
+          background: \\"green\\",
+          border: \\"1px solid blue\\",
+        \\},
+        hover: \\{
+          color: \\"red\\",
+          background: \\"green\\",
+          border: \\"1px solid blue\\",
+        \\},
+        url: \\"\\",
+        file: \\"\\",
+        class: [],
+        show: \\{
+          pattern: \\"\\",
+          package: [],
+          setting: \\"tree-view.autoReveal\\",
+          function: function (editor) \\{
+            return editor.isModified();
+          \\},
+        \\},
+        hide: \\{
+          grammar: \\"!Markdown\\",
+        \\},
+        disable: \\{
+          grammar: [
+            \\"json\\",
+            \\"less\\",
+          ],
+        \\},
+      \\}$0
+      """,
+    },
+    "New Toolbar Item": {
+      "prefix": "tbbtn",
+      "body": """
+      \\{
+        type: \\"${1:button}\\",
+        callback: [${2:custom\\:callback}],
+        tooltip: \\"${3:Custom Callback}\\",
+        icon: \\"${4:gear}\\",
+        iconset: \\"${5:mdi}\\",
+      \\}$0
+      """,
+    },
+    "New Toolbar URL Item": {
+      "prefix": "tburl",
+      "body": """
+      \\{
+        type: \\"${1:url}\\",
+        url: \\"${2:https\\:\\/\\/github.com\\/\\{repo-owner\\}\\/\\{repo-name\\}}\\",
+        tooltip: \\"${3:Open on Github}\\",
+        icon: \\"${4:git}\\",
+        iconset: \\"${5:mdi}\\",
+      \\}$0
+      """,
+    },
+    "New Toolbar File Item": {
+      "prefix": "tbfile",
+      "body": """
+      \\{
+        type: \\"${1:file}\\",
+        file: \\"${2:README.md}\\",
+        tooltip: \\"${3:Open File}\\",
+        icon: \\"${4:file}\\",
+        iconset: \\"${5:mdi}\\",
+      \\}$0
+      """,
+    },
+    "New Toolbar Function Item": {
+      "prefix": "tbfunc",
+      "body": """
+      \\{
+        type: \\"${1:function}\\",
+        callback: function (${2:editor}) \\{
+          $3
+        \\},
+        tooltip: \\"${4:Run Function}\\",
+        icon: \\"${5:function}\\",
+        iconset: \\"${6:mdi}\\",
+      \\}$0
+      """,
+    },
     "New Snippet Item": {
       "prefix": "asn",
       "body": """
-      \"${1:name}\": {
-        \"prefix\": \"$2\",
-        \"body\": \"\"\"
+      \\"${1:name}\\": {
+        \\"prefix\\": \\"$2\\",
+        \\"body\\": \\"\\"\\"
         $3
-        \"\"\",
+        \\"\\"\\",
       },$0
       """,
     },
@@ -67,7 +171,7 @@
     "return function ()": {
       "prefix": "rfn",
       "body": """
-      return function ($1) \{$2\}$0
+      return function ($1) \\{$2\\}$0
       """,
     },
     "return foo": {
@@ -132,7 +236,7 @@
       "prefix": "group-log",
       "body": """
       console.group($1)
-      ${2:\/\/ ...}
+      ${2:\\/\\/ ...}
       console.groupEnd()$0
       """,
     },
@@ -141,13 +245,13 @@
     "function ()": {
       "prefix": "fn",
       "body": """
-      function ($1) \{$2\}$0
+      function ($1) \\{$2\\}$0
       """,
     },
     "function func_name()": {
       "prefix": "fa",
       "body": """
-      function ${1:func_name}($2) \{$3\}$0
+      function ${1:func_name}($2) \\{$3\\}$0
       """,
     },
 
