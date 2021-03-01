@@ -1,0 +1,31 @@
+{
+  "_id": "atom-awesome@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-ojwpN37lPfS+CIIlxGQ1ibDiQK94VoPmVITV1RWgLbOWbHQi+4cW4VzRgYBzYx6BRbeFdhmg0RdsnM99zY9DJA==",
+  "_location": "/atom-awesome",
+  "_phantomChildren": {},
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_shasum": "43fafacc11b3b6ae5716868fe539dd398b53430e",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-3909-1n0sq4o.zovs",
+  "name": "atom-awesome",
+  "description": "the essential tool for web developers",
+  "main": "./atom-awesome",
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/nopphasinara/atom-awesome",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopphasinara/atom-awesome.git"
+  },
+  "license": "MIT",
+  "version": "0.0.1"
+}

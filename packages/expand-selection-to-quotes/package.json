@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+  "_id": "expand-selection-to-quotes@0.11.0",
+  "_inBundle": false,
+  "_integrity": "sha512-rZFTPjfKyX9y17gBBkCjRPRTQJDbRYCBi0a6OXdIdCNKBegJ7T5Yo2P/LHk9EL3n/4mh9UQU44fEHLDpBK9IPQ==",
+  "_location": "/expand-selection-to-quotes",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+  "_shasum": "125efaf244bf5b02f9ca4a500dd6d45e5c9d4394",
+  "_spec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-202122-78815-1rt5rjz.tcx6j",
+  "activationCommands": {
+    "atom-text-editor": [
+      "expand-selection-to-quotes:toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/clessg/atom-expand-selection-to-quotes/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Expands selections to single or double quotes.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/clessg/atom-expand-selection-to-quotes#readme",
+  "keywords": [
+    "quotes",
+    "selection",
+    "expand selection",
+    "expand selection to quotes"
+  ],
+  "license": "MIT",
+  "main": "./lib/expand-selection-to-quotes",
+  "name": "expand-selection-to-quotes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clessg/atom-expand-selection-to-quotes.git"
+  },
+  "version": "0.11.0"
+}

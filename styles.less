@@ -1,3 +1,128 @@
+@font-face {
+  font-display: fallback;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Merriweather normal 300.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  src: url("fonts/Merriweather italic 300.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/Merriweather normal 700.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/Merriweather italic 700.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/Proxima Nova normal 100.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Proxima Nova normal 300.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Proxima Nova normal 400.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/Proxima Nova normal 600.otf") format("opentype")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/Proxima Nova normal 700.otf") format("opentype")
+}
+
+
+atom-text-editor {
+    font-kerning: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -moz-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+
+    * {
+        font-kerning: none !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        -moz-font-smoothing: grayscale !important;
+        text-rendering: optimizeLegibility !important;
+    }
+}
+
+atom-text-editor {
+    .selection .region {
+        background-color: fade(cyan, 20);
+    }
+
+    .syntax--comment {
+        font-style: normal !important;
+    }
+
+    .syntax--hyperlink {
+        text-decoration: none !important;
+    }
+
+    .cursor {
+        border-color: lime !important;
+        border-width: 2px !important;
+    }
+
+    .cursors {
+        opacity: 1 !important;
+
+        &.blink-off {
+            opacity: 0 !important;
+        }
+    }
+
+    .bracket-matcher {
+        .region {
+            opacity: 1 !important;
+            border-bottom-color: lime !important;
+            border-bottom-style: solid !important;
+        }
+    }
+}
+
+
 atom-text-editor:not([mini]) {
   .syntax--comment {
     font-style: normal;

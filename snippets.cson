@@ -1,6 +1,144 @@
 {
+  "*": {
+    # Snippet
+    "New Snippet Item": {
+      "prefix": "asn",
+      "body": """
+      \"${1:name}\": {
+        \"prefix\": \"$2\",
+        \"body\": \"\"\"
+        $3
+        \"\"\",
+      },$0
+      """,
+    },
+  },
+
   ".source.js": {
-    "function()": {
+    # Common
+    "constructor": {
+      "prefix": "c",
+      "body": """
+      constructor$0
+      """,
+    },
+    "prototype": {
+      "prefix": "p",
+      "body": """
+      prototype$0
+      """,
+    },
+    "function": {
+      "prefix": "f",
+      "body": """
+      function$0
+      """,
+    },
+    "return": {
+      "prefix": "r",
+      "body": """
+      return$0
+      """,
+    },
+    "return true": {
+      "prefix": "r1",
+      "body": """
+      return true$0
+      """,
+    },
+    "return false": {
+      "prefix": "r0",
+      "body": """
+      return false$0
+      """,
+    },
+    "return null": {
+      "prefix": "rn",
+      "body": """
+      return null$0
+      """,
+    },
+    "return undefined": {
+      "prefix": "ru",
+      "body": """
+      return undefined$0
+      """,
+    },
+    "return function ()": {
+      "prefix": "rfn",
+      "body": """
+      return function ($1) \{$2\}$0
+      """,
+    },
+    "return foo": {
+      "prefix": "ret",
+      "body": """
+      return ${1:foo}$0
+      """,
+    },
+
+    # Import, Require
+    "require()": {
+      "prefix": "req",
+      "body": """
+      require($1)$0
+      """,
+    },
+    "var foo = require()": {
+      "prefix": "reqa",
+      "body": """
+      var ${1:foo} = require(${2:bar})$0
+      """,
+    },
+    "import foo from ...": {
+      "prefix": "imp",
+      "body": """
+      import ${1:foo} from ${2:bar}$0
+      """,
+    },
+
+    # Console
+    "console.clear": {
+      "prefix": "cls",
+      "body": """
+      console.clear()$0
+      """,
+    },
+    "console.log": {
+      "prefix": "log",
+      "body": """
+      console.log($1)$0
+      """,
+    },
+    "console.warn": {
+      "prefix": "warn",
+      "body": """
+      console.warn($1)$0
+      """,
+    },
+    "console.error": {
+      "prefix": "error",
+      "body": """
+      console.error($1)$0
+      """,
+    },
+    "console.info": {
+      "prefix": "info",
+      "body": """
+      console.info($1)$0
+      """,
+    },
+    "console.group": {
+      "prefix": "group-log",
+      "body": """
+      console.group($1)
+      ${2:\/\/ ...}
+      console.groupEnd()$0
+      """,
+    },
+
+    # Function
+    "function ()": {
       "prefix": "fn",
       "body": """
       function ($1) \{$2\}$0
@@ -10,6 +148,20 @@
       "prefix": "fa",
       "body": """
       function ${1:func_name}($2) \{$3\}$0
+      """,
+    },
+
+    # Variable
+    "var": {
+      "prefix": "v",
+      "body": """
+      var$0
+      """,
+    },
+    "var name": {
+      "prefix": "va",
+      "body": """
+      var ${1:name}$0
       """,
     },
   },
