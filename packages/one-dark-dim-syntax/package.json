@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+  "_id": "one-dark-dim-syntax@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-5ftNegdOt7dVPkQWMSFnZSYefGFDRGxBXbdh2I05YSjAa31rS6lxPMmuUYAJqxQKMYVuZNfepowq1n0dSwbK+g==",
+  "_location": "/one-dark-dim-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+  "_shasum": "dc5aa0481c4e951fbdead1491ee3618d497660fa",
+  "_spec": "https://www.atom.io/api/packages/one-dark-dim-syntax/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-202121-6004-1eyrfmk.2uv5k",
+  "bugs": {
+    "url": "https://github.com/arbourd/one-dark-dim-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark, and dimmer, syntax theme based off One Dark v0.5.0",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/arbourd/one-dark-dim-syntax#readme",
+  "keywords": [
+    "dark",
+    "dim",
+    "blue",
+    "base16-tomorrow",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-dark-dim-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbourd/one-dark-dim-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.1.0"
+}
