@@ -1,0 +1,83 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+#quantum-shell{
+    font-family: @font-family;
+    border: 3px groove @base-border-color;
+    background-color: @base-background-color;
+    #quantum-shell-title{
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        color: @text-color-highlight;
+        border-radius: @component-border-radius;
+        border: 3px groove @panel-heading-border-color;
+        background-color: @panel-heading-background-color;
+    }
+    #quantum-shell-btns{
+        //padding: 3px;
+        overflow-x: auto;
+        border-radius: @component-border-radius;
+        border: 3px groove @inset-panel-border-color;
+        background-color: @inset-panel-background-color;
+        .btn{
+            padding-top:4px;
+        }
+    }
+    #quantum-shell-body{
+        font-size: @font-size;
+        font-family: monospace;
+        border-radius: @component-border-radius;
+        border: 3px groove @inset-panel-border-color;
+        background-color: @inset-panel-background-color;
+        pre{
+            margin: 0px;
+            padding: 0px 3px;
+            overflow-y: scroll;
+            .quantum-shell-command{
+                &:before{
+                    content: '$>';
+                }
+            }
+            .quantum-shell-data{
+                &:before{
+                    content: '~~';
+                }
+            }
+            .quantum-shell-error{
+                &:before{
+                    content: '!!';
+                }
+            }
+        }
+    }
+    ::-webkit-input-placeholder{
+        color: @text-color-subtle;
+    }
+    #quantum-shell-input{
+        width: 90%;
+        color: @text-color;
+        font-size: @font-size * 1.2;
+        border-color: @input-border-color;
+        border-radius: @component-border-radius;
+        background-color: @input-background-color;
+    }
+    #quantum-shell-submit{
+        width: 10%;
+        float: right;
+        color: @text-color;
+        font-size: @font-size * 1.2;
+        border-color: @button-border-color;
+        border-radius: @component-border-radius;
+        background-color: @button-background-color;
+        &:hover{
+            background-color: @button-background-color-hover;
+        }
+        &:active{
+            background-color: @button-background-color-selected;
+        }
+    }
+}

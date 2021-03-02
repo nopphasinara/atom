@@ -1,0 +1,19 @@
+{
+    "name": "jordyvandomselaar/php-tools",
+    "type": "libary",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Jordy van Domselaar",
+            "email": "jordy@deinternetjongens.nl"
+        }
+    ],
+    "require": {
+        "goaop/parser-reflection": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "JordyvD\\AtomPhpTools\\": "lib/php/src"
+        }
+    }
+}

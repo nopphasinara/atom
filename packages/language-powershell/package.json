@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+  "_id": "language-powershell@5.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Ik3yTXE1X/eNtYqIGCBDRz9Z5fMTPLM8JqnPER/Me6Wk8LKLwpX4ODQ7Tuz7lhPZkernRVvYIuq8dzoNHlM8kA==",
+  "_location": "/language-powershell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+  "_shasum": "cc8f5bc0d9ba6cad1b257dbe0c13d80f4875cefd",
+  "_spec": "https://www.atom.io/api/packages/language-powershell/versions/5.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202122-24414-gts2nz.fzpk",
+  "bugs": {
+    "url": "https://github.com/jugglingnutcase/language-powershell/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "PowerShell language support for Atom",
+  "devDependencies": {
+    "cson": "3.0.2",
+    "plist": "2.0.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jugglingnutcase/language-powershell#readme",
+  "keywords": [
+    "powershell",
+    "microsoft",
+    "windows",
+    "grammar"
+  ],
+  "license": "MIT",
+  "name": "language-powershell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugglingnutcase/language-powershell.git"
+  },
+  "scripts": {
+    "convert": "node scripts/convert-grammar.js"
+  },
+  "version": "5.0.0"
+}

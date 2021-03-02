@@ -1,0 +1,137 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+@font-face {
+  font-family: 'icons';
+  src: url('atom://save-actions/fonts/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.save-actions {
+  #header-view {
+    margin-bottom: 1em;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  #title-view {
+    font-size: inherit;
+    margin: 0;
+    padding-left: .3em;
+  }
+
+  #button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .button-flat {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: none;
+    border: none;
+    opacity: .8;
+  }
+
+  .button-flat:hover,
+  .button-flat:focus {
+    opacity: 1;
+  }
+
+  #list-actions {
+    margin: 1.2em 1em;
+    padding: 0.5em;
+    max-height: ~"calc(100vh - 230px)";
+    list-style: none;
+    overflow-y: auto;
+  }
+
+  .item-action {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2.5em 0;
+
+    .input-command {
+      width: 100%;
+      margin-bottom: .5em;
+    }
+
+    .button-flat {
+      height: @component-line-height;
+      width:  @component-line-height;
+    }
+
+    .button-flat::before {
+      font-family: 'icons';
+      font-size: @component-icon-size + @component-icon-padding;
+      line-height: @component-line-height;
+    }
+
+    .button-flat:disabled {
+      visibility: hidden;
+    }
+
+    .button-context[value=shell]::before {
+      content: "\e900";
+    }
+
+    .button-context[value=atom]::before {
+      content: "\e901";
+    }
+
+    .button-stage[value=before]::before {
+      content: "\e902";
+    }
+
+    .button-stage[value=after]::before {
+      content: "\e903";
+    }
+
+    .button-type::before {
+      content: "\e904";
+    }
+
+    .button-mode::before {
+      content: "\e905";
+    }
+
+    .button-remove::before {
+      content: "\e906";
+    }
+
+    .button-remove:hover::before,
+    .button-remove:focus::before {
+      color: red;
+    }
+
+    .button-type[value=sync],
+    .button-mode[value=silent] {
+      opacity: .25;
+    }
+
+    .input-filemask {
+      flex: 1;
+      margin-right: 0.5em;
+    }
+
+    .button-remove {
+      margin-left: 4em;
+    }
+  }
+
+  .item-action:last-of-type {
+    margin-bottom: .5em;
+  }
+
+
+  #footer-view {
+    margin: 1em;
+  }
+}

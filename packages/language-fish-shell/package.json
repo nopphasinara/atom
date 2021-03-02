@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+  "_id": "language-fish-shell@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-b3/5dO5ANh8jUEA38BTGTXFEMc3qtNvmhwUU/Oc3vS3zZ0eIlkZ1/Rs8iVPWPQl123S1RYeB/uaj+AWIh5GhBg==",
+  "_location": "/language-fish-shell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+  "_shasum": "6e16531764dc1983cf4b210d2eb138a0a54e1487",
+  "_spec": "https://www.atom.io/api/packages/language-fish-shell/versions/1.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202122-67675-1tj496m.ehs9",
+  "bugs": {
+    "url": "https://github.com/davidcelis/language-fish-shell/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Snippets and syntax highlighting for Fish, the friendly interactive shell.",
+  "engines": {
+    "atom": ">1.10.0"
+  },
+  "homepage": "https://github.com/davidcelis/language-fish-shell#readme",
+  "license": "MIT",
+  "name": "language-fish-shell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcelis/language-fish-shell.git"
+  },
+  "version": "1.1.0"
+}

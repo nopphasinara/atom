@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle php-tools",
+        "command": "php-tools:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "php-tools",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "php-tools:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

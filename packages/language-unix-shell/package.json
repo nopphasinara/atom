@@ -1,0 +1,63 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+  "_id": "language-unix-shell@0.40.1",
+  "_inBundle": false,
+  "_integrity": "sha512-vLCOWC2KcrrkxKaITnQnef3tO6CVxu1IhjyUG/sYyiw2w9Z7w/RSERj4btr6J3tWD2csRbLt5fPdw48eNwtYxw==",
+  "_location": "/language-unix-shell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+  "_shasum": "c1fd7a64399fe2e6841e7c945ffb28869b3716b7",
+  "_spec": "https://www.atom.io/api/packages/language-unix-shell/versions/0.40.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-202122-58819-qw69nn.piju",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/fusion809/language-shellscript/issues"
+  },
+  "bundleDependencies": false,
+  "contributor": "Brenton Horne <brentonhorne77@gmail.com>",
+  "deprecated": false,
+  "description": "Shell script language support in Atom. Fork of language-shellscript, with extra support for common Unix commands. Designed to be used with the dark-bint-syntax theme.",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "coffeelint": "^1.10.1"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://atom.io/packages/language-unix-shell",
+  "keywords": [
+    "shell",
+    "grammar",
+    "language",
+    "fusion809"
+  ],
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "name": "language-unix-shell",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusion809/language-shellscript.git"
+  },
+  "version": "0.40.1"
+}

@@ -19,6 +19,7 @@
       "welcome"
       "styleguide"
       "metrics"
+      "language-shellscript"
     ]
     packagesWithKeymapsDisabled: [
       "about"
@@ -110,6 +111,12 @@
       "repl-console"
       "emmet-snippets-compatibility"
       "expand-selection-to-quotes"
+      "php-cs-fixer"
+      "php-integrator-refactoring"
+      "php-integrator-refactoring-legacy-php56"
+      "php-extract-method"
+      "format-shell"
+      "quantum-shell"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -120,6 +127,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, Prompt, Material-Design-Icons, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -131,6 +139,9 @@
     autocompleteSearches: true
   "flex-tool-bar":
     reloadToolBarNotification: false
+  "format-shell":
+    keepPaddings: true
+    spaceAfterRedirect: true
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true

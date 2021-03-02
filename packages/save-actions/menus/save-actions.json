@@ -1,0 +1,9 @@
+{
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label":   "Save Actions",
+      "command": "save-actions:actions"
+    }]
+  }]
+}

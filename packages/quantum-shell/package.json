@@ -1,0 +1,64 @@
+{
+  "_from": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+  "_id": "quantum-shell@0.7.1",
+  "_inBundle": false,
+  "_integrity": "sha512-wpxmOMJAEZrGiWRcC+Ij+l8zBdQWr3z9zbqDO8/O+Q8/durFNJvG2MRLFlu/EmjbDVh/p+EEQV6NFkCxpLNUcQ==",
+  "_location": "/quantum-shell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+  "_shasum": "94bb448a635caeafeadb581380e006830ada07bb",
+  "_spec": "https://www.atom.io/api/packages/quantum-shell/versions/0.7.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-202122-72107-1ea15bq.ofp3h",
+  "activationCommands": {
+    "atom-workspace": "quantum-shell:toggle"
+  },
+  "author": {
+    "name": "Seth David Bullock",
+    "email": "sedabull@gmail.com",
+    "url": "http://github.com/sedabull"
+  },
+  "bugs": {
+    "url": "http://github.com/sedabull/quantum-shell/issues",
+    "email": "sedabull@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "split": "^0.3.2",
+    "through2": "^0.6.3",
+    "underscore-plus": "^1.6.6"
+  },
+  "deprecated": false,
+  "description": "A multi-platform command line interface for the Atom text editor!",
+  "engines": {
+    "atom": ">=1.0.12 <2.0"
+  },
+  "homepage": "https://github.com/sedabull/quantum-shell#readme",
+  "keywords": [
+    "terminal",
+    "tab-completion",
+    "Windows support",
+    "alias",
+    "prompt string",
+    "history",
+    "command line"
+  ],
+  "license": "MIT",
+  "main": "./lib/quantum-shell-controller",
+  "name": "quantum-shell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedabull/quantum-shell.git"
+  },
+  "version": "0.7.1"
+}

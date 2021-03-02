@@ -1,4 +1,218 @@
 {
+
+  # SHELL
+  ".source.shell, .shell": {
+    # COMMON
+    "return": {
+      "prefix": "r",
+      "body": """
+      return$0
+      """,
+    },
+    "return 1": {
+      "prefix": "r1",
+      "body": """
+      return 1$0
+      """,
+    },
+    "return 0": {
+      "prefix": "r0",
+      "body": """
+      return 0$0
+      """,
+    },
+    "return n": {
+      "prefix": "rn",
+      "body": """
+      return ${1:n}$0
+      """,
+    },
+    "exit": {
+      "prefix": "e",
+      "body": """
+      return$0
+      """,
+    },
+    "exit 1": {
+      "prefix": "e1",
+      "body": """
+      exit 1$0
+      """,
+    },
+    "exit 0": {
+      "prefix": "e0",
+      "body": """
+      exit 0$0
+      """,
+    },
+    "exit n": {
+      "prefix": "en",
+      "body": """
+      exit ${1:n}$0
+      """,
+    },
+    "break": {
+      "prefix": "br",
+      "body": """
+      break$0
+      """,
+    },
+    "continue": {
+      "prefix": "c",
+      "body": """
+      continue$0
+      """,
+    },
+    "read": {
+      "prefix": "rd",
+      "body": """
+      read$0
+      """,
+    },
+    "while": {
+      "prefix": "while",
+      "body": """
+      while [[ ${1:condition} ]]; do
+        $2
+      done$0
+      """,
+    },
+    "for…in": {
+      "prefix": "fori",
+      "body": """
+      for ${1:item} in ${2:list}; do
+        $3
+      done$0
+      """,
+    },
+    "function foo()": {
+      "prefix": "fa",
+      "body": """
+      function ${1:foo}($2) {
+        $3
+      }$0
+      """,
+    },
+    "alias": {
+      "prefix": "ali",
+      "body": """
+      alias ${1:foo}="${2:bar}"$0
+      """,
+    },
+    "local foo": {
+      "prefix": "loc",
+      "body": """
+      local ${1:foo}="${2:bar}"$0
+      """,
+    },
+    "readonly foo": {
+      "prefix": "rdo",
+      "body": """
+      readonly ${1:foo}="${2:bar}"$0
+      """,
+    },
+
+    # IF
+    "if": {
+      "prefix": "if",
+      "body": """
+      if [[ ${1:condition} ]]; then
+        ${2:# statements}
+      fi$0
+      """,
+    },
+    "if…else": {
+      "prefix": "ife",
+      "body": """
+      if [[ ${1:condition} ]]; then
+        ${2:# statements}
+      else
+        ${3:# statements}
+      fi$0
+      """,
+    },
+    "else": {
+      "prefix": "el",
+      "body": """
+      else
+        ${1:# statements}$0
+      """,
+    },
+    "elif": {
+      "prefix": "eif",
+      "body": """
+      elif [[ ${1:condition} ]]; then
+        ${2:# statements}$0
+      """,
+    },
+  },
+
+
+  # PHP
+  ".source.php, .php": {
+    # Return
+    "return": {
+      "prefix": "r",
+      "body": """
+      return$0
+      """,
+    },
+    "return false": {
+      "prefix": "r0",
+      "body": """
+      return false$0
+      """,
+    },
+    "return true": {
+      "prefix": "r1",
+      "body": """
+      return true$0
+      """,
+    },
+    "return null": {
+      "prefix": "rn",
+      "body": """
+      return null$0
+      """,
+    },
+    "return \\$var": {
+      "prefix": "ra",
+      "body": """
+      return ${1:\\$var}$0
+      """,
+    },
+    "return function ()": {
+      "prefix": "ra",
+      "body": """
+      return function ($1) \\{$2\\}$0
+      """,
+    },
+
+    # Function
+    "function ()": {
+      "prefix": "f",
+      "body": """
+      function ($1) \\{$2\\}$0
+      """,
+    },
+    "function foo()": {
+      "prefix": "fa",
+      "body": """
+      function ${1:foo}($2) \\{$3\\}$0
+      """,
+    },
+    "print_r": {
+      "prefix": "pr",
+      "body": """
+      echo "<pre>";
+      print_r($1);
+      echo "</pre>";$0
+      """,
+    },
+  },
+
+
+  # COFFEE
   ".source.coffee, .coffee, .source": {
     # Snippet
     "Toolbar Spacer": {
@@ -118,6 +332,8 @@
     },
   },
 
+
+  # JAVASCRIPT
   ".source.js": {
     # Common
     "constructor": {
@@ -268,5 +484,11 @@
       var ${1:name}$0
       """,
     },
+  },
+
+
+  # TEXT
+  ".text.plain, .text": {
+
   },
 }
