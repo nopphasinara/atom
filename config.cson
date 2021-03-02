@@ -117,6 +117,7 @@
       "php-extract-method"
       "format-shell"
       "quantum-shell"
+      "find-and-replace"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -136,7 +137,7 @@
   "exception-reporting":
     userId: "240d6a03-a5f3-4471-956e-14156129fa24"
   "find-and-replace":
-    autocompleteSearches: true
+    liveSearchMinimumCharacters: 1
   "flex-tool-bar":
     reloadToolBarNotification: false
   "format-shell":
