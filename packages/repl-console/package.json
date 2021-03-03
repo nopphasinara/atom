@@ -27,7 +27,6 @@
     "url": "https://github.com/mohan/repl-console/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Run REPL code directly in ATOM. Output is displayed in Dev Tools console.",
   "engines": {

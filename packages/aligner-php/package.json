@@ -24,7 +24,6 @@
     "url": "https://github.com/adrianlee44/atom-aligner-php/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "PHP support for aligner",
   "engines": {

@@ -32,7 +32,6 @@
     "url": "https://github.com/hharnisc/atom-es6-javascript/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "A collection of commands and ES6 focused snippets for optimizing modern Javascript development productivity.",
   "engines": {

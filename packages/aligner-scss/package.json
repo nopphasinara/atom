@@ -24,7 +24,6 @@
     "url": "https://github.com/adrianlee44/atom-aligner-scss/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "SCSS/SASS support for aligner",
   "engines": {

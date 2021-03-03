@@ -24,7 +24,6 @@
     "url": "https://github.com/peterjohnhunt/emmet-snippets-compatibility/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Gives Atom autocomplete-snippets primary tab function over emmet. Adds emmet php compatibility",
   "engines": {

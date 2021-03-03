@@ -31,7 +31,6 @@
       }
     }
   },
-  "dependencies": {},
   "deprecated": false,
   "description": "Shows annotations (e.g. for overriden methods interface implementations) in your PHP source code.",
   "engines": {

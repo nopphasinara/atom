@@ -24,7 +24,6 @@
     "url": "https://github.com/lalyos/ssh-config/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "ssh config syntax",
   "devDependencies": {

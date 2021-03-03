@@ -31,7 +31,6 @@
       }
     }
   },
-  "dependencies": {},
   "deprecated": false,
   "description": "Shows call tips with parameter information in your PHP source code.",
   "engines": {

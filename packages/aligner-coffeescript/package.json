@@ -24,7 +24,6 @@
     "url": "https://github.com/adrianlee44/atom-aligner-coffeescript/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "CoffeeScript support for aligner",
   "engines": {

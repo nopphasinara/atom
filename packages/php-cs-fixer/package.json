@@ -41,7 +41,6 @@
     "url": "https://github.com/pfefferle/atom-php-cs-fixer/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Run the 'PHP Coding Standards Fixer' within Atom",
   "engines": {

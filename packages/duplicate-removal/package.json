@@ -27,7 +27,6 @@
     "url": "https://github.com/FloydaGithub/duplicate-removal/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "remove duplicate lines | 删除重复行",
   "engines": {

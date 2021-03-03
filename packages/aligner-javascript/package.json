@@ -24,7 +24,6 @@
     "url": "https://github.com/adrianlee44/atom-aligner-javascript/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Javascript support for aligner",
   "engines": {

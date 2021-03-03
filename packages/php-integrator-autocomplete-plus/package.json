@@ -31,7 +31,6 @@
       }
     }
   },
-  "dependencies": {},
   "deprecated": false,
   "description": "Provides autocompletion for your PHP source code.",
   "engines": {

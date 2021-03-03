@@ -24,7 +24,6 @@
     "url": "https://github.com/marcghorayeb/atom-aligner-typescript/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Typescript support for aligner",
   "engines": {

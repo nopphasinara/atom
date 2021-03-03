@@ -32,7 +32,6 @@
     "url": "https://github.com/extrabacon/atom-turbo-javascript/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "A collection of commands and snippets for optimizing Javascript and Typescript development productivity",
   "engines": {
