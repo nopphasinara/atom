@@ -1,0 +1,8 @@
+{
+  "filter.commentTrigger": "id, class",
+  "filter.commentAfter": "<!-- <%= attr('id', '/#') %><%= attr('class', '/.') %> -->",
+  "css.autoInsertVendorPrefixes": true,
+  "css.fuzzySearchMinScore": 0.7,
+  "css.alignVendor": true,
+  "sass.propertyEnd": ";"
+}

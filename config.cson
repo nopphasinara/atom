@@ -118,6 +118,7 @@
       "format-shell"
       "quantum-shell"
       "find-and-replace"
+      "php-integrator-symbol-viewer"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"

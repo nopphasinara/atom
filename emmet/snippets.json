@@ -1,0 +1,108 @@
+{
+  "variables": {
+    "lang": "en",
+    "locale": "en-US",
+    "charset": "UTF-8",
+    "space": " ",
+    "indentation": "\t",
+    "newline": "\n"
+  },
+
+  "css": {
+    "filters": "css",
+    "profile": "css",
+    "snippets": {},
+    "abbreviations": {}
+  },
+
+  "html": {
+    "filters": "html, c",
+    "profile": "html",
+    "snippets": {},
+    "abbreviations": {}
+  },
+
+  "php": {
+    "extends": "html",
+    "filters": "html",
+    "profile": "html",
+    "snippets": {
+      "classm": "echo '<pre>'; print_r(get_class_methods(|)); echo '</pre>';$0",
+      "classv": "echo '<pre>'; print_r(get_class_vars(|)); echo '</pre>';$0"
+    },
+    "abbreviations": {}
+  },
+
+  "blade": {
+    "extends": "html",
+    "filters": "html",
+    "profile": "html",
+    "snippets": {},
+    "abbreviations": {}
+  },
+
+  "xml": {
+    "extends": "html",
+    "profile": "xml",
+    "filters": "html"
+  },
+
+  "svg": {
+    "filters": "html",
+    "profile": "xml",
+    "snippets": {},
+    "abbreviations": {}
+  },
+
+  "xsl": {
+    "extends": "html",
+    "profile": "xml",
+    "filters": "html, xsl",
+    "snippets": {},
+    "abbreviations": {}
+  },
+
+  "haml": {
+    "filters": "haml",
+    "extends": "html",
+    "profile": "xml"
+  },
+
+  "jade": {
+    "filters": "jade",
+    "extends": "html",
+    "profile": "xml"
+  },
+
+  "jsx": {
+    "filters": "jsx, html",
+    "extends": "html",
+    "profile": "xml"
+  },
+
+  "slim": {
+    "filters": "slim",
+    "extends": "html",
+    "profile": "xml"
+  },
+
+  "scss": {
+    "extends": "css"
+  },
+
+  "sass": {
+    "extends": "css"
+  },
+
+  "less": {
+    "extends": "css"
+  },
+
+  "stylus": {
+    "extends": "css"
+  },
+
+  "styl": {
+    "extends": "stylus"
+  }
+}

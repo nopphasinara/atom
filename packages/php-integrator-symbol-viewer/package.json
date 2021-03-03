@@ -1,0 +1,61 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+  "_id": "php-integrator-symbol-viewer@0.6.4",
+  "_inBundle": false,
+  "_integrity": "sha512-m9rlP2COEMz4ACud6r8g0o2qaHMAuULdyS0+162VuimTw9+qO4lLjDadxVlNNl5R7ty3A1I5ATDJhyoRm/i1PQ==",
+  "_location": "/php-integrator-symbol-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+  "_shasum": "46d23fc2910de79dfff65c3e9a86b25a95b5772e",
+  "_spec": "https://www.atom.io/api/packages/php-integrator-symbol-viewer/versions/0.6.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-202123-86873-1nu3xpm.t8sx",
+  "bugs": {
+    "url": "https://github.com/tocjent/php-integrator-symbol-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "~0.9.0": "init"
+      }
+    }
+  },
+  "dependencies": {
+    "event-kit": "^2.0.0",
+    "lodash": "~4.0.0"
+  },
+  "deprecated": false,
+  "description": "Atom package providing side panel with class information.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tocjent/php-integrator-symbol-viewer#readme",
+  "keywords": [
+    "php",
+    "class-info",
+    "symbol-viewer",
+    "class-symbol-viewer",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/Main",
+  "name": "php-integrator-symbol-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tocjent/php-integrator-symbol-viewer.git"
+  },
+  "version": "0.6.4"
+}
