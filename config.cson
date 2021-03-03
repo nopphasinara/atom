@@ -4,9 +4,9 @@
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
-    autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
   "bracket-matcher":
     alwaysSkipClosingPairs: true
@@ -24,7 +24,7 @@
       "styleguide"
       "metrics"
       "language-shellscript"
-      "atom-autocomplete-php"
+      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "about"
@@ -136,6 +136,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, Prompt, Material-Design-Icons, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    maxScreenLineLength: 4096
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
     showIndentGuide: true
@@ -202,6 +203,9 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".null-grammar.plain.text":
+  editor:
+    softWrap: false
 ".python.source":
   editor:
     autoIndentOnPaste: true

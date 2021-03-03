@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+}
+
+div.main {
+  font-size: 2em;
+}
+
+a.nav-item {
+  color: red;
+}

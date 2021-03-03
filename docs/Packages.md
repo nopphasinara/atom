@@ -1,0 +1,85 @@
+# Atom
+
+### Built-in Packages
+
+- about (disabled)
+- archive-view
+- autocomplete-atom-api
+- autocomplete-css
+- autocomplete-html
+- autocomplete-plus
+- autocomplete-snippets
+- autoflow
+- autosave (disabled)
+- background-tips (disabled)
+- bookmarks (disabled)
+- bracket-matcher
+- command-palette
+- dalek
+- deprecation-cop (disabled)
+- dev-live-reload
+- encoding-selector
+- exception-reporting
+- find-and-replace
+- fuzzy-finder
+- github
+- git-diff
+- go-to-line
+- grammar-selector
+- image-view
+- incompatible-packages
+- keybinding-resolver
+- line-ending-selector
+- link
+- markdown-preview
+- metrics (disabled)
+- notifications
+- open-on-github
+- package-generator
+- settings-view
+- snippets
+- spell-check (disabled)
+- status-bar
+- styleguide (disabled)
+- symbols-view
+- tabs
+- timecop (disabled)
+- tree-view
+- update-package-dependencies
+- welcome (disabled)
+- whitespace
+- wrap-guide
+- language-c (disabled)
+- language-clojure
+- language-coffee-script
+- language-csharp (disabled)
+- language-css
+- language-gfm
+- language-git
+- language-go
+- language-html
+- language-hyperlink
+- language-java (disabled)
+- language-javascript
+- language-json
+- language-less
+- language-make
+- language-mustache (disabled)
+- language-objective-c
+- language-perl
+- language-php
+- language-property-list
+- language-python
+- language-ruby (disabled)
+- language-ruby-on-rails (disabled)
+- language-rust-bundled (disabled)
+- language-sass
+- language-shellscript
+- language-source
+- language-sql
+- language-text
+- language-todo
+- language-toml (disabled)
+- language-typescript
+- language-xml
+- language-yaml

@@ -10,6 +10,9 @@
     'ctrl-shift-.': 'key-binding-resolver:toggle',
     'alt-cmd-p': 'project-manager:edit-projects',
     'ctrl-alt-cmd-g': 'grammar-selector:show',
+    'ctrl-alt-cmd-|': 'custom:cursor-scope',
+    'ctrl-alt-cmd-\' ctrl-alt-cmd-.': 'custom:period-join',
+    'ctrl-alt-cmd-\' ctrl-alt-cmd-=': 'custom:plus-join',
   },
   'atom-workspace': {
     'ctrl-k ctrl-l': 'window:reload',
