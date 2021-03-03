@@ -149,7 +149,71 @@
 
 
   # PHP
+  ".text.html.php, .text.html": {
+    "print_r": {
+      "prefix": "pr",
+      "body": """
+      <?php echo '<pre>'; print_r($1); echo '</pre>'; ?>$0
+      """,
+    },
+    "<?php": {
+      "prefix": "ph",
+      "body": """
+      <?php$1$0
+      """,
+    },
+    "<?php … ?>": {
+      "prefix": "php",
+      "body": """
+      <?php${1: $2 }?>$0
+      """,
+    },
+  },
+
   ".source.php, .php": {
+    "?> … <?php": {
+      "prefix": "php",
+      "body": """
+      ?>$1<?php$0
+      """,
+    },
+
+    # If … else …
+    "if …": {
+      "prefix": "if",
+      "body": """
+      if ($1) \\{
+        ${2:\\/\\/ code...}
+      \\}$0
+      """,
+    },
+    "if … else …": {
+      "prefix": "ifel",
+      "body": """
+      if ($1) \\{
+        ${2:\\/\\/ code...}
+      \\} else \\{
+        ${3:\\/\\/ code...}
+      \\}$0
+      """,
+    },
+    "else if …": {
+      "prefix": "elif",
+      "body": """
+      elseif ($1) \\{
+        ${2:\\/\\/ code...}
+      \\}$0
+      """,
+    },
+    "else …": {
+      "prefix": "el",
+      "body": """
+      else \\{
+        ${1:\\/\\/ code...}
+      \\}$0
+      """,
+    },
+
     # Return
     "return": {
       "prefix": "r",
@@ -190,7 +254,7 @@
 
     # Function
     "function ()": {
-      "prefix": "f",
+      "prefix": "fn",
       "body": """
       function ($1) \\{$2\\}$0
       """,
@@ -204,9 +268,7 @@
     "print_r": {
       "prefix": "pr",
       "body": """
-      echo "<pre>";
-      print_r($1);
-      echo "</pre>";$0
+      echo '<pre>'; print_r($1); echo '</pre>';$0
       """,
     },
   },
@@ -317,6 +379,18 @@
         icon: \\"${5:function}\\",
         iconset: \\"${6:mdi}\\",
       \\}$0
+      """,
+    },
+    "New Snippet Selector": {
+      "prefix": "nss",
+      "body": """
+      \\"${1:selector}\\": {
+        \\"${2:name}\\":
+          \\"prefix\\": \\"$3\\",
+          \\"body\\": \\"\\"\\"
+          $4
+          \\"\\"\\",
+      },$0
       """,
     },
     "New Snippet Item": {

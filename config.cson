@@ -1,10 +1,12 @@
 "*":
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
+  "autocomplete-php":
+    executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
+    autoActivationDelay: 100
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
-    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
   "bracket-matcher":
     alwaysSkipClosingPairs: true
@@ -22,6 +24,7 @@
       "styleguide"
       "metrics"
       "language-shellscript"
+      "atom-autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "about"
@@ -122,6 +125,7 @@
       "find-and-replace"
       "php-integrator-symbol-viewer"
       "php-fmt"
+      "change-case"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
