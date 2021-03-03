@@ -1,4 +1,6 @@
 "*":
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
@@ -119,6 +121,7 @@
       "quantum-shell"
       "find-and-replace"
       "php-integrator-symbol-viewer"
+      "php-fmt"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -162,6 +165,10 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true
+  "php-fmt":
+    noBackup: true
+    useSpaceIndentation: true
+  "php-integrator-autocomplete-plus": {}
   "project-manager":
     prettifyTitle: false
     sortBy: "title"
