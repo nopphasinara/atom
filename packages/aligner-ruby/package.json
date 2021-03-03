@@ -19,11 +19,12 @@
   "_resolved": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
   "_shasum": "4a2512d39097ebc25611ff463760e79e1dc9ee6e",
   "_spec": "https://www.atom.io/api/packages/aligner-ruby/versions/1.7.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-12391-18k6p02.8oi5l",
+  "_where": "/private/tmp/apm-install-dir-202124-75604-pvkrmu.fpou",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-ruby/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "Ruby support for aligner",
   "engines": {

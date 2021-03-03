@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
   "_shasum": "643a56c310f90969feb9aef168ea8bc6e9c29577",
   "_spec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-34564-mo2lib.in7h",
+  "_where": "/private/tmp/apm-install-dir-202124-18650-tsp5vl.frfo",
   "activationCommands": {
     "atom-text-editor": [
       "turbo-javascript:end-line",
@@ -32,6 +32,7 @@
     "url": "https://github.com/extrabacon/atom-turbo-javascript/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "A collection of commands and snippets for optimizing Javascript and Typescript development productivity",
   "engines": {

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
   "_shasum": "5832c05e45b14b7f3b72c81f5ab28d0369177fdb",
   "_spec": "https://www.atom.io/api/packages/javascript-regex/versions/2.0.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-28631-z2qwne.nn4p",
+  "_where": "/private/tmp/apm-install-dir-202124-97595-13kahp7.7soc",
   "activationHooks": [
     "source.js:root-scope-used",
     "source.ts:root-scope-used",

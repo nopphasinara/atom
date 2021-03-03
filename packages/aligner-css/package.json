@@ -19,11 +19,12 @@
   "_resolved": "https://www.atom.io/api/packages/aligner-css/versions/1.2.1/tarball",
   "_shasum": "c05a306f68c6016a07effde5924329895a892bbc",
   "_spec": "https://www.atom.io/api/packages/aligner-css/versions/1.2.1/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-13203-1w8c9bb.d066",
+  "_where": "/private/tmp/apm-install-dir-202124-72607-i39yya.6yvkb",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-css/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "CSS support for aligner",
   "engines": {

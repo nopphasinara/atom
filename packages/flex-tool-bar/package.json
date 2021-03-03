@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
   "_shasum": "cc301168ed66a919cc459e77826796fe93ce3967",
   "_spec": "https://www.atom.io/api/packages/flex-tool-bar/versions/2.2.5/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-74449-18n4gjh.oo7m",
+  "_where": "/private/tmp/apm-install-dir-202124-89538-1t97837.jgil",
   "atomTestRunner": "./spec/runner",
   "bugs": {
     "url": "https://github.com/cakecatz/flex-toolbar/issues"

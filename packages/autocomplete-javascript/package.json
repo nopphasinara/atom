@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
   "_shasum": "b55fb5d940bb0d0c1eb5e4093364ae629499aa55",
   "_spec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-50290-7k41fd.icn1o",
+  "_where": "/private/tmp/apm-install-dir-202124-79979-1xi645o.k0vr",
   "activationCommands": {
     "atom-workspace": "autocomplete-javascript:toggle"
   },
@@ -27,6 +27,7 @@
     "url": "https://github.com/guiguan/autocomplete-javascript/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "[WIP] The missing Atom autocompletion support for modern javascript",
   "engines": {

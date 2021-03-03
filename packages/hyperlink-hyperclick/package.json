@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
   "_shasum": "3f23b8544b67349813216655f4744aa0c52caf06",
   "_spec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-12794-b1fjo5.09wcv",
+  "_where": "/private/tmp/apm-install-dir-202124-91651-8pikq8.qhhfc",
   "atomTestRunner": "atom-jasmine3-test-runner",
   "author": {
     "name": "Tony Brix"

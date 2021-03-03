@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/es6-javascript/versions/1.0.0/tarball",
   "_shasum": "691aa7b6cb62c7665a1155c55c9e64ee3104dd52",
   "_spec": "https://www.atom.io/api/packages/es6-javascript/versions/1.0.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-36166-avwo95.f7k2",
+  "_where": "/private/tmp/apm-install-dir-202124-88042-bgacdo.53sb",
   "activationCommands": {
     "atom-text-editor": [
       "es6-javascript:end-line",
@@ -32,6 +32,7 @@
     "url": "https://github.com/hharnisc/atom-es6-javascript/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "A collection of commands and ES6 focused snippets for optimizing modern Javascript development productivity.",
   "engines": {

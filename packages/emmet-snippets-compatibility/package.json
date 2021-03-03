@@ -19,11 +19,12 @@
   "_resolved": "https://www.atom.io/api/packages/emmet-snippets-compatibility/versions/1.0.6/tarball",
   "_shasum": "7b06ff8d028c8a765ae74775142d1affd2dfac49",
   "_spec": "https://www.atom.io/api/packages/emmet-snippets-compatibility/versions/1.0.6/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-6485-rrdem8.mxaw",
+  "_where": "/private/tmp/apm-install-dir-202124-87324-3j0w5s.hf7c",
   "bugs": {
     "url": "https://github.com/peterjohnhunt/emmet-snippets-compatibility/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "Gives Atom autocomplete-snippets primary tab function over emmet. Adds emmet php compatibility",
   "engines": {

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
   "_shasum": "549bf83284efd08ee5f8e7694e132e03a77df687",
   "_spec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-29566-134hevc.p1na",
+  "_where": "/private/tmp/apm-install-dir-202124-85387-1fdx8b3.05rj",
   "activationCommands": {
     "atom-workspace": "duplicate-removal:toggle"
   },
@@ -27,6 +27,7 @@
     "url": "https://github.com/FloydaGithub/duplicate-removal/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "remove duplicate lines | 删除重复行",
   "engines": {

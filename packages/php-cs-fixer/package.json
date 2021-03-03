@@ -32,7 +32,7 @@
   "_resolved": "https://www.atom.io/api/packages/php-cs-fixer/versions/4.2.0/tarball",
   "_shasum": "446ea67615f72187aa4486b95b8f7007a084fc9d",
   "_spec": "https://www.atom.io/api/packages/php-cs-fixer/versions/4.2.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202122-45995-objf9w.2959",
+  "_where": "/private/tmp/apm-install-dir-202124-6645-1rgto9i.yly5",
   "author": {
     "name": "Matthias Pfefferle",
     "url": "http://pfefferle.org/"
@@ -41,6 +41,7 @@
     "url": "https://github.com/pfefferle/atom-php-cs-fixer/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "Run the 'PHP Coding Standards Fixer' within Atom",
   "engines": {

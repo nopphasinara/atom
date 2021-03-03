@@ -19,11 +19,12 @@
   "_resolved": "https://www.atom.io/api/packages/aligner-python/versions/1.2.0/tarball",
   "_shasum": "55c44cc5c25d4f9ffff571bfb6a3fcb44891a0cc",
   "_spec": "https://www.atom.io/api/packages/aligner-python/versions/1.2.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-2021128-17722-1fnhut4.5ka5",
+  "_where": "/private/tmp/apm-install-dir-202124-74838-1cx96e.l17mu",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner-python/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {},
   "deprecated": false,
   "description": "Python support for Aligner",
   "engines": {

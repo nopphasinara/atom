@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
   "_shasum": "125efaf244bf5b02f9ca4a500dd6d45e5c9d4394",
   "_spec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
-  "_where": "/private/var/folders/yc/m2z5mjrd7hvdvhhxd0gj76wh0000gn/T/apm-install-dir-202122-78815-1rt5rjz.tcx6j",
+  "_where": "/private/tmp/apm-install-dir-202124-88813-133l0m4.403bf",
   "activationCommands": {
     "atom-text-editor": [
       "expand-selection-to-quotes:toggle"
