@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/php-fmt/versions/0.1.2/tarball",
   "_shasum": "850df2366a95893d362b50bf82235a37877bb297",
   "_spec": "https://www.atom.io/api/packages/php-fmt/versions/0.1.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-202124-7316-assa2d.qwhi",
+  "_where": "/private/tmp/apm-install-dir-202124-61985-1vsifv1.19edk",
   "activationCommands": {
     "atom-workspace": "php-fmt:transform"
   },
