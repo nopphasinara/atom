@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+  "_id": "blade-spacer@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-1kFBR2ixTa3WBFdzsqtTgEAJAxxzdJoPQfBvIcQ4WZl9ymCmc6tXZ8oyVPazW/X8d+djH06J/Y1s6aHXDYjDFA==",
+  "_location": "/blade-spacer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+  "_shasum": "51d97a12e4a641c599af9352133affec50fbd5db",
+  "_spec": "https://www.atom.io/api/packages/blade-spacer/versions/0.4.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-52872-1lwa2dz.oude",
+  "bugs": {
+    "url": "https://github.com/ishanray/blade-spacer/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Automatically adds spaces to laravel blade syntax for readability.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ishanray/blade-spacer#readme",
+  "keywords": [
+    "blade spacer",
+    "blade",
+    "laravel"
+  ],
+  "license": "MIT",
+  "main": "./lib/blade-spacer",
+  "name": "blade-spacer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishanray/blade-spacer.git"
+  },
+  "version": "0.4.2"
+}

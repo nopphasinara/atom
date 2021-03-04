@@ -129,10 +129,6 @@
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "one-dark-vivid-syntax"
-    ]
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, Prompt, Material-Design-Icons, master-icons, Consolas, DejaVu Sans Mono, monospace"
@@ -200,6 +196,10 @@
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".coffee.source":
   editor:
     autoIndentOnPaste: true

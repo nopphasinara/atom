@@ -179,6 +179,16 @@
     },
   },
 
+  ".meta.embedded.block.php .source.php": {
+    "elseif ()": {
+      "prefix": "eif",
+      "body": """
+      \\} elseif ($1) \\{
+        $2$0
+      """,
+    },
+  }
+
   ".source.php, .php": {
     "?> … <?php": {
       "prefix": "php",
@@ -188,6 +198,22 @@
     },
 
     # If … else …
+    "if-function_exists": {
+      "prefix": "if-fn-exts",
+      "body": """
+      if (function_exists('${1:func_name}')) {
+        $2
+      }$0
+      """,
+    },
+    "if-!function_exists": {
+      "prefix": "if-fn-nexts",
+      "body": """
+      if (!function_exists('${1:func_name}')) {
+        function ${1:func_name}($2) {$3}
+      }$0
+      """,
+    },
     "if …": {
       "prefix": "if",
       "body": """
