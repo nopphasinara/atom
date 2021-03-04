@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+  "_id": "laravel-model-attributes@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kbW9hMFeeeVkqk8asyi1B9V/BEEFrXEMlpaJoXUyCBLFRpnVzn1ySHJtR2+T6Iioe7jJgWeHrWvJlrN7XoFyeA==",
+  "_location": "/laravel-model-attributes",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+  "_shasum": "41c12d4fd8edc69fc7305061982edf5fe8963132",
+  "_spec": "https://www.atom.io/api/packages/laravel-model-attributes/versions/0.6.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-66110-1bnitan.vp09",
+  "bugs": {
+    "url": "https://github.com/AliAwwad/laravel-model-attributes/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mysql": "^2.17.1"
+  },
+  "deprecated": false,
+  "description": "Laravel Model Attributes package targets a Laravel+MySQL projects to assist developers with autocomplete functionality to auto-complete a given Model by taking its name to guess the mysql related table.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/AliAwwad/laravel-model-attributes#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "laravel-model-attributes",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAwwad/laravel-model-attributes.git"
+  },
+  "version": "0.6.0"
+}

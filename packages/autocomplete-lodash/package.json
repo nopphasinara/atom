@@ -1,0 +1,57 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+  "_id": "autocomplete-lodash@0.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-ucQhCw79w4S7XVn+JOALDiXInqD1Gn1p02FgCbApy2kXWMxRKThFqpl7b828Wkv8DIS4kLtOHsp2XdvulgZ83w==",
+  "_location": "/autocomplete-lodash",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+  "_shasum": "1bfa2edf1c5a1d5eaf990c2f1978be7452183e69",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-lodash/versions/0.2.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-82743-jsrgfe.xtok",
+  "author": {
+    "name": "HiDeoo"
+  },
+  "bugs": {
+    "url": "https://github.com/HiDeoo/autocomplete-lodash/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Lodash methods autocompletions",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/HiDeoo/autocomplete-lodash",
+  "keywords": [
+    "lodash",
+    "autocompletion"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "autocomplete-lodash",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiDeoo/autocomplete-lodash.git"
+  },
+  "version": "0.2.3"
+}

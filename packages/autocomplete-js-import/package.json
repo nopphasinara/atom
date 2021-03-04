@@ -1,0 +1,72 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+  "_id": "autocomplete-js-import@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-mfv1pIxzy035kapc05fY+W1lkRd3s4o/Dr1iT6DaOKGg/c9QoWenkSKLIb+6bQkInP3WODOae9al+Q/IjwI4zQ==",
+  "_location": "/autocomplete-js-import",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+  "_shasum": "160c3cda78289618044641d9ffbe470bf543cbaf",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-js-import/versions/1.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-16252-z1k86n.s1g2",
+  "author": {
+    "name": "Daniel Garcia-Carrillo"
+  },
+  "bugs": {
+    "url": "https://github.com/DanielGarcia-Carrillo/autocomplete-js-import/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fuzzy": "^0.1.1",
+    "glob": "^7.0.5",
+    "lodash.uniq": "^4.2.0"
+  },
+  "deprecated": false,
+  "description": "Autocompletes commonjs and es6 import statements",
+  "devDependencies": {
+    "eslint": "^2.5.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/DanielGarcia-Carrillo/autocomplete-js-import#readme",
+  "keywords": [
+    "autocomplete",
+    "autocomplete-plus",
+    "fuzzy",
+    "atom",
+    "es6",
+    "es2015",
+    "require",
+    "import"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "autocomplete-js-import",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGarcia-Carrillo/autocomplete-js-import.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.0"
+}

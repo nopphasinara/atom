@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+  "_id": "docblockr@0.13.7",
+  "_inBundle": false,
+  "_integrity": "sha512-vpQGcDrVwn95ZNKawFTO3boQCvZm15SAWaaCpbqeCJIaIjLBFDPlVmHiJfs+SW0rOmGemz5cflgfXe/5etWgZw==",
+  "_location": "/docblockr",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+  "_shasum": "8b923e92244b0c29ec3b8e45c17c5c8bae6d43f7",
+  "_spec": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-34121-19jvpxt.dm06",
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/nikhilkalige/docblockr/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "snippets": {
+      "versions": {
+        "^0.1.0": "consumeSnippetsService"
+      }
+    }
+  },
+  "dependencies": {
+    "xregexp": "^3.2.0"
+  },
+  "deprecated": false,
+  "description": "A helper package for writing documentation",
+  "devDependencies": {
+    "atom-mocha-test-runner": "0.2.2",
+    "chai": "^3.5.0",
+    "eslint": "^4.10.0",
+    "js-yaml": "^3.6.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/nikhilkalige/docblockr#readme",
+  "license": "MIT",
+  "main": "./lib/docblockr.js",
+  "name": "docblockr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilkalige/docblockr.git"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "cd ~/.atom/packages; atom --test docblockr/spec"
+  },
+  "version": "0.13.7"
+}

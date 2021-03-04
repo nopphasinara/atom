@@ -1,0 +1,104 @@
+[
+	{
+		"displayText": "promise",
+		"snippet": "new Promise((resolve, reject) => {${1:}});",
+		"description": "new Promise((resolve, reject) => {???})",
+		"label": "new Promise"
+	},
+	{
+		"displayText": "then",
+		"snippet": "then((${1:result}) => {${2:}})${3:;}",
+		"description": "then(result => {???})",
+		"label": "then"
+	},
+	{
+		"displayText": "catch",
+		"snippet": "catch((${1:err}) => {${2:}});",
+		"description": "catch(result => {???})",
+		"label": "catch"
+	},
+	{
+		"displayText": "function",
+		"snippet": "let ${1:functionName} = (${2:params}) => {${3:}};",
+		"description": "Arrow Function Template",
+		"label": "let foo = () => {???}"
+	},
+	{
+		"displayText": "map",
+		"snippet": "map(${1:item} => $2);",
+		"description": "map(item => ???)",
+		"label": "simple map"
+	},
+	{
+		"displayText": "filter",
+		"snippet": "filter(${1:item} => $2);",
+		"description": "filter(item => ???)",
+		"label": "simple filter"
+	},
+	{
+		"displayText": "map",
+		"snippet": "map((${1:item}${2:, index}) => { ${3:return $4; }});",
+		"description": "map((item, index) => { return ???; });",
+		"label": "extended map"
+	},
+	{
+		"displayText": "filter",
+		"snippet": "filter((${1:item}${2:, index}) => { ${3:return $4; }});",
+		"description": "filter((item, index) => { return ???; });",
+		"label": "extended filter"
+	},
+	{
+		"displayText": "reduce",
+		"snippet": "reduce((a, b) => ${1:\\{$2\\}}, ${3:[]})${4:;}",
+		"description": "reduce((a, b) => ??? , []);",
+		"label": "Array reduce"
+	},
+	{
+		"displayText": "setTimeout",
+		"snippet": "setTimeout(${2:() => \\{$3\\}}, ${1:miliseconds});",
+		"description": "setTimeout(() => {???}, miliseconds);",
+		"label": "setTimeout"
+	},
+	{
+		"displayText": "setInterval",
+		"snippet": "setInterval(${2:() => \\{$3\\}}, ${1:miliseconds});",
+		"description": "setInterval(() => {???}, miliseconds);",
+		"label": "setInterval"
+	},
+	{
+		"displayText": "find",
+		"snippet": "find({${1:foo}: ${2:bar}})$3",
+		"description": "Model.find({foo: bar})",
+		"label": "Mongoose Find"
+	},
+	{
+		"displayText": "findOne",
+		"snippet": "findOne({${1:foo}: ${2:bar}})$3",
+		"description": "Model.findOne({foo: bar})",
+		"label": "Mongoose Find One"
+	},
+	{
+		"displayText": "save",
+		"snippet": "save((err${1:, doc}) => {$2})",
+		"description": "Model.save((err, doc) => {???})",
+		"label": "Mongoose Save"
+	},
+	{
+		"displayText": "exec",
+		"snippet": "exec((err, ${1:doc}) => {$2});",
+		"description": "exec((err, doc) => {???})",
+		"label": "Mongoose exec"
+	},
+	{
+		"displayText": "limit",
+		"snippet": "limit($1)$2",
+		"description": "limit(n)",
+		"label": "Mongoose limit"
+	},
+	{
+		"displayText": "select",
+		"snippet": "select($1)$2",
+		"description": "select(paths)",
+		"label": "Mongoose select"
+	}
+]

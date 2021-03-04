@@ -1,0 +1,100 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+  "_id": "autocomplete-json@5.5.5",
+  "_inBundle": false,
+  "_integrity": "sha512-bLbArAYIWnRXXmXwKvPzd55vpFL+O518mQ5DRdvd6hrpaqzwG1T+FdW4NWL73dM9spbmHcYD65pCHTHpmOsy4Q==",
+  "_location": "/autocomplete-json",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+  "_shasum": "428bd869c5a406246bb56bfd2bda2af23cc1d89f",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-json/versions/5.5.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-20472-1ygp9vw.4pp1",
+  "activationHooks": [
+    "language-json:grammar-used",
+    "language-json-comments:grammar-used"
+  ],
+  "atomTestRunner": "atom-jasmine3-test-runner",
+  "author": {
+    "name": "Balazs Edes"
+  },
+  "bugs": {
+    "url": "https://github.com/bali182/autocomplete-json/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "jsonschema.provider": {
+      "versions": {
+        "1.0.0": "consumeJsonSchemaProviders"
+      }
+    },
+    "jsonautocomplete.provider": {
+      "versions": {
+        "1.0.0 ": "consumeJsonProposalProviders"
+      }
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "minimatch": "^3.0.4",
+    "query-string": "^6.14.1",
+    "semver-stable": "^3.0.0",
+    "semver-utils": "^1.1.4",
+    "tokenizer2": "^2.0.1",
+    "uri-js": "^4.4.1"
+  },
+  "deprecated": false,
+  "description": "Atom autocomplete+ plugin for semantic JSON completions",
+  "devDependencies": {
+    "@semantic-release/apm-config": "^8.0.0",
+    "atom-jasmine3-test-runner": "^5.1.9",
+    "eslint": "^7.21.0",
+    "semantic-release": "^17.4.0"
+  },
+  "homepage": "https://github.com/bali182/autocomplete-json#readme",
+  "keywords": [
+    "autocomplete",
+    "json",
+    "atom"
+  ],
+  "license": "MIT",
+  "main": "./src/main",
+  "name": "autocomplete-json",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "jsonschema.provider": {
+      "versions": {
+        "1.0.0": "provideJsonSchemaProviders"
+      }
+    },
+    "jsonautocomplete.provider": {
+      "versions": {
+        "1.0.0": "provideProposalProviders"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bali182/autocomplete-json.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "atom --test ./spec"
+  },
+  "version": "5.5.5"
+}

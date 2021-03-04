@@ -1,0 +1,296 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+  "_id": "linter-ui-default@3.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-1eneJbYyrISyYmBx4PyRScMteJflItObW5LpLgCa9JA8eEvzC73SJH9vJ55R5f83HObbtucpN9iK/rkrwizBbw==",
+  "_location": "/linter-ui-default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+  "_shasum": "b5d696a4307331162691fd2386bd185139a9818f",
+  "_spec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-39162-1xpsavn.w1wji",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "alias": {
+    "solid-simple-table": "solid-simple-table/dist/SimpleTable.module"
+  },
+  "bugs": {
+    "url": "https://github.com/steelbrain/linter-ui-default/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "showPanel": {
+      "type": "boolean",
+      "description": "Show panel at the bottom of screen",
+      "default": false,
+      "order": 1
+    },
+    "showTooltip": {
+      "description": "Show inline issue tooltips",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showStatusBar": {
+      "description": "Show status bar with error / warning / info count at the bottom",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showDecorations": {
+      "description": "Underline editor text and highlight gutter of issues",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "showProviderName": {
+      "type": "boolean",
+      "description": "Show provider name in tooltip (Hint: It's always shown in the panel)",
+      "default": false,
+      "order": 1
+    },
+    "useBusySignal": {
+      "description": "Whether to integrate with the `busy-signal` package",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "hidePanelWhenEmpty": {
+      "description": "Hide panel when there are no issues to display",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "alwaysTakeMinimumSpace": {
+      "description": "Auto resizes Linter panel when there are less issues to show",
+      "type": "boolean",
+      "default": false,
+      "order": 1
+    },
+    "decorateOnTreeView": {
+      "type": "string",
+      "description": "Underline the selected type in TreeView to indicate issues",
+      "default": "Files",
+      "enum": [
+        "Files and Directories",
+        "Files",
+        "None"
+      ],
+      "order": 2
+    },
+    "panelRepresents": {
+      "type": "string",
+      "enum": [
+        "Entire Project",
+        "Current File",
+        "Current Line"
+      ],
+      "default": "Current File",
+      "order": 2
+    },
+    "statusBarPosition": {
+      "title": "Statusbar Position",
+      "type": "string",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "default": "Left",
+      "order": 2
+    },
+    "statusBarRepresents": {
+      "title": "Statusbar Represents",
+      "type": "string",
+      "enum": [
+        "Entire Project",
+        "Current File"
+      ],
+      "default": "Entire Project",
+      "order": 2
+    },
+    "statusBarClickBehavior": {
+      "title": "Statusbar Click Behavior",
+      "type": "string",
+      "enum": [
+        "Toggle Panel",
+        "Toggle Status Bar Scope",
+        "Jump to next issue"
+      ],
+      "default": "Toggle Panel",
+      "order": 2
+    },
+    "tooltipFollows": {
+      "type": "string",
+      "description": "Choose whether tooltips show on mouseover, or follow the keyboard cursor",
+      "enum": [
+        "Both",
+        "Mouse",
+        "Keyboard"
+      ],
+      "default": "Both",
+      "order": 2
+    },
+    "gutterPosition": {
+      "title": "Gutter Highlights Position",
+      "description": "Relative to the line numbers",
+      "type": "string",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "default": "Right",
+      "order": 2
+    },
+    "panelHeight": {
+      "title": "Panel Height",
+      "description": "in px",
+      "type": "number",
+      "default": 100,
+      "order": 3
+    },
+    "longLineLength": {
+      "title": "Long Line Length",
+      "description": "If an editor has a line with a length more than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 4000,
+      "order": 10
+    },
+    "largeFileLineCount": {
+      "title": "Large File Line Count",
+      "description": "If an editor more line numbers than this number, linter will skip adding inline linter markers.",
+      "type": "number",
+      "default": 20000,
+      "order": 11
+    }
+  },
+  "consumedServices": {
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "consumeSignal"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^7.2.2",
+    "disposable-event": "^1.1.0",
+    "lodash": "^4.17.20",
+    "marked": "^1.2.9",
+    "solid-js": "^0.23.11",
+    "solid-simple-table": "^0.1.4"
+  },
+  "deprecated": false,
+  "description": "Default UI for the Linter package",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@types/atom": "^1.40.7",
+    "@types/chance": "^1.1.1",
+    "@types/jasmine": "^3.6.3",
+    "@types/lodash": "^4.14.168",
+    "@types/marked": "^1.2.2",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "atom-ide-base": "2.3.4",
+    "babel-plugin-transform-globalthis": "^1.0.0",
+    "babel-preset-atomic": "^3.0.2",
+    "babel-preset-solid": "^0.23.8",
+    "build-commit": "0.1.4",
+    "chance": "^1.1.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.19.0",
+    "eslint-config-atomic": "1.9.0",
+    "jasmine-fix": "^1.3.1",
+    "parcel": "2.0.0-nightly.574",
+    "prettier": "^2",
+    "shx": "^0.3.3",
+    "typescript": "^4"
+  },
+  "engines": {
+    "atom": ">=1.52.0",
+    "electron": ">=6.x"
+  },
+  "homepage": "https://github.com/steelbrain/linter-ui-default#readme",
+  "keywords": [
+    "linter-ui",
+    "linter-ui-default"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "linter-ui-default",
+  "package-deps": [
+    {
+      "name": "intentions"
+    },
+    {
+      "name": "linter",
+      "minimumVersion": "3.0.0"
+    }
+  ],
+  "providedServices": {
+    "linter-ui": {
+      "versions": {
+        "1.0.0": "provideUI"
+      }
+    },
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/linter-ui-default.git"
+  },
+  "scripts": {
+    "babel": "babel dist --out-dir dist --retain-lines",
+    "babel.globalThis": "babel dist --out-dir dist --plugins babel-plugin-transform-globalthis --retain-lines",
+    "benchmark": "cross-env NODE_ENV=production npm run tsc.build && atom --test ./benchmark/benchmark.js",
+    "build": "cross-env NODE_ENV=production parcel build --target main ./lib/index.ts && npm run babel.globalThis",
+    "build-commit": "npm run clean && build-commit -o dist",
+    "build.clean": "npm run clean && npm run build",
+    "clean": "shx rm -rf dist .parcel-cache",
+    "dev": "cross-env NODE_ENV=development parcel watch --target main ./lib/index.ts",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix && npm run format",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build-commit",
+    "test": "npm run tsc.build && npm run build && npm run test.only",
+    "test.only": "atom --test spec",
+    "tsc.build": "npm run clean && cross-env NODE_ENV=production tsc -p lib/tsconfig.json || echo done && npm run babel",
+    "tsc.dev": "npm run clean && cross-env NODE_ENV=development tsc --watch -p lib/tsconfig.json || echo done && npm run babel"
+  },
+  "targets": {
+    "main": {
+      "context": "node",
+      "includeNodeModules": {
+        "atom": false,
+        "electron": false,
+        "atom-package-deps": false,
+        "disposable-event": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "3.2.5"
+}

@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+  "_id": "autoclose-html-plus@0.27.2",
+  "_inBundle": false,
+  "_integrity": "sha512-BUzi5coMIM2xWd5QNmtdkJfQ6SMyvC6uUYAh2a7w6UlZgC+GK04PMOQZC9mt2OS+Ke/4WERSGTqPsXwjylFmEw==",
+  "_location": "/autoclose-html-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+  "_shasum": "a70106c2675a4fca2145c5468a0ad37e3a6efcb9",
+  "_spec": "https://www.atom.io/api/packages/autoclose-html-plus/versions/0.27.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-86336-lmnm9b.y2mk",
+  "bugs": {
+    "url": "https://github.com/binaryfunt/autoclose-html-plus/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Ronnie Dutta",
+      "url": "https://github.com/binaryfunt"
+    },
+    {
+      "name": "Matt Berkowitz",
+      "url": "https://github.com/mattberkowitz"
+    },
+    {
+      "name": "Evan Hahn",
+      "email": "me@evanhahn.com",
+      "url": "http://evanhahn.com"
+    },
+    {
+      "name": "Mat Silva",
+      "email": "askmatsilva@.com",
+      "url": "https://github.com/matsilva"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Automates closing of HTML/XML type tags in Atom. Forked from autoclose-html",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/binaryfunt/autoclose-html-plus",
+  "license": "MIT",
+  "main": "./lib/autoclose-html",
+  "name": "autoclose-html-plus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binaryfunt/autoclose-html-plus.git"
+  },
+  "version": "0.27.2"
+}

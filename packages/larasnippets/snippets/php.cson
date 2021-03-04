@@ -1,0 +1,72 @@
+'.source.php':
+    # Quick array key/value pairs
+    'Key/Value Pairs':
+        'prefix': 'kv'
+        'body': """
+        '$1' => ${2:'$3'},$0
+        """
+
+    # This keyword
+    'The $this Keyword':
+        'prefix': 'this'
+        'body': '\$this'
+
+    # DocBlock Comment
+    'DocBlock Comment Shorter Expansion':
+        'prefix': '/'
+        'body': """
+            /**
+             * $1
+             */
+        """
+
+    # Another variant of the DocBlock comment
+    'DocBlock Comment':
+        'prefix': '/**'
+        'body': """
+            /**
+             * $1
+             */
+        """
+
+    # Anonymous function
+    'PHP Anonymous Function':
+        'prefix': 'func'
+        'body': """
+            function ($1) {
+                $2
+            }
+        """
+
+    'PHP Public Function Based on PhpStorm':
+      'prefix': 'pubf'
+      'body': """
+        public function $1($2)
+        {
+            $0
+        }
+      """
+
+    'PHP Protected Function Based on PhpStorm':
+      'prefix': 'prof'
+      'body': """
+        protected function $1($2)
+        {
+            $0
+        }
+      """
+
+    'PHP Private Function Based on PhpStorm':
+      'prefix': 'prif'
+      'body': """
+        private function $1($2)
+        {
+            $0
+        }
+      """
+
+    'PHP Public Function for an interface':
+      'prefix': 'ipubf'
+      'body': """
+        public function $1($2);
+      """

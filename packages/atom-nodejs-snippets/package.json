@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+  "_id": "atom-nodejs-snippets@2.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-XKBCPY/4w5IzCtVfMbD5kTO/Mv6McV95BoAfP1Sp7D6bhbSGf+xmxs9AFJElu+ZEIxI7lWDhCEzbtTi4N0u0Ag==",
+  "_location": "/atom-nodejs-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+  "_shasum": "d5aea3e899fe4997502ce4eda6c69af1a0226f31",
+  "_spec": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-6503-1hm5vwx.w1wt",
+  "activationCommands": {
+    "atom-workspace": "atom-nodejs-snippets:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/amandeepmittal/atom-nodejs-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A collection of Nodejs, JavaScript snippets.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/amandeepmittal/atom-nodejs-snippets#readme",
+  "keywords": [
+    "nodejs",
+    "snippet",
+    "javascript",
+    "js",
+    "node",
+    "es6"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-nodejs-snippets",
+  "name": "atom-nodejs-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandeepmittal/atom-nodejs-snippets.git"
+  },
+  "version": "2.1.1"
+}

@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+  "_id": "jquery-snippets@11.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-WWd7+nNkDLcTUn2ps77bVQIMeRlIhk4HjHKfdJLYg1weTDgV+7K9abNimJd16DbKRiqOrh7MXI8LCOdA3Mp8ww==",
+  "_location": "/jquery-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+  "_shasum": "f6956ab07d72e7cbca288a75008294a3810dfe66",
+  "_spec": "https://www.atom.io/api/packages/jquery-snippets/versions/11.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-54985-b14rp.56dcf9",
+  "bugs": {
+    "url": "https://github.com/james2doyle/atom-jquery-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "deprecated": false,
+  "description": "jQuery Snippets for Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/james2doyle/atom-jquery-snippets",
+  "license": "MIT",
+  "main": "./lib/jquery-snippets",
+  "name": "jquery-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james2doyle/atom-jquery-snippets.git"
+  },
+  "version": "11.0.0"
+}

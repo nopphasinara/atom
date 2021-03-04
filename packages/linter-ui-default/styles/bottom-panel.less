@@ -1,0 +1,31 @@
+@import (inline) '../node_modules/solid-simple-table/dist/SimpleTable.css';
+@import 'ui-variables';
+
+.solid-simple-table.linter {
+  color: @text-color;
+  font-size: @font-size;
+}
+
+.solid-simple-table.linter thead {
+  background-color: darken(@base-background-color, 3%);
+  user-select: none;
+}
+
+.solid-simple-table.linter tbody {
+  background-color: @base-background-color;
+}
+
+.solid-simple-table.linter td,
+.solid-simple-table.linter th {
+  padding: 3px 10px;
+}
+
+.solid-simple-table.linter td {
+  min-width: 100px;
+  border: (@font-size / 7) solid darken(@base-background-color, 3%);
+}
+
+.solid-simple-table.linter td:nth-child(4),
+.solid-simple-table.linter td:nth-child(5) {
+  cursor: pointer;
+}

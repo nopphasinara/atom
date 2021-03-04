@@ -1,6 +1,12 @@
 "*":
+  "Sublime-Style-Column-Selection": {}
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
+  "atom-minify":
+    checkOutputFileAlreadyExists: true
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
@@ -13,6 +19,8 @@
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
+  composer:
+    composerPath: "/usr/local/bin/composer"
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -24,7 +32,6 @@
       "styleguide"
       "metrics"
       "language-shellscript"
-      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "about"
@@ -126,8 +133,15 @@
       "php-integrator-symbol-viewer"
       "php-fmt"
       "change-case"
+      "sequential-number"
+      "advanced-open-file"
+      "atom-nodejs-snippets"
+      "docblockr"
+      "git-plus"
+      "atom-wrap-in-tag"
     ]
     restorePreviousWindowsOnStart: "always"
+    simpleFullScreenWindows: true
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
@@ -153,6 +167,23 @@
     searchAllPanes: true
   "git-diff":
     showIconsInEditorGutter: true
+  "git-menu":
+    confirmationDialogs: {}
+    contextMenuItems:
+      "commit-staged": false
+      fetch: false
+      "fetch-all": false
+      pull: false
+      "pull-all": false
+      push: false
+      "push-all": false
+      refresh: false
+      "run-command": false
+      sync: false
+      "sync-all": false
+  "git-plus":
+    diffs:
+      useSplitDiff: true
   github:
     showDiffIconGutter: true
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
@@ -160,6 +191,17 @@
     darwinTriggerKeys: "altKey"
   "js-hyperclick":
     jumpToImport: true
+  "language-applescript":
+    autoCompile: false
+  "language-babel":
+    autoIndentJSX: true
+  "laravel-model-attributes": {}
+  linter:
+    lintPreviewTabs: false
+  "linter-ui-default":
+    largeFileLineCount: 15000
+    longLineLength: 3000
+    panelHeight: 240
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true

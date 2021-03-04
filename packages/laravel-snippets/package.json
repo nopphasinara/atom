@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+  "_id": "laravel-snippets@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-BeQskJu9JfjXN3dLPE8lbgCQje36ESUZRLPo4mOIJ139Kw02Fz30jOE3Qa7cPYe8nHL6+NGG1YP+4DmR+swMbQ==",
+  "_location": "/laravel-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+  "_shasum": "708d6f8331fba9a3de3a19674cf326d0f83825f4",
+  "_spec": "https://www.atom.io/api/packages/laravel-snippets/versions/2.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202124-68426-1c2bpxz.q2fp",
+  "bugs": {
+    "url": "https://github.com/nmfzone/atom-laravel-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Laravel code snippets for Atom Text Editor",
+  "engines": {
+    "atom": ">= 1.0.0"
+  },
+  "homepage": "https://github.com/nmfzone/atom-laravel-snippets#readme",
+  "keywords": [
+    "snippets",
+    "laravel",
+    "migration-snippets"
+  ],
+  "license": "MIT",
+  "name": "laravel-snippets",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmfzone/atom-laravel-snippets.git"
+  },
+  "version": "2.1.0"
+}

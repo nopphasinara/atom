@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle laravel-model-attributes",
+        "command": "laravel-model-attributes:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "laravel-model-attributes",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "laravel-model-attributes:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
