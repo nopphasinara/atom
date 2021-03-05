@@ -3,6 +3,9 @@
   "advanced-open-file":
     defaultInputValue: "Empty"
     fuzzyMatch: true
+  "aligner-php":
+    ",-alignment": "left"
+    ",-leftSpace": true
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
   "atom-minify":
@@ -139,6 +142,7 @@
       "docblockr"
       "git-plus"
       "atom-wrap-in-tag"
+      "php-ide-serenata"
     ]
     restorePreviousWindowsOnStart: "always"
     simpleFullScreenWindows: true
@@ -206,10 +210,21 @@
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true
+  "php-cs-fixer":
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    phpExecutablePath: "/usr/local/bin/php"
   "php-fmt":
     noBackup: true
     useSpaceIndentation: true
-  "php-integrator-autocomplete-plus": {}
+  "php-ide-serenata":
+    core:
+      phpCommand: "/usr/local/bin/php"
+    storagePath: "/Users/fineart/Library/Preferences/php-ide-serenata"
+  "php-integrator-autocomplete-plus":
+    disableBuiltinAutocompletion: false
+  "php-integrator-base-legacy-php56":
+    memoryLimit: 2048
+    phpCommand: "/usr/local/bin/php"
   "project-manager":
     prettifyTitle: false
     sortBy: "title"
@@ -242,6 +257,9 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
 ".null-grammar.plain.text":
   editor:
     softWrap: false

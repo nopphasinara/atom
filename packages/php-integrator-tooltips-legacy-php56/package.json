@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+  "_id": "php-integrator-tooltips-legacy-php56@1.1.6",
+  "_inBundle": false,
+  "_integrity": "sha512-RYh0SSqT6QkWltCy5pW/Sux4dMVFRuRo14GMNIEhE3RQVDUhMi7kg5yKaZadnMG25+4h5j5Jkp1zm8x6K5TAkA==",
+  "_location": "/php-integrator-tooltips-legacy-php56",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+  "_shasum": "f5c313aec7b24592c64ccc3a1a12bdafdb296d90",
+  "_spec": "https://www.atom.io/api/packages/php-integrator-tooltips-legacy-php56/versions/1.1.6/tarball",
+  "_where": "/private/tmp/apm-install-dir-202125-80880-145gv3d.y8ne",
+  "bugs": {
+    "url": "https://github.com/php-integrator/atom-tooltips-legacy-php56/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "^2.0": "setService"
+      }
+    }
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "sub-atom": "~1.0.0"
+  },
+  "deprecated": false,
+  "description": "Shows tooltips (e.g. for methods and classes) in your PHP source code.",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/php-integrator/atom-tooltips-legacy-php56#readme",
+  "keywords": [
+    "php",
+    "tooltips",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/Main",
+  "name": "php-integrator-tooltips-legacy-php56",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-integrator/atom-tooltips-legacy-php56.git"
+  },
+  "version": "1.1.6"
+}

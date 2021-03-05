@@ -1,0 +1,74 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+  "_id": "php-integrator-base-legacy-php56@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-EeJLDUE9EXrvPv+Un9eOrSrluivUlsozWqMTEeDrRNV8NGW71mbxuST4gDt6sfsCwHg8mOah5RH4hIgEj1ZpxA==",
+  "_location": "/php-integrator-base-legacy-php56",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+  "_shasum": "8bd4622f5ba5d6af5765a061eff4db1308ea6e9b",
+  "_spec": "https://www.atom.io/api/packages/php-integrator-base-legacy-php56/versions/1.0.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-202125-51450-p1bpw9.vavpl",
+  "bugs": {
+    "url": "https://github.com/php-integrator/atom-base-legacy-php56/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "setStatusBarService"
+      }
+    },
+    "project-manager": {
+      "versions": {
+        "^3.1.0": "setProjectManagerService"
+      }
+    }
+  },
+  "dependencies": {
+    "download": "~5.0.2",
+    "event-kit": "~2.0.0",
+    "jquery": "~3.1.0",
+    "md5": "~2.0.0",
+    "rimraf": "~2.5.4"
+  },
+  "deprecated": false,
+  "description": "Indexes PHP code and exposes services to query it (required for other php-integrator-* packages).",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/php-integrator/atom-base-legacy-php56#readme",
+  "keywords": [
+    "php",
+    "service",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/Main",
+  "name": "php-integrator-base-legacy-php56",
+  "providedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "2.0.0": "getServiceInstance"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-integrator/atom-base-legacy-php56.git"
+  },
+  "version": "1.0.1"
+}
