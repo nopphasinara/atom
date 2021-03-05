@@ -187,9 +187,304 @@
         $2$0
       """,
     },
-  }
+  },
 
-  ".source.php, .php": {
+  ".source.php .meta.class.php .meta.class.body.php": {
+    "$this->foo": {
+      "prefix": "$t",
+      "body": """
+      \\$this->${1:foo}$0
+      """,
+    },
+    "$this->foo()": {
+      "prefix": "$tm",
+      "body": """
+      \\$this->${1:foo}($2)$0
+      """,
+    },
+  },
+
+  ".source.php .meta.class.php .meta.class.body.php .constant.other.php": {
+    "parent::$foo": {
+      "prefix": "parv",
+      "body": """
+      parent::\\$${1:foo}$0
+      """,
+    },
+    "parent::foo()": {
+      "prefix": "parf",
+      "body": """
+      parent::${1:foo}($2)$0
+      """,
+    },
+    "class property": {
+      "prefix": "v",
+      "body": """
+      \\/**
+      * The underlying string value.
+      *
+      * @var string
+      *\\/
+      ${1:\\$foo} ${2:= ${3:''}}$0
+      """,
+    },
+    "class public property": {
+      "prefix": "vv",
+      "body": """
+      \\/**
+      * The underlying string value.
+      *
+      * @var string
+      *\\/
+      ${1:public} ${2:\\$foo} ${3:= ${4:''}}$0
+      """,
+    },
+    "class method": {
+      "prefix": "f",
+      "body": """
+      \\/**
+      * Proxy dynamic properties onto methods.
+      *
+      * @param  string  \\$key
+      * @return mixed
+      *\\/
+      function ${1:foo}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "class public method": {
+      "prefix": "ff",
+      "body": """
+      \\/**
+      * Proxy dynamic properties onto methods.
+      *
+      * @param  string  \\$key
+      * @return mixed
+      *\\/
+      ${1:public} function ${2:foo}($3)
+      \\{
+        $4
+      \\}$0
+      """,
+    },
+  },
+
+  ".source.php": {
+    "namespace": {
+      "prefix": "ns",
+      "body": """
+      namespace ${1:App}$0
+      """,
+    },
+
+    # Class
+    "$class->method()": {
+      "prefix": "cm",
+      "body": """
+      ${1:\\$class}->${2:method}($3)$0
+      """,
+    },
+    "->method()": {
+      "prefix": "-",
+      "body": """
+      ->${1:method}($2)$0
+      """,
+    },
+    "public $var": {
+      "prefix": "pbv",
+      "body": """
+      \\/**
+      * The underlying string value.
+      *
+      * @var string
+      *\\/
+      public ${1:\\$var};$0
+      """,
+    },
+    "public static $var": {
+      "prefix": "pbsv",
+      "body": """
+      \\/**
+      * The cache of value.
+      *
+      * @var string
+      *\\/
+      public static ${1:\\$var};$0
+      """,
+    },
+    "public function()": {
+      "prefix": "pbf",
+      "body": """
+      \\/**
+      * The underlying function.
+      *
+      * @var string
+      *\\/
+      public function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "public static function()": {
+      "prefix": "pbsf",
+      "body": """
+      \\/**
+      * The cache of function.
+      *
+      * @var string
+      *\\/
+      public static function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    # "public $var": {
+    #   "prefix": "pbv",
+    #   "body": """
+    #   public ${1:\\$var} = ${2:null}$0
+    #   """,
+    # },
+    # "public static $var": {
+    #   "prefix": "pbsv",
+    #   "body": """
+    #   public static ${1:\\$var} = ${2:null}$0
+    #   """,
+    # },
+    "private function()": {
+      "prefix": "pvf",
+      "body": """
+      private function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "private $var": {
+      "prefix": "pvv",
+      "body": """
+      private ${1:\\$var} = ${2:null}$0
+      """,
+    },
+    "private static function()": {
+      "prefix": "pvsf",
+      "body": """
+      private static function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "private static $var": {
+      "prefix": "pvsv",
+      "body": """
+      private static ${1:\\$var} = ${2:null}$0
+      """,
+    },
+    "protected function()": {
+      "prefix": "ptf",
+      "body": """
+      protected function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "protected $var": {
+      "prefix": "ptv",
+      "body": """
+      protected ${1:\\$var} = ${2:null}$0
+      """,
+    },
+    "protected static function()": {
+      "prefix": "ptsf",
+      "body": """
+      protected static function ${1:method}($2)
+      \\{
+        $3
+      \\}$0
+      """,
+    },
+    "protected static $var": {
+      "prefix": "ptsv",
+      "body": """
+      protected static ${1:\\$var} = ${2:null}$0
+      """,
+    },
+    "__get()": {
+      "prefix": "__g",
+      "body": """
+      \\/**
+      * $1
+      *\\/
+      public function __get(${2:\\$key})
+      \\{
+          $3
+      \\}$0
+      """,
+    },
+    "__set()": {
+      "prefix": "__s",
+      "body": """
+      \\/**
+      * $1
+      *
+      *\\/
+      public function __set(${2:\\$key}, ${3:\\$value})
+      \\{
+          $4
+      \\}$0
+      """,
+    },
+    "__proxy()": {
+      "prefix": "__px",
+      "body": """
+      \\/**
+      * Proxy dynamic properties onto methods.
+      *
+      * @param  string  \\$key
+      * @return mixed
+      *\\/
+      public function __get(${1:\\$key})
+      \\{
+          return \\$this->\\{${1:\\$key}\\}();
+      \\}$0
+      """,
+    },
+    "__toString()": {
+      "prefix": "__ts",
+      "body": """
+      \\/**
+      * Get the raw string value.
+      *
+      * @return string
+      *\\/
+      public function __toString()
+      \\{
+          return (string) \\$this->value;
+      \\}$0
+      """,
+    },
+    "__construct": {
+      "prefix": "__c",
+      "body": """
+      \\/**
+      * Create a new instance of the class.
+      *
+      * @param  string  ${1:\\$value}
+      * @return void
+      *\\/
+      public function __construct(${2:\\$value} ${4:= ${3:''}})
+      \\{
+          ${5:\\$this->value = (string) ${6:\\$value};}
+      \\}$0
+      """,
+    },
+
+    # Common
     "?> … <?php": {
       "prefix": "php",
       "body": """
@@ -281,7 +576,7 @@
       """,
     },
     "return function ()": {
-      "prefix": "ra",
+      "prefix": "rf",
       "body": """
       return function ($1) \\{$2\\}$0
       """,
@@ -310,7 +605,7 @@
 
 
   # COFFEE
-  ".source.coffee, .coffee, .source": {
+  ".source.coffee, .coffee": {
     # Snippet
     "Toolbar Spacer": {
       "prefix": "spacer",

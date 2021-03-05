@@ -137,6 +137,7 @@
     'cmd-d': 'editor:select-word',
   },
   '.platform-darwin atom-text-editor:not([mini]), atom-text-editor:not([mini])': {
+    'ctrl-cmd-c': 'editor:copy-project-path',
     'alt-cmd-c': 'editor:copy-path',
     'alt-cmd-tab': 'editor:auto-indent',
     'alt-down': 'editor:select-smaller-syntax-node',

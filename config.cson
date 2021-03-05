@@ -199,8 +199,6 @@
   linter:
     lintPreviewTabs: false
   "linter-ui-default":
-    largeFileLineCount: 15000
-    longLineLength: 3000
     panelHeight: 240
   "markdown-preview":
     breakOnSingleNewline: true
@@ -225,7 +223,6 @@
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
-    addNewTabsAtEnd: true
     displayMruTabList: false
     enableMruTabSwitching: false
   "tool-bar":
