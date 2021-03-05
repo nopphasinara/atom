@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-wrap-in-tag/versions/0.6.0/tarball",
   "_shasum": "2cea0a9df0e685d88ab1fb943c946fdff762a7c1",
   "_spec": "https://www.atom.io/api/packages/atom-wrap-in-tag/versions/0.6.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-44965-eohgmz.ad18h",
+  "_where": "/private/tmp/apm-install-dir-202125-27107-1oloz2m.4yt3",
   "activationCommands": {
     "atom-workspace": "wrap-in-tag:wrap"
   },

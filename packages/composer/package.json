@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/composer/versions/0.5.0/tarball",
   "_shasum": "5d8bd144c499260f65845b3c72a777912d47aa5b",
   "_spec": "https://www.atom.io/api/packages/composer/versions/0.5.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-51958-p0c354.yhx8",
+  "_where": "/private/tmp/apm-install-dir-202125-34195-15msqxj.o5xt",
   "activationCommands": {
     "atom-workspace": [
       "composer:about",

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/advanced-open-file/versions/0.16.8/tarball",
   "_shasum": "6a7fe4baad56eca96c79909d017ababfba0de984",
   "_spec": "https://www.atom.io/api/packages/advanced-open-file/versions/0.16.8/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-29250-1czjck3.aw47",
+  "_where": "/private/tmp/apm-install-dir-202125-9204-lfcp77.8ijx",
   "activationCommands": {
     "atom-workspace": [
       "advanced-open-file:toggle"

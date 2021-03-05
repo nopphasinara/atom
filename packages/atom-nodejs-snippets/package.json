@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
   "_shasum": "d5aea3e899fe4997502ce4eda6c69af1a0226f31",
   "_spec": "https://www.atom.io/api/packages/atom-nodejs-snippets/versions/2.1.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-44734-17o7pm9.jh8ff",
+  "_where": "/private/tmp/apm-install-dir-202125-26670-fk2o8j.5vyc8",
   "activationCommands": {
     "atom-workspace": "atom-nodejs-snippets:toggle"
   },
