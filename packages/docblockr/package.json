@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
   "_shasum": "8b923e92244b0c29ec3b8e45c17c5c8bae6d43f7",
   "_spec": "https://www.atom.io/api/packages/docblockr/versions/0.13.7/tarball",
-  "_where": "/private/tmp/apm-install-dir-202124-34121-19jvpxt.dm06",
+  "_where": "/private/tmp/apm-install-dir-202125-53112-k519rm.wq43p",
   "atomTestRunner": "./spec/runner",
   "bugs": {
     "url": "https://github.com/nikhilkalige/docblockr/issues"

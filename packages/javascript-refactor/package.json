@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
   "_shasum": "d39d7c8d22e96c6c738b77e9083b86a46230e5d9",
   "_spec": "https://www.atom.io/api/packages/javascript-refactor/versions/0.7.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-202124-47721-tyzyh0.4h6et",
+  "_where": "/private/tmp/apm-install-dir-202125-58787-1121h2f.5s8we",
   "activationCommands": {
     "atom-workspace": "atom-javascript-refactor:refactor"
   },

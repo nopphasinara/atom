@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
   "_shasum": "b062d6df7ab506a2dac6c75a1b17e9cca0f26110",
   "_spec": "https://www.atom.io/api/packages/blade-snippets/versions/0.2.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202124-52472-183bkyq.fh06",
+  "_where": "/private/tmp/apm-install-dir-202125-49072-6elecl.jwnzl",
   "activationCommands": {
     "atom-workspace": "blade-snippets:toggle"
   },

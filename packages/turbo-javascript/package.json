@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
   "_shasum": "643a56c310f90969feb9aef168ea8bc6e9c29577",
   "_spec": "https://www.atom.io/api/packages/turbo-javascript/versions/1.4.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202124-70259-1lrtcos.v6kx",
+  "_where": "/private/tmp/apm-install-dir-202125-72212-1pxccqx.4h3p",
   "activationCommands": {
     "atom-text-editor": [
       "turbo-javascript:end-line",
