@@ -6,7 +6,8 @@
   "aligner-php":
     ",-alignment": "left"
     ",-leftSpace": true
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    binComposer: "composer"
   "atom-minify":
     checkOutputFileAlreadyExists: true
   "autocomplete-php":
@@ -21,8 +22,7 @@
     highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
-  composer:
-    composerPath: "/usr/local/bin/composer"
+  composer: {}
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -32,9 +32,15 @@
       "background-tips"
       "welcome"
       "styleguide"
-      "metrics"
       "language-shellscript"
       "Quick-JavaScript"
+      "javascript-refactor"
+      "javascript-regex"
+      "larasnippets"
+      "laravel-model-attributes"
+      "turbo-javascript"
+      "php-integrator-refactoring"
+      "php-integrator-annotations"
     ]
     packagesWithKeymapsDisabled: [
       "about"
@@ -243,16 +249,14 @@
   linter:
     lintPreviewTabs: false
   "linter-ui-default":
-    panelHeight: 240
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
     stickyHeaders: true
-  "php-cs-fixer":
-    executablePath: "/usr/local/bin/php-cs-fixer"
-    phpExecutablePath: "/usr/local/bin/php"
+  "php-cs-fixer": {}
   "php-fmt":
     noBackup: true
     useSpaceIndentation: true
@@ -260,8 +264,7 @@
     core:
       phpCommand: "/usr/local/bin/php"
     storagePath: "/Users/sudprawat/Library/Preferences/php-ide-serenata"
-  "php-integrator-autocomplete-plus":
-    disableBuiltinAutocompletion: false
+  "php-integrator-autocomplete-plus": {}
   "php-integrator-base-legacy-php56": {}
   "project-manager":
     prettifyTitle: false

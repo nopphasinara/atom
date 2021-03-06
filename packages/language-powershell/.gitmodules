@@ -1,3 +1,0 @@
-[submodule "vendor/EditorSyntax"]
-	path = vendor/EditorSyntax
-	url = https://github.com/PowerShell/EditorSyntax.git

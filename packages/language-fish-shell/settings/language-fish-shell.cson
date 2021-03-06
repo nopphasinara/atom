@@ -1,5 +1,0 @@
-'.source.fish':
-  'editor':
-    'commentStart': '# '
-    'increaseIndentPattern': '^\\s*(function|begin|while|if|else|switch|for|case)'
-    'decreaseIndentPattern': '^\\s*(case|else|end)'
