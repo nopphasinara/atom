@@ -1,0 +1,34 @@
+{
+    "name": "php-integrator/core",
+    "description": "PHP code analysis and utilities",
+    "keywords": ["static", "analysis", "indexing", "indexer", "integrator", "autocompletion", "refactoring"],
+    "homepage": "https://php-integrator.github.io",
+    "license": "GPL-3.0",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "ext-mbstring": "*",
+        "ext-pdo_sqlite": "*",
+        "doctrine/cache": "^1.6",
+        "doctrine/dbal": "^2.5",
+        "evenement/evenement": "^2.0",
+        "nikic/php-parser": "3.0.5",
+        "react/socket": "~0.4.4",
+        "symfony/dependency-injection": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpIntegrator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpIntegrator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test" : "vendor/bin/phpunit"
+    }
+}

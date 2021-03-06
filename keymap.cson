@@ -3,6 +3,7 @@
     'shift-f11': 'remote-sync:upload-file',
     'f11': 'remote-sync:download-file',
     'cmd-backspace': 'editor:delete-line',
+    'ctrl-cmd-enter': 'tree-view:rename',
   },
   'atom-text-editor': {
     'ctrl-.': 'editor:log-cursor-scope',
