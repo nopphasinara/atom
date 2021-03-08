@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+  "_id": "ascii-unicode-escape@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-3GJYr47/Dw5wqb2ANGSoUHe5IJQSV/8+2RZ+McAbiOGaLN82q0NivgHC1NrxUjQe8SBYt7WgxQxk6ckBVUy06g==",
+  "_location": "/ascii-unicode-escape",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+  "_shasum": "5e893ee8dc2652ab16802d70a33ab56892136992",
+  "_spec": "https://www.atom.io/api/packages/ascii-unicode-escape/versions/0.2.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-202128-88423-1cg7jk.p893m",
+  "activationCommands": {
+    "atom-workspace": [
+      "ascii-unicode-escape:reverse",
+      "ascii-unicode-escape:convert"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/renatoferreira656/ascii-unicode-escape/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Plugin to convert text to ascii with unicode escape",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/renatoferreira656/ascii-unicode-escape#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/ascii-unicode-escape",
+  "name": "ascii-unicode-escape",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoferreira656/ascii-unicode-escape.git"
+  },
+  "version": "0.2.2"
+}

@@ -5,6 +5,13 @@
   "atom-visual-studio-code-ui":
     hideDockButtons: true
     stickyHeaders: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    minimumWordLength: 1
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  "command-palette":
+    preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -15,6 +22,34 @@
       "emmet"
       "project-manager"
       "tool-bar"
+      "sort-lines"
+      "toggle-quotes"
+      "change-case"
+      "expand-selection-to-quotes"
+      "escape-utils"
+      "escape-to-javascript-string"
+      "ascii-unicode-escape"
+      "sequential-number"
+      "duplicate-removal"
+      "sass-autocompile"
+      "aligner"
+      "archive-view"
+      "autoflow"
+      "bracket-matcher"
+      "dev-live-reload"
+      "encoding-selector"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "grammar-selector"
+      "image-view"
+      "keybinding-resolver"
+      "link"
+      "markdown-preview"
+      "open-on-github"
+      "spell-check"
+      "styleguide"
+      "tree-view"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -35,8 +70,18 @@
     tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
   "flex-tool-bar":
     reloadToolBarNotification: false
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
+  github:
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
@@ -44,9 +89,35 @@
     sortBy: "title"
   "remote-sync":
     foldLogPanel: true
+  "sass-autocompile":
+    checkOutputFileAlreadyExists: true
+    compileOnSave: false
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
   "tool-bar":
     fullWidth: false
     iconSize: "21px"
     useTouchBar: false
+  "tree-view":
+    alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+".coffee.source":
+  editor:
+    autoIndentOnPaste: true
+".css.scss.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
+".js.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#@%^&*|+=[]{}`?-…"
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"

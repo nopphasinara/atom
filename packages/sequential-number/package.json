@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+  "_id": "sequential-number@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-64ihxh949ZGeQ5vGhWE6ZjUIhJ3clPsO6U7BrwdlAx5Kz1Gp82EGlJJOv2k9W2pKC94VrCMEAgP7e7OT3+jXLg==",
+  "_location": "/sequential-number",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+  "_shasum": "1d9eaa51a76bcf16596917f1c30857c9f44c16d3",
+  "_spec": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202128-148-1hcpb65.9bagi",
+  "activationCommands": {
+    "atom-workspace": "sequential-number:open"
+  },
+  "bugs": {
+    "url": "https://github.com/tsuyoshiwada/sequential-number/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "event-kit": "^1.4.1"
+  },
+  "deprecated": false,
+  "description": "Input sequential number in the across multiple cursors.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tsuyoshiwada/sequential-number#readme",
+  "keywords": [
+    "serial number",
+    "sequence number",
+    "numbering",
+    "text helper"
+  ],
+  "license": "MIT",
+  "main": "./lib/sequential-number",
+  "name": "sequential-number",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshiwada/sequential-number.git"
+  },
+  "version": "0.5.0"
+}

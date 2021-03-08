@@ -1,0 +1,97 @@
+'use babel'
+
+export const toggleQuotes = (editor) => {
+  editor.transact(() => {
+    for (let cursor of editor.getCursors()) {
+      let position = cursor.getBufferPosition()
+      toggleQuoteAtPosition(editor, position)
+      cursor.setBufferPosition(position)
+    }
+  })
+}
+
+const getNextQuoteCharacter = (quoteCharacter, allQuoteCharacters) => {
+  let index = allQuoteCharacters.indexOf(quoteCharacter)
+  if (index === -1) {
+    return null
+  } else {
+    return allQuoteCharacters[(index + 1) % allQuoteCharacters.length]
+  }
+}
+
+const escapePattern = (s) => {
+  return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+}
+
+// Using the quote characters configured by the user, build a pattern that can
+// be used to filter the syntax nodes in tree-sitter mode.
+const makePredicate = (quoteChars) => {
+  // We want text that begins and ends with the same quote character (and
+  // _might_ start with one of Python's string format prefixes).
+  let pattern = new RegExp(`^[uUr]?([${escapePattern(quoteChars)}])[\\s\\S]*(\\1)$`, 'g')
+  return ({ text }) => pattern.test(text)
+}
+
+const toggleQuoteAtPosition = (editor, position) => {
+  let quoteChars = atom.config.get('toggle-quotes.quoteCharacters', {
+    scope: editor.getRootScopeDescriptor()
+  })
+  let range
+  if (editor.languageMode.getSyntaxNodeAtPosition) {
+    const node = editor.languageMode.getSyntaxNodeAtPosition(position, makePredicate(quoteChars))
+    range = node && node.range
+  } else {
+    range = editor.bufferRangeForScopeAtPosition('.string.quoted', position)
+  }
+
+  if (!range) {
+    // Attempt to match the current invalid region if it is wrapped in quotes
+    // This is useful for languages where changing the quotes makes the range
+    // invalid and so toggling again should properly restore the valid quotes
+
+    range = editor.bufferRangeForScopeAtPosition('.invalid.illegal', position)
+    if (range) {
+      let inner = quoteChars.split('').map(character => `${character}.*${character}`).join('|')
+
+      if (!RegExp(`^(${inner})$`, 'g').test(editor.getTextInBufferRange(range))) {
+        return
+      }
+    }
+  }
+
+  if (range == null) {
+    return
+  }
+
+  let text = editor.getTextInBufferRange(range)
+  let [quoteCharacter] = text
+
+  // In Python a string can have a prefix specifying its format. The Python
+  // grammar includes this prefix in the string, and thus we need to exclude
+  // it when toggling quotes
+  let prefix = ''
+  if (/[uUr]/.test(quoteCharacter)) {
+    [prefix, quoteCharacter] = text
+  }
+
+  let nextQuoteCharacter = getNextQuoteCharacter(quoteCharacter, quoteChars)
+
+  if (!nextQuoteCharacter) {
+    return
+  }
+
+  const locateEscapesAndQuotesRegex = new RegExp(`\\\\.|${escapePattern(nextQuoteCharacter)}`, 'g')
+
+  let newText = text
+    .replace(locateEscapesAndQuotesRegex, m => {
+      if (m[0] === nextQuoteCharacter) {
+        return '\\' + nextQuoteCharacter
+      } else {
+        return m[1] === quoteCharacter ? quoteCharacter : m
+      }
+    })
+
+  newText = prefix + nextQuoteCharacter + newText.slice(1 + prefix.length, -1) + nextQuoteCharacter
+
+  editor.setTextInBufferRange(range, newText)
+}

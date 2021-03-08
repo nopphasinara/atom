@@ -26,6 +26,14 @@
     icon: "console",
     iconset: "mdi",
   },
+  { type: "spacer" },
+  {
+    type: "button",
+    callback: [ "markdown-preview:toggle" ],
+    tooltip: "Markdown Preview",
+    icon: "markdown",
+    iconset: "mdi",
+  },
   # {
   #   type: "url",
   #   url: "https://github.com/{repo-owner}/{repo-name}",
