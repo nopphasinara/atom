@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
   "_shasum": "71885df33156676cd645074ca450395328cc50f3",
   "_spec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-56019-pmocnk.p1um9",
+  "_where": "/private/tmp/apm-install-dir-202128-59385-145i50u.6282",
   "activationCommands": {
     "atom-workspace": "repl-console:run"
   },

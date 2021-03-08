@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
   "_shasum": "b5d696a4307331162691fd2386bd185139a9818f",
   "_spec": "https://www.atom.io/api/packages/linter-ui-default/versions/3.2.5/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-48564-xcf818.utrzt",
+  "_where": "/private/tmp/apm-install-dir-202128-42637-dilcn1.wso5u",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],

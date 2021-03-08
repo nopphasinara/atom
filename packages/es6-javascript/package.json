@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/es6-javascript/versions/1.0.0/tarball",
   "_shasum": "691aa7b6cb62c7665a1155c55c9e64ee3104dd52",
   "_spec": "https://www.atom.io/api/packages/es6-javascript/versions/1.0.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-37092-1jsamhf.jrtki",
+  "_where": "/private/tmp/apm-install-dir-202128-27121-y3uyhb.r85xj",
   "activationCommands": {
     "atom-text-editor": [
       "es6-javascript:end-line",

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
   "_shasum": "b55fb5d940bb0d0c1eb5e4093364ae629499aa55",
   "_spec": "https://www.atom.io/api/packages/autocomplete-javascript/versions/0.0.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-28364-3tsock.mnbgl",
+  "_where": "/private/tmp/apm-install-dir-202128-20480-88034r.szmrx",
   "activationCommands": {
     "atom-workspace": "autocomplete-javascript:toggle"
   },

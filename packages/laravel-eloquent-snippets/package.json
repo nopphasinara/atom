@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
   "_shasum": "26f608061ccf7ca4a257e011aeae2a10b3574bfa",
   "_spec": "https://www.atom.io/api/packages/laravel-eloquent-snippets/versions/2.0.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202125-47256-18xi88.n73v4",
+  "_where": "/private/tmp/apm-install-dir-202128-39559-5xjp.h72fb3m",
   "activationCommands": {
     "atom-workspace": "laravel-eloquent-snippets:toggle"
   },
