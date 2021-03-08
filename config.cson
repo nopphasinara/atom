@@ -1,0 +1,52 @@
+"*":
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
+  "atom-visual-studio-code-ui":
+    hideDockButtons: true
+    stickyHeaders: true
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    automaticallyUpdate: false
+    packagesWithKeymapsDisabled: [
+      "advanced-open-file"
+      "browser-plus"
+      "emmet"
+      "project-manager"
+      "tool-bar"
+    ]
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "no"
+    themes: [
+      "atom-visual-studio-code-ui"
+      "one-dark-syntax"
+    ]
+    titleBar: "custom"
+    uriHandlerRegistration: "never"
+  editor:
+    fontFamily: "Menlo, Prompt, Material-Design-Icons, Consolas, DejaVu Sans Mono, monospace"
+    maxScreenLineLength: 4096
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
+  "flex-tool-bar":
+    reloadToolBarNotification: false
+  "one-dark-ui":
+    hideDockButtons: true
+  "project-manager":
+    prettifyTitle: false
+    sortBy: "title"
+  "remote-sync":
+    foldLogPanel: true
+  "tool-bar":
+    fullWidth: false
+    iconSize: "21px"
+    useTouchBar: false
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,13 @@
+blob-store
+compile-cache
+dev
+storage
+.apm
+.node-gyp
+.npm
+.atom-socket-secret-*
+.remote-sync
+.DS_Store
+Thumbs.db
+Icon\?
+node_modules

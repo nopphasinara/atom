@@ -1,0 +1,114 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+  "_id": "atom-visual-studio-code-ui@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-k5AYOynAv7n5gFQFtOfnYtTBTD1jJayNHwlPGi8UGOjM5fSPtpTw4v8lucoZRe3Ew5+oT3omNwDrT+6w6qV68Q==",
+  "_location": "/atom-visual-studio-code-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+  "_shasum": "041b94607d7b39efbe1541ef9a8b5019a97442d2",
+  "_spec": "https://www.atom.io/api/packages/atom-visual-studio-code-ui/versions/2.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202128-9619-1vxltcg.dme6f",
+  "bugs": {
+    "url": "https://github.com/Zeioth/atom-visual-studio-code-ui/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "fontSize": {
+      "title": "Font Size",
+      "description": "Change the font size for the UI.",
+      "type": "integer",
+      "default": 12,
+      "enum": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "order": 1
+    },
+    "tabSizing": {
+      "title": "Tab Sizing",
+      "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Maximum mode the tabs will expand to take up the full width. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
+      "type": "string",
+      "default": "Even",
+      "enum": [
+        "Even",
+        "Maximum",
+        "Minimum"
+      ],
+      "order": 2
+    },
+    "tabCloseButton": {
+      "title": "Tab Close Button",
+      "description": "Choose the position of the close button shown in tabs.",
+      "type": "string",
+      "default": "Right",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "order": 3
+    },
+    "hideDockButtons": {
+      "title": "Hide dock toggle buttons",
+      "description": "Note: When hiding the toggle buttons, opening a dock needs to be done by using the keyboard or other alternatives.",
+      "type": "boolean",
+      "default": "false",
+      "order": 4
+    },
+    "stickyHeaders": {
+      "title": "Make tree-view project headers sticky",
+      "type": "boolean",
+      "default": "false",
+      "order": 5
+    }
+  },
+  "deprecated": false,
+  "description": "The experience of Visual Studio Code, now in Atom.",
+  "devDependencies": {
+    "standard": "^11.0.0"
+  },
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "homepage": "https://github.com/Zeioth/atom-visual-studio-code-ui#readme",
+  "keywords": [
+    "visual",
+    "studio",
+    "code",
+    "ui",
+    "theme",
+    "atom",
+    "cool",
+    "theme",
+    "good"
+  ],
+  "license": "MIT",
+  "main": "lib/main",
+  "name": "atom-visual-studio-code-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeioth/atom-visual-studio-code-ui.git"
+  },
+  "theme": "ui",
+  "version": "2.1.0"
+}
