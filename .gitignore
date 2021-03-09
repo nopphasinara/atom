@@ -10,4 +10,4 @@ storage
 .DS_Store
 Thumbs.db
 Icon\?
-node_modules
+/node_modules
