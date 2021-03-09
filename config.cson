@@ -58,7 +58,7 @@
       "one-dark-syntax"
     ]
     titleBar: "custom"
-    uriHandlerRegistration: "never"
+    uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo, Prompt, Material-Design-Icons, Consolas, DejaVu Sans Mono, monospace"
     maxScreenLineLength: 4096
@@ -88,6 +88,7 @@
     prettifyTitle: false
     sortBy: "title"
   "remote-sync":
+    autoHideLogPanel: true
     foldLogPanel: true
   "sass-autocompile":
     checkOutputFileAlreadyExists: true

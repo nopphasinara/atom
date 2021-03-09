@@ -1,0 +1,42 @@
+{
+  ".source.php": {
+    "pr": {
+      "prefix": "pr"
+      "body": """
+      echo '<pre>'; print_r(${1:\\$${2:value}}); echo '</pre>';
+      """
+    }
+
+    "function assignment": {
+      "prefix": "fn"
+      "body": """
+      function ${1:func_name}(${2:\\$${3:value}}) {
+        ${4:/* ... */}
+      \\}
+      """
+    }
+
+    "anonymous function": {
+      "prefix": "f"
+      "body": """
+      function (${1:\\$${2:value}}${3:}) {
+        ${4:/* ... */}
+      \\}
+      """
+    }
+
+    "public function funcName()": {
+      "prefix": "ff"
+      "body": """
+      /**
+      * ${1:Proxy dynamic properties onto methods.}
+      *
+      * @return mixed
+      */
+      ${2:public} function ${3:funcName}(${4:\\$${5:value}}) {
+        ${6:/* ... */}
+      \\}
+      """
+    }
+  }
+}
