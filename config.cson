@@ -10,6 +10,15 @@
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
+  "chrome-color-picker":
+    General:
+      paletteOpen: false
+      preferredFormat: "rgb"
+    HexColors:
+      uppercaseHex: true
+  "color-picker":
+    alphaChannelAlways: true
+    uppercaseColorValues: true
   "command-palette":
     preserveLastSearch: true
   core:
@@ -17,6 +26,7 @@
     audioBeep: false
     automaticallyUpdate: false
     packagesWithKeymapsDisabled: [
+      "color-picker"
       "advanced-open-file"
       "browser-plus"
       "emmet"
@@ -50,6 +60,7 @@
       "spell-check"
       "styleguide"
       "tree-view"
+      "chrome-color-picker"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -60,7 +71,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Menlo, Prompt, Material-Design-Icons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "Menlo, Prompt, MaterialDesignIcons, Material-Design-Icons, Consolas, DejaVu Sans Mono, monospace"
     maxScreenLineLength: 4096
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
@@ -77,6 +88,23 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
+  "git-menu":
+    contextMenuItems:
+      "create-branch": false
+      "delete-branch": false
+      "fetch-all": false
+      "ignore-changes": false
+      init: false
+      "merge-branch": false
+      "pull-all": false
+      "push-all": false
+      refresh: false
+      "run-command": false
+      "switch-branch": false
+      sync: false
+      "sync-all": false
+      "unignore-changes": false
+      "unstash-changes": false
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "markdown-preview":

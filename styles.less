@@ -1,5 +1,37 @@
+@import "ui-variables-custom";
 @import "ui-variables";
 @import "syntax-variables";
+
+.mdi,
+.mdi:before,
+.mdi-set {
+  display: inline-block;
+  font-family: "MaterialDesignIcons";
+  // font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mdi {
+  * {
+    font-family: @font-family !important;
+    vertical-align: middle !important;
+  }
+
+  i {
+    font-family: "MaterialDesignIcons" !important;
+    text-align: center !important;
+  }
+
+  span {
+    font-size: calc(@ui-size * .64) !important;
+    padding-left: 10px !important;
+  }
+}
+
 
 @font-face {
   font-display: fallback;
@@ -72,6 +104,22 @@
   font-weight: 700;
   src: url("fonts/Proxima Nova normal 700.otf") format("opentype")
 }
+
+
+// .text-md {
+//   font-size: @ui-size !important;
+//   vertical-align: middle !important;
+//
+//   i {
+//     font-size: calc(@ui-size * 1.75) !important;
+//     vertical-align: middle !important;
+//     text-align: center !important;
+//   }
+//
+//   span {
+//     padding-left: 10px !important;
+//   }
+// }
 
 
 atom-text-editor {
