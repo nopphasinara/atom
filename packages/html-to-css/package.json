@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/html-to-css/versions/0.2.2/tarball",
   "_shasum": "bbe3338c579264be15efbec6749beb2c4d250e86",
   "_spec": "https://www.atom.io/api/packages/html-to-css/versions/0.2.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-202128-67034-13xzbsr.qa1o",
+  "_where": "/private/tmp/apm-install-dir-202129-24792-1lq3hqb.u5bj",
   "activationCommands": {
     "atom-workspace": "html-to-css:generate"
   },
