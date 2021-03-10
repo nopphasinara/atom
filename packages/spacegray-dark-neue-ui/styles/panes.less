@@ -1,0 +1,36 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.pane-item {
+  .panel {
+    border-color: fadeout(@inset-panel-border-color, 30%);
+  }
+}
+
+atom-pane-container {
+  atom-pane {
+    background-color: darken(@tree-background-color, 2%);
+
+    &:focus {
+      background-color: darken(@tree-background-color, 3%);
+    }
+  }
+
+  atom-pane-axis.horizontal > * {
+    border-right: 1px solid @pane-item-border-color;
+    &:last-child { border-right: none; }
+  }
+
+  atom-pane-axis.vertical > * {
+    border-bottom: 1px solid @pane-item-border-color;
+    border-bottom: none;
+    &:last-child { border-bottom: none; }
+  }
+
+  atom-pane-axis.vertical {
+    > atom-pane-resize-handle {
+      background-color: @tree-background-color;
+    }
+  }
+}

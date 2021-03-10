@@ -2,36 +2,12 @@
 @import "ui-variables";
 @import "syntax-variables";
 
-.mdi,
-.mdi:before,
-.mdi-set {
-  display: inline-block;
+@font-face {
   font-family: "MaterialDesignIcons";
-  // font: normal normal normal 24px/1 "Material Design Icons";
-  font-size: inherit;
-  text-rendering: auto;
-  line-height: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-style: normal !important;
+  font-weight: normal !important;
+  src: url("fonts/materialdesignicons-webfont.ttf");
 }
-
-.mdi {
-  * {
-    font-family: @font-family !important;
-    vertical-align: middle !important;
-  }
-
-  i {
-    font-family: "MaterialDesignIcons" !important;
-    text-align: center !important;
-  }
-
-  span {
-    font-size: calc(@ui-size * .64) !important;
-    padding-left: 10px !important;
-  }
-}
-
 
 @font-face {
   font-display: fallback;
@@ -105,36 +81,71 @@
   src: url("fonts/Proxima Nova normal 700.otf") format("opentype")
 }
 
+.editor-font-settings {
+  font-kerning: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -moz-font-smoothing: grayscale !important;
+  letter-spacing: 0 !important;
+  text-rendering: optimizeLegibility !important;
+}
 
-// .text-md {
-//   font-size: @ui-size !important;
-//   vertical-align: middle !important;
-//
-//   i {
-//     font-size: calc(@ui-size * 1.75) !important;
-//     vertical-align: middle !important;
-//     text-align: center !important;
-//   }
-//
-//   span {
-//     padding-left: 10px !important;
-//   }
-// }
+.font-icon {
+  &:extend(.editor-font-settings);
+
+  vertical-align: middle !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  min-width: 40px !important;
+  width: auto !important;
+  font-family:"MaterialDesignIcons", "Material Design Icons", "Material-Design-Icons", "master-icons", "Font Awesome 5 Free", "Font Awesome 5 Brands", "FontAwesome5Free-Solid", "FontAwesome5Free-Regular", "FontAwesome5Brands-Regular", "system-ui";
+}
+
+.reset-margin {
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+}
+
+.reset-padding {
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.mdi {
+  &:extend(.editor-font-settings);
+  &:extend(.reset-margin);
+  &:extend(.reset-padding);
+  font-size: calc(@ui-size * 1.2) !important;
+  vertical-align: middle !important;
+
+  * {
+    &:extend(.editor-font-settings);
+    &:extend(.reset-margin);
+    &:extend(.reset-padding);
+    font-size: calc(@ui-size * 1.2) !important;
+    vertical-align: middle !important;
+  }
+
+  i {
+    &:extend(.font-icon);
+    &:extend(.reset-margin);
+    &:extend(.reset-padding);
+    text-align: center !important;
+    font-size: calc(@ui-size * 1.65) !important;
+    vertical-align: middle !important;
+  }
+}
 
 
 atom-text-editor {
-    font-kerning: none !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    -moz-font-smoothing: grayscale !important;
-    text-rendering: optimizeLegibility !important;
+    &:extend(.editor-font-settings);
 
     * {
-        font-kerning: none !important;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-        -moz-font-smoothing: grayscale !important;
-        text-rendering: optimizeLegibility !important;
+        &:extend(.editor-font-settings);
     }
 }
 
@@ -171,12 +182,18 @@ atom-text-editor {
             border-bottom-style: solid !important;
         }
     }
+
+    .wrap-guide {
+      width: 1px !important;
+      background-color: fade(@mono-3, 10) !important;
+      border-right: solid 1px fade(@mono-3, 20) !important;
+    }
 }
 
 
 atom-text-editor:not([mini]) {
   .syntax--comment {
-    font-style: normal;
+    font-style: normal !important;
   }
 }
 
@@ -190,29 +207,114 @@ atom-text-editor:not([mini]) {
 
 
 .tool-bar {
-  padding-top: 0 !important;
+  vertical-align: middle !important;
+  &:extend(.reset-margin);
+  &:extend(.reset-padding);
 
   .tool-bar-spacer {
+    &:extend(.reset-margin);
+    &:extend(.reset-padding);
+    max-width: 1px !important;
+    overflow: hidden !important;
+    min-width: 1px !important;
+    width: 1px !important;
     height: auto !important;
-    line-height: 100% !important;
-    border-color: @ui-border !important;
+    // line-height: 100% !important;
+    background-color: @ui-border !important;
+    // border-color: @ui-border !important;
     -webkit-mask-image: none !important;
-    margin-top: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 0 !important;
+    vertical-align: middle !important;
     margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .btn {
-    height: 42px !important;
-    min-width: 44px !important;
+    &:extend(.reset-margin);
+    &:extend(.reset-padding);
+    // height: 42px !important;
+    line-height: inherit !important;
     margin: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
 
     &:hover {
       color: #fff !important;
       border-color: @syntax-accent !important;
       background: @syntax-accent !important;
       border-radius: 0 !important;
+      vertical-align: middle !important;
+    }
+  }
+
+  .tool-bar-btn,
+  button.tool-bar-btn {
+    &:extend(.reset-margin);
+    &:extend(.reset-padding);
+    // background-color: @tool-bar-bg !important;
+    border-width: 0 !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: auto !important;
+    min-width: 40px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    &:hover {
+      // color: @hue-6-2;
+      // background-color: transparent !important;
+    }
+  }
+}
+
+
+.status-bar,
+.status-bar.status-bar {
+  // color: @status-bar-fg;
+  // background-color: @status-bar-bg;
+  // font-size: @status-bar-font-size;
+  // height: @status-bar-height;
+
+  &, & * {
+    // line-height: @status-bar-height;
+  }
+
+  .inline-block, a {
+    // color: @status-bar-fg;
+
+    &:hover {
+      cursor: pointer !important;
+      // color: @status-bar-fg;
+      background-color: transparent;
+    }
+  }
+
+  .icon::before {
+    // font-size: 1.2em;
+  }
+}
+
+
+.markdown-preview {
+  &.markdown-preview {
+    atom-text-editor {
+      color: @mono-1;
+      background-color: @syntax-bg;
+      padding: 30px 30px;
+    }
+
+    hr {
+      height: 1px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &.markdown-preview[data-use-github-style] {
+    color: #666;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #000;
     }
   }
 }

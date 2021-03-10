@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+  "_id": "ayu-mirage-ish-syntax@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-MUDtG/5hPM2DYJmhtUSObtcKedWHGWNXEE2me6RZAgnr6EoP9hrghVLoivBY/VKiyrCqHk1VvRwWPf//pdaVag==",
+  "_location": "/ayu-mirage-ish-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+  "_shasum": "2188363c6a713c2393253b653d338933289c7465",
+  "_spec": "https://www.atom.io/api/packages/ayu-mirage-ish-syntax/versions/1.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021210-80065-1tv1jub.ztlm",
+  "author": {
+    "name": "Pratyush Tewari"
+  },
+  "bugs": {
+    "url": "https://github.com/pratyushtewari/ayu-mirage-ish/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Theme based on Ayu Mirage",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/pratyushtewari/ayu-mirage-ish#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "ayu",
+    "mirage",
+    "dark-theme"
+  ],
+  "license": "MIT",
+  "name": "ayu-mirage-ish-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratyushtewari/ayu-mirage-ish.git"
+  },
+  "theme": "syntax",
+  "version": "1.1.0"
+}

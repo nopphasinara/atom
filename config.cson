@@ -64,10 +64,6 @@
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
-    themes: [
-      "atom-visual-studio-code-ui"
-      "one-dark-syntax"
-    ]
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:

@@ -5,34 +5,40 @@
 [
   {
     type: "button",
-    callback: [ "window:reload" ],
-    tooltip: "Reload Window",
-    icon: "reload",
-    iconset: "mdi",
+    callback: {
+      "": "window:reload",
+    },
+    text: "<i>󰇥</i>",
+    html: true,
+    class: [ "mdi" ],
   },
   { type: "spacer" },
   {
     type: "url",
     url: "https://github.com/{repo-owner}/{repo-name}",
-    tooltip: "Open on Github",
-    icon: "git",
-    iconset: "mdi",
+    text: "<i>󰊢</i>",
+    html: true,
+    class: [ "mdi" ],
   },
   { type: "spacer" },
   {
     type: "button",
-    callback: [ "window:toggle-dev-tools" ],
-    tooltip: "Dev Tools",
-    icon: "console",
-    iconset: "mdi",
+    callback: {
+      "": "window:toggle-dev-tools",
+    },
+    text: "<i>󰲌</i>",
+    html: true,
+    class: [ "mdi" ],
   },
   { type: "spacer" },
   {
     type: "button",
-    callback: [ "markdown-preview:toggle" ],
-    tooltip: "Markdown Preview",
-    icon: "markdown",
-    iconset: "mdi",
+    callback: {
+      "": "markdown-preview:toggle",
+    },
+    text: "<i>󰍔</i>",
+    html: true,
+    class: [ "mdi" ],
   },
   {
     type: "button",
@@ -44,6 +50,15 @@
     html: true,
     class: [ "mdi" ],
   },
+  # {
+  #   type: "button",
+  #   callback: {
+  #     "": "",
+  #   },
+  #   text: "<i>󰌞󰌝󰌟󰌧󰌨󰌴󰌹󰍓 󰍕󰍜󰍣󰍺󰍹󰍻󰍽󰎂 󰎔󰎙󰎝󰎠󰏋󰏌󰏑󰏔 󰏕󰏘󰏯󰏰󰐏󰐒󰐓󰐕 󰐣󰐤󰐭󰐰󰑇󰑋󰑐󰑑 󰑒󰑓󰑕󰑖󰑘󰑙󰑥󰑧 󰒍󰒓󰒟󰒲󰒻󰒺󰒾󰓂 󰓆󰓢󰓡󰓦󰓧󰓾󰕅󰕎 󰕏󰕕󰕒󰖶󰖽󰖿󰗀󰗇󰗊󰗠󰗡󰗨󰘎󰘞󰘢󰘡󰘣󰘥󰘦󰘧󰘨󰘬󰘮󰘲󰘳󰘴󰘵󰘶󰙁󰙆󰙖󰙪󰙩󰙰󰙲󰚈󰚑󰚔󰚖󰚝󰚧󰚲󰚹󰚽󰛄󰛉󰛦󰛬󰛭󰜄󰜉󰝉󰝓󰝕󰝖󰝔󰝗󰝠󰝡󰝰󰞷󰡰󰡱󰢹󰣀󰣞󰤀󰤌󰤍󰤘󰥦󰥨󰥩󰥪󰥻󰦄󰦍󰦎󰦏󰦐󰦒󰦓󰦛󰦣󰦪󰧞󰧟󰧾󰨤󰨮󰨾󰨿󰩀󰩎󰩍󰩤󰩭󰩮󰩨󰩫󰩬󰩷󰩺󰪒󰪚󰪛󰪮󰪺󰪻󰬴󰬵󰬶󰭛󰭜󰮓󰮝󰮞󰮥󰮦󰮫󰮱󰮳󰯍󰯎󰯟󰱒󰲋󰲌󰆍󰲏󰲎󰳏󰳤󰳾󰴊󰴌󰴍󰴑󰴱󰵮󰶯󰶵󰷉󰷋󰷍󰷎󰷏󰷐󰷜󰷾󰸌󰸲󰹑󰹖󰹸󰺧󰺩󰺫󰺭󰺯󰻀󰻭󰼬󰽘󰽛󰾹󰿇󱀫󱀰󱀱󱀷󱀶󱀸󱀻󱁛󱁼󱂀󱂆󱂕󱂛󱂵󱂶󱂸󱃖󱃶󱃸󱃺󱃼󱄀󱄁󱃿󱄄󱄋󱄌󱄍󱄊󱄽󱅇󱅈󱅉󱅿󱆃󱇏󱇎󱇬󱈔󱈕󱉸󱊕󱊔󱊖󱊗󱊘󱊙󱊚󱊛󱊜󱊝󱊫󱊬󱊭󱊮󱊯󱊰󱊱󱊲󱊳󱊴󱊵󱊶󱊷󱋌󱋖󱍦󱍨󱍪󱍫󱍭󱍯󱍾󱎄󱎅󱎆󱎇󱎈󱎉󱎊󱎎󱎏󱎐󱎑󱎒󱎘󱎚󱎛󱎜󱎢󱎣󱎤󱎥󱎧󱎨󱎩󱎴󱏒󱐀󱐁󱓉󱔁󱖫</i>",
+  #   html: true,
+  #   class: [ "mdi" ],
+  # },
   # {
   #   type: "url",
   #   url: "https://github.com/{repo-owner}/{repo-name}",
