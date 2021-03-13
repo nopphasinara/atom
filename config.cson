@@ -65,6 +65,7 @@
       "tree-view"
       "chrome-color-picker"
       "hyperclick"
+      "repl-console"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"

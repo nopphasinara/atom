@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Run in REPL Console",
+        "command": "repl-console:run"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "REPL Console",
+          "submenu": [
+            {
+              "label": "Run",
+              "command": "repl-console:run"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
