@@ -11,3 +11,4 @@ storage
 Thumbs.db
 Icon\?
 /node_modules
+/snapshot-cache
