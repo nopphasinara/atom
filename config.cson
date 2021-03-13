@@ -25,6 +25,9 @@
     allowPendingPaneItems: false
     audioBeep: false
     automaticallyUpdate: false
+    disabledPackages: [
+      "language-shellscript"
+    ]
     packagesWithKeymapsDisabled: [
       "color-picker"
       "advanced-open-file"
