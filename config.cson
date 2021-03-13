@@ -64,6 +64,7 @@
       "styleguide"
       "tree-view"
       "chrome-color-picker"
+      "hyperclick"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -84,6 +85,7 @@
     liveSearchMinimumCharacters: 1
   "flex-tool-bar":
     reloadToolBarNotification: false
+    useBrowserPlusWhenItIsActive: true
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
@@ -106,6 +108,9 @@
       "unstash-changes": false
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  "js-hyperclick": {}
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true

@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+  "_id": "hyperlink-hyperclick@3.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-8QOfyrz9Rw6X3zhf5SHg/OMgUXNdES2fifnKMPRrZV9cBh9AIvu6QiCuGFsS+8rL4rrRJtmc8wO+77IwcBeF3w==",
+  "_location": "/hyperlink-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+  "_shasum": "3f23b8544b67349813216655f4744aa0c52caf06",
+  "_spec": "https://www.atom.io/api/packages/hyperlink-hyperclick/versions/3.0.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021213-58246-xv1u4c.im3ip",
+  "atomTestRunner": "atom-jasmine3-test-runner",
+  "author": {
+    "name": "Tony Brix"
+  },
+  "bugs": {
+    "url": "https://github.com/UziTech/hyperlink-hyperclick/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Hyperlink plugin for the Atom Hyperclick package",
+  "devDependencies": {
+    "@semantic-release/apm-config": "^8.0.0",
+    "atom-jasmine3-test-runner": "^5.1.8",
+    "eslint": "^7.15.0",
+    "semantic-release": "^17.3.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/UziTech/hyperlink-hyperclick#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "hyperlink-hyperclick",
+  "providedServices": {
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UziTech/hyperlink-hyperclick.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "atom --test spec"
+  },
+  "version": "3.0.2"
+}

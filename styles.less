@@ -1,6 +1,6 @@
-@import "ui-variables-custom";
-@import "ui-variables";
-@import "syntax-variables";
+@import "../atom/packages/one-dark-ui/styles/ui-variables-custom.less";
+@import "../atom/packages/one-dark-ui/styles/ui-variables.less";
+@import "../atom/packages/one-dark-syntax/styles/syntax-variables.less";
 
 @font-face {
   font-family: "Material Design Icons";
@@ -81,6 +81,63 @@
   src: url("fonts/Proxima Nova normal 700.otf") format("opentype")
 }
 
+.fg-color,
+.fg-hover-color:hover {
+  color: @text-color !important;
+}
+.fg-subtle,
+.fg-hover-subtle:hover {
+  color: @text-color-subtle !important;
+}
+.fg-highlight,
+.fg-hover-highlight:hover {
+  color: @text-color-highlight !important;
+}
+.fg-selected,
+.fg-hover-selected:hover {
+  color: @text-color-selected !important;
+}
+.fg-info,
+.fg-hover-info:hover {
+  color: @text-color-info !important;
+}
+.fg-success,
+.fg-hover-success:hover {
+  color: @text-color-success !important;
+}
+.fg-warning,
+.fg-hover-warning:hover {
+  color: shade(@text-color-warning, -60) !important;
+}
+.fg-error,
+.fg-hover-error:hover {
+  color: shade(@text-color-error, 10) !important;
+}
+.bg-info,
+.bg-hover-info:hover {
+  background: @background-color-info !important;
+}
+.bg-success,
+.bg-hover-success:hover {
+  background: @background-color-success !important;
+}
+.bg-warning,
+.bg-hover-warning:hover {
+  background: shade(@background-color-warning, -60) !important;
+}
+.bg-error,
+.bg-hover-error:hover {
+  background: shade(@background-color-error, -10) !important;
+}
+.bg-highlight,
+.bg-hover-highlight:hover {
+  background: @background-color-highlight !important;
+}
+.bg-selected,
+.bg-hover-selected:hover {
+  background: @background-color-selected !important;
+}
+
 .editor-font-settings {
   font-kerning: none !important;
   -webkit-font-smoothing: antialiased !important;
@@ -96,7 +153,7 @@
   vertical-align: middle !important;
   display: inline-block !important;
   font-style: normal !important;
-  min-width: 40px !important;
+  min-width: 30px !important;
   width: auto !important;
   font-family: "MaterialDesignIcons", "master-icons", "Font Awesome 5 Free", "Font Awesome 5 Brands", "FontAwesome5Free-Solid", "FontAwesome5Free-Regular", "FontAwesome5Brands-Regular", "system-ui";
 }
@@ -120,13 +177,20 @@
   &:extend(.reset-margin);
   &:extend(.reset-padding);
   font-size: calc(@ui-size * 1.2) !important;
+  font-weight: normal !important;
   vertical-align: middle !important;
+
+  &.btn:hover {
+    color: #fff;
+    background: @syntax-accent;
+  }
 
   * {
     &:extend(.editor-font-settings);
     &:extend(.reset-margin);
     &:extend(.reset-padding);
     font-size: calc(@ui-size * 1.2) !important;
+    font-weight: normal !important;
     vertical-align: middle !important;
   }
 
@@ -135,7 +199,8 @@
     &:extend(.reset-margin);
     &:extend(.reset-padding);
     text-align: center !important;
-    font-size: calc(@ui-size * 1.65) !important;
+    font-size: calc(@ui-size * 1.75) !important;
+    font-weight: normal !important;
     vertical-align: middle !important;
   }
 }
@@ -207,9 +272,9 @@ atom-text-editor:not([mini]) {
 
 
 .tool-bar {
-  vertical-align: middle !important;
   &:extend(.reset-margin);
   &:extend(.reset-padding);
+  vertical-align: middle !important;
 
   .tool-bar-spacer {
     &:extend(.reset-margin);
@@ -219,9 +284,8 @@ atom-text-editor:not([mini]) {
     min-width: 1px !important;
     width: 1px !important;
     height: auto !important;
-    // line-height: 100% !important;
+    line-height: auto !important;
     background-color: @ui-border !important;
-    // border-color: @ui-border !important;
     -webkit-mask-image: none !important;
     vertical-align: middle !important;
     margin-left: 0 !important;
@@ -231,16 +295,15 @@ atom-text-editor:not([mini]) {
   .btn {
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    // height: 42px !important;
-    line-height: inherit !important;
+    // border-color: transparent !important;
     margin: 0 !important;
     text-align: center !important;
     vertical-align: middle !important;
 
     &:hover {
-      color: #fff !important;
-      border-color: @syntax-accent !important;
-      background: @syntax-accent !important;
+      color: #fff;
+      // border-color: transparent;
+      // background: @syntax-accent;
       border-radius: 0 !important;
       vertical-align: middle !important;
     }
@@ -270,8 +333,8 @@ atom-text-editor:not([mini]) {
 
 .status-bar,
 .status-bar.status-bar {
-  // color: @status-bar-fg;
-  // background-color: @status-bar-bg;
+  color: #fff;
+  background: @syntax-accent;
   // font-size: @status-bar-font-size;
   // height: @status-bar-height;
 
@@ -280,17 +343,24 @@ atom-text-editor:not([mini]) {
   }
 
   .inline-block, a {
-    // color: @status-bar-fg;
+    color: #fff;
 
     &:hover {
       cursor: pointer !important;
-      // color: @status-bar-fg;
+      color: tint(shade(@text-color-warning, -20), -100);
       background-color: transparent;
     }
   }
 
   .icon::before {
-    // font-size: 1.2em;
+    // font-size: 1em;
+  }
+
+  .inline-block {
+      &.github-StatusBarTile,
+      &.line-ending-tile {
+          display: none;
+      }
   }
 }
 
