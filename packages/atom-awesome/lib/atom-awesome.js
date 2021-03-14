@@ -1,39 +1,57 @@
-var _ = require('lodash');
-var fse = require('fs-extra');
+;(function () {
 
-console.log(_);
-console.log(fse);
-console.log(atom.workspace);
+  setTimeout(function () {
+    runtimeGenerator();
+  }, 100);
 
-function AtomAwesome() {
-  this.foo = 'Foo';
-}
+  function runtimeGenerator() {
 
-function BaseWrapper() {
-  AtomAwesome.prototype = {
-    initialize: function () {
-      console.log('initialize');
-    },
-    activate: function () {
-      console.log('activate');
-    },
-    deactivate: function () {
-      console.log('deactivate');
-    },
-    getFoo: function () {
-      return this.foo;
-    },
-  };
+    var faker = new Faker();
+    var atomAwesome;
 
-  var result;
-  result = new AtomAwesome();
+    function baseCreate(value) {
+      if (!_.isUndefined(value)) {
+        if (!_.isObject(value)) {
+          value = Object.create(value);
+        }
+      }
 
-  return result;
-}
+      var result = Object.create(value);
 
-var atomAwesome = BaseWrapper();
+      return Object.assign(result, this);
+    }
 
-console.log(atomAwesome);
-console.log(atomAwesome.getFoo());
+    function AtomAwesomeWrapper() {
+      this.foo = 'Foo';
+      this.bar = 'Bar';
+    }
 
-module.exports = atomAwesome;
+    var AtomAwesome = function (callback, proto, ...args) {
+      if (!_.isUndefined(callback)) {
+        if (!_.isFunction(callback)) {
+          callback = function () {};
+        }
+      }
+
+      if (!_.isUndefined(proto)) {
+        if (!_.isObject(proto)) {
+          proto = Object.create(proto);
+        }
+      }
+
+      Object.assign(callback, args);
+      Object.assign(callback.prototype, proto);
+
+      return callback;
+    }.bind(this, AtomAwesomeWrapper);
+
+    atomAwesome = new AtomAwesome();
+
+    console.log(atomAwesome);
+    // console.log(atomAwesome.getFoo());
+
+    module.exports = atomAwesome;
+
+  }
+
+}.call(this));

@@ -1,3 +1,13 @@
+function replConsoleRunCode(editor) {
+  var replConsoleModule = atom.packages.getLoadedPackage('repl-console') || '';
+  if (replConsoleModule) {
+    var replConsoleModuleMain = replConsoleModule.mainModule || '';
+    if (replConsoleModuleMain) {
+      replConsoleModuleMain.runCode();
+    }
+  }
+}
+
 module.exports = [
   {
     type: "button",
@@ -57,9 +67,15 @@ module.exports = [
     },
   },
   {
-    type: "function",
-    callback: function (editor) {
-      console.log(editor);
+    type: "button",
+    callback: {
+      "": function (editor) {
+        replConsoleRunCode(editor);
+      },
+      "shift": function (editor) {
+        console.clear();
+        replConsoleRunCode(editor);
+      },
     },
     text: "<i>󰚌</i>",
     html: true,

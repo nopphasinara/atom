@@ -4,7 +4,9 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "lodash": "^4.17.21"
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
   },
   "deprecated": false,
   "description": "...",
