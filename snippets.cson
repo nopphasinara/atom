@@ -3,13 +3,13 @@
     "console.clear": {
       "prefix": "cls",
       "body": """
-      console.clear();$0
+      console.clear()
       """,
     },
     "console.log": {
       "prefix": "log",
       "body": """
-      console.log(${1:'${2:}'});$0
+      console.log(${1:'${2:}'})
       """,
     },
     "console.group": {
@@ -17,7 +17,7 @@
       "body": """
       console.group(${1:'${2:}'});
       ${3:}
-      console.groupEnd();$0
+      console.groupEnd();
       """,
     },
   },

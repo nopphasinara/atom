@@ -1,0 +1,40 @@
+{
+  "_from": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+  "_id": "lodash-snippets@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ddn19OQylA9Xj4j2ssSr5uHa4qkG/k6SyfYsa708b9WdTbCzN4qYnuUcP6ZddXhN6x9cSfVVuiesweUzr91g4A==",
+  "_location": "/lodash-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+  "_shasum": "640b40f5121142815d85d6056f5374043b46f48c",
+  "_spec": "https://www.atom.io/api/packages/lodash-snippets/versions/2.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021214-26534-13x41lq.wc38",
+  "bugs": {
+    "url": "https://github.com/richtmat/lodash-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Lo-Dash snippets for Atom",
+  "engines": {
+    "atom": ">=0.174.0"
+  },
+  "homepage": "https://github.com/richtmat/lodash-snippets/",
+  "license": "MIT",
+  "name": "lodash-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtmat/lodash-snippets.git"
+  },
+  "version": "2.0.0"
+}
