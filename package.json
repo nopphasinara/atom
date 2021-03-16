@@ -6,7 +6,10 @@
     "doc": "docs"
   },
   "nodemonConfig": {
-    "ignore": ["test/*", "docs/*"],
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
     "delay": "2000"
   },
   "scripts": {
