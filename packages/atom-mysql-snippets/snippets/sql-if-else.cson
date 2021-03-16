@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(if ... else)":
+		prefix: "s--if"
+		body: '''
+			IF `${1:var}` ${2:=} ${3:value} THEN
+				${4:-- body}
+			ELSE
+
+			END IF;$0
+		'''

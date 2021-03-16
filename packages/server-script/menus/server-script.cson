@@ -1,0 +1,7 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-workspace': [
+    label: 'Run server-script' 
+    command: 'server-script:run'
+  ]
+

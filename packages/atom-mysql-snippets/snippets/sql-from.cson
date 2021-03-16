@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-f":
+		prefix: "s-f"
+		body: "FROM `$1` AS `$2`$0"

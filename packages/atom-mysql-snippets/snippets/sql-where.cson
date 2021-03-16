@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-w":
+		prefix: "s-w"
+		body: "WHERE ( `$1` ${2:=} '$3' )$0"

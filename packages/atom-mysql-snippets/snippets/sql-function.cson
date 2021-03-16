@@ -1,0 +1,10 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-func":
+		prefix: "s-func"
+		body: '''
+			CREATE FUNCTION `${1:function_name}`(`${2:arg_name}` ${3:INT}) RETURNS ${4:INT}
+			BEGIN
+			  $5
+			END;$0
+		'''

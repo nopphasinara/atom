@@ -72,6 +72,8 @@
       "hyperclick"
       "repl-console"
       "atom-ternjs"
+      "server-script"
+      "script"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"

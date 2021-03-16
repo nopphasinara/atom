@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s--":
+		prefix: "s--"
+		body: ", `$1`.`$2`$0"

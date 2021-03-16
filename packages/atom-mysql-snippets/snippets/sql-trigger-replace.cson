@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s--trig":
+		prefix: "s--trig"
+		body: '''
+			DROP TRIGGER IF EXISTS `${1:trigger_name}`;
+			CREATE TRIGGER `${1}` ${2:AFTER} ${3:INSERT} ON `${4:table_name}` FOR EACH ROW
+			BEGIN
+			    ${5: -- Use NEW and OLD constants for access to row}
+			END;$0
+		'''

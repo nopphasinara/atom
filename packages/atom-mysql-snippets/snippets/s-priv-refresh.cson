@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(flush privileges)":
+		prefix: "s-priv-refresh"
+		body: "${0:FLUSH PRIVILEGES;}$0"

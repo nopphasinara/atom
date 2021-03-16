@@ -1,0 +1,9 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(when `...` = '...' begin ...)":
+		prefix: "s--case-wb"
+		body: '''
+			WHEN `${1:var_name}` ${2:=} '${3:value}' THEN BEGIN
+			  ${0:-- SELECT 'case $3'};
+			END;$0
+		'''

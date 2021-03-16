@@ -1,0 +1,8 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-pk":
+		prefix: "s-pk"
+		body: '''
+			PRIMARY KEY `pk_${1:id}`(`$1`)${2:,
+			}$0
+		'''

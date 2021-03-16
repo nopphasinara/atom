@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+  "_id": "Atom-Bash-Snippets@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-BXpHsnfOFkjVvLW3Jn1D0Z3xy8yQshUz7/GEGbHcVlAAEX3kgcE7ncpti1apswE0HM6tlaFh6qe+BfV1WEv0pA==",
+  "_location": "/Atom-Bash-Snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+  "_shasum": "f0bfe100278f772f76b4797a79996cc7909b4889",
+  "_spec": "https://www.atom.io/api/packages/atom-bash-snippets/versions/0.0.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021216-24479-1ll7c90.yap2",
+  "bugs": {
+    "url": "https://github.com/Janfy/Atom-Bash-Snippets.git/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Bash snippets collections",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Janfy/Atom-Bash-Snippets.git#readme",
+  "keywords": [
+    "bash",
+    "shell",
+    "script",
+    "snippet"
+  ],
+  "license": "MIT",
+  "name": "Atom-Bash-Snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janfy/Atom-Bash-Snippets.git"
+  },
+  "version": "0.0.3"
+}

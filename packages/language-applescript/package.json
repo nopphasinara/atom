@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+  "_id": "language-applescript@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-MBgmSjj7PxxWUkcPl3bsGtrcnhSyqnPeflHRyud1iwVji4CMTz9+tHPNWhZoMTcK1pxI7RMvAZ6bw8XrRcEpug==",
+  "_location": "/language-applescript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+  "_shasum": "7fe0dd0ab99738f4a12dc90a262778db97517cd2",
+  "_spec": "https://www.atom.io/api/packages/language-applescript/versions/0.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021216-21158-1u1wm2v.sjo6",
+  "activationHooks": [
+    "language-applescript:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/franzheidl/atom-applescript/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "autoCompile": {
+      "type": "boolean",
+      "default": true,
+      "title": "Auto-compile",
+      "description": "Automatically decompile (and recompile) `.scpt` files using native `osacompile`/`osadecompile` utilities."
+    }
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "description": "AppleScript language support for Atom. Converted from https://github.com/textmate/applescript.tmbundle.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/franzheidl/atom-applescript#readme",
+  "license": "MIT",
+  "name": "language-applescript",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franzheidl/atom-applescript.git"
+  },
+  "version": "0.3.0"
+}

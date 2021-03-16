@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(declare cursor)":
+		prefix: "s-dec-cur"
+		body: "DECLARE `${1:cursor_name}` FOR ${0:-- SELECT ...};$0"

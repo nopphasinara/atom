@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-db-charset":
+		prefix: "s-alter-db-charset"
+		body: "ALTER DATABASE `${1:table}` CHARACTER SET ${2:utf8} COLLATE ${3:utf8_unicode_ci};$0"

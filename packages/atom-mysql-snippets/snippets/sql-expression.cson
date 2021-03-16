@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-e":
+		prefix: "s-e"
+		body: "( `$1` ${2:=} '$3' )$0"

@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-proc":
+		prefix: "s-proc"
+		body: '''
+			CREATE PROCEDURE `${1:procedure_name}`(
+			`${2:arg_name}` ${3:INT}${4:,}
+			) BEGIN
+			  $5
+			END;$0
+		'''

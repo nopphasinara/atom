@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-drop":
+		prefix: "s-alter-drop"
+		body: "ALTER TABLE `${1:table}` DROP COLUMN `${2:col_name}`;$0"

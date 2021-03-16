@@ -1,166 +1,167 @@
 [
   {
-    title: ".atom",
-    group: "Atom",
+    title: ".atom"
+    group: "Atom"
     paths: [
-      "~/.atom",
-    ],
-  },
+      "~/.atom"
+    ]
+  }
   {
-    title: ".atom-dev",
-    group: "Atom",
+    title: ".atom-dev"
+    group: "Atom"
     paths: [
-      "/Volumes/Storage/Projects/atom-dev",
-    ],
-  },
+      "/Volumes/Storage/Projects/atom-dev"
+    ]
+  }
   {
-    title: "dotfiles",
-    group: "Dotfiles",
+    title: "dotfiles"
+    group: "Dotfiles"
     paths: [
-      "/Volumes/Storage/Projects/dotfiles",
-    ],
-  },
+      "/Volumes/Storage/Projects/dotfiles"
+    ]
+  }
   {
-    title: "Karabiner",
-    group: "Dotfiles",
+    title: "Karabiner"
+    group: "Dotfiles"
     paths: [
-      "/Volumes/Storage/Projects/dotfiles/config/karabiner",
-    ],
-  },
+      "/Volumes/Storage/Projects/dotfiles/config/karabiner"
+    ]
+  }
   {
-    title: "projects/chrome",
-    group: "Dotfiles",
+    title: "projects/chrome"
+    group: "Dotfiles"
     paths: [
-      "/Volumes/Storage/Projects/dotfiles/projects/chrome",
-    ],
-  },
+      "/Volumes/Storage/Projects/dotfiles/projects/chrome"
+    ]
+  }
   {
-    title: "projects/extensions",
-    group: "Dotfiles",
+    title: "projects/extensions"
+    group: "Dotfiles"
     paths: [
-      "/Volumes/Storage/Projects/dotfiles/projects/extensions",
-    ],
-  },
+      "/Volumes/Storage/Projects/dotfiles/projects/extensions"
+    ]
+  }
   {
-    title: "dotzsh",
-    group: "Dotzsh",
+    title: "dotzsh"
+    group: "Dotzsh"
     paths: [
-      "/Volumes/Storage/Projects/dotzsh",
-    ],
-  },
+      "/Volumes/Storage/Projects/dotzsh"
+    ]
+  }
   {
-    title: "cheatsheets",
-    group: "Github",
+    title: "cheatsheets"
+    group: "Github"
     paths: [
-      "/Volumes/Storage/Projects/github/cheatsheets",
-    ],
-  },
+      "/Volumes/Storage/Projects/github/cheatsheets"
+    ]
+  }
   {
-    title: "github",
-    group: "Github",
+    title: "github"
+    group: "Github"
     paths: [
-      "/Volumes/Storage/Projects/github",
-    ],
-  },
+      "/Volumes/Storage/Projects/github"
+    ]
+  }
   {
-    title: "happymishra__JavaScriptTutorials",
-    group: "Github",
+    title: "happymishra__JavaScriptTutorials"
+    group: "Github"
     paths: [
-      "/Volumes/Storage/Projects/github/happymishra__JavaScriptTutorials",
-    ],
-  },
+      "/Volumes/Storage/Projects/github/happymishra__JavaScriptTutorials"
+    ]
+  }
   {
-    title: "atom-extended",
-    group: "NPM",
+    title: "atom-extended"
+    group: "NPM"
     paths: [
-      "/Volumes/Storage/Projects/npm-packages/atom-extended",
-    ],
-  },
+      "/Volumes/Storage/Projects/npm-packages/atom-extended"
+    ]
+  }
   {
-    title: "chrome-extended",
-    group: "NPM",
+    title: "chrome-extended"
+    group: "NPM"
     paths: [
-      "/Volumes/Storage/Projects/npm-packages/chrome-extended",
-    ],
-  },
+      "/Volumes/Storage/Projects/npm-packages/chrome-extended"
+    ]
+  }
   {
-    title: "atom-awesome",
-    group: "NPM",
+    title: "atom-awesome"
+    group: "NPM"
     paths: [
-      "/Volumes/Storage/Projects/npm-packages/atom-awesome",
-    ],
-  },
+      "/Volumes/Storage/Projects/npm-packages/atom-awesome"
+    ]
+  }
   {
-    title: "NPM Packages",
-    group: "NPM",
+    title: "NPM Packages"
+    group: "NPM"
     paths: [
-      "/Volumes/Storage/Projects/npm-packages",
-    ],
-  },
+      "/Volumes/Storage/Projects/npm-packages"
+    ]
+  }
   {
-    title: "Projects",
-    group: "Projects",
+    title: "Projects"
+    group: "Projects"
     paths: [
-      "/Volumes/Storage/Projects",
-    ],
-  },
+      "/Volumes/Storage/Projects"
+    ]
+  }
   {
-    title: "app1.laravel.local",
-    group: "WWW",
+    title: "app1.laravel.local"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/app1.laravel.local",
-    ],
-  },
+      "/Volumes/Storage/www/app1.laravel.local"
+    ]
+  }
   {
-    title: "dashboard.reproduction-gallery.com",
-    group: "WWW",
+    title: "dashboard.reproduction-gallery.com"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/reproduction-gallery.local/dashboard",
-    ],
-  },
+      "/Volumes/Storage/www/reproduction-gallery.local/dashboard"
+    ]
+  }
   {
-    title: "demo1.reproduction-galleries.com",
-    group: "WWW",
+    title: "demo1.reproduction-galleries.com"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/demo1.reproduction-galleries.com",
-    ],
-  },
+      "/Volumes/Storage/www/demo1.reproduction-galleries.com"
+    ]
+  }
   {
-    title: "quick3.reproduction-gallery.local",
-    group: "WWW",
+    title: "quick3.reproduction-gallery.local"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/reproduction-gallery.local/quickadmin3",
-    ],
-  },
+      "/Volumes/Storage/www/reproduction-gallery.local/quickadmin3"
+    ]
+  }
   {
-    title: "reproduction-galleries.com",
-    group: "WWW",
+    title: "reproduction-galleries.com"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/reproduction-galleries.com",
-    ],
-  },
+      "/Volumes/Storage/www/reproduction-galleries.com"
+    ]
+  }
   {
-    title: "reproduction-gallery.com",
-    group: "WWW",
+    title: "reproduction-gallery.com"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/reproduction-gallery.com",
-    ],
-  },
+      "/Volumes/Storage/www/reproduction-gallery.com"
+      "/Users/fineart/Desktop/MenuClick.workflow"
+    ]
+  }
   {
-    title: "soho-art.com",
-    group: "WWW",
+    title: "soho-art.com"
+    group: "WWW"
     paths: [
-      "/Volumes/Storage/www/soho-art.com",
-      "/Volumes/Storage/Projects/controls",
-    ],
-  },
+      "/Volumes/Storage/www/soho-art.com"
+      "/Volumes/Storage/Projects/controls"
+    ]
+  }
   {
-    title: "applescript",
-    group: "AppleScript",
+    title: "applescript"
+    group: "AppleScript"
     paths: [
-      "/Volumes/Storage/Projects/github/applescript",
-    ],
-    icon: "icon-apple",
-    color: "#5ae991",
-  },
+      "/Volumes/Storage/Projects/github/applescript"
+    ]
+    icon: "icon-apple"
+    color: "#5ae991"
+  }
 ]

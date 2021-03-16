@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-o":
+		prefix: "s-o"
+		body: "ORDER BY `$1`${2: DESC}$0"

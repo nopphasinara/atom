@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s--trig-list":
+		prefix: "s--trig-list"
+		body: "SHOW TRIGGERS FROM `${1:full_db_name}` LIKE '${2:table_name}%'\\G$0"

@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-or":
+		prefix: "s-or"
+		body: "OR ( $1 )$0"

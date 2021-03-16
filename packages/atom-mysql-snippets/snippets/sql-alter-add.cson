@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-add":
+		prefix: "s-alter-add"
+		body: "ALTER TABLE `${1:table}` ADD COLUMN `${2:col_name}` ${3:INT}${4: NOT NULL};$0"

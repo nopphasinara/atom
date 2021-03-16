@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-table-rename":
+		prefix: "s-alter-table-rename"
+		body: "ALTER TABLE `${1:table}` RENAME TO `${2:new_name}`;$0"

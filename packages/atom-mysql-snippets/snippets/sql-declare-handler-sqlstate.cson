@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(declare handler)":
+		prefix: "s-dec-h"
+		body: "DECLARE CONTINUE HANDLER FOR SQLSTATE '${1:02000}' ${2:SET `done` = 1};$0"

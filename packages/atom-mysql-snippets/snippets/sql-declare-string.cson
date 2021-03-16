@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(declare ... varchar)":
+		prefix: "s-dec-s"
+		body: "DECLARE `${1:var_name}` VARCHAR(${2:255});$0"

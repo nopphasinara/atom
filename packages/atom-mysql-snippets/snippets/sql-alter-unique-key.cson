@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(add unique key)":
+		prefix: "s-alter-uk"
+		body: "ALTER TABLE `${1:table_name}` ADD UNIQUE `unique_${5:index_name}` (`${11:column_1}`${15:, `${18:column_2}`});$0"

@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(loop ... until ...)":
+		prefix: "s-repeat"
+		body: "REPEAT ${0:/* Your code ... */}; UNTIL `${1:var_name}` ${2:>} ${3:10} END REPEAT;$0"

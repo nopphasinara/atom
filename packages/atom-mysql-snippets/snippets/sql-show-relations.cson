@@ -1,0 +1,16 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(show relations table)":
+		prefix: "s-hrel"
+		body: '''
+			${0:SELECT CONCAT(
+				`constraint_name`, ' : ',
+				`table_name`, '.', `column_name`, ' -> ',
+			  `referenced_table_name`, '.', `referenced_column_name`
+			) AS `relations_list`
+			FROM `information_schema`.`key_column_usage`
+			WHERE `table_schema` = ${1:DATABASE()}
+				AND `table_name` = '${2:table_name}'
+			  AND `referenced_table_name` IS NOT NULL;
+			}$0
+		'''

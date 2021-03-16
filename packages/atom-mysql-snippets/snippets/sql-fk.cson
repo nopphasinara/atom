@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-fk":
+		prefix: "s-fk"
+		body: '''
+			CONSTRAINT `fk_${1:the_table}_$3`
+			  FOREIGN KEY (`${2:foreign_key}`)
+			  REFERENCES `${3:far_table}` (`${4:far_key}`)
+			  ON DELETE NO ACTION
+			  ON UPDATE CASCADE$0
+		'''

@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(show columns)":
+		prefix: "s-hcols"
+		body: "${2:SHOW FULL COLUMNS FROM `${1:table}`;}$0"

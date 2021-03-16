@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-func-drop":
+		prefix: "s-func-drop"
+		body: "DROP FUNCTION IF EXISTS `${1:name}`;$0"

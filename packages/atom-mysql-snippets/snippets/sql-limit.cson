@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-l":
+		prefix: "s-l"
+		body: "LIMIT ${1:0}, ${3:count}$0"

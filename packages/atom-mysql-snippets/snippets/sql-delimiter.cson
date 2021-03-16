@@ -1,0 +1,12 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-delim":
+		prefix: "s-delim"
+		body: '''
+			DELIMITER ${1:\\$\\$}
+
+			$2
+
+			$1
+			DELIMITER ;$0
+		'''

@@ -1,0 +1,11 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-table":
+		prefix: "s-table"
+		body: '''
+			CREATE TABLE IF NOT EXISTS `${1:table_name}` (
+			  `${2:id}` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+			  `${3:name}` ${4:VARCHAR(255)},
+			  PRIMARY KEY `pk_$2`(`$2`)
+			) ENGINE = InnoDB;$0
+		'''

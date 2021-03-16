@@ -1,0 +1,12 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s--proc":
+		prefix: "s--proc"
+		body: '''
+			DROP PROCEDURE IF EXISTS `${1:procedure_name}`;
+			CREATE PROCEDURE `${1}`(
+			`${2:arg_name}` ${3:INT}${4:,}
+			) BEGIN
+			  $5
+			END;$0
+		'''

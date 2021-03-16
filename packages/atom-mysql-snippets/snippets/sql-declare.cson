@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(declare ...)":
+		prefix: "s-dec"
+		body: "DECLARE `${1:var_name}` ${2:INT};$0"

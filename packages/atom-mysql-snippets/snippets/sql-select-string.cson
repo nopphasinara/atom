@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"(select '...';)":
+		prefix: "s-ss"
+		body: "SELECT '${1:My String}';$0"

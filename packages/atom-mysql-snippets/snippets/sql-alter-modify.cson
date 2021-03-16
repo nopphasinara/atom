@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-alter-modify":
+		prefix: "s-alter-modify"
+		body: "ALTER TABLE `${1:table}` MODIFY `${2:field}` ${3:NEW-FIELD-TYPE}${4: NOT NULL} ${5:AFTER `${6:field}`};$0"

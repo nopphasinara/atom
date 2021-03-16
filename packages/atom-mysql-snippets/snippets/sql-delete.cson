@@ -1,0 +1,5 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.sql":
+	"s-d":
+		prefix: "s-d"
+		body: "DELETE FROM `${1:table}`${2: WHERE `$3` = '$4'};$0"
