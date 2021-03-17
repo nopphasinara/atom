@@ -1,6 +1,0 @@
-# Exclude fixtures from language analysis
-tests/* linguist-vendored
-
-# Exclude unnecessary files from distribution
-bin/*   export-ignore
-tests/* export-ignore

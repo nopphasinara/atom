@@ -4,7 +4,6 @@
 
 'use strict';
 
-const operatorConfig = require('./operator-config');
 const helper = require('./helper');
 const providerManager = require('./provider-manager');
 const formatter = require('./formatter');
@@ -18,7 +17,7 @@ class Aligner {
    */
   align(editor) {
     // If for some reason the editor is null or not an editor instance
-    if (!editor || !atom.workspace.isTextEditor(editor)) return
+    if (!editor || !atom.workspace.isTextEditor(editor)) return;
 
     const rangesWithContent = [];
 
@@ -54,12 +53,22 @@ class Aligner {
 
     if (!character) return;
 
-    let output = helper.getOffsetsAndSectionizedLines(editor, character, ranges);
+    let output = helper.getOffsetsAndSectionizedLines(
+      editor,
+      character,
+      ranges
+    );
     let offsets = output.offsets;
     let sectionizedLines = output.sectionizedLines;
 
     ranges.forEach((range, rangeIndex) => {
-      formatter.formatRange(editor, range, character, offsets, sectionizedLines[rangeIndex]);
+      formatter.formatRange(
+        editor,
+        range,
+        character,
+        offsets,
+        sectionizedLines[rangeIndex]
+      );
     });
   }
 
@@ -70,9 +79,11 @@ class Aligner {
 
     this.disposables = new CompositeDisposable();
 
-    this.disposables.add(atom.commands.add('atom-text-editor', 'aligner:align', () => {
-      this.align(atom.workspace.getActiveTextEditor());
-    }));
+    this.disposables.add(
+      atom.commands.add('atom-text-editor', 'aligner:align', () => {
+        this.align(atom.workspace.getActiveTextEditor());
+      })
+    );
   }
 
   deactivate() {

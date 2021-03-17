@@ -1,10 +1,32 @@
-function replConsoleRunCode(editor) {
-  var replConsoleModule = atom.packages.getLoadedPackage('repl-console') || '';
-  if (replConsoleModule) {
-    var replConsoleModuleMain = replConsoleModule.mainModule || '';
-    if (replConsoleModuleMain) {
-      replConsoleModuleMain.runCode();
+function getPackageModule(package) {
+  if (typeof package !== 'undefined') {
+    var cachedPackage = atom.packages.getLoadedPackage(package) || '';
+    if (cachedPackage) {
+      return cachedPackage;
     }
+  }
+
+  return '';
+}
+
+function getPackageMainModule(package) {
+  if (typeof package !== 'undefined') {
+    var packageModule = getPackageModule(package);
+    if (packageModule) {
+      var mainModule = packageModule.mainModule || '';
+      if (mainModule) {
+        return mainModule;
+      }
+    }
+  }
+
+  return '';
+}
+
+function replConsole_RunCode(editor) {
+  var mainModule = getPackageMainModule('repl-console');
+  if (mainModule) {
+    mainModule.runCode();
   }
 }
 
@@ -70,11 +92,11 @@ module.exports = [
     type: "button",
     callback: {
       "": function (editor) {
-        replConsoleRunCode(editor);
+        replConsole_RunCode(editor);
       },
       "shift": function (editor) {
         console.clear();
-        replConsoleRunCode(editor);
+        replConsole_RunCode(editor);
       },
     },
     text: "<i>󰚌</i>",

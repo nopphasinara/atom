@@ -386,5 +386,17 @@ atom-text-editor:not([mini]) {
     h1, h2, h3, h4, h5, h6 {
       color: #000;
     }
+
+    code {
+      margin-right: 3px !important;
+      padding-top: 5px !important;
+      padding-right: 3px !important;
+      padding-bottom: 5px !important;
+      padding-left: 5px !important;
+      background: fade(@mono-1, 30);
+      // x, y, blur, grow, color
+      box-shadow: 1px 1px 4px 1px fade(@mono-1, 60);
+      font-style: normal !important;
+    }
   }
 }

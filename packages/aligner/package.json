@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-  "_id": "aligner@1.2.4",
+  "_from": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_id": "aligner@1.3.0",
   "_inBundle": false,
-  "_integrity": "sha512-asrrk/7LJvcy/kydZyCCNtY0NzRg7GE+TxpNHmM5QH3jJWg5LEiMeCiaFym0bM2/zl1Foy5v5vTMO6Y6g3f0Eg==",
+  "_integrity": "sha512-uNl3ucSm5S6UyeBh8ACnjW9PnTxFOjJSFt45cGxLggf6TkuWB7MbSt3Hf+fqw2PJz6LruBmdchBXH3dtVLbrBA==",
   "_location": "/aligner",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball"
+    "raw": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-  "_shasum": "2b2b2a3607d8e59cce40e94e6d50dc127db04389",
-  "_spec": "https://www.atom.io/api/packages/aligner/versions/1.2.4/tarball",
-  "_where": "/private/tmp/apm-install-dir-202128-87952-1iv2p3e.ub0h",
+  "_resolved": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_shasum": "b31697455e86f49d43bbf1b1ffab7b0cb7949185",
+  "_spec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021216-35350-1eejfmm.9jo5",
   "bugs": {
     "url": "https://github.com/adrianlee44/atom-aligner/issues"
   },
@@ -41,13 +41,19 @@
     }
   },
   "dependencies": {
-    "atom-package-deps": "^4.6.0",
-    "extend": "^3.0.0"
+    "atom-package-deps": "^7.2.2",
+    "extend": "^3.0.2"
   },
   "deprecated": false,
   "description": "Easily align multiple lines and blocks with support for different operators and custom configurations",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  },
   "engines": {
-    "atom": ">=1.9.0"
+    "atom": ">=1.40.0"
   },
   "homepage": "https://github.com/adrianlee44/atom-aligner#readme",
   "keywords": [
@@ -68,5 +74,8 @@
     "type": "git",
     "url": "git+https://github.com/adrianlee44/atom-aligner.git"
   },
-  "version": "1.2.4"
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "version": "1.3.0"
 }
