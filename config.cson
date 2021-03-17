@@ -127,6 +127,7 @@
     hideDockButtons: true
   "project-manager":
     prettifyTitle: false
+    showPath: false
     sortBy: "title"
   "remote-sync":
     autoHideLogPanel: true

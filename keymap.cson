@@ -252,6 +252,8 @@
     "cmd-d": "editor:select-word"
   }
   "atom-text-editor:not([mini])": {
+    "tab": "snippets:next-tab-stop"
+    "shift-tab": "snippets:previous-tab-stop"
     "shift-f11": "remote-sync:upload-file"
     "f11": "remote-sync:download-file"
     "ctrl-cmd-enter": "tree-view:rename"
@@ -320,5 +322,6 @@
     "cmd-shift-l": "unset!"
     "ctrl-space": "unset!"
     "cmd-<": "unset!"
+    "alt-cmd-p": "unset!"
   }
 }

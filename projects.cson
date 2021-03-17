@@ -28,6 +28,20 @@
     ]
   }
   {
+    title: "All Projects"
+    group: "Projects"
+    paths: [
+      "/Volumes/Storage/Projects"
+    ]
+  }
+  {
+    title: "All Websites"
+    group: "Websites"
+    paths: [
+      "/Volumes/Storage/www"
+    ]
+  }
+  {
     title: "projects/chrome"
     group: "Dotfiles"
     paths: [
