@@ -1,4 +1,50 @@
 {
+  ".source.shell": {
+    "command options":
+      "prefix": "opts"
+      "body": """
+      declare -A command_options=()
+      local command_args=()
+
+      for item in \\$*; do
+        local command_option=\\$(is_command_option \\${item\\})
+
+        if [[ -n \\$command_option && \\$command_option != "--" ]]; then
+          option=(\\$(option_value \\${command_option\\}))
+          command_options[\\${option[1]\\}]=\\${option[2]\\}
+        else
+          if [[ \\$command_option != "--" ]]; then
+            command_args+=\\${item\\}
+          fi
+        fi
+      done$0
+      """,
+    "while...file":
+      "prefix": "while-readfile"
+      "body": """
+      # Set the Internal Field Separator to an octothorpe '#'
+      IFS="#"
+      # Set input file name here
+      INPUT="bad-guys.ips.txt"
+      # Read file line-by-line to get an IP and comment to block it using the iptables
+      while read -r ip comment
+      do
+      	/sbin/iptables -A INPUT -s "$ip" -m comment --comment "$comment" -j DROP
+      done < "$INPUT"$0
+      """,
+    "while...read":
+      "prefix": "while-read"
+      "body": """
+      # Set input file name here
+      ${4:INPUT}="${1:file}"
+      # Read file line-by-line to get an IP and comment to block it using the iptables
+      while read -r ${2:line}; do
+        ${3:}
+      done < "\\$${4:INPUT}"$0
+      """,
+  },
+
+
   ".source.gfm": {
     "markup":
       "prefix": "`"
