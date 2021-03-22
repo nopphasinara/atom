@@ -160,6 +160,9 @@
 ".js.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#@%^&*|+=[]{}`?-…"
+".plain.text":
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".sass.source":
   editor:
     autoIndentOnPaste: true
