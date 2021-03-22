@@ -2,6 +2,11 @@
   "advanced-open-file":
     defaultInputValue: "Empty"
     fuzzyMatch: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
+  "atom-beautify":
+    general:
+      beautifyEntireFileOnSave: false
   "atom-ternjs":
     debug: false
     inlineFnCompletionDocumentation: true
@@ -74,6 +79,8 @@
       "atom-ternjs"
       "server-script"
       "script"
+      "php-integrator-refactoring"
+      "atom-autocomplete-php"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -125,6 +132,8 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+  "php-ide-serenata":
+    storagePath: "/Users/fineart/Library/Preferences/php-ide-serenata"
   "project-manager":
     prettifyTitle: false
     showPath: false
@@ -148,6 +157,10 @@
     alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
