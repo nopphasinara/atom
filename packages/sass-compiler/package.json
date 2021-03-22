@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+  "_id": "sass-compiler@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-k8/hC79NL0z6SPkBXdb88v9VCwnIzb7mEiX8b41JljRpyc1Y6yHA+glsPDcWwGmfXtNlFYl8JM+IqppvcHg38Q==",
+  "_location": "/sass-compiler",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+  "_shasum": "4c5616a3511d201d54aea2c284d16ac17b758848",
+  "_spec": "https://www.atom.io/api/packages/sass-compiler/versions/0.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021222-23482-bejmf4.wdikh",
+  "bugs": {
+    "url": "https://github.com/GomatoX/sass-compiler/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Sass Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax. ",
+  "engines": {
+    "atom": ">=0.170.0"
+  },
+  "homepage": "https://github.com/GomatoX/sass-compiler#readme",
+  "license": "MIT",
+  "main": "./lib/sass-compiler",
+  "name": "sass-compiler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GomatoX/sass-compiler.git"
+  },
+  "version": "0.4.0"
+}

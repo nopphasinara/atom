@@ -7,6 +7,10 @@
   "atom-beautify":
     general:
       beautifyEntireFileOnSave: false
+  "atom-package-deps":
+    ignored: [
+      "build-sass"
+    ]
   "atom-ternjs":
     debug: false
     inlineFnCompletionDocumentation: true
@@ -37,6 +41,7 @@
     automaticallyUpdate: false
     disabledPackages: [
       "language-shellscript"
+      "sass-compiler"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -143,7 +148,15 @@
     foldLogPanel: true
   "sass-autocompile":
     checkOutputFileAlreadyExists: true
+    compileCompressed: false
+    compileExpanded: true
     compileOnSave: false
+    compilePartials: true
+    indentWidth: 4
+    showAdditionalCompilationInfo: false
+    showOldParametersWarning: false
+  "sass-compiler":
+    outputStyle: "nested"
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

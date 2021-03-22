@@ -28,7 +28,7 @@
     ]
   }
   {
-    title: "All Projects"
+    title: "Projects"
     group: "Projects"
     paths: [
       "/Volumes/Storage/Projects"
@@ -112,13 +112,6 @@
     ]
   }
   {
-    title: "Projects"
-    group: "Projects"
-    paths: [
-      "/Volumes/Storage/Projects"
-    ]
-  }
-  {
     title: "app1.laravel.local"
     group: "WWW"
     paths: [
@@ -158,7 +151,6 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-gallery.com"
-      "/Users/fineart/Desktop/MenuClick.workflow"
     ]
   }
   {

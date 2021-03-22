@@ -1,0 +1,18 @@
+div {
+	&:hover {
+		display: flex;
+		// Test comment
+	}
+}
+
+div {
+	&:hover {
+		// display:flex;
+		display:flex;
+	}
+
+	::placeholder {
+		// change background to red
+		background: red;
+	}
+}
