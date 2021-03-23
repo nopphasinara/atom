@@ -16,23 +16,11 @@
     inlineFnCompletionDocumentation: true
     snippetsFirst: true
     useSnippets: true
-  "atom-visual-studio-code-ui":
-    hideDockButtons: true
-    stickyHeaders: true
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
-  "chrome-color-picker":
-    General:
-      paletteOpen: false
-      preferredFormat: "rgb"
-    HexColors:
-      uppercaseHex: true
-  "color-picker":
-    alphaChannelAlways: true
-    uppercaseColorValues: true
   "command-palette":
     preserveLastSearch: true
   core:
@@ -137,8 +125,6 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
-  "php-ide-serenata":
-    storagePath: "/Users/fineart/Library/Preferences/php-ide-serenata"
   "project-manager":
     prettifyTitle: false
     showPath: false
@@ -147,11 +133,9 @@
     autoHideLogPanel: true
     foldLogPanel: true
   "sass-autocompile":
-    checkOutputFileAlreadyExists: true
     compileCompressed: false
     compileExpanded: true
     compileOnSave: false
-    compilePartials: true
     indentWidth: 4
     showAdditionalCompilationInfo: false
     showOldParametersWarning: false
