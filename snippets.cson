@@ -1,7 +1,16 @@
 {
   ".source.shell": {
-    "command options":
-      "prefix": "opts"
+    "for item in var": {
+      "prefix": "fori",
+      "body": """
+      for ${1:item} in ${2:var}; do
+        ${3:}
+      done$0
+      """,
+    },
+
+    "command options": {
+      "prefix": "opts",
       "body": """
       declare -A command_options=()
       local command_args=()
@@ -19,8 +28,9 @@
         fi
       done$0
       """,
-    "while...file":
-      "prefix": "while-readfile"
+    },
+    "while...file": {
+      "prefix": "while-readfile",
       "body": """
       # Set the Internal Field Separator to an octothorpe '#'
       IFS="#"
@@ -32,8 +42,9 @@
       	/sbin/iptables -A INPUT -s "$ip" -m comment --comment "$comment" -j DROP
       done < "$INPUT"$0
       """,
-    "while...read":
-      "prefix": "while-read"
+    },
+    "while...read": {
+      "prefix": "while-read",
       "body": """
       # Set input file name here
       ${4:INPUT}="${1:file}"
@@ -42,17 +53,19 @@
         ${3:}
       done < "\\$${4:INPUT}"$0
       """,
+    },
   },
 
 
   ".source.gfm": {
-    "markup":
-      "prefix": "`"
+    "markup": {
+      "prefix": "`",
       "body": """
       ```${1:js}
       ${2:}
       ```
       """,
+    },
   },
 
   ".source.js": {
