@@ -1,0 +1,53 @@
+{
+  "_from": "https://github.com/nopphasinara/atom-awesome",
+  "_id": "atom-awesome@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0b7XMc/FtVbTkjGyTJTMhE9kEDUyOFZid1MtKl2segoDGYwVLjQo/USQ/m0Y6RbRt+qz3VICsGob/vJOVJKaOg==",
+  "_location": "/atom-awesome",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://github.com/nopphasinara/atom-awesome",
+    "rawSpec": "https://github.com/nopphasinara/atom-awesome",
+    "saveSpec": "https://github.com/nopphasinara/atom-awesome",
+    "fetchSpec": "https://github.com/nopphasinara/atom-awesome"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://github.com/nopphasinara/atom-awesome",
+  "_shasum": "1f959c3c1abb37d31f17aad095d681b6d91c8aad",
+  "_spec": "https://github.com/nopphasinara/atom-awesome",
+  "_where": "/private/tmp/apm-install-dir-202128-91937-mjrby5.gulka",
+  "bugs": {
+    "url": "https://github.com/nopphasinara/atom-awesome"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "...",
+  "engines": {
+    "atom": ">=1.9.0"
+  },
+  "homepage": "https://github.com/nopphasinara/atom-awesome#readme",
+  "keywords": [
+    "atom",
+    "awesome"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-awesome",
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nopphasinara/atom-awesome.git"
+  },
+  "version": "1.3.0"
+}

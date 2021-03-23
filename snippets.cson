@@ -72,21 +72,39 @@
     "console.clear": {
       "prefix": "cls",
       "body": """
-      console.clear()
+      console.clear();$0
       """,
     },
     "console.log": {
       "prefix": "log",
       "body": """
-      console.log(${1:'${2:}'})
+      console.log(${1:''})$0
+      """,
+    },
+    "console.warn": {
+      "prefix": "warn",
+      "body": """
+      console.warn(${1:''})$0
+      """,
+    },
+    "console.error": {
+      "prefix": "error",
+      "body": """
+      console.error(${1:''})$0
+      """,
+    },
+    "console.info": {
+      "prefix": "info",
+      "body": """
+      console.info(${1:''})$0
       """,
     },
     "console.group": {
       "prefix": "g-log",
       "body": """
-      console.group(${1:'${2:}'});
-      ${3:}
-      console.groupEnd();
+      console.group(${1:''});
+      ${2:}
+      console.groupEnd();$0
       """,
     },
   },
