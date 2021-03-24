@@ -253,6 +253,7 @@
     "cmd-d": "editor:select-word"
   }
   "atom-text-editor:not([mini])": {
+    "alt-cmd-c": "editor:copy-path"
     "tab": "snippets:next-tab-stop"
     "shift-tab": "snippets:previous-tab-stop"
     "shift-f11": "remote-sync:upload-file"
@@ -291,7 +292,6 @@
   }
   "atom-text-editor": {
     "ctrl-cmd-c": "editor:copy-project-path"
-    "alt-cmd-c": "editor:copy-path"
     "cmd-e": "emmet:balance-inward"
     "cmd-shift-e": "emmet:balance-outward"
     "ctrl-_": "emmet:decrement-number-by-10"

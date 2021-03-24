@@ -141,6 +141,12 @@
     showOldParametersWarning: false
   "sass-compiler":
     outputStyle: "nested"
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Winsor"
+    ]
+    noticesMode: "console"
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

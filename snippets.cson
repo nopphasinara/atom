@@ -111,6 +111,25 @@
 
 
   ".source.php": {
+    "if function exists": {
+      "prefix": "if-fne",
+      "body": """
+      if (function_exists('${1:funcName}')) {
+        ${3:${1:funcName}(${2:});}
+      \\}$0
+      """,
+    },
+    "if function not exists": {
+      "prefix": "if-fnne",
+      "body": """
+      if (!function_exists('${1:funcName}')) {
+        function ${1:funcName}(${2:}) {
+          ${3:}
+        \\}
+      \\}$0
+      """,
+    },
+
     "pr": {
       "prefix": "pr",
       "body": """
