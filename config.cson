@@ -17,7 +17,9 @@
     snippetsFirst: true
     useSnippets: true
   "autocomplete-plus":
+    autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
+    maxVisibleSuggestions: 5
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -29,7 +31,6 @@
     automaticallyUpdate: false
     disabledPackages: [
       "language-shellscript"
-      "sass-compiler"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -168,7 +169,10 @@
   editor:
     autoIndentOnPaste: true
 ".css.scss.source":
+  "autocomplete-plus":
+    extraWordCharacters: "$"
   editor:
+    autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
 ".html.php.text":
   editor:
@@ -183,3 +187,9 @@
   editor:
     autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".source.vim-snippet":
+  editor:
+    tabType: "soft"
+".text.vim-help":
+  editor:
+    tabType: "soft"

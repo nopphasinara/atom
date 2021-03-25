@@ -1,0 +1,80 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+  "_id": "language-viml@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-cVp50NAbLwmr4BUkKTxc/cw+VYNoLJ7J1eNWOhUYs1luJpEUeOI4R3eeWym8G3DDyazrxd67vzu+Ap2kgA330w==",
+  "_location": "/language-viml",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+  "_shasum": "75112dad9a20fc2f0ca606e0bfed1237f2c12495",
+  "_spec": "https://www.atom.io/api/packages/language-viml/versions/1.2.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021225-12479-do33q5.0najn",
+  "author": {
+    "name": "Evan Hahn"
+  },
+  "bugs": {
+    "url": "https://github.com/Alhadis/language-viml/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Vim Script language support for Atom",
+  "engines": {
+    "atom": ">0.50.0",
+    "node": ">=13.2.0"
+  },
+  "eslintConfig": {
+    "extends": "@alhadis",
+    "overrides": [
+      {
+        "files": [
+          "bin/update.mjs"
+        ],
+        "rules": {
+          "indent": 0,
+          "no-async-promise-executor": 0
+        }
+      },
+      {
+        "files": [
+          "index.js"
+        ],
+        "globals": {
+          "atom": "readonly"
+        }
+      }
+    ]
+  },
+  "homepage": "https://github.com/Alhadis/language-viml#readme",
+  "keywords": [
+    "Vim",
+    "VimScript",
+    "VimL",
+    "Vim Script",
+    "Vi"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "John Gardner",
+      "email": "gardnerjohng@gmail.com",
+      "url": "https://github.com/Alhadis"
+    }
+  ],
+  "name": "language-viml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alhadis/language-viml.git"
+  },
+  "version": "1.2.2"
+}
