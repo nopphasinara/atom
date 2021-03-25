@@ -1,5 +1,12 @@
 [
   {
+    title: "Home"
+    group: "macOS"
+    paths: [
+      "~/"
+    ]
+  }
+  {
     title: ".atom"
     group: "Atom"
     paths: [
@@ -25,6 +32,13 @@
     group: "Dotfiles"
     paths: [
       "/Volumes/Storage/Projects/dotfiles/config/karabiner"
+    ]
+  }
+  {
+    title: "Storage"
+    group: "Storage"
+    paths: [
+      "/Volumes/Storage"
     ]
   }
   {
