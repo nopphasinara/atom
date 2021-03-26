@@ -1,7 +1,7 @@
 @import "packages/one-dark-ui/styles/ui-variables-custom.less";
 @import "packages/one-dark-ui/styles/ui-variables.less";
 @import "packages/one-dark-syntax/styles/syntax-variables.less";
-@import "variables.less";
+@import "_variables.less";
 
 
 @font-face {
@@ -83,83 +83,61 @@
   src: url("fonts/Proxima Nova normal 700.otf") format("opentype")
 }
 
-@fg-color: @text-color !important;
-@fg-subtle: @text-color-subtle !important;
-@fg-highlight: @text-color-highlight !important;
-@fg-selected: @text-color-selected !important;
-@fg-info: @text-color-info !important;
-@fg-success: @text-color-success !important;
-@fg-warning: shade(@text-color-warning, -60) !important;
-@fg-error: shade(@text-color-error, 10) !important;
-
-@bg-highlight: @background-color-highlight !important;
-@bg-selected: @background-color-selected !important;
-@bg-info: @background-color-info !important;
-@bg-success: @background-color-success !important;
-@bg-warning: shade(@background-color-warning, -60) !important;
-@bg-error: shade(@background-color-error, -10) !important;
-
 .fg-color,
 .fg-hover-color:hover {
-  color: @fg-color !important;
+  color: @text-color !important;
 }
 .fg-subtle,
 .fg-hover-subtle:hover {
-  color: @fg-subtle !important;
+  color: @text-color-subtle !important;
 }
 .fg-highlight,
 .fg-hover-highlight:hover {
-  color: @fg-highlight !important;
+  color: @text-color-highlight !important;
 }
 .fg-selected,
 .fg-hover-selected:hover {
-  color: @fg-selected !important;
+  color: @text-color-selected !important;
 }
 .fg-info,
 .fg-hover-info:hover {
-  color: @fg-info !important;
+  color: @text-color-info !important;
 }
 .fg-success,
 .fg-hover-success:hover {
-  color: @fg-success !important;
+  color: @text-color-success !important;
 }
 .fg-warning,
 .fg-hover-warning:hover {
-  color: @fg-warning !important;
+  color: shade(@text-color-warning, -60) !important;
 }
 .fg-error,
 .fg-hover-error:hover {
-  color: @fg-error !important;
+  color: shade(@text-color-error, 10) !important;
 }
 .bg-info,
 .bg-hover-info:hover {
-  background: @bg-highlight !important;
-  background-color: @bg-highlight !important;
+  background: @background-color-info !important;
 }
 .bg-success,
 .bg-hover-success:hover {
-  background: @bg-selected !important;
-  background-color: @bg-selected !important;
+  background: @background-color-success !important;
 }
 .bg-warning,
 .bg-hover-warning:hover {
-  background: @bg-info !important;
-  background-color: @bg-info !important;
+  background: shade(@background-color-warning, -60) !important;
 }
 .bg-error,
 .bg-hover-error:hover {
-  background: @bg-success !important;
-  background-color: @bg-success !important;
+  background: shade(@background-color-error, -10) !important;
 }
 .bg-highlight,
 .bg-hover-highlight:hover {
-  background: @bg-warning !important;
-  background-color: @bg-warning !important;
+  background: @background-color-highlight !important;
 }
 .bg-selected,
 .bg-hover-selected:hover {
-  background: @bg-error !important;
-  background-color: @bg-error !important;
+  background: @background-color-selected !important;
 }
 
 .editor-font-settings {
@@ -421,46 +399,6 @@ atom-text-editor:not([mini]) {
       // x, y, blur, grow, color
       box-shadow: 1px 1px 4px 1px fade(@mono-1, 60);
       font-style: normal !important;
-    }
-  }
-}
-
-
-atom-panel-container {
-  &.header {
-    .title-bar {
-      position: relative !important;
-      top: auto !important;
-      right: auto !important;
-      bottom: auto !important;
-      left: auto !important;
-      border: none !important;
-      margin: none !important;
-      padding-top: 10px !important;
-      padding-bottom: 5px !important;
-      height: auto !important;
-      max-height: auto !important;
-      min-height: auto !important;
-      line-height: 100% !important;
-      outline: none !important;
-      box-shadow: none !important;
-      border-radius: 0 !important;
-      font-size: 12px !important;
-      font-weight: 600 !important;
-      font-kerning: none !important;
-      -webkit-font-smoothing: antialiased !important;
-      -moz-osx-font-smoothing: antialiased !important;
-      -moz-font-smoothing: antialiased !important;
-      letter-spacing: 0 !important;
-      color: fade(@ui-bg, 72) !important;
-      background: @mono-1 !important;
-      box-shadow: 0px 0px 30px 5px fade(tint(@fg-subtle, -50), 50) !important;
-      z-index: 3 !important;
-
-      // &:hover {
-      //   color: fade(@ui-bg, 72) !important;
-      //   background: darken(@mono-1, 5) !important;
-      // }
     }
   }
 }
