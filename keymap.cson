@@ -176,6 +176,7 @@
     "cmd-{": "tree-view:unfocus"
     "cmd-}": "tree-view:unfocus"
     "alt-cmd-c": "tree-view:copy-full-path"
+    "ctrl-cmd-c": "tree-view:copy-project-path"
     "r": "tree-view:rename"
     "m": "tree-view:move"
     "a": "tree-view:add-file"

@@ -1,6 +1,8 @@
-@import "../atom/packages/one-dark-ui/styles/ui-variables-custom.less";
-@import "../atom/packages/one-dark-ui/styles/ui-variables.less";
-@import "../atom/packages/one-dark-syntax/styles/syntax-variables.less";
+@import "packages/one-dark-ui/styles/ui-variables-custom.less";
+@import "packages/one-dark-ui/styles/ui-variables.less";
+@import "packages/one-dark-syntax/styles/syntax-variables.less";
+@import "_variables.less";
+
 
 @font-face {
   font-family: "Material Design Icons";
@@ -333,17 +335,17 @@ atom-text-editor:not([mini]) {
 
 .status-bar,
 .status-bar.status-bar {
-  color: #fff;
+  color: @status-bar-fg-color;
   background: @syntax-accent;
-  // font-size: @status-bar-font-size;
-  // height: @status-bar-height;
+  font-size: @status-bar-font-size;
+  height: @status-bar-height;
 
   &, & * {
-    // line-height: @status-bar-height;
+    line-height: @status-bar-height;
   }
 
   .inline-block, a {
-    color: #fff;
+    color: fade(@status-bar-fg-color, 70);
 
     &:hover {
       cursor: pointer !important;
@@ -353,7 +355,7 @@ atom-text-editor:not([mini]) {
   }
 
   .icon::before {
-    // font-size: 1em;
+    font-size: 16px;
   }
 
   .inline-block {

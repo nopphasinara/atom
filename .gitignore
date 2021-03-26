@@ -12,3 +12,4 @@ Thumbs.db
 Icon\?
 /node_modules
 /snapshot-cache
+/packages/atom-autocomplete-php/indexes/**
