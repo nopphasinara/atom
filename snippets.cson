@@ -1,4 +1,32 @@
 {
+  ".text.plain.null-grammar, .source.shell": {
+    "/bin/zsh": {
+      "prefix": "zsh",
+      "body": """
+      #!/bin/zsh$0
+      """,
+    },
+    "/bin/bash": {
+      "prefix": "bash",
+      "body": """
+      #!/bin/bash$0
+      """,
+    },
+    "/bin/sh": {
+      "prefix": "sh",
+      "body": """
+      #!/bin/sh$0
+      """,
+    },
+    "/usr/bin/env": {
+      "prefix": "env",
+      "body": """
+      #!/usr/bin/env ${1:zsh}$0
+      """,
+    },
+  },
+
+
   ".source.shell": {
     "for item in var": {
       "prefix": "fori",
@@ -12,23 +40,42 @@
     "command options": {
       "prefix": "opts",
       "body": """
-      declare -A command_options=()
-      local command_args=()
+      # Extract command options and arguments
+      declare -A command_opts=()
+      declare -a command_args=()
+      while [[ -n \\$1 ]]; do
+        local arg_val="\\$(echo \\$1 | sed 's/^[\\\\ ]+//g' | sed 's/[\\\\ ]+\\$//g')"
 
-      for item in \\$*; do
-        local command_option=\\$(is_command_option \\${item\\})
+        case \\$arg_val in
+          --foobar ) command_opts["--foobar"]="\\${arg_val\\}" ;;
+          * ) command_args+="\\${arg_val\\}" ;;
+        esac
 
-        if [[ -n \\$command_option && \\$command_option != "--" ]]; then
-          option=(\\$(option_value \\${command_option\\}))
-          command_options[\\${option[1]\\}]=\\${option[2]\\}
-        else
-          if [[ \\$command_option != "--" ]]; then
-            command_args+=\\${item\\}
-          fi
-        fi
+        shift
       done$0
       """,
     },
+
+    # "command options": {
+    #   "prefix": "opts",
+    #   "body": """
+    #   declare -A command_options=()
+    #   local command_args=()
+    #
+    #   for item in \\$*; do
+    #     local command_option=\\$(is_command_option \\${item\\})
+    #
+    #     if [[ -n \\$command_option && \\$command_option != "--" ]]; then
+    #       option=(\\$(option_value \\${command_option\\}))
+    #       command_options[\\${option[1]\\}]=\\${option[2]\\}
+    #     else
+    #       if [[ \\$command_option != "--" ]]; then
+    #         command_args+=\\${item\\}
+    #       fi
+    #     fi
+    #   done$0
+    #   """,
+    # },
     "while...file": {
       "prefix": "while-readfile",
       "body": """

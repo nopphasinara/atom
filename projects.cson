@@ -21,10 +21,11 @@
     ]
   }
   {
-    title: "dotfiles"
+    title: "DOTFILE"
     group: "Dotfiles"
     paths: [
-      "/Volumes/Storage/Projects/dotfiles"
+      "/Volumes/Storage/Projects/atom"
+      "/Volumes/Storage/Projects/dotzsh"
     ]
   }
   {
