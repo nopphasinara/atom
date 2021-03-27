@@ -1,43 +1,46 @@
 {
+  "_args": [
+    [
+      "atom-awesome@1.0.0",
+      "/usr/local/bin/apm"
+    ]
+  ],
   "_from": "https://github.com/nopphasinara/atom-awesome",
-  "_id": "atom-awesome@1.3.0",
+  "_id": "atom-awesome@1.0.0",
   "_inBundle": false,
   "_integrity": "sha512-0b7XMc/FtVbTkjGyTJTMhE9kEDUyOFZid1MtKl2segoDGYwVLjQo/USQ/m0Y6RbRt+qz3VICsGob/vJOVJKaOg==",
-  "_location": "/atom-awesome",
+  "_location": "../atom-awesome",
   "_phantomChildren": {},
   "_requested": {
-    "type": "remote",
-    "raw": "https://github.com/nopphasinara/atom-awesome",
-    "rawSpec": "https://github.com/nopphasinara/atom-awesome",
-    "saveSpec": "https://github.com/nopphasinara/atom-awesome",
-    "fetchSpec": "https://github.com/nopphasinara/atom-awesome"
+    "type": "version",
+    "registry": true,
+    "name": "atom-awesome",
+    "scope": null,
+    "escapedName": "atom-awesome",
+    "raw": "atom-awesome@1.0.0",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#USER"
   ],
   "_resolved": "https://github.com/nopphasinara/atom-awesome",
   "_shasum": "1f959c3c1abb37d31f17aad095d681b6d91c8aad",
-  "_spec": "https://github.com/nopphasinara/atom-awesome",
-  "_where": "/private/tmp/apm-install-dir-202128-91937-mjrby5.gulka",
+  "_spec": "1.0.0",
+  "_where": "/usr/local/bin/apm",
   "bugs": {
     "url": "https://github.com/nopphasinara/atom-awesome"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
-  "description": "...",
-  "engines": {
-    "atom": ">=1.9.0"
+  "dependencies": {
+    "xmlbuilder": "0.4.x",
+    "xmldom": "0.1.x"
   },
-  "homepage": "https://github.com/nopphasinara/atom-awesome#readme",
-  "keywords": [
-    "atom",
-    "awesome"
-  ],
-  "license": "MIT",
-  "main": "./lib/main",
-  "name": "atom-awesome",
+  "devDependencies": {
+    "nodeunit": "0.7.x"
+  },
   "providedServices": {
     "aligner.provider": {
       "versions": {
@@ -45,9 +48,23 @@
       }
     }
   },
+  "engines": {
+    "node": ">= 0.1.100"
+  },
+  "main": "./lib/main",
+  "name": "atom-awesome",
+  "description": "...",
+  "keywords": [
+    "atom awesome"
+  ],
+  "homepage": "https://github.com/nopphasinara/atom-awesome#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nopphasinara/atom-awesome.git"
+    "url": "git://github.com/nopphasinara/atom-awesome.git"
   },
-  "version": "1.3.0"
+  "scripts": {
+    "test": "nodeunit tests"
+  },
+  "license": "MIT",
+  "version": "1.0.0"
 }
