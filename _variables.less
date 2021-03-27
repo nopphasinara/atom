@@ -1,3 +1,48 @@
-@status-bar-fg-color: #fff;
+@fg-color: @text-color;
+@fg-dark: @ui-bg;
+@fg-subtle: @text-color-subtle;
+@fg-highlight: @text-color-highlight;
+@fg-selected: @text-color-selected;
+@fg-info: @text-color-info;
+@fg-success: @text-color-success;
+@fg-warning: shade(@text-color-warning, -60);
+@fg-error: shade(@text-color-error, 10);
+
+@fg-hover-color: fade(tint(shade(@text-color, -50), -10), 90);
+@fg-hover-dark: fade(tint(shade(@ui-bg, -50), -10), 90);
+@fg-hover-subtle: fade(tint(shade(@text-color-subtle, -50), -10), 90);
+@fg-hover-highlight: fade(tint(shade(@text-color-highlight, -50), -10), 90);
+@fg-hover-selected: fade(tint(shade(@text-color-selected, -50), -10), 90);
+@fg-hover-info: fade(tint(shade(@text-color-info, -50), -10), 90);
+@fg-hover-success: fade(tint(shade(@text-color-success, -50), -10), 90);
+@fg-hover-warning: fade(tint(shade(@text-color-warning, -50), -10), 90);
+@fg-hover-error: fade(tint(shade(@text-color-error, -50), -10), 90);
+
+@bg-dark: @ui-bg;
+@bg-highlight: @background-color-highlight;
+@bg-selected: @background-color-selected;
+@bg-info: @background-color-info;
+@bg-success: @background-color-success;
+@bg-warning: shade(@background-color-warning, -60);
+@bg-error: shade(@background-color-error, -10);
+
+@bg-hover-dark: fade(tint(shade(@ui-bg, -50), -10), 90);
+@bg-hover-highlight: fade(tint(shade(@background-color-highlight, -50), -10), 90);
+@bg-hover-selected: fade(tint(shade(@background-color-selected, -50), -10), 90);
+@bg-hover-info: fade(tint(shade(@background-color-info, 0), 0), 90);
+// @bg-hover-info: fade(tint(shade(@background-color-info, -50), -10), 90);
+@bg-hover-success: fade(tint(shade(@background-color-success, -50), -10), 90);
+@bg-hover-warning: fade(tint(shade(@background-color-warning, -50), -10), 90);
+@bg-hover-error: fade(tint(shade(@background-color-error, -50), -10), 90);
+
+@tool-bar-btn-width: 34px;
+@tool-bar-height: 46px;
+@tab-bar-height: 40px;
+@tree-view-width: 280px;
+@tree-view-tab-bar-height: 46px;
+
+@status-bar-fg-color: fade(tint(@bg-info, 90), 80);
+@status-bar-fg-hover-color: spin(shade(tint(@status-bar-fg-color, 100), 0), 100);
+@status-bar-bg-color: @bg-info;
 @status-bar-font-size: 12px;
 @status-bar-height: 24px;

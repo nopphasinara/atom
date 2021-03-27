@@ -1,4 +1,129 @@
 {
+  ".source.css .meta.property-value.css": {
+    "important": {
+      "prefix": "im",
+      "body": """
+      important$0
+      """,
+    },
+  },
+
+
+  ".source.js": {
+    "console.clear": {
+      "prefix": "cls",
+      "body": """
+      console.clear();$0
+      """,
+    },
+    "console.log": {
+      "prefix": "log",
+      "body": """
+      console.log(${1:''})$0
+      """,
+    },
+    "console.warn": {
+      "prefix": "warn",
+      "body": """
+      console.warn(${1:''})$0
+      """,
+    },
+    "console.error": {
+      "prefix": "error",
+      "body": """
+      console.error(${1:''})$0
+      """,
+    },
+    "console.info": {
+      "prefix": "info",
+      "body": """
+      console.info(${1:''})$0
+      """,
+    },
+    "console.group": {
+      "prefix": "g-log",
+      "body": """
+      console.group(${1:''});
+      ${2:}
+      console.groupEnd();$0
+      """,
+    },
+  },
+
+
+  ".source.php": {
+    "if function exists": {
+      "prefix": "if-fne",
+      "body": """
+      if (function_exists('${1:funcName}')) {
+        ${3:${1:funcName}(${2:});}
+      \\}$0
+      """,
+    },
+    "if function not exists": {
+      "prefix": "if-fnne",
+      "body": """
+      if (!function_exists('${1:funcName}')) {
+        function ${1:funcName}(${2:}) {
+          ${3:}
+        \\}
+      \\}$0
+      """,
+    },
+
+    "pr": {
+      "prefix": "pr",
+      "body": """
+      echo '<pre>'; print_r(${1:\\$${2:value}}); echo '</pre>';
+      """,
+    },
+
+    "function assignment": {
+      "prefix": "fn",
+      "body": """
+      function ${1:func_name}(${2:\\$${3:value}}) {
+        ${4:/* ... */}
+      \\}
+      """,
+    },
+
+    "anonymous function": {
+      "prefix": "f",
+      "body": """
+      function (${1:\\$${2:value}}${3:}) {
+        ${4:/* ... */}
+      \\}
+      """,
+    },
+
+    "public function funcName()": {
+      "prefix": "ff",
+      "body": """
+      /**
+      * ${1:Proxy dynamic properties onto methods.}
+      *
+      * @return mixed
+      */
+      ${2:public} function ${3:funcName}(${4:\\$${5:value}}) {
+        ${6:/* ... */}
+      \\}
+      """,
+    },
+  },
+
+
+  ".source.gfm": {
+    "markup": {
+      "prefix": "`",
+      "body": """
+      ```${1:js}
+      ${2:}
+      ```
+      """,
+    },
+  },
+
+
   ".text.plain.null-grammar, .source.shell": {
     "/bin/zsh": {
       "prefix": "zsh",
@@ -99,120 +224,6 @@
       while read -r ${2:line}; do
         ${3:}
       done < "\\$${4:INPUT}"$0
-      """,
-    },
-  },
-
-
-  ".source.gfm": {
-    "markup": {
-      "prefix": "`",
-      "body": """
-      ```${1:js}
-      ${2:}
-      ```
-      """,
-    },
-  },
-
-  ".source.js": {
-    "console.clear": {
-      "prefix": "cls",
-      "body": """
-      console.clear();$0
-      """,
-    },
-    "console.log": {
-      "prefix": "log",
-      "body": """
-      console.log(${1:''})$0
-      """,
-    },
-    "console.warn": {
-      "prefix": "warn",
-      "body": """
-      console.warn(${1:''})$0
-      """,
-    },
-    "console.error": {
-      "prefix": "error",
-      "body": """
-      console.error(${1:''})$0
-      """,
-    },
-    "console.info": {
-      "prefix": "info",
-      "body": """
-      console.info(${1:''})$0
-      """,
-    },
-    "console.group": {
-      "prefix": "g-log",
-      "body": """
-      console.group(${1:''});
-      ${2:}
-      console.groupEnd();$0
-      """,
-    },
-  },
-
-
-  ".source.php": {
-    "if function exists": {
-      "prefix": "if-fne",
-      "body": """
-      if (function_exists('${1:funcName}')) {
-        ${3:${1:funcName}(${2:});}
-      \\}$0
-      """,
-    },
-    "if function not exists": {
-      "prefix": "if-fnne",
-      "body": """
-      if (!function_exists('${1:funcName}')) {
-        function ${1:funcName}(${2:}) {
-          ${3:}
-        \\}
-      \\}$0
-      """,
-    },
-
-    "pr": {
-      "prefix": "pr",
-      "body": """
-      echo '<pre>'; print_r(${1:\\$${2:value}}); echo '</pre>';
-      """,
-    },
-
-    "function assignment": {
-      "prefix": "fn",
-      "body": """
-      function ${1:func_name}(${2:\\$${3:value}}) {
-        ${4:/* ... */}
-      \\}
-      """,
-    },
-
-    "anonymous function": {
-      "prefix": "f",
-      "body": """
-      function (${1:\\$${2:value}}${3:}) {
-        ${4:/* ... */}
-      \\}
-      """,
-    },
-
-    "public function funcName()": {
-      "prefix": "ff",
-      "body": """
-      /**
-      * ${1:Proxy dynamic properties onto methods.}
-      *
-      * @return mixed
-      */
-      ${2:public} function ${3:funcName}(${4:\\$${5:value}}) {
-        ${6:/* ... */}
-      \\}
       """,
     },
   },

@@ -74,9 +74,7 @@ atom-text-editor:not([mini]) {
   &:extend(.reset-margin);
   &:extend(.reset-padding);
   vertical-align: middle !important;
-  background: @bg-hover-dark;
-  // border-top: solid 1px red !important;
-  // border-bottom: solid 1px red !important;
+  background: @bg-hover-info;
   height: @tool-bar-height !important;
   line-height: @tool-bar-height !important;
 
@@ -87,15 +85,13 @@ atom-text-editor:not([mini]) {
     overflow: hidden !important;
     min-width: 1px !important;
     width: 1px !important;
-    height: @tool-bar-height !important;
-    line-height: @tool-bar-height !important;
-    background: @bg-dark !important;
+    height: auto !important;
+    line-height: auto !important;
+    background-color: @ui-border !important;
     -webkit-mask-image: none !important;
     vertical-align: middle !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    outline: none !important;
-    border: none !important;
   }
 
   .btn {
@@ -105,6 +101,8 @@ atom-text-editor:not([mini]) {
     margin: 0 !important;
     text-align: center !important;
     vertical-align: middle !important;
+    height: @tool-bar-height !important;
+    line-height: @tool-bar-height !important;
 
     &:hover {
       color: #fff;
@@ -119,17 +117,14 @@ atom-text-editor:not([mini]) {
   button.tool-bar-btn {
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    border-width: 1px !important;
+    border-width: 0 !important;
     border-radius: 0 !important;
-    border-color: transparent !important;
     text-align: center !important;
     vertical-align: middle !important;
     width: auto !important;
     min-width: 40px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
-    background: @bg-hover-dark;
-    outline: none !important;
 
     &:hover {
       // color: @hue-6-2;
@@ -285,7 +280,7 @@ atom-dock {
 
       .tab[is="tabs-tab"] {
         &[data-type="TreeView"] {
-          background: @bg-hover-dark !important;
+          background: @bg-highlight !important;
           height: @tree-view-tab-bar-height !important;
           line-height: @tree-view-tab-bar-height !important;
         }

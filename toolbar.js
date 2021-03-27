@@ -34,11 +34,33 @@ module.exports = [
   {
     type: "button",
     callback: {
+      "": function (editor) {
+        replConsole_RunCode(editor);
+      },
+      "shift": function (editor) {
+        console.clear();
+        replConsole_RunCode(editor);
+      },
+    },
+    text: "<i>󰚌</i>",
+    html: true,
+    class: ["mdi", "bg-error", "fg-selected", "fg-hover-warning"],
+    // show: {
+    //   grammar: [
+    //     "js",
+    //     "json",
+    //     "php",
+    //   ],
+    // },
+  },
+  {
+    type: "button",
+    callback: {
       "": "window:reload",
     },
     text: "<i>󰇥</i>",
     html: true,
-    class: [ "mdi" ],
+    class: ["mdi", "bg-warning", "bg-hover-warning", "fg-dark", "fg-dark"],
   },
   { type: "spacer" },
   {
@@ -46,7 +68,7 @@ module.exports = [
     url: "https://github.com/{repo-owner}/{repo-name}",
     text: "<i>󰊢</i>",
     html: true,
-    class: [ "mdi" ],
+    class: ["mdi"],
   },
   { type: "spacer" },
   {
@@ -56,7 +78,7 @@ module.exports = [
     },
     text: "<i>󰲌</i>",
     html: true,
-    class: [ "mdi" ],
+    class: ["mdi"],
   },
   { type: "spacer" },
   {
@@ -66,7 +88,7 @@ module.exports = [
     },
     text: "<i>󰍔</i>",
     html: true,
-    class: [ "mdi" ],
+    class: ["mdi"],
     show: {
       grammar: [
         "Markdown",
@@ -81,7 +103,7 @@ module.exports = [
     },
     text: "<i>󰈋</i>",
     html: true,
-    class: [ "mdi" ],
+    class: ["mdi"],
     show: {
       function: () => {
         return !atom.packages.isPackageDisabled('chrome-color-picker');
@@ -92,24 +114,14 @@ module.exports = [
     type: "button",
     callback: {
       "": function (editor) {
-        replConsole_RunCode(editor);
-      },
-      "shift": function (editor) {
-        console.clear();
-        replConsole_RunCode(editor);
+        console.log(atom.workspace.getActiveTextEditor().getCursorSyntaxTreeScope().getScopeChain());
       },
     },
-    text: "<i>󰚌</i>",
+    text: "<i>󰆤</i>",
     html: true,
-    class: [ "mdi", "bg-error", "bg-hover-warning", "fg-highlight", "fg-hover-color" ],
-    // show: {
-    //   grammar: [
-    //     "js",
-    //     "json",
-    //     "php",
-    //   ],
-    // },
+    class: ["mdi"],
   },
+  // { type: "spacer" },
   // {
   //   type: "button",
   //   callback: {
@@ -117,7 +129,7 @@ module.exports = [
   //   },
   //   text: "<i>󰌞󰌝󰌟󰌧󰌨󰌴󰌹󰍓 󰍕󰍜󰍣󰍺󰍹󰍻󰍽󰎂 󰎔󰎙󰎝󰎠󰏋󰏌󰏑󰏔 󰏕󰏘󰏯󰏰󰐏󰐒󰐓󰐕 󰐣󰐤󰐭󰐰󰑇󰑋󰑐󰑑 󰑒󰑓󰑕󰑖󰑘󰑙󰑥󰑧 󰒍󰒓󰒟󰒲󰒻󰒺󰒾󰓂 󰓆󰓢󰓡󰓦󰓧󰓾󰕅󰕎 󰕏󰕕󰕒󰖶󰖽󰖿󰗀󰗇󰗊󰗠󰗡󰗨󰘎󰘞󰘢󰘡󰘣󰘥󰘦󰘧󰘨󰘬󰘮󰘲󰘳󰘴󰘵󰘶󰙁󰙆󰙖󰙪󰙩󰙰󰙲󰚈󰚑󰚔󰚖󰚝󰚧󰚲󰚹󰚽󰛄󰛉󰛦󰛬󰛭󰜄󰜉󰝉󰝓󰝕󰝖󰝔󰝗󰝠󰝡󰝰󰞷󰡰󰡱󰢹󰣀󰣞󰤀󰤌󰤍󰤘󰥦󰥨󰥩󰥪󰥻󰦄󰦍󰦎󰦏󰦐󰦒󰦓󰦛󰦣󰦪󰧞󰧟󰧾󰨤󰨮󰨾󰨿󰩀󰩎󰩍󰩤󰩭󰩮󰩨󰩫󰩬󰩷󰩺󰪒󰪚󰪛󰪮󰪺󰪻󰬴󰬵󰬶󰭛󰭜󰮓󰮝󰮞󰮥󰮦󰮫󰮱󰮳󰯍󰯎󰯟󰱒󰲋󰲌󰆍󰲏󰲎󰳏󰳤󰳾󰴊󰴌󰴍󰴑󰴱󰵮󰶯󰶵󰷉󰷋󰷍󰷎󰷏󰷐󰷜󰷾󰸌󰸲󰹑󰹖󰹸󰺧󰺩󰺫󰺭󰺯󰻀󰻭󰼬󰽘󰽛󰾹󰿇󱀫󱀰󱀱󱀷󱀶󱀸󱀻󱁛󱁼󱂀󱂆󱂕󱂛󱂵󱂶󱂸󱃖󱃶󱃸󱃺󱃼󱄀󱄁󱃿󱄄󱄋󱄌󱄍󱄊󱄽󱅇󱅈󱅉󱅿󱆃󱇏󱇎󱇬󱈔󱈕󱉸󱊕󱊔󱊖󱊗󱊘󱊙󱊚󱊛󱊜󱊝󱊫󱊬󱊭󱊮󱊯󱊰󱊱󱊲󱊳󱊴󱊵󱊶󱊷󱋌󱋖󱍦󱍨󱍪󱍫󱍭󱍯󱍾󱎄󱎅󱎆󱎇󱎈󱎉󱎊󱎎󱎏󱎐󱎑󱎒󱎘󱎚󱎛󱎜󱎢󱎣󱎤󱎥󱎧󱎨󱎩󱎴󱏒󱐀󱐁󱓉󱔁󱖫</i>",
   //   html: true,
-  //   class: [ "mdi" ],
+  //   class: ["mdi"],
   // },
   // {
   //   type: "url",
