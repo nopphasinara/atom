@@ -41,13 +41,6 @@
   "devDependencies": {
     "nodeunit": "0.7.x"
   },
-  "providedServices": {
-    "aligner.provider": {
-      "versions": {
-        "1.0.0": "getProvider"
-      }
-    }
-  },
   "engines": {
     "node": ">= 0.1.100"
   },
