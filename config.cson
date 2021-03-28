@@ -81,7 +81,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Menlo, Prompt, MaterialDesignIcons, Material-Design-Icons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, Consolas, DejaVu Sans Mono, monospace"
     maxScreenLineLength: 4096
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true

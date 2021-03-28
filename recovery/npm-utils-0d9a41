@@ -1,0 +1,270 @@
+#!/bin/zsh
+
+
+npm_view() {
+  # repository.url
+  # Extract command options and arguments
+  declare -A command_opts=()
+  declare -a command_args=()
+  while [[ -n $1 ]]; do
+    local arg_val="$(echo $1 | sed 's/^[\ ]+//g' | sed 's/[\ ]+$//g')"
+
+    case $arg_val in
+      --url ) command_opts["--url"]="${arg_val}" ;;
+      * ) command_args+="${arg_val}" ;;
+    esac
+
+    shift
+  done
+
+
+  local content=""
+  for package in $command_args; do
+    content+=<<EOF
+
+$(npm view ${package})
+
+EOF
+  done
+
+  less ${content}
+}
+
+
+npm_install() {
+  declare -A command_opts=()
+  declare -a command_args=()
+
+  while [[ -n $1 ]]; do
+    local arg_val="$(echo $1 | sed 's/^[\ ]+//g' | sed 's/[\ ]+$//g')"
+
+    case $arg_val in
+      -g|--global ) command_opts["--global"]="${arg_val}" ;;
+      --save-dev ) command_opts["--save-dev"]="${arg_val}" ;;
+      --force-install ) command_opts["--force-install"]="${arg_val}" ;;
+      * ) command_args+="${arg_val}" ;;
+    esac
+
+    shift
+  done
+
+  if [[ -n $command_opts["--global"] ]]; then
+    for item in $command_args; do
+      if [[ ! -e "/usr/local/lib/node_modules/${item}" ]]; then
+        echo
+        echo "Installing... `c_green``c_b`${item}`c_r`"
+        npm install --no-audit --no-fund $command_opts $item
+        # npm install --no-audit --no-fund $command_opts["--save-dev"] $command_opts["--global"] $item
+      else
+        echo
+        echo "${item}: already installed"
+      fi
+    done
+  else
+    if [[ -n $command_opts["--force-install"] ]]; then
+      echo
+
+      if [[ -e "./node_modules" ]]; then
+        echo "Removing... `c_green``c_b`node_modules`c_r`"
+        rm -rf "./node_modules"
+      fi
+
+      if [[ -e "./package-lock.json" ]]; then
+        echo "Removing... `c_green``c_b`package-lock.json`c_r`"
+        rm -rf "./package-lock.json"
+      fi
+    fi
+
+    if [[ ${#command_args} == 0 ]]; then
+      echo
+      echo "Installing... `c_green``c_b`dependencies`c_r`"
+      npm install --no-audit --no-fund $command_opts
+    else
+      for item in $command_args; do
+        echo
+        echo "Installing... `c_green``c_b`${item}`c_r`"
+        npm install --no-audit --no-fund $command_opts $item
+      done
+    fi
+  fi
+}
+alias npmi="npm_install"
+alias npmfi="npm_install --force-install"
+alias npmig="npm_install --global"
+alias npmisd="npm_install --save-dev"
+
+function npmpkgs() {
+  if [[ -d "${NPMPKGSPATH}" ]]; then
+    cd "${NPMPKGSPATH}"
+
+    if [[ $# > 0 ]]; then
+      for item in $*; do
+        if [[ -d "./${item}" ]]; then
+          cd "./${item}"
+        else
+          echo "${NPMPKGSPATH}/${item}: No such file or directory"
+          break
+          return 1
+        fi
+      done
+    fi
+  else
+    echo "${NPMPKGSPATH}: No such file or directory"
+    return 1
+  fi
+}
+
+
+function npm_list() {
+  if [[ $# == 0 ]]; then
+    echo "
+    usage: [package_names ...]
+"; return 0
+  fi
+
+  # local no_version=0
+  # if [[ $1 == "--no-version" ]]; then
+  #   shift
+  #   no_version=1
+  # fi
+
+  # local packages=$(npm list $*)
+  # packages=$(echo "${packages}" | egrep --color=no -io '[^\ ]+$')
+  # echo "${packages#\@**}"
+
+  npm list $*
+}
+alias npmls="npm_list --depth 0"
+alias npmll="npm_list --long --depth 0"
+alias npmlsg="npm_list --global --depth 0"
+alias npmllg="npm_list --long --global --depth 0"
+alias npml1="npm_list --no-version --depth 0"
+alias npml1g="npm_list --no-version --global --depth 0"
+
+
+function npm_search() {
+  if [[ $# == 0 ]]; then
+    echo "
+    usage: [package_names ...]
+"; return 0
+  fi
+
+  # local command_option=""
+  #
+  # case $1 in
+  #   "--([0-9a-zA-Z\-]*)" )
+  #   command_option="$1"
+  #   shift
+  #   ;;
+  # esac
+  #
+  # local input_args="$1"
+  # shift
+
+  npm search $*
+}
+alias npms="npm_search --long"
+alias npmsp="npm_search --parseable"
+alias npmsnd="npm_search --no-description"
+
+
+# function npm_install() {
+#   declare -A command_options=()
+#   local command_args=()
+#
+#   for item in $*; do
+#     local command_option=$(is_command_option ${item})
+#
+#     if [[ -n $command_option && $command_option != "--" ]]; then
+#       option=($(option_value ${command_option}))
+#       command_options[${option[1]}]=${option[2]}
+#     else
+#       if [[ $command_option != "--" ]]; then
+#         command_args+=${item}
+#       fi
+#     fi
+#   done
+#
+#   # Set input file name here
+#   local command_line="npm install --no-audit --no-fund"
+#   local input_log="${DOTZSHPLUGINSPATH}/npm-log"
+#   declare -A exists_log=()
+#   # Read file line-by-line to get an IP and comment to block it using the iptables
+#   while read -r line; do
+#     line=$(echo "${line}" | sed 's/\ $//g' | sed 's/^\ //g')
+#     is_installed=="0"
+#     if [[ -e "/usr/local/lib/node_modules/${line}" ]]; then
+#       is_installed=="1"
+#     fi
+#     exists_log[${line}]=""
+#     if [[ $is_installed == "1" ]]; then
+#       exists_log[${line}]="1"
+#     fi
+#     # exists_log[${line}]="1"
+#     # echo $* | egrep -io -e "\b\ ?${line}\ ?\b"
+#   done < "$input_log"
+#
+#   if [[ "${command_options[g]}" == "1" ]]; then
+#     command_line+=" -g"
+#   fi
+#
+#   if [[ "${command_options[ignore-scripts]}" == "1" ]]; then
+#     command_line+=" --ignore-scripts"
+#   fi
+#   if [[ "${command_options[dry-run]}" == "1" ]]; then
+#     command_line+=" --dry-run"
+#   fi
+#   if [[ "${command_options[save-dev]}" == "1" ]]; then
+#     command_line+=" --save-dev"
+#   fi
+#
+#   if [[ -n $command_args ]]; then
+#     for item in $command_args; do
+#       echo
+#
+#       if [[ "${command_options[g]}" == "1" ]]; then
+#         if [[ "${exists_log[$item]}" == "" ]]; then
+#           echo "Installing... `c_green``c_b`${item}`c_r`"
+#           npm install --no-audit --no-fund -g "${item}" && echo -ne "'${item}'\n" >> "${input_log}"
+#         else
+#           echo "${item}: already installed"
+#         fi
+#       else
+#         echo "Installing... `c_green``c_b`${item}`c_r`"
+#         npm install --no-audit --no-fund "${item}"
+#       fi
+#
+#       echo
+#     done
+#   else
+#     npm install --no-audit --no-fund
+#   fi
+#
+#   # npm install --no-audit --no-fund $*
+# }
+# alias npmi="npm_install"
+# alias npminos="npm_install --ignore-scripts"
+# alias npmidry="npm_install --dry-run"
+# alias npmid="npm_install --save-dev"
+# alias npmig="npm_install -g"
+
+function npm_uninstall() {
+  if [[ $# == 0 ]]; then
+    echo "
+    usage: [package_names ...]
+"; return 0
+  fi
+
+  npm uninstall $*
+}
+alias npmun="npm_uninstall"
+alias npmung="npm_uninstall -g"
+
+
+function npm_install_deps() {
+  local list=("@babel/cli" "@babel/core" "@babel/eslint-plugin-development" "@babel/parser" "@babel/plugin-proposal-class-properties" "@babel/plugin-transform-modules-amd" "@babel/preset-env" "@babel/preset-flow" "@typescript-eslint/eslint-plugin" "@typescript-eslint/parser" "@webcomponents/webcomponentsjs" "@webpack-cli/package-utils" "@yarn-tool/shebang" "atom-languageclient" "atom-space-pen-views" "autoprefixer" "axios" "babel-cli" "babel-eslint" "babel-loader" "babel-plugin-module-resolver" "babel-plugin-typecheck" "babel-preset-es2015" "babel-preset-flow" "babel-preset-minify" "babel-preset-php" "babel-register" "bash-language-server" "beautify" "bootstrap" "bootstrap-vue" "browserify" "build" "coffeescript" "compass" "compass-importer" "compass-mixins" "compass-mixins-fixed" "compiler-js" "core-js" "core-js-pure" "cross-fetch" "csslint" "csslint-cli" "csstype" "dockerfile-language-server-nodejs" "dom5" "electron" "emmet" "emmetjs" "es-abstract" "es5-ext" "es5-shim" "es6-promise" "es6-shim" "es6-symbol" "eslint" "eslint-config-airbnb" "eslint-config-airbnb-base" "eslint-config-flowtype-essential" "eslint-config-prettier" "eslint-config-react-app" "eslint-config-standard" "eslint-config-standard-jsdoc" "eslint-import-resolver-babel-module" "eslint-loader" "eslint-plugin-babel" "eslint-plugin-cypress" "eslint-plugin-flowtype" "eslint-plugin-flowtype-errors" "eslint-plugin-html" "eslint-plugin-import" "eslint-plugin-jsdoc" "eslint-plugin-jsx-a11y" "eslint-plugin-mocha" "eslint-plugin-module-resolver" "eslint-plugin-node" "eslint-plugin-prettier" "eslint-plugin-promise" "eslint-plugin-react" "eslint-plugin-react-hooks" "eslint-plugin-ternaries" "eslint-plugin-ternary" "eslint-plugin-vue" "esquery" "fastq" "flow" "flow-annotation-check" "flow-bin" "flow-copy-source" "flow-coverage-report" "flow-language-server" "flow-remove-types" "flow-remove-types-no-whitespace" "flowtype" "generator-umd" "generator-webapp" "gitlog" "globby" "google-closure-compiler" "graceful-fs" "grunt" "grunt-cli" "grunt-coffee-jshint" "grunt-contrib-compress" "grunt-contrib-connect" "grunt-contrib-copy" "grunt-contrib-sass" "grunt-contrib-uglify" "grunt-contrib-watch" "grunt-cwebp" "grunt-cwep" "grunt-exec" "grunt-image" "grunt-init" "grunt-jsdoc" "grunt-mkdir" "grunt-modernizr" "grunt-php2html" "grunt-pngmin" "grunt-prettier" "grunt-rsync" "grunt-stylelint" "grunt-text-replace" "grunt-version" "grunt-webpack" "gulp" "gulp-babel" "gulp-beautify" "gulp-clean-css" "gulp-compass" "gulp-csslint" "gulp-eslint" "gulp-flowtype" "gulp-html-beautify" "gulp-if" "gulp-notify" "gulp-postcss" "gulp-rename" "gulp-replace" "gulp-sass" "gulp-size" "gulp-sourcemaps" "gulp-vulcanize" "html-webpack-plugin" "htmlparser2" "imagemin" "imagemin-mozjpeg" "javascript-typescript-langserver" "js-beautify" "js2coffee" "jscs" "jsctags" "jshint" "json" "json-beautify" "json-fixer" "json5" "jsonfile" "laravel-mix" "laravel-mix-purgecss" "lazypipe" "less" "less-loader" "lint" "lodash" "mysqldump" "node-fetch" "node-gyp" "node-gyp-build" "node-imagick" "node-ipc" "node-sass" "node-waf" "nodemon" "object-assign" "omnisharp-client" "opengraph" "parse5" "php-parser" "phpcommon" "phplint" "popper.js" "postcss" "postcss-scss" "prettier" "prettier-eslint" "prettier-eslint-cli" "prettier-standard" "react" "react-native" "requirejs" "sass" "sass-loader" "sb-event-kit" "standard" "striptags" "stylelint" "stylelint-config-prettier" "stylelint-prettier" "stylelint-scss" "tern" "terser" "ts-node" "tslint" "typescript" "uglify-js" "url-loader" "uuid" "vue" "watchify" "webpack-cli" "wp-cli" "yarn" "yo" "youtube-dl")
+
+  for item in $list; do
+    npm install -g "${item}" --force
+  done
+}
