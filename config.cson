@@ -31,6 +31,8 @@
     automaticallyUpdate: false
     disabledPackages: [
       "language-shellscript"
+      "language-scss"
+      "language-scss"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"

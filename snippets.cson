@@ -153,6 +153,18 @@
 
 
   ".source.shell": {
+    "empty args": {
+      "prefix": "emp-args",
+      "body": """
+      if [[ -z \\$command_args ]]; then
+        echo
+        echo \\"usage: ${1:[${2:package_names ...}]}\\"
+        echo
+        return 1
+      fi$0
+      """,
+    },
+
     "for item in var": {
       "prefix": "fori",
       "body": """
