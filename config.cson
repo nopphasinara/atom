@@ -135,6 +135,7 @@
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
+    monitorFileAnimation: false
   "sass-autocompile":
     compileCompressed: false
     compileExpanded: true
