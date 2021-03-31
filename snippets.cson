@@ -51,6 +51,18 @@
   },
 
 
+  ".text.html.php": {
+    "<?php ...": {
+      "prefix": "ph",
+      "body": """
+      <?php
+
+      $0
+      """,
+    },
+  },
+
+
   ".source.php": {
     "if function exists": {
       "prefix": "if-fne",
