@@ -1,0 +1,233 @@
+{
+  "title": "Binding Hyperclick",
+  "rules": [
+    {
+      "description": "Binding F1, F2, F3, Eject to Hyperclick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "consumer_key_code": "eject"
+          },
+          "to_if_alone": [
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 400,
+            "basic.to_delayed_action_delay_milliseconds": 100
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1"
+          },
+          "to_if_alone": [
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 400,
+            "basic.to_delayed_action_delay_milliseconds": 100
+          }
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f2"
+          },
+          "to_if_alone": [
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 400,
+            "basic.to_delayed_action_delay_milliseconds": 100
+          }
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f3"
+          },
+          "to_if_alone": [
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            },
+            {
+              "hold_down_milliseconds": 70,
+              "pointing_button": "button1"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              },
+              {
+                "hold_down_milliseconds": 70,
+                "pointing_button": "button1"
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 400,
+            "basic.to_delayed_action_delay_milliseconds": 100
+          }
+        }
+
+      ]
+    }
+  ]
+}
