@@ -31,28 +31,28 @@ function replConsole_RunCode(editor) {
 }
 
 module.exports = [
-  {
-    type: "button",
-    callback: {
-      "": function (editor) {
-        replConsole_RunCode(editor);
-      },
-      "shift": function (editor) {
-        console.clear();
-        replConsole_RunCode(editor);
-      },
-    },
-    text: "<i>󰚌</i>",
-    html: true,
-    class: ["mdi", "bg-error", "fg-selected", "fg-hover-warning"],
-    // show: {
-    //   grammar: [
-    //     "js",
-    //     "json",
-    //     "php",
-    //   ],
-    // },
-  },
+  // {
+  //   type: "button",
+  //   callback: {
+  //     "": function (editor) {
+  //       replConsole_RunCode(editor);
+  //     },
+  //     "shift": function (editor) {
+  //       console.clear();
+  //       replConsole_RunCode(editor);
+  //     },
+  //   },
+  //   text: "<i>󰚌</i>",
+  //   html: true,
+  //   class: ["mdi", "bg-error", "fg-selected", "fg-hover-warning"],
+  //   // show: {
+  //   //   grammar: [
+  //   //     "js",
+  //   //     "json",
+  //   //     "php",
+  //   //   ],
+  //   // },
+  // },
   {
     type: "button",
     callback: {

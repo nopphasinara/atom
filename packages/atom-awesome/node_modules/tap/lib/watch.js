@@ -3,8 +3,6 @@ const EE = require('events')
 const Minipass = require('minipass')
 const bin = require.resolve('../bin/run.js')
 const {spawn} = require('child_process')
-const mkdirp = require('mkdirp').sync
-const rimraf = require('rimraf').sync
 const onExit = require('signal-exit')
 const {writeFileSync, readFileSync} = require('fs')
 const {stringify} = require('tap-yaml')
@@ -23,10 +21,10 @@ class Watch extends Minipass {
     })
     this.proc.on('close', () => this.main())
     const saveFolder = 'node_modules/.cache/tap'
-    mkdirp(saveFolder)
+    require('../settings.js').mkdirRecursiveSync(saveFolder)
     this.saveFile = saveFolder + '/watch-' + process.pid
     /* istanbul ignore next */
-    onExit(() => rimraf(this.saveFile))
+    onExit(() => require('../settings.js').rmdirRecursiveSync(this.saveFile))
     this.index = null
     this.indexFile = '.nyc_output/processinfo/index.json'
     this.fileList = []

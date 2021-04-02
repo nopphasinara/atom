@@ -1,70 +1,47 @@
 'use strict';
 
 
-let atomAwesomeBase;
-
-const {
+let {
   CompositeDisposable,
   Emitter,
+  Disposable,
 } = require('atom');
 
 
-class AtomAwesomeBase
-{
-  observeTextEditors() {
-    atom.workspace.observeActiveTextEditor(function (editor) {
-      console.log(editor);
-    });
-  }
+function didObserveTextEditors() {
+  atom.workspace.observeTextEditors(function (editor) {
+    editor.path = editor.getPath() || undefined;
+  });
 }
 
-class AtomAwesome extends AtomAwesomeBase
-{
-  runtimeGenerator() {
-    this.observeTextEditors();
+
+console.log('start');
+
+(function () {
+
+  let atomAwesome;
+
+  class AtomAwesome
+  {
+
+    activate() {
+      this.subscriptions = new CompositeDisposable();
+      this.emitter = new Emitter();
+
+      didObserveTextEditors();
+    }
+
+    deactivate() {
+      this.subscriptions.dispose();
+      this.subscriptions = null;
+      this.emitter.dispose();
+      this.emitter = null;
+    }
   }
 
-  activate() {
-    this.subscriptions = new CompositeDisposable();
-    this.emitter = new Emitter();
+  atomAwesome = new AtomAwesome();
 
-    this.subscriptions.add(atom.commands.add('atom-workspace', {
-      'ascii-art:convert': function () {
-        this.convert();
-      },
+  console.log('function.call');
 
-      'art:convert': function () {
-        this.convert();
-      },
-    }));
-
-    this.runtimeGenerator();
-
-    console.group('activate');
-    console.log(this);
-    console.groupEnd();
-  }
-
-  deactivate() {
-    this.subscriptions.dispose();
-    this.subscriptions = null;
-    this.emitter.dispose();
-    this.emitter = null;
-
-    console.group('deactivate');
-    console.log(this);
-    console.groupEnd();
-  }
-
-  convert() {
-    console.log('Convert text!');
-  }
-};
-
-var atomAwesome = new AtomAwesome();
-
-console.group('atomAwesome');
-console.log(atomAwesome);
-console.groupEnd();
-
-exports.atomAwesome = atomAwesome;
+  module.exports = atomAwesome;
+}.call(global));
