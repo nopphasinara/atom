@@ -1,21 +1,44 @@
 'use strict';
 
 
+let atomAwesomeBase;
+
 const {
   CompositeDisposable,
-  Disposable,
+  Emitter,
 } = require('atom');
 
 
-class AtomAwesome
+class AtomAwesomeBase
 {
+  observeTextEditors() {
+    atom.workspace.observeActiveTextEditor(function (editor) {
+      console.log(editor);
+    });
+  }
+}
+
+class AtomAwesome extends AtomAwesomeBase
+{
+  runtimeGenerator() {
+    this.observeTextEditors();
+  }
+
   activate() {
-    this.subscriptions = new CompositeDisposable()
+    this.subscriptions = new CompositeDisposable();
+    this.emitter = new Emitter();
+
     this.subscriptions.add(atom.commands.add('atom-workspace', {
       'ascii-art:convert': function () {
         this.convert();
       },
+
+      'art:convert': function () {
+        this.convert();
+      },
     }));
+
+    this.runtimeGenerator();
 
     console.group('activate');
     console.log(this);
@@ -24,6 +47,9 @@ class AtomAwesome
 
   deactivate() {
     this.subscriptions.dispose();
+    this.subscriptions = null;
+    this.emitter.dispose();
+    this.emitter = null;
 
     console.group('deactivate');
     console.log(this);
