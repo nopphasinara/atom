@@ -184,6 +184,14 @@
 
 
   ".source.shell": {
+    "error": {
+      "prefix": "error",
+      "body": """
+      echo
+      echo "`cb_red``c_white``c_b` 󱎘 ERROR `c_r` ${1:something wrong}"$0
+      """,
+    },
+
     "empty args": {
       "prefix": "emp-args",
       "body": """
