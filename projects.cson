@@ -177,6 +177,13 @@
     ]
   }
   {
+    title: "rimtalay-resort.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/rimtalay-resort.com"
+    ]
+  }
+  {
     title: "applescript"
     group: "AppleScript"
     paths: [
