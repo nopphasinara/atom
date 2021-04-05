@@ -244,15 +244,11 @@
   &:extend(.editor-font-settings);
   &:extend(.reset-margin);
   &:extend(.reset-padding);
-  font-size: calc(@ui-size * 1.2) !important;
+  font-size: @mdi-font-size !important;
   font-weight: normal !important;
-  vertical-align: middle !important;
-  height: @tool-bar-height !important;
-  line-height: @tool-bar-height !important;
 
   &.btn {
-    height: @tool-bar-height !important;
-    line-height: @tool-bar-height !important;
+
   }
 
   &.btn:hover {
@@ -264,20 +260,24 @@
     &:extend(.editor-font-settings);
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    font-size: calc(@ui-size * 1.2) !important;
+    // font-size: calc(@ui-size * 1.2) !important;
     font-weight: normal !important;
-    vertical-align: middle !important;
+    text-align: center !important;
   }
 
   i {
     &:extend(.font-icon);
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    text-align: center !important;
-    font-size: calc(@ui-size * 1.75) !important;
-    font-weight: normal !important;
-    vertical-align: middle !important;
-    height: @tool-bar-height !important;
-    line-height: @tool-bar-height !important;
+    // font-size: @tool-bar-icon-size !important;
   }
+}
+
+
+.set-bg(@color: @ui-bg) {
+  background: @color;
+  background-color: @color;
+}
+.set-bg-important(@color: @ui-bg) {
+  .set-bg(@color) !important;
 }

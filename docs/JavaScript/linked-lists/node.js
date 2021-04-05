@@ -8,3 +8,11 @@ class node
         this.next = null;
     }
 }
+
+function fuck() {
+  this.fuck = 'foo';
+  this.you = 'bar';
+  this.bar = 'bar';
+}
+
+module.exports = fuck;

@@ -10,10 +10,31 @@ let {
 
 function didObserveTextEditors() {
   atom.workspace.observeTextEditors(function (editor) {
-    editor.path = editor.getPath() || undefined;
+    editor.path = editor.getPath() || null;
   });
 }
 
+function resolveActiveEditorDirPath() {
+  var dirpath, editor;
+
+  editor = atom.workspace.getActiveTextEditor();
+  dirpath = (typeof editor.path === 'undefined') ? '' : fse.realpathSync(editor.path + '/../');
+
+  return dirpath;
+}
+
+function resolveFromPath(fromPath = '') {
+  var activeDirPath = resolveActiveEditorDirPath();
+
+  fromPath = (typeof fromPath === 'undefined' || !fromPath) ? activeDirPath + '/' : activeDirPath + fromPath.replace(/^\.\./ig, '/..').replace(/^\./ig, '');
+
+  return stdpath.resolve(fromPath);
+}
+
+Object.assign(global, {
+  resolveFromPath,
+  resolveActiveEditorDirPath,
+});
 
 console.log('start');
 
@@ -23,6 +44,10 @@ console.log('start');
 
   class AtomAwesome
   {
+
+    deserialize() {
+      console.log('deserialize');
+    }
 
     activate() {
       this.subscriptions = new CompositeDisposable();
@@ -42,6 +67,9 @@ console.log('start');
   atomAwesome = new AtomAwesome();
 
   console.log('function.call');
+
+  // console.log(resolveActiveEditorDirPath());
+  console.log(resolveFromPath('/../../asd.js'));
 
   module.exports = atomAwesome;
 }.call(global));

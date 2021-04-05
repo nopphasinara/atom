@@ -15,7 +15,7 @@ atom-text-editor {
 
 atom-text-editor {
     .selection .region {
-        background-color: fade(cyan, 20);
+        .set-bg(fade(cyan, 20));
     }
 
     .syntax--comment {
@@ -28,7 +28,7 @@ atom-text-editor {
 
     .cursor {
         border-color: lime !important;
-        border-width: 2px !important;
+        border-width: 1px !important;
     }
 
     .cursors {
@@ -49,7 +49,7 @@ atom-text-editor {
 
     .wrap-guide {
       width: 1px !important;
-      background-color: fade(@mono-3, 10) !important;
+      .set-bg(fade(@mono-3, 10)) !important;
       border-right: solid 1px fade(@mono-3, 20) !important;
     }
 }
@@ -73,12 +73,7 @@ atom-text-editor:not([mini]) {
 .tool-bar {
   &:extend(.reset-margin);
   &:extend(.reset-padding);
-  vertical-align: middle !important;
   background: @bg-hover-dark;
-  // border-top: solid 1px red !important;
-  // border-bottom: solid 1px red !important;
-  height: @tool-bar-height !important;
-  line-height: @tool-bar-height !important;
 
   .tool-bar-spacer {
     &:extend(.reset-margin);
@@ -89,11 +84,8 @@ atom-text-editor:not([mini]) {
     width: 1px !important;
     height: @tool-bar-height !important;
     line-height: @tool-bar-height !important;
-    background: @bg-dark !important;
+    .set-bg(@ui-border) !important;
     -webkit-mask-image: none !important;
-    vertical-align: middle !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
     outline: none !important;
     border: none !important;
   }
@@ -101,17 +93,12 @@ atom-text-editor:not([mini]) {
   .btn {
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    // border-color: transparent !important;
-    margin: 0 !important;
     text-align: center !important;
-    vertical-align: middle !important;
+    border-radius: 0 !important;
 
     &:hover {
       color: #fff;
-      // border-color: transparent;
       // background: @syntax-accent;
-      border-radius: 0 !important;
-      vertical-align: middle !important;
     }
   }
 
@@ -119,17 +106,17 @@ atom-text-editor:not([mini]) {
   button.tool-bar-btn {
     &:extend(.reset-margin);
     &:extend(.reset-padding);
-    border-width: 1px !important;
     border-radius: 0 !important;
     border-color: transparent !important;
     text-align: center !important;
-    vertical-align: middle !important;
-    width: auto !important;
-    min-width: 40px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    background: @bg-hover-dark;
+    width: @tool-bar-btn-width !important;
+    min-width: @tool-bar-btn-width !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .set-bg(@bg-hover-dark);
     outline: none !important;
+    height: @tool-bar-height !important;
+    line-height: 100% !important;
 
     &:hover {
       // color: @hue-6-2;
@@ -142,7 +129,7 @@ atom-text-editor:not([mini]) {
 .status-bar,
 .status-bar.status-bar {
   color: @status-bar-fg-color;
-  background: @status-bar-bg-color;
+  .set-bg(@status-bar-bg-color);
   font-size: @status-bar-font-size;
   height: @status-bar-height;
 
@@ -156,7 +143,7 @@ atom-text-editor:not([mini]) {
     &:hover {
       cursor: pointer !important;
       color: @status-bar-fg-hover-color;
-      background-color: transparent;
+      .set-bg(transparent);
     }
   }
 
@@ -177,7 +164,7 @@ atom-text-editor:not([mini]) {
   &.markdown-preview {
     atom-text-editor {
       color: @mono-1;
-      background-color: @syntax-bg;
+      .set-bg(@syntax-bg);
       padding: 30px 30px;
     }
 
@@ -201,7 +188,7 @@ atom-text-editor:not([mini]) {
       padding-right: 3px !important;
       padding-bottom: 5px !important;
       padding-left: 5px !important;
-      background: fade(@mono-1, 30);
+      .set-bg(fade(@mono-1, 30));
       // x, y, blur, grow, color
       box-shadow: 1px 1px 4px 1px fade(@mono-1, 60);
       font-style: normal !important;
@@ -237,9 +224,9 @@ atom-panel-container {
       -moz-font-smoothing: antialiased !important;
       letter-spacing: 0 !important;
       color: fade(@ui-bg, 72) !important;
-      background: @mono-1 !important;
       box-shadow: 0px 0px 30px 5px fade(tint(@fg-subtle, -50), 50) !important;
       z-index: 3 !important;
+      .set-bg(@mono-1) !important;
 
       // &:hover {
       //   color: fade(@ui-bg, 72) !important;
@@ -285,13 +272,14 @@ atom-dock {
 
       .tab[is="tabs-tab"] {
         &[data-type="TreeView"] {
-          background: @bg-hover-dark !important;
           height: @tree-view-tab-bar-height !important;
           line-height: @tree-view-tab-bar-height !important;
+          .set-bg(@bg-hover-dark) !important;
         }
 
         .title {
-
+          color: @fg-selected !important;
+          font-weight: bold !important;
         }
       }
     }
@@ -307,10 +295,6 @@ atom-dock {
             padding-bottom: 10px !important;
             padding-left: 10px !important;
             padding-right: 20px !important;
-
-            &.list-tree {
-
-            }
           }
         }
       }
