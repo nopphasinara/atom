@@ -274,7 +274,7 @@ atom-dock {
         &[data-type="TreeView"] {
           height: @tree-view-tab-bar-height !important;
           line-height: @tree-view-tab-bar-height !important;
-          .set-bg(@bg-hover-dark) !important;
+          .set-bg(tint(@bg-hover-dark, -1)) !important;
         }
 
         .title {
@@ -369,5 +369,40 @@ atom-dock {
 
   &.panel-bottom {
 
+  }
+}
+
+
+.tree-view {
+  .set-bg(tint(@bg-hover-dark, -1)) !important;
+
+  .project-root.project-root {
+    &:before {
+      height: @tree-view-tab-bar-height;
+    }
+    & > .header .name {
+      line-height: @tree-view-tab-bar-height;
+    }
+  }
+
+  .selected:before {
+    .set-bg(@bg-hover-highlight);
+  }
+
+  .selected.list-item > .name, // files
+  .selected.list-nested-item > .list-item > .name, // folders
+  .selected.list-nested-item > .header:before { // arrow icon
+    // color: contrast(@bg-warning);
+  }
+
+  &:focus {
+    .selected.list-item > .name, // files
+    .selected.list-nested-item > .list-item > .name, // folders
+    .selected.list-nested-item > .header:before { // arrow icon
+      color: contrast(@bg-hover-info);
+    }
+    .selected:before {
+      .set-bg(@bg-hover-info);
+    }
   }
 }

@@ -1,6 +1,9 @@
 'use strict';
 
 
+let _ = require('lodash');
+let fse = require('fs-extra');
+let stdpath = require('path');
 let {
   CompositeDisposable,
   Emitter,

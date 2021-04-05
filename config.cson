@@ -77,6 +77,10 @@
       "script"
       "php-integrator-refactoring"
       "atom-autocomplete-php"
+      "git-plus"
+    ]
+    packagesWithSnippetsDisabled: [
+      "css-snippets"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
@@ -97,17 +101,17 @@
     liveSearchMinimumCharacters: 1
   "flex-tool-bar":
     reloadToolBarNotification: false
-    useBrowserPlusWhenItIsActive: true
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
   "git-menu":
     contextMenuItems:
+      "commit-all": false
+      "commit-staged": false
       "create-branch": false
       "delete-branch": false
       "fetch-all": false
       "ignore-changes": false
-      init: false
       "merge-branch": false
       "pull-all": false
       "push-all": false
@@ -117,12 +121,19 @@
       sync: false
       "sync-all": false
       "unignore-changes": false
-      "unstash-changes": false
+  "git-plus":
+    general:
+      showFormat: "fuller"
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "js-hyperclick": {}
+  "js-hyperclick":
+    jumpToImport: true
+  "language-babel":
+    autoIndentJSX: true
+    emmetCSSAutocomplete: true
+    keepFileExtension: true
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
@@ -180,6 +191,9 @@
 ".html.php.text":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
+".js.jsx.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
 ".js.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#@%^&*|+=[]{}`?-…"
