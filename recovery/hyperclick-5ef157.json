@@ -1,0 +1,151 @@
+{
+  "title": "Binding Hyperclick",
+  "rules": [
+    {
+      "description": "Binding F1, F2, F3, Eject to Hyperclick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150,
+            "basic.to_delayed_action_delay_milliseconds": 1
+          }
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150,
+            "basic.to_delayed_action_delay_milliseconds": 1
+          }
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "grave_accent_and_tilde"
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150,
+            "basic.to_delayed_action_delay_milliseconds": 1
+          }
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "consumer_key_code": "eject"
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 55
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150,
+            "basic.to_delayed_action_delay_milliseconds": 1
+          }
+        }
+      ]
+    }
+  ]
+}
