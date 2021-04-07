@@ -399,10 +399,23 @@ atom-dock {
     .selected.list-item > .name, // files
     .selected.list-nested-item > .list-item > .name, // folders
     .selected.list-nested-item > .header:before { // arrow icon
-      color: contrast(@bg-hover-info);
+      color: contrast(@accent-bg-color);
     }
     .selected:before {
-      .set-bg(@bg-hover-info);
+      .set-bg(@accent-bg-color);
     }
+  }
+}
+
+
+.tooltip {
+  font-family: var(--font-family);
+
+  .tooltip-inner {
+    .set-bg(@accent-bg-color);
+  }
+
+  .keystroke {
+    font-family: var(--font-family);
   }
 }

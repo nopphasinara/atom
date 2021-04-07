@@ -38,7 +38,9 @@
   }
   # "atom-text-editor.autocomplete-active": {
   #   "escape": "autocomplete-plus:cancel"
-  #   "ctrl-alt-cmd-f1": "autocomplete-plus:navigate-to-description-more-link"
+  #   "shift": "core:move-right"
+  #   "right": "autocomplete-plus:cancel"
+  #   # "ctrl-alt-cmd-f1": "autocomplete-plus:navigate-to-description-more-link"
   # }
   ".command-palette atom-text-editor": {
     "cmd-shift-p": "command-palette:toggle"

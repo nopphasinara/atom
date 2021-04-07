@@ -34,9 +34,22 @@ function resolveFromPath(fromPath = '') {
   return stdpath.resolve(fromPath);
 }
 
+function requireFrom(fromPath = '') {
+  if (typeof fromPath === 'undefined' || !fromPath) {
+    return {};
+  }
+
+  delete require.cache[resolveFromPath(fromPath)];
+  module.loaded = false;
+  module.load(resolveFromPath(fromPath));
+
+  return module.exports;
+}
+
 Object.assign(global, {
   resolveFromPath,
   resolveActiveEditorDirPath,
+  requireFrom,
 });
 
 console.log('start');

@@ -30,6 +30,22 @@ function replConsole_RunCode(editor) {
   }
 }
 
+function getCursorScopes(returnType = '') {
+  let editor, scopes;
+  editor = atom.workspace.getActiveTextEditor();
+  scopes = editor.getCursorSyntaxTreeScope();
+
+  returnType = returnType.toLowerCase() || 'chain';
+
+  if (returnType === 'chain') {
+    return scopes.getScopeChain() || '';
+  } else if (returnType === 'array') {
+    return scopes.getScopesArray() || [];
+  } else {
+    return scopes || {};
+  }
+}
+
 module.exports = [
   // {
   //   type: "button",
@@ -114,9 +130,20 @@ module.exports = [
     type: "button",
     callback: {
       "": function (editor) {
-        console.log(atom.workspace.getActiveTextEditor().getCursorSyntaxTreeScope().getScopeChain());
+        console.log(getCursorScopes('chain'));
+      },
+      "shift": function (editor) {
+        console.log(getCursorScopes('array'));
+      },
+      "alt": function (editor) {
+        let scopeChain = getCursorScopes('chain') || '';
+        if (scopeChain) {
+          console.log(scopeChain);
+          atom.clipboard.write(scopeChain);
+        }
       },
     },
+    tooltip: "Cursor Scope, To Array (󰜷󰝁)",
     text: "<i>󰆤</i>",
     html: true,
     class: ["mdi"],

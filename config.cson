@@ -78,6 +78,7 @@
       "php-integrator-refactoring"
       "atom-autocomplete-php"
       "git-plus"
+      "preview-plus"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
@@ -139,6 +140,8 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+  "preview-plus":
+    livePreview: true
   "project-manager":
     prettifyTitle: false
     showPath: false

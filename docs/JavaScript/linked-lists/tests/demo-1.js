@@ -2,12 +2,8 @@ console.clear();
 
 var foo1;
 
-delete require.cache[resolveFromPath('../node.js')];
-module.loaded = false;
-module.load(resolveFromPath('../node.js'));
-// module.require(resolveFromPath('../node.js'));
+foo1 = requireFrom('../node.js');
 
-foo1 = module.exports;
 
 console.log(new foo1);
 
