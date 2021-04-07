@@ -143,7 +143,7 @@ module.exports = [
         }
       },
     },
-    tooltip: "Cursor Scope, To Array (󰜷󰝁)",
+    tooltip: "Cursor Scope, To Array (󰜷󰍽)",
     text: "<i>󰆤</i>",
     html: true,
     class: ["mdi"],

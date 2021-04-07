@@ -33,6 +33,7 @@
       "language-shellscript"
       "language-scss"
       "language-scss"
+      "spell-check"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
