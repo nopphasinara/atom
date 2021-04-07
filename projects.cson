@@ -120,6 +120,13 @@
     ]
   }
   {
+    title: "awesome-atom"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/awesome-atom"
+    ]
+  }
+  {
     title: "NPM Packages"
     group: "NPM"
     paths: [

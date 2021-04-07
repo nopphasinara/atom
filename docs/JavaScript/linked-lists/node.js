@@ -11,8 +11,8 @@ class node
 
 function fuck() {
   this.fuck = 'foo';
-  this.you = 'bar';
-  this.bar = 'bar';
+  // this.you = 'bar';
+  // this.bar = 'bar';
 }
 
 module.exports = fuck;
