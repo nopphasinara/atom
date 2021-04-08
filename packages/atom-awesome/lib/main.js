@@ -1,56 +1,55 @@
-'use strict';
+'use babel';
 
 
 let _ = require('lodash');
-let fse = require('fs-extra');
+let fs = require('fs');
+let fse = fs;
 let stdpath = require('path');
 let {
   CompositeDisposable,
-  Emitter,
-  Disposable,
 } = require('atom');
 
 
-function didObserveTextEditors() {
-  atom.workspace.observeTextEditors(function (editor) {
-    editor.path = editor.getPath() || null;
-  });
-}
-
-function resolveActiveEditorDirPath() {
-  var dirpath, editor;
-
-  editor = atom.workspace.getActiveTextEditor();
-  dirpath = (typeof editor.path === 'undefined') ? '' : fse.realpathSync(editor.path + '/../');
-
-  return dirpath;
-}
-
-function resolveFromPath(fromPath = '') {
-  var activeDirPath = resolveActiveEditorDirPath();
-
-  fromPath = (typeof fromPath === 'undefined' || !fromPath) ? activeDirPath + '/' : activeDirPath + fromPath.replace(/^\.\./ig, '/..').replace(/^\./ig, '');
-
-  return stdpath.resolve(fromPath);
-}
-
-function requireFrom(fromPath = '') {
-  if (typeof fromPath === 'undefined' || !fromPath) {
-    return {};
-  }
-
-  delete require.cache[resolveFromPath(fromPath)];
-  module.loaded = false;
-  module.load(resolveFromPath(fromPath));
-
-  return module.exports;
-}
-
-Object.assign(global, {
-  resolveFromPath,
-  resolveActiveEditorDirPath,
-  requireFrom,
-});
+// function didObserveTextEditors() {
+//   atom.workspace.observeTextEditors(function (editor) {
+//     editor.path = editor.getPath() || null;
+//   });
+// }
+//
+// function resolveActiveEditorDirPath() {
+//   var dirpath, editor;
+//
+//   editor = atom.workspace.getActiveTextEditor();
+//   dirpath = (typeof editor.path === 'undefined') ? '' : fse.realpathSync(editor.path + '/../');
+//
+//   return dirpath;
+// }
+//
+// function resolveFromPath(fromPath = '') {
+//   var activeDirPath = resolveActiveEditorDirPath();
+//
+//   fromPath = (typeof fromPath === 'undefined' || !fromPath) ? activeDirPath + '/' : activeDirPath + fromPath.replace(/^\.\./ig, '/..').replace(/^\./ig, '');
+//
+//   return stdpath.resolve(fromPath);
+// }
+//
+// function requireFrom(fromPath = '') {
+//   if (typeof fromPath === 'undefined' || !fromPath) {
+//     return {};
+//   }
+//
+//   delete require.cache[resolveFromPath(fromPath)];
+//   module.loaded = false;
+//   module.load(resolveFromPath(fromPath));
+//
+//   return module.exports;
+// }
+//
+// Object.assign(global, {
+//   resolveFromPath,
+//   resolveActiveEditorDirPath,
+//   requireFrom,
+// });
 
 console.log('start');
 
@@ -66,26 +65,21 @@ console.log('start');
     }
 
     activate() {
+      // Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
       this.subscriptions = new CompositeDisposable();
-      this.emitter = new Emitter();
 
-      didObserveTextEditors();
+      // Wait for every package to have loaded, so that the menus are populated
+      this.subscriptions.add(atom.packages.onDidActivateInitialPackages(() => {
+        didObserveTextEditors();
+      }));
     }
 
     deactivate() {
       this.subscriptions.dispose();
-      this.subscriptions = null;
-      this.emitter.dispose();
-      this.emitter = null;
     }
   }
 
   atomAwesome = new AtomAwesome();
-
-  console.log('function.call');
-
-  // console.log(resolveActiveEditorDirPath());
-  console.log(resolveFromPath('/../../asd.js'));
 
   module.exports = atomAwesome;
 }.call(global));

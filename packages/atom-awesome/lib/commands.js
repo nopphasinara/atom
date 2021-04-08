@@ -1,4 +1,4 @@
-'use strict';
+'use babel';
 
 let CompositeDisposable = require('atom').CompositeDisposable;
 let Emitter = require('atom').Emitter;

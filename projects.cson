@@ -117,6 +117,7 @@
     group: "NPM"
     paths: [
       "/Volumes/Storage/Projects/npm-packages/atom-awesome"
+      "/Volumes/Storage/Projects/npm-packages/atom-awesome-utils"
     ]
   }
   {

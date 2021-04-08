@@ -22,7 +22,7 @@
     "atom-awesome": "file:../npm-packages/atom-awesome",
     "fs-extra": "^9.1.0",
     "lodash": "^4.17.21",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {}
+    "path": "^0.12.7",
+    "underscore-plus": "^1.7.0"
+  }
 }

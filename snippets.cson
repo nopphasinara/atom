@@ -10,6 +10,19 @@
 
 
   ".source.js": {
+    "use babel": {
+      "prefix": "babel",
+      "body": """
+      'use babel';$0
+      """,
+    },
+    "use strict": {
+      "prefix": "strict",
+      "body": """
+      'use strict';$0
+      """,
+    },
+
     "function name()": {
       "prefix": "fn",
       "body": """

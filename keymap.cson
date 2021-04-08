@@ -77,6 +77,9 @@
     "shift-tab": "core:focus-previous"
     "cmd-left": "github:dive"
   }
+  ".github-FilePatchView--unstaged": {
+    "escape": "github:discard-selected-lines"
+  }
   ".github-FilePatchView atom-text-editor:not([mini])": {
     "enter": "core:confirm"
     "right": "github:surface"
@@ -140,6 +143,9 @@
     "cmd-alt-=": "unset!"
     "cmd-alt--": "unset!"
   }
+  "atom-workspace atom-text-editor:not(.mini)": {
+    "ctrl-alt-b": "unset!"
+  }
   "atom-workspace": {
     "ctrl-alt-cmd-shift-c": "chrome-color-picker:toggle"
     # "cmd-shift-c": "chrome-color-picker:toggle"
@@ -193,6 +199,8 @@
     "alt-cmd-up": "unset!"
   }
   ".platform-darwin": {
+    "cmd-shift-i": "settings-view:install-packages-and-themes"
+    "cmd-shift-u": "settings-view:uninstall-packages"
     "cmd-t": "application:new-file"
     "cmd-n": "application:new-file"
     "ctrl-tab": "pane:show-previous-recently-used-item"
@@ -295,6 +303,7 @@
     "cmd-.": "bracket-matcher:select-inside-brackets"
   }
   "atom-text-editor": {
+    "shift-tab": "snippets:previous-tab-stop"
     "ctrl-cmd-c": "editor:copy-project-path"
     "cmd-e": "emmet:balance-inward"
     "cmd-shift-e": "emmet:balance-outward"
