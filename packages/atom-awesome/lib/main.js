@@ -1,10 +1,10 @@
 'use babel';
 
 
-let _ = require('lodash');
-let fs = require('fs');
-let fse = fs;
-let stdpath = require('path');
+// let _ = require('lodash');
+let _ = require('underscore-plus');
+let fs = require('fs-extra');
+let path = require('path');
 let {
   CompositeDisposable,
 } = require('atom');
@@ -20,7 +20,7 @@ let {
 //   var dirpath, editor;
 //
 //   editor = atom.workspace.getActiveTextEditor();
-//   dirpath = (typeof editor.path === 'undefined') ? '' : fse.realpathSync(editor.path + '/../');
+//   dirpath = (typeof editor.path === 'undefined') ? '' : fs.realpathSync(editor.path + '/../');
 //
 //   return dirpath;
 // }
@@ -30,7 +30,7 @@ let {
 //
 //   fromPath = (typeof fromPath === 'undefined' || !fromPath) ? activeDirPath + '/' : activeDirPath + fromPath.replace(/^\.\./ig, '/..').replace(/^\./ig, '');
 //
-//   return stdpath.resolve(fromPath);
+//   return path.resolve(fromPath);
 // }
 //
 // function requireFrom(fromPath = '') {
@@ -70,7 +70,7 @@ console.log('start');
 
       // Wait for every package to have loaded, so that the menus are populated
       this.subscriptions.add(atom.packages.onDidActivateInitialPackages(() => {
-        didObserveTextEditors();
+        
       }));
     }
 

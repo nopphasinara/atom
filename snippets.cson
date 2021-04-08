@@ -73,7 +73,7 @@
       """,
     },
     "console.group": {
-      "prefix": "g-log",
+      "prefix": "logg",
       "body": """
       console.group(${1:'${2:}'});
       ${3:}

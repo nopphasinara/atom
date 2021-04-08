@@ -87,7 +87,7 @@
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     titleBar: "custom"
-    uriHandlerRegistration: "always"
+    uriHandlerRegistration: "never"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, Consolas, DejaVu Sans Mono, monospace"
     maxScreenLineLength: 4096
