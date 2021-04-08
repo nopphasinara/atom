@@ -1,0 +1,180 @@
+{
+  "title": "Binding Hyperclick",
+  "rules": [
+    {
+      "description": "Binding F1, F2, F3, Eject to Hyperclick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1"
+          },
+          "to_after_key_up": [
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.bluestacks.BlueStacks"
+              ]
+            }
+          ]
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f2"
+          },
+          "to_after_key_up": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.bluestacks.BlueStacks"
+              ]
+            }
+          ]
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f3"
+          },
+          "to_if_held_down": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "halt": false,
+              "hold_down_milliseconds": 65
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.bluestacks.BlueStacks"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 0,
+            "basic.to_if_held_down_threshold_milliseconds": 0
+          }
+        },
+
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "grave_accent_and_tilde"
+          },
+          "to_after_key_up": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 65
+            },
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "fn_locked",
+              "value": 0
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.bluestacks.BlueStacks"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
