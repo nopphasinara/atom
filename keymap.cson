@@ -263,7 +263,8 @@
   "atom-text-editor[mini]": {
     "cmd-d": "editor:select-word"
   }
-  "atom-text-editor:not([mini])": {
+  "atom-text-editor:not([mini]), atom-text-editor:not(.mini)": {
+    "cmd->": "editor:select-larger-syntax-node"
     "alt-cmd-c": "editor:copy-path"
     "tab": "snippets:next-tab-stop"
     "shift-tab": "snippets:previous-tab-stop"

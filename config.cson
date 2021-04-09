@@ -20,7 +20,7 @@
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
     enableExtendedUnicodeSupport: true
-    extraWordCharacters: "="
+    extraWordCharacters: ""
     maxVisibleSuggestions: 5
     minimumWordLength: 1
   "bracket-matcher":
