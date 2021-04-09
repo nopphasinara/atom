@@ -19,6 +19,8 @@
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
+    enableExtendedUnicodeSupport: true
+    extraWordCharacters: "="
     maxVisibleSuggestions: 5
     minimumWordLength: 1
   "bracket-matcher":

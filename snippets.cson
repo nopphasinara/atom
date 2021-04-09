@@ -10,6 +10,27 @@
 
 
   ".source.js": {
+    "typeof": {
+      "prefix": "typeof",
+      "body": """
+      typeof ${1:foo}$0
+      """,
+    },
+    "typeof eq ..": {
+      "prefix": "typeof-eq",
+      "body": """
+      typeof ${1:foo} ${2:===} '${3:bar}'$0
+      """,
+    },
+    "if typeof": {
+      "prefix": "if-typeof",
+      "body": """
+      if (typeof ${1:foo} ${2:===} '${3:bar}'$0) {
+        ${4:}
+      \\}$0
+      """,
+    },
+
     "use babel": {
       "prefix": "babel",
       "body": """
