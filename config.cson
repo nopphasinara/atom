@@ -181,6 +181,10 @@
     alwaysOpenExisting: true
   welcome:
     showOnStartup: false
+".applescript.source":
+  editor:
+    commentEnd: ""
+    commentStart: "-- "
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
