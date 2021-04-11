@@ -214,6 +214,9 @@
   editor:
     autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
 ".source.vim-snippet":
   editor:
     tabType: "soft"
