@@ -73,7 +73,7 @@ atom-text-editor:not([mini]) {
 .tool-bar {
   &:extend(.reset-margin);
   &:extend(.reset-padding);
-  background: @bg-hover-dark;
+  background: @bg-dark-hover;
 
   .tool-bar-spacer {
     &:extend(.reset-margin);
@@ -97,7 +97,7 @@ atom-text-editor:not([mini]) {
     border-radius: 0 !important;
 
     &:hover {
-      color: #fff;
+      // color: #fff;
       // background: @syntax-accent;
     }
   }
@@ -109,11 +109,11 @@ atom-text-editor:not([mini]) {
     border-radius: 0 !important;
     border-color: transparent !important;
     text-align: center !important;
-    width: @tool-bar-btn-width !important;
+    width: auto !important;
     min-width: @tool-bar-btn-width !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    .set-bg(@bg-hover-dark);
+    .set-bg(@bg-dark-hover);
     outline: none !important;
     height: @tool-bar-height !important;
     line-height: 100% !important;
@@ -145,6 +145,11 @@ atom-text-editor:not([mini]) {
       color: @status-bar-fg-hover-color;
       .set-bg(transparent);
     }
+
+    // &:hover {
+    //   box-shadow: inset 0 0 10px #555, 0 0 20px black;
+    //   transform: scale(2) rotate(15deg);
+    // }
   }
 
   .icon::before {
@@ -207,8 +212,8 @@ atom-panel-container {
       left: auto !important;
       border: none !important;
       margin: none !important;
-      padding-top: 10px !important;
-      padding-bottom: 5px !important;
+      padding-top: 6px !important;
+      padding-bottom: 4px !important;
       height: auto !important;
       max-height: auto !important;
       min-height: auto !important;
@@ -274,11 +279,11 @@ atom-dock {
         &[data-type="TreeView"] {
           height: @tree-view-tab-bar-height !important;
           line-height: @tree-view-tab-bar-height !important;
-          .set-bg(tint(@bg-hover-dark, -1)) !important;
+          // .set-bg(tint(@bg-dark-hover, -1)) !important;
         }
 
         .title {
-          color: @fg-selected !important;
+          // color: @fg-selected !important;
           font-weight: bold !important;
         }
       }
@@ -374,7 +379,7 @@ atom-dock {
 
 
 .tree-view {
-  .set-bg(tint(@bg-hover-dark, -1)) !important;
+  // .set-bg(tint(@bg-dark-hover, -1)) !important;
 
   .project-root.project-root {
     &:before {
@@ -386,7 +391,7 @@ atom-dock {
   }
 
   .selected:before {
-    .set-bg(@bg-hover-highlight);
+    // .set-bg(@bg-highlight-hover);
   }
 
   .selected.list-item > .name, // files
@@ -399,10 +404,10 @@ atom-dock {
     .selected.list-item > .name, // files
     .selected.list-nested-item > .list-item > .name, // folders
     .selected.list-nested-item > .header:before { // arrow icon
-      color: contrast(@accent-bg-color);
+      // color: contrast(@accent-bg-color);
     }
     .selected:before {
-      .set-bg(@accent-bg-color);
+      // .set-bg(@accent-bg-color);
     }
   }
 }

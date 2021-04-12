@@ -8,37 +8,37 @@
 @fg-warning: shade(@text-color-warning, -60);
 @fg-error: shade(@text-color-error, 10);
 
-@fg-hover-color: fade(tint(shade(@text-color, -50), -10), 90);
-@fg-hover-dark: fade(tint(shade(@ui-bg, -50), -10), 90);
-@fg-hover-subtle: fade(tint(shade(@text-color-subtle, -50), -10), 90);
-@fg-hover-highlight: fade(tint(shade(@text-color-highlight, -50), -10), 90);
-@fg-hover-selected: fade(tint(shade(@text-color-selected, -50), -10), 90);
-@fg-hover-info: fade(tint(shade(@text-color-info, -50), -10), 90);
-@fg-hover-success: fade(tint(shade(@text-color-success, -50), -10), 90);
-@fg-hover-warning: fade(tint(shade(@text-color-warning, -50), -10), 90);
-@fg-hover-error: fade(tint(shade(@text-color-error, -50), -10), 90);
+@fg-color-hover: fade(tint(shade(@fg-color, 20), -100), 90);
+@fg-dark-hover: fade(tint(shade(@fg-dark, 20), -100), 90);
+@fg-subtle-hover: fade(tint(shade(@fg-subtle, 20), -100), 90);
+@fg-highlight-hover: fade(tint(shade(@fg-highlight, 20), -100), 90);
+@fg-selected-hover: fade(tint(shade(@fg-selected, 20), -100), 90);
+@fg-info-hover: fade(tint(shade(@fg-info, 20), -100), 90);
+@fg-success-hover: fade(tint(shade(@fg-success, 20), -100), 90);
+@fg-warning-hover: fade(tint(shade(@fg-warning, 20), -100), 90);
+@fg-error-hover: fade(tint(shade(@fg-error, 20), -100), 90);
 
 @bg-dark: @ui-bg;
 @bg-highlight: @background-color-highlight;
 @bg-selected: @background-color-selected;
 @bg-info: @background-color-info;
 @bg-success: @background-color-success;
-@bg-warning: shade(@background-color-warning, -60);
-@bg-error: shade(@background-color-error, -10);
+@bg-warning: lighten(@background-color-warning, 20);
+@bg-error: lighten(@background-color-error, 2);
 
-@bg-hover-dark: fade(tint(shade(@ui-bg, -50), -10), 90);
-@bg-hover-highlight: fade(tint(shade(@background-color-highlight, -50), -10), 90);
-@bg-hover-selected: fade(tint(shade(@background-color-selected, -50), -10), 90);
-@bg-hover-info: fade(tint(shade(@background-color-info, 0), 0), 90);
-// @bg-hover-info: fade(tint(shade(@background-color-info, -50), -10), 90);
-@bg-hover-success: fade(tint(shade(@background-color-success, -50), -10), 90);
-@bg-hover-warning: fade(tint(shade(@background-color-warning, -50), -10), 90);
-@bg-hover-error: fade(tint(shade(@background-color-error, -50), -10), 90);
+@bg-dark-hover: tint(shade(@bg-dark, 5), -20);
+@bg-highlight-hover: tint(shade(@bg-highlight, 5), -20);
+@bg-selected-hover: tint(shade(@bg-selected, 5), -20);
+@bg-info-hover: tint(shade(@bg-info, 5), -20);
+@bg-success-hover: tint(shade(@bg-success, 5), -20);
+@bg-warning-hover: tint(shade(@bg-warning, 5), -20);
+@bg-error-hover: tint(shade(@bg-error, 5), -20);
 
 @mdi-font-size: 1.5em;
 @tool-bar-btn-width: 3.6rem;
 @tool-bar-icon-size: 1.1em;
 @tool-bar-height: 3.2rem;
+@tool-bar-btn-height: 3.2rem;
 @tree-view-tab-bar-height: 3.2rem;
 @tree-view-width: 280px;
 @tab-bar-height: 3rem;
@@ -49,4 +49,4 @@
 @status-bar-font-size: 12px;
 @status-bar-height: 24px;
 
-@accent-bg-color: @bg-hover-info;
+@accent-bg-color: @bg-info-hover;

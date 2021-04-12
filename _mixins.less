@@ -79,58 +79,84 @@
 
 
 .fg-color {
-  color: @fg-color !important;
+  color: @fg-color;
 }
-.fg-hover-color:hover {
-  color: @fg-hover-color !important;
+.fg-color-hover {
+  &:hover {
+    color: @fg-color-hover !important;
+  }
 }
+
 .fg-dark {
-  color: @fg-dark !important;
+  color: @fg-dark;
 }
-.fg-hover-dark:hover {
-  color: @fg-hover-dark !important;
+.fg-dark-hover {
+  &:hover {
+    color: @fg-dark-hover !important;
+  }
 }
+
 .fg-subtle {
-  color: @fg-subtle !important;
+  color: @fg-subtle;
 }
-.fg-hover-subtle:hover {
-  color: @fg-hover-subtle !important;
+.fg-subtle-hover {
+  &:hover {
+    color: @fg-subtle-hover !important;
+  }
 }
+
 .fg-highlight {
-  color: @fg-highlight !important;
+  color: @fg-highlight;
 }
-.fg-hover-highlight:hover {
-  color: @fg-hover-highlight !important;
+.fg-highlight-hover {
+  &:hover {
+    color: @fg-highlight-hover !important;
+  }
 }
+
 .fg-selected {
-  color: @fg-selected !important;
+  color: @fg-selected;
 }
-.fg-hover-selected:hover {
-  color: @fg-hover-selected !important;
+.fg-selected-hover {
+  &:hover {
+    color: @fg-selected-hover !important;
+  }
 }
+
 .fg-info {
-  color: @fg-info !important;
+  color: @fg-info;
 }
-.fg-hover-info:hover {
-  color: @fg-hover-info !important;
+.fg-info-hover {
+  &:hover {
+    color: @fg-info-hover !important;
+  }
 }
+
 .fg-success {
-  color: @fg-success !important;
+  color: @fg-success;
 }
-.fg-hover-success:hover {
-  color: @fg-hover-success !important;
+.fg-success-hover {
+  &:hover {
+    color: @fg-success-hover !important;
+  }
 }
+
 .fg-warning {
-  color: @fg-warning !important;
+  color: @fg-warning;
 }
-.fg-hover-warning:hover {
-  color: @fg-hover-warning !important;
+.fg-warning-hover {
+  &:hover {
+    color: @fg-warning-hover !important;
+  }
 }
+
 .fg-error {
-  color: @fg-error !important;
+  color: @fg-error;
 }
-.fg-hover-error:hover {
-  color: @fg-hover-error !important;
+.fg-error-hover {
+  &:hover {
+    color: @fg-error-hover !important;
+  }
 }
 
 
@@ -138,72 +164,79 @@
   background: @bg-dark !important;
   background-color: @bg-dark !important;
 }
-.bg-hover-dark:hover {
-  background: @bg-hover-dark !important;
-  background-color: @bg-hover-dark !important;
+.bg-dark-hover:hover {
+  background: @bg-dark-hover !important;
+  background-color: @bg-dark-hover !important;
 }
+
 .bg-highlight {
   background: @bg-highlight !important;
   background-color: @bg-highlight !important;
 }
-.bg-hover-highlight:hover {
-  background: @bg-hover-highlight !important;
-  background-color: @bg-hover-highlight !important;
+.bg-highlight-hover:hover {
+  background: @bg-highlight-hover !important;
+  background-color: @bg-highlight-hover !important;
 }
+
 .bg-selected {
   background: @bg-selected !important;
   background-color: @bg-selected !important;
 }
-.bg-hover-selected:hover {
-  background: @bg-hover-selected !important;
-  background-color: @bg-hover-selected !important;
+.bg-selected-hover:hover {
+  background: @bg-selected-hover !important;
+  background-color: @bg-selected-hover !important;
 }
+
 .bg-info {
   background: @bg-info !important;
   background-color: @bg-info !important;
 }
-.bg-hover-info:hover {
-  background: @bg-hover-info !important;
-  background-color: @bg-hover-info !important;
+.bg-info-hover:hover {
+  background: @bg-info-hover !important;
+  background-color: @bg-info-hover !important;
 }
+
 .bg-success {
   background: @bg-success !important;
   background-color: @bg-success !important;
 }
-.bg-hover-success:hover {
-  background: @bg-hover-success !important;
-  background-color: @bg-hover-success !important;
+.bg-success-hover:hover {
+  background: @bg-success-hover !important;
+  background-color: @bg-success-hover !important;
 }
+
 .bg-warning {
   background: @bg-warning !important;
   background-color: @bg-warning !important;
 }
-.bg-hover-warning:hover {
-  background: @bg-hover-warning !important;
-  background-color: @bg-hover-warning !important;
+.bg-warning-hover:hover {
+  background: @bg-warning-hover !important;
+  background-color: @bg-warning-hover !important;
 }
+
 .bg-error {
   background: @bg-error !important;
   background-color: @bg-error !important;
 }
-.bg-hover-error:hover {
-  background: @bg-hover-error !important;
-  background-color: @bg-hover-error !important;
+.bg-error-hover:hover {
+  background: @bg-error-hover !important;
+  background-color: @bg-error-hover !important;
 }
+
 
 .bg-transparent {
   background: transparent !important;
   background-color: transparent !important;
 }
-.bg-hover-transparent:hover {
+.bg-transparent-hover:hover {
   background: transparent !important;
   background-color: transparent !important;
 }
-.border-transparent,
-.border-hover-transparent:hover {
-  border-color: transparent !important;
-}
 
+.border-transparent,
+.border-transparent-hover:hover {
+    border-color: transparent !important;
+}
 
 
 .editor-font-settings {
@@ -240,7 +273,10 @@
   padding-left: 0 !important;
 }
 
-.mdi {
+.mdi,
+.mdi-stack {
+  overflow: hidden !important;
+
   &:extend(.editor-font-settings);
   &:extend(.reset-margin);
   &:extend(.reset-padding);
@@ -270,6 +306,30 @@
     &:extend(.reset-margin);
     &:extend(.reset-padding);
     // font-size: @tool-bar-icon-size !important;
+  }
+}
+
+.mdi-stack {
+  position: relative !important;
+
+  i {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: @tool-bar-btn-height !important;
+    line-height: @tool-bar-btn-height !important;
+
+    &.stack-1,
+    &:nth-child(1) {
+      z-index: 2 !important;
+    }
+    &.stack-2,
+    &:nth-child(2) {
+      z-index: 1 !important;
+      font-size: 2.5vw !important;
+    }
   }
 }
 

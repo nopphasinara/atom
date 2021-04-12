@@ -60,7 +60,7 @@ module.exports = [
   //   },
   //   text: "<i>󰚌</i>",
   //   html: true,
-  //   class: ["mdi", "bg-error", "fg-selected", "fg-hover-warning"],
+  //   class: ["mdi", "bg-error", "fg-selected", "fg-warning-hover"],
   //   // show: {
   //   //   grammar: [
   //   //     "js",
@@ -76,7 +76,7 @@ module.exports = [
     },
     text: "<i>󰇥</i>",
     html: true,
-    class: ["mdi", "bg-warning", "bg-hover-warning", "fg-dark", "fg-dark"],
+    class: ["mdi", "bg-warning", "bg-warning-hover", "fg-dark", "fg-dark"],
   },
   { type: "spacer" },
   {
@@ -119,12 +119,12 @@ module.exports = [
     },
     text: "<i>󰈋</i>",
     html: true,
-    class: ["mdi"],
     show: {
       function: () => {
         return !atom.packages.isPackageDisabled('chrome-color-picker');
       },
     },
+    class: ["mdi"],
   },
   {
     type: "button",
@@ -146,7 +146,17 @@ module.exports = [
     tooltip: "Cursor Scope, To Array (󰜷󰍽)",
     text: "<i>󰆤</i>",
     html: true,
-    class: ["mdi"],
+    class: ["mdi", "bg-warning"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": "flex-tool-bar:edit-config-file",
+    },
+    tooltip: "Edit Tool Bar",
+    text: "<i class=\"fg-color\">󰊬</i><i class=\"fg-error fg-warning-hover\">󰚍</i>",
+    html: true,
+    class: ["mdi-stack"],
   },
   // { type: "spacer" },
   // {

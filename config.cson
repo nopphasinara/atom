@@ -192,6 +192,9 @@
 ".coffee.source":
   editor:
     autoIndentOnPaste: true
+".css.less.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?…"
 ".css.scss.source":
   "autocomplete-plus":
     extraWordCharacters: "$"
