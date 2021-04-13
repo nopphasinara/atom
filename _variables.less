@@ -1,38 +1,57 @@
-@fg-color: @text-color;
-@fg-dark: @ui-bg;
-@fg-subtle: @text-color-subtle;
-@fg-highlight: @text-color-highlight;
-@fg-selected: @text-color-selected;
-@fg-info: @text-color-info;
-@fg-success: @text-color-success;
-@fg-warning: shade(@text-color-warning, -60);
-@fg-error: shade(@text-color-error, 10);
+// main: ./styles.less
 
-@fg-color-hover: fade(tint(shade(@fg-color, 20), -100), 90);
-@fg-dark-hover: fade(tint(shade(@fg-dark, 20), -100), 90);
-@fg-subtle-hover: fade(tint(shade(@fg-subtle, 20), -100), 90);
-@fg-highlight-hover: fade(tint(shade(@fg-highlight, 20), -100), 90);
-@fg-selected-hover: fade(tint(shade(@fg-selected, 20), -100), 90);
-@fg-info-hover: fade(tint(shade(@fg-info, 20), -100), 90);
-@fg-success-hover: fade(tint(shade(@fg-success, 20), -100), 90);
-@fg-warning-hover: fade(tint(shade(@fg-warning, 20), -100), 90);
-@fg-error-hover: fade(tint(shade(@fg-error, 20), -100), 90);
+@import "ui-variables";
 
-@bg-dark: @ui-bg;
-@bg-highlight: @background-color-highlight;
-@bg-selected: @background-color-selected;
-@bg-info: @background-color-info;
-@bg-success: @background-color-success;
-@bg-warning: lighten(@background-color-warning, 20);
-@bg-error: lighten(@background-color-error, 2);
 
-@bg-dark-hover: tint(shade(@bg-dark, 5), -20);
-@bg-highlight-hover: tint(shade(@bg-highlight, 5), -20);
-@bg-selected-hover: tint(shade(@bg-selected, 5), -20);
-@bg-info-hover: tint(shade(@bg-info, 5), -20);
-@bg-success-hover: tint(shade(@bg-success, 5), -20);
-@bg-warning-hover: tint(shade(@bg-warning, 5), -20);
-@bg-error-hover: tint(shade(@bg-error, 5), -20);
+@color-color: @text-color;
+@color-dark: @syntax-background-color;
+@color-subtle: @text-color-subtle;
+@color-highlight: @syntax-wrap-guide-color;
+@color-selected: @text-color-selected;
+@color-info: @syntax-cursor-color;
+@color-success: @text-color-success;
+@color-warning: @text-color-warning;
+@color-error: @text-color-error;
+
+@fg-color: @color-color;
+@fg-dark: @color-dark;
+@fg-subtle: @color-subtle;
+@fg-highlight: @color-highlight;
+@fg-selected: @color-selected;
+@fg-info: @color-info;
+@fg-success: @color-success;
+@fg-warning: @color-warning;
+@fg-error: @color-error;
+
+@fg-color-hover: @fg-color;
+@fg-dark-hover: @fg-dark;
+@fg-subtle-hover: @fg-subtle;
+@fg-highlight-hover: @fg-highlight;
+@fg-selected-hover: @fg-selected;
+@fg-info-hover: @fg-info;
+@fg-success-hover: @fg-success;
+@fg-warning-hover: @fg-warning;
+@fg-error-hover: @fg-error;
+
+@bg-color: @color-color;
+@bg-dark: @color-dark;
+@bg-subtle: @color-subtle;
+@bg-highlight: @color-highlight;
+@bg-selected: @color-selected;
+@bg-info: @color-info;
+@bg-success: @color-success;
+@bg-warning: @color-warning;
+@bg-error: @color-error;
+
+@bg-color-hover: @bg-color;
+@bg-dark-hover: @bg-dark;
+@bg-subtle-hover: @bg-subtle;
+@bg-highlight-hover: @bg-highlight;
+@bg-selected-hover: @bg-selected;
+@bg-info-hover: @bg-info;
+@bg-success-hover: @bg-success;
+@bg-warning-hover: @bg-warning;
+@bg-error-hover: @bg-error;
 
 @mdi-font-size: 1.5em;
 @tool-bar-btn-width: 3.6rem;
