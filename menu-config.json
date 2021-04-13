@@ -730,7 +730,7 @@
           }
         },
         "Change Case": {
-          "enabled": false,
+          "enabled": true,
           "children": {
             "lowercase": {
               "enabled": true,
@@ -809,7 +809,7 @@
           }
         },
         "duplicate-removal": {
-          "enabled": false,
+          "enabled": true,
           "children": {
             "Toggle": {
               "enabled": true,
@@ -1297,7 +1297,7 @@
           }
         },
         "Sequential Number": {
-          "enabled": false,
+          "enabled": true,
           "children": {
             "Open Sequential Number": {
               "enabled": true,
