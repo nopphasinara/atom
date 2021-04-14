@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-  "_id": "language-ini@1.23.0",
+  "_from": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+  "_id": "language-ini@1.25.0",
   "_inBundle": false,
-  "_integrity": "sha512-NaY/4dZGEEHd4BKw2uJWkSFKeeW6uYQqsWZ/hjz7FLr5QN32wClGgLvuvyvXxDiDBjRuIza+U5vNYjI4bn/9jg==",
+  "_integrity": "sha512-EUVU+InFRAk8OFkFLuLwXcJae3dhb7Z5He8hs/1o7IKMwk5q6kKM9aQ4dSJwi8bJq9Pg1cyB6CmdgXcACpF3ug==",
   "_location": "/language-ini",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball"
+    "raw": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-  "_shasum": "7e4ddb68b7ad693c4e24ec998f801cd1422748c6",
-  "_spec": "https://www.atom.io/api/packages/language-ini/versions/1.23.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202128-33236-1hfqkyb.ez67",
+  "_resolved": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+  "_shasum": "1c732480eea6ed6135d88927d4d913e8392f60b0",
+  "_spec": "https://www.atom.io/api/packages/language-ini/versions/1.25.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021314-16072-1q9llh3.xsj5",
   "author": {
     "name": "Jacob Bednarz",
     "email": "jacob.bednarz@gmail.com",
@@ -45,5 +45,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.23.0"
+  "version": "1.25.0"
 }
