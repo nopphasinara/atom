@@ -10,7 +10,7 @@
     title: ".atom"
     group: "Atom"
     paths: [
-      "/Users/sudprawat/.atom"
+      "~/.atom"
     ]
   }
   {

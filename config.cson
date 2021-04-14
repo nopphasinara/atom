@@ -5,6 +5,11 @@
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
   "atom-beautify":
+    executables:
+      php:
+        path: "/usr/local/bin/php"
+      "php-cs-fixer":
+        path: "/usr/local/bin/php-cs-fixer"
     general:
       beautifyEntireFileOnSave: false
   "atom-package-deps":
