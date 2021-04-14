@@ -199,7 +199,7 @@
     autoIndentOnPaste: true
 ".css.less.source":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?…"
+    nonWordCharacters: "/\\()\"':,.;<>~!-#%^&*|+=[]{}`?…"
 ".css.scss.source":
   "autocomplete-plus":
     extraWordCharacters: "$"
