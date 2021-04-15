@@ -182,8 +182,7 @@
     fullWidth: false
     iconSize: "21px"
     useTouchBar: false
-  "tree-view":
-    alwaysOpenExisting: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".applescript.source":

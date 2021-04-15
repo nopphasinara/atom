@@ -199,6 +199,7 @@
     "alt-cmd-up": "unset!"
   }
   ".platform-darwin": {
+    "alt-cmd-r": "tree-view:show-current-file-in-file-manager"
     "cmd-shift-i": "settings-view:install-packages-and-themes"
     "cmd-shift-u": "settings-view:uninstall-packages"
     "cmd-t": "application:new-file"
