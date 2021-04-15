@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+  "_id": "python-snippets@1.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-UdRFfmz3EU0m/gMHlu5Z3bNO3Y+RzTc6GHtde7CQG6MYViX8MBCnGTjI383+m64MywIxI/xtNNhubFaEEGFsHQ==",
+  "_location": "/python-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+  "_shasum": "b2f493fddf59e2fd3c64e42f2b84c186e82aa389",
+  "_spec": "https://www.atom.io/api/packages/python-snippets/versions/1.9.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021316-7254-sf1l2q.kbjxc",
+  "bugs": {
+    "url": "https://github.com/adiultra/python-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Python Snippets for Atom",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/adiultra/python-snippets#readme",
+  "keywords": [
+    "python",
+    "tkinter",
+    "snippets"
+  ],
+  "license": "MIT",
+  "name": "python-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiultra/python-snippets.git"
+  },
+  "version": "1.9.0"
+}

@@ -17,10 +17,7 @@
       "build-sass"
     ]
   "atom-ternjs":
-    debug: false
-    inlineFnCompletionDocumentation: true
     snippetsFirst: true
-    useSnippets: true
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
@@ -41,6 +38,7 @@
       "language-scss"
       "language-scss"
       "spell-check"
+      "php-hyperclick"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -96,7 +94,7 @@
     titleBar: "custom"
     uriHandlerRegistration: "never"
   editor:
-    fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
     maxScreenLineLength: 4096
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
@@ -137,8 +135,7 @@
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "js-hyperclick":
-    jumpToImport: true
+  "js-hyperclick": {}
   "language-babel":
     autoIndentJSX: true
     emmetCSSAutocomplete: true

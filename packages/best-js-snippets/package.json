@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+  "_id": "best-js-snippets@4.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-AuZhuE2ckOMpiuC5uLglmiXkU+5m6O4Wzf88h/ecc7/QWf3R4GZnQy19Jcojyr8acIn+9oM7rtyhsEL+qPNzbQ==",
+  "_location": "/best-js-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+  "_shasum": "bdca9e50ecb4de2cdfb3e4bd6b1a5cdb94d98d73",
+  "_spec": "https://www.atom.io/api/packages/best-js-snippets/versions/4.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021316-95233-1rrsfuu.f2ob",
+  "author": {
+    "name": "tommy"
+  },
+  "bugs": {
+    "url": "https://github.com/maochunguang/best-js-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "js and nodejs snippets",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "http://geekwalker.cn/best-js-snippets/",
+  "keywords": [
+    "Javascript",
+    "snippets",
+    "nodejs",
+    "es6",
+    "express"
+  ],
+  "license": "MIT",
+  "name": "best-js-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maochunguang/best-js-snippets.git"
+  },
+  "version": "4.1.0"
+}

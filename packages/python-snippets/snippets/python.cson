@@ -1,0 +1,90 @@
+'.source.python':
+    #  Normal missing Functionality
+
+  'Function Definition':
+    'prefix': 'def'
+    'body': '''
+    def ${1:fname}(${2:arg}):
+        ${3:pass}
+    $4
+    '''
+  'Initiator Function':
+    'prefix': 'defi'
+    'body': '''
+    def __init__(self, ${1:arg}):
+        ${2:pass}
+    $3
+    '''
+  'Print Function':
+    'prefix': 'print'
+    'body': 'print($1)$2'
+
+    # Tkinter snippets
+
+  'Import Tkinter':
+    'prefix': 'imtk'
+    'body': 'import tkinter as tk$1'
+
+  'Root Configuration':
+    'prefix': 'config'
+    'body': 'config(menu=$1)$2'
+
+  'Button':
+    'prefix': 'button'
+    'body': 'tk.Button(${1:root}, text="$2")$3'
+
+  'Label':
+    'prefix': 'label'
+    'body': 'tk.Label(${1:root}, text="$2")$3'
+
+  'Frame':
+    'prefix': 'frame'
+    'body': 'tk.Frame(${1:root})$2'
+
+  'Entry':
+    'prefix': 'entry'
+    'body': 'tk.Entry(${1:root})$2'
+
+  'Grid':
+    'prefix': 'grid'
+    'body': 'grid(row=$1, colomn=$2)$3'
+
+  'Sticky':
+    'prefix': 'sticky'
+    'body': 'sticky=tk.$1'
+
+  'Check Button':
+    'prefix': 'checkbutton'
+    'body': 'tk.Checkbutton(${1:root}, text="$2")$3'
+
+  'Main Loop':
+    'prefix': 'mainloop'
+    'body': 'mainloop()$1'
+
+  'Pack':
+    'prefix': 'pack'
+    'body': 'pack($1)$2'
+
+  'Side':
+    'prefix': 'side'
+    'body': 'side=tk.$1'
+
+  'Bind':
+    'prefix': 'bind'
+    'body': 'bind("<Button-${1:1}>", ${2:fxn})$3'
+
+  'Menu':
+    'prefix': 'menu'
+    'body': 'tk.menu(${1:root})$2'
+
+  'Add Cascade':
+    'prefix': 'add cascade'
+    'body': 'add_cascade(label="$1", menu=$2)$3'
+
+  'Add Command':
+    'prefix': 'add command'
+    'body': 'add_command(label="$1", command=$2)$3'
+
+  'Add Seperator':
+    'prefix': 'add seperator'
+    'body': 'add_separator()$1'

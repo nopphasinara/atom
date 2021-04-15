@@ -1,0 +1,69 @@
+'.source.ruby':
+  'Spec':
+    'prefix': 'spec'
+    'body': """
+      require 'rails_helper'
+
+      describe $1 do
+
+      end
+    """
+  'Describe':
+    'prefix': 'desc'
+    'body': """
+      describe '$1' do
+
+      end
+    """
+  'Subject':
+    'prefix': 'subj'
+    'body': """
+      subject { described_class.$1 }
+    """
+  'Factory':
+    'prefix': 'fact'
+    'body': """
+    FactoryGirl.define do
+      factory :$1 do
+
+      end
+    end
+    """
+  'Spec - it':
+    'prefix': 'sit'
+    'body': """
+      it '$1' do
+
+      end
+    """
+  'Spec - let':
+   'prefix': 'slet'
+   'body': 'let(:$1) { }'
+  'Service Object':
+    'prefix': 'servobj'
+    'body': """
+      module $1
+        class $2
+          def initialize($3)
+            @$3 = $3
+          end
+
+          def call
+          end
+
+          private
+        end
+      end
+    """
+  'Spec - context':
+    'prefix': 'context'
+    'body': """
+      context '$1' do
+
+      end
+    """
+  'Spec - it is expected':
+    'prefix': 'sitex'
+    'body': """
+      it { is_expected.to $1 }
+    """

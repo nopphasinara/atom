@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+  "_id": "scss-snippets@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-bEpD4SVXiIvHUgHGj8fLMarCKmq9/SI7Bu3Kasw6eiWN1NrDf1RnDIPtbeLMPTeS3uV/dotm2Pw2o/6eadUiTg==",
+  "_location": "/scss-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+  "_shasum": "5ce48a3572c94ff96f418f238c0fa5f2f6617efc",
+  "_spec": "https://www.atom.io/api/packages/scss-snippets/versions/0.6.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021316-83740-2ndohu.7q7h2",
+  "bugs": {
+    "url": "https://github.com/rich-97/scss-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Snippets for atom language sass syntax scss",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/rich-97/scss-snippets#readme",
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "snippets",
+    "atom"
+  ],
+  "license": "MIT",
+  "main": "./scss-snippets/README.md",
+  "name": "scss-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rich-97/scss-snippets.git"
+  },
+  "version": "0.6.0"
+}

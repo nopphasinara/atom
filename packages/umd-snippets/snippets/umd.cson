@@ -1,0 +1,210 @@
+'.source.js':
+    'AMD or Web':
+        'prefix': 'umd-amd-web'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['${1:deps}'], factory);
+                } else {
+                    // Browser globals
+                    root.amdWeb = factory(root.${1:deps});
+                }
+            } (this, function (${1:deps}) {
+                return {};
+            }));
+        """
+
+    'AMD + Global or Web':
+        'prefix': 'umd-amd-web-global'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['${1:deps}'], function (${1:deps}) {
+                        // Also create a global in case some scripts
+                        // that are loaded still are looking for
+                        // a global even when an AMD loader is in use.
+                        return (root.amdWebGlobal = factory(${1:deps}));
+                    });
+                } else {
+                    // Browser globals
+                    root.amdWebGlobal = factory(root.${1:deps});
+                }
+            } (this, function (${1:deps}) {
+                return {};
+            }));
+        """
+
+    'CommonJS Adapter':
+        'prefix': 'umd-cjs-adapter'
+        'body': """
+            if (typeof exports === 'object' && typeof exports.nodeName !== 'string' && typeof define !== 'function') {
+                var define = function (factory) {
+                    factory(require, exports, module);
+                };
+            }
+
+            define(function (require, exports, module) {
+                var ${1:deps} = require('${1:deps}');
+
+                exports.action = function () {};
+            });
+        """
+
+    'CommonJS Strict':
+        'prefix': 'umd-cjs-strict'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['exports', '${1:deps}'], factory);
+                } else if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+                    // CommonJS
+                    factory(exports, require('${1:deps}'));
+                } else {
+                    // Browser globals
+                    factory((root.commonJsStrict = {}), root.${1:deps});
+                }
+            } (this, function (exports, ${1:deps}) {
+                exports.action = function () {};
+            }));
+        """
+
+    'CommonJS Strict + Global':
+        'prefix': 'umd-cjs-strict-global'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['exports', '${1:deps}'], function (exports, ${1:deps}) {
+                        factory((root.commonJsStrictGlobal = exports), ${1:deps});
+                    });
+                } else if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+                    // CommonJS
+                    factory(exports, require('${1:deps}'));
+                } else {
+                    // Browser globals
+                    factory((root.commonJsStrictGlobal = {}), root.${1:deps});
+                }
+            } (this, function (exports, ${1:deps}) {
+                exports.action = function () {};
+            }));
+        """
+
+    'JQuery Plugin':
+        'prefix': 'umd-jquery-plugin'
+        'body': """
+            (function (factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['jquery'], factory);
+                } else if (typeof module === 'object' && module.exports) {
+                    // Node/CommonJS
+                    module.exports = function (root, jQuery) {
+                        if (jQuery === undefined) {
+                            // require('jQuery') returns a factory that requires window to
+                            // build a jQuery instance, we normalize how we use modules
+                            // that require this pattern but the window provided is a noop
+                            // if it's defined (how jquery works)
+                            if (typeof window !== 'undefined') {
+                                jQuery = require('jquery');
+                            } else {
+                                jQuery = require('jquery')(root);
+                            }
+                        }
+                        factory(jQuery);
+                        return jQuery;
+                    };
+                } else {
+                    // Browser globals
+                    factory(jQuery);
+                }
+            } (function ($) {
+                $.fn.jqueryPlugin = function () { return true; };
+            }));
+        """
+
+    'Node Adapter':
+        'prefix': 'umd-node-adapter'
+        'body': """
+            (function (define) {
+                define(function (require, exports, module) {
+                    var ${1:deps} = require('${1:deps}');
+
+                    return function () {};
+                });
+
+            }(typeof module === 'object' && module.exports && typeof define !== 'function'
+                // Help Node out by setting up define.
+                ? function (factory) {
+                    module.exports = factory(require, exports, module);
+                }
+                : define
+            ));
+        """
+
+    'Return Exports':
+        'prefix': 'umd-return-exports'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['${1:deps}'], factory);
+                } else if (typeof module === 'object' && module.exports) {
+                    // Node. Does not work with strict CommonJS, but
+                    // only CommonJS-like environments that support module.exports,
+                    // like Node.
+                    module.exports = factory(require('${1:deps}'));
+                } else {
+                    // Browser globals (root is window)
+                    root.returnExports = factory(root.${1:deps});
+                }
+            } (this, function (${1:deps}) {
+                return {};
+            }));
+        """
+
+    'Return Exports (no deps)':
+        'prefix': 'umd-return-exports-nodeps'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define([], factory);
+                } else if (typeof module === 'object' && module.exports) {
+                    // Node. Does not work with strict CommonJS, but
+                    // only CommonJS-like environments that support module.exports,
+                    // like Node.
+                    module.exports = factory();
+                } else {
+                    // Browser globals (root is window)
+                    root.returnExports = factory();
+              }
+            } (this, function () {
+                return {};
+            }));
+        """
+
+    'Return Exports + Global':
+        'prefix': 'umd-return-exports-global'
+        'body': """
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['${1:deps}'], function (${1:deps}) {
+                        return (root.returnExportsGlobal = factory(${1:deps}));
+                    });
+                } else if (typeof module === 'object' && module.exports) {
+                    // Node. Does not work with strict CommonJS, but
+                    // only CommonJS-like environments that support module.exports,
+                    // like Node.
+                    module.exports = factory(require('${1:deps}'));
+                } else {
+                    // Browser globals
+                    root.returnExportsGlobal = factory(root.${1:deps});
+                }
+            } (this, function (${1:deps}) {
+                return {};
+            }));
+        """

@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+  "_id": "umd-snippets@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Ye4G5ser83JjZIoVOwwdqRHzPL6ePFbp7kaTz3Ia93Q1IQD2aBy1O+Lx5jxsbE2S7z9L0aKUATym0pBHVlA8WA==",
+  "_location": "/umd-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+  "_shasum": "c0a6188b08a4527291a4a41c9138cf804d24bd60",
+  "_spec": "https://www.atom.io/api/packages/umd-snippets/versions/0.1.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021316-66644-ckf7mw.vpujh",
+  "bugs": {
+    "url": "https://github.com/darahak/umd-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "UMD snippets for Atom.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/darahak/umd-snippets#readme",
+  "keywords": [
+    "javascript",
+    "snippets",
+    "umd",
+    "universal",
+    "module",
+    "define",
+    "amd",
+    "commonjs"
+  ],
+  "license": "MIT",
+  "name": "umd-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darahak/umd-snippets.git"
+  },
+  "version": "0.1.1"
+}
