@@ -1,3 +1,6 @@
+@color-keys: light, dark, subtle, highlight, selected, info, success, warning, error;
+@color-values: @text-color, @syntax-background-color, @text-color-subtle, @syntax-wrap-guide-color, @text-color-selected, @syntax-cursor-color, @text-color-success, @text-color-warning, @text-color-error;
+
 @color-color: @text-color;
 @color-dark: @syntax-background-color;
 @color-subtle: @text-color-subtle;
@@ -7,6 +10,7 @@
 @color-success: @text-color-success;
 @color-warning: @text-color-warning;
 @color-error: @text-color-error;
+
 @ui-border-color: @base-border-color;
 @ui-border-color: lime;
 
@@ -58,6 +62,9 @@
 @tree-view-tab-bar-height: 3.2rem;
 @tree-view-width: 280px;
 @tab-bar-height: 3rem;
+@accent-color: red;
+@tool-bar-btn-fg: @accent-text-color;
+@tool-bar-btn-bg: @accent-color;
 
 @status-bar-fg-color: fade(tint(@bg-info, 90), 80);
 @status-bar-fg-hover-color: spin(shade(tint(@status-bar-fg-color, 100), 0), 100);

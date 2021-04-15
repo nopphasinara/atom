@@ -208,9 +208,41 @@
     },
   },
 
+
+  ".source.coffee .string.quoted.double.coffee .punctuation.definition.string.end.coffee": {
+    "snippet with selector": {
+      "prefix": "\"\"",
+      "body": """
+      \"${1:selector}\": {
+        \"${2:snippet}\": {
+          \"prefix\": \"${3:}\",
+          \"body\": \"\"\"
+          ${4:}
+          \"\"\",
+        },
+      \\},$0
+      """,
+    },
+  },
+  ".source.coffee .string.quoted.single .punctuation.definition.string.end": {
+    "snippet with selector": {
+      "prefix": "''",
+      "body": """
+      '${1:selector}': {
+        '${2:snippet}': {
+          'prefix': '${3:}',
+          'body': '''
+          ${4:}
+          ''',
+        },
+      \\},$0
+      """,
+    },
+  },
+
   ".source.coffee": {
-    "add snippet": {
-      "prefix": "add-snippet",
+    "add snippet (D)": {
+      "prefix": "add-snippet-d",
       "body": """
       \"${1:snippet}\": {
         \"prefix\": \"${2:}\",
@@ -220,19 +252,8 @@
       },$0
       """,
     },
-    "add snippet 2": {
-      "prefix": "d-add-snippet",
-      "body": """
-      \"${1:snippet}\": {
-        \"prefix\": \"${2:}\",
-        \"body\": \"\"\"
-        ${3:}
-        \"\"\",
-      },$0
-      """,
-    },
-    "add snippet 3": {
-      "prefix": "s-add-snippet",
+    "add snippet (S)": {
+      "prefix": "add-snippet-s",
       "body": """
       '${1:snippet}': {
         'prefix': '${2:}',

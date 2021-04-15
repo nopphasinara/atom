@@ -7,42 +7,24 @@
 // https://www.google.com
 
 .global-reset();
+.tool-bar-reset();
 
-.tool-bar {
-  button,
-  button.tool-bar-btn,
-  i {
-    .font-icons();
-    .text-reset();
-  }
-
-  button.tool-bar-btn {
-    background: red;
-
-    &:hover {
-      background: green;
-    }
-  }
-
-  .tool-bar-spacer {
-    .border-reset();
-  }
-}
-
-.loop(@counter) when (@counter > 0) {
-  // next iteration
-  .loop((@counter - 1));
-  // code for each iteration
-  width: (10px * @counter);
-}
+// .loop(@counter) when (@counter > 0) {
+//   // next iteration
+//   .loop((@counter - 1));
+//   // code for each iteration
+//   width: (10px * @counter);
+//
+//
+// }
 // .loop(4);
 
-.generate-columns(@n, @i: 1) when (@i =< @n) {
-  .column-@{i} {
-    width: (@i * 100% / @n);
-  }
-  .generate-columns(@n, (@i + 1));
-}
+// .generate-columns(@n, @i: 1) when (@i =< @n) {
+//   .column-@{i} {
+//     width: (@i * 100% / @n);
+//   }
+//   .generate-columns(@n, (@i + 1));
+// }
 // .generate-columns(4);
 
 // atom-text-editor {
