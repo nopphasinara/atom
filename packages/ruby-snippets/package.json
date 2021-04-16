@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/ruby-snippets/versions/0.2.1/tarball",
   "_shasum": "ec2bae23b88296804e2fb8afa9e3dd444ad18180",
   "_spec": "https://www.atom.io/api/packages/ruby-snippets/versions/0.2.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021316-18920-1r5lcg4.h0yo",
+  "_where": "/private/tmp/apm-install-dir-2021316-85262-3dw286.tq2qk",
   "activationCommands": {
     "atom-workspace": "ruby-snippets:toggle"
   },

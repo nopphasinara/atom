@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/amp-snippets/versions/0.1.1/tarball",
   "_shasum": "f617dfadb3053259f776efcfdd0d5406670ec509",
   "_spec": "https://www.atom.io/api/packages/amp-snippets/versions/0.1.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021316-43283-1q116vp.47ck",
+  "_where": "/private/tmp/apm-install-dir-2021316-70934-1ek299g.5yeu",
   "activationCommands": {
     "atom-workspace": "amp-snippets:toggle"
   },
