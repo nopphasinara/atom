@@ -1,9 +1,9 @@
-// main: ../styles.less
 
 .generate-colors(@n, @i: 1) when (@i =< @n) {
   // Code for current iterator.
   @k: extract(@color-keys, @i);
   @v: extract(@color-values, @i);
+  @v-hover: extract(@color-values-hover, @i);
 
   .fg-@{k} {
     color: @v !important;
@@ -16,24 +16,49 @@
 
   .bg-@{k}-hover {
     .mdi:hover &,
-    .mdi-stack:hover &,
+    .mdi-stack:hover & {
+      background: @v-hover !important;
+      background-color: @v-hover !important;
+    }
     &:hover {
-      background: @v !important;
-      background-color: @v !important;
+      background: @v-hover !important;
+      background-color: @v-hover !important;
     }
   }
 
   .fg-@{k}-hover {
     .mdi:hover &,
-    .mdi-stack:hover &,
+    .mdi-stack:hover & {
+      color: @v-hover !important;
+    }
     &:hover {
-      color: @v !important;
+      color: @v-hover !important;
     }
   }
 
   .border-@{k} {
     border-color: @v !important;
     -webkit-mask-image: none !important;
+  }
+
+  .border-@{k}-hover {
+    border-color: @v-hover !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .outline-@{k} {
+    outline-color: @v !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .outline-@{k}-hover {
+    outline-color: @v-hover !important;
+    -webkit-mask-image: none !important;
+  }
+
+  :root {
+    --@{k}: @v;
+    --@{k}-hover: @v-hover;
   }
 
   // Loop to next iterator.
@@ -52,12 +77,12 @@
     }
 
     button.tool-bar-btn {
-      color: @tool-bar-btn-fg;
-      background: @tool-bar-btn-bg;
+      color: var(--highlight);
+      background: var(--dark);
 
       &:hover {
-        color: @tool-bar-btn-fg;
-        background: @tool-bar-btn-bg;
+        color: var(--highlight);
+        background: var(--info);
       }
     }
 

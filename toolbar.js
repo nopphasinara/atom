@@ -176,9 +176,9 @@ module.exports = [
       "": "",
     },
     tooltip: "+1",
-    text: "<i class=bg-error fg-light>󰊬</i><i class=bg-warning fg-dark>󰊬</i><i class=bg-success fg-subtle>󰊬</i><i class=bg-info fg-highlight>󰊬</i><i class=bg-selected fg-selected bg-info-hover>󰊬</i><i class=bg-highlight fg-info>󰊬</i><i class=bg-subtle fg-success>󰊬</i><i class=bg-dark fg-warning>󰊬</i><i class=bg-light fg-error>󰊬</i>",
+    text: "<i class=''>󰂔</i>",
     html: true,
-    class: ["mdi"],
+    class: ["mdi", "bg-error", "bg-warning-hover"],
   },
   {
     type: "button",
