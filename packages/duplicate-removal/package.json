@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
   "_shasum": "549bf83284efd08ee5f8e7694e132e03a77df687",
   "_spec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
-  "_where": "/private/tmp/apm-install-dir-202128-5867-iaulvn.4zpx",
+  "_where": "/private/tmp/apm-install-dir-2021316-67833-1g21zld.1j2i",
   "activationCommands": {
     "atom-workspace": "duplicate-removal:toggle"
   },

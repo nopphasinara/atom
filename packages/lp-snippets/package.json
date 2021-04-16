@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/lp-snippets/versions/0.0.27/tarball",
   "_shasum": "ce7092337381c2108a9e525c591ef5a9a4757227",
   "_spec": "https://www.atom.io/api/packages/lp-snippets/versions/0.0.27/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021316-44403-enxgr6.xfa3o",
+  "_where": "/private/tmp/apm-install-dir-2021316-99806-h28r16.f68hn",
   "activationCommands": {
     "atom-workspace": "lp-snippets:toggle"
   },

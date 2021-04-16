@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
   "_shasum": "8e0ca65fa377518c3f5c6534b785f4a54049553e",
   "_spec": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
-  "_where": "/private/var/folders/dd/08nnzfz55qn3lhwcclqdrvvh0000gn/T/apm-install-dir-2021213-82735-5b4r7r.7acyp",
+  "_where": "/private/tmp/apm-install-dir-2021316-76411-w21uxi.tcd5q",
   "atomTestRunner": "./spec/runner",
   "bugs": {
     "url": "https://github.com/UziTech/git-menu/issues"

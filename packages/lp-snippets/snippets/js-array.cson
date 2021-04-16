@@ -1,5 +1,5 @@
 ".source.js, .source.ts, .source.jsx":
-    "array.map arrow":
+    "array.map arrow f":
         "prefix": "filtera"
         "body": """
                 filter(item => ${0:item})

@@ -86,6 +86,15 @@ module.exports = [
     html: true,
     class: ["mdi"],
   },
+  {
+    type: "button",
+    callback: {
+      "": "git-menu:discard-changes",
+    },
+    text: "<i>󰊢</i>",
+    html: true,
+    class: ["mdi"],
+  },
   { type: "spacer" },
   {
     type: "button",

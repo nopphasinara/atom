@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-ternjs/versions/0.20.0/tarball",
   "_shasum": "18ad9380b5ec1b5db8fbb63a01660282b6629efb",
   "_spec": "https://www.atom.io/api/packages/atom-ternjs/versions/0.20.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202129-59364-6uef7v.p5lz",
+  "_where": "/private/tmp/apm-install-dir-2021316-54147-aa1hwd.ahkz4",
   "activationCommands": {
     "atom-workspace": [
       "atom-ternjs:openConfig"
