@@ -1,4 +1,42 @@
 {
+  ".source.json": {
+    "package.json": {
+      "prefix": "pack",
+      "body": """
+      {
+        \"name\": \"${1:foobar}\",
+        \"version\": \"${2:1.0.0}\",
+        \"description\": \"${3:}\",
+        \"keywords\": [${4:}\\],
+        \"repository\": {
+          \"type\": \"${5:git}\",
+          \"url\": \"${6:git+https://github.com/user/repo.git}\"
+        \\},
+        \"homepage\": \"${1:https://github.com/user/repo#readme}\",
+        \"author\": \"${1:Foo Bar}\",
+        \"private\": true,
+        \"license\": \"MIT\",
+        \"os\": [
+          \"darwin\"
+        \\],
+        \"engines\": {
+          \"atom\": \"*\"
+        \\},
+        \"activationHooks\": [\\],
+        \"scripts\": {
+          \"test\": \"echo \\\\"Error: no test specified\\\\" && exit 1\"
+        \\},
+        \"dependencies\": {
+          \"fs\": \"^9.1.0\",
+          \"lodash\": \"^4.17.21\",
+          \"path\": \"^0.12.7\",
+          \"underscore-plus\": \"^1.7.0\"
+        \\}
+      \\}
+      """,
+    },
+  },
+
   ".source.css .meta.css": {
     "important": {
       "prefix": "im",
@@ -10,6 +48,24 @@
 
 
   ".source.js": {
+    "if": {
+      "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\} else {
+        ${3:}
+      \\}$0
+      """,
+    },
     "typeof": {
       "prefix": "typeof",
       "body": """

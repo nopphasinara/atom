@@ -69,16 +69,34 @@
 
 .tool-bar-reset() {
   .tool-bar {
+    .tool-bar-spacer,
+    button,
+    button.tool-bar-btn,
+    i,
+    & {
+      height: @tool-bar-btn-height !important;
+      line-height: @tool-bar-btn-height !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
     button,
     button.tool-bar-btn,
     i {
       .font-icons();
       .text-reset();
+      width: auto !important;
+      min-width: @tool-bar-btn-width !important;
+      font-size: @icon-font-size !important;
     }
 
     button.tool-bar-btn {
       color: var(--highlight);
       background: var(--dark);
+      border-width: 0 !important;
+      border-radius: 0 !important;
 
       &:hover {
         color: var(--highlight);
@@ -88,6 +106,12 @@
 
     .tool-bar-spacer {
       .border-reset();
+      width: 0 !important;
+      min-width: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      overflow: hidden !important;
+      border-color: var(--subtle) !important;
     }
   }
 }
@@ -184,7 +208,6 @@
 .text-reset() {
   // .text-smoothing();
   .text-rendering();
-
   font-style: normal;
   // font-size: @font-size;
 }

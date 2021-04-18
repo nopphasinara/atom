@@ -18,6 +18,7 @@
     ]
   "atom-ternjs":
     snippetsFirst: true
+    useSnippets: true
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
@@ -39,6 +40,9 @@
       "language-scss"
       "spell-check"
       "php-hyperclick"
+      "es6-snippets"
+      "amp-snippets"
+      "scss-snippets"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -85,12 +89,19 @@
       "atom-autocomplete-php"
       "git-plus"
       "preview-plus"
+      "split-diff"
+      "symbols-list"
+      "git-history"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "bright-dark-syntax"
+    ]
     titleBar: "custom"
     uriHandlerRegistration: "never"
   editor:
@@ -170,6 +181,14 @@
       "Winsor"
     ]
     noticesMode: "console"
+  "split-diff":
+    muteNotifications: true
+    turnOffSoftWrap: true
+  "symbols-list":
+    basic:
+      alphabeticalSorting: true
+      hideOnEmptyList: true
+      startUp: false
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:

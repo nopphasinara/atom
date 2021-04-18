@@ -146,6 +146,9 @@
   "atom-workspace atom-text-editor:not(.mini)": {
     "ctrl-alt-b": "unset!"
   }
+  "atom-text-editor:not([mini])": {
+    "tab": "snippets:next-tab-stop"
+  }
   "atom-workspace": {
     "ctrl-alt-cmd-shift-c": "chrome-color-picker:toggle"
     # "cmd-shift-c": "chrome-color-picker:toggle"

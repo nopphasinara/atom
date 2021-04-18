@@ -1,8 +1,4 @@
 
-// @import "syntax-variables.less";
-// @import "ui-variables.less";
-
-
 @color-keys: light, dark, subtle, highlight, selected, info, success, warning, error;
 @color-values: @color-light, @color-dark, @color-subtle, @color-highlight, @color-selected, @color-info, @color-success, @color-warning, @color-error;
 @color-values-hover: @color-light-hover, @color-dark-hover, @color-subtle-hover, @color-highlight-hover, @color-selected-hover, @color-info-hover, @color-success-hover, @color-warning-hover, @color-error-hover;
@@ -12,10 +8,10 @@
 @color-subtle: @mono-3;
 @color-highlight: @mono-2;
 @color-selected: @mono-1;
-@color-info: @syntax-accent;
-@color-success: @syntax-color-added;
-@color-warning: @syntax-color-modified;
-@color-error: @syntax-color-removed;
+@color-info: @text-color-info;
+@color-success: @text-color-success;
+@color-warning: tint(shade(@text-color-warning, -10), -30);
+@color-error: @text-color-error;
 
 @color-light-hover: fade(shade(@color-light, 25), 90);
 @color-dark-hover: fade(shade(@color-dark, 25), 90);
@@ -24,8 +20,19 @@
 @color-selected-hover: @background-color-selected;
 @color-info-hover: fade(shade(@color-info, 25), 90);
 @color-success-hover: fade(shade(@color-success, 25), 90);
-@color-warning-hover: fade(shade(@color-warning, 25), 90);
+@color-warning-hover: fade(shade(@color-warning, 10), 90);
 @color-error-hover: fade(shade(@color-error, 25), 90);
+
+// @hue-1:   hsl(185, 45%, 55%); // cyan
+@hue-2:   @color-info; // blue
+// @hue-3:   hsl(285, 60%, 65%); // purple
+@hue-4:   @color-success; // green
+// @hue-5:   hsl(355, 65%, 65%); // darkred
+@hue-5-2: @color-error; // red
+// @hue-6:   hsl( 30, 55%, 60%); // orange
+@hue-6-2: @color-warning; // yellow
+
+@syntax-accent: @accent-bg-color;
 
 @ui-border-color: @base-border-color;
 // @ui-border-color: @syntax-fg;
@@ -71,11 +78,11 @@
 // @bg-error-hover: @color-error-hover;
 
 @mdi-font-size: 1.5em;
-@tool-bar-btn-width: 3.6rem;
+@tool-bar-btn-width: 3.8rem;
 @tool-bar-icon-size: 1.1em;
-@tool-bar-height: 3.2rem;
-@tool-bar-btn-height: 3.2rem;
-@tree-view-tab-bar-height: 3.2rem;
+@tool-bar-height: 3.8rem;
+@tool-bar-btn-height: 3.8rem;
+@tree-view-tab-bar-height: 3.8rem;
 @tree-view-width: 280px;
 @tab-bar-height: 3rem;
 @accent-color: red;
@@ -92,4 +99,4 @@
 
 
 @font-family: system-ui, MaterialDesignIcons, master-icons;
-@icon-font-size: @ui-size * 1.2;
+@icon-font-size: @ui-size * 1.4;

@@ -2,22 +2,28 @@
   "name": "atom",
   "version": "1.0.0",
   "description": "",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nopphasinara/atom.git"
   },
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/nopphasinara/atom#readme",
   "bugs": {
     "url": "https://github.com/nopphasinara/atom/issues"
   },
-  "homepage": "https://github.com/nopphasinara/atom#readme",
+  "author": "Goldfish Creative",
+  "private": true,
+  "license": "MIT",
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "atom": "*"
+  },
+  "activationHooks": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "fs-extra": "^9.1.0",
     "lodash": "^4.17.21",

@@ -1,4 +1,0 @@
-'*':
-  s1:
-    prefix: 't5'
-    body: 'file .ignore/hidden, snippet 1'

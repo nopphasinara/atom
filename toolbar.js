@@ -74,6 +74,7 @@ module.exports = [
     callback: {
       "": "window:reload",
     },
+    tooltip: "Reload Window",
     text: "<i class='fg-selected fg-warning-hover'>󰇥</i>",
     html: true,
     class: ["mdi", "bg-warning", "bg-warning-hover"],
@@ -82,6 +83,7 @@ module.exports = [
   {
     type: "url",
     url: "https://github.com/{repo-owner}/{repo-name}",
+    tooltip: "Open on Github",
     text: "<i>󰊢</i>",
     html: true,
     class: ["mdi"],
@@ -91,7 +93,38 @@ module.exports = [
     callback: {
       "": "git-menu:discard-changes",
     },
+    tooltip: "Discard Changes",
     text: "<i>󰊢</i>",
+    html: true,
+    class: ["mdi"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": "split-diff:toggle",
+    },
+    tooltip: "Split Diff",
+    text: "<i>󰪚</i>",
+    html: true,
+    class: ["mdi"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": "symbols-list:toggle",
+    },
+    tooltip: "Symbol List",
+    text: "<i>󰙮</i>",
+    html: true,
+    class: ["mdi"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": "git-history:show-file-history",
+    },
+    tooltip: "Git History",
+    text: "<i>󰚰</i>",
     html: true,
     class: ["mdi"],
   },
