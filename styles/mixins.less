@@ -1,4 +1,23 @@
 
+.generator(@n, @i: 1) when (@i =< @n) {
+  @rules();
+  .generator(@n, (@i + 1));
+}
+
+
+.for-each(@var, @rules: false, @keys: false) {
+  .dr() {
+    @length: length(@var);
+  }
+  .dr() when not (@keys = false) {
+    @length: length(@keys);
+  }
+  .dr();
+
+  .generator(@length);
+}
+
+
 .generate-colors(@n, @i: 1) when (@i =< @n) {
   // Code for current iterator.
   @k: extract(@color-keys, @i);
@@ -80,6 +99,7 @@
       margin-bottom: 0 !important;
       margin-left: 0 !important;
       margin-right: 0 !important;
+      vertical-align: middle !important;
     }
 
     button,
@@ -99,7 +119,7 @@
       border-radius: 0 !important;
 
       &:hover {
-        color: var(--highlight);
+        color: var(--selected);
         background: var(--info);
       }
     }

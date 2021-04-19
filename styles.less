@@ -11,9 +11,107 @@
 .global-reset();
 .tool-bar-reset();
 
-atom-text-editor {
-  // background: @accent-bg-color;
+// @detached-ruleset: {
+//   caller-variable: @caller-variable; // variable is undefined here
+//   .caller-mixin(); // mixin is undefined here
+// };
+//
+// selector {
+//   // use detached ruleset
+//   @detached-ruleset();
+//
+//   // define variable and mixin needed inside the detached ruleset
+//   @caller-variable: value;
+//   .caller-mixin() {
+//     variable: declaration;
+//   }
+// }
+
+// .append(@rules) {
+//   @rules();
+// }
+
+@hue-keys: hue-1, hue-2, hue-3, hue-4, hue-5, hue-5-2, hue-6, hue-6-2;
+
+.hue-reset() {
+  @custom-hue-1: shade(hsl(185, 45%, 55%), +0); // cyan
+  @custom-hue-2: shade(hsl(220, 80%, 65%), +0); // blue
+  @custom-hue-3: shade(hsl(285, 60%, 65%), +0); // purple
+  @custom-hue-4: shade(hsl(140, 44%, 60%), +0); // green
+  @custom-hue-5: shade(hsl(355, 65%, 65%), +0); // darkred
+  @custom-hue-5-2: shade(hsl( 10, 100%, 65%), +0); // red
+  @custom-hue-6: shade(hsl( 30, 55%, 60%), +0); // orange
+  @custom-hue-6-2: shade(hsl( 35, 60%, 70%), +0); // yellow
 }
+.hue-reset();
+
+@hue-1: @custom-hue-1;
+@hue-2: @custom-hue-2;
+@hue-3: @custom-hue-3;
+@hue-4: @custom-hue-4;
+@hue-5: @custom-hue-5;
+@hue-5-2: @custom-hue-5-2;
+@hue-6: @custom-hue-6;
+@hue-6-2: @custom-hue-6-2;
+
+:root {
+  .for-each(@hue-keys, {
+    @k: extract(@var, @i);
+    @v: @@k;
+
+    .@{k} {
+      color: @v !important;
+    }
+
+    .@{k} {
+      &.bg-color {
+        background: @v !important;
+        background-color: @v !important;
+      }
+    }
+
+    --@{k}: @v;
+  });
+}
+
+
+
+// .for-each(@var, @keys: false) {
+//   .dr() when (@keys = false) {
+//       @length: length(@var);
+//   }
+//   .dr() when not (@keys = false) {
+//       @length: length(@keys);
+//   }
+//   .dr();
+//
+//   :root {
+//     --length: @length;
+//   }
+// }
+// .for-each(@hue-colors);
+//
+// @detached-ruleset: {
+//   @variable: e("");
+//   & {
+//     color: @variable;
+//     background: @variable;
+//   }
+// };
+//
+// body {
+//   @detached-ruleset();
+//   @variable: red;
+// }
+
+
+
+// @k: hue-2;
+// @kk: @@k;
+//
+// atom-text-editor {
+//   background: var(--hue-1);
+// }
 
 // .loop(@counter) when (@counter > 0) {
 //   // next iteration

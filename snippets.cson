@@ -1,4 +1,21 @@
 {
+  # LESS
+  ".source.less": {
+    "foreach": {
+      "prefix": "for-each",
+      "body": """
+      .foreach(@n, @i: 1) when (@i =< @n) {
+        // Code for current iterator.
+        // ${2:..}
+        // Loop to next iterator.
+        .foreach(@n, (@i + 1));
+      \\}
+      .foreach(${1:length(@var)});$0
+      """,
+    },
+  },
+
+
   ".source.json": {
     "package.json": {
       "prefix": "pack",

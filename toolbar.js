@@ -209,9 +209,9 @@ module.exports = [
       "": "",
     },
     tooltip: "+1",
-    text: "<i class=''>󰂔</i>",
+    text: "<i class='hue-1'>󰂔</i><i class='hue-2'>󰂔</i><i class='hue-3'>󰂔</i><i class='hue-4'>󰂔</i><i class='hue-5'>󰂔</i><i class='hue-5-2'>󰂔</i><i class='hue-6'>󰂔</i><i class='hue-6-2'>󰂔</i>",
     html: true,
-    class: ["mdi", "bg-error", "bg-warning-hover"],
+    class: ["mdi"],
   },
   {
     type: "button",
@@ -222,6 +222,16 @@ module.exports = [
     text: "<i class='fg-selected fg-error-hover'>󰊬</i><i class='fg-error fg-warning-hover'>󰚍</i>",
     html: true,
     class: ["mdi-stack"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": "flex-tool-bar:edit-config-file",
+    },
+    tooltip: "Edit Tool Bar",
+    text: "<i>󰊬</i>",
+    html: true,
+    class: ["mdi", "fg-error", "fg-selected-hover"],
   },
   // { type: "spacer" },
   // {

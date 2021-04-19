@@ -1,27 +1,29 @@
 
+@atom-home: "/Volumes/Storage/Projects/atom";
+
 @color-keys: light, dark, subtle, highlight, selected, info, success, warning, error;
 @color-values: @color-light, @color-dark, @color-subtle, @color-highlight, @color-selected, @color-info, @color-success, @color-warning, @color-error;
 @color-values-hover: @color-light-hover, @color-dark-hover, @color-subtle-hover, @color-highlight-hover, @color-selected-hover, @color-info-hover, @color-success-hover, @color-warning-hover, @color-error-hover;
 
-@color-light: @ui-fg;
+@color-light: @mono-1;
 @color-dark: @app-background-color;
 @color-subtle: @mono-3;
 @color-highlight: @mono-2;
-@color-selected: @mono-1;
+@color-selected: lighten(@mono-1, 25);
 @color-info: @text-color-info;
 @color-success: @text-color-success;
 @color-warning: tint(shade(@text-color-warning, -10), -30);
 @color-error: @text-color-error;
 
-@color-light-hover: fade(shade(@color-light, 25), 90);
-@color-dark-hover: fade(shade(@color-dark, 25), 90);
-@color-subtle-hover: fade(shade(@color-subtle, 25), 90);
-@color-highlight-hover: @background-color-highlight;
-@color-selected-hover: @background-color-selected;
-@color-info-hover: fade(shade(@color-info, 25), 90);
-@color-success-hover: fade(shade(@color-success, 25), 90);
-@color-warning-hover: fade(shade(@color-warning, 10), 90);
-@color-error-hover: fade(shade(@color-error, 25), 90);
+@color-light-hover: @color-light;
+@color-dark-hover: @color-dark;
+@color-subtle-hover: @color-subtle;
+@color-highlight-hover: @color-highlight;
+@color-selected-hover: @color-selected;
+@color-info-hover: @color-info;
+@color-success-hover: @color-success;
+@color-warning-hover: @color-warning;
+@color-error-hover: @color-error;
 
 // @hue-1:   hsl(185, 45%, 55%); // cyan
 @hue-2:   @color-info; // blue
