@@ -1,3 +1,33 @@
+function colorConvertHexHsl(value) {
+  if (typeof value !== 'string' || !value) return;
+
+  value = value.replace(new RegExp('^\#'), '');
+  if (!value) return;
+
+  var rgb, hex, hsl, keyword, convert;
+
+  convert = require('color-convert');
+
+  rgb = convert.keyword.rgb(value);
+  if (!rgb) {
+    hex = convert.rgb.hex(value);
+    if (!hex) return;
+    hsl = convert.hex.hsl(hex);
+    if (hsl.length) {
+      return hsl.join(',');
+    }
+  }
+}
+
+function isTextEditor(editor = null) {
+  editor = editor || getActiveTextEditor();
+  return atom.workspace.isTextEditor(editor);
+}
+
+function getActiveTextEditor() {
+  return atom.workspace.getActiveTextEditor() || undefined;
+}
+
 function getPackageModule(package) {
   if (typeof package !== 'undefined') {
     var cachedPackage = atom.packages.getLoadedPackage(package) || '';
@@ -226,7 +256,79 @@ module.exports = [
   {
     type: "button",
     callback: {
-      "": "flex-tool-bar:edit-config-file",
+      "": function () {
+        console.clear();
+
+        var apiUrl = 'https://search.google.com/u/2/search-console/disavow-links?resource_id=';
+        var sites = [
+          'abacus-gallery.com',
+          'modern-art-reproductions.com',
+          'museum-reproductions.com',
+          'oshjosh.com',
+          'reproduction-galleries.com',
+          'reproduction-gallery.com',
+          'reproduction-studio.com',
+          'soho-art.com',
+        ];
+        var protocols = [
+          'http',
+          'https',
+        ];
+        var encodedUrls = [];
+
+        sites.map(function (site) {
+          protocols.map(function (protocol) {
+            var data, raw, encoded;
+
+            encodedUrls.push(`${protocol}://${site}/`);
+            encodedUrls.push(`${protocol}://www.${site}/`);
+          });
+        });
+
+        for (var prop in encodedUrls) {
+          encodedUrls[prop] = encodeURIComponent(encodedUrls[prop]);
+        }
+
+        atom.commands.dispatch(atom.views.getView(atom.workspace), 'application:new-file');
+        setTimeout(function () {
+          var editor = getActiveTextEditor();
+
+          encodedUrls.forEach(function (url) {
+            editor.insertText(`${apiUrl}${url}`);
+            editor.insertNewline();
+          });
+
+        }, 500);
+      },
+    },
+    tooltip: "Edit Tool Bar",
+    text: "<i class='fg-selected fg-error-hover'>󰊬</i><i class='fg-error fg-warning-hover'>󰚍</i>",
+    html: true,
+    class: ["mdi-stack"],
+  },
+  {
+    type: "button",
+    callback: {
+      "": function () {
+        console.clear();
+        if (!isTextEditor()) return;
+        var editor = getActiveTextEditor();
+        var selections = editor.getSelections() || [];
+
+        if (selections.length) {
+          editor.mutateSelectedText(function (selection) {
+            var selectedText, filterSelectedText;
+            console.log(selection);
+            if (selection.isEmpty()) selection.selectWord();
+
+            selectedText = selection.getText() || '';
+            if (selectedText) {
+              console.log(selectedText);
+              console.log(colorConvertHexHsl(selectedText));
+            }
+          });
+        }
+      },
     },
     tooltip: "Edit Tool Bar",
     text: "<i>󰊬</i>",

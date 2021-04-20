@@ -29,5 +29,8 @@
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "underscore-plus": "^1.7.0"
+  },
+  "devDependencies": {
+    "color-convert": "^2.0.1"
   }
 }
