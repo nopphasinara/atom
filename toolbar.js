@@ -301,39 +301,10 @@ module.exports = [
         }, 500);
       },
     },
-    tooltip: "Edit Tool Bar",
-    text: "<i class='fg-selected fg-error-hover'>󰊬</i><i class='fg-error fg-warning-hover'>󰚍</i>",
+    tooltip: "Generate Disavow",
+    text: "<i>󰌹󰡇</i>",
     html: true,
-    class: ["mdi-stack"],
-  },
-  {
-    type: "button",
-    callback: {
-      "": function () {
-        console.clear();
-        if (!isTextEditor()) return;
-        var editor = getActiveTextEditor();
-        var selections = editor.getSelections() || [];
-
-        if (selections.length) {
-          editor.mutateSelectedText(function (selection) {
-            var selectedText, filterSelectedText;
-            console.log(selection);
-            if (selection.isEmpty()) selection.selectWord();
-
-            selectedText = selection.getText() || '';
-            if (selectedText) {
-              console.log(selectedText);
-              console.log(colorConvertHexHsl(selectedText));
-            }
-          });
-        }
-      },
-    },
-    tooltip: "Edit Tool Bar",
-    text: "<i>󰊬</i>",
-    html: true,
-    class: ["mdi", "fg-error", "fg-selected-hover"],
+    class: ["mdi"],
   },
   // { type: "spacer" },
   // {

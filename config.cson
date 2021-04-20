@@ -98,10 +98,6 @@
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "bright-dark-syntax"
-    ]
     titleBar: "custom"
     uriHandlerRegistration: "never"
   editor:
