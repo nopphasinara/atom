@@ -98,8 +98,14 @@
     ]
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
     titleBar: "custom"
     uriHandlerRegistration: "never"
+  "dark-flat-ui":
+    accentColor: "blue"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
     maxScreenLineLength: 4096
@@ -150,14 +156,20 @@
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
+  "nv-dark-ui":
+    hideDockButtons: true
   "one-dark-ui":
     hideDockButtons: true
   "preview-plus":
     livePreview: true
+  "pristine-ui":
+    hideDockButtons: true
   "project-manager":
     prettifyTitle: false
     showPath: false
     sortBy: "title"
+  rainglow:
+    SelectSyntax: "earthsong-rainglow-syntax"
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true

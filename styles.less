@@ -1,5 +1,5 @@
 
-// @import "./styles/colors.less";
+// @import "./styles/custom-colors.less";
 
 @import "syntax-variables.less";
 @import "ui-variables.less";
@@ -12,6 +12,61 @@
 
 .global-reset();
 .tool-bar-reset();
+
+.title-bar {
+  color: @color-dark;
+  background: @color-highlight;
+}
+
+.tool-bar {
+  background: @app-background-color;
+}
+
+atom-dock {
+  &.left {
+    .tab[data-type="TreeView"] {
+      background: @app-background-color !important;
+      // border-bottom: solid 1px @base-border-color !important;
+
+      .title {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .tree-view {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      // background: @app-background-color;
+    }
+  }
+}
+
+.tab-bar {
+  height: auto;
+
+  .tab {
+    height: @tab-bar-height;
+    line-height: @tab-bar-height;
+    vertical-align: middle;
+    background: @app-background-color !important;
+
+    &.active {
+      background: @syntax-bg !important;
+    }
+  }
+
+  .close-icon {
+    top: .75rem !important;
+  }
+}
+
+
+.tooltip {
+  .tooltip-inner {
+    background: @color-info !important;
+  }
+}
 
 // @detached-ruleset: {
 //   caller-variable: @caller-variable; // variable is undefined here
@@ -32,17 +87,6 @@
 // .append(@rules) {
 //   @rules();
 // }
-
-@hue-keys: hue-1, hue-2, hue-3, hue-4, hue-5, hue-5-2, hue-6, hue-6-2;
-
-@hue-1: @custom-hue-1;
-@hue-2: @custom-hue-2;
-@hue-3: @custom-hue-3;
-@hue-4: @custom-hue-4;
-@hue-5: @custom-hue-5;
-@hue-5-2: @custom-hue-5-2;
-@hue-6: @custom-hue-6;
-@hue-6-2: @custom-hue-6-2;
 
 :root {
   .for-each(@color-keys, {
@@ -105,23 +149,27 @@
     --@{k}-hover: @v-hover;
   });
 
-  .for-each(@hue-keys, {
-    @k: extract(@var, @i);
-    @v: @@k;
+  // .for-each(@hue-keys, {
+  //   @k: extract(@var, @i);
+  //   @v: @@k;
+  //
+  //   .@{k} {
+  //     color: @v !important;
+  //   }
+  //
+  //   .@{k} {
+  //     &.bg-color {
+  //       background: @v !important;
+  //       background-color: @v !important;
+  //     }
+  //   }
+  //
+  //   --@{k}: @v;
+  // });
+}
 
-    .@{k} {
-      color: @v !important;
-    }
+.mdi-stack {
 
-    .@{k} {
-      &.bg-color {
-        background: @v !important;
-        background-color: @v !important;
-      }
-    }
-
-    --@{k}: @v;
-  });
 }
 
 

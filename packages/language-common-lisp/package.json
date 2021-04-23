@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+  "_id": "language-common-lisp@0.9.5",
+  "_inBundle": false,
+  "_integrity": "sha512-GG6hU3abLTgI4boCPHjQYxBFsVMixFz8pAjmIQpFlxfIR1PGVvaeBHYgST3gWBEj4399HdWgFXq7kyJTYPAiHQ==",
+  "_location": "/language-common-lisp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+  "_shasum": "1b94aca027acd23d3be27a62003f24af394aa12f",
+  "_spec": "https://www.atom.io/api/packages/language-common-lisp/versions/0.9.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021323-77185-ze8pzg.36ksa",
+  "bugs": {
+    "url": "https://github.com/serialhex/language-common-lisp/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Common Lisp Highlighting & Support in Atom",
+  "engines": {
+    "atom": ">0.5.0"
+  },
+  "homepage": "https://github.com/serialhex/language-common-lisp#readme",
+  "license": "MIT",
+  "name": "language-common-lisp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serialhex/language-common-lisp.git"
+  },
+  "version": "0.9.5"
+}

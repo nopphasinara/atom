@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+  "_id": "one-dark-shade-ui@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-5LemjrO4XX5LZDKma8gHdID4uJAmcYBvxhFl6fesPqrZuJooohKfEjMySx8dvxZHPfn04WNrN2eTRxhOAfY7hQ==",
+  "_location": "/one-dark-shade-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+  "_shasum": "6ec75c7c410ae8541e500561cc965b7ef90a55c2",
+  "_spec": "https://www.atom.io/api/packages/one-dark-shade-ui/versions/0.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021323-30029-1u2ozku.59g5",
+  "bugs": {
+    "url": "https://github.com/amp343/one-dark-shade-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom One dark UI theme variant, with lower-contrast filesystem tree and other tweaks",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/amp343/one-dark-shade-ui#readme",
+  "keywords": [
+    "dark",
+    "adaptive",
+    "ui"
+  ],
+  "license": "MIT",
+  "name": "one-dark-shade-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amp343/one-dark-shade-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.1.0"
+}

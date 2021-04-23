@@ -1,19 +1,21 @@
 
 @atom-home: "/Volumes/Storage/Projects/atom";
 
+@hue-keys: hue-1, hue-2, hue-3, hue-4, hue-5, hue-5-2, hue-6, hue-6-2;
+
 @color-keys: light, dark, subtle, highlight, selected, info, success, warning, error;
 @color-values: @color-light, @color-dark, @color-subtle, @color-highlight, @color-selected, @color-info, @color-success, @color-warning, @color-error;
 @color-values-hover: @color-light-hover, @color-dark-hover, @color-subtle-hover, @color-highlight-hover, @color-selected-hover, @color-info-hover, @color-success-hover, @color-warning-hover, @color-error-hover;
 
-@color-light: @mono-1;
+@color-light: @text-color;
 @color-dark: @app-background-color;
-@color-subtle: @mono-3;
-@color-highlight: @mono-2;
-@color-selected: lighten(@mono-1, 25);
-@color-info: @text-color-info;
-@color-success: @text-color-success;
-@color-warning: tint(shade(@text-color-warning, -10), -30);
-@color-error: @text-color-error;
+@color-subtle: @text-color-subtle;
+@color-highlight: @text-color-highlight;
+@color-selected: @text-color-selected;
+@color-info: @hue-2;
+@color-success: @hue-4;
+@color-warning: @hue-6-2;
+@color-error: @hue-5-2;
 
 @color-light-hover: @color-light;
 @color-dark-hover: @color-dark;
@@ -25,19 +27,13 @@
 @color-warning-hover: @color-warning;
 @color-error-hover: @color-error;
 
-// @hue-1:   hsl(185, 45%, 55%); // cyan
-@hue-2:   @color-info; // blue
-// @hue-3:   hsl(285, 60%, 65%); // purple
-@hue-4:   @color-success; // green
-// @hue-5:   hsl(355, 65%, 65%); // darkred
-@hue-5-2: @color-error; // red
-// @hue-6:   hsl( 30, 55%, 60%); // orange
-@hue-6-2: @color-warning; // yellow
-
-@syntax-accent: @accent-bg-color;
-
 @ui-border-color: @base-border-color;
 // @ui-border-color: @syntax-fg;
+
+// @syntax-color-renamed: @color-info;
+// @syntax-color-added: @color-success;
+// @syntax-color-modified: @color-warning;
+// @syntax-color-removed: @color-error;
 
 // @fg-light: @color-light;
 // @fg-dark: @color-dark;
@@ -88,8 +84,8 @@
 @tree-view-width: 280px;
 @tab-bar-height: 3rem;
 @accent-color: red;
-@tool-bar-btn-fg: @accent-text-color;
-@tool-bar-btn-bg: @accent-color;
+@tool-bar-btn-fg: @color-info;
+@tool-bar-btn-bg: @color-selected;
 
 @status-bar-fg-color: fade(tint(@color-info, 90), 80);
 @status-bar-fg-hover-color: spin(shade(tint(@status-bar-fg-color, 100), 0), 100);
@@ -101,4 +97,4 @@
 
 
 @font-family: system-ui, MaterialDesignIcons, master-icons;
-@icon-font-size: @ui-size * 1.4;
+@icon-font-size: 1em * 1.4;

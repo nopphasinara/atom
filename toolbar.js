@@ -233,26 +233,26 @@ module.exports = [
     html: true,
     class: ["mdi"],
   },
-  {
-    type: "button",
-    callback: {
-      "": "",
-    },
-    tooltip: "+1",
-    text: "<i class='hue-1'>󰂔</i><i class='hue-2'>󰂔</i><i class='hue-3'>󰂔</i><i class='hue-4'>󰂔</i><i class='hue-5'>󰂔</i><i class='hue-5-2'>󰂔</i><i class='hue-6'>󰂔</i><i class='hue-6-2'>󰂔</i>",
-    html: true,
-    class: ["mdi"],
-  },
-  {
-    type: "button",
-    callback: {
-      "": "flex-tool-bar:edit-config-file",
-    },
-    tooltip: "Edit Tool Bar",
-    text: "<i class='fg-selected fg-error-hover'>󰊬</i><i class='fg-error fg-warning-hover'>󰚍</i>",
-    html: true,
-    class: ["mdi-stack"],
-  },
+  // {
+  //   type: "button",
+  //   callback: {
+  //     "": "",
+  //   },
+  //   tooltip: "+1",
+  //   text: "<i class='fg-light'>󰂔</i><i class='fg-dark'>󰂔</i><i class='fg-subtle'>󰂔</i><i class='fg-highlight'>󰂔</i><i class='fg-selected'>󰂔</i><i class='fg-info'>󰂔</i><i class='fg-success'>󰂔</i><i class='fg-warning'>󰂔</i><i class='fg-error'>󰂔</i>",
+  //   html: true,
+  //   class: ["mdi"],
+  // },
+  // {
+  //   type: "button",
+  //   callback: {
+  //     "": "flex-tool-bar:edit-config-file",
+  //   },
+  //   tooltip: "Edit Tool Bar",
+  //   text: "<div class='mdi-stack'><i class='fg-error fg-warning-hover'>󰚍</i><i class='fg-selected fg-error-hover'>󰊬</i></div>",
+  //   html: true,
+  //   class: ["mdi"],
+  // },
   {
     type: "button",
     callback: {
@@ -302,7 +302,7 @@ module.exports = [
       },
     },
     tooltip: "Generate Disavow",
-    text: "<i>󰌹󰡇</i>",
+    text: "<i>󰡇</i>",
     html: true,
     class: ["mdi"],
   },

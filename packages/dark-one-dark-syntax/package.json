@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+  "_id": "dark-one-dark-syntax@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-5naufYRefhgXVoPjZzFpELE/6WIm9LgsaIDbprmahHeEugXZW6bgJww0Zsl65W6qzprTVpLkXWtnxsVITMH7yw==",
+  "_location": "/dark-one-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+  "_shasum": "cd801d55b472297e9ea4724aed0faca78b043f4e",
+  "_spec": "https://www.atom.io/api/packages/dark-one-dark-syntax/versions/2.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021323-28341-zv9ogg.q530f",
+  "bugs": {
+    "url": "https://github.com/mgovea/dark-one-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A syntax theme based on 'One Dark'. Modified to be slightly higher contrast.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/mgovea/dark-one-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "darker",
+    "one dark",
+    "onedark",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "dark-one-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgovea/dark-one-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "2.3.0"
+}
