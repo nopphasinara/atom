@@ -198,6 +198,13 @@
     ]
   }
   {
+    title: "demo1.amp.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/amp.local/demo1"
+    ]
+  }
+  {
     title: "applescript"
     group: "AppleScript"
     paths: [
