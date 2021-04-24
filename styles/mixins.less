@@ -1,3 +1,77 @@
+:root {
+  .for-each(@color-keys, {
+    @k: extract(@color-keys, @i);
+    @v: extract(@color-values, @i);
+    @v-hover: extract(@color-values-hover, @i);
+
+    .fg-@{k} {
+      color: @v !important;
+    }
+
+    .bg-@{k} {
+      background: @v !important;
+      background-color: @v !important;
+    }
+
+    .bg-@{k}-hover {
+      &.mdi:hover,
+      &.mdi-stack:hover {
+        background: @v-hover !important;
+        background-color: @v-hover !important;
+      }
+      &:hover {
+        background: @v-hover !important;
+        background-color: @v-hover !important;
+      }
+    }
+
+    .fg-@{k}-hover {
+      &.mdi:hover,
+      &.mdi-stack:hover {
+        color: @v-hover !important;
+      }
+      &:hover {
+        color: @v-hover !important;
+      }
+    }
+
+    .border-@{k} {
+      border-color: @v !important;
+      -webkit-mask-image: none !important;
+    }
+
+    .border-@{k}-hover {
+      border-color: @v-hover !important;
+      -webkit-mask-image: none !important;
+    }
+
+    .outline-@{k} {
+      outline-color: @v !important;
+      -webkit-mask-image: none !important;
+    }
+
+    .outline-@{k}-hover {
+      outline-color: @v-hover !important;
+      -webkit-mask-image: none !important;
+    }
+
+    --@{k}: @v;
+    --@{k}-hover: @v-hover;
+  });
+}
+
+
+.for-each(5, {
+  .border-@{i} {
+    border-width: e("@{i}px") !important;
+  }
+});
+
+
+.border-0() {
+  border: 0 !important;
+}
+
 
 .generator(@n, @i: 1) when (@i =< @n) {
   @rules();
@@ -18,7 +92,53 @@
 }
 
 
+.title-bar-reset() {
+  .title-bar {
+    color: @color-dark;
+    background: @color-highlight;
+  }
+}
+
+
+.tab-bar-reset() {
+  .tab-bar {
+    height: auto;
+    border-radius: 0;
+    background-image: none;
+
+    .tab {
+      height: @tab-bar-height;
+      line-height: @tab-bar-height;
+      vertical-align: middle;
+      background: @app-background-color !important;
+
+      &.active {
+        background: @syntax-bg !important;
+      }
+    }
+
+    .close-icon {
+      top: .75rem !important;
+    }
+  }
+}
+
+
+.tooltip-reset() {
+  .tooltip {
+    .tooltip-inner {
+      background: @color-info !important;
+    }
+  }
+}
+
+
 .tool-bar-reset() {
+  .tool-bar {
+    // background: @app-background-color;
+    background: transparent;
+  }
+
   .tool-bar {
     .tool-bar-spacer,
     button,
@@ -101,8 +221,9 @@
       .highlight {
         > .region {
           opacity: 1;
-          border-color: cyan;
-          background: fade(cyan, 30);
+          // border-color: cyan;
+          // background: fade(cyan, 30);
+          // background: @syntax-result-marker-color-selected;
           border-radius: 2px;
         }
 
@@ -114,7 +235,7 @@
 
         &.find-result {
           .region {
-
+            background: fade(@syntax-text-color, 15);
           }
         }
 
@@ -135,7 +256,7 @@
     }
 
     .selection .region {
-      // background: red;
+      background: fade(@hue-2, 65);
     }
   }
 }
@@ -193,9 +314,26 @@
 }
 
 
-.tab-bar-reset() {
-  border-radius: 0;
-  border: 0;
-  background-image: none;
-  box-shadow: none;
+.tree-view-reset() {
+  atom-dock {
+    &.left {
+      .tab[data-type="TreeView"] {
+        height: @tool-bar-height !important;
+        line-height: @tool-bar-height !important;
+        background: @app-background-color !important;
+        border-bottom: solid 1px @base-border-color !important;
+
+        .title {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+
+      .tree-view {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // background: @app-background-color;
+      }
+    }
+  }
 }

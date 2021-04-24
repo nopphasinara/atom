@@ -105,9 +105,9 @@ module.exports = [
       "": "window:reload",
     },
     tooltip: "Reload Window",
-    text: "<i class='fg-selected fg-warning-hover'>󰇥</i>",
+    text: "<i>󰇥</i>",
     html: true,
-    class: ["mdi", "bg-warning", "bg-warning-hover"],
+    class: ["mdi", "bg-warning", "bg-error-hover", "fg-dark", "fg-warning-hover"],
   },
   { type: "spacer" },
   {

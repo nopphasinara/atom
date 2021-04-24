@@ -39,7 +39,6 @@
       "language-scss"
       "language-scss"
       "spell-check"
-      "php-hyperclick"
       "es6-snippets"
       "amp-snippets"
       "scss-snippets"
@@ -100,7 +99,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "one-dark-vivid-syntax"
+      "dark-one-dark-syntax"
     ]
     titleBar: "custom"
     uriHandlerRegistration: "never"
@@ -108,6 +107,7 @@
     accentColor: "blue"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
+    lineHeight: 1.6
     maxScreenLineLength: 4096
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
