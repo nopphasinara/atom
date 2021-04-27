@@ -164,8 +164,8 @@ module.exports = [
     html: true,
     class: ["mdi"],
     show: {
-      grammar: [
-        "Markdown",
+      pattern: [
+        "*.md",
       ],
     },
   },
