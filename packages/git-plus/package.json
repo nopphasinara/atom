@@ -19,10 +19,10 @@
   "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
   "_shasum": "9acd0a9c845ae0562d3fc38d9d848fcb51516275",
   "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021324-2090-1ozyvrq.cvii",
+  "_where": "/private/tmp/apm-install-dir-2021328-34081-1pjpati.3tpk",
   "atomTranspilers": [
     {
-      "glob": "{lib,spec-legacy}/**/*.js",
+      "glob": "{lib,spec}/**/*.js",
       "transpiler": "atom-babel6-transpiler",
       "options": {
         "babel": {
@@ -140,7 +140,7 @@
   },
   "scripts": {
     "debug": "atom-transpiler-debug-tool",
-    "test": "eslint --fix \"lib/**/*.js\" \"spec-legacy/**/*.js\" && apm test"
+    "test": "eslint --fix \"lib/**/*.js\" \"spec/**/*.js\" && apm test"
   },
   "version": "8.7.1"
 }

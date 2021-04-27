@@ -1,0 +1,28 @@
+{
+  "name": "Quick-JavaScript",
+  "version": "2.2.0",
+  "description": "Write JavaScript quickly with over 150+ handy snippets. Fully ES6! Less typing more coding!",
+  "homepage": "https://github.com/PombaM/atom-es6-javascript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PombaM/atom-es6-javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/PombaM/atom-es6-javascript"
+  },
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "snippets",
+    "es6",
+    "productivity"
+  ],
+  "engines": {
+    "atom": ">0.200.0"
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "nopphasinara/Quick-JavaScript",
+    "sha": "e1cec019f7c5561d5e104aa0f6a40b873945c9dd"
+  }
+}

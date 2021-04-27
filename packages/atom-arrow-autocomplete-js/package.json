@@ -1,0 +1,69 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+  "_id": "atom-arrow-autocomplete-js@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-ZdLrkNhA8d8vnCdwPMDJ1eYPLZd5APUjs6R+W98qIb0Nsez/m82BZX9X9NL+ed2I7Ae5t0XmSJa+lh367JVsSw==",
+  "_location": "/atom-arrow-autocomplete-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+  "_shasum": "df6ea359cc975c70e3a4ac381c24e4da9b558953",
+  "_spec": "https://www.atom.io/api/packages/atom-arrow-autocomplete-js/versions/1.0.5/tarball",
+  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120030-8072-1rmm8wv.rildl",
+  "author": {
+    "name": "Farhad Khademi",
+    "email": "Quicchei@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Quichei/atom-arrow-autocomplete-js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom package to use arrow functions easier",
+  "engines": {
+    "atom": ">=1.15.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Quichei/atom-arrow-autocomplete-js#readme",
+  "keywords": [
+    "autocomplete",
+    "js",
+    "arrow",
+    "function",
+    "arrow function",
+    "typescript",
+    "snippet",
+    "es7",
+    "javascript",
+    "react",
+    "reactjs",
+    "angular",
+    "vue",
+    "mongoose",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-arrow-autocomplete-js",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quichei/atom-arrow-autocomplete-js.git"
+  },
+  "version": "1.0.5"
+}

@@ -219,26 +219,6 @@ module.exports = [
     html: true,
     class: ["mdi"],
   },
-  // {
-  //   type: "button",
-  //   callback: {
-  //     "": "",
-  //   },
-  //   tooltip: "+1",
-  //   text: "<i class='fg-light'>󰂔</i><i class='fg-dark'>󰂔</i><i class='fg-subtle'>󰂔</i><i class='fg-highlight'>󰂔</i><i class='fg-selected'>󰂔</i><i class='fg-info'>󰂔</i><i class='fg-success'>󰂔</i><i class='fg-warning'>󰂔</i><i class='fg-error'>󰂔</i>",
-  //   html: true,
-  //   class: ["mdi"],
-  // },
-  // {
-  //   type: "button",
-  //   callback: {
-  //     "": "flex-tool-bar:edit-config-file",
-  //   },
-  //   tooltip: "Edit Tool Bar",
-  //   text: "<div class='mdi-stack'><i class='fg-error fg-warning-hover'>󰚍</i><i class='fg-selected fg-error-hover'>󰊬</i></div>",
-  //   html: true,
-  //   class: ["mdi"],
-  // },
   {
     type: "button",
     callback: {
@@ -286,30 +266,6 @@ module.exports = [
           }
 
           runScripts(filepath);
-
-          // async function runScript(filepath) {
-          //   const {
-          //     stderr,
-          //     stdout,
-          //   } = await exec(`node ${filepath}`);
-          //
-          //   console.group('runScript');
-          //   if (stderr) {
-          //     console.error(stderr);
-          //   } else {
-          //     console.log(stdout);
-          //   }
-          //   console.groupEnd();
-          //
-          //   return;
-          // }
-          //
-          // var editor = getActiveTextEditor();
-          // if (isTextEditor(editor)) {
-          //   var filepath = getRealpathSync(editor.getPath());
-          //   console.log(filepath);
-          //   runScript(filepath);
-          // }
         }
       },
     },

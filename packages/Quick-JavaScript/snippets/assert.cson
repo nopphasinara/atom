@@ -1,0 +1,10 @@
+'.source.js':
+  'assert.equal':
+    prefix: 'assert-equal'
+    body: 'assert.equal(${1:actual}, ${2:expected});'
+  'assert.notEqual':
+    prefix: 'assert-notEqual'
+    body: 'assert.notEqual(${1:actual}, ${2:expected});'
+  'assert.deepEqual':
+    prefix: 'assert-deepEqual'
+    body: 'assert.deepEqual(${1:actual}, ${2:expected});'

@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+  "_id": "language-gitignore@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-EtA1iAYV7yNHrMePMiFx2hI8FTYkn35Hbs2SsDK8HGp6qX+IQYKSxl9SSjHtFn9CuMyX5EeGDZloDJnUzQV9kw==",
+  "_location": "/language-gitignore",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+  "_shasum": "fc6895cd4c0d10888cdb86015b045e1888051e1c",
+  "_spec": "https://www.atom.io/api/packages/language-gitignore/versions/0.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021328-53122-b23ciy.u5fem",
+  "bugs": {
+    "url": "https://github.com/bsara/language-gitignore/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Syntax highlighting for .gitignore files in Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/bsara/language-gitignore#readme",
+  "license": "MIT",
+  "name": "language-gitignore",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsara/language-gitignore.git"
+  },
+  "version": "0.3.0"
+}

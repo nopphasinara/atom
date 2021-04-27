@@ -12,6 +12,8 @@
         path: "/usr/local/bin/php-cs-fixer"
     general:
       beautifyEntireFileOnSave: false
+  "atom-minify":
+    checkOutputFileAlreadyExists: true
   "atom-package-deps":
     ignored: [
       "build-sass"
@@ -42,6 +44,8 @@
       "es6-snippets"
       "amp-snippets"
       "scss-snippets"
+      "browser-plus"
+      "lodash-snippets"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -91,11 +95,20 @@
       "split-diff"
       "symbols-list"
       "git-history"
+      "pymakr"
+      "atom-js-console"
+      "atom-line-to-console"
+      "atom-minify"
+      "autocomplete-javascript"
+      "es6-javascript"
+      "intentions"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
     ]
+    reopenProjectMenuCount: 10
     restorePreviousWindowsOnStart: "always"
+    simpleFullScreenWindows: true
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -107,14 +120,11 @@
     accentColor: "blue"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    lineHeight: 1.6
     maxScreenLineLength: 4096
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
   "find-and-replace":
