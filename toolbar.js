@@ -1,22 +1,8 @@
-function colorConvertHexHsl(value) {
-  if (typeof value !== 'string' || !value) return;
-
-  value = value.replace(new RegExp('^\#'), '');
-  if (!value) return;
-
-  var rgb, hex, hsl, keyword, convert;
-
-  convert = require('color-convert');
-
-  rgb = convert.keyword.rgb(value);
-  if (!rgb) {
-    hex = convert.rgb.hex(value);
-    if (!hex) return;
-    hsl = convert.hex.hsl(hex);
-    if (hsl.length) {
-      return hsl.join(',');
-    }
+function getRealpathSync(filepath) {
+  if (typeof filepath === 'undefined') {
+    return;
   }
+  return (typeof fs !== 'undefined') ? fs.realpathSync(filepath) : filepath;
 }
 
 function isTextEditor(editor = null) {
@@ -253,6 +239,85 @@ module.exports = [
   //   html: true,
   //   class: ["mdi"],
   // },
+  {
+    type: "button",
+    callback: {
+      "": function () {
+        console.clear();
+
+        var editor = getActiveTextEditor();
+        if (isTextEditor(editor)) {
+          var filepath = getRealpathSync(editor.getPath());
+
+          console.log(console);
+          console.log(console.prototype);
+
+          // const exec = require('child_process').execFile;
+          const util = require('util');
+          const exec = util.promisify(require('child_process').exec);
+          const execFile = util.promisify(require('child_process').execFile);
+
+          async function runScripts(filepath) {
+            console.group('exec');
+            console.log(exec);
+            console.log(exec(`tap ${filepath}`, {
+              shell: '/bin/zsh',
+            }, function (error, stdout, stderr) {
+              console.log(error);
+              console.log(stdout);
+              console.log(stderr);
+            }));
+            console.groupEnd();
+
+
+            // console.group('execFile');
+            // console.log(execFile);
+            // console.log(execFile('node', [
+            //   filepath,
+            //   '--prof',
+            //   '--interactive',
+            //   '--print',
+            // ], function (error, stdout, stderr) {
+            //   console.log(error);
+            //   console.log(stdout);
+            //   console.log(stderr);
+            // }));
+            // console.groupEnd();
+          }
+
+          runScripts(filepath);
+
+          // async function runScript(filepath) {
+          //   const {
+          //     stderr,
+          //     stdout,
+          //   } = await exec(`node ${filepath}`);
+          //
+          //   console.group('runScript');
+          //   if (stderr) {
+          //     console.error(stderr);
+          //   } else {
+          //     console.log(stdout);
+          //   }
+          //   console.groupEnd();
+          //
+          //   return;
+          // }
+          //
+          // var editor = getActiveTextEditor();
+          // if (isTextEditor(editor)) {
+          //   var filepath = getRealpathSync(editor.getPath());
+          //   console.log(filepath);
+          //   runScript(filepath);
+          // }
+        }
+      },
+    },
+    tooltip: "Run Script",
+    text: "<i>x</i>",
+    html: true,
+    class: ["mdi"],
+  },
   {
     type: "button",
     callback: {

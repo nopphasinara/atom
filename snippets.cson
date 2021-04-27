@@ -148,6 +148,60 @@
       console.log(${1:'${2:}'})$0
       """,
     },
+    "console.table": {
+      "prefix": "logtb",
+      "body": """
+      console.table(${1:'${2:}'})$0
+      """,
+    },
+    "console.assert": {
+      "prefix": "logas",
+      "body": """
+      console.assert(${1:'${2:}'})$0
+      """,
+    },
+    "console.trace": {
+      "prefix": "logtr",
+      "body": """
+      console.trace()$0
+      """,
+    },
+    "console.time": {
+      "prefix": "logti",
+      "body": """
+      console.time()$0
+      """,
+    },
+    "console.timeEnd": {
+      "prefix": "logtie",
+      "body": """
+      console.timeEnd()$0
+      """,
+    },
+    "console.timeLog": {
+      "prefix": "logtil",
+      "body": """
+      console.timeLog()$0
+      """,
+    },
+    "console.count": {
+      "prefix": "logco",
+      "body": """
+      console.count(${1:'${2:}'})$0
+      """,
+    },
+    "console.debug": {
+      "prefix": "logde",
+      "body": """
+      console.debug(${1:'${2:}'})$0
+      """,
+    },
+    "console.countReset": {
+      "prefix": "logcor",
+      "body": """
+      console.countReset(${1:'${2:}'})$0
+      """,
+    },
     "console.warn": {
       "prefix": "warn",
       "body": """

@@ -22,7 +22,7 @@
   "_where": "/private/tmp/apm-install-dir-2021324-2090-1ozyvrq.cvii",
   "atomTranspilers": [
     {
-      "glob": "{lib,spec}/**/*.js",
+      "glob": "{lib,spec-legacy}/**/*.js",
       "transpiler": "atom-babel6-transpiler",
       "options": {
         "babel": {
@@ -140,7 +140,7 @@
   },
   "scripts": {
     "debug": "atom-transpiler-debug-tool",
-    "test": "eslint --fix \"lib/**/*.js\" \"spec/**/*.js\" && apm test"
+    "test": "eslint --fix \"lib/**/*.js\" \"spec-legacy/**/*.js\" && apm test"
   },
   "version": "8.7.1"
 }
