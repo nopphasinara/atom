@@ -1,5 +1,131 @@
-.helper-classes() {
+.for-each(@sizers, {
+  @k: extract(@sizers-key, @i);
+  @v: extract(@sizers, @i);
 
-  
+  .fs-@{k} {
+    font-size: @v !important;
+  }
+});
 
+
+.for-each(12, {
+  @percentage: (@i * 100) / 12;
+
+  .col-@{i} {
+    width: e("@{percentage}%") !important;
+  }
+});
+
+.for-each(10, {
+  @key: @i * 10;
+
+  .w-@{key} {
+    width: e("@{key}%") !important;
+  }
+
+  .h-@{key} {
+    height: e("@{key}%") !important;
+  }
+});
+
+
+.border-0() {
+  border: 0 !important;
 }
+
+
+.for-each(10, {
+  .border-@{i} {
+    border-width: e("@{i}px") !important;
+  }
+  .border-x-@{i} {
+    border-left: e("@{i}px") !important;
+    border-right: e("@{i}px") !important;
+  }
+  .border-y-@{i} {
+    border-top: e("@{i}px") !important;
+    border-bottom: e("@{i}px") !important;
+  }
+
+  .m-@{i} {
+    margin: e("@{i}px") !important;
+  }
+  .mx-@{i} {
+    margin-left: e("@{i}px") !important;
+    margin-right: e("@{i}px") !important;
+  }
+  .my-@{i} {
+    margin-top: e("@{i}px") !important;
+    margin-bottom: e("@{i}px") !important;
+  }
+
+  .p-@{i} {
+    padding: e("@{i}px") !important;
+  }
+  .px-@{i} {
+    padding-left: e("@{i}px") !important;
+    padding-right: e("@{i}px") !important;
+  }
+  .py-@{i} {
+    padding-top: e("@{i}px") !important;
+    padding-bottom: e("@{i}px") !important;
+  }
+});
+
+
+.for-each(@color-keys, {
+  @k: extract(@color-keys, @i);
+  @v: extract(@color-values, @i);
+  @v-hover: extract(@color-values-hover, @i);
+
+  .fg-@{k} {
+    color: @v !important;
+  }
+
+  .bg-@{k} {
+    background: @v !important;
+    background-color: @v !important;
+  }
+
+  .bg-@{k}-hover {
+    &.mdi:hover,
+    &.mdi-stack:hover {
+      background: @v-hover !important;
+      background-color: @v-hover !important;
+    }
+    &:hover {
+      background: @v-hover !important;
+      background-color: @v-hover !important;
+    }
+  }
+
+  .fg-@{k}-hover {
+    &.mdi:hover,
+    &.mdi-stack:hover {
+      color: @v-hover !important;
+    }
+    &:hover {
+      color: @v-hover !important;
+    }
+  }
+
+  .border-@{k} {
+    border-color: @v !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .border-@{k}-hover {
+    border-color: @v-hover !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .outline-@{k} {
+    outline-color: @v !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .outline-@{k}-hover {
+    outline-color: @v-hover !important;
+    -webkit-mask-image: none !important;
+  }
+});

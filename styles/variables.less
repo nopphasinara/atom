@@ -98,3 +98,59 @@
 
 @font-family: system-ui, MaterialDesignIcons, master-icons;
 @icon-font-size: 1em * 1.4;
+
+@sizers-key: xs, sm, md, lg, xl, xxl;
+@sizers: 0.875em, 1em, 1.375em, 1.725em, 2em, 2.25em;
+@spacers: 1em;
+// @set: {
+//   one: blue;
+//   two: green;
+//   three: red;
+// };
+// :root {
+//   .for-each(@set, {
+//     --set-@{i}: extract(@set, @i);
+//   });
+// }
+
+.mixin(dark, @color) {
+  --switch-dark: darken(@color, 10%);
+}
+.mixin(light, @color) {
+  --switch-light: lighten(@color, 10%);
+}
+.mixin(@_, @color) {
+  --switch-at: block;
+}
+
+:root {
+  @switch: light;
+  .mixin(@switch, #888);
+  @switch: dark;
+  .mixin(@switch, #888);
+
+  // @property: --foo;
+  // .foo() {
+  //   @{property}: foo;
+  // }
+  // .foo();
+
+  // launch the loop
+  .loop(5);
+
+  .true();
+  .true(4);
+}
+
+.loop(@counter) when (@counter > 0) {
+  // next iteration
+  .loop((@counter - 1));
+
+  // code for each iteration
+  --loop-@{counter}: @counter;
+}
+
+.true() {}
+.true(@a) {
+  --true: @a;
+}
