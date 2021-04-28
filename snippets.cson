@@ -17,6 +17,49 @@
 
 
   ".source.json": {
+    "hold_down": {
+      "prefix": "hdown",
+      "body": """
+      { \"hold_down_milliseconds\": ${1:60}, \"key_code\": \"vk_none\" \\}$0
+      """,
+    },
+    "releaseMouse": {
+      "prefix": "rmouse",
+      "body": """
+      /usr/local/bin/LMC ${1:-releaseMouse}$0
+      """,
+    },
+    "&& releaseMouse": {
+      "prefix": "armouse",
+      "body": """
+      && /usr/local/bin/LMC ${1:-releaseMouse}$0
+      """,
+    },
+    "LMC": {
+      "prefix": "lmc",
+      "body": """
+      /usr/local/bin/LMC ${1:-leftClick}$0
+      """,
+    },
+    "&& LMC": {
+      "prefix": "almc",
+      "body": """
+      && /usr/local/bin/LMC ${1:-leftClick}$0
+      """,
+    },
+    "sleep": {
+      "prefix": "sleep",
+      "body": """
+      sleep ${1:0.0060}$0
+      """,
+    },
+    "&& sleep": {
+      "prefix": "asleep",
+      "body": """
+      && sleep ${1:0.0060}$0
+      """,
+    },
+
     "package.json": {
       "prefix": "pack",
       "body": """
