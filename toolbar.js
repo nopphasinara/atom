@@ -91,6 +91,17 @@ module.exports = [
       "": "window:reload",
     },
     tooltip: "Reload Window",
+    text: "<i class='fg-light'>󰇥</i><i class='fg-dark'>󰇥</i><i class='fg-subtle'>󰇥</i><i class='fg-highlight'>󰇥</i><i class='fg-selected'>󰇥</i><i class='fg-info'>󰇥</i><i class='fg-success'>󰇥</i><i class='fg-warning'>󰇥</i><i class='fg-error'>󰇥</i>",
+    html: true,
+    class: ["mdi"],
+  },
+  { type: "spacer" },
+  {
+    type: "button",
+    callback: {
+      "": "window:reload",
+    },
+    tooltip: "Reload Window",
     text: "<i>󰇥</i>",
     html: true,
     class: ["mdi", "bg-warning", "bg-error-hover", "fg-dark", "fg-warning-hover"],

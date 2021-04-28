@@ -7,14 +7,20 @@
 @import "./styles/fonts.less";
 @import "./styles/variables.less";
 @import "./styles/mixins.less";
+@import "./styles/helpers.less";
 
 
+.helper-classes();
 .global-reset();
 .title-bar-reset();
 .tab-bar-reset();
 .tooltip-reset();
 .tool-bar-reset();
 .tree-view-reset();
+
+atom-text-editor {
+  &:extend(.p-10);
+}
 
 
 // atom-text-editor {

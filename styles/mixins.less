@@ -1,4 +1,42 @@
 :root {
+  .for-each(10, {
+    .border-@{i} {
+      border-width: e("@{i}px") !important;
+    }
+    .border-x-@{i} {
+      border-left: e("@{i}px") !important;
+      border-right: e("@{i}px") !important;
+    }
+    .border-y-@{i} {
+      border-top: e("@{i}px") !important;
+      border-bottom: e("@{i}px") !important;
+    }
+
+    .m-@{i} {
+      margin: e("@{i}px") !important;
+    }
+    .mx-@{i} {
+      margin-left: e("@{i}px") !important;
+      margin-right: e("@{i}px") !important;
+    }
+    .my-@{i} {
+      margin-top: e("@{i}px") !important;
+      margin-bottom: e("@{i}px") !important;
+    }
+
+    .p-@{i} {
+      padding: e("@{i}px") !important;
+    }
+    .px-@{i} {
+      padding-left: e("@{i}px") !important;
+      padding-right: e("@{i}px") !important;
+    }
+    .py-@{i} {
+      padding-top: e("@{i}px") !important;
+      padding-bottom: e("@{i}px") !important;
+    }
+  });
+
   .for-each(@color-keys, {
     @k: extract(@color-keys, @i);
     @v: extract(@color-values, @i);
@@ -61,9 +99,23 @@
 }
 
 
-.for-each(5, {
-  .border-@{i} {
-    border-width: e("@{i}px") !important;
+.for-each(12, {
+  @percentage: (@i * 100) / 12;
+
+  .col-@{i} {
+    width: e("@{percentage}%") !important;
+  }
+});
+
+.for-each(10, {
+  @key: @i * 10;
+
+  .w-@{key} {
+    width: e("@{key}%") !important;
+  }
+
+  .h-@{key} {
+    height: e("@{key}%") !important;
   }
 });
 
@@ -73,22 +125,44 @@
 }
 
 
-.generator(@n, @i: 1) when (@i =< @n) {
-  @rules();
-  .generator(@n, (@i + 1));
+.generator(@n, @rules: false, @i: 1) when (@i =< @n) {
+  @isruleset: isruleset(@rules);
+  .dd() when (@isruleset) {
+    @rules();
+  }
+  .dd();
+  .generator(@n, @rules, (@i + 1));
+}
+
+.for(@n, @rules: false, @i: 1) when (@i =< @n) {
+  @isruleset: isruleset(@rules);
+  .dd() when (@isruleset) {
+    @rules();
+  }
+  .dd();
+  .for(@n, @rules, (@i + 1));
 }
 
 
 .for-each(@var, @rules: false, @keys: false) {
-  .dr() {
+  // .dr() {
+  //   @length: length(@var);
+  // }
+  // .dr() when not (@keys = false) {
+  //   @length: length(@keys);
+  // }
+  // .dr();
+
+  @isnumber: isnumber(@var);
+  .dd() when (@isnumber) {
+    @length: @var;
+  }
+  .dd() when not (@isnumber) {
     @length: length(@var);
   }
-  .dr() when not (@keys = false) {
-    @length: length(@keys);
-  }
-  .dr();
+  .dd();
 
-  .generator(@length);
+  .generator(@length, @rules);
 }
 
 
