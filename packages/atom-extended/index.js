@@ -98,20 +98,16 @@ var utils = {
     return;
   },
 
-  getActiveTextEditorPath: function (editor) {
+  getTextEditorPath: function (editor) {
     if (typeof editor === 'undefined') {
-      editor = this.getActiveTextEditor();
-    } else {
-      if (typeof editor.getPath === 'undefined') {
-        return;
-      }
+      return;
     }
     return (typeof fs === 'undefined') ? editor.getPath() : fs.realpathSync(editor.getPath());
   },
 
 };
 
-const FILENAME = utils.getActiveTextEditorPath();
+const FILENAME = utils.getTextEditorPath(utils.getActiveTextEditor());
 const DIRNAME = utils.getDirname(FILENAME);
 const BASENAME = utils.getBasename(FILENAME);
 
