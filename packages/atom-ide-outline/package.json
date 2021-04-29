@@ -1,0 +1,100 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+  "_id": "atom-ide-outline@2.3.4",
+  "_inBundle": false,
+  "_integrity": "sha512-d61jppcaA8NjMTB9BHZdbhttTMmbgqBtf2IqOg9u8g4OwtG3llWUd0EQYwSwiz+y5HvxkKoKUzxFEBbc9mJUdQ==",
+  "_location": "/atom-ide-outline",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+  "_shasum": "46ac40bfd3f3ddc7596d48077b9fec56a11c85a7",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021329-62658-6csyjj.lx6md",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-outline/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "outline-view": {
+      "versions": {
+        "0.1.0": "consumeOutlineProvider"
+      }
+    },
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "consumeSignal"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-ide-base": "^2.6.0",
+    "lodash": "^4.17.21"
+  },
+  "deprecated": false,
+  "description": "Outline UI compatible with IDE packages",
+  "devDependencies": {
+    "@types/atom": "latest",
+    "@types/jasmine": "^3.6.9",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.37",
+    "atom-jasmine3-test-runner": "^5.2.2",
+    "build-commit": "latest",
+    "cross-env": "latest",
+    "eslint": "7.24.0",
+    "eslint-config-atomic": "^1.14.0",
+    "npm-check-updates": "latest",
+    "prettier": "^2.2.1",
+    "rollup": "^2.45.1",
+    "rollup-plugin-atomic": "^2.3.0",
+    "shx": "latest",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-ide-community/atom-ide-outline#readme",
+  "keywords": [
+    "atom-package",
+    "atom-ide",
+    "atom-outline",
+    "ide-outline",
+    "outline"
+  ],
+  "license": "MIT",
+  "main": "./dist/main",
+  "name": "atom-ide-outline",
+  "package-deps": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-outline.git"
+  },
+  "scripts": {
+    "build": "npm run clean && cross-env NODE_ENV=production rollup -c ",
+    "build-commit": "build-commit -o dist",
+    "bump": "ncu -u",
+    "clean": "shx rm -rf dist",
+    "dev": "npm run clean && cross-env NODE_ENV=development rollup -c -w",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "npm run build",
+    "test": "atom --test spec",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint ."
+  },
+  "version": "2.3.4"
+}

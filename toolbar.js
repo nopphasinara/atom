@@ -131,147 +131,147 @@ function isObjectEmpty(obj) {
 
 module.exports = [
   // {
-  //   type: "button",
+  //   type: 'button',
   //   callback: {
-  //     "": function (editor) {
+  //     ': function (editor) {
   //       replConsole_RunCode(editor);
   //     },
-  //     "shift": function (editor) {
+  //     'shift': function (editor) {
   //       console.clear();
   //       replConsole_RunCode(editor);
   //     },
   //   },
-  //   text: "<i>󰚌</i>",
+  //   text: '<i>󰚌</i>',
   //   html: true,
-  //   class: ["mdi", "bg-error", "fg-selected", "fg-warning-hover"],
+  //   class: ['mdi', 'bg-error', 'fg-selected', 'fg-warning-hover'],
   //   // show: {
   //   //   grammar: [
-  //   //     "js",
-  //   //     "json",
-  //   //     "php",
+  //   //     'js',
+  //   //     'json',
+  //   //     'php',
   //   //   ],
   //   // },
   // },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "window:reload",
+      '': 'window:reload',
     },
-    tooltip: "Reload Window",
-    text: "<i class='fg-light'>󰇥</i><i class='fg-dark'>󰇥</i><i class='fg-subtle'>󰇥</i><i class='fg-highlight'>󰇥</i><i class='fg-selected'>󰇥</i><i class='fg-info'>󰇥</i><i class='fg-success'>󰇥</i><i class='fg-warning'>󰇥</i><i class='fg-error'>󰇥</i>",
+    tooltip: 'Reload Window',
+    text: '<i class="fg-light">󰇥</i><i class="fg-dark">󰇥</i><i class="fg-subtle">󰇥</i><i class="fg-highlight">󰇥</i><i class="fg-selected">󰇥</i><i class="fg-info">󰇥</i><i class="fg-success">󰇥</i><i class="fg-warning">󰇥</i><i class="fg-error">󰇥</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
-  { type: "spacer" },
+  { type: 'spacer' },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "window:reload",
+      '': 'window:reload',
     },
-    tooltip: "Reload Window",
-    text: "<i>󰇥</i>",
+    tooltip: 'Reload Window',
+    text: '<i>󰇥</i>',
     html: true,
-    class: ["mdi", "bg-warning", "bg-error-hover", "fg-dark", "fg-warning-hover"],
+    class: ['mdi', 'bg-warning', 'bg-error-hover', 'fg-dark', 'fg-warning-hover'],
   },
-  { type: "spacer" },
+  { type: 'spacer' },
   {
-    type: "url",
-    url: "https://github.com/{repo-owner}/{repo-name}",
-    tooltip: "Open on Github",
-    text: "<i>󰊢</i>",
+    type: 'url',
+    url: 'https://github.com/{repo-owner}/{repo-name}',
+    tooltip: 'Open on Github',
+    text: '<i>󰊢</i>',
     html: true,
-    class: ["mdi"],
-  },
-  {
-    type: "button",
-    callback: {
-      "": "git-menu:discard-changes",
-    },
-    tooltip: "Discard Changes",
-    text: "<i>󰊢</i>",
-    html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "split-diff:toggle",
+      '': 'git-menu:discard-changes',
     },
-    tooltip: "Split Diff",
-    text: "<i>󰪚</i>",
+    tooltip: 'Discard Changes',
+    text: '<i>󰊢</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "symbols-list:toggle",
+      '': 'split-diff:toggle',
     },
-    tooltip: "Symbol List",
-    text: "<i>󰙮</i>",
+    tooltip: 'Split Diff',
+    text: '<i>󰪚</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "git-history:show-file-history",
+      '': 'symbols-list:toggle',
     },
-    tooltip: "Git History",
-    text: "<i>󰚰</i>",
+    tooltip: 'Symbol List',
+    text: '<i>󰙮</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
-  { type: "spacer" },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "window:toggle-dev-tools",
+      '': 'git-history:show-file-history',
     },
-    text: "<i>󰲌</i>",
+    tooltip: 'Git History',
+    text: '<i>󰚰</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
-  { type: "spacer" },
+  { type: 'spacer' },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "markdown-preview:toggle",
+      '': 'window:toggle-dev-tools',
     },
-    text: "<i>󰍔</i>",
+    text: '<i>󰲌</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
+  },
+  { type: 'spacer' },
+  {
+    type: 'button',
+    callback: {
+      '': 'markdown-preview:toggle',
+    },
+    text: '<i>󰍔</i>',
+    html: true,
+    class: ['mdi'],
     show: {
       pattern: [
-        "*.md",
+        '*.md',
       ],
     },
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "chrome-color-picker:toggle",
-      "alt": "chrome-color-picker:pickcolor",
+      '': 'chrome-color-picker:toggle',
+      'alt': 'chrome-color-picker:pickcolor',
     },
-    text: "<i>󰈋</i>",
+    text: '<i>󰈋</i>',
     html: true,
     show: {
       function: () => {
         return !atom.packages.isPackageDisabled('chrome-color-picker');
       },
     },
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": function (editor) {
+      '': function (editor) {
         console.log(getCursorScopes('chain'));
       },
-      "shift": function (editor) {
+      'shift': function (editor) {
         console.log(getCursorScopes('array'));
       },
-      "alt": function (editor) {
+      'alt': function (editor) {
         let scopeChain = getCursorScopes('chain') || '';
         if (scopeChain) {
           console.log(scopeChain);
@@ -279,28 +279,28 @@ module.exports = [
         }
       },
     },
-    tooltip: "Cursor Scope, To Array (󰜷󰍽)",
-    text: "<i>x</i>",
+    tooltip: 'Cursor Scope, To Array (󰜷󰍽)',
+    text: '<i>x</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": "emmet:increment-number-by-1",
-      "shift": "emmet:increment-number-by-10",
-      "alt": "emmet:decrement-number-by-1",
-      "alt+shift": "emmet:decrement-number-by-10",
+      '': 'emmet:increment-number-by-1',
+      'shift': 'emmet:increment-number-by-10',
+      'alt': 'emmet:decrement-number-by-1',
+      'alt+shift': 'emmet:decrement-number-by-10',
     },
-    tooltip: "+1",
-    text: "<i>󰃬</i>",
+    tooltip: '+1',
+    text: '<i>󰃬</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": function () {
+      '': function () {
         console.clear();
 
         var editor = getActiveTextEditor();
@@ -347,15 +347,15 @@ module.exports = [
         }
       },
     },
-    tooltip: "Run Script",
-    text: "<i>x</i>",
+    tooltip: 'Run Script',
+    text: '<i>x</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
   {
-    type: "button",
+    type: 'button',
     callback: {
-      "": function () {
+      '': function () {
         console.clear();
 
         var apiUrl = 'https://search.google.com/u/2/search-console/disavow-links?resource_id=';
@@ -415,49 +415,49 @@ module.exports = [
         }
       },
     },
-    tooltip: "Generate Disavow",
-    text: "<i>󰡇</i>",
+    tooltip: 'Generate Disavow',
+    text: '<i>󰡇</i>',
     html: true,
-    class: ["mdi"],
+    class: ['mdi'],
   },
-  // { type: "spacer" },
+  // { type: 'spacer' },
   // {
-  //   type: "button",
+  //   type: 'button',
   //   callback: {
-  //     "": "",
+  //     '': '',
   //   },
-  //   text: "<i>󰌞󰌝󰌟󰌧󰌨󰌴󰌹󰍓 󰍕󰍜󰍣󰍺󰍹󰍻󰍽󰎂 󰎔󰎙󰎝󰎠󰏋󰏌󰏑󰏔 󰏕󰏘󰏯󰏰󰐏󰐒󰐓󰐕 󰐣󰐤󰐭󰐰󰑇󰑋󰑐󰑑 󰑒󰑓󰑕󰑖󰑘󰑙󰑥󰑧 󰒍󰒓󰒟󰒲󰒻󰒺󰒾󰓂 󰓆󰓢󰓡󰓦󰓧󰓾󰕅󰕎 󰕏󰕕󰕒󰖶󰖽󰖿󰗀󰗇󰗊󰗠󰗡󰗨󰘎󰘞󰘢󰘡󰘣󰘥󰘦󰘧󰘨󰘬󰘮󰘲󰘳󰘴󰘵󰘶󰙁󰙆󰙖󰙪󰙩󰙰󰙲󰚈󰚑󰚔󰚖󰚝󰚧󰚲󰚹󰚽󰛄󰛉󰛦󰛬󰛭󰜄󰜉󰝉󰝓󰝕󰝖󰝔󰝗󰝠󰝡󰝰󰞷󰡰󰡱󰢹󰣀󰣞󰤀󰤌󰤍󰤘󰥦󰥨󰥩󰥪󰥻󰦄󰦍󰦎󰦏󰦐󰦒󰦓󰦛󰦣󰦪󰧞󰧟󰧾󰨤󰨮󰨾󰨿󰩀󰩎󰩍󰩤󰩭󰩮󰩨󰩫󰩬󰩷󰩺󰪒󰪚󰪛󰪮󰪺󰪻󰬴󰬵󰬶󰭛󰭜󰮓󰮝󰮞󰮥󰮦󰮫󰮱󰮳󰯍󰯎󰯟󰱒󰲋󰲌󰆍󰲏󰲎󰳏󰳤󰳾󰴊󰴌󰴍󰴑󰴱󰵮󰶯󰶵󰷉󰷋󰷍󰷎󰷏󰷐󰷜󰷾󰸌󰸲󰹑󰹖󰹸󰺧󰺩󰺫󰺭󰺯󰻀󰻭󰼬󰽘󰽛󰾹󰿇󱀫󱀰󱀱󱀷󱀶󱀸󱀻󱁛󱁼󱂀󱂆󱂕󱂛󱂵󱂶󱂸󱃖󱃶󱃸󱃺󱃼󱄀󱄁󱃿󱄄󱄋󱄌󱄍󱄊󱄽󱅇󱅈󱅉󱅿󱆃󱇏󱇎󱇬󱈔󱈕󱉸󱊕󱊔󱊖󱊗󱊘󱊙󱊚󱊛󱊜󱊝󱊫󱊬󱊭󱊮󱊯󱊰󱊱󱊲󱊳󱊴󱊵󱊶󱊷󱋌󱋖󱍦󱍨󱍪󱍫󱍭󱍯󱍾󱎄󱎅󱎆󱎇󱎈󱎉󱎊󱎎󱎏󱎐󱎑󱎒󱎘󱎚󱎛󱎜󱎢󱎣󱎤󱎥󱎧󱎨󱎩󱎴󱏒󱐀󱐁󱓉󱔁󱖫</i>",
+  //   text: '<i>󰌞󰌝󰌟󰌧󰌨󰌴󰌹󰍓 󰍕󰍜󰍣󰍺󰍹󰍻󰍽󰎂 󰎔󰎙󰎝󰎠󰏋󰏌󰏑󰏔 󰏕󰏘󰏯󰏰󰐏󰐒󰐓󰐕 󰐣󰐤󰐭󰐰󰑇󰑋󰑐󰑑 󰑒󰑓󰑕󰑖󰑘󰑙󰑥󰑧 󰒍󰒓󰒟󰒲󰒻󰒺󰒾󰓂 󰓆󰓢󰓡󰓦󰓧󰓾󰕅󰕎 󰕏󰕕󰕒󰖶󰖽󰖿󰗀󰗇󰗊󰗠󰗡󰗨󰘎󰘞󰘢󰘡󰘣󰘥󰘦󰘧󰘨󰘬󰘮󰘲󰘳󰘴󰘵󰘶󰙁󰙆󰙖󰙪󰙩󰙰󰙲󰚈󰚑󰚔󰚖󰚝󰚧󰚲󰚹󰚽󰛄󰛉󰛦󰛬󰛭󰜄󰜉󰝉󰝓󰝕󰝖󰝔󰝗󰝠󰝡󰝰󰞷󰡰󰡱󰢹󰣀󰣞󰤀󰤌󰤍󰤘󰥦󰥨󰥩󰥪󰥻󰦄󰦍󰦎󰦏󰦐󰦒󰦓󰦛󰦣󰦪󰧞󰧟󰧾󰨤󰨮󰨾󰨿󰩀󰩎󰩍󰩤󰩭󰩮󰩨󰩫󰩬󰩷󰩺󰪒󰪚󰪛󰪮󰪺󰪻󰬴󰬵󰬶󰭛󰭜󰮓󰮝󰮞󰮥󰮦󰮫󰮱󰮳󰯍󰯎󰯟󰱒󰲋󰲌󰆍󰲏󰲎󰳏󰳤󰳾󰴊󰴌󰴍󰴑󰴱󰵮󰶯󰶵󰷉󰷋󰷍󰷎󰷏󰷐󰷜󰷾󰸌󰸲󰹑󰹖󰹸󰺧󰺩󰺫󰺭󰺯󰻀󰻭󰼬󰽘󰽛󰾹󰿇󱀫󱀰󱀱󱀷󱀶󱀸󱀻󱁛󱁼󱂀󱂆󱂕󱂛󱂵󱂶󱂸󱃖󱃶󱃸󱃺󱃼󱄀󱄁󱃿󱄄󱄋󱄌󱄍󱄊󱄽󱅇󱅈󱅉󱅿󱆃󱇏󱇎󱇬󱈔󱈕󱉸󱊕󱊔󱊖󱊗󱊘󱊙󱊚󱊛󱊜󱊝󱊫󱊬󱊭󱊮󱊯󱊰󱊱󱊲󱊳󱊴󱊵󱊶󱊷󱋌󱋖󱍦󱍨󱍪󱍫󱍭󱍯󱍾󱎄󱎅󱎆󱎇󱎈󱎉󱎊󱎎󱎏󱎐󱎑󱎒󱎘󱎚󱎛󱎜󱎢󱎣󱎤󱎥󱎧󱎨󱎩󱎴󱏒󱐀󱐁󱓉󱔁󱖫</i>',
   //   html: true,
-  //   class: ["mdi"],
+  //   class: ['mdi'],
   // },
   // {
-  //   type: "url",
-  //   url: "https://github.com/{repo-owner}/{repo-name}",
-  //   tooltip: "Open on Github",
-  //   icon: "git",
-  //   iconset: "mdi",
+  //   type: 'url',
+  //   url: 'https://github.com/{repo-owner}/{repo-name}',
+  //   tooltip: 'Open on Github',
+  //   icon: 'git',
+  //   iconset: 'mdi',
   // },
   // {
-  //   type: "file",
-  //   file: "/README.md",
-  //   tooltip: "Open File",
-  //   icon: "file",
-  //   iconset: "mdi",
+  //   type: 'file',
+  //   file: '/README.md',
+  //   tooltip: 'Open File',
+  //   icon: 'file',
+  //   iconset: 'mdi',
   // },
   // {
-  //   type: "function",
+  //   type: 'function',
   //   callback: function (editor) {
   //     console.log(editor);
-  //     alert("fuck");
+  //     alert('fuck');
   //   },
-  //   tooltip: "Run Function",
-  //   icon: "function",
-  //   iconset: "mdi",
+  //   tooltip: 'Run Function',
+  //   icon: 'function',
+  //   iconset: 'mdi',
   // },
   // {
-  //   type: "button",
-  //   icon: "columns",
-  //   iconset: "fa",
-  //   callback: [ "pane:split-right", "pane:split-right" ],
+  //   type: 'button',
+  //   icon: 'columns',
+  //   iconset: 'fa',
+  //   callback: [ 'pane:split-right', 'pane:split-right' ],
   // },
-];
+  ];

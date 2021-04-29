@@ -1,4 +1,0 @@
-'.source.scss':
-  'to-upper-case':
-    'prefix': 'tu'
-    'body': 'to-upper-case(\$${1:string})'

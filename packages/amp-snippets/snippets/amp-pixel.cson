@@ -1,4 +1,0 @@
-'.text.html':
-  'amp pixel':
-    'prefix': 'amp-pixel'
-    'body': '<amp-pixel scr="$1"></amp-pixel>$0'

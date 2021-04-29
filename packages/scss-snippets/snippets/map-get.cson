@@ -1,4 +1,0 @@
-'.source.scss':
-  'map-get':
-    'prefix': 'mg'
-    'body': 'map-get(\$${1:list}, ${2:value})'

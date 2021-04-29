@@ -109,7 +109,8 @@
     button.tool-bar-btn,
     i {
       .font-icons();
-      .text-reset();
+      .text-smoothing();
+      .text-rendering();
       width: auto !important;
       min-width: @tool-bar-btn-width !important;
       font-size: @icon-font-size !important;
@@ -143,8 +144,12 @@
 .global-reset() {
   .syntax-reset();
 
-  atom-workspace,
+  atom-workspace {
+    .text-rendering();
+  }
+
   atom-text-editor {
+    .text-smoothing();
     .text-rendering();
   }
 
@@ -219,6 +224,7 @@
 }
 
 .text-rendering() {
+  font-style: normal;
   font-kerning: none;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
@@ -229,12 +235,6 @@
   -webkit-mask-image: none !important;
 }
 
-.text-reset() {
-  // .text-smoothing();
-  .text-rendering();
-  font-style: normal;
-  // font-size: @font-size;
-}
 
 .syntax-reset() {
   .syntax--hyperlink {

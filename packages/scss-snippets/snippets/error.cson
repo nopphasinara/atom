@@ -1,4 +1,0 @@
-'.source.scss':
-  '@error':
-    'prefix': 'er'
-    'body': '@error \'$1\';'

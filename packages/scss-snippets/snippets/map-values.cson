@@ -1,4 +1,0 @@
-'.source.scss':
-  'map-values':
-    'prefix': 'mv'
-    'body': 'map-values(\$${1:list})'

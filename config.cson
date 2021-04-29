@@ -12,6 +12,11 @@
         path: "/usr/local/bin/php-cs-fixer"
     general:
       beautifyEntireFileOnSave: false
+  "atom-ide-hyperclick":
+    darwinTriggerKeys: "altKey"
+  "atom-ide-outline":
+    foldInitially: true
+    initialDisplay: false
   "atom-minify":
     checkOutputFileAlreadyExists: true
   "atom-package-deps":
@@ -21,6 +26,25 @@
   "atom-ternjs":
     snippetsFirst: true
     useSnippets: true
+  "atom-typescript":
+    allowJS: true
+    autocompleteParens: true
+    autocompletionSuggestionPriority: 1
+    ignoredDiagnosticCodes: [
+      "8002"
+      "8003"
+      "8004"
+      "8006"
+      "8008"
+      "8010"
+    ]
+    jsSyntaxScopes: [
+      "source.js"
+      "source.jsx"
+      "javascript"
+      "source.flow"
+    ]
+    tooltipPosition: "top"
   "autocomplete-plus":
     autoActivationDelay: 10
     backspaceTriggersAutocomplete: true
@@ -41,12 +65,16 @@
       "language-scss"
       "language-scss"
       "spell-check"
-      "es6-snippets"
-      "amp-snippets"
-      "scss-snippets"
       "browser-plus"
       "lodash-snippets"
       "atom-ternjs"
+      "intentions"
+      "Quick-JavaScript"
+      "hyperclick"
+      "hyperlink-hyperclick"
+      "js-hyperclick"
+      "php-hyperclick"
+      "css-hyperclick"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -103,6 +131,12 @@
       "autocomplete-javascript"
       "es6-javascript"
       "intentions"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-typescript"
     ]
     packagesWithSnippetsDisabled: [
       "css-snippets"
@@ -121,6 +155,7 @@
     accentColor: "blue"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
+    lineHeight: 1.6
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
@@ -161,9 +196,12 @@
     darwinTriggerKeys: "altKey"
   "js-hyperclick": {}
   "language-babel":
+    allowLocalOverride: true
     autoIndentJSX: true
     emmetCSSAutocomplete: true
     keepFileExtension: true
+  "linter-ui-default":
+    panelHeight: 300
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true

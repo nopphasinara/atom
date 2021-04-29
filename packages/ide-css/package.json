@@ -1,0 +1,117 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+  "_id": "ide-css@0.3.5",
+  "_inBundle": false,
+  "_integrity": "sha512-cMML6G/np6GPOZVyLdKCD/Vns94X4IiG4H98ffMauedPpTe2OeSchEm0CgrsHZLMQRfKBFlvGMhHQDjcg4QI1A==",
+  "_location": "/ide-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+  "_shasum": "118de2ad699446e8a2a61d8fff5819f437d496bb",
+  "_spec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021329-91644-1cpfz4l.ajz4",
+  "activationHooks": [
+    "source.css:root-scope-used",
+    "source.css.less:root-scope-used",
+    "source.css.scss:root-scope-used"
+  ],
+  "atomCommands": {
+    "ide-css:help": "Provides help information and descriptions of commands."
+  },
+  "author": {
+    "name": "Te-Chi Liu"
+  },
+  "bugs": {
+    "url": "https://github.com/liuderchi/ide-css/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.9.9",
+    "vscode-css-languageserver-bin": "^1.4.0"
+  },
+  "deprecated": false,
+  "description": "Atom-IDE for CSS, LESS and SCSS language",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.css",
+    "source.css.less",
+    "source.css.scss"
+  ],
+  "homepage": "https://github.com/liuderchi/ide-css#readme",
+  "keywords": [
+    "atom-ide",
+    "css",
+    "less",
+    "scss",
+    "style-sheet",
+    "ide",
+    "language-server-protocol",
+    "outline-view"
+  ],
+  "license": "MIT",
+  "main": "src/main.js",
+  "name": "ide-css",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuderchi/ide-css.git"
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "npm run lint"
+  },
+  "version": "0.3.5"
+}

@@ -31,7 +31,10 @@
     "underscore-plus": "^1.7.0"
   },
   "devDependencies": {
-    "color-convert": "^2.0.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "log4js": "^6.3.0"
   }
 }

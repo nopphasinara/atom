@@ -1,4 +1,14 @@
 {
+  "atom-text-editor:not([mini]).typescript-editor": {
+    "escape": "typescript:hide-signature-help"
+    "pageup": "typescript:signature-help-prev"
+    "pagedown": "typescript:signature-help-next"
+  }
+  ".platform-darwin atom-text-editor:not([mini]).typescript-editor": {
+    "cmd-r": "typescript:toggle-file-symbols"
+    "cmd-shift-r": "typescript:toggle-project-symbols"
+  }
+
   "ccp-container": {
     "escape": "chrome-color-picker:close"
     "enter": "chrome-color-picker:saveAndClose"

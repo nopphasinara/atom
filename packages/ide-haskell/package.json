@@ -1,0 +1,285 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+  "_id": "ide-haskell@2.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-F+M/iEww42It7qg8eoxwv2CKb14WpVYJa4b5ZggdFtvbiaoWUEciRplMneyZWvRMr9yUL6tCDTeTlxiTEkbYGA==",
+  "_location": "/ide-haskell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+  "_shasum": "0de0388f6f2ef210834ee1abec5497e7adaa308c",
+  "_spec": "https://www.atom.io/api/packages/ide-haskell/versions/2.7.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021329-15286-1lbcb46.d7t8",
+  "activationHooks": [
+    "language-haskell:grammar-used"
+  ],
+  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
+  "bugs": {
+    "url": "https://github.com/atom-haskell/ide-haskell/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "onSavePrettify": {
+      "type": "boolean",
+      "default": false,
+      "description": "Run file through prettifier before save",
+      "order": 20
+    },
+    "onSavePrettifyFormats": {
+      "type": "object",
+      "title": "Formats to prettify on save",
+      "order": 21,
+      "properties": {
+        "source*c2hs": {
+          "type": "boolean",
+          "default": false,
+          "title": "C2HS",
+          "order": 40
+        },
+        "source*cabal": {
+          "type": "boolean",
+          "default": false,
+          "title": "Cabal files",
+          "description": "Unlike others, will use `cabal format`",
+          "order": 20
+        },
+        "source*hsc2hs": {
+          "type": "boolean",
+          "default": false,
+          "title": "HSC2HS",
+          "order": 50
+        },
+        "source*haskell": {
+          "type": "boolean",
+          "default": true,
+          "title": "Haskell",
+          "order": 10
+        },
+        "text*tex*latex*haskell": {
+          "type": "boolean",
+          "default": false,
+          "title": "Literate Haskell",
+          "order": 15
+        },
+        "source*hsig": {
+          "type": "boolean",
+          "default": false,
+          "title": "Module signatures (hsig)",
+          "order": 30
+        }
+      }
+    },
+    "switchTabOnCheck": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically switch to leftmost updated tab (error/warning/lint/etc)",
+      "order": 10
+    },
+    "switchTabOnCheckInterval": {
+      "type": "integer",
+      "default": 300,
+      "description": "Messages grouping time interval in ms, raise this if switchTabOnCheck switches to wrong tabs",
+      "order": 11
+    },
+    "expressionTypeInterval": {
+      "type": "integer",
+      "default": 300,
+      "description": "Type/Info tooltip show delay, in ms",
+      "order": 30
+    },
+    "onCursorMove": {
+      "type": "string",
+      "description": "Show check results (error, lint) description tooltips when text cursor is near marker, close open tooltips, or do nothing?",
+      "enum": [
+        "Show Tooltip",
+        "Hide Tooltip",
+        "Nothing"
+      ],
+      "default": "Nothing",
+      "order": 40
+    },
+    "messageDisplayFrontend": {
+      "type": "string",
+      "default": "builtin",
+      "description": "Frontend to use for displaying errors/warnigns/lints. Builtin (i.e. output panel) and atom-linter supported. Requires Atom restart.",
+      "enum": [
+        "builtin",
+        "linter"
+      ],
+      "order": 45
+    },
+    "stylishHaskellPath": {
+      "type": "string",
+      "default": "stylish-haskell",
+      "title": "Prettifier Path",
+      "description": "Path to `stylish-haskell` utility or other prettifier",
+      "order": 60
+    },
+    "stylishHaskellArguments": {
+      "type": "array",
+      "default": [],
+      "title": "Prettifier Arguments",
+      "description": "Additional arguments to pass to prettifier; comma-separated",
+      "items": {
+        "type": "string"
+      },
+      "order": 70
+    },
+    "cabalPath": {
+      "type": "string",
+      "default": "cabal",
+      "description": "Path to `cabal` utility, for `cabal format`",
+      "order": 50
+    },
+    "startupMessageIdeBackend": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show info message about haskell-ide-backend service on activation",
+      "order": 80
+    },
+    "panelPosition": {
+      "type": "string",
+      "default": "bottom",
+      "title": "Default Panel Position",
+      "description": "Default output panel position",
+      "enum": [
+        "bottom",
+        "left",
+        "right",
+        "center"
+      ],
+      "order": 41
+    },
+    "buttonsPosition": {
+      "type": "string",
+      "default": "top",
+      "title": "Panel buttons position",
+      "enum": [
+        "top",
+        "left"
+      ],
+      "order": 42
+    },
+    "hideParameterValues": {
+      "type": "boolean",
+      "default": false,
+      "description": "Hide additional plugin parameter values until hovered",
+      "order": 12
+    },
+    "autoHideOutput": {
+      "type": "boolean",
+      "default": false,
+      "description": "Hide panel output when there are no new messages to show",
+      "order": 11
+    }
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinter"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "ide-haskell-upi-plugin": {
+      "versions": {
+        "0.3.0": "consumeUpi3_0",
+        "0.3.1": "consumeUpi3_1",
+        "0.3.2": "consumeUpi3_2"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-haskell-utils": "^1.0.2"
+  },
+  "deprecated": false,
+  "description": "Haskell IDE",
+  "deserializers": {
+    "ide-haskell/OutputPanel": "deserializeOutputPanel"
+  },
+  "devDependencies": {
+    "@types/atom": "^1.40.10",
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^12",
+    "@types/temp": "^0.9.0",
+    "atom-haskell-tslint-rules": "^0.2.2",
+    "atom-highlight": "^0.5.0",
+    "atom-select-list": "^0.8.0",
+    "atom-ts-spec-runner": "^1.1.1",
+    "chai": "^4.3.4",
+    "etch": "^0.14.1",
+    "lodash": "^4.17.21",
+    "lodash-decorators": "^6.0.1",
+    "mocha": "^8.3.2",
+    "parcel": "2.0.0-beta.1",
+    "prettier": "^2.2.1",
+    "temp": "^0.9.4",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.2.0",
+    "tslint": "^6.1.2",
+    "typedoc": "^0.20.35",
+    "typescript": "~4.2.4",
+    "typescript-tslint-plugin": "^1.0.1"
+  },
+  "engines": {
+    "atom": ">=1.46.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/ide-haskell#readme",
+  "keywords": [
+    "ide-haskell",
+    "ide",
+    "haskell"
+  ],
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "name": "ide-haskell",
+  "providedServices": {
+    "ide-haskell-upi": {
+      "description": "Universal pluggable interface",
+      "versions": {
+        "0.3.0": "provideUpi3_0",
+        "0.3.1": "provideUpi3_1",
+        "0.3.2": "provideUpi3_2",
+        "0.3.3": "provideUpi3_3"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/ide-haskell.git"
+  },
+  "scripts": {
+    "build": "tsc --project . && parcel build lib/ide-haskell.js",
+    "lint": "tslint --project . && tslint --project spec",
+    "prettier": "prettier --write 'src/**/*.ts?(x)' 'spec/**/*.ts?(x)'",
+    "prettier-check": "prettier -l 'src/**/*.ts' 'spec/**/*.ts'",
+    "test": "npm run typecheck && npm run lint && npm run prettier-check",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p spec"
+  },
+  "targets": {
+    "main": {
+      "context": "electron-renderer",
+      "includeNodeModules": {
+        "atom": false,
+        "atom-haskell-utils": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "2.7.0"
+}
