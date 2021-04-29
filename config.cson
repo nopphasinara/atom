@@ -46,6 +46,7 @@
       "scss-snippets"
       "browser-plus"
       "lodash-snippets"
+      "atom-ternjs"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"

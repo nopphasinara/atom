@@ -62,6 +62,73 @@ function getCursorScopes(returnType = '') {
   }
 }
 
+/**
+* Object.prototype.forEach() polyfill
+* https://gomakethings.com/looping-through-objects-with-es6/
+* @author Chris Ferdinandi
+* @license MIT
+*/
+if (!Object.prototype.forEach) {
+  Object.defineProperty(Object.prototype, 'forEach', {
+    readable: true,
+    writable: true,
+    value: function (callback, thisArg) {
+      if (this == null) throw new TypeError('Not an object');
+
+      thisArg = thisArg || window;
+      for (var key in this) {
+        if (this.hasOwnProperty(key)) callback.call(thisArg, this[key], key, this);
+      }
+    },
+  });
+}
+
+if (!Object.prototype.isEmpty) {
+  Object.defineProperty(Object.prototype, 'isEmpty', {
+    readable: true,
+    writable: true,
+    value: function (callback, thisArg) {
+      if (this == null) throw new TypeError('Not an object');
+
+      thisArg = thisArg || window;
+
+      if (typeof callback === 'function') {
+        callback.call(thisArg, this);
+      } else {
+        return (Object.entries(this).length) ? false : true;
+      }
+    },
+  });
+}
+
+
+function isObjectEmpty(obj) {
+  if (typeof obj !== 'object') {
+    throw new TypeError('aaa');
+  }
+
+  if (Object.entries(obj).length <= 0) {
+    throw new TypeError('bbb');
+  }
+
+  // if (typeof obj !== 'object') {
+  //   throw new TypeError('aaa');
+  // }
+
+  return obj.valueOf();
+
+  // try {
+  //
+  // } catch (e) {
+  //   console.log(e);
+  //   console.log(arguments);
+  //   // console.log(e.getRawStack());
+  //   // console.log(e.toString());
+  //   // console.log(e.__proto__);
+  //   // console.error('invalid object');
+  // }
+}
+
 module.exports = [
   // {
   //   type: "button",
@@ -306,31 +373,46 @@ module.exports = [
           'http',
           'https',
         ];
-        var encodedUrls = [];
+        var encodedUrls = {};
 
         sites.map(function (site) {
           protocols.map(function (protocol) {
             var data, raw, encoded;
 
-            encodedUrls.push(`${protocol}://${site}/`);
-            encodedUrls.push(`${protocol}://www.${site}/`);
+            if (!encodedUrls.hasOwnProperty(site)) {
+              encodedUrls[site] = [];
+            }
+
+            encodedUrls[site].push(encodeURIComponent(`${protocol}://${site}/`));
+            encodedUrls[site].push(encodeURIComponent(`${protocol}://www.${site}/`));
           });
         });
 
-        for (var prop in encodedUrls) {
-          encodedUrls[prop] = encodeURIComponent(encodedUrls[prop]);
+        if (!encodedUrls.isEmpty()) {
+          console.log(encodedUrls);
+
+          atom.commands.dispatch(atom.views.getView(atom.workspace), 'application:new-file');
+
+          setTimeout(function () {
+            var editor = getActiveTextEditor();
+
+            encodedUrls.forEach(function (urls, site) {
+              editor.insertText(`${site}:`);
+              editor.insertNewline();
+
+              if (urls.length > 0) {
+                urls.forEach(function (url) {
+                  var encodedUrl = encodeURIComponent(url);
+                  editor.insertText(`${apiUrl}${url}`);
+                  editor.insertNewline();
+                });
+
+                editor.insertNewline();
+              }
+            });
+
+          }, 500);
         }
-
-        atom.commands.dispatch(atom.views.getView(atom.workspace), 'application:new-file');
-        setTimeout(function () {
-          var editor = getActiveTextEditor();
-
-          encodedUrls.forEach(function (url) {
-            editor.insertText(`${apiUrl}${url}`);
-            editor.insertNewline();
-          });
-
-        }, 500);
       },
     },
     tooltip: "Generate Disavow",
