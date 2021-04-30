@@ -1,40 +1,13 @@
-console.clear();
+/** @babel */
 
-// const log4js = require('log4js');
-// console.group('log4js');
-// console.log(log4js);
-// console.groupEnd();
-// log4js.configure({
-//   appenders: {
-//     cheese: {
-//       type: 'file',
-//       filename: 'cheese.log',
-//     },
-//   },
-//   categories: {
-//     default: {
-//       appenders: [
-//         'cheese',
-//       ],
-//       level: 'error',
-//     },
-//   },
-// });
-//
-// const logger = log4js.getLogger('cheese');
-// console.group('logger');
-// console.log(logger);
-// console.groupEnd();
-// logger.trace('Entering cheese testing');
-// logger.debug('Got cheese.');
-// logger.info('Cheese is Comté.');
-// logger.warn('Cheese is quite smelly.');
-// logger.error('Cheese is too ripe!');
-// logger.fatal('Cheese was breeding ground for listeria.');
+console.clear();
 
 var fs = require('fs');
 var _ = require('lodash');
 var path = require('path');
+
+var _fs = new Object;
+console.log(typeof fs === typeof _fs);
 
 // console.group('require');
 // console.log(fs);

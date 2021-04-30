@@ -12,6 +12,8 @@
         path: "/usr/local/bin/php-cs-fixer"
     general:
       beautifyEntireFileOnSave: false
+  "atom-ide-datatip":
+    showDataTipOnMouseMove: false
   "atom-ide-hyperclick":
     darwinTriggerKeys: "altKey"
   "atom-ide-outline":
@@ -68,13 +70,19 @@
       "browser-plus"
       "lodash-snippets"
       "atom-ternjs"
-      "intentions"
       "Quick-JavaScript"
       "hyperclick"
       "hyperlink-hyperclick"
       "js-hyperclick"
       "php-hyperclick"
       "css-hyperclick"
+      "atom-beautify"
+      "atom-minify"
+      "atom-prettify"
+      "autocomplete-php"
+      "git-history"
+      "python-snippets"
+      "intentions"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -161,6 +169,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
   "find-and-replace":

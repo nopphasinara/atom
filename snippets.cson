@@ -108,6 +108,19 @@
 
 
   ".source.js": {
+    "/** @babel */": {
+      "prefix": "atba",
+      "body": """
+      /** @babel */$0
+      """,
+    },
+    "/** @flowtype */": {
+      "prefix": "atfl",
+      "body": """
+      /** @flowtype */$0
+      """,
+    },
+
     "if": {
       "prefix": "if",
       "body": """

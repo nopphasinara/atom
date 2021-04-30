@@ -206,6 +206,7 @@
     "backspace": "tree-view:remove"
   }
   ".platform-darwin atom-text-editor": {
+    "alt-cmd": "datatip:toggle"
     "cmd-r": "symbols-view:toggle-file-symbols"
     "ctrl-shift-o": "link:open"
     "alt-cmd-down": "unset!"

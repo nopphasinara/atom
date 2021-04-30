@@ -21,8 +21,8 @@ module.exports =
 
     # DEPRECATED: This can be removed at some point (added in Atom 1.17/1.18ish)
     # It removes `layoutMode`
-    if atom.config.get("#{themeName}.layoutMode")
-      atom.config.unset("#{themeName}.layoutMode")
+    # if atom.config.get("#{themeName}.layoutMode")
+    #   atom.config.unset("#{themeName}.layoutMode")
 
   deactivate: ->
     unsetFontSize()
