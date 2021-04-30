@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
   "_shasum": "71885df33156676cd645074ca450395328cc50f3",
   "_spec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120030-13456-d638vm.wg1ak",
+  "_where": "/private/tmp/apm-install-dir-202111-7031-1bqpujb.5ogj",
   "activationCommands": {
     "atom-workspace": "repl-console:run"
   },
@@ -27,7 +27,6 @@
     "url": "https://github.com/mohan/repl-console/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
   "deprecated": false,
   "description": "Run REPL code directly in ATOM. Output is displayed in Dev Tools console.",
   "engines": {

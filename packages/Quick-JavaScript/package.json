@@ -1,28 +1,46 @@
 {
-  "name": "Quick-JavaScript",
-  "version": "2.2.0",
-  "description": "Write JavaScript quickly with over 150+ handy snippets. Fully ES6! Less typing more coding!",
-  "homepage": "https://github.com/PombaM/atom-es6-javascript",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PombaM/atom-es6-javascript"
+  "_from": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+  "_id": "Quick-JavaScript@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-4zWerIth0YlaUlPEHoN7NHkb00nnpXwwW3f0dvyxN1RUPGDIc+WDxwL8Q0NgFbZXdoYzi28T6AdEgwS/nFcBXw==",
+  "_location": "/Quick-JavaScript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+  "_shasum": "993226d3eccfa3fbb8f50d6c299ad544ec694bba",
+  "_spec": "https://www.atom.io/api/packages/quick-javascript/versions/2.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021330-18792-ssvyjt.4izy9",
   "bugs": {
     "url": "https://github.com/PombaM/atom-es6-javascript"
   },
-  "license": "MIT",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Write JavaScript quickly with over 150+ handy snippets. Fully ES6! Less typing more coding!",
+  "engines": {
+    "atom": ">0.200.0"
+  },
+  "homepage": "https://github.com/PombaM/atom-es6-javascript",
   "keywords": [
     "javascript",
     "snippets",
     "es6",
     "productivity"
   ],
-  "engines": {
-    "atom": ">0.200.0"
-  },
-  "apmInstallSource": {
+  "license": "MIT",
+  "name": "Quick-JavaScript",
+  "repository": {
     "type": "git",
-    "source": "nopphasinara/Quick-JavaScript",
-    "sha": "e1cec019f7c5561d5e104aa0f6a40b873945c9dd"
-  }
+    "url": "git+https://github.com/PombaM/atom-es6-javascript.git"
+  },
+  "version": "2.2.0"
 }

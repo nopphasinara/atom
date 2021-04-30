@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/linter-eslint/versions/8.6.6/tarball",
   "_shasum": "c0ac15d8871028bc4b3e07c9304b239bd01be0cc",
   "_spec": "https://www.atom.io/api/packages/linter-eslint/versions/8.6.6/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021329-81139-1pvg6yw.mthpm",
+  "_where": "/private/tmp/apm-install-dir-2021330-43267-om9xas.zr6pj",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],

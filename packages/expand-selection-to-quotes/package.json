@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
   "_shasum": "125efaf244bf5b02f9ca4a500dd6d45e5c9d4394",
   "_spec": "https://www.atom.io/api/packages/expand-selection-to-quotes/versions/0.11.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021316-75532-si657b.1rtj",
+  "_where": "/private/tmp/apm-install-dir-2021330-31639-15u6jhq.hsao",
   "activationCommands": {
     "atom-text-editor": [
       "expand-selection-to-quotes:toggle"

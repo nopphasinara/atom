@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-prettify/versions/0.1.3/tarball",
   "_shasum": "b0b12965e166dde6a7004e2733716643da64e288",
   "_spec": "https://www.atom.io/api/packages/atom-prettify/versions/0.1.3/tarball",
-  "_where": "/private/var/folders/14/jt9091c53h7452hq_sd6vppc0000gn/T/apm-install-dir-120030-8996-xq1pg0.c2l5n",
+  "_where": "/private/tmp/apm-install-dir-2021330-27047-1piiuhh.kdqy",
   "activationCommands": {
     "atom-text-editor": [
       "prettify:prettify"
