@@ -127,6 +127,13 @@
     ]
   }
   {
+    title: "chrome-snippets"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chrome-snippets"
+    ]
+  }
+  {
     title: "awesome-atom"
     group: "NPM"
     paths: [

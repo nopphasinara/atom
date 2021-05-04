@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-  "_id": "autocomplete-paths@2.15.1",
+  "_from": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+  "_id": "autocomplete-paths@2.15.2",
   "_inBundle": false,
-  "_integrity": "sha512-SM7cG64f4RMwOzLBJIQ85Qm5dEuBSYxE6SjU9ZYQ9IDlll12HZ9XAHGCjfUGYdcRE6YISGBa44fAG1GhX82OgA==",
+  "_integrity": "sha512-G6cI7LMM+DgcgozB0Osi3KQ6nzRowoLhwH2uaMtJv6Jf4H4IvVc9x1stHBsfE7BDor4QFMIdM4QnncclsL0MFw==",
   "_location": "/autocomplete-paths",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball"
+    "raw": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-  "_shasum": "43a913334188a0face27c6a2e63f8fe533b09242",
-  "_spec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-29498-zw1efg.0x79",
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+  "_shasum": "11b17e2c7541fdf504c8dc70e5bbacbf026399f9",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.15.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-202144-51773-7dgnyt.gqfnt",
   "bugs": {
     "url": "https://github.com/atom-community/autocomplete-paths/issues"
   },
@@ -105,5 +105,5 @@
       "isLibrary": true
     }
   },
-  "version": "2.15.1"
+  "version": "2.15.2"
 }
