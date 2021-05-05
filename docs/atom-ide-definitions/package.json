@@ -1,0 +1,102 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+  "_id": "atom-ide-definitions@0.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-W0YCCrP8u7iN7dv7UDhgXRfcOOjnPlceEV8yxLmyclNb5CvpoAsKHkEyycU+yY9DtjMolKzIDbltll/Sx3qGhw==",
+  "_location": "/atom-ide-definitions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+  "_shasum": "6aa2bd335c9592a12813927b762dbb6bc94833b4",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021330-23626-9ef8ko.8t759",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-definitions/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "clickPriority": {
+      "order": 1,
+      "title": "Hyperclick Provider Priority",
+      "description": "Provider priority relative to other providers. For more details see [Hyperclick's provider documentation](https://github.com/facebookarchive/hyperclick#details).",
+      "type": "number",
+      "default": 0
+    },
+    "clickGrammarScopes": {
+      "order": 2,
+      "title": "Hyperclick Grammar Scopes",
+      "description": "List of scopes to allow action on. For example, `source.js, source.ts, source.go` *Requires reload to take effect.*",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "consumedServices": {
+    "definitions": {
+      "versions": {
+        "0.1.0": "consumeDefinitionsService"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-ide-base": "^2.3.2",
+    "atom-package-deps": "^7.2.0"
+  },
+  "deprecated": false,
+  "description": "A replacement for the Definitions functionality that was originally part of the Atom IDE package from Facebook.",
+  "devDependencies": {
+    "@types/atom": "^1.40.7",
+    "@types/node": "^14.14.25",
+    "eslint": "7.19.0",
+    "eslint-config-atomic": "^1.9.0",
+    "npm-check-updates": "11.1.1",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-ide-community/atom-ide-definitions#readme",
+  "keywords": [
+    "atom-package",
+    "atom-ide",
+    "defintion"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-ide-definitions",
+  "package-deps": [
+    "atom-ide-hyperclick"
+  ],
+  "providedServices": {
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "getClickProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-definitions.git"
+  },
+  "scripts": {
+    "bump": "ncu -u -x coffeescript",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix"
+  },
+  "version": "0.4.1"
+}

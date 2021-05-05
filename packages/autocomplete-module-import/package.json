@@ -1,0 +1,81 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+  "_id": "autocomplete-module-import@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-3BgrxD9cCo/JDQK5uwOQj06/oh2F1IZPmRXsSpuPVPURNkxFq8pQgWFWCzXFgKPjCYV6LA5ULs9f8IRYpdMZzw==",
+  "_location": "/autocomplete-module-import",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+  "_shasum": "8173e008ecebd1789f2c6611c1d70cf3c4417100",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-module-import/versions/0.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202145-49927-c2b5jq.zhkmo",
+  "bugs": {
+    "url": "https://github.com/algolia/atom-autocomplete-module-import/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "algoliasearch": "^3.23.0",
+    "algoliasearch-helper": "^2.20.1",
+    "lodash.escaperegexp": "^4.1.2",
+    "pkg-up": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Search & install npm packages from import/require statements powered by Algolia.",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "conventional-changelog-cli": "^1.3.1",
+    "eslint": "^4.0.0",
+    "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.4.4"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/algolia/atom-autocomplete-module-import#readme",
+  "keywords": [
+    "npm",
+    "yarn",
+    "search",
+    "autocomplete",
+    "algolia",
+    "import",
+    "require",
+    "package.json",
+    "dependencies",
+    "install"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "autocomplete-module-import",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algolia/atom-autocomplete-module-import.git"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file",
+    "changelog:unreleased": "conventional-changelog --preset angular --output-unreleased",
+    "lint": "eslint lib",
+    "lint:fix": "yarn run lint -- --fix",
+    "test": "yarn run lint"
+  },
+  "version": "0.3.0"
+}

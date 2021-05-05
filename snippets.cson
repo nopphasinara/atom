@@ -1,6 +1,13 @@
 {
   # LESS
-  ".source.less": {
+  ".source.css.less": {
+    "@import": {
+      "prefix": "impt",
+      "body": """
+      @import \"${1:}\";$0
+      """,
+    },
+
     "foreach": {
       "prefix": "for-each",
       "body": """

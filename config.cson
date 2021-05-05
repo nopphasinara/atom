@@ -13,7 +13,7 @@
     general:
       beautifyEntireFileOnSave: false
   "atom-ide-datatip":
-    showDataTipOnMouseMove: false
+    hoverTime: 50
   "atom-ide-hyperclick":
     darwinTriggerKeys: "altKey"
   "atom-ide-outline":
@@ -30,8 +30,8 @@
     useSnippets: true
   "atom-typescript":
     allowJS: true
-    autocompleteParens: true
     autocompletionSuggestionPriority: 1
+    ignoreUnusedSuggestionDiagnostics: true
     ignoredDiagnosticCodes: [
       "8002"
       "8003"
@@ -46,13 +46,16 @@
       "javascript"
       "source.flow"
     ]
+    preferBuiltinBusySignal: false
+    preferBuiltinOccurrenceHighlight: false
+    preferBuiltinSigHelp: false
+    preferBuiltinTooltips: false
+    tooltipDelay: 10
     tooltipPosition: "top"
   "autocomplete-plus":
-    autoActivationDelay: 10
+    autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
-    enableExtendedUnicodeSupport: true
     extraWordCharacters: ""
-    maxVisibleSuggestions: 5
     minimumWordLength: 1
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -67,7 +70,6 @@
       "language-scss"
       "language-scss"
       "spell-check"
-      "browser-plus"
       "lodash-snippets"
       "atom-ternjs"
       "Quick-JavaScript"
@@ -83,6 +85,18 @@
       "git-history"
       "python-snippets"
       "intentions"
+      "atom-autocomplete-php"
+      "autocomplete-javascript"
+      "autocomplete-js-import"
+      "autocomplete-lodash"
+      "autocomplete-module-import"
+      "autocomplete-modules"
+      "autocomplete-sql"
+      "blade-snippets"
+      "css-snippets"
+      "es6-javascript"
+      "laravel-snippets"
+      "php-composer-completion"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -147,7 +161,91 @@
       "atom-typescript"
     ]
     packagesWithSnippetsDisabled: [
+      "advanced-open-file"
+      "aligner"
+      "aligner-coffeescript"
+      "aligner-css"
+      "aligner-javascript"
+      "aligner-php"
+      "aligner-scss"
+      "atom-autocomplete-php"
+      "atom-beautify"
+      "atom-extended"
+      "atom-ide-base"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-javascript"
+      "atom-ide-markdown-service"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-minify"
+      "atom-prettify"
+      "atom-ternjs"
+      "atom-typescript"
+      "autocomplete-javascript"
+      "autocomplete-js-import"
+      "autocomplete-lodash"
+      "autocomplete-module-import"
+      "autocomplete-modules"
+      "autocomplete-paths"
+      "autocomplete-php"
+      "autocomplete-sql"
+      "blade-snippets"
+      "browser-plus"
+      "busy-signal"
+      "change-case"
+      "css-hyperclick"
       "css-snippets"
+      "dark-one-dark-syntax"
+      "duplicate-removal"
+      "emmet"
+      "emmet-jsx-css-modules"
+      "es6-javascript"
+      "expand-selection-to-quotes"
+      "filesize"
+      "flex-tool-bar"
+      "git-menu"
+      "git-plus"
+      "hyperclick"
+      "hyperlink-hyperclick"
+      "ide-css"
+      "ide-html"
+      "ide-json"
+      "ide-python"
+      "intentions"
+      "javascript-drag-import"
+      "js-hyperclick"
+      "language-ampscript"
+      "language-applescript"
+      "language-babel"
+      "language-blade"
+      "language-dotenv"
+      "language-gitignore"
+      "language-htaccess"
+      "language-ini"
+      "language-unix-shell"
+      "laravel-snippets"
+      "linter"
+      "linter-eslint"
+      "linter-ui-default"
+      "lodash-snippets"
+      "one-dark-pro-vivid-syntax"
+      "one-dark-syntax"
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+      "php-composer-completion"
+      "php-hyperclick"
+      "project-manager"
+      "python-snippets"
+      "Quick-JavaScript"
+      "remote-sync"
+      "repl-console"
+      "sass-autocompile"
+      "sequential-number"
+      "sort-lines"
+      "split-diff"
+      "tool-bar"
     ]
     reopenProjectMenuCount: 10
     restorePreviousWindowsOnStart: "always"
@@ -159,8 +257,6 @@
     ]
     titleBar: "custom"
     uriHandlerRegistration: "never"
-  "dark-flat-ui":
-    accentColor: "blue"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
     lineHeight: 1.6
@@ -172,6 +268,9 @@
     tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
+  filesize:
+    DisplayGzippedSizeOnPopup: false
+    UseDecimal: true
   "find-and-replace":
     liveSearchMinimumCharacters: 1
   "flex-tool-bar":
@@ -214,20 +313,12 @@
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
-  "nv-dark-ui":
-    hideDockButtons: true
   "one-dark-ui":
-    hideDockButtons: true
-  "preview-plus":
-    livePreview: true
-  "pristine-ui":
     hideDockButtons: true
   "project-manager":
     prettifyTitle: false
     showPath: false
     sortBy: "title"
-  rainglow:
-    SelectSyntax: "earthsong-rainglow-syntax"
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
@@ -239,8 +330,6 @@
     indentWidth: 4
     showAdditionalCompilationInfo: false
     showOldParametersWarning: false
-  "sass-compiler":
-    outputStyle: "nested"
   "spell-check":
     addKnownWords: true
     knownWords: [
@@ -250,11 +339,6 @@
   "split-diff":
     muteNotifications: true
     turnOffSoftWrap: true
-  "symbols-list":
-    basic:
-      alphabeticalSorting: true
-      hideOnEmptyList: true
-      startUp: false
   "symbols-view":
     quickJumpToFileSymbol: false
   tabs:
