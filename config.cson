@@ -30,7 +30,9 @@
     useSnippets: true
   "atom-typescript":
     allowJS: true
+    autocompleteParens: true
     autocompletionSuggestionPriority: 1
+    ignoreNonSuggestionSuggestionDiagnostics: true
     ignoreUnusedSuggestionDiagnostics: true
     ignoredDiagnosticCodes: [
       "8002"
@@ -40,18 +42,13 @@
       "8008"
       "8010"
     ]
-    jsSyntaxScopes: [
-      "source.js"
-      "source.jsx"
-      "javascript"
-      "source.flow"
-    ]
     preferBuiltinBusySignal: false
     preferBuiltinOccurrenceHighlight: false
     preferBuiltinSigHelp: false
     preferBuiltinTooltips: false
-    tooltipDelay: 10
     tooltipPosition: "top"
+  "autocomplete-paths":
+    ignoreSubmodules: true
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -80,22 +77,16 @@
       "css-hyperclick"
       "atom-beautify"
       "atom-minify"
-      "autocomplete-php"
       "git-history"
       "python-snippets"
       "intentions"
       "atom-autocomplete-php"
-      "autocomplete-javascript"
-      "autocomplete-js-import"
-      "autocomplete-lodash"
       "autocomplete-module-import"
-      "autocomplete-modules"
       "autocomplete-sql"
       "blade-snippets"
       "css-snippets"
       "es6-javascript"
       "laravel-snippets"
-      "php-composer-completion"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -320,7 +311,6 @@
     sortBy: "title"
   "remote-sync":
     autoHideLogPanel: true
-    foldLogPanel: true
     monitorFileAnimation: false
   "sass-autocompile":
     compileCompressed: false
