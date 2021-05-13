@@ -42,6 +42,12 @@
       "8008"
       "8010"
     ]
+    jsSyntaxScopes: [
+      "source.js"
+      "source.jsx"
+      "javascript"
+      "source.flow"
+    ]
     preferBuiltinBusySignal: false
     preferBuiltinOccurrenceHighlight: false
     preferBuiltinSigHelp: false
@@ -311,6 +317,7 @@
     sortBy: "title"
   "remote-sync":
     autoHideLogPanel: true
+    foldLogPanel: true
     monitorFileAnimation: false
   "sass-autocompile":
     compileCompressed: false

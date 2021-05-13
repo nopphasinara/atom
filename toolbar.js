@@ -142,7 +142,7 @@ module.exports = [
     //   },
     //   text: '<i>󰚌</i>',
     //   html: true,
-    //   class: ['mdi', 'bg-error', 'fg-selected', 'fg-warning-hover'],
+    //   class: ['mdi', 'bg-error', 'fg-dark', 'fg-warning-hover'],
     //   // show: {
     //   //   grammar: [
     //   //     'js',
@@ -157,21 +157,9 @@ module.exports = [
             '': 'window:reload',
         },
         tooltip: 'Reload Window',
-        text:
-            '<i class="fg-light">󰇥</i><i class="fg-dark">󰇥</i><i class="fg-subtle">󰇥</i><i class="fg-highlight">󰇥</i><i class="fg-selected">󰇥</i><i class="fg-info">󰇥</i><i class="fg-success">󰇥</i><i class="fg-warning">󰇥</i><i class="fg-error">󰇥</i>',
-        html: true,
-        class: ['mdi'],
-    },
-    { type: 'spacer' },
-    {
-        type: 'button',
-        callback: {
-            '': 'window:reload',
-        },
-        tooltip: 'Reload Window',
         text: '<i>󰇥</i>',
         html: true,
-        class: ['mdi', 'bg-warning', 'bg-error-hover', 'fg-dark', 'fg-warning-hover'],
+        class: ['mdi', 'bg-warning', 'fg-dark'],
     },
     { type: 'spacer' },
     {
@@ -180,7 +168,7 @@ module.exports = [
         tooltip: 'Open on Github',
         text: '<i>󰊢</i>',
         html: true,
-        class: ['mdi'],
+        class: ['mdi', 'bg-info', 'fg-dark'],
     },
     {
         type: 'button',
@@ -188,9 +176,14 @@ module.exports = [
             '': 'git-menu:discard-changes',
         },
         tooltip: 'Discard Changes',
-        text: '<i>󰊢</i>',
+        text: '<i>󰪻</i>',
         html: true,
-        class: ['mdi'],
+        show: {
+          function: () => {
+              return !atom.packages.isPackageDisabled('git-menu');
+          },
+        },
+        class: ['mdi', 'bg-info', 'fg-dark'],
     },
     {
         type: 'button',
@@ -200,17 +193,12 @@ module.exports = [
         tooltip: 'Split Diff',
         text: '<i>󰪚</i>',
         html: true,
-        class: ['mdi'],
-    },
-    {
-        type: 'button',
-        callback: {
-            '': 'symbols-list:toggle',
+        show: {
+          function: () => {
+              return !atom.packages.isPackageDisabled('split-diff');
+          },
         },
-        tooltip: 'Symbol List',
-        text: '<i>󰙮</i>',
-        html: true,
-        class: ['mdi'],
+        class: ['mdi', 'bg-info', 'fg-dark'],
     },
     {
         type: 'button',
@@ -220,68 +208,14 @@ module.exports = [
         tooltip: 'Git History',
         text: '<i>󰚰</i>',
         html: true,
+        show: {
+          function: () => {
+              return !atom.packages.isPackageDisabled('git-history');
+          },
+        },
         class: ['mdi'],
     },
     { type: 'spacer' },
-    {
-        type: 'button',
-        callback: {
-            '': 'window:toggle-dev-tools',
-        },
-        text: '<i>󰲌</i>',
-        html: true,
-        class: ['mdi'],
-    },
-    { type: 'spacer' },
-    {
-        type: 'button',
-        callback: {
-            '': 'markdown-preview:toggle',
-        },
-        text: '<i>󰍔</i>',
-        html: true,
-        class: ['mdi'],
-        show: {
-            pattern: ['*.md'],
-        },
-    },
-    {
-        type: 'button',
-        callback: {
-            '': 'chrome-color-picker:toggle',
-            alt: 'chrome-color-picker:pickcolor',
-        },
-        text: '<i>󰈋</i>',
-        html: true,
-        show: {
-            function: () => {
-                return !atom.packages.isPackageDisabled('chrome-color-picker');
-            },
-        },
-        class: ['mdi'],
-    },
-    {
-        type: 'button',
-        callback: {
-            '': function (editor) {
-                console.log(getCursorScopes('chain'));
-            },
-            shift: function (editor) {
-                console.log(getCursorScopes('array'));
-            },
-            alt: function (editor) {
-                let scopeChain = getCursorScopes('chain') || '';
-                if (scopeChain) {
-                    console.log(scopeChain);
-                    atom.clipboard.write(scopeChain);
-                }
-            },
-        },
-        tooltip: 'Cursor Scope, To Array (󰜷󰍽)',
-        text: '<i>x</i>',
-        html: true,
-        class: ['mdi'],
-    },
     {
         type: 'button',
         callback: {
@@ -293,68 +227,36 @@ module.exports = [
         tooltip: '+1',
         text: '<i>󰃬</i>',
         html: true,
-        class: ['mdi'],
+        class: ['mdi', 'bg-success', 'fg-dark'],
     },
     {
         type: 'button',
         callback: {
-            '': function () {
-                console.clear();
-
-                var editor = getActiveTextEditor();
-                if (isTextEditor(editor)) {
-                    var filepath = getRealpathSync(editor.getPath());
-
-                    console.log(console);
-                    console.log(console.prototype);
-
-                    // const exec = require('child_process').execFile;
-                    const util = require('util');
-                    const exec = util.promisify(require('child_process').exec);
-                    const execFile = util.promisify(require('child_process').execFile);
-
-                    async function runScripts(filepath) {
-                        console.group('exec');
-                        console.log(exec);
-                        console.log(
-                            exec(
-                                `tap ${filepath}`,
-                                {
-                                    shell: '/bin/zsh',
-                                },
-                                function (error, stdout, stderr) {
-                                    console.log(error);
-                                    console.log(stdout);
-                                    console.log(stderr);
-                                }
-                            )
-                        );
-                        console.groupEnd();
-
-                        // console.group('execFile');
-                        // console.log(execFile);
-                        // console.log(execFile('node', [
-                        //   filepath,
-                        //   '--prof',
-                        //   '--interactive',
-                        //   '--print',
-                        // ], function (error, stdout, stderr) {
-                        //   console.log(error);
-                        //   console.log(stdout);
-                        //   console.log(stderr);
-                        // }));
-                        // console.groupEnd();
-                    }
-
-                    runScripts(filepath);
-                }
+            '': 'editor:toggle-soft-wrap',
+        },
+        tooltip: 'Toggle Soft Wrap',
+        text: '<i>󰖶</i>',
+        html: true,
+        show: {
+            function: () => {
+                return atom.workspace.isTextEditor(atom.workspace.getActiveTextEditor());
             },
         },
-        tooltip: 'Run Script',
-        text: '<i>x</i>',
-        html: true,
-        class: ['mdi'],
+        class: ['mdi', 'bg-success', 'fg-dark'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'markdown-preview:toggle',
+        },
+        text: '<i>󰍔</i>',
+        html: true,
+        show: {
+            pattern: ['*.md'],
+        },
+        class: ['mdi', 'bg-success', 'fg-dark'],
+    },
+    { type: 'spacer' },
     {
         type: 'button',
         callback: {
@@ -415,7 +317,129 @@ module.exports = [
             },
         },
         tooltip: 'Generate Disavow',
-        text: '<i>󰡇</i>',
+        text: '<i>󰌷</i>',
+        html: true,
+        class: ['mdi', 'bg-highlight', 'fg-dark'],
+    },
+    { type: 'spacer' },
+    {
+        type: 'button',
+        callback: {
+            '': 'chrome-color-picker:toggle',
+            alt: 'chrome-color-picker:pickcolor',
+        },
+        tooltip: 'Color Picker',
+        text: '<i>󰈋</i>',
+        html: true,
+        show: {
+            function: () => {
+                return !atom.packages.isPackageDisabled('chrome-color-picker');
+            },
+        },
+        class: ['mdi'],
+    },
+    {
+        type: 'button',
+        callback: {
+            '': function (editor) {
+                console.log(getCursorScopes('chain'));
+            },
+            shift: function (editor) {
+                console.log(getCursorScopes('array'));
+            },
+            alt: function (editor) {
+                let scopeChain = getCursorScopes('chain') || '';
+                if (scopeChain) {
+                    console.log(scopeChain);
+                    atom.clipboard.write(scopeChain);
+                }
+            },
+        },
+        tooltip: 'Cursor Scope, To Array (󰜷󰍽)',
+        text: '<i>󰆣</i>',
+        html: true,
+        class: ['mdi'],
+    },
+    {
+        type: 'button',
+        callback: {
+            '': 'symbols-list:toggle',
+        },
+        tooltip: 'Symbol List',
+        text: '<i>󰙮</i>',
+        html: true,
+        class: ['mdi'],
+    },
+    {
+        type: 'button',
+        callback: {
+            '': function () {
+                console.clear();
+
+                var editor = getActiveTextEditor();
+                if (isTextEditor(editor)) {
+                    var filepath = getRealpathSync(editor.getPath());
+
+                    console.log(console);
+                    console.log(console.prototype);
+
+                    // const exec = require('child_process').execFile;
+                    const util = require('util');
+                    const exec = util.promisify(require('child_process').exec);
+                    const execFile = util.promisify(require('child_process').execFile);
+
+                    async function runScripts(filepath) {
+                        console.group('exec');
+                        console.log(exec);
+                        console.log(
+                            exec(
+                                `tap ${filepath}`,
+                                {
+                                    shell: '/bin/zsh',
+                                },
+                                function (error, stdout, stderr) {
+                                    console.log(error);
+                                    console.log(stdout);
+                                    console.log(stderr);
+                                }
+                            )
+                        );
+                        console.groupEnd();
+
+                        // console.group('execFile');
+                        // console.log(execFile);
+                        // console.log(execFile('node', [
+                        //   filepath,
+                        //   '--prof',
+                        //   '--interactive',
+                        //   '--print',
+                        // ], function (error, stdout, stderr) {
+                        //   console.log(error);
+                        //   console.log(stdout);
+                        //   console.log(stderr);
+                        // }));
+                        // console.groupEnd();
+                    }
+
+                    runScripts(filepath);
+                }
+            },
+        },
+        tooltip: 'Run Script',
+        text: '<i>󰗀</i>',
+        html: true,
+        show: {
+          pattern: ['*.js'],
+        },
+        class: ['mdi'],
+    },
+    {
+        type: 'button',
+        callback: {
+            '': 'window:toggle-dev-tools',
+        },
+        tooltip: 'Toggle Dev Tools',
+        text: '<i>󰲌</i>',
         html: true,
         class: ['mdi'],
     },
