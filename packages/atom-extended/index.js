@@ -1,6 +1,6 @@
 /** @babel */
 
-console.clear();
+// console.clear();
 
 var fs = require('fs');
 var _ = require('lodash');

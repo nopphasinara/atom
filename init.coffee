@@ -10,6 +10,9 @@ global.Faker = () ->
   })
 
 global.loadDeps = () ->
+  if !global.hasOwnProperty('jquery')
+    global.jquery = require('jquery')
+
   if !global.hasOwnProperty('_')
     global._ = require('lodash')
 
@@ -18,5 +21,7 @@ global.loadDeps = () ->
 
   if !global.hasOwnProperty('fse')
     global.fse = require('fs-extra')
+
+  require('./helpers.js')
 
 loadDeps()
