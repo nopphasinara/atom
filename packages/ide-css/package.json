@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-  "_id": "ide-css@0.3.5",
+  "_from": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+  "_id": "ide-css@0.4.0",
   "_inBundle": false,
-  "_integrity": "sha512-cMML6G/np6GPOZVyLdKCD/Vns94X4IiG4H98ffMauedPpTe2OeSchEm0CgrsHZLMQRfKBFlvGMhHQDjcg4QI1A==",
+  "_integrity": "sha512-zE3tOSZQrK3TPCf6yHw8E1eDbq3+VRx0lJwqsp9VnTkLY4Ml1cPmNQBk5T4yLJ9DZgzUAzJyUh6zFUuCofkZTg==",
   "_location": "/ide-css",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball"
+    "raw": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-  "_shasum": "118de2ad699446e8a2a61d8fff5819f437d496bb",
-  "_spec": "https://www.atom.io/api/packages/ide-css/versions/0.3.5/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-33002-1m9avmg.1n9s",
+  "_resolved": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+  "_shasum": "38abce61c42b05101beb5e371d5b3c3be798f50a",
+  "_spec": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202151-10309-18yb2x7.5kvz",
   "activationHooks": [
     "source.css:root-scope-used",
     "source.css.less:root-scope-used",
@@ -48,13 +48,13 @@
     }
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.9",
+    "atom-languageclient": "^1.10.0",
     "vscode-css-languageserver-bin": "^1.4.0"
   },
   "deprecated": false,
   "description": "Atom-IDE for CSS, LESS and SCSS language",
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.27.0"
   },
   "engines": {
     "atom": ">=1.21.0"
@@ -110,8 +110,8 @@
     "url": "git+https://github.com/liuderchi/ide-css.git"
   },
   "scripts": {
-    "lint": "eslint ./src",
-    "test": "npm run lint"
+    "ci": "npm run lint",
+    "lint": "eslint ./src"
   },
-  "version": "0.3.5"
+  "version": "0.4.0"
 }

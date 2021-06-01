@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-  "_id": "ide-html@0.6.2",
+  "_from": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+  "_id": "ide-html@0.7.0",
   "_inBundle": false,
-  "_integrity": "sha512-OwodOVV1a3sPdqrbMYeIOtLEVivgxel59+MBA+JtBv7eKN6bLc70lEMw48lV71BSd7UPTYjyQ1oCLNb72nWmGg==",
+  "_integrity": "sha512-vFkFOYFKpqoH46jzuzcIQobziJc04FAeAN2PzAFw1974B9Nm3T4v8BMdQgjjJgQZ++qu8P5DH07/qhtMfgePHg==",
   "_location": "/ide-html",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball"
+    "raw": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-  "_shasum": "fcd19f19777a7ae1605d191d43d3dbdb94a29124",
-  "_spec": "https://www.atom.io/api/packages/ide-html/versions/0.6.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-33307-o9dr0c.nu83a",
+  "_resolved": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+  "_shasum": "4c905ad15bc78ce0336eb52fafd2b797840b3134",
+  "_spec": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202151-10309-1jhs7m2.kej4",
   "atomCommands": {
     "ide-html:help": "Provides help information and descriptions of commands.",
     "ide-html:open-settings": "Open settings page."
@@ -70,13 +70,13 @@
     }
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.8",
+    "atom-languageclient": "^1.10.0",
     "vscode-html-languageserver-bin": "^1.4.0"
   },
   "deprecated": false,
   "description": "Atom-IDE for HTML, Go Template, Mustache and other Templates",
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.27.0"
   },
   "engines": {
     "atom": ">=1.21.0"
@@ -136,8 +136,8 @@
     "url": "git+https://github.com/liuderchi/ide-html.git"
   },
   "scripts": {
-    "eslint": "eslint ./src",
-    "test": "npm run eslint"
+    "ci": "npm run lint",
+    "lint": "eslint ./src"
   },
-  "version": "0.6.2"
+  "version": "0.7.0"
 }
