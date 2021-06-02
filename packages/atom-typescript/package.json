@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-  "_id": "atom-typescript@14.2.1",
+  "_from": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+  "_id": "atom-typescript@14.3.1",
   "_inBundle": false,
-  "_integrity": "sha512-PscipimcFIq9LSpcylBrs03dTJXkBa2421YyZIfJQPC2YedLamGDjB6uZhKmFkuFZOws31fVOkzF5FfAQHBWLg==",
+  "_integrity": "sha512-bQoLZbcCjjtkXASn447pz3tqJ0UJLTCqiAoxvt+QOTHVYfi3QZV9v7S57zHdGweif4TC09s9K+94l3nRKWgdzg==",
   "_location": "/atom-typescript",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-  "_shasum": "bfcf8215867815045dad3accf75bf68e904cf5b1",
-  "_spec": "https://www.atom.io/api/packages/atom-typescript/versions/14.2.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-27372-1kk4opr.mr45",
+  "_resolved": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+  "_shasum": "1ad3682c7b979a0e280877c371e91abbf85bc10d",
+  "_spec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-202152-15718-1zny0q.u9uvh",
   "activationCommands": {
     "atom-workspace": [
       "typescript:initialize-config",
@@ -301,6 +301,13 @@
       ],
       "order": 140
     },
+    "extensionsFromGrammars": {
+      "title": "Determine file extensions from Atom grammar settings",
+      "description": "Pull recognized file extensions from grammar definitions matching the syntax scopes defined below",
+      "type": "boolean",
+      "default": true,
+      "order": 145
+    },
     "tsSyntaxScopes": {
       "title": "TypeScript syntax scopes",
       "description": "Comma-separated list of TypeScript syntax scopes; may require Atom restart to take effect; DO NOT EDIT unless you know what you are doing",
@@ -342,6 +349,27 @@
       "type": "boolean",
       "default": false,
       "order": 180
+    },
+    "longLineLength": {
+      "title": "Single line length that triggers semantic view large file optimizations",
+      "description": "Will throttle semantic view updates on the file if any one line is longer than this number; value of 0 means getting the value from the corresponding setting in linter-ui-default, or 4000 if that is unavaliable",
+      "type": "integer",
+      "default": 0,
+      "order": 200
+    },
+    "largeFileLineCount": {
+      "title": "Number of lines that triggers semantic view large file optimizations",
+      "description": "Will throttle semantic view updates on the file if it has more lines than this number; value of 0 means getting the value from the corresponding setting in linter-ui-default, or 500 if that is unavaliable",
+      "type": "integer",
+      "default": 0,
+      "order": 210
+    },
+    "largeFileNoFollowCursor": {
+      "title": "Disable semantic view focus following text cursor on large files",
+      "description": "If a file is large, as defined by previous options, don't update semantic view focus on text cursor moves; use typescript:reveal-in-semantic-view command instead",
+      "type": "boolean",
+      "default": false,
+      "order": 220
     }
   },
   "consumedServices": {
@@ -380,7 +408,7 @@
     "atomts-semantic-view/SemanticView": "deserializeSemanticView"
   },
   "devDependencies": {
-    "@parcel/transformer-typescript-tsc": "^2.0.0-beta.1",
+    "@parcel/transformer-typescript-tsc": "^2.0.0-beta.2",
     "@types/atom": "^1.40.10",
     "@types/byline": "^4.2.32",
     "@types/chai": "^4.2.15",
@@ -403,7 +431,7 @@
     "fuzzaldrin": "^2.1.0",
     "jsonc-parser": "^3.0.0",
     "lodash": "^4.17.21",
-    "parcel": "^2.0.0-beta.1",
+    "parcel": "^2.0.0-beta.2",
     "prettier": "^2.2.1",
     "resolve": "^1.20.0",
     "ts-node": "^9.1.1",
@@ -512,5 +540,5 @@
       "isLibrary": true
     }
   },
-  "version": "14.2.1"
+  "version": "14.3.1"
 }

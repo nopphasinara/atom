@@ -245,7 +245,6 @@
     ]
     reopenProjectMenuCount: 10
     restorePreviousWindowsOnStart: "always"
-    simpleFullScreenWindows: true
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -255,13 +254,11 @@
     uriHandlerRegistration: "never"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    lineHeight: 1.6
     maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
   filesize:

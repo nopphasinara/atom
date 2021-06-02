@@ -321,6 +321,35 @@ module.exports = [
         html: true,
         class: ['mdi', 'bg-highlight', 'fg-dark'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'remote-sync:download-file',
+            'shift': 'remote-sync:upload-file',
+        },
+        tooltip: 'Remote Sync',
+        text: '<i>󰈋</i>',
+        html: true,
+        show: {
+            function: () => {
+              var entries = atom.project.rootDirectories[0].getEntriesSync() || [];
+              if (typeof entries !== 'undefined' && entries.length) {
+                var filtered = entries.filter((item, i) => {
+                  if (item.getBaseName().toLowerCase() === '.remote-sync.json') {
+                    return true;
+                  }
+                  return false;
+                });
+
+                if (filtered.length) {
+                  return true;
+                }
+              }
+              return false;
+            },
+        },
+        class: ['mdi'],
+    },
     { type: 'spacer' },
     {
         type: 'button',
