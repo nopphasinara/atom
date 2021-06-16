@@ -1,19 +1,19 @@
 /* @flow */
 
-import { CompositeDisposable, Disposable } from 'sb-event-kit'
+import { CompositeDisposable, Disposable } from "sb-event-kit"
 
-import Commands from './commands'
-import ListView from './view-list'
-import ProvidersList from './providers-list'
-import ProvidersHighlight from './providers-highlight'
-import type { ListProvider, HighlightProvider } from './types'
+import Commands from "./commands"
+import ListView from "./view-list"
+import ProvidersList from "./providers-list"
+import ProvidersHighlight from "./providers-highlight"
+import type { ListProvider, HighlightProvider } from "./types"
 
 export default class Intentions {
-  active: ?Disposable;
-  commands: Commands;
-  providersList: ProvidersList;
-  providersHighlight: ProvidersHighlight;
-  subscriptions: CompositeDisposable;
+  active: ?Disposable
+  commands: Commands
+  providersList: ProvidersList
+  providersHighlight: ProvidersHighlight
+  subscriptions: CompositeDisposable
   constructor() {
     this.active = null
     this.commands = new Commands()
@@ -36,7 +36,7 @@ export default class Intentions {
       const subscriptions = new CompositeDisposable()
 
       listView.activate(textEditor, results)
-      listView.onDidSelect(function(intention) {
+      listView.onDidSelect(function (intention) {
         intention.selected()
         subscriptions.dispose()
       })
@@ -47,15 +47,21 @@ export default class Intentions {
           this.active = null
         }
       })
-      subscriptions.add(this.commands.onListMove(function(movement) {
-        listView.move(movement)
-      }))
-      subscriptions.add(this.commands.onListConfirm(function() {
-        listView.select()
-      }))
-      subscriptions.add(this.commands.onListHide(function() {
-        subscriptions.dispose()
-      }))
+      subscriptions.add(
+        this.commands.onListMove(function (movement) {
+          listView.move(movement)
+        })
+      )
+      subscriptions.add(
+        this.commands.onListConfirm(function () {
+          listView.select()
+        })
+      )
+      subscriptions.add(
+        this.commands.onListHide(function () {
+          subscriptions.dispose()
+        })
+      )
       this.active = subscriptions
       return true
     })
@@ -74,9 +80,11 @@ export default class Intentions {
           this.active = null
         }
       })
-      subscriptions.add(this.commands.onHighlightsHide(function() {
-        subscriptions.dispose()
-      }))
+      subscriptions.add(
+        this.commands.onHighlightsHide(function () {
+          subscriptions.dispose()
+        })
+      )
       subscriptions.add(painted)
       this.active = subscriptions
 

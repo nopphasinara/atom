@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-  "_id": "atom-ide-hyperclick@1.0.10",
+  "_from": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+  "_id": "atom-ide-hyperclick@1.0.11",
   "_inBundle": false,
-  "_integrity": "sha512-IzhDIBvJWXxYCiTVd61Zmi3IKB/u1cX0wBjg6z2dDEI2wa74tt18zk57yeS1M9udq1L+zMR7BU3AJN7tDzk8hg==",
+  "_integrity": "sha512-JwLwSAy5xDeeEK2VbGWiyRN7G08MhmlJshRFxzfmPRc5CGNhP5EE5x2KiTGghWUcEYxcbAXAfb5tysq6GBWW5Q==",
   "_location": "/atom-ide-hyperclick",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-  "_shasum": "fa128759dac7ed6635fbaaf3ed8fb2b8dff28de8",
-  "_spec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.10/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-23886-12lnn50.h5sp",
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+  "_shasum": "adbf3d04965c11bc4a2e7aa42c4bbe4b998b4370",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021516-15637-11nkfdc.uf5i",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -45,22 +45,22 @@
     }
   },
   "dependencies": {
-    "atom-ide-base": "^2.6.0",
+    "atom-ide-base": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rxjs": "^6.6.7"
+    "rxjs": "^7.1.0"
   },
   "deprecated": false,
   "description": "Hyperclick UI",
   "devDependencies": {
     "@types/atom": "^1.40.10",
-    "@types/node": "^14.14.41",
-    "atom-jasmine3-test-runner": "^5.2.2",
-    "eslint": "^7.25.0",
-    "eslint-config-atomic": "^1.14.2",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "@types/node": "^15.12.1",
+    "atom-jasmine3-test-runner": "^5.2.6",
+    "eslint": "^7.28.0",
+    "eslint-config-atomic": "^1.15.3",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.2"
   },
   "homepage": "https://github.com/atom-ide-community/atom-ide-hyperclick#readme",
   "main": "./lib/main.js",
@@ -85,5 +85,5 @@
     "test.format": "prettier . --check",
     "test.lint": "eslint ."
   },
-  "version": "1.0.10"
+  "version": "1.0.11"
 }

@@ -1,3 +1,5 @@
+const timeout = process.env.CI ? 50000 : 1000
+
 describe("tests", () => {
   const deps = [
     "atom-ide-markdown-service",
@@ -8,11 +10,10 @@ describe("tests", () => {
     "atom-ide-outline",
     "linter",
     "linter-ui-default",
+    "intentions",
   ]
 
-  beforeEach(async () => {
-    jasmine.attachToDOM(atom.views.getView(atom.workspace))
-
+  beforeAll(async () => {
     /*    Activation     */
     // Trigger deferred activation
     atom.packages.triggerDeferredActivationHooks()
@@ -21,19 +22,18 @@ describe("tests", () => {
 
     // Activate the package
     await atom.packages.activatePackage("atom-ide-base")
-  })
-
-  it("Installation", async function () {
-    expect(atom.packages.isPackageLoaded("atom-ide-base")).toBeTruthy()
-    const allDeps = atom.packages.getAvailablePackageNames()
-    deps.forEach((dep) => {
-      expect(allDeps.includes(dep)).toBeTruthy()
+    // wait until package-deps installs the deps
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve()
+      }, timeout)
     })
-  })
+  }, timeout + 1000)
 
-  it("Activation", async function () {
-    expect(atom.packages.isPackageLoaded("atom-ide-base")).toBeTruthy()
+  it("Installation", function () {
+    const allPackages = atom.packages.getAvailablePackageNames()
     deps.forEach(async (dep) => {
+      expect(allPackages.includes(dep)).toBeTruthy()
       await atom.packages.activatePackage(dep)
       expect(atom.packages.isPackageLoaded(dep)).toBeTruthy()
     })

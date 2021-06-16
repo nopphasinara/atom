@@ -1,16 +1,16 @@
 /* @flow */
 
-import { CompositeDisposable, Emitter } from 'sb-event-kit'
-import type { Disposable } from 'sb-event-kit'
-import type { TextEditor } from 'atom'
+import { CompositeDisposable, Emitter } from "sb-event-kit"
+import type { Disposable } from "sb-event-kit"
+import type { TextEditor } from "atom"
 
-import ListElement from './elements/list'
-import type { ListItem, ListMovement } from './types'
+import ListElement from "./elements/list"
+import type { ListItem, ListMovement } from "./types"
 
 export default class ListView {
-  emitter: Emitter;
-  element: ListElement;
-  subscriptions: CompositeDisposable;
+  emitter: Emitter
+  element: ListElement
+  subscriptions: CompositeDisposable
 
   constructor() {
     this.emitter = new Emitter()
@@ -22,18 +22,20 @@ export default class ListView {
   }
   activate(editor: TextEditor, suggestions: Array<ListItem>) {
     this.element.render(suggestions, (selected) => {
-      this.emitter.emit('did-select', selected)
+      this.emitter.emit("did-select", selected)
       this.dispose()
     })
-    this.element.move('move-to-top')
+    this.element.move("move-to-top")
 
     const bufferPosition = editor.getCursorBufferPosition()
-    const marker = editor.markBufferRange([bufferPosition, bufferPosition], { invalidate: 'never' })
+    const marker = editor.markBufferRange([bufferPosition, bufferPosition], {
+      invalidate: "never",
+    })
     editor.decorateMarker(marker, {
-      type: 'overlay',
+      type: "overlay",
       item: this.element,
     })
-    this.subscriptions.add(function() {
+    this.subscriptions.add(function () {
       marker.destroy()
     })
   }
@@ -44,7 +46,7 @@ export default class ListView {
     this.element.select()
   }
   onDidSelect(callback: Function): Disposable {
-    return this.emitter.on('did-select', callback)
+    return this.emitter.on("did-select", callback)
   }
   dispose() {
     this.subscriptions.dispose()

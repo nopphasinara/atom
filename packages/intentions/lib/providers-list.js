@@ -1,13 +1,13 @@
 /* @flow */
 
-import type { TextEditor } from 'atom'
-import { processListItems } from './helpers'
-import { provider as validateProvider, suggestionsList as validateSuggestions } from './validate'
-import type { ListProvider, ListItem } from './types'
+import type { TextEditor } from "atom"
+import { processListItems } from "./helpers"
+import { provider as validateProvider, suggestionsList as validateSuggestions } from "./validate"
+import type { ListProvider, ListItem } from "./types"
 
 export default class ProvidersList {
-  number: number;
-  providers: Set<ListProvider>;
+  number: number
+  providers: Set<ListProvider>
 
   constructor() {
     this.number = 0
@@ -36,24 +36,26 @@ export default class ProvidersList {
     }
 
     const scopes = textEditor.scopeDescriptorForBufferPosition(bufferPosition).getScopesArray()
-    scopes.push('*')
+    scopes.push("*")
 
     const promises = []
-    this.providers.forEach(function(provider) {
-      if (scopes.some(scope => provider.grammarScopes.indexOf(scope) !== -1)) {
-        promises.push(new Promise(function(resolve) {
-          resolve(provider.getIntentions({ textEditor, bufferPosition }))
-        }).then(function(results) {
-          if (atom.inDevMode()) {
-            validateSuggestions(results)
-          }
-          return results
-        }))
+    this.providers.forEach(function (provider) {
+      if (scopes.some((scope) => provider.grammarScopes.indexOf(scope) !== -1)) {
+        promises.push(
+          new Promise(function (resolve) {
+            resolve(provider.getIntentions({ textEditor, bufferPosition }))
+          }).then(function (results) {
+            if (atom.inDevMode()) {
+              validateSuggestions(results)
+            }
+            return results
+          })
+        )
       }
     })
 
     const number = ++this.number
-    const results = (await Promise.all(promises)).reduce(function(items, item) {
+    const results = (await Promise.all(promises)).reduce(function (items, item) {
       if (Array.isArray(item)) {
         return items.concat(item)
       }

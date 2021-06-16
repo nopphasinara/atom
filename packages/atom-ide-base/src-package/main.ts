@@ -9,8 +9,8 @@ export function activate() {
   // Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
   subscriptions = new CompositeDisposable()
 
-  package_deps().then(() => {
-    // do package stuff here
+  package_deps().catch((e) => {
+    atom.notifications.addError(e)
   })
 }
 
@@ -18,10 +18,6 @@ export function activate() {
  * install Atom package dependencies if not already loaded
  */
 async function package_deps() {
-  if (atom.packages.isPackageLoaded("intentions")) {
-    atom.packages.disablePackage("intentions")
-  }
-
   // Add entries from package-deps here manually
   // (to prevent loading atom-package-deps and package.json when the deps are already loaded)
   const deps = [
@@ -33,10 +29,11 @@ async function package_deps() {
     "atom-ide-outline",
     "linter",
     "linter-ui-default",
+    "intentions",
   ]
   if (deps.some((p) => !atom.packages.isPackageLoaded(p))) {
     // install if not installed
-    require("atom-package-deps").install("atom-ide-base", true)
+    await (await import("atom-package-deps")).install("atom-ide-base", true)
     // enable if disabled
     deps
       .filter((p) => !atom.packages.isPackageLoaded(p))

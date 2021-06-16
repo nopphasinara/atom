@@ -1,27 +1,27 @@
 {
-  "_from": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-  "_id": "tool-bar@1.4.2",
+  "_from": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+  "_id": "tool-bar@1.4.4",
   "_inBundle": false,
-  "_integrity": "sha512-Q3Ukycgao0wepGZd9GcSwcevWhl9yE/X+xmZ2TXj5YISyLsw6L49RSXLe+wq1IsFOzoPDHKFtH7Xn5qPwg+myg==",
+  "_integrity": "sha512-aSBrPikjtli4P2Swge2xdAagsJ7k1RlHhIzMa8emiROskR5GOjmc/hHvY8jI+lydcurLG989WOu28TfDYJS2UQ==",
   "_location": "/tool-bar",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball"
+    "raw": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-  "_shasum": "6e7d94e6ebbe429877132d0ea4580910f803be8e",
-  "_spec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-49772-1kxrym6.gmdrh",
+  "_resolved": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+  "_shasum": "ca8d8968d7c289077d99797241b169db71386bc8",
+  "_spec": "https://www.atom.io/api/packages/tool-bar/versions/1.4.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021516-15637-1mpt1ba.0iuq",
   "bugs": {
-    "url": "https://github.com/suda/toolbar/issues"
+    "url": "https://github.com/atom-community/tool-bar/issues"
   },
   "bundleDependencies": false,
   "deprecated": false,
@@ -35,7 +35,8 @@
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@types/atom": "latest",
     "babel-eslint": "^10.1.0",
-    "build-commit": "^0.1.1",
+    "build-commit": "^0.1.4",
+    "cross-env": "^7.0.3",
     "csso-cli": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-json": "^2.1.1",
@@ -51,7 +52,7 @@
   "engines": {
     "atom": ">=1.20.0"
   },
-  "homepage": "https://github.com/suda/toolbar#readme",
+  "homepage": "https://github.com/atom-community/tool-bar#readme",
   "keywords": [
     "toolbar",
     "tool-bar",
@@ -70,17 +71,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suda/toolbar.git"
+    "url": "git+https://github.com/atom-community/tool-bar.git"
   },
   "scripts": {
-    "build": "npm run clean && env NODE_ENV=production env BABEL_ENV=production rollup -c",
+    "build": "npm run clean && cross-env NODE_ENV=production cross-env BABEL_ENV=production rollup -c",
     "build-commit": "build-commit -o dist",
     "clean": "shx rm -rf dist",
-    "debug": "npm run clean && shx cp -r src dist && env NODE_ENV=development env BABEL_ENV=development babel dist --out-dir dist",
-    "dev": "npm run clean && env NODE_ENV=development env BABEL_ENV=production rollup -c -w",
+    "debug": "npm run clean && shx cp -r src dist && cross-env NODE_ENV=development cross-env BABEL_ENV=development babel dist --out-dir dist",
+    "dev": "npm run clean && cross-env NODE_ENV=development cross-env BABEL_ENV=production rollup -c -w",
     "lint": "eslint . --fix --ext js,json && remark *.md",
     "prepare": "npm run build",
     "test": "atom --test spec"
   },
-  "version": "1.4.2"
+  "version": "1.4.4"
 }

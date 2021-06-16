@@ -1,8 +1,8 @@
 /* @flow */
 
-import { Disposable } from 'atom'
-import Intentions from './main'
-import type { ListProvider, HighlightProvider } from './types'
+import { Disposable } from "atom"
+import Intentions from "./main"
+import type { ListProvider, HighlightProvider } from "./types"
 
 export default {
   activate() {

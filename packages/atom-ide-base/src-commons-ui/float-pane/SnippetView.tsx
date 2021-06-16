@@ -1,4 +1,4 @@
-import * as React from "react"
+import { createSignal, onMount } from "solid-js"
 import DOMPurify from "dompurify"
 import { MarkdownService } from "../../types-packages/main"
 import { getMarkdownRenderer } from "../MarkdownRenderer"
@@ -11,45 +11,32 @@ export interface Props {
   contentClassName: string
 }
 
-interface State {
-  snippet: string
-}
-
 /**
  * A React component that hosts a code snippet with syntax highlighting
  */
-export class SnippetView extends React.Component<Props, State> {
-  state = { snippet: "" }
+export function SnippetView(props: Props) {
+  const [getSnippet, setSnippet] = createSignal("")
 
-  render() {
-    return (
-      <div className={this.props.containerClassName} onWheel={(e) => this.onMouseWheel(e)}>
-        <div
-          className={this.props.contentClassName}
-          dangerouslySetInnerHTML={{
-            __html: this.state.snippet,
-          }}
-        />
-      </div>
-    )
-  }
+  onMount(async () => {
+    setSnippet((await getSnippetHtml(props.snippet, props.grammarName, props.renderer)) ?? "")
+  })
 
-  /**
-   * handles the mouse wheel event to enable scrolling over long text
-   * @param evt the mouse wheel event being triggered
-   */
-  onMouseWheel(evt: React.WheelEvent) {
-    evt.stopPropagation()
-  }
-
-  async componentDidMount() {
-    this.setState({
-      snippet: (await getSnippetHtml(this.props.snippet, this.props.grammarName, this.props.renderer)) ?? "",
-    })
-  }
+  return (
+    <div className={props.containerClassName} onWheel={onWheel}>
+      <div className={props.contentClassName} innerHTML={getSnippet()} />
+    </div>
+  )
 }
 
-const regexPremeable = /^\s*<(\?|!)([a-zA-Z]+)?\s*/i
+/**
+ * handles the mouse wheel event to enable scrolling over long text
+ * @param evt the mouse wheel event being triggered
+ */
+function onWheel(evt: WheelEvent) {
+  return evt.stopPropagation()
+}
+
+const regexPremeable = /^\s*<([!?])([a-z]+)?\s*/i
 const regexLSPPrefix = /^\((method|property|parameter|alias)\)\W/
 
 /**
@@ -60,13 +47,14 @@ const regexLSPPrefix = /^\((method|property|parameter|alias)\)\W/
  * @return a promise object to track the asynchronous operation
  */
 export async function getSnippetHtml(
-  snippets: Array<string> | string,
+  snipetsGiven: Array<string> | string,
   grammarName: string = atom.workspace.getActiveTextEditor()?.getGrammar().scopeName?.toLowerCase() || "",
   renderer?: MarkdownService
 ): Promise<string | null> {
-  if (snippets === undefined) {
+  if (snipetsGiven === undefined) {
     return null
   }
+  let snippets = snipetsGiven
 
   // if string
   if (typeof snippets === "string") {
@@ -80,10 +68,10 @@ export async function getSnippetHtml(
     }
     const markdown = snippets
       .map((snippet) => {
-        snippet = snippet
+        const snp = snippet
           .replace(regexPremeable, "") // remove any preamble from the line
           .replace(regexLSPPrefix, "") // remove LSP prefix
-        return `\`\`\`\n${snippet}\n\`\`\``
+        return `\`\`\`\n${snp}\n\`\`\``
       })
       .join("\n")
 
@@ -92,7 +80,7 @@ export async function getSnippetHtml(
     } else {
       // Use built-in markdown renderer (it already does sanitization)
       const render = await getMarkdownRenderer()
-      return await render(markdown, grammarName)
+      return render(markdown, grammarName)
     }
   } else {
     return null

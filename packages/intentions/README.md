@@ -1,17 +1,13 @@
-Intentions
-=========
+# Intentions
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/intentions.svg)](https://greenkeeper.io/)
+[![CI](https://github.com/steelbrain/intentions/actions/workflows/CI.yml/badge.svg)](https://github.com/steelbrain/intentions/actions/workflows/CI.yml)
 
 Intentions is a base package that provides an easy-to-use API to show intentions based in Atom.
 
 #### Usage
 
-The default keybinding on OSX to trigger list is `ctrl` + `enter`. If you want to trigger intentions highlights,
-press `alt`.
-
-The default keybinding on Windows and Linux to trigger list is `alt` + `enter`. If you want to trigger intentions
-highlights press `ctrl`.
+- Use <kbd>ALT</kbd>+<kbd>ENTER</kbd> to open the intensions list and press <kbd>ENTER</kbd> (or select by mouse) to choose the action.
+- To see the all available actions hold <kbd>CTRL</kbd> (<kbd>⌘</kbd> on macOS).
 
 #### APIs
 
@@ -29,4 +25,5 @@ Here is what it looks like
 You can find docs about both of these in [Intentions Wiki](https://github.com/steelbrain/intentions/wiki/Intentions-API)
 
 #### License
+
 This package is licensed under the terms of MIT License, see the license file for more info.

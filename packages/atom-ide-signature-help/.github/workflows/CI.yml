@@ -44,20 +44,14 @@ jobs:
       - name: Commit lint ✨
         uses: wagoid/commitlint-github-action@v2
 
-      - uses: UziTech/action-setup-atom@v1
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v1.2.1
-        with:
-          version: latest
-
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Format ✨
-        run: pnpm test.format
+        run: npm run test.format
 
       # - name: Lint ✨
-      #   run: pnpm test.lint
+      #   run: npm run test.lint
 
   Release:
     needs: [Test, Lint]
@@ -72,8 +66,8 @@ jobs:
           node-version: "12.x"
       - name: NPM install
         run: npm install
-      # - name: Build and Commit
-      #   run: npm run build-commit
+      - name: Build and Commit
+        run: npm run build-commit
       - name: Release 🎉
         uses: cycjimmy/semantic-release-action@v2
         with:
