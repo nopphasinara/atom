@@ -137,6 +137,10 @@ function requireFromAtomPackage(filepath) {
   return require(resolveFilepath);
 }
 
+function getAtomHomePath() {
+  return atom.getLoadSettings().atomHome || undefined;
+}
+
 
 let globalFunctions = {
   isTextEditor,
@@ -148,6 +152,7 @@ let globalFunctions = {
   requireFromPackage,
   requireFromAtom,
   requireFromAtomPackage,
+  getAtomHomePath,
 };
 Object.assign(global, globalFunctions);
 Object.assign(window, globalFunctions);

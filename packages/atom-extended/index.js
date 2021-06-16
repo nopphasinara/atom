@@ -68,6 +68,7 @@ var utils = {
 
 };
 
+
 atom.packages.onDidActivateInitialPackages(() => {
 
   console.log(atom.packages);
