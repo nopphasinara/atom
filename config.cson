@@ -2,8 +2,7 @@
   "advanced-open-file":
     defaultInputValue: "Empty"
     fuzzyMatch: true
-  "atom-autocomplete-php":
-    binPhp: "/usr/local/bin/php"
+  "atom-autocomplete-php": {}
   "atom-beautify":
     executables:
       php:
@@ -83,15 +82,14 @@
       "css-hyperclick"
       "atom-beautify"
       "atom-minify"
-      "git-history"
       "python-snippets"
-      "atom-autocomplete-php"
       "autocomplete-module-import"
       "autocomplete-sql"
       "blade-snippets"
       "css-snippets"
       "es6-javascript"
       "laravel-snippets"
+      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"

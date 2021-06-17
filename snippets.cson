@@ -295,6 +295,13 @@
 
 
   ".text.html.php": {
+    "echo": {
+      "prefix": "ec",
+      "body": """
+      <?php echo ${2:'${1:foobar}'};${3:} ?>$0
+      """,
+    },
+
     "<?php ...": {
       "prefix": "ph",
       "body": """
@@ -307,6 +314,13 @@
 
 
   ".source.php": {
+    "echo": {
+      "prefix": "ec",
+      "body": """
+      echo '${1:foobar}';$0
+      """,
+    },
+
     "if function exists": {
       "prefix": "if-fne",
       "body": """
