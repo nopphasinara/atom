@@ -314,6 +314,15 @@
 
 
   ".source.php": {
+    "foreach": {
+      "prefix": "fore",
+      "body": """
+      foreach (${1:\\$variable} as ${2:${3:\\$key}${4: => ${5:\\$value}}}) {
+        ${6:}
+      \\}$0
+      """,
+    },
+
     "echo": {
       "prefix": "ec",
       "body": """
