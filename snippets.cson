@@ -315,10 +315,21 @@
 
   ".source.php": {
     "foreach": {
-      "prefix": "fore",
+      "prefix": "foreach",
       "body": """
       foreach (${1:\\$variable} as ${2:${3:\\$key}${4: => ${5:\\$value}}}) {
         ${6:}
+      \\}$0
+      """,
+    },
+
+    "try...finally": {
+      "prefix": "try-finally",
+      "body": """
+      try {
+        ${1:}
+      \\} finally {
+        ${2:}
       \\}$0
       """,
     },
