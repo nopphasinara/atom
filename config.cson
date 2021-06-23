@@ -2,7 +2,8 @@
   "advanced-open-file":
     defaultInputValue: "Empty"
     fuzzyMatch: true
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
   "atom-beautify":
     executables:
       php:
@@ -13,6 +14,7 @@
       beautifyEntireFileOnSave: false
   "atom-ide-datatip":
     hoverTime: 50
+    showDataTipOnMouseMove: false
   "atom-ide-hyperclick":
     darwinTriggerKeys: "altKey"
   "atom-ide-outline":
