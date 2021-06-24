@@ -1,0 +1,129 @@
+<?php
+
+function redisFreshUpdate($redis) {
+  $redis->del('painting-*');
+  $redis->hDel('hash-*');
+
+  $handle = fopen(__DIR__ . '/../../catalogue/data.log', 'r');
+  while (($line = fgets($handle)) !== false) {
+    $line = htmlentities(nl2br(trim(html_entity_decode(trim(htmlspecialchars_decode(trim($line)))))));
+    if ($line) {
+      $line = array_combine([
+        'id',
+        'small_image',
+        'large_image',
+        'artist',
+        'refno',
+        'size',
+        'description',
+        'price',
+        'title',
+        'display',
+        'category',
+        'keywords',
+        'special_offer',
+        'special_price',
+        'special_size',
+        'comments',
+        'gallery_name',
+        'height',
+        'width',
+        'az_letter',
+        'artist_reverse',
+        'az_image',
+        'artist_bio',
+        'specials',
+        'bestseller',
+        'new',
+        'gallery',
+        'special_height',
+        'special_width',
+        'colors',
+        'orientation',
+        'subjects',
+        'multiple_purchase',
+        'owner',
+      ], explode('::', $line));
+      $id = $line['id'];
+      foreach ($line as $key => $value) {
+        $line[$key] = nl2br(trim($value));
+
+        $redis->hSet('hash-' . $id, $key, $value);
+      }
+      $redis->set('painting-' . $id, $line);
+      // echo '<pre>'; print_r($line); echo '</pre>';
+    }
+  }
+  fclose($handle);
+}
+
+
+// Create Redis instance and connecting to Redis server on localhost
+$redis = new Redis();
+$redis->connect('127.0.0.1', 6379);
+
+if ($redis->ping()) {
+  $redis->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
+
+  redisFreshUpdate($redis);
+
+  // echo '<pre>'; print_r($redis->exists('painting-1343725016')); echo '</pre>';
+  echo '<pre>'; print_r($redis->hGet('hash-1343725016')); echo '</pre>';
+  // echo '<pre>'; print_r($redis->mGet($redis->keys('painting-*'))); echo '</pre>';
+
+  // $data = $redis->get('painting-*');
+  // echo '<pre>'; print_r($data); echo '</pre>';
+
+  // $it = NULL;
+  // /* Don't ever return an empty array until we're done iterating */
+  // $redis->setOption(Redis::OPT_SCAN, Redis::SCAN_RETRY);
+  // while($arr_keys = $redis->hScan('paintings', $it)) {
+  //   foreach($arr_keys as $str_field => $str_value) {
+  //     echo "$str_field => $str_value\n"; /* Print the hash member and value */
+  //   }
+  // }
+
+  // echo '<pre>'; print_r($redis->hGet('paintings', 1009600358)); echo '</pre>';
+  // echo '<pre>'; print_r($redis->hLen('paintings')); echo '</pre>';
+  // $result = $redis->hKeys('paintings');
+  // asort($result);
+  // echo '<pre>'; print_r($result); echo '</pre>';
+
+
+  // Will set the key, if it doesn't exist, with a ttl of 10 seconds
+  // $redis->set('key', 'value', ['nx', 'ex'=>10]);
+  // $redis->pSetEx('key', 100, 'value'); // sets key → value, with 0.1 sec TTL.
+  // $redis->setNx('key', 'value'); /* return TRUE */
+  // $exValue = $redis->getSet('x', 'lol');	// return '42', replaces x by 'lol'
+  // $newValue = $redis->get('x')'		// return 'lol'
+  // $redis->select(0);	// switch to DB 0
+  // $redis->set('x', '42');	// write 42 to x
+  // $redis->move('x', 1);	// move to DB 1
+  // $redis->select(1);	// switch to DB 1
+  // $redis->get('x');	// will return 42
+
+  // echo '<pre>'; print_r($redis->restore('bar', 0, $redis->dump('painting-1009616145'))); echo '</pre>';
+  // echo '<pre>'; print_r($redis->dump('painting-1009616145')); echo '</pre>';
+  // echo '<pre>'; print_r($redis->randomKey()); echo '</pre>';
+  // echo '<pre>'; print_r($redis->lastSave()); echo '</pre>';
+  // echo '<pre>'; print_r($redis->dbSize()); echo '</pre>';
+  // echo '<pre>'; print_r($redis->get('painting-1009616145')); echo '</pre>';
+}
+
+// $data = $redis->mget('painting-*');
+//
+// foreach ($data as $key => $value) {
+//   echo '<pre>'; print_r($key); echo '</pre>';
+// }
+//
+//
+// // // Check whether id is exists
+// // $id = 'painting-1009616145';
+// // if ($redis->exists($id)) {
+// //   $painting = $redis->get($id);
+// //   $painting = json_encode(unserialize($painting), JSON_PRETTY_PRINT);
+// //
+// //   echo '<pre>'; print_r($painting); echo '</pre>';
+// // } else {
+// //   echo '<pre>'; print_r('Not found'); echo '</pre>';
+// // }

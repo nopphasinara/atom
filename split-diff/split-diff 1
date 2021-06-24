@@ -1,0 +1,29 @@
+<?php
+
+define('HTTPDOCS', $_SERVER['DOCUMENT_ROOT'] . '/');
+
+// This file contain all functions needed for _get_paintings2 function
+// copied from included files into here.
+require HTTPDOCS . 'get-paintings/included.php';
+
+
+// Contain codes to work with DB to get configs for phpmailer, phone number,
+// address and etc, required by init.php.
+require HTTPDOCS . 'libraries/Database.class.php';
+require HTTPDOCS . 'init.php';
+
+
+require HTTPDOCS . 'libraries/new-helper-functions.php';
+
+
+$redis = new Redis();
+$redis->connect('127.0.0.1', 6379);
+
+$redis->del('paintings');
+
+foreach (getPaintings() as $key => $painting) {
+  $redis->hSet('paintings', $painting['id'], $painting);
+  // echo '<pre>'; print_r($painting); echo '</pre>';
+}
+
+echo '<pre>'; print_r($redis->hGet('paintings', 1009600358)); echo '</pre>';
