@@ -198,6 +198,14 @@
     ]
   }
   {
+    title: "oshjosh.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/oshjosh.com"
+      "/Volumes/Storage/Projects/controls"
+    ]
+  }
+  {
     title: "rimtalay-resort.com"
     group: "WWW"
     paths: [
