@@ -302,6 +302,7 @@
     keepFileExtension: true
   "linter-ui-default":
     panelHeight: 300
+    showDecorations: false
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
