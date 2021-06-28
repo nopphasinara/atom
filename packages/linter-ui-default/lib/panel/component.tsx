@@ -9,7 +9,7 @@ type Props = {
 }
 
 export function PanelComponent(props: Props) {
-  const [getMessages, setMessages] = createSignal(props.delegate.filteredMessages)
+  const [getMessages, setMessages] = createSignal(props.delegate.filteredMessages, false)
 
   onMount(() => {
     props.delegate.onDidChangeMessages(messages => {
@@ -68,7 +68,7 @@ function bodyRenderer(row: LinterMessage, column: string): string | HTMLElement 
   }
 }
 
-function onClick(e: MouseEvent, row: LinterMessage) {
+async function onClick(e: MouseEvent, row: LinterMessage) {
   if ((e.target as HTMLElement).tagName === 'A') {
     return
   }
@@ -76,9 +76,9 @@ function onClick(e: MouseEvent, row: LinterMessage) {
     if (e.shiftKey) {
       openExternally(row)
     } else {
-      visitMessage(row, true)
+      await visitMessage(row, true)
     }
   } else {
-    visitMessage(row)
+    await visitMessage(row)
   }
 }

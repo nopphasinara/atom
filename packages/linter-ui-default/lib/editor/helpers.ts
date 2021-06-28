@@ -1,5 +1,5 @@
 import type { Point, TextEditor, TextEditorElement, PointLike } from 'atom'
-import type TooltipElement from '../tooltip/index'
+import type Tooltip from '../tooltip/index'
 
 const TOOLTIP_WIDTH_HIDE_OFFSET = 30
 
@@ -8,8 +8,9 @@ export function getBufferPositionFromMouseEvent(
   editor: TextEditor,
   editorElement: TextEditorElement,
 ): Point | null {
-  const pixelPosition = editorElement.getComponent().pixelPositionForMouseEvent(event)
-  const screenPosition = editorElement.getComponent().screenPositionForPixelPosition(pixelPosition)
+  const editorComponent = editorElement.getComponent()
+  const pixelPosition = editorComponent.pixelPositionForMouseEvent(event)
+  const screenPosition = editorComponent.screenPositionForPixelPosition(pixelPosition)
   if (Number.isNaN(screenPosition.row) || Number.isNaN(screenPosition.column)) {
     return null
   }
@@ -37,7 +38,7 @@ export function mouseEventNearPosition({
   event: { clientX: number; clientY: number }
   editor: TextEditor
   editorElement: TextEditorElement
-  tooltipElement: TooltipElement['element']
+  tooltipElement: Tooltip['element']
   screenPosition: PointLike
 }): boolean {
   const pixelPosition = editorElement.getComponent().pixelPositionForMouseEvent(event)
@@ -49,38 +50,28 @@ export function mouseEventNearPosition({
   const elementHeight = tooltipElement.offsetHeight + editorLineHeight
   const elementWidth = tooltipElement.offsetWidth
 
-  if (differenceTop > 0) {
-    // Cursor is below the line
-    if (differenceTop > elementHeight + 1.5 * editorLineHeight) {
-      return false
-    }
-  } else if (differenceTop < 0) {
-    // Cursor is above the line
-    if (differenceTop < -1.5 * editorLineHeight) {
-      return false
-    }
-  }
-  if (differenceLeft > 0) {
-    // Right of the start of highlight
-    if (differenceLeft > elementWidth + TOOLTIP_WIDTH_HIDE_OFFSET) {
-      return false
-    }
-  } else if (differenceLeft < 0) {
-    // Left of start of highlight
-    if (differenceLeft < -1 * TOOLTIP_WIDTH_HIDE_OFFSET) {
-      return false
-    }
+  if (
+    /* Cursor is below the line*/ (differenceTop > 0 && differenceTop > elementHeight + 1.5 * editorLineHeight) ||
+    /* Cursor is above the line */ (differenceTop < 0 && differenceTop < -1.5 * editorLineHeight) ||
+    /* Right of the start of highlight */ (differenceLeft > 0 &&
+      differenceLeft > elementWidth + TOOLTIP_WIDTH_HIDE_OFFSET) ||
+    /* Left of start of highlight */ (differenceTop < 0 && differenceLeft < -1 * TOOLTIP_WIDTH_HIDE_OFFSET)
+  ) {
+    return false
   }
   return true
 }
 
-export function hasParent(givenElement: HTMLElement, selector: string): boolean {
+export function hasParent(givenElement: HTMLElement | null, selector: string): boolean {
   let element: HTMLElement | null = givenElement
+  if (element === null) {
+    return false
+  }
   do {
     if (element.matches(selector)) {
       return true
     }
     element = element.parentElement
-  } while (element && element.nodeName !== 'HTML')
+  } while (element !== null && element.nodeName !== 'HTML')
   return false
 }

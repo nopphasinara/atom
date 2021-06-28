@@ -16,7 +16,7 @@
     "inlineSourceMap": false,
     "inlineSources": true,
     "preserveSymlinks": true,
-    "removeComments": true,
+    "removeComments": false,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "lib": ["ES2018", "dom"],
@@ -27,7 +27,12 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "importHelpers": false,
-    "outDir": "../dist"
+    "outDir": "../dist",
+    "paths": {
+      "solid-js": ["../node_modules/solid-js/types/index.d.ts"],
+      "solid-js/web": ["../node_modules/solid-js/web/types/index.d.ts"]
+    }
   },
-  "compileOnSave": false
+  "compileOnSave": false,
+  "exclude": ["types/linter/**/*"]
 }

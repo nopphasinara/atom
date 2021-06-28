@@ -1,5 +1,6 @@
 /* @flow */
-
+// eslint-disable-next-line import/no-unassigned-import
+import 'module-alias/register'
 import { Range } from 'atom'
 // eslint-disable-next-line no-unused-vars
 import { it, beforeEach, afterEach } from 'jasmine-fix'
@@ -33,17 +34,17 @@ describe('Editor', function () {
     atom.workspace.destroyActivePaneItem()
   })
 
-  describe('apply', function () {
+  describe('applyChanges', function () {
     it('applies the messages to the editor', function () {
       expect(textEditor.getBuffer().getMarkerCount()).toBe(0)
-      editor.apply([message], [])
+      editor.applyChanges([message], [])
       expect(textEditor.getBuffer().getMarkerCount()).toBe(1)
-      editor.apply([], [message])
+      editor.applyChanges([], [message])
       expect(textEditor.getBuffer().getMarkerCount()).toBe(0)
     })
     it('makes sure that the message is updated if text is manipulated', function () {
       expect(textEditor.getBuffer().getMarkerCount()).toBe(0)
-      editor.apply([message], [])
+      editor.applyChanges([message], [])
       expect(textEditor.getBuffer().getMarkerCount()).toBe(1)
       expect(Range.fromObject(message.location.position)).toEqual({
         start: { row: 2, column: 0 },
@@ -54,7 +55,7 @@ describe('Editor', function () {
         start: { row: 2, column: 0 },
         end: { row: 2, column: 6 },
       })
-      editor.apply([], [message])
+      editor.applyChanges([], [message])
       expect(Range.fromObject(message.location.position)).toEqual({
         start: { row: 2, column: 0 },
         end: { row: 2, column: 6 },

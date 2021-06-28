@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-  "_id": "atom-typescript@14.3.1",
+  "_from": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+  "_id": "atom-typescript@14.3.2",
   "_inBundle": false,
-  "_integrity": "sha512-bQoLZbcCjjtkXASn447pz3tqJ0UJLTCqiAoxvt+QOTHVYfi3QZV9v7S57zHdGweif4TC09s9K+94l3nRKWgdzg==",
+  "_integrity": "sha512-birEDaSU1xqp7TawMkAQvp52ZnT5ThAQwcAhgHxqsK/0kXbXz1MtDXINFIiAPe9Odf4OObEiDLPn/V6egb2s8w==",
   "_location": "/atom-typescript",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-  "_shasum": "1ad3682c7b979a0e280877c371e91abbf85bc10d",
-  "_spec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-202152-15718-1zny0q.u9uvh",
+  "_resolved": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+  "_shasum": "c70e16772c86e3424309e02119621df73aab64ec",
+  "_spec": "https://www.atom.io/api/packages/atom-typescript/versions/14.3.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021528-2094-1kqj3d4.l698",
   "activationCommands": {
     "atom-workspace": [
       "typescript:initialize-config",
@@ -540,5 +540,5 @@
       "isLibrary": true
     }
   },
-  "version": "14.3.1"
+  "version": "14.3.2"
 }

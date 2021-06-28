@@ -1,5 +1,7 @@
 import { CompositeDisposable, Emitter } from 'atom'
+const { config, workspace, views, commands } = atom
 import type { Disposable } from 'atom'
+import { CommandEventExtra } from '../types'
 
 export default class TooltipDelegate {
   emitter: Emitter = new Emitter<{
@@ -14,15 +16,15 @@ export default class TooltipDelegate {
   constructor() {
     this.subscriptions.add(
       this.emitter,
-      atom.config.observe('linter-ui-default.showProviderName', showProviderName => {
+      config.observe('linter-ui-default.showProviderName', (showProviderName: boolean) => {
         const shouldUpdate = typeof this.showProviderName !== 'undefined'
         this.showProviderName = showProviderName
         if (shouldUpdate) {
           this.emitter.emit('should-update')
         }
       }),
-      atom.commands.add('atom-workspace', {
-        'linter-ui-default:expand-tooltip': event => {
+      commands.add('atom-workspace', {
+        'linter-ui-default:expand-tooltip': (event: CommandEventExtra) => {
           if (this.expanded) {
             return
           }
@@ -30,14 +32,14 @@ export default class TooltipDelegate {
           this.emitter.emit('should-expand')
 
           // If bound to a key, collapse when that key is released, just like old times
-          if (event?.originalEvent?.isTrusted) {
+          if (event.originalEvent?.isTrusted === true) {
             // $FlowIgnore: document.body is never null
             document.body.addEventListener(
               'keyup',
-              function eventListener() {
+              async function eventListener() {
                 // $FlowIgnore: document.body is never null
                 document.body.removeEventListener('keyup', eventListener)
-                atom.commands.dispatch(atom.views.getView(atom.workspace), 'linter-ui-default:collapse-tooltip')
+                await commands.dispatch(views.getView(workspace), 'linter-ui-default:collapse-tooltip')
               },
               { passive: true },
             )

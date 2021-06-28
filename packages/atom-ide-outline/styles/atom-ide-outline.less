@@ -74,6 +74,10 @@
       li[cursorOn] {
         contain: @contain_except_size;
         background: @background-color-highlight;
+
+        &.after-border {
+          border-bottom: 1px solid #71844c;
+        }
       }
     }
 
@@ -230,6 +234,9 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
+    padding: 8px 15px;
+  }
+  .outline-searchbar {
     padding: 8px 15px;
   }
 }

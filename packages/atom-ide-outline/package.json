@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-  "_id": "atom-ide-outline@2.3.4",
+  "_from": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+  "_id": "atom-ide-outline@3.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-d61jppcaA8NjMTB9BHZdbhttTMmbgqBtf2IqOg9u8g4OwtG3llWUd0EQYwSwiz+y5HvxkKoKUzxFEBbc9mJUdQ==",
+  "_integrity": "sha512-Pz8MlSsn7N9wBmAO5jFIL1j9M9LVacXiFmEqXPwnb1SKSQL2bMTu5puCTA/oDtvh9pUvJnesPc8H4AMwU9w52w==",
   "_location": "/atom-ide-outline",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-  "_shasum": "46ac40bfd3f3ddc7596d48077b9fec56a11c85a7",
-  "_spec": "https://www.atom.io/api/packages/atom-ide-outline/versions/2.3.4/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-26254-1pdknx4.lci8",
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+  "_shasum": "5eb4e2daf52f19ac49da9111056d8ee62b6712d9",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-outline/versions/3.1.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021528-2019-196wsi1.48at",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -41,28 +41,26 @@
     }
   },
   "dependencies": {
-    "atom-ide-base": "^2.6.0",
-    "lodash": "^4.17.21"
+    "atom-ide-base": "^3.1.1",
+    "fast-equals": "^2.0.3",
+    "lodash": "^4.17.21",
+    "zadeh": "^3.0.0-beta.4"
   },
   "deprecated": false,
   "description": "Outline UI compatible with IDE packages",
   "devDependencies": {
     "@types/atom": "latest",
-    "@types/jasmine": "^3.6.9",
-    "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.37",
-    "atom-jasmine3-test-runner": "^5.2.2",
+    "@types/jasmine": "^3.7.7",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.12.4",
+    "atom-jasmine3-test-runner": "^5.2.6",
     "build-commit": "latest",
     "cross-env": "latest",
-    "eslint": "7.24.0",
-    "eslint-config-atomic": "^1.14.0",
-    "npm-check-updates": "latest",
-    "prettier": "^2.2.1",
-    "rollup": "^2.45.1",
-    "rollup-plugin-atomic": "^2.3.0",
+    "eslint-config-atomic": "^1.16.1",
+    "prettier-config-atomic": "^2.0.5",
+    "rollup-plugin-atomic": "^2.3.2",
     "shx": "latest",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.4"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -79,6 +77,7 @@
   "main": "./dist/main",
   "name": "atom-ide-outline",
   "package-deps": {},
+  "prettier": "prettier-config-atomic",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atom-ide-community/atom-ide-outline.git"
@@ -96,5 +95,5 @@
     "test.format": "prettier . --check",
     "test.lint": "eslint ."
   },
-  "version": "2.3.4"
+  "version": "3.1.0"
 }

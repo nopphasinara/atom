@@ -1,5 +1,5 @@
 import { $range, applySolution, filterMessages } from './helpers'
-import type { LinterMessage, MessageSolution, ListItem } from './types'
+import type { LinterMessage, ListItem, MessageSolution } from './types'
 import type { TextEditor, Point } from 'atom'
 
 export default class Intentions {
@@ -11,32 +11,34 @@ export default class Intentions {
     const messages = filterMessages(this.messages, textEditor.getPath())
 
     for (const message of messages) {
-      const hasFixes = message.solutions && message.solutions.length
-      if (!hasFixes) {
+      const messageSolutions = message.solutions
+      const hasArrayFixes = Array.isArray(messageSolutions) && messageSolutions.length > 0
+      if (!hasArrayFixes && typeof messageSolutions !== 'function') {
+        // if it doesn't have solutions then continue
         continue
       }
       const range = $range(message)
-      const inRange = range && range.containsPoint(bufferPosition)
-      if (!inRange) {
+      if (range?.containsPoint(bufferPosition) !== true) {
+        // if not in range then continue
         continue
       }
 
-      let solutions: Array<MessageSolution> = []
-      if (message.version === 2 && message.solutions && message.solutions.length) {
-        solutions = message.solutions
-      }
       const linterName = message.linterName || 'Linter'
 
-      intentions = intentions.concat(
-        solutions.map(solution => ({
-          priority: solution.priority ? solution.priority + 200 : 200,
-          icon: 'tools',
-          title: solution.title || `Fix ${linterName} issue`,
-          selected() {
-            applySolution(textEditor, solution)
-          },
-        })),
-      )
+      if (message.version === 2) {
+        if (hasArrayFixes) {
+          intentions = intentions.concat(
+            (messageSolutions as MessageSolution[]).map(solution => ({
+              priority: typeof solution.priority === 'number' ? solution.priority + 200 : 200,
+              icon: 'tools',
+              title: solution.title ?? `Fix ${linterName} issue`,
+              selected() {
+                applySolution(textEditor, solution)
+              },
+            })),
+          )
+        }
+      }
     }
     return intentions
   }

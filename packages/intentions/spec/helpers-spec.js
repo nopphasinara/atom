@@ -1,7 +1,8 @@
 /* @flow */
+import "module-alias/register"
 
-import * as Helpers from "../lib/helpers"
-import type { ListItem } from "../lib/types"
+import * as Helpers from "../dist/helpers"
+import type { ListItem } from "../dist/types"
 
 describe("Helpers", function () {
   describe("processListItems", function () {

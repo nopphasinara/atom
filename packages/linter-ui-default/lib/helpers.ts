@@ -1,10 +1,10 @@
 import { Range } from 'atom'
+const { workspace, project, clipboard } = atom
 import type { Point, PointLike, RangeCompatible, TextEditor, WorkspaceOpenOptions } from 'atom'
 import { shell } from 'electron'
-import type Editors from './editors'
-import type { LinterMessage, MessageSolution, EditorsMap, TextEditorExtra } from './types'
+import type { default as Editors, EditorsMap } from './editors'
+import type { LinterMessage, MessageSolution } from './types'
 
-let lastPaneItem: TextEditorExtra | null = null
 export const severityScore = {
   error: 3,
   warning: 2,
@@ -29,28 +29,11 @@ export function $file(message: LinterMessage): string | null | undefined {
 export function copySelection() {
   const selection = getSelection()
   if (selection) {
-    atom.clipboard.write(selection.toString())
+    clipboard.write(selection.toString())
   }
 }
 export function getPathOfMessage(message: LinterMessage): string {
-  return atom.project.relativizePath($file(message) || '')[1]
-}
-export function getActiveTextEditor(): TextEditor | null {
-  let paneItem = atom.workspace.getCenter().getActivePaneItem() as TextEditorExtra | null
-  const paneIsTextEditor = paneItem !== null ? atom.workspace.isTextEditor(paneItem) : false
-  if (
-    !paneIsTextEditor &&
-    paneItem &&
-    lastPaneItem &&
-    paneItem.getURI &&
-    paneItem.getURI() === WORKSPACE_URI &&
-    (!lastPaneItem.isAlive || lastPaneItem.isAlive())
-  ) {
-    paneItem = lastPaneItem
-  } else {
-    lastPaneItem = paneItem
-  }
-  return paneIsTextEditor ? paneItem : null
+  return project.relativizePath($file(message) ?? '')[1]
 }
 
 export function getEditorsMap(editors: Editors): { editorsMap: EditorsMap; filePaths: Array<string> } {
@@ -83,7 +66,7 @@ export function filterMessages(
     if (!message || !message.location) {
       return
     }
-    if ((filePath === null || $file(message) === filePath) && (!severity || message.severity === severity)) {
+    if ((!filePath || $file(message) === filePath) && (!severity || message.severity === severity)) {
       filtered.push(message)
     }
   })
@@ -104,7 +87,7 @@ export function filterMessagesByRangeOrPoint(
     const file = $file(message)
     const range = $range(message)
     if (
-      file &&
+      typeof file === 'string' &&
       range &&
       file === filePath &&
       typeof range.intersectsWith === 'function' &&
@@ -116,16 +99,16 @@ export function filterMessagesByRangeOrPoint(
   return filtered
 }
 
-export function openFile(file: string, position: PointLike | null | undefined) {
+export async function openFile(file: string, position: PointLike | null | undefined) {
   const options: WorkspaceOpenOptions = { searchAllPanes: true }
   if (position) {
     options.initialLine = position.row
     options.initialColumn = position.column
   }
-  atom.workspace.open(file, options)
+  await workspace.open(file, options)
 }
 
-export function visitMessage(message: LinterMessage, reference = false) {
+export async function visitMessage(message: LinterMessage, reference = false) {
   let messageFile: string | undefined | null
   let messagePosition: Point | undefined
   if (reference) {
@@ -142,13 +125,13 @@ export function visitMessage(message: LinterMessage, reference = false) {
       messagePosition = messageRange.start
     }
   }
-  if (messageFile) {
-    openFile(messageFile, messagePosition)
+  if (typeof messageFile === 'string') {
+    await openFile(messageFile, messagePosition)
   }
 }
 
 export function openExternally(message: LinterMessage) {
-  if (message.version === 2 && message.url) {
+  if (message.version === 2 && message.url !== undefined) {
     shell.openExternal(message.url)
   }
 }
@@ -241,20 +224,56 @@ export function applySolution(textEditor: TextEditor, solution: MessageSolution)
   return true
 }
 
-const largeFileLineCount = atom.config.get('linter-ui-default.largeFileLineCount')
-const longLineLength = atom.config.get('linter-ui-default.longLineLength')
-
-export function isLargeFile(editor: TextEditor) {
-  const lineCount = editor.getLineCount()
-  // @ts-ignore
-  if (editor.largeFileMode || lineCount >= largeFileLineCount) {
-    return true
-  }
-  const buffer = editor.getBuffer()
-  for (let i = 0, len = lineCount; i < len; i++) {
-    if (buffer.lineLengthForRow(i) > longLineLength) {
-      return true
+/**
+ * A function to get a value from the cache or calculate it if it is not available (and store it in the cache after calculation)
+ *
+ * @param map A reference to a Map of key to values that is used as the cache
+ * @param key The current key to get calculate or get the cache for
+ * @param calculate The function that is used to calculate the value if the cache is not hit
+ */
+export function get<Key, Value>(map: Map<Key, Value>, key: Key, calculate: () => Value | null): Value | null {
+  // get cache
+  const cachedValue = map.get(key)
+  if (cachedValue !== undefined) {
+    // cache hit
+    return cachedValue
+  } else {
+    // calculate
+    const calculatedValue = calculate()
+    if (calculatedValue !== null) {
+      // calculation successful
+      map.set(key, calculatedValue)
     }
+    return calculatedValue
   }
-  return false
+}
+
+/** A faster vresion of lodash.debounce */
+/* eslint-disable-next-line @typescript-eslint/ban-types, @typescript-eslint/no-explicit-any */
+export function debounce<T extends (...args: any[]) => void>(func: T, wait?: number): T {
+  let timeoutId: NodeJS.Timeout | undefined
+  // @ts-ignore
+  return (...args: Parameters<T>) => {
+    if (timeoutId !== undefined) {
+      clearTimeout(timeoutId)
+    }
+    timeoutId = setTimeout(() => {
+      func(...args)
+    }, wait)
+  }
+}
+
+/** A faster vresion of lodash.once */
+/* eslint-disable-next-line @typescript-eslint/ban-types */
+export function once<T extends Function>(func: T): T {
+  let result: any
+  let called = false
+  // @ts-ignore
+  return (...args: Parameters<T>) => {
+    if (!called) {
+      result = func(...args)
+      called = true
+    }
+    return result
+  }
 }

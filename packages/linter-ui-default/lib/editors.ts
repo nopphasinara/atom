@@ -1,8 +1,18 @@
 import { CompositeDisposable } from 'atom'
+const { config, workspace, notifications } = atom
 import type { TextEditor } from 'atom'
 import Editor from './editor'
-import { $file, getEditorsMap, filterMessages, isLargeFile } from './helpers'
-import type { LinterMessage, MessagesPatch, EditorsPatch } from './types'
+import { $file, getEditorsMap, filterMessages } from './helpers'
+import { largeness } from 'atom-ide-base/commons-atom/editor-largeness'
+import type { LinterMessage, MessagesPatch } from './types'
+
+export type EditorsPatch = {
+  added: Array<LinterMessage>
+  removed: Array<LinterMessage>
+  editors: Array<Editor>
+}
+
+export type EditorsMap = Map<string, EditorsPatch>
 
 export default class Editors {
   editors: Set<Editor> = new Set()
@@ -11,11 +21,15 @@ export default class Editors {
   subscriptions: CompositeDisposable = new CompositeDisposable()
 
   constructor() {
+    // TODO move the config to a separate package
+    const largeLineCount = config.get('linter-ui-default.largeFileLineCount') as number
+    const longLineLength = config.get('linter-ui-default.longLineLength') as number
+
     this.subscriptions.add(
-      atom.workspace.observeTextEditors(textEditor => {
+      workspace.observeTextEditors(textEditor => {
         // TODO we do this check only at the begining. Probably we should do this later too?
-        if (isLargeFile(textEditor)) {
-          const notif = atom.notifications.addWarning('Linter: Large/Minified file detected', {
+        if (largeness(textEditor, largeLineCount, longLineLength)) {
+          const notif = notifications.addWarning('Linter: Large/Minified file detected', {
             detail:
               'Adding inline linter markers are skipped for this file for performance reasons (linter pane is still active)',
             dismissable: true,
@@ -30,9 +44,9 @@ export default class Editors {
               {
                 text: 'Change threshold',
                 onDidClick: async () => {
-                  await atom.workspace.open('atom://config/packages/linter-ui-default')
+                  await workspace.open('atom://config/packages/linter-ui-default')
                   // it is the 16th setting :D
-                  document.querySelectorAll('.control-group')[16]?.scrollIntoView()
+                  document.querySelectorAll('.control-group')[16].scrollIntoView()
                   notif.dismiss()
                 },
               },
@@ -45,7 +59,7 @@ export default class Editors {
         }
         this.getEditor(textEditor)
       }),
-      atom.workspace.getCenter().observeActivePaneItem(paneItem => {
+      workspace.getCenter().observeActivePaneItem(paneItem => {
         this.editors.forEach(editor => {
           if (editor.textEditor !== paneItem) {
             editor.removeTooltip()
@@ -67,7 +81,7 @@ export default class Editors {
         return
       }
       const filePath = $file(message)
-      if (filePath && editorsMap.has(filePath)) {
+      if (typeof filePath === 'string' && editorsMap.has(filePath)) {
         editorsMap.get(filePath)!.added.push(message)
       }
     })
@@ -76,7 +90,7 @@ export default class Editors {
         return
       }
       const filePath = $file(message)
-      if (filePath && editorsMap.has(filePath)) {
+      if (typeof filePath === 'string' && editorsMap.has(filePath)) {
         editorsMap.get(filePath)!.removed.push(message)
       }
     })
@@ -85,7 +99,7 @@ export default class Editors {
       if (editorsMap.has(filePath)) {
         const { added, removed, editors } = editorsMap.get(filePath) as EditorsPatch
         if (added.length || removed.length) {
-          editors.forEach(editor => editor.apply(added, removed))
+          editors.forEach(editor => editor.applyChanges(added, removed))
         }
       }
     })
@@ -113,7 +127,7 @@ export default class Editors {
         this.getEditor(textEditor)
       }),
     )
-    editor.apply(filterMessages(this.messages, textEditor.getPath()), [])
+    editor.applyChanges(filterMessages(this.messages, textEditor.getPath()), [])
     return editor
   }
   dispose() {

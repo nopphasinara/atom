@@ -1,16 +1,7 @@
 import invariant from 'assert'
 import { CompositeDisposable } from 'atom'
-
-import {
-  $file,
-  $range,
-  getActiveTextEditor,
-  visitMessage,
-  sortMessages,
-  sortSolutions,
-  filterMessages,
-  applySolution,
-} from './helpers'
+const { config, workspace, commands, clipboard } = atom
+import { $file, $range, visitMessage, sortMessages, sortSolutions, filterMessages, applySolution } from './helpers'
 import type { LinterMessage, Message } from './types'
 
 export default class Commands {
@@ -19,7 +10,7 @@ export default class Commands {
 
   constructor() {
     this.subscriptions.add(
-      atom.commands.add('atom-workspace', {
+      commands.add('atom-workspace', {
         'linter-ui-default:next': () => this.move(true, true),
         'linter-ui-default:previous': () => this.move(false, true),
         'linter-ui-default:next-error': () => this.move(true, true, 'error'),
@@ -49,14 +40,14 @@ export default class Commands {
           /* no operation */
         },
       }),
-      atom.commands.add('atom-text-editor:not([mini])', {
+      commands.add('atom-text-editor:not([mini])', {
         'linter-ui-default:apply-all-solutions': () => this.applyAllSolutions(),
       }),
-      atom.commands.add('#linter-panel', {
+      commands.add('#linter-panel', {
         'core:copy': () => {
           const selection = document.getSelection()
           if (selection) {
-            atom.clipboard.write(selection.toString())
+            clipboard.write(selection.toString())
           }
         },
       }),
@@ -64,19 +55,20 @@ export default class Commands {
   }
 
   // NOTE: Apply solutions from bottom to top, so they don't invalidate each other
+  // NOTE: This only apply the solutions that are not async
   applyAllSolutions(): void {
-    const textEditor = getActiveTextEditor()
-    invariant(textEditor, 'textEditor was null on a command supposed to run on text-editors only')
+    const textEditor = workspace.getActiveTextEditor()
+    invariant(textEditor !== undefined, 'textEditor was null on a command supposed to run on text-editors only')
     const messages = sortMessages(filterMessages(this.messages, textEditor.getPath()), ['line', 'desc'])
     messages.forEach(function (message) {
-      if (message.version === 2 && message.solutions && message.solutions.length) {
+      if (message.version === 2 && Array.isArray(message.solutions) && message.solutions.length > 0) {
         applySolution(textEditor, sortSolutions(message.solutions)[0])
       }
     })
   }
-  move(forward: boolean, globally: boolean, severity: string | null | undefined = null): void {
-    const currentEditor = getActiveTextEditor()
-    const currentFile: any = (currentEditor && currentEditor.getPath()) || NaN
+  async move(forward: boolean, globally: boolean, severity: string | null | undefined = null) {
+    const currentEditor = workspace.getActiveTextEditor()
+    const currentFile: any = currentEditor?.getPath() ?? NaN
     // NOTE: ^ Setting default to NaN so it won't match empty file paths in messages
     const messages = sortMessages(filterMessages(this.messages, globally ? null : currentFile, severity), ['file', 'asc'])
     const expectedValue = forward ? -1 : 1
@@ -84,7 +76,7 @@ export default class Commands {
     if (!currentEditor) {
       const message = forward ? messages[0] : messages[messages.length - 1]
       if (message) {
-        visitMessage(message)
+        await visitMessage(message)
       }
       return
     }
@@ -107,7 +99,7 @@ export default class Commands {
       if (!currentFileEncountered && messageFile === currentFile) {
         currentFileEncountered = true
       }
-      if (messageFile && messageRange) {
+      if (typeof messageFile === 'string' && messageRange) {
         if (currentFileEncountered && messageFile !== currentFile) {
           found = message
           break
@@ -124,7 +116,7 @@ export default class Commands {
     }
 
     if (found) {
-      visitMessage(found)
+      await visitMessage(found)
     }
   }
   update(messages: Array<LinterMessage>) {
@@ -136,5 +128,5 @@ export default class Commands {
 }
 
 function togglePanel(): void {
-  atom.config.set('linter-ui-default.showPanel', !atom.config.get('linter-ui-default.showPanel'))
+  config.set('linter-ui-default.showPanel', !(config.get('linter-ui-default.showPanel') as boolean))
 }

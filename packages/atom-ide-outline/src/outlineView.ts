@@ -1,32 +1,48 @@
-import { TextEditor, Point } from "atom"
-import { OutlineTree } from "atom-ide-base"
-import { isItemVisible, scrollIntoViewIfNeeded } from "atom-ide-base/commons-ui"
+import { TextEditor, Point, Disposable } from "atom"
+import type { OutlineTree } from "atom-ide-base"
+import { scrollIntoViewIfNeeded } from "atom-ide-base/commons-ui/scrollIntoView"
+import { isItemVisible } from "atom-ide-base/commons-ui/items"
+import { TreeFilterer, Tree } from "zadeh"
+import { unique } from "./utils"
+import { setStatus } from "./main"
 
 export class OutlineView {
   public element: HTMLDivElement
 
-  /** contains the content of the outline which is either the status element or the list element */
+  /** Contains the content of the outline which is either the status element or the list element */
   public outlineContent: HTMLDivElement
-  /** the actual outline list element */
+  /** The actual outline list element */
   private outlineList: HTMLUListElement | undefined = undefined
 
-  /** cache for reveal corsur */
+  /** Cache for reveal corsur */
   private pointToElementsMap = new Map<number, Array<HTMLLIElement>>() // TODO Point to element
-  /** cache for focused elements */
+  /** Cache for focused elements */
   private focusedElms: HTMLElement[] | undefined
-  /** cache of last rendered list used to avoid rerendering */
+  /** Cache of last rendered list used to avoid rerendering */
   lastEntries: OutlineTree[] | undefined
+
+  private treeFilterer = new TreeFilterer<"representativeName" | "plainText", "children">()
+  public searchBarEditor: TextEditor | undefined
+  private searchBarEditorDisposable: Disposable | undefined
+  private selectCursorDisposable: Disposable | undefined
 
   constructor() {
     this.element = document.createElement("div")
     this.element.classList.add("atom-ide-outline")
 
     this.element.appendChild(makeOutlineToolbar())
+    this.element.appendChild(this.createSearchBar())
 
     this.outlineContent = document.createElement("div")
     this.element.appendChild(this.outlineContent)
 
     this.outlineContent.classList.add("outline-content")
+  }
+
+  reset() {
+    this.searchBarEditorDisposable?.dispose()
+    this.selectCursorDisposable?.dispose()
+    this.searchBarEditor?.setText("")
   }
 
   destroy() {
@@ -37,6 +53,8 @@ export class OutlineView {
     return this.element
   }
 
+  // needed for Atom
+  /* eslint-disable class-methods-use-this */
   getTitle() {
     return "Outline"
   }
@@ -44,7 +62,12 @@ export class OutlineView {
   getIconName() {
     return "list-unordered"
   }
+  /* eslint-enable class-methods-use-this */
 
+  /**
+   * The main function of {OutlineView} which renders the content in the outline or only update the event listeners if
+   * the outline tree hasn't changed
+   */
   setOutline(outlineTree: OutlineTree[], editor: TextEditor, isLarge: boolean) {
     // skip rendering if it is the same
     // TIME 0.2-1.2ms // the check itself takes ~0.2-0.5ms, so it is better than rerendering
@@ -62,11 +85,17 @@ export class OutlineView {
       this.lastEntries = outlineTree
     }
 
+    this.createOutlineList(outlineTree, editor, isLarge)
+  }
+
+  /** The function to render the content in the outline */
+  createOutlineList(outlineTree: OutlineTree[], editor: TextEditor, isLarge: boolean) {
     this.clearContent()
 
     if (isLarge) {
       this.outlineContent.appendChild(createLargeFileElement())
     }
+    this.updateSearchBar(outlineTree, editor, isLarge)
 
     this.outlineList = createOutlineList(outlineTree, editor, isLarge, this.pointToElementsMap)
     this.outlineContent.appendChild(this.outlineList)
@@ -80,24 +109,100 @@ export class OutlineView {
     this.lastEntries = undefined
   }
 
+  updateSearchBar(outlineTree: OutlineTree[], editor: TextEditor, isLarge: boolean) {
+    this.searchBarEditorDisposable?.dispose()
+
+    // detect if representativeName exists on an entry of the tree, if it doesn't, then we use plainText
+    const firstOutlineTree = outlineTree[0]
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+    const dataKey = firstOutlineTree?.representativeName !== undefined ? "representativeName" : "plainText"
+
+    // @ts-ignore we check if representitiveName is undefined, and if it is, we will use plainText instead
+    this.treeFilterer.setCandidates(outlineTree, dataKey, "children")
+
+    this.searchBarEditorDisposable = this.searchBarEditor?.onDidStopChanging(() =>
+      this.filterOutlineTree(editor, isLarge)
+    )
+  }
+
+  createSearchBar() {
+    this.searchBarEditor = new TextEditor({ mini: true, placeholderText: "Filter" })
+
+    const searchBar = document.createElement("div")
+    searchBar.classList.add("outline-searchbar")
+
+    searchBar.appendChild(atom.views.getView(this.searchBarEditor))
+
+    return searchBar
+  }
+
+  renderLastOutlienList() {
+    if (this.outlineList !== undefined) {
+      this.clearContent()
+      this.outlineContent.appendChild(this.outlineList)
+    }
+  }
+
+  filterOutlineTree(editor: TextEditor, isLarge: boolean) {
+    // @ts-ignore
+    if (!(editor.isAlive() as boolean) || !isItemVisible(editor)) {
+      return
+    }
+
+    const text = this.searchBarEditor?.getText()
+    if (typeof text !== "string") {
+      this.renderLastOutlienList()
+      return
+    }
+    const query = text.trim()
+    if (query.length === 0) {
+      this.renderLastOutlienList()
+      return
+    }
+    let filterResults: Tree<"representativeName" | "plainText", "children">[]
+    try {
+      filterResults = this.treeFilterer.filter(query, { maxResults: 100, usePathScoring: false })
+    } catch (err) {
+      const error = err as Error
+      error.message = `Filtering failed for unkown reasons.\n${error.message}`
+      console.error(error)
+      this.reset()
+      // Retry:
+      // @ts-ignore internal api
+      const candidates = this.treeFilterer.candidates as Tree<"representativeName" | "plainText", "children">[]
+      this.treeFilterer = new TreeFilterer(candidates)
+      this.updateSearchBar(candidates as unknown as OutlineTree[], editor, isLarge)
+      this.searchBarEditor?.setText(query)
+      this.filterOutlineTree(editor, isLarge)
+      return
+    }
+
+    // TODO why returns duplicates? ~0-0.2s
+    const filteredTree = unique(filterResults)
+    if (filteredTree.length === 0) {
+      return setStatus("noResult")
+    }
+    const filteredOutlineList = createOutlineList(
+      filteredTree as unknown as OutlineTree[],
+      editor,
+      isLarge,
+      this.pointToElementsMap
+    )
+    this.clearContent()
+    this.outlineContent.appendChild(filteredOutlineList)
+  }
+
   presentStatus(status: { title: string; description: string }) {
     this.clearContent()
 
-    const statusElement = status && generateStatusElement(status)
+    const statusElement = generateStatusElement(status)
 
-    if (statusElement) {
-      this.outlineContent.appendChild(statusElement)
-    }
+    this.outlineContent.appendChild(statusElement)
   }
 
   // callback for scrolling and highlighting the element that the cursor is on
   selectAtCursorLine(editor: TextEditor) {
     const cursor = editor.getLastCursor()
-
-    // no cursor
-    if (!cursor) {
-      return
-    }
 
     // skip if not visible
     if (!isItemVisible(this)) {
@@ -124,25 +229,47 @@ export class OutlineView {
     const cursorPoint = cursor.getBufferRow()
     this.focusedElms = this.pointToElementsMap.get(cursorPoint)
 
+    // search in between the points
+    if (this.focusedElms === undefined) {
+      const points = this.pointToElementsMap.keys()
+      let previousPoint: number = 0
+      for (const point of points) {
+        // find the first point which has a larger point
+        if (point >= cursorPoint) {
+          const previousElms = this.pointToElementsMap.get(previousPoint)!
+          previousElms[previousElms.length - 1].classList.add("after-border")
+          const currentElms = this.pointToElementsMap.get(point)!
+          this.focusedElms = [...currentElms, ...previousElms] // in reverse so the previous elms are scrolled into in the end
+          break
+        } else {
+          // update previous point for the next iteration
+          previousPoint = point
+        }
+      }
+    }
+
+    // add cursorOn and scrollInto
     if (this.focusedElms !== undefined) {
       for (const elm of this.focusedElms) {
         scrollIntoViewIfNeeded(elm, true)
         elm.toggleAttribute("cursorOn", true)
       }
       // remove focus once cursor moved
-      const disposable = editor.onDidChangeCursorPosition(() => {
+      this.selectCursorDisposable = editor.onDidChangeCursorPosition(() => {
         if (this.focusedElms !== undefined) {
           for (const elm of this.focusedElms) {
             elm.toggleAttribute("cursorOn", false)
           }
         }
-        disposable.dispose()
+        this.selectCursorDisposable?.dispose()
       })
     }
+    // focus on the editor after finding
+    atom.views.getView(editor).focus()
   }
 }
 
-/** create the main outline list */
+/** Create the main outline list */
 function createOutlineList(
   outlineTree: OutlineTree[],
   editor: TextEditor,
@@ -160,7 +287,7 @@ function createOutlineList(
     outlineList,
     outlineTree,
     editor,
-    /* foldInItially */ isLarge || atom.config.get("atom-ide-outline.foldInitially"),
+    /* foldInItially */ isLarge || (atom.config.get("atom-ide-outline.foldInitially") as boolean),
     0
   )
   // TIME 0.2-0.5m
@@ -168,9 +295,7 @@ function createOutlineList(
   return outlineList
 }
 
-/** Compares the content of the two given {OutlineTree[]}
- *  It only compares the content that affects rendering
- */
+/** Compares the content of the two given {OutlineTree[]} It only compares the content that affects rendering */
 function hasEqualContent(ot1: OutlineTree[], ot2: OutlineTree[]) {
   // simple compare
   if (ot1 === ot2) {
@@ -208,9 +333,9 @@ function makeOutlineToolbar() {
   revealCursorButton.innerHTML = "Reveal Cursor"
   revealCursorButton.className = "btn outline-btn"
 
-  revealCursorButton.addEventListener("click", () => {
+  revealCursorButton.addEventListener("click", () =>
     atom.commands.dispatch(atom.views.getView(atom.workspace), "outline:reveal-cursor")
-  })
+  )
 
   toolbar.appendChild(revealCursorButton)
   return toolbar
@@ -238,7 +363,7 @@ function hasChildren(entry: OutlineTree) {
 }
 
 function sortEntries(entries: OutlineTree[]) {
-  if (atom.config.get("atom-ide-outline.sortEntries")) {
+  if (atom.config.get("atom-ide-outline.sortEntries") as boolean) {
     entries.sort((e1: OutlineTree, e2: OutlineTree) => {
       const rowCompare = e1.startPosition.row - e2.startPosition.row
       if (rowCompare === 0) {
@@ -273,9 +398,9 @@ function addOutlineEntries(
     const labelElement = document.createElement("span")
 
     // TODO support item.tokenizedText
-    labelElement.innerText = (item.representativeName || item.plainText) ?? ""
+    labelElement.innerText = item.representativeName ?? item.plainText ?? ""
 
-    labelElement.prepend(/* iconElement */ getIcon(item?.icon, item?.kind))
+    labelElement.prepend(/* iconElement */ getIcon(item.icon, item.kind))
 
     symbol.appendChild(labelElement)
 
@@ -301,7 +426,9 @@ function addOutlineEntries(
   }
 }
 
-/** Adds onClick to the outline entries.
+/**
+ * Adds onClick to the outline entries.
+ *
  * @attention The assumption about the type of Elements are added using `as HTML...`. After editing code, make sure that the types are correct
  */
 function addEntriesOnClick(
@@ -329,7 +456,7 @@ function addEntriesOnClick(
   }
 }
 
-/** update start position => elements map used in `selectAtCursorLine` */
+/** Update start position => elements map used in `selectAtCursorLine` */
 function addToPointToElementsMap(
   pointToElementsMap: Map<number, Array<HTMLLIElement>>,
   pointStartPositionRow: number,
@@ -362,7 +489,8 @@ function onClickEntry(itemStartPosition: Point, editor: TextEditor) {
   clicked = true
 }
 
-function getIcon(iconType: string | undefined, kindType: string | undefined) {
+function getIcon(iconType: string | undefined, kindTypeGiven: string | undefined) {
+  let kindType = kindTypeGiven
   // LSP specification: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_documentSymbol
   // atom-languageclient mapping: https://github.com/atom/atom-languageclient/blob/485bb9d706b422456640c9070eee456ef2cf09c0/lib/adapters/outline-view-adapter.ts#L270
 
