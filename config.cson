@@ -56,6 +56,10 @@
     tooltipPosition: "top"
   "autocomplete-paths":
     ignoreSubmodules: true
+    ignoredPatterns: [
+      ".git"
+    ]
+    maxFileCount: 6000
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
