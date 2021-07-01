@@ -12,6 +12,15 @@
         path: "/usr/local/bin/php-cs-fixer"
     general:
       beautifyEntireFileOnSave: false
+      loggerLevel: "debug"
+      muteAllErrors: true
+      muteUnsupportedLanguageErrors: true
+    js:
+      brace_style: "expand"
+      default_beautifier: "Pretty Diff"
+      end_with_comma: true
+      jslint_happy: true
+      space_after_anon_function: true
   "atom-ide-datatip":
     hoverTime: 50
     showDataTipOnMouseMove: false
@@ -86,7 +95,6 @@
       "js-hyperclick"
       "php-hyperclick"
       "css-hyperclick"
-      "atom-beautify"
       "atom-minify"
       "python-snippets"
       "autocomplete-module-import"
@@ -158,6 +166,7 @@
       "atom-ide-outline"
       "atom-ide-signature-help"
       "atom-typescript"
+      "atom-beautify"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"
@@ -262,6 +271,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
   filesize:

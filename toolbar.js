@@ -350,6 +350,23 @@ module.exports = [
         },
         class: ['mdi'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'atom-beautify:beautify-language-php',
+            'shift': 'atom-beautify:beautify-language-javascript',
+            'shift+alt': 'atom-beautify:beautify-language-css',
+        },
+        tooltip: 'Beautify',
+        text: '<i>󰁨</i>',
+        html: true,
+        show: {
+          function: () => {
+              return !atom.packages.isPackageDisabled('atom-beautify:beautify-editor');
+          },
+        },
+        class: ['mdi'],
+    },
     { type: 'spacer' },
     {
         type: 'button',
