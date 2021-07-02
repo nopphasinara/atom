@@ -332,7 +332,8 @@ module.exports = [
         html: true,
         show: {
             function: () => {
-              var entries = atom.project.rootDirectories[0].getEntriesSync() || [];
+              var entries = atom.project.rootDirectories || [];
+              entries = (typeof entries !== 'undefined' && entries.length) ? entries[0].getEntriesSync() : undefined;
               if (typeof entries !== 'undefined' && entries.length) {
                 var filtered = entries.filter((item, i) => {
                   if (item.getBaseName().toLowerCase() === '.remote-sync.json') {
