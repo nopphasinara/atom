@@ -1,4 +1,34 @@
 {
+  ".source.php .string.quoted.single": {
+    "dot-join-1": {
+      "prefix": ".",
+      "body": """
+      '. ${1:} .'$0
+      """,
+    },
+    "dot-join-2": {
+      "prefix": ">.",
+      "body": """
+      >'. ${1:} .'$0
+      """,
+    },
+  },
+
+  ".text.plain": {
+    "docblock": {
+      "prefix": "docblock",
+      "body": """
+      ================================================
+      ${1:TITLE}
+      ================================================
+
+      ${2:}
+
+      ------------------------------------------------$0
+      """,
+    },
+  },
+
   # LESS
   ".source.css.less": {
     "@import": {
@@ -295,10 +325,29 @@
 
 
   ".text.html.php": {
+    "if": {
+      "prefix": "if",
+      "body": """
+      <?php if (${1:}) { ?>
+        ${2:}
+      <?php \\} ?>$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      <?php if (${1:}) { ?>
+        ${2:}
+      <?php \\} else { ?>
+        ${3:}
+      <?php \\} ?>$0
+      """,
+    },
+
     "echo": {
       "prefix": "ec",
       "body": """
-      <?php echo ${2:'${1:foobar}'};${3:} ?>$0
+      <?php echo ${2:${1:'foobar'}};${3:} ?>$0
       """,
     },
 
@@ -313,7 +362,26 @@
   },
 
 
-  ".source.php": {
+  ".source.php, .text.html.php .source.php": {
+    "if": {
+      "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\} else {
+        ${3:}
+      \\}$0
+      """,
+    },
+
     "foreach": {
       "prefix": "foreach",
       "body": """
