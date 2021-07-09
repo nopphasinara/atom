@@ -103,7 +103,7 @@
       "css-snippets"
       "es6-javascript"
       "laravel-snippets"
-      "atom-autocomplete-php"
+      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
