@@ -1,29 +1,153 @@
 <?php
 
-define('HTTPDOCS', $_SERVER['DOCUMENT_ROOT'] . '/');
-
-// This file contain all functions needed for _get_paintings2 function
-// copied from included files into here.
-require HTTPDOCS . 'get-paintings/included.php';
-
-
-// Contain codes to work with DB to get configs for phpmailer, phone number,
-// address and etc, required by init.php.
-require HTTPDOCS . 'libraries/Database.class.php';
-require HTTPDOCS . 'init.php';
+/**
+ * Reset error reporting
+ *
+ */
+error_reporting(E_ALL & ~E_NOTICE);
 
 
-require HTTPDOCS . 'libraries/new-helper-functions.php';
+/**
+ * Load common libraries and setup files
+ *
+ */
+// require dirname(__FILE__).'/libraries/new-helper-functions.php';
+
+require dirname(__FILE__).'/libraries/common.inc.php';
+require dirname(__FILE__).'/libraries/Database.class.php';
+require dirname(__FILE__).'/init.php';
+require dirname(__FILE__).'/libraries/meta.inc.php';
 
 
-$redis = new Redis();
-$redis->connect('127.0.0.1', 6379);
+require dirname(__FILE__).'/libraries/new-helper-functions.php';
 
-$redis->del('paintings');
 
-foreach (getPaintings() as $key => $painting) {
-  $redis->hSet('paintings', $painting['id'], $painting);
-  // echo '<pre>'; print_r($painting); echo '</pre>';
+/**
+ * Get referer info and save to DB for tracking
+ *
+ */
+// _detected();
+
+
+/**
+ * Load primary script and start HTML
+ *
+ */
+if($conf->virtual_mode === false):
+    /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> */
+
+    $head_scripts = '<link rel="stylesheet" href="'. $conf->incurl .'public/css/app.min.css" media="screen, print">';
+
+    if ($conf->enableJquery === true) {
+      $head_scripts .= '<script src="'. $conf->incurl .'public/js/jquery.min.js"></script>';
+    }
+
+    $head_scripts .= '
+    <!--[if lt IE 9]><script>!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),\'c("\'+a+\'")\'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);</script><![endif]-->
+    ';
+
+    if ($conf->enableTrustBox === true) {
+      $head_scripts .= '<script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>';
+    }
+
+    $body_scripts = '';
+    // $body_scripts = '
+    //   <script>(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:295524,hjsv:5}; a=o.getElementsByTagName(\'head\')[0]; r=o.createElement(\'script\');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,\'https://static.hotjar.com/c/hotjar-\',\'.js?sv=\');</script>
+    // ';
+
+    /* <div id="body__stacks"></div>
+    <noscript id="deferred-styles"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" media="screen" /></noscript>
+    <script>var loadDeferredStyles = function() {var addStylesNode = document.getElementById("deferred-styles");var replacement = document.createElement("div");replacement.innerHTML = addStylesNode.textContent;document.getElementById("body__stacks").appendChild(replacement);addStylesNode.parentElement.removeChild(addStylesNode);};var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;if (raf) {raf(function() {window.setTimeout(loadDeferredStyles, 0);});} else {window.addEventListener(\'load\', loadDeferredStyles);}</script> */
+
+    /* <noscript><iframe class="iframe__tagmanager" src="https://www.googletagmanager.com/ns.html?id=GTM-PRLCMK"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\': new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);})(window,document,\'script\',\'dataLayer\',\'GTM-PRLCMK\');</script> */
+
+    $end_scripts = '<script src="'. $conf->incurl .'public/js/main.min.js"></script>';
+
+    if ($conf->disableRightClick === true) {
+      $end_scripts .= '<script>document.oncontextmenu=document.body.oncontextmenu=(e)=>{if(typeof e.target!==\'undefined\'){if(e.target.localName.toLowerCase()===\'img\'){return false;}}};</script>';
+    }
+
+    if ($conf->enablePinterest === true) {
+      $end_scripts .= '<script src="https://assets.pinterest.com/js/pinit.js" defer></script>';
+    }
+
+    if ($conf->zohochat === true) {
+      $end_scripts .= '
+      <script>
+      window.onload = () => {
+        function minimizeZohoChat() {
+          setTimeout(() => {
+            var el = document.querySelectorAll(\'#zsiq_minimize\');
+            if (typeof el !== \'undefined\' && el.length) {
+              el.forEach((item, i) => {
+                item.setAttribute(\'style\', \'visibility: visible !important;\');
+                if (window.outerWidth <= 720) {
+                  item.click();
+                }
+              });
+              var el = document.querySelectorAll(\'.zsiq_theme3, .zsiq_theme3 .zsiq_flt_rel, .zsiq_theme3 .zsiq_off .zsiq_cnt\');
+              if (typeof el !== \'undefined\' && el.length) {
+                el.forEach((item, i) => {
+                  item.setAttribute(\'style\', \'width: auto !important; height: auto !important\');
+                });
+              }
+            } else {
+              minimizeZohoChat();
+            }
+          }, 1000);
+        }
+        minimizeZohoChat();
+      };
+      </script>
+      ';
+    }
+
+    $end_scripts .= '<script src="'. $conf->incurl .'public/js/app.min.js"></script>';
+
+    /* <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/756032fc8a36a3e437af85bf1/bc0a94f483b09f2458a33f94a.js");</script> */
+
+
+    // Extra class for body tag
+    $body_class = '';
+
+
+    // Set Open Graph tag URL
+    $conf->og_tags['url'] = substr($conf->incurl, 0, -1).$conf->redirect;
+
+
+    // Set default HTML title tag and meta tags
+    $conf->tags['title']       = _get_title();
+    // $conf->tags['title']       = $__site_name.' '.$conf->extra_titles['index'];
+    $conf->tags['description'] = _get_description();
+    $conf->tags['keywords']    = _get_keywords();
+else:
+    // If virtual mode return true set this separate
+    $head_scripts = '';
+    $body_scripts = '';
+    $end_scripts  = '';
+    $body_class   = '';
+endif;
+
+
+$x_modified = false;
+$x_file = $conf->incpath.$conf->script.'.php';
+if (file_exists($conf->incpath.$conf->script.'.min.php')) {
+  $x_file = $conf->incpath.$conf->script.'.min.php';
 }
 
-echo '<pre>'; print_r($redis->hGet('paintings', 1009600358)); echo '</pre>';
+if (filemtime($x_file) >= (time() - 3600)) {
+  $x_modified = true;
+}
+
+
+// Load requested script
+require $x_file;
+unset($x_file, $x_modified);
+
+
+/**
+ * Clear unused variables configuration and stop running script
+ *
+ */
+_clear();
