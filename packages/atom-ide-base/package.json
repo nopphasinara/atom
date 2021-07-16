@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-  "_id": "atom-ide-base@3.1.0",
+  "_from": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+  "_id": "atom-ide-base@3.4.0",
   "_inBundle": false,
-  "_integrity": "sha512-p9/KaFrl/hbvjiB6F5+3AAQ5ULsImF2pihG1pq/1Ja3+55DHEjWP4MWHjgXRdyVoL9LE9pOg5kXU9ijo4woYTA==",
+  "_integrity": "sha512-j79MCG8SUAgtWH6QdLkAxw4PuTB9LB5snPW+Y9bPyu/P/xBxR4iOiL99mHKXRrJPLgFvTqFCAAaciNgZY9GBvA==",
   "_location": "/atom-ide-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-  "_shasum": "e113dedb4466292b9ff45998b83cf9ebcd3398d7",
-  "_spec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.1.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021516-15637-1883wm7.a4tkh",
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+  "_shasum": "189d96c283d996676857440f6d92cb193827c5db",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-base/versions/3.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021616-2220-1uw2txv.qgje",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -77,6 +77,7 @@
     "node-ipc": "9.1.4",
     "npm-check-updates": "11.6.0",
     "prettier": "^2.3.1",
+    "prettier-config-atomic": "^2.0.5",
     "rollup": "2.51.0",
     "rollup-plugin-atomic": "^2.3.2",
     "shx": "0.3.3",
@@ -128,6 +129,9 @@
       "name": "atom-ide-outline"
     },
     {
+      "name": "atom-ide-code-format"
+    },
+    {
       "name": "linter"
     },
     {
@@ -137,6 +141,7 @@
       "name": "intentions"
     }
   ],
+  "prettier": "prettier-config-atomic",
   "providedServices": {},
   "repository": {
     "type": "git",
@@ -183,10 +188,10 @@
     "test.nuclide.atom": "jest dist-nuclide --config=dist-nuclide/atom-test-runners/jest-atom-runner/configs/jest.config.atom.js --detectOpenHandles",
     "test.nuclide.node": "jest dist-nuclide --config=dist-nuclide/atom-test-runners/jest-atom-runner/configs/jest.config.node.js --detectOpenHandles",
     "tsc.commons-atom": "tsc -p src-commons-atom/tsconfig.json",
-    "tsc.commons-ui": "tsc -p src-commons-ui/tsconfig.json",
+    "tsc.commons-ui": "tsc -p src-commons-ui/tsconfig.json --declaration",
     "tsc.package": "tsc -p src-package/tsconfig.json",
     "version.nuclide": "pnpm -r -parallel --filter ./nuclide exec -- pnpm version patch"
   },
   "types": "./types-packages/main.d.ts",
-  "version": "3.1.0"
+  "version": "3.4.0"
 }

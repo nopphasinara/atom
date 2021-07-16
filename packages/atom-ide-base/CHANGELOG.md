@@ -1,3 +1,15 @@
+### 3.4.0
+
+- feat: add atom-ide-code-format
+
+### 3.3.0
+
+- feat: add call-hierarchy API to the types
+
+### 3.2.0
+
+- feat: add StyleReader to commons-ui
+
 ### 3.1.0
 
 - feat: add intentions package to the list of IDE packages.

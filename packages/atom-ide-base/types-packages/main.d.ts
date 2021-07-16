@@ -5,6 +5,7 @@
 
 export * from "./uri"
 export * from "./busy-signal"
+export * from "./call-hierarchy"
 export * from "./code-actions"
 export * from "./code-highlight"
 export * from "./datatip"
@@ -20,6 +21,7 @@ export * from "./refactor"
 export * from "./console"
 
 import { BusySignalProvider } from "./busy-signal.d"
+import { CallHierarchyProvider } from "./call-hierarchy"
 import { CodeActionProvider } from "./code-actions"
 import { CodeHighlightProvider } from "./code-highlight"
 import { AnyDatatipProvider } from "./datatip"
@@ -30,19 +32,16 @@ import { OutlineProvider } from "./outline"
 import { SignatureHelpProvider } from "./sig-help"
 
 export interface ProviderCommon {
-  /**
-   * Providers with higher priorities will be preferred over lower ones.
-   */
+  /** Providers with higher priorities will be preferred over lower ones. */
   priority: number
-  /**
-   * Omitting grammarScopes implies that the provider applies to all grammars.
-   */
+  /** Omitting grammarScopes implies that the provider applies to all grammars. */
   grammarScopes?: Array<string>
 }
 
 export type Provider =
   | ProviderCommon
   | BusySignalProvider
+  | CallHierarchyProvider
   | CodeActionProvider
   | CodeHighlightProvider
   | AnyDatatipProvider
