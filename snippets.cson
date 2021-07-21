@@ -144,6 +144,13 @@
   },
 
 
+  ".source.js.embedded.html .keyword.control.js": {
+    "if": {
+      "prefix": "if",
+    },
+  },
+
+
   ".source.js": {
     "/** @babel */": {
       "prefix": "atba",
@@ -328,7 +335,9 @@
     "/* ... */": {
       "prefix": "/*",
       "body": """
-      <?php /* ${1:} */ ?>$0
+      <?php
+      /* ${1:} */
+      ?>$0
       """,
     },
 

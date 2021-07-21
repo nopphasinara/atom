@@ -31,6 +31,7 @@
     initialDisplay: false
   "atom-minify":
     checkOutputFileAlreadyExists: true
+    cssMinifier: "clean-css"
   "atom-package-deps":
     ignored: [
       "build-sass"
