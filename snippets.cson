@@ -147,6 +147,11 @@
   ".source.js.embedded.html .keyword.control.js": {
     "if": {
       "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
     },
   },
 

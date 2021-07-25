@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-  "_id": "atom-ide-definitions@0.4.1",
+  "_from": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+  "_id": "atom-ide-definitions@0.4.2",
   "_inBundle": false,
-  "_integrity": "sha512-W0YCCrP8u7iN7dv7UDhgXRfcOOjnPlceEV8yxLmyclNb5CvpoAsKHkEyycU+yY9DtjMolKzIDbltll/Sx3qGhw==",
+  "_integrity": "sha512-s7IlkYGRTmT9VCuB/9eIz3mTUOSLaYj/WJMqXXA2qkIq4OpHX6Nm/jUlFAcZwBcJldbdUXihvTPjUVyyNMtp7w==",
   "_location": "/atom-ide-definitions",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball"
+    "raw": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-  "_shasum": "6aa2bd335c9592a12813927b762dbb6bc94833b4",
-  "_spec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-23626-9ef8ko.8t759",
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+  "_shasum": "fde34c9f10772bd62300b2ef259f425be5c946f4",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021623-3107-15h3j0n.8qdh",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -96,7 +96,9 @@
   "scripts": {
     "bump": "ncu -u -x coffeescript",
     "format": "prettier --write .",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint ."
   },
-  "version": "0.4.1"
+  "version": "0.4.2"
 }

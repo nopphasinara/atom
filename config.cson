@@ -31,7 +31,6 @@
     initialDisplay: false
   "atom-minify":
     checkOutputFileAlreadyExists: true
-    cssMinifier: "clean-css"
   "atom-package-deps":
     ignored: [
       "build-sass"
@@ -104,6 +103,7 @@
       "es6-javascript"
       "laravel-snippets"
       "autocomplete-php"
+      "atom-autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -167,6 +167,7 @@
       "atom-ide-signature-help"
       "atom-typescript"
       "atom-beautify"
+      "prettier-atom"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"

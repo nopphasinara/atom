@@ -106,6 +106,13 @@
     ]
   }
   {
+    title: "chromeawesome"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chromeawesome"
+    ]
+  }
+  {
     title: "chrome-extended"
     group: "NPM"
     paths: [
