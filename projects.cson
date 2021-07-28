@@ -235,4 +235,14 @@
     icon: "icon-apple"
     color: "#5ae991"
   }
+  {
+    title: "Google Drives"
+    group: "Drives"
+    paths: [
+      "/Volumes/Drives/Dropbox"
+      "/Volumes/Drives/Google Drives"
+    ]
+    icon: "icon-apple"
+    color: "#5ae991"
+  }
 ]
