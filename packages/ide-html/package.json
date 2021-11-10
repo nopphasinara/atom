@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
   "_shasum": "4c905ad15bc78ce0336eb52fafd2b797840b3134",
   "_spec": "https://www.atom.io/api/packages/ide-html/versions/0.7.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-202151-10309-1jhs7m2.kej4",
+  "_where": "/private/tmp/apm-install-dir-20211010-73032-be2eb0.tqo5",
   "atomCommands": {
     "ide-html:help": "Provides help information and descriptions of commands.",
     "ide-html:open-settings": "Open settings page."

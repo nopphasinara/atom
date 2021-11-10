@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-ide-javascript/versions/1.5.0/tarball",
   "_shasum": "c92ca6c3b23f68ae5e190e94937e2b03638e01cd",
   "_spec": "https://www.atom.io/api/packages/atom-ide-javascript/versions/1.5.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-24617-escfba.ei48",
+  "_where": "/private/tmp/apm-install-dir-20211010-73032-rrc48a.9j1b",
   "atomTestRunner": "./spec/runner",
   "author": {
     "name": "Amin Yahyaabadi"

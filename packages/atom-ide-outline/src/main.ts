@@ -1,4 +1,5 @@
 import { CompositeDisposable, TextEditor } from "atom"
+import type { Disposable } from "atom"
 import { OutlineView } from "./outlineView"
 import type { OutlineProvider } from "atom-ide-base"
 import { ProviderRegistry } from "atom-ide-base/commons-atom/ProviderRegistry"
@@ -9,6 +10,9 @@ export { statuses } from "./statuses" // for spec
 import { statuses } from "./statuses"
 import debounce from "lodash/debounce"
 
+export { consumeCallHierarchyProvider } from "./call-hierarchy/main"
+import * as CallHierarchy from "./call-hierarchy/main"
+
 const subscriptions = new CompositeDisposable()
 
 let view: OutlineView | undefined
@@ -17,6 +21,7 @@ export const outlineProviderRegistry = new ProviderRegistry<OutlineProvider>()
 // let busySignalProvider: BusySignalProvider | undefined // service might be consumed late
 
 export function activate() {
+  CallHierarchy.activate()
   addCommands()
   addObservers()
   if (atom.config.get("atom-ide-outline.initialDisplay") as boolean) {
@@ -40,6 +45,7 @@ function addObservers() {
 }
 
 export function deactivate() {
+  CallHierarchy.deactivate()
   onEditorChangedDisposable?.dispose()
   subscriptions.dispose()
   view?.destroy()
@@ -51,8 +57,9 @@ export function deactivate() {
 //   subscriptions.add(busySignalProvider)
 // }
 
-export async function consumeOutlineProvider(provider: OutlineProvider) {
-  subscriptions.add(/*  providerRegistryEntry */ outlineProviderRegistry.addProvider(provider))
+export function consumeOutlineProvider(provider: OutlineProvider): Disposable {
+  const prividerDisposable = outlineProviderRegistry.addProvider(provider)
+  subscriptions.add(/*  providerRegistryEntry */ prividerDisposable)
 
   // NOTE Generate (try) an outline after obtaining a provider for the current active editor
   // this initial outline is always rendered no matter if it is visible or not,
@@ -60,11 +67,23 @@ export async function consumeOutlineProvider(provider: OutlineProvider) {
   // or if the editor changes later once outline is visible
   // so we need to have an outline for the current editor
   // the following updates rely on the visibility
-  await getOutline()
+  getOutline().catch((err) => {
+    throw err
+  })
+  return prividerDisposable
 }
 
 // disposables returned inside onEditorChangedDisposable
 let onEditorChangedDisposable: CompositeDisposable | undefined = undefined
+
+/**
+ * How long to wait for the new changes before updating the outline. A high number will increase the responsiveness of
+ * the text editor in large files.
+ */
+function getDebounceTime(editor: TextEditor) {
+  const largeness = editorLargeness(editor)
+  return Math.max(largeness / 4, 300) // 1/4 of the line count
+}
 
 async function editorChanged(editor?: TextEditor) {
   if (editor === undefined) {
@@ -80,10 +99,7 @@ async function editorChanged(editor?: TextEditor) {
   // the following updates rely on the visibility
   await getOutline(editor)
 
-  const largeness = editorLargeness(editor as TextEditor)
-  // How long to wait for the new changes before updating the outline.
-  // A high number will increase the responsiveness of the text editor in large files.
-  const updateDebounceTime = Math.max(largeness / 4, 300) // 1/4 of the line count
+  const updateDebounceTime = getDebounceTime(editor)
 
   const doubouncedGetOutline = debounce(
     getOutlintIfVisible as (textEditor: TextEditor) => Promise<void>,

@@ -1,4 +1,7 @@
+/* global emit */
+
 import Path from 'path'
+import Util from 'util'
 import fs from 'fs-plus'
 import ChildProcess from 'child_process'
 import resolveEnv from 'resolve-env'
@@ -17,14 +20,17 @@ const Cache = {
  * @param  {string} path The path to remove "strangeness" from
  * @return {string}      The cleaned path
  */
-const cleanPath = path => (path ? resolveEnv(fs.normalize(path)) : '')
+const cleanPath = (path) => (path ? resolveEnv(fs.normalize(path)) : '')
 
+/**
+ * @returns {string}
+ */
 export function getNodePrefixPath() {
   if (Cache.NODE_PREFIX_PATH === null) {
     const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm'
     try {
       Cache.NODE_PREFIX_PATH = ChildProcess.spawnSync(npmCommand, ['get', 'prefix'], {
-        env: Object.assign(Object.assign({}, process.env), { PATH: getPath() })
+        env: { ...process.env, PATH: getPath() }
       }).output[1].toString().trim()
     } catch (e) {
       const errMsg = 'Unable to execute `npm get prefix`. Please make sure '
@@ -35,6 +41,10 @@ export function getNodePrefixPath() {
   return Cache.NODE_PREFIX_PATH
 }
 
+/**
+ * @param {string} dirPath
+ * @returns {boolean}
+ */
 function isDirectory(dirPath) {
   let isDir
   try {
@@ -47,6 +57,13 @@ function isDirectory(dirPath) {
 
 let fallbackForGlobalErrorThrown = false
 
+/**
+ * @param {string} modulesDir
+ * @param {object} config
+ * @param {string} projectPath
+ * @param {boolean} fallbackForGlobal
+ * @returns {{ path: string, type: 'local project' | 'global' | 'advanced specified' | 'bundled fallback' }}
+ */
 export function findESLintDirectory(modulesDir, config, projectPath, fallbackForGlobal = false) {
   let eslintDir = null
   let locationType = null
@@ -95,6 +112,12 @@ export function findESLintDirectory(modulesDir, config, projectPath, fallbackFor
   }
 }
 
+/**
+ * @param {string} modulesDir
+ * @param {object} config
+ * @param {string} projectPath
+ * @returns {import("eslint")}
+ */
 export function getESLintFromDirectory(modulesDir, config, projectPath) {
   const { path: ESLintDirectory } = findESLintDirectory(modulesDir, config, projectPath)
   try {
@@ -109,6 +132,9 @@ export function getESLintFromDirectory(modulesDir, config, projectPath) {
   }
 }
 
+/**
+ * @param {string} modulesDir
+ */
 export function refreshModulesPath(modulesDir) {
   if (Cache.LAST_MODULES_PATH !== modulesDir) {
     Cache.LAST_MODULES_PATH = modulesDir
@@ -118,12 +144,39 @@ export function refreshModulesPath(modulesDir) {
   }
 }
 
+/**
+ * @param {string} fileDir
+ * @param {object} config
+ * @param {string} projectPath
+ * @returns {import("eslint")}
+ */
 export function getESLintInstance(fileDir, config, projectPath) {
   const modulesDir = Path.dirname(findCached(fileDir, 'node_modules/eslint') || '')
   refreshModulesPath(modulesDir)
   return getESLintFromDirectory(modulesDir, config, projectPath)
 }
 
+/**
+ * console.log
+ * @param  {any} args
+ * @return {void}
+ */
+export function log(...args) {
+  const obj = args.length === 1 ? args[0] : args
+  let str
+  try {
+    str = JSON.stringify(obj)
+  } catch (e) {
+    str = Util.inspect(obj)
+  }
+
+  emit('log', str)
+}
+
+/**
+ * @param {import("eslint")} eslint
+ * @param {string} filePath
+ */
 export function getConfigForFile(eslint, filePath) {
   const cli = new eslint.CLIEngine()
   try {
@@ -134,6 +187,13 @@ export function getConfigForFile(eslint, filePath) {
   }
 }
 
+/**
+ * @param {string} fileDir
+ * @param {string} filePath
+ * @param {object} config
+ * @param {string} projectPath
+ * @returns {string}
+ */
 export function getRelativePath(fileDir, filePath, config, projectPath) {
   const ignoreFile = config.advanced.disableEslintIgnore ? null : findCached(fileDir, '.eslintignore')
 
@@ -154,6 +214,13 @@ export function getRelativePath(fileDir, filePath, config, projectPath) {
   return Path.basename(filePath)
 }
 
+/**
+ * @param {string} type
+ * @param {string[]} rules
+ * @param {object} config
+ * @param {string} filePath
+ * @param {object} fileConfig
+ */
 export function getCLIEngineOptions(type, config, rules, filePath, fileConfig) {
   const cliEngineConfig = {
     rules,
@@ -167,7 +234,7 @@ export function getCLIEngineOptions(type, config, rules, filePath, fileConfig) {
       return findCached(Path.dirname(filePath), rulesDir)
     }
     return rulesDir
-  }).filter(path => path)
+  }).filter((path) => path)
 
   if (fileConfig === null && config.global.eslintrcPath) {
     // If we didn't find a configuration use the fallback from the settings
@@ -179,7 +246,7 @@ export function getCLIEngineOptions(type, config, rules, filePath, fileConfig) {
 
 /**
  * Gets the list of rules used for a lint job
- * @param  {Object} cliEngine The CLIEngine instance used for the lint job
+ * @param  {import("eslint").CLIEngine} cliEngine The CLIEngine instance used for the lint job
  * @return {Map}              A Map of the rules used, rule names as keys, rule
  *                            properties as the contents.
  */
@@ -211,5 +278,5 @@ export function getRules(cliEngine) {
  */
 export function didRulesChange(currentRules, newRules) {
   return !(currentRules.size === newRules.size
-    && Array.from(currentRules.keys()).every(ruleId => newRules.has(ruleId)))
+    && Array.from(currentRules.keys()).every((ruleId) => newRules.has(ruleId)))
 }
