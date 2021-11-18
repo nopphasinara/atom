@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-typescript/versions/14.4.0/tarball",
   "_shasum": "877c522ebb412d014b912ff603e1f925968a8ff3",
   "_spec": "https://www.atom.io/api/packages/atom-typescript/versions/14.4.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-20211010-71944-1ja18e5.a8uw",
+  "_where": "/private/tmp/apm-install-dir-20211018-6604-3zufy0.gbevg",
   "activationCommands": {
     "atom-workspace": [
       "typescript:initialize-config",

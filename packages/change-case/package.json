@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
   "_shasum": "309c6849aa1f961753c0fe7d66e2cd09bef9765e",
   "_spec": "https://www.atom.io/api/packages/change-case/versions/0.6.5/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-30957-1qrpvmf.b9hj",
+  "_where": "/private/tmp/apm-install-dir-20211018-6604-u70kmi.7d4d",
   "activationCommands": {
     "atom-workspace atom-text-editor": [
       "change-case:camel",

@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
   "_shasum": "adbf3d04965c11bc4a2e7aa42c4bbe4b998b4370",
   "_spec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.11/tarball",
-  "_where": "/private/tmp/apm-install-dir-20211010-74532-1xy1hyz.iwwl",
+  "_where": "/private/tmp/apm-install-dir-20211018-6604-63koqz.qqk0l",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],

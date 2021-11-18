@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
   "_shasum": "fde34c9f10772bd62300b2ef259f425be5c946f4",
   "_spec": "https://www.atom.io/api/packages/atom-ide-definitions/versions/0.4.2/tarball",
-  "_where": "/private/tmp/apm-install-dir-20211010-74532-20mdat.yuzpo",
+  "_where": "/private/tmp/apm-install-dir-20211018-6604-iqu1fo.zidwo",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],

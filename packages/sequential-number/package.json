@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
   "_shasum": "1d9eaa51a76bcf16596917f1c30857c9f44c16d3",
   "_spec": "https://www.atom.io/api/packages/sequential-number/versions/0.5.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-49432-10839rw.drts",
+  "_where": "/private/tmp/apm-install-dir-20211018-47694-so9noh.qfwff",
   "activationCommands": {
     "atom-workspace": "sequential-number:open"
   },

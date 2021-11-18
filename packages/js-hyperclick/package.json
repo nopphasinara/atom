@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/js-hyperclick/versions/1.19.0/tarball",
   "_shasum": "d05ab64b6978f63d94340d71546f0ec1a4d7f91a",
   "_spec": "https://www.atom.io/api/packages/js-hyperclick/versions/1.19.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021330-38322-kcel2h.exn2p",
+  "_where": "/private/tmp/apm-install-dir-20211018-6604-1waplgc.a1zzk",
   "bundleDependencies": false,
   "dependencies": {
     "@babel/core": "^7.4.4",
