@@ -197,6 +197,13 @@
     ]
   }
   {
+    title: "template.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-studio.com/template"
+    ]
+  }
+  {
     title: "soho-art.com"
     group: "WWW"
     paths: [

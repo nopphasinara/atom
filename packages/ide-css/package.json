@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
   "_shasum": "38abce61c42b05101beb5e371d5b3c3be798f50a",
   "_spec": "https://www.atom.io/api/packages/ide-css/versions/0.4.0/tarball",
-  "_where": "/private/tmp/apm-install-dir-20211018-6604-pbxrft.n9kri",
+  "_where": "/private/tmp/apm-install-dir-20211021-6876-ix6qnp.td1d",
   "activationHooks": [
     "source.css:root-scope-used",
     "source.css.less:root-scope-used",

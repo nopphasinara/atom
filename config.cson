@@ -272,6 +272,7 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
