@@ -386,6 +386,9 @@
 ".js.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#@%^&*|+=[]{}`?-…"
+".json.source":
+  editor:
+    softWrap: false
 ".plain.text":
   whitespace:
     ensureSingleTrailingNewline: false
@@ -402,6 +405,3 @@
 ".text.vim-help":
   editor:
     tabType: "soft"
-".json.source":
-    editor:
-        softWrap: false
