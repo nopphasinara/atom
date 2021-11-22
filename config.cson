@@ -1,7 +1,7 @@
 "*":
   "advanced-open-file":
-    defaultInputValue: "Empty"
     fuzzyMatch: true
+    helmDirSwitch: true
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
   "atom-beautify":
