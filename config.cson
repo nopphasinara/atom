@@ -399,6 +399,7 @@
 ".shell.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    tabLength: 4
 ".source.vim-snippet":
   editor:
     tabType: "soft"
