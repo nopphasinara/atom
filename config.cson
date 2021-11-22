@@ -402,3 +402,6 @@
 ".text.vim-help":
   editor:
     tabType: "soft"
+".json.source":
+    editor:
+        softWrap: false
