@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+  "_id": "typescript-modules-helper@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-NkpnnLec1ZYByFLh8I1y3/uYAMv5k1ZilSwWawgoDSgUWnYfMXFgJ1pb7IBgDU78BrFHwvBWISrXVYo2g/eoyg==",
+  "_location": "/typescript-modules-helper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+  "_shasum": "024c1aaa7055663c19b06900dd792c9cb1a50751",
+  "_spec": "https://www.atom.io/api/packages/typescript-modules-helper/versions/0.8.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211023-4783-1cphyfr.el2fi",
+  "author": {
+    "name": "Gabriel Grinberg",
+    "url": "https://github.com/GabiGrin/"
+  },
+  "bugs": {
+    "url": "https://github.com/GabiGrin/atom-typescript-modules-helper-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "sub-atom": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "Add ES6 import statements automatically to Typescript files.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/GabiGrin/atom-typescript-modules-helper-plugin#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/typescript-import",
+  "name": "typescript-modules-helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabiGrin/atom-typescript-modules-helper-plugin.git"
+  },
+  "version": "0.8.0"
+}

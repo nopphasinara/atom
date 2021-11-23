@@ -31,7 +31,32 @@
 }
 
 atom-text-editor {
-  // background: @hue-5-2;
+    // background: @hue-5-2;
+}
+
+
+.tab-bar[is="atom-tabs"] {
+    height: inherit !important;
+    line-height: inherit !important;
+
+    .tab,
+    .tab[is="tabs-tab"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 40px !important;
+        line-height: 40px !important;
+        padding-right: 20px;
+
+        .close-icon {
+            top: 30% !important;
+            right: .5em !important;
+        }
+
+        .title {
+            height: 40px !important;
+            line-height: 40px !important;
+        }
+    }
 }
 
 

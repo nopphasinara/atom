@@ -1,0 +1,115 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+  "_id": "ide-flowtype@0.24.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Xoifopym4hUgt6DbBM7ju+Am+RK2Aae2PzzHZFi7nAamHbqN59FX4IcjL9FD3rPCDQrKFRZPsj1OBj85sOFGAw==",
+  "_location": "/ide-flowtype",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+  "_shasum": "162a5aecbd392aa82bad8a75745c0171eaae59e8",
+  "_spec": "https://www.atom.io/api/packages/ide-flowtype/versions/0.24.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211023-4904-55nyf3.wlpp9",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "bugs": {
+    "url": "https://github.com/flowtype/ide-flowtype/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "0.9.5",
+    "flow-language-server": "0.5.0"
+  },
+  "deprecated": false,
+  "description": "Flow-typed JavaScript support for Atom IDE",
+  "devDependencies": {
+    "eslint": "^v4.6.0",
+    "eslint-config-fbjs-opensource": "^1.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-rulesdir": "^0.1.0",
+    "prettier": "^1.6.1"
+  },
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.js",
+    "source.js.flow",
+    "source.jsx"
+  ],
+  "homepage": "https://github.com/flowtype/ide-flowtype#readme",
+  "license": "BSD-3-Clause",
+  "main": "./lib/main",
+  "name": "ide-flowtype",
+  "prettier": {
+    "bracketSpacing": false,
+    "proseWrap": "always",
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    },
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "provideHyperclick"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowtype/ide-flowtype.git"
+  },
+  "scripts": {
+    "ci": "yarn lint",
+    "format": "prettier --write {lib,eslint-rules}/**/*.js .eslintrc.js package.json",
+    "lint": "eslint lib"
+  },
+  "version": "0.24.0"
+}

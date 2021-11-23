@@ -22,13 +22,17 @@
       jslint_happy: true
       space_after_anon_function: true
   "atom-ide-datatip":
-    hoverTime: 50
     showDataTipOnMouseMove: false
   "atom-ide-hyperclick":
     darwinTriggerKeys: "altKey"
   "atom-ide-outline":
     foldInitially: true
     initialDisplay: false
+  "atom-ide-signature-help":
+    showSignatureHelpOnTyping: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
   "atom-minify":
     checkOutputFileAlreadyExists: true
   "atom-package-deps":
@@ -104,6 +108,20 @@
       "laravel-snippets"
       "autocomplete-php"
       "atom-autocomplete-php"
+      "atom-ide-ui"
+      "atom-ide-base"
+      "atom-ide-code-format"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-javascript"
+      "atom-ide-markdown-service"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "ide-css"
+      "ide-flowtype"
+      "ide-html"
+      "ide-json"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -168,6 +186,8 @@
       "atom-typescript"
       "atom-beautify"
       "prettier-atom"
+      "typescript-modules-helper"
+      "quick-query"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"
@@ -272,7 +292,6 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
