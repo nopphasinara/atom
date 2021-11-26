@@ -336,7 +336,7 @@
     emmetCSSAutocomplete: true
     keepFileExtension: true
   "linter-ui-default":
-    panelHeight: 300
+    panelHeight: 240
     showDecorations: false
   "markdown-preview":
     breakOnSingleNewline: true
