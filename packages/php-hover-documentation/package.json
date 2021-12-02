@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+  "_id": "php-hover-documentation@0.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-qupSZxj6c3lfjpEeS30xl7Y0ZDmaUUZfkcXSYBbmn/3EDsFZFPwOJpjSAETJl8CWI04oWthWb6ntUtKi6zrzxg==",
+  "_location": "/php-hover-documentation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+  "_shasum": "8e6934f0c3208191d0d1b36d6b1475d132688c21",
+  "_spec": "https://www.atom.io/api/packages/php-hover-documentation/versions/0.2.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-2021112-36517-1nraql4.ehhj",
+  "bugs": {
+    "url": "https://github.com/EmilePerron/php-hover-documentation/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A simple Atom package that displays the definition and description of PHP functions when you hover their names.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/EmilePerron/php-hover-documentation#readme",
+  "keywords": [
+    "php",
+    "documentation",
+    "doc",
+    "hover",
+    "tooltip"
+  ],
+  "license": "MIT",
+  "main": "./lib/php-hover-documentation",
+  "name": "php-hover-documentation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilePerron/php-hover-documentation.git"
+  },
+  "version": "0.2.1"
+}
