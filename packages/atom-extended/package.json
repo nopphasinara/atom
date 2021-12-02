@@ -1,0 +1,37 @@
+{
+  "name": "atom-extended",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopphasinara/atom-extended.git"
+  },
+  "author": "Goldfish Creative",
+  "homepage": "https://github.com/nopphasinara/atom-extended#readme",
+  "license": "MIT",
+  "private": true,
+  "main": "./index",
+  "activationHooks": [],
+  "atomCommands": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "node": "^16.0.0",
+    "node-gyp": "^8.0.0",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.21",
+    "underscore-plus": "^1.7.0"
+  }
+}
