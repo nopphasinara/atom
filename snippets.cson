@@ -157,6 +157,19 @@
 
 
   ".source.js": {
+    "return true": {
+      "prefix": "rt",
+      "body": """
+      return true;$0
+      """,
+    },
+    "return false": {
+      "prefix": "rf",
+      "body": """
+      return false;$0
+      """,
+    },
+
     "/** @babel */": {
       "prefix": "atba",
       "body": """
