@@ -35,6 +35,7 @@
       formatOnType: false
   "atom-minify":
     checkOutputFileAlreadyExists: true
+    jsMinifier: "Google Closure Compiler"
   "atom-package-deps":
     ignored: [
       "build-sass"
