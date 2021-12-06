@@ -19,7 +19,7 @@
   "_resolved": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
   "_shasum": "9acd0a9c845ae0562d3fc38d9d848fcb51516275",
   "_spec": "https://www.atom.io/api/packages/git-plus/versions/8.7.1/tarball",
-  "_where": "/private/tmp/apm-install-dir-2021112-2518-1phldhu.ac6a",
+  "_where": "/private/tmp/apm-install-dir-2021116-1826-jxb0sj.wcql",
   "atomTranspilers": [
     {
       "glob": "{lib,spec}/**/*.js",
