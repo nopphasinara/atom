@@ -121,6 +121,7 @@
       "ide-flowtype"
       "ide-html"
       "ide-json"
+      "deprecation-cop"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
