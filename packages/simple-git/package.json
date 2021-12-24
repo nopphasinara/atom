@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+  "_id": "simple-git@0.3.3",
+  "_inBundle": false,
+  "_integrity": "sha512-it5xhAJemrjSpHB7FhSqksv06T+6vEAg/b9Jv9ayXG73/8BoZXTwM64D4t4FSLdrwVq1Hie5w67ojt1GdF9n+Q==",
+  "_location": "/simple-git",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+  "_shasum": "f18aa10589e90419f09e571e1d7fe95a5a3ad508",
+  "_spec": "https://www.atom.io/api/packages/simple-git/versions/0.3.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211124-37662-16zvc2s.mzi8",
+  "bugs": {
+    "url": "https://gitlab.com/mauricioszabo/simple-git/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A short description of your package",
+  "devDependencies": {
+    "diff2html": "^3.4.9",
+    "shadow-cljs": "^2.15.5"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://gitlab.com/mauricioszabo/simple-git#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "simple-git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mauricioszabo/simple-git.git"
+  },
+  "version": "0.3.3"
+}

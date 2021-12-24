@@ -1,0 +1,771 @@
+{
+  ".source.php .string.quoted.single": {
+    "dot-join-1": {
+      "prefix": ".",
+      "body": """
+      '. ${1:} .'$0
+      """,
+    },
+    "dot-join-2": {
+      "prefix": ">.",
+      "body": """
+      >'. ${1:} .'$0
+      """,
+    },
+  },
+
+  ".text.plain": {
+    "docblock": {
+      "prefix": "docblock",
+      "body": """
+      ================================================
+      ${1:TITLE}
+      ================================================
+
+      ${2:}
+
+      ------------------------------------------------$0
+      """,
+    },
+  },
+
+  # LESS
+  ".source.css.less": {
+    "@import": {
+      "prefix": "impt",
+      "body": """
+      @import \"${1:}\";$0
+      """,
+    },
+
+    "foreach": {
+      "prefix": "for-each",
+      "body": """
+      .foreach(@n, @i: 1) when (@i =< @n) {
+        // Code for current iterator.
+        // ${2:..}
+        // Loop to next iterator.
+        .foreach(@n, (@i + 1));
+      \\}
+      .foreach(${1:length(@var)});$0
+      """,
+    },
+  },
+
+
+  ".source.json": {
+    "hold_down": {
+      "prefix": "hdown",
+      "body": """
+      { \"hold_down_milliseconds\": ${1:60}, \"key_code\": \"vk_none\" \\}$0
+      """,
+    },
+    "releaseMouse": {
+      "prefix": "rmouse",
+      "body": """
+      /usr/local/bin/LMC ${1:-releaseMouse}$0
+      """,
+    },
+    "&& releaseMouse": {
+      "prefix": "armouse",
+      "body": """
+      && /usr/local/bin/LMC ${1:-releaseMouse}$0
+      """,
+    },
+    "LMC": {
+      "prefix": "lmc",
+      "body": """
+      /usr/local/bin/LMC ${1:-leftClick}$0
+      """,
+    },
+    "&& LMC": {
+      "prefix": "almc",
+      "body": """
+      && /usr/local/bin/LMC ${1:-leftClick}$0
+      """,
+    },
+    "sleep": {
+      "prefix": "sleep",
+      "body": """
+      sleep ${1:0.0060}$0
+      """,
+    },
+    "&& sleep": {
+      "prefix": "asleep",
+      "body": """
+      && sleep ${1:0.0060}$0
+      """,
+    },
+
+    "package.json": {
+      "prefix": "pack",
+      "body": """
+      {
+        \"name\": \"${1:foobar}\",
+        \"version\": \"${2:1.0.0}\",
+        \"description\": \"${3:}\",
+        \"keywords\": [${4:}\\],
+        \"repository\": {
+          \"type\": \"${5:git}\",
+          \"url\": \"${6:git+https://github.com/user/repo.git}\"
+        \\},
+        \"homepage\": \"${1:https://github.com/user/repo#readme}\",
+        \"author\": \"${1:Foo Bar}\",
+        \"private\": true,
+        \"license\": \"MIT\",
+        \"os\": [
+          \"darwin\"
+        \\],
+        \"engines\": {
+          \"atom\": \"*\"
+        \\},
+        \"activationHooks\": [\\],
+        \"scripts\": {
+          \"test\": \"echo \\\\"Error: no test specified\\\\" && exit 1\"
+        \\},
+        \"dependencies\": {
+          \"fs\": \"^9.1.0\",
+          \"lodash\": \"^4.17.21\",
+          \"path\": \"^0.12.7\",
+          \"underscore-plus\": \"^1.7.0\"
+        \\}
+      \\}
+      """,
+    },
+  },
+
+  ".source.css .meta.css": {
+    "important": {
+      "prefix": "im",
+      "body": """
+      important$0
+      """,
+    },
+  },
+
+
+  ".source.js.embedded.html .keyword.control.js": {
+    "if": {
+      "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
+    },
+  },
+
+
+  ".source.js": {
+    "return true": {
+      "prefix": "rt",
+      "body": """
+      return true;$0
+      """,
+    },
+    "return false": {
+      "prefix": "rf",
+      "body": """
+      return false;$0
+      """,
+    },
+
+    "/** @babel */": {
+      "prefix": "atba",
+      "body": """
+      /** @babel */$0
+      """,
+    },
+    "/** @flowtype */": {
+      "prefix": "atfl",
+      "body": """
+      /** @flowtype */$0
+      """,
+    },
+
+    "if": {
+      "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\} else {
+        ${3:}
+      \\}$0
+      """,
+    },
+    "typeof": {
+      "prefix": "typeof",
+      "body": """
+      typeof ${1:foo}$0
+      """,
+    },
+    "typeof eq ..": {
+      "prefix": "typeof-eq",
+      "body": """
+      typeof ${1:foo} ${2:===} '${3:bar}'$0
+      """,
+    },
+    "if typeof": {
+      "prefix": "if-typeof",
+      "body": """
+      if (typeof ${1:foo} ${2:===} '${3:bar}'$0) {
+        ${4:}
+      \\}$0
+      """,
+    },
+
+    "use babel": {
+      "prefix": "babel",
+      "body": """
+      'use babel';$0
+      """,
+    },
+    "use strict": {
+      "prefix": "strict",
+      "body": """
+      'use strict';$0
+      """,
+    },
+
+    "function name()": {
+      "prefix": "fn",
+      "body": """
+      function ${1:name}(${2:}) {${3:}\\}$0
+      """,
+    },
+    "function anonymous()": {
+      "prefix": "f",
+      "body": """
+      function (${1:}) {${2:}\\}$0
+      """,
+    },
+    "arrow function": {
+      "prefix": "fa",
+      "body": """
+      (${1:}) => {${2:}\\}$0
+      """,
+    },
+
+    "console.clear": {
+      "prefix": "cls",
+      "body": """
+      console.clear();$0
+      """,
+    },
+    "console.log": {
+      "prefix": "log",
+      "body": """
+      console.log(${1:'${2:}'})$0
+      """,
+    },
+    "console.table": {
+      "prefix": "logtb",
+      "body": """
+      console.table(${1:'${2:}'})$0
+      """,
+    },
+    "console.assert": {
+      "prefix": "logas",
+      "body": """
+      console.assert(${1:'${2:}'})$0
+      """,
+    },
+    "console.trace": {
+      "prefix": "logtr",
+      "body": """
+      console.trace()$0
+      """,
+    },
+    "console.time": {
+      "prefix": "logti",
+      "body": """
+      console.time()$0
+      """,
+    },
+    "console.timeEnd": {
+      "prefix": "logtie",
+      "body": """
+      console.timeEnd()$0
+      """,
+    },
+    "console.timeLog": {
+      "prefix": "logtil",
+      "body": """
+      console.timeLog()$0
+      """,
+    },
+    "console.count": {
+      "prefix": "logco",
+      "body": """
+      console.count(${1:'${2:}'})$0
+      """,
+    },
+    "console.debug": {
+      "prefix": "logde",
+      "body": """
+      console.debug(${1:'${2:}'})$0
+      """,
+    },
+    "console.countReset": {
+      "prefix": "logcor",
+      "body": """
+      console.countReset(${1:'${2:}'})$0
+      """,
+    },
+    "console.warn": {
+      "prefix": "warn",
+      "body": """
+      console.warn(${1:'${2:}'})$0
+      """,
+    },
+    "console.error": {
+      "prefix": "error",
+      "body": """
+      console.error(${1:'${2:}'})$0
+      """,
+    },
+    "console.info": {
+      "prefix": "info",
+      "body": """
+      console.info(${1:'${2:}'})$0
+      """,
+    },
+    "console.group": {
+      "prefix": "logg",
+      "body": """
+      console.group(${1:'${2:}'});
+      ${3:}
+      console.groupEnd();$0
+      """,
+    },
+  },
+
+
+  ".text.html.php": {
+    "/* ... */": {
+      "prefix": "/*",
+      "body": """
+      <?php
+      /* ${1:} */
+      ?>$0
+      """,
+    },
+
+    "if": {
+      "prefix": "if",
+      "body": """
+      <?php if (${1:}) { ?>
+        ${2:}
+      <?php \\} ?>$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      <?php if (${1:}) { ?>
+        ${2:}
+      <?php \\} else { ?>
+        ${3:}
+      <?php \\} ?>$0
+      """,
+    },
+
+    "echo": {
+      "prefix": "ec",
+      "body": """
+      <?php echo ${2:${1:'foobar'}};${3:} ?>$0
+      """,
+    },
+
+    "<?php ...": {
+      "prefix": "ph",
+      "body": """
+      <?php
+
+      $0
+      """,
+    },
+  },
+
+
+  ".source.php, .text.html.php .source.php": {
+    "if": {
+      "prefix": "if",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\}$0
+      """,
+    },
+    "if-else": {
+      "prefix": "if-else",
+      "body": """
+      if (${1:}) {
+        ${2:}
+      \\} else {
+        ${3:}
+      \\}$0
+      """,
+    },
+
+    "foreach": {
+      "prefix": "foreach",
+      "body": """
+      foreach (${1:\\$variable} as ${2:${3:\\$key}${4: => ${5:\\$value}}}) {
+        ${6:}
+      \\}$0
+      """,
+    },
+
+    "try...finally": {
+      "prefix": "try-finally",
+      "body": """
+      try {
+        ${1:}
+      \\} finally {
+        ${2:}
+      \\}$0
+      """,
+    },
+
+    "echo": {
+      "prefix": "ec",
+      "body": """
+      echo '${1:foobar}';$0
+      """,
+    },
+
+    "if function exists": {
+      "prefix": "if-fne",
+      "body": """
+      if (function_exists('${1:funcName}')) {
+        ${3:${1:funcName}(${2:});}
+      \\}$0
+      """,
+    },
+    "if function not exists": {
+      "prefix": "if-fnne",
+      "body": """
+      if (!function_exists('${1:funcName}')) {
+        function ${1:funcName}(${2:}) {
+          ${3:}
+        \\}
+      \\}$0
+      """,
+    },
+
+    "pr": {
+      "prefix": "pr",
+      "body": """
+      echo '<pre>'; print_r(${1:\\$${2:value}}); echo '</pre>';
+      """,
+    },
+
+    "function assignment": {
+      "prefix": "fn",
+      "body": """
+      function ${1:func_name}(${2:\\$${3:value}}) {
+        ${4:/* ... */}
+      \\}
+      """,
+    },
+
+    "anonymous function": {
+      "prefix": "f",
+      "body": """
+      function (${1:\\$${2:value}}${3:}) {
+        ${4:/* ... */}
+      \\}
+      """,
+    },
+
+    "public function funcName()": {
+      "prefix": "ff",
+      "body": """
+      /**
+      * ${1:Proxy dynamic properties onto methods.}
+      *
+      * @return mixed
+      */
+      ${2:public} function ${3:funcName}(${4:\\$${5:value}}) {
+        ${6:/* ... */}
+      \\}
+      """,
+    },
+  },
+
+
+  ".source.gfm": {
+    "markup": {
+      "prefix": "`",
+      "body": """
+      ```${1:js}
+      ${2:}
+      ```
+      """,
+    },
+  },
+
+
+  ".source.coffee .string.quoted.coffee .punctuation.definition.end.coffee": {
+    "''' ..": {
+      "prefix": "'",
+      "body": """
+      ': '''
+      ${1:}
+      ''',$0
+      """,
+    },
+    "\"\"\" ..": {
+      "prefix": "\"",
+      "body": """
+      \": \"\"\"
+      ${1:}
+      \"\"\",$0
+      """,
+    },
+  },
+
+
+  ".source.coffee .string.quoted.double.coffee .punctuation.definition.string.end.coffee": {
+    "snippet with selector": {
+      "prefix": "\"\"",
+      "body": """
+      \"${1:selector}\": {
+        \"${2:snippet}\": {
+          \"prefix\": \"${3:}\",
+          \"body\": \"\"\"
+          ${4:}
+          \"\"\",
+        },
+      \\},$0
+      """,
+    },
+  },
+  ".source.coffee .string.quoted.single .punctuation.definition.string.end": {
+    "snippet with selector": {
+      "prefix": "''",
+      "body": """
+      '${1:selector}': {
+        '${2:snippet}': {
+          'prefix': '${3:}',
+          'body': '''
+          ${4:}
+          ''',
+        },
+      \\},$0
+      """,
+    },
+  },
+
+  ".source.coffee": {
+    "add snippet (D)": {
+      "prefix": "add-snippet-d",
+      "body": """
+      \"${1:snippet}\": {
+        \"prefix\": \"${2:}\",
+        \"body\": \"\"\"
+        ${3:}
+        \"\"\",
+      },$0
+      """,
+    },
+    "add snippet (S)": {
+      "prefix": "add-snippet-s",
+      "body": """
+      '${1:snippet}': {
+        'prefix': '${2:}',
+        'body': '''
+        ${3:}
+        ''',
+      },$0
+      """,
+    },
+  },
+
+
+  ".source.shell .meta.function.shell .meta.scope.group.shell .meta.scope.while-loop.shell .meta.scope.if-block.shell .meta.scope.logical-expression.shell .string.quoted.double.shell .punctuation.definition.string.end.shell": {
+    "\"\\${..\\}": {
+      "prefix": "\"$",
+      "body": """
+      \\${${1:..}\\}$0
+      """,
+    },
+    "\"\\$${..\\}": {
+      "prefix": "\"$$",
+      "body": """
+      \\${${1:..}\\}$0
+      """,
+    },
+  },
+
+  ".source.shell": {
+    # IF
+    "if": {
+      "prefix": "if",
+      "body": """
+      if [[ ${1:\\$1} ]]; then
+        ${2:echo 1}
+      fi$0
+      """,
+    },
+    "if .. else": {
+      "prefix": "ife",
+      "body": """
+      if [[ ${1:\\$1} ]]; then
+        ${2:echo 1}
+      else
+        ${3:echo 0}
+      fi$0
+      """,
+    },
+    "elif": {
+      "prefix": "elif",
+      "body": """
+      elif [[ ${1:\\$1} ]]; then
+        ${2:echo 0}$0
+      """,
+    },
+    "if-inline": {
+      "prefix": "if1",
+      "body": """
+      if [[ ${1:\\$1} ]] ${2:echo 1}$0
+      """,
+    },
+    "if-shorthand": {
+      "prefix": "ifs",
+      "body": """
+      [[ ${1:\\$1} ]] && ${2:echo 1} || ${3:echo 0}$0
+      """,
+    },
+
+    "error": {
+      "prefix": "error",
+      "body": """
+      echo
+      echo "`cb_red``c_white``c_b` 󱎘 ERROR `c_r` ${1:something wrong}"$0
+      """,
+    },
+
+    "empty args": {
+      "prefix": "emp-args",
+      "body": """
+      if [[ -z \\$command_args ]]; then
+        echo
+        echo \"usage: ${1:[${2:package_names ...}]}\"
+        echo
+        return 1
+      fi$0
+      """,
+    },
+
+    "for item in var": {
+      "prefix": "fori",
+      "body": """
+      for ${1:item} in ${2:var}; do
+        ${3:}
+      done$0
+      """,
+    },
+
+    "command options": {
+      "prefix": "opts",
+      "body": """
+      # Extract command options and arguments
+      declare -A command_opts=()
+      declare -a command_args=()
+      while [[ -n \\$1 ]]; do
+        local arg_val="\\$(echo \\$1 | sed 's/^[\\\\ ]+//g' | sed 's/[\\\\ ]+\\$//g')"
+
+        case \\$arg_val in
+          --foobar ) command_opts["--foobar"]="\\${arg_val\\}" ;;
+          * ) command_args+="\\${arg_val\\}" ;;
+        esac
+
+        shift
+      done$0
+      """,
+    },
+
+    # "command options": {
+    #   "prefix": "opts",
+    #   "body": """
+    #   declare -A command_options=()
+    #   local command_args=()
+    #
+    #   for item in \\$*; do
+    #     local command_option=\\$(is_command_option \\${item\\})
+    #
+    #     if [[ -n \\$command_option && \\$command_option != "--" ]]; then
+    #       option=(\\$(option_value \\${command_option\\}))
+    #       command_options[\\${option[1]\\}]=\\${option[2]\\}
+    #     else
+    #       if [[ \\$command_option != "--" ]]; then
+    #         command_args+=\\${item\\}
+    #       fi
+    #     fi
+    #   done$0
+    #   """,
+    # },
+    "while...file": {
+      "prefix": "while-readfile",
+      "body": """
+      # Set the Internal Field Separator to an octothorpe '#'
+      IFS="#"
+      # Set input file name here
+      INPUT="bad-guys.ips.txt"
+      # Read file line-by-line to get an IP and comment to block it using the iptables
+      while read -r ip comment
+      do
+      	/sbin/iptables -A INPUT -s "$ip" -m comment --comment "$comment" -j DROP
+      done < "$INPUT"$0
+      """,
+    },
+    "while...read": {
+      "prefix": "while-read",
+      "body": """
+      # Set input file name here
+      ${4:INPUT}="${1:file}"
+      # Read file line-by-line to get an IP and comment to block it using the iptables
+      while read -r ${2:line}; do
+        ${3:}
+      done < "\\$${4:INPUT}"$0
+      """,
+    },
+  },
+
+  ".text.plain.null-grammar, .source.shell": {
+    "/bin/zsh": {
+      "prefix": "zsh",
+      "body": """
+      #!/bin/zsh$0
+      """,
+    },
+    "/bin/bash": {
+      "prefix": "bash",
+      "body": """
+      #!/bin/bash$0
+      """,
+    },
+    "/bin/sh": {
+      "prefix": "sh",
+      "body": """
+      #!/bin/sh$0
+      """,
+    },
+    "/usr/bin/env": {
+      "prefix": "env",
+      "body": """
+      #!/usr/bin/env ${1:zsh}$0
+      """,
+    },
+  },
+}

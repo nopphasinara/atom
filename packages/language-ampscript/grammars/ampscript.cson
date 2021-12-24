@@ -1,0 +1,188 @@
+'scopeName': 'source.ampscript'
+'name': 'AMPscript'
+'fileTypes': [
+  'amp'
+  'ampscript'
+]
+'patterns': [
+  {
+    'begin': '/\\*'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.ampscript'
+    'end': '\\*/'
+    'name': 'comment.block.ampscript'
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ampscript'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ampscript'
+    'name': 'string.quoted.single.ampscript'
+    'patterns': [
+      {
+        'include': '#constant-character-escape'
+      }
+    ]
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ampscript'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ampscript'
+    'name': 'string.quoted.double.ampscript'
+    'patterns': [
+      {
+        'include': '#constant-character-escape'
+      }
+    ]
+  }
+  {
+    'match': '(\\b(?i:false)\\b)'
+    'name': 'constant.language.boolean.false.ampscript'
+  }
+  {
+    'match': '(\\b(?i:true)\\b)'
+    'name': 'constant.language.boolean.true.ampscript'
+  }
+  {
+    'match': '(\\b(?i:null)\\b)'
+    'name': 'constant.language.null.ampscript'
+  }
+  {
+    'match': '(\\b(0(x|X)[0-9a-fA-F]+)|([0-9]+(\\.[0-9]+)?))\\b'
+    'name': 'constant.numeric.ampscript'
+  }
+  {
+    'match': '(\\b(?i:if|then|else|elseif|endif|for|to|downto|do|next)\\b)'
+    'name': 'keyword.control.ampscript'
+  }
+  {
+    'match': '==|!=|>|<|>=|<=|\\b(?i:and|or|not)\\b'
+    'name': 'keyword.operator.ampscript'
+  }
+  {
+    'match': '[\\%\\%\\[]|[\\]\\%\\%]|\\%\\%\\=|\\=\\%\\%'
+    'name': 'meta.brace.ampscript'
+  }
+  {
+    'match': '\\@[a-zA-Z0-9_]+'
+    'name': 'variable.other.ampscript'
+  }
+  {
+    'match': '(\\b(?i:set|var)\\b)'
+    'name': 'storage.type.ampscript'
+  }
+  {
+    'match': '\\b(?i:AdditionalInfo_|__AdditionalEmailAttribute1|__AdditionalEmailAttribute2|__AdditionalEmailAttribute3|__AdditionalEmailAttribute4|__AdditionalEmailAttribute5)\\b'
+    'name': 'support.constant.personalization.analytics.ampscript'
+  }
+  {
+    'match': '\\b(?i:_CarrierID|_Channel|_City|_ContactID|_CountryCode|_CreatedBy|_CreatedDate|_FirstName|_IsHonorDST|_LastName|_MobileNumber|_ModifiedBy|_ModifiedDate|_Priority|_Source|_SourceObjectID|_State|_Status|_UTCOffset|_ZipCode)\\b'
+    'name': 'support.constant.personalization.contacts.ampscript'
+  }
+  {
+    'match': '\\b(?i:linkname|emailname_|_messagecontext|_MessageTypePreference|_replycontent|_IsTestSend|jobid)\\b'
+    'name': 'support.constant.personalization.email.ampscript'
+  }
+  {
+    'match': '\\b(?i:xtmonth|xtmonthnumeric|xtday|xtdayofweek|xtyear|xtshortdate|xtlongdate)\\b'
+    'name': 'support.constant.personalization.email.date-time.ampscript'
+  }
+  {
+    'match': '\\b(?i:channelmemberid|channelmemberdisplayname|channelmembername|channelmemberemail)\\b'
+    'name': 'support.constant.personalization.enterprise.ampscript'
+  }
+  {
+    'match': '\\b(?i:microsite_base_url)\\b'
+    'name': 'support.constant.personalization.microsites.ampscript'
+  }
+  {
+    'match': '\\b(?i:MOBILE_NUMBER|SHORT_CODE|CONTACT_KEY)\\b'
+    'name': 'support.constant.personalization.mobile-messaging.ampscript'
+  }
+  {
+    'match': '\\b(?i:emailaddr|fullname_|fullname|firstname_|firstname|lastname_|lastname|comment_|comment|subscriberid|_subscriberkey|listid|list_|listsubid|_messagetypepreference|mobile_number|short_code|contact_key|_listname|_emailid|_JobSubscriberBatchID|_DataSourceName|_ImpressionRegionID|_ImpressionRegionName)\\b'
+    'name': 'support.constant.personalization.recipient-subscriber-list.ampscript'
+  }
+  {
+    'match': '\\b(?i:replyname|replyemailaddress|memberid|member_busname|member_addr|member_city|member_state|member_postalcode|member_country)\\b'
+    'name': 'support.constant.personalization.sender.ampscript'
+  }
+  {
+    'match': '\\b(?i:view_email_url|ftaf_url|subscription_center_url|profile_center_url|unsub_center_url)\\b'
+    'name': 'support.constant.personalization.standard-links.ampscript'
+  }
+  {
+    'match': '\\b(?i:\\!\\!\\!|\\$\\$\\$|100% Free|4U|Absolutely Free|Accept Credit Cards|act now! don\'t hesitate!|addresses on CD|Adult|all natural|amazing stuff|as seen on|avoid bankruptcy|bargain|big bucks|billion dollars|breakthrough|Bulk|buy direct|call free|call now|cancel at any time|cannot be considered spam|cash bonus|Casino|click here|closeout|collect child support|compare rates|confidentially on all orders|Contest|contest|credit bureaus|Credit card|dear friend|dear somebody|Debt|dig up dirt on friends|direct marketing|Earn \\$|Earn Cash|enlarge|falling interest|Financial Freedom|font size=5|font size=6|font size=7|free consultation|Free Gift|free investment|free leads|Free Offer|free preview|free quote|free sample|free trial|free!|full refund|get paid|guarantee|H.R. 3113|Hardcore|hidden assets|Home Based|Home Business|home refinancing|impotence|in accordance with laws|Increase Sales|Incredible Deal|inventory reduction|join millions of americans|last chance|limited time only|long distance|lose weight|low prices|lower interest|lower monthly payment|lowest prices|Make \\$|Million email addresses|Money at home|money back|Money fast|money making|mortgage network|Mortgage Rate|multi level marketing|Naughty|no cost|no experience needed|no gimmick|no investment|no obligation|no selling|no strings attached|Nude|off shore|once in a lifetime|one hundred percent free|one time mailing|online biz opportunity|online business opportunity|opt-out|order a report|order online|order|penis enlargement|pennies a day|percent off|please read|Porn|Pornography|Potential Earnings|promise you|purchase order|purchase today|pure profit|Read this twice|Read Twice|Reduce your interest rate|Refinance today|refinance your home|reverses aging|risk free|Save \\$|save an extra|save up to|save|score with babes|search engine listings|section 301|sent in compliance|serious cash|serious only|Sex|Slut|spam|stock alert|stock disclaimer statement|stock pick|stop snoring|this email was not sent unsolicited|this is an advertisement|this is not spam|to be removed from this list|toll free|UCE-Mail Act|university diploma|viagra|we honor all|we strongly oppose the use of spam email|while supplies last|while you sleep|why pay more\\?|you are a winner|you\'re a winner)\\b'
+    'name': 'support.invalid.content-detective.trigger-words.ampscript'
+  }
+  {
+    'match': '\\b(?i:AddObjectArrayItem|CreateObject|InvokeCreate|InvokeDelete|InvokeExecute|InvokePerform|InvokeRetrieve|InvokeUpdate|RaiseError|SetObjectProperty)\\b'
+    'name': 'support.function.api.ampscript'
+  }
+  {
+    'match': '\\b(?i:UpsertContact)\\b'
+    'name': 'support.function.contacts.ampscript'
+  }
+  {
+    'match': '\\b(?i:AttachFile|BarCodeURL|BeginImpressionRegion|BuildOptionList|BuildRowSetFromString|BuildRowSetFromXML|ContentArea|ContentAreaByName|CreateSmsConversation|EndImpressionRegion|EndSmsConversation|GetPortfolioItem|Image|SetSmsConversationNextKeyword|TransformXML|TreatAsContent|TreatAsContentArea|WAT)\\b'
+    'name': 'support.function.content.ampscript'
+  }
+  {
+    'match': '\\b(?i:ClaimRow|ClaimRowValue|DeleteDE|ExecuteFilter|ExecuteFilterOrderedRows|Field|InsertDE|Lookup|LookupOrderedRows|LookupRows|LookupRowsCS|Row|RowCount|UpdateData|UpdateDE|UpsertData|UpsertDE)\\b'
+    'name': 'support.function.data-extension.ampscript'
+  }
+  {
+    'match': '\\b(?i:DateAdd|DateDiff|DateParse|DatePart|FormatDate|LocalDateToSystemDate|Now|SystemDateToLocalDate)\\b'
+    'name': 'support.function.date-time.ampscript'
+  }
+  {
+    'match': '\\b(?i:Base64Decode|Base64Encode|DecryptSymmetric|EncryptSymmetric|GUID|MD5|SHA1|SHA256|SHA512)\\b'
+    'name': 'support.function.encryption.ampscript'
+  }
+  {
+    'match': '\\b(?i:HTTPGet|HTTPRequestHeader|IsCHTMLBrowser|RedirectTo|URLEncode|WrapLongURL)\\b'
+    'name': 'support.function.http.ampscript'
+  }
+  {
+    'match': '\\b(?i:Add|Divide|FormatCurrency|FormatNumber|Mod|Multiply|Random|Subtract)\\b'
+    'name': 'support.function.math.ampscript'
+  }
+  {
+    'match': '\\b(?i:RetrieveMscrmRecords|RetrieveMscrmRecordsFetchXML|SetStateMscrmRecord|UpdateMscrmRecords|UpsertMscrmRecord|CreateMscrmRecord|DescribeMscrmEntities|DescribeMscrmEntityAttributes|AddMscrmListMember)\\b'
+    'name': 'support.function.microsoft-dynamics.ampscript'
+  }
+  {
+    'match': '\\b(?i:CreateSalesforceObject|LongSFID|RetrieveSalesforceJobSources|RetrieveSalesforceObjects|UpdateSingleSalesforceObject)\\b'
+    'name': 'support.function.salesforce.ampscript'
+  }
+  {
+    'match': '\\b(?i:AuthenticatedEmployeeID|AuthenticatedEmployeeNotificationAddress|AuthenticatedEmployeeUserName|AuthenticatedEnterpriseID|AuthenticatedMemberID|AuthenticatedMemberName|DeleteData|InsertData|IsNullDefault|LiveContentMicrositeURL|MicrositeURL|QueryParameter|Redirect|RequestParameter)\\b'
+    'name': 'support.function.sites.ampscript'
+  }
+  {
+    'match': '\\b(?i:GetPublishedSocialContent|GetSocialPublishURL|GetSocialPublishURLByName)\\b'
+    'name': 'support.function.social.ampscript'
+  }
+  {
+    'match': '\\b(?i:Char|Concat|Format|IndexOf|Length|Lowercase|ProperCase|RegExMatch|Replace|ReplaceList|StringToDate|StringToHex|Substring|Trim|Uppercase)\\b'
+    'name': 'support.function.string.ampscript'
+  }
+  {
+    'match': '\\b(?i:AttributeValue|Domain|Empty|IIf|IsEmailAddress|IsNull|IsPhoneNumber|Output|OutputLine|V)\\b'
+    'name': 'support.function.utilities.ampscript'
+  }
+]
+'repository':
+  'constant-character-escape':
+    'match': '\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)'
+    'name': 'constant.character.escape.ampscript'

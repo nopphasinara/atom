@@ -1,0 +1,1 @@
+Main = require "./lib/main"

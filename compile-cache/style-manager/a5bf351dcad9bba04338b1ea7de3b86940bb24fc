@@ -1,0 +1,1 @@
+{"source":".git-menu.dialog.commit .message {\n  height: 150px;\n  resize: none;\n}\n.git-menu.dialog.commit .message.too-long {\n  border-color: #ff6347;\n  box-shadow: 0 0 0 1px #ff6347;\n}\n.git-menu.dialog.commit .last-commit {\n  font-weight: bold;\n  font-style: italic;\n}\n"}

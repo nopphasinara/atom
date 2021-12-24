@@ -1,0 +1,12 @@
+(function() {
+  var GitStashMessageView;
+
+  GitStashMessageView = require('../views/stash-message-view');
+
+  module.exports = function(repo) {
+    return new GitStashMessageView(repo);
+  };
+
+}).call(this);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiL1ZvbHVtZXMvU3RvcmFnZS9Qcm9qZWN0cy9hdG9tL3BhY2thZ2VzL2dpdC1wbHVzL2xpYi9tb2RlbHMvZ2l0LXN0YXNoLXNhdmUtbWVzc2FnZS5jb2ZmZWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSxNQUFBOztFQUFBLG1CQUFBLEdBQXNCLE9BQUEsQ0FBUSw2QkFBUjs7RUFFdEIsTUFBTSxDQUFDLE9BQVAsR0FBaUIsU0FBQyxJQUFEO1dBQVUsSUFBSSxtQkFBSixDQUF3QixJQUF4QjtFQUFWO0FBRmpCIiwic291cmNlc0NvbnRlbnQiOlsiR2l0U3Rhc2hNZXNzYWdlVmlldyA9IHJlcXVpcmUgJy4uL3ZpZXdzL3N0YXNoLW1lc3NhZ2UtdmlldydcblxubW9kdWxlLmV4cG9ydHMgPSAocmVwbykgLT4gbmV3IEdpdFN0YXNoTWVzc2FnZVZpZXcocmVwbylcbiJdfQ==

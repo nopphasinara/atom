@@ -1,0 +1,1 @@
+{"source":"\n .split-diff-added-custom {\n \tbackground-color: rgba(0, 128, 0, 0.5);\n }\n .split-diff-removed-custom {\n \tbackground-color: rgba(255, 0, 0, 0.5);\n }\n .split-diff-word-added-custom .region {\n \tbackground-color: rgba(0, 128, 0, 0.5);\n }\n .split-diff-word-removed-custom .region {\n \tbackground-color: rgba(255, 0, 0, 0.5);\n }\n"}

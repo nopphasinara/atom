@@ -1,0 +1,428 @@
+"*":
+  "advanced-open-file":
+    fuzzyMatch: true
+    helmDirSwitch: true
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/bin/php"
+  "atom-beautify":
+    executables:
+      php:
+        path: "/usr/local/bin/php"
+      "php-cs-fixer":
+        path: "/usr/local/bin/php-cs-fixer"
+    general:
+      beautifyEntireFileOnSave: false
+      loggerLevel: "debug"
+      muteAllErrors: true
+      muteUnsupportedLanguageErrors: true
+    js:
+      brace_style: "expand"
+      default_beautifier: "Pretty Diff"
+      end_with_comma: true
+      jslint_happy: true
+      space_after_anon_function: true
+  "atom-ide-datatip":
+    showDataTipOnMouseMove: false
+  "atom-ide-hyperclick":
+    darwinTriggerKeys: "altKey"
+  "atom-ide-outline":
+    foldInitially: true
+    initialDisplay: false
+  "atom-ide-signature-help":
+    showSignatureHelpOnTyping: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
+  "atom-minify":
+    checkOutputFileAlreadyExists: true
+    jsMinifier: "Google Closure Compiler"
+  "atom-package-deps":
+    ignored: [
+      "build-sass"
+    ]
+  "atom-ternjs":
+    snippetsFirst: true
+    useSnippets: true
+  "atom-typescript":
+    allowJS: true
+    autocompleteParens: true
+    autocompletionSuggestionPriority: 1
+    ignoreNonSuggestionSuggestionDiagnostics: true
+    ignoreUnusedSuggestionDiagnostics: true
+    ignoredDiagnosticCodes: [
+      "8002"
+      "8003"
+      "8004"
+      "8006"
+      "8008"
+      "8010"
+    ]
+    jsSyntaxScopes: [
+      "source.js"
+      "source.jsx"
+      "javascript"
+      "source.flow"
+    ]
+    preferBuiltinBusySignal: false
+    preferBuiltinOccurrenceHighlight: false
+    preferBuiltinSigHelp: false
+    preferBuiltinTooltips: false
+    tooltipPosition: "top"
+  "autocomplete-paths":
+    ignoreSubmodules: true
+    ignoredPatterns: [
+      ".git"
+    ]
+    maxFileCount: 6000
+  "autocomplete-plus":
+    autoActivationDelay: 50
+    backspaceTriggersAutocomplete: true
+    extraWordCharacters: ""
+    minimumWordLength: 1
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  "command-palette":
+    preserveLastSearch: true
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    disabledPackages: [
+      "language-shellscript"
+      "language-scss"
+      "language-scss"
+      "spell-check"
+      "lodash-snippets"
+      "atom-ternjs"
+      "Quick-JavaScript"
+      "hyperclick"
+      "hyperlink-hyperclick"
+      "js-hyperclick"
+      "php-hyperclick"
+      "css-hyperclick"
+      "python-snippets"
+      "autocomplete-module-import"
+      "autocomplete-sql"
+      "blade-snippets"
+      "css-snippets"
+      "es6-javascript"
+      "laravel-snippets"
+      "atom-ide-ui"
+      "atom-ide-base"
+      "atom-ide-code-format"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-javascript"
+      "atom-ide-markdown-service"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "ide-css"
+      "ide-flowtype"
+      "ide-html"
+      "ide-json"
+      "deprecation-cop"
+    ]
+    packagesWithKeymapsDisabled: [
+      "color-picker"
+      "advanced-open-file"
+      "browser-plus"
+      "emmet"
+      "project-manager"
+      "tool-bar"
+      "sort-lines"
+      "toggle-quotes"
+      "change-case"
+      "expand-selection-to-quotes"
+      "escape-utils"
+      "escape-to-javascript-string"
+      "ascii-unicode-escape"
+      "sequential-number"
+      "duplicate-removal"
+      "sass-autocompile"
+      "aligner"
+      "archive-view"
+      "autoflow"
+      "bracket-matcher"
+      "dev-live-reload"
+      "encoding-selector"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "grammar-selector"
+      "image-view"
+      "keybinding-resolver"
+      "link"
+      "markdown-preview"
+      "open-on-github"
+      "spell-check"
+      "styleguide"
+      "tree-view"
+      "chrome-color-picker"
+      "hyperclick"
+      "repl-console"
+      "atom-ternjs"
+      "server-script"
+      "script"
+      "php-integrator-refactoring"
+      "atom-autocomplete-php"
+      "git-plus"
+      "preview-plus"
+      "split-diff"
+      "symbols-list"
+      "git-history"
+      "pymakr"
+      "atom-js-console"
+      "atom-line-to-console"
+      "atom-minify"
+      "autocomplete-javascript"
+      "es6-javascript"
+      "intentions"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-typescript"
+      "atom-beautify"
+      "prettier-atom"
+      "typescript-modules-helper"
+      "quick-query"
+    ]
+    packagesWithSnippetsDisabled: [
+      "advanced-open-file"
+      "aligner"
+      "aligner-coffeescript"
+      "aligner-css"
+      "aligner-javascript"
+      "aligner-php"
+      "aligner-scss"
+      "atom-autocomplete-php"
+      "atom-beautify"
+      "atom-extended"
+      "atom-ide-base"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-javascript"
+      "atom-ide-markdown-service"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-minify"
+      "atom-prettify"
+      "atom-ternjs"
+      "atom-typescript"
+      "autocomplete-javascript"
+      "autocomplete-js-import"
+      "autocomplete-lodash"
+      "autocomplete-module-import"
+      "autocomplete-modules"
+      "autocomplete-paths"
+      "autocomplete-php"
+      "autocomplete-sql"
+      "blade-snippets"
+      "browser-plus"
+      "busy-signal"
+      "change-case"
+      "css-hyperclick"
+      "css-snippets"
+      "dark-one-dark-syntax"
+      "duplicate-removal"
+      "emmet"
+      "emmet-jsx-css-modules"
+      "es6-javascript"
+      "expand-selection-to-quotes"
+      "filesize"
+      "flex-tool-bar"
+      "git-menu"
+      "git-plus"
+      "hyperclick"
+      "hyperlink-hyperclick"
+      "ide-css"
+      "ide-html"
+      "ide-json"
+      "ide-python"
+      "intentions"
+      "javascript-drag-import"
+      "js-hyperclick"
+      "language-ampscript"
+      "language-applescript"
+      "language-babel"
+      "language-blade"
+      "language-dotenv"
+      "language-gitignore"
+      "language-htaccess"
+      "language-ini"
+      "language-unix-shell"
+      "laravel-snippets"
+      "linter"
+      "linter-eslint"
+      "linter-ui-default"
+      "lodash-snippets"
+      "one-dark-pro-vivid-syntax"
+      "one-dark-syntax"
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+      "php-composer-completion"
+      "php-hyperclick"
+      "project-manager"
+      "python-snippets"
+      "Quick-JavaScript"
+      "remote-sync"
+      "repl-console"
+      "sass-autocompile"
+      "sequential-number"
+      "sort-lines"
+      "split-diff"
+      "tool-bar"
+    ]
+    reopenProjectMenuCount: 10
+    restorePreviousWindowsOnStart: "always"
+    simpleFullScreenWindows: true
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+    titleBar: "custom"
+    uriHandlerRegistration: "always"
+  editor:
+    fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
+    maxScreenLineLength: 4096
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "b188c45a-7d6b-486e-a399-20f27d215b8c"
+  filesize:
+    DisplayGzippedSizeOnPopup: false
+    UseDecimal: true
+  "find-and-replace":
+    liveSearchMinimumCharacters: 1
+  "flex-tool-bar":
+    reloadToolBarNotification: false
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
+  "git-menu":
+    confirmationDialogs: {}
+    contextMenuItems:
+      "commit-all": false
+      "commit-staged": false
+      "create-branch": false
+      "delete-branch": false
+      "fetch-all": false
+      "ignore-changes": false
+      "merge-branch": false
+      "pull-all": false
+      "push-all": false
+      refresh: false
+      "run-command": false
+      "switch-branch": false
+      sync: false
+      "sync-all": false
+      "unignore-changes": false
+  "git-plus":
+    general:
+      showFormat: "fuller"
+  github:
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  "js-hyperclick": {}
+  "language-babel":
+    allowLocalOverride: true
+    autoIndentJSX: true
+    emmetCSSAutocomplete: true
+    keepFileExtension: true
+  "linter-ui-default":
+    panelHeight: 300
+    showDecorations: false
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "one-dark-ui":
+    hideDockButtons: true
+  "project-manager":
+    prettifyTitle: false
+    showPath: false
+    sortBy: "title"
+  "remote-sync":
+    autoHideLogPanel: true
+    foldLogPanel: true
+    monitorFileAnimation: false
+  "sass-autocompile":
+    compileCompressed: false
+    compileExpanded: true
+    compileOnSave: false
+    indentWidth: 4
+    showAdditionalCompilationInfo: false
+    showOldParametersWarning: false
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Winsor"
+    ]
+    noticesMode: "console"
+  "split-diff":
+    muteNotifications: true
+    turnOffSoftWrap: true
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  "tool-bar":
+    fullWidth: false
+    iconSize: "21px"
+    useTouchBar: false
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".applescript.source":
+  editor:
+    commentEnd: ""
+    commentStart: "-- "
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+".coffee.source":
+  editor:
+    autoIndentOnPaste: true
+".css.scss.source":
+  "autocomplete-plus":
+    extraWordCharacters: "$"
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
+".js.jsx.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+".js.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#@%^&*|+=[]{}`?-…"
+".json.source":
+  editor:
+    softWrap: false
+".plain.text":
+  whitespace:
+    ensureSingleTrailingNewline: false
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    tabLength: 2
+".source.vim-snippet":
+  editor:
+    tabType: "soft"
+".text.vim-help":
+  editor:
+    tabType: "soft"

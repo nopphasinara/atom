@@ -1,0 +1,81 @@
+{
+  "_from": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_id": "aligner@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-uNl3ucSm5S6UyeBh8ACnjW9PnTxFOjJSFt45cGxLggf6TkuWB7MbSt3Hf+fqw2PJz6LruBmdchBXH3dtVLbrBA==",
+  "_location": "/aligner",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_shasum": "b31697455e86f49d43bbf1b1ffab7b0cb7949185",
+  "_spec": "https://www.atom.io/api/packages/aligner/versions/1.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211117-49423-18hy9vn.ydhw",
+  "bugs": {
+    "url": "https://github.com/adrianlee44/atom-aligner/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "alignComments": {
+      "title": "Align comments",
+      "description": "Align trailing comments when aligning characters",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "consumedServices": {
+    "aligner.provider": {
+      "description": "A package for aligning code",
+      "versions": {
+        "1.0.0": "registerProviders"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^7.2.2",
+    "extend": "^3.0.2"
+  },
+  "deprecated": false,
+  "description": "Easily align multiple lines and blocks with support for different operators and custom configurations",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "atom": ">=1.40.0"
+  },
+  "homepage": "https://github.com/adrianlee44/atom-aligner#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "cursor",
+    "selection"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "aligner",
+  "package-deps": [
+    "aligner-javascript"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianlee44/atom-aligner.git"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "version": "1.3.0"
+}

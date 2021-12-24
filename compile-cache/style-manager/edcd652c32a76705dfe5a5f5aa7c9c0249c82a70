@@ -1,0 +1,1 @@
+{"source":".tool-bar button.tool-bar-btn.tool-bar-mode-dev {\n  color: #ff6347;\n}\n.tool-bar button.tool-bar-btn.tool-bar-mode-dev:focus,\n.tool-bar button.tool-bar-btn.tool-bar-mode-dev:hover {\n  color: #ff4d2e;\n}\n"}

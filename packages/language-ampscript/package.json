@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+  "_id": "language-ampscript@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PjQf8k3c2AreW/Rp43H+6D3sZJ3J1pvT+ll4M9jC5TWLW1IiFGzVprAHM2lGm3JoqYP2vAHO7v8Mxag6c6kxZA==",
+  "_location": "/language-ampscript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+  "_shasum": "14fa769412d18a29e8b2c833c06c5f97777076b3",
+  "_spec": "https://www.atom.io/api/packages/language-ampscript/versions/0.6.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211117-87748-101j0pt.8bfq",
+  "author": {
+    "name": "Diemo Gebhardt",
+    "email": "me@diemogebhardt.com",
+    "url": "https://diemogebhardt.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/diemogebhardt/atom-language-ampscript/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "AMPscript language support in Atom",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://atom.io/packages/language-ampscript",
+  "keywords": [
+    "atom",
+    "language",
+    "ampscript",
+    "salesforce",
+    "marketingcloud",
+    "exacttarget"
+  ],
+  "license": "MIT",
+  "name": "language-ampscript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diemogebhardt/atom-language-ampscript.git"
+  },
+  "version": "0.6.0"
+}

@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+  "_id": "atom-minify@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-46rerhOvke4z65PE5vTNy7DW3JSbULeD2bov4BJMbJmkxL5UiYYc6g9GWL1IY6ZFiZglNXNHSdNRn/PSrkOP/A==",
+  "_location": "/atom-minify",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+  "_shasum": "ea2c11b469703bf31fac3e437394dd966c664f76",
+  "_spec": "https://www.atom.io/api/packages/atom-minify/versions/0.8.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211117-97522-1d1w5u3.ghu4",
+  "bugs": {
+    "url": "https://github.com/armin-pfaeffle/atom-minify/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "clean-css": "^3.3.5",
+    "csso": "^1.3.11",
+    "event-kit": "^1.2.0",
+    "loophole": "^1.1.0",
+    "node-uuid": "^1.4.3",
+    "sqwish": "^0.2.2",
+    "uglify-js": "^2.4.19"
+  },
+  "deprecated": false,
+  "description": "Minifies JS and CSS files, optionally on save.",
+  "engines": {
+    "atom": ">=0.185.0 <2.0.0"
+  },
+  "homepage": "https://github.com/armin-pfaeffle/atom-minify#readme",
+  "license": "MIT",
+  "main": "./lib/atom-minify",
+  "name": "atom-minify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armin-pfaeffle/atom-minify.git"
+  },
+  "version": "0.8.0"
+}

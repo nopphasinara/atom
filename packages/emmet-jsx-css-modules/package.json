@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+  "_id": "emmet-jsx-css-modules@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-nJUB4QoayuhboyqzERhFRAjLAi/x6BJIN/G8mR3OFZw9EJnv1J6k6a58wBVa0jrlI5sHgM2yo3QLjmsHjjLzYw==",
+  "_location": "/emmet-jsx-css-modules",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+  "_shasum": "81e1f216aa95fe892a582c72627e0425b2b504bb",
+  "_spec": "https://www.atom.io/api/packages/emmet-jsx-css-modules/versions/1.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211117-22163-t3t4o6.6uz07",
+  "author": {
+    "name": "Jason L Perry",
+    "email": "jasper@ambethia.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ambethia/emmet-jsx-css-modules/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Extends Emmet's JSX expansions to use CSS modules.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ambethia/emmet-jsx-css-modules#readme",
+  "keywords": [
+    "emmet",
+    "jsx",
+    "css-modules"
+  ],
+  "license": "MIT",
+  "main": "./lib/emmet-jsx-css-modules",
+  "name": "emmet-jsx-css-modules",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambethia/emmet-jsx-css-modules.git"
+  },
+  "version": "1.0.0"
+}
