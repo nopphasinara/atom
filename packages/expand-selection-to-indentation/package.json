@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+  "_id": "expand-selection-to-indentation@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-naTv/5BuefMqJAIgI8e9L2Xn/58wqcMRMZ6DxnQfM9CS6gMuyybrNWFGFMT3oVD2pJriC8ih3IvDU5IJNZVnjg==",
+  "_location": "/expand-selection-to-indentation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+  "_shasum": "fef5ee3259d113729837c9ff72d850230e510633",
+  "_spec": "https://www.atom.io/api/packages/expand-selection-to-indentation/versions/0.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211130-98202-yvrk3c.ddqre",
+  "bugs": {
+    "url": "https://github.com/Overload119/expand-selection-to-indentation/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Expands vertical selection based on the indentation of the current line",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Overload119/expand-selection-to-indentation#readme",
+  "keywords": [
+    "vertical column selection expand sublime indentation"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "expand-selection-to-indentation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Overload119/expand-selection-to-indentation.git"
+  },
+  "version": "0.4.0"
+}
