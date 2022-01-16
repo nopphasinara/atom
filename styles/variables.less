@@ -1,0 +1,156 @@
+
+@atom-home: "/Volumes/Storage/Projects/atom";
+
+@hue-keys: hue-1, hue-2, hue-3, hue-4, hue-5, hue-5-2, hue-6, hue-6-2;
+
+@color-keys: light, dark, subtle, highlight, selected, info, success, warning, error;
+@color-values: @color-light, @color-dark, @color-subtle, @color-highlight, @color-selected, @color-info, @color-success, @color-warning, @color-error;
+@color-values-hover: @color-light-hover, @color-dark-hover, @color-subtle-hover, @color-highlight-hover, @color-selected-hover, @color-info-hover, @color-success-hover, @color-warning-hover, @color-error-hover;
+
+@color-light: @text-color;
+@color-dark: @app-background-color;
+@color-subtle: @text-color-subtle;
+@color-highlight: @text-color-highlight;
+@color-selected: @text-color-selected;
+@color-info: @hue-2;
+@color-success: @hue-4;
+@color-warning: @hue-6-2;
+@color-error: @hue-5-2;
+
+@color-light-hover: @color-light;
+@color-dark-hover: @color-dark;
+@color-subtle-hover: @color-subtle;
+@color-highlight-hover: @color-highlight;
+@color-selected-hover: @color-selected;
+@color-info-hover: @color-info;
+@color-success-hover: @color-success;
+@color-warning-hover: @color-warning;
+@color-error-hover: @color-error;
+
+@ui-border-color: @base-border-color;
+// @ui-border-color: @syntax-fg;
+
+// @syntax-color-renamed: @color-info;
+// @syntax-color-added: @color-success;
+// @syntax-color-modified: @color-warning;
+// @syntax-color-removed: @color-error;
+
+// @fg-light: @color-light;
+// @fg-dark: @color-dark;
+// @fg-subtle: @color-subtle;
+// @fg-highlight: @color-highlight;
+// @fg-selected: @color-selected;
+// @fg-info: @color-info;
+// @fg-success: @color-success;
+// @fg-warning: @color-warning;
+// @fg-error: @color-error;
+//
+// @fg-light-hover: @color-light-hover;
+// @fg-dark-hover: @color-dark-hover;
+// @fg-subtle-hover: @color-subtle-hover;
+// @fg-highlight-hover: @color-highlight-hover;
+// @fg-selected-hover: @color-selected-hover;
+// @fg-info-hover: @color-info-hover;
+// @fg-success-hover: @color-success-hover;
+// @fg-warning-hover: @color-warning-hover;
+// @fg-error-hover: @color-error-hover;
+//
+// @bg-light: @color-light;
+// @bg-dark: @color-dark;
+// @bg-subtle: @color-subtle;
+// @bg-highlight: @color-highlight;
+// @bg-selected: @color-selected;
+// @bg-info: @color-info;
+// @bg-success: @color-success;
+// @bg-warning: @color-warning;
+// @bg-error: @color-error;
+//
+// @bg-light-hover: @color-light-hover;
+// @bg-dark-hover: @color-dark-hover;
+// @bg-subtle-hover: @color-subtle-hover;
+// @bg-highlight-hover: @color-highlight-hover;
+// @bg-selected-hover: @color-selected-hover;
+// @bg-info-hover: @color-info-hover;
+// @bg-success-hover: @color-success-hover;
+// @bg-warning-hover: @color-warning-hover;
+// @bg-error-hover: @color-error-hover;
+
+@mdi-font-size: 1.5em;
+@tool-bar-btn-width: 3.8rem;
+@tool-bar-icon-size: 1.1em;
+@tool-bar-height: 3.8rem;
+@tool-bar-btn-height: 3.8rem;
+@tree-view-tab-bar-height: 3.8rem;
+@tree-view-width: 280px;
+@tab-bar-height: 3rem;
+@accent-color: red;
+@tool-bar-btn-fg: @color-info;
+@tool-bar-btn-bg: @color-selected;
+
+@status-bar-fg-color: fade(tint(@color-info, 90), 80);
+@status-bar-fg-hover-color: spin(shade(tint(@status-bar-fg-color, 100), 0), 100);
+@status-bar-bg-color: @color-info;
+@status-bar-font-size: 12px;
+@status-bar-height: 24px;
+
+@accent-bg-color: @color-info-hover;
+
+
+@font-family: system-ui, MaterialDesignIcons, master-icons;
+@icon-font-size: 1em * 1.4;
+
+@sizers-key: xs, sm, md, lg, xl, xxl;
+@sizers: 0.875em, 1em, 1.375em, 1.725em, 2em, 2.25em;
+@spacers: 1em;
+// @set: {
+//   one: blue;
+//   two: green;
+//   three: red;
+// };
+// :root {
+//   .for-each(@set, {
+//     --set-@{i}: extract(@set, @i);
+//   });
+// }
+
+.mixin(dark, @color) {
+  --switch-dark: darken(@color, 10%);
+}
+.mixin(light, @color) {
+  --switch-light: lighten(@color, 10%);
+}
+.mixin(@_, @color) {
+  --switch-at: block;
+}
+
+:root {
+  @switch: light;
+  .mixin(@switch, #888);
+  @switch: dark;
+  .mixin(@switch, #888);
+
+  // @property: --foo;
+  // .foo() {
+  //   @{property}: foo;
+  // }
+  // .foo();
+
+  // launch the loop
+  .loop(5);
+
+  .true();
+  .true(4);
+}
+
+.loop(@counter) when (@counter > 0) {
+  // next iteration
+  .loop((@counter - 1));
+
+  // code for each iteration
+  --loop-@{counter}: @counter;
+}
+
+.true() {}
+.true(@a) {
+  --true: @a;
+}
