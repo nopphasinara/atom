@@ -1,0 +1,128 @@
+{
+  "_from": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+  "_id": "markdown-preview-enhanced@0.19.1",
+  "_inBundle": false,
+  "_integrity": "sha512-WsyQOeEqEfZc368tGrYTJG+uXMavfmkfyvLAhOaMIjPrS92V0OmfmMdGHD95OEg+HHpLN3OmM9EsJG3Dj/xoeg==",
+  "_location": "/markdown-preview-enhanced",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+  "_shasum": "d7ade054104e23c608136832d58f7bb38895f4a0",
+  "_spec": "https://www.atom.io/api/packages/markdown-preview-enhanced/versions/0.19.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211119-2652-e9cewg.9eq0q",
+  "activationCommands": {
+    "atom-workspace": "markdown-preview-enhanced:toggle"
+  },
+  "activationHooks": [
+    "language-gfm:grammar-used",
+    "language-gfm-enhanced:grammar-used",
+    "language-markdown:grammar-used",
+    "language-pfm:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/shd101wyy/markdown-preview-enhanced/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@shd101wyy/mume": "^0.6.9"
+  },
+  "deprecated": false,
+  "description": "One of the 'BEST' markdown preview extensions for Atom editor!",
+  "devDependencies": {
+    "@types/atom": "^1.36.2",
+    "@types/cheerio": "^0.22.18",
+    "@types/jquery": "^3.3.32",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.0",
+    "@types/vfile": "^4.0.0",
+    "@types/vscode": "1.40.0",
+    "chinese-conv": "^1.0.1",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "prettier-plugin-packagejson": "^2.0.10",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5",
+    "yarn-deduplicate": "^2.1.1"
+  },
+  "engines": {
+    "atom": ">=1.16.0"
+  },
+  "files": [
+    "assets",
+    "images",
+    "keymaps",
+    "menu",
+    "out",
+    "styles",
+    "LICENSE.md",
+    "README.md",
+    "markdown.png"
+  ],
+  "homepage": "https://github.com/shd101wyy/markdown-preview-enhanced#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "beamer",
+    "dot language",
+    "ePub",
+    "ebook",
+    "exporter",
+    "footer",
+    "graphviz",
+    "html",
+    "image helper",
+    "katex",
+    "latex",
+    "markdown",
+    "mathjax",
+    "mermaid",
+    "pandoc",
+    "pdf",
+    "plantuml",
+    "presentation",
+    "toc",
+    "wavedrom"
+  ],
+  "license": "NCSA",
+  "lint-staged": {
+    "**/*.*": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "./out/src/extension",
+  "name": "markdown-preview-enhanced",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shd101wyy/markdown-preview-enhanced.git"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "build:watch": "tsc --project . --watch",
+    "fix": "yarn fix:tslint; yarn fix:prettier; yarn fix:yarn-deduplicate",
+    "fix:prettier": "prettier --write \"**/*.*\"",
+    "fix:tslint": "tslint --project .",
+    "fix:yarn-deduplicate": "yarn install && yarn-deduplicate --strategy=fewer && yarn install",
+    "lint": "yarn lint:prettier && yarn lint:tsc && yarn lint:tslint && yarn lint:yarn-deduplicate",
+    "lint:prettier": "prettier --check \"**/*.*\"",
+    "lint:tsc": "tsc --project . --noEmit",
+    "lint:tslint": "tslint --project .",
+    "lint:yarn-deduplicate": "yarn-deduplicate --fail --list --strategy=fewer"
+  },
+  "version": "0.19.1"
+}

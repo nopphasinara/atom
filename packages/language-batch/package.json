@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+  "_id": "language-batch@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Z3AM6KkFg5MtH79DwmUjlZiqPqb4lfIEeNZ2Kdgfn6I3JKGcy0dtjnPYux57OUUIlAhjwuLNPCAJI5VxMmnWLA==",
+  "_location": "/language-batch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+  "_shasum": "318d4955ed142aa24cfe9e534a9c8a1d18381919",
+  "_spec": "https://www.atom.io/api/packages/language-batch/versions/0.4.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211119-4524-rxl4di.5n89",
+  "bugs": {
+    "url": "https://github.com/footballhead/language-batch/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Adds syntax highlighting for Windows Batch files in Atom.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/footballhead/language-batch#readme",
+  "license": "MIT",
+  "main": "./lib/language-batch",
+  "name": "language-batch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/footballhead/language-batch.git"
+  },
+  "version": "0.4.0"
+}

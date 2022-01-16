@@ -1,0 +1,72 @@
+"*":
+  "advanced-open-file":
+    fuzzyMatch: true
+    helmDirSwitch: true
+  "atom-ternjs":
+    inlineFnCompletion: false
+    snippetsFirst: true
+    useSnippets: true
+    useSnippetsAndFunction: true
+  "atom-typescript":
+    ignoreUnusedSuggestionDiagnostics: true
+  "autocomplete-plus":
+    minimumWordLength: 1
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    disabledPackages: [
+      "atom-ternjs"
+      "deprecation-cop"
+      "background-tips"
+      "autosave"
+      "exception-reporting"
+      "metrics"
+      "styleguide"
+      "timecop"
+      "welcome"
+    ]
+    packagesWithKeymapsDisabled: [
+      "project-manager"
+      "advanced-open-file"
+      "atom-easy-jsdoc"
+      "atom-ternjs"
+      "atom-typescript"
+      "intentions"
+      "turbo-javascript"
+    ]
+    restorePreviousWindowsOnStart: "always"
+    simpleFullScreenWindows: true
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "76b45aae-d46b-47bd-b54c-7d2b594202dd"
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  "linter-ui-default":
+    panelHeight: 300
+  "one-dark-ui":
+    hideDockButtons: true
+    tabSizing: "Minimum"
+  "project-manager":
+    sortBy: "title"
+  "remote-sync":
+    foldLogPanel: true
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "

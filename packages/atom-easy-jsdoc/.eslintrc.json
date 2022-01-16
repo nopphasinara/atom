@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "keyword-spacing": 0,
+    "require-jsdoc": [2, {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true
+      }
+    }],
+    "valid-jsdoc": 2
+  },
+  "env": {
+    "mocha": true
+  }
+}

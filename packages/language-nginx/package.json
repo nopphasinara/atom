@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+  "_id": "language-nginx@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hE5Ihmq0iwM/6nst+BqQNOZnRJSedvOJN0KIya0JQ1DdS31XjwbQ30cltMJ/hGMpg9Ej0nKygseFIzF22/NkOg==",
+  "_location": "/language-nginx",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+  "_shasum": "f724bbfd5db38cb583b9240ef7579b7ee54db70d",
+  "_spec": "https://www.atom.io/api/packages/language-nginx/versions/0.8.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211119-2813-rdzskq.b2n6",
+  "bugs": {
+    "url": "https://github.com/hnagato/atom-language-nginx/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Syntax and snippet support for Nginx configuration files",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/hnagato/atom-language-nginx#readme",
+  "license": "MIT",
+  "name": "language-nginx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnagato/atom-language-nginx.git"
+  },
+  "version": "0.8.0"
+}

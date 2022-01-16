@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+  "_id": "one-real-dark-syntax@1.11.0",
+  "_inBundle": false,
+  "_integrity": "sha512-qIpeyWd86+s5NF8brh/ZQjxMwoZyAQvan5ReRYIlXrju3gaODMklIvlF6f/mJ+JLTYCiasacqoz+JFvt8bLSSw==",
+  "_location": "/one-real-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+  "_shasum": "bbcee238d618ffe2c08d634a15af0a71c98fbab2",
+  "_spec": "https://www.atom.io/api/packages/one-real-dark-syntax/versions/1.11.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211119-2036-1ceekjx.177r",
+  "bugs": {
+    "url": "https://github.com/HDenizD/one-real-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark syntax theme without the bluish and instead more saturated",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/HDenizD/one-real-dark-syntax#readme",
+  "keywords": [
+    "one",
+    "real",
+    "dark",
+    "black",
+    "syntax",
+    "saturated"
+  ],
+  "license": "MIT",
+  "name": "one-real-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDenizD/one-real-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.11.0"
+}

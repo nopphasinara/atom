@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_id": "repl-console@0.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-h9ArCinM25knOmGjcm32ua4kQVhaJiazBlsY/PV2++hGdra5M/sRK3A7lSv6XIxj5nes8gn9jh4pXLvq12PxQw==",
+  "_location": "/repl-console",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_shasum": "71885df33156676cd645074ca450395328cc50f3",
+  "_spec": "https://www.atom.io/api/packages/repl-console/versions/0.4.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-202111-7031-1bqpujb.5ogj",
+  "activationCommands": {
+    "atom-workspace": "repl-console:run"
+  },
+  "bugs": {
+    "url": "https://github.com/mohan/repl-console/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Run REPL code directly in ATOM. Output is displayed in Dev Tools console.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mohan/repl-console#readme",
+  "keywords": [
+    "REPL",
+    "console"
+  ],
+  "license": "MIT",
+  "main": "./lib/repl-console",
+  "name": "repl-console",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohan/repl-console.git"
+  },
+  "version": "0.4.4"
+}

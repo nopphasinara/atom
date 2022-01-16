@@ -1,0 +1,11 @@
+recovery
+Thumbs.db
+.DS_Store
+blob-store
+compile-cache
+dev
+storage
+.apm
+.node-gyp
+.npm
+.atom-socket-secret-*

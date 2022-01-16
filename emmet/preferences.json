@@ -1,0 +1,8 @@
+{
+  "filter.commentTrigger": "class, id",
+  "filter.commentBefore": "<!-- <%= if (attr('id', '')) attr('id', '')  %> -->\n",
+  "filter.commentAfter": "\n<!-- <%= attr('id', '/ END #') %> -->",
+  "css.alignVendor": true,
+  "css.keywordAliases": "i:important, d:default, in:inherit, t:transparent, a:auto, n:normal, im:import, r:@at-root",
+  "css.keywords": "important, default, inherit, transparent, auto, normal, import, @at-root"
+}

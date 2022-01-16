@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+  "_id": "remote-sync@4.1.8",
+  "_inBundle": false,
+  "_integrity": "sha512-iwRggzL8AgluSufXmxaDKGqlvHedcIh2nKQI0wpGF8VcWZTpTFx5NGF/9lSd78IB8n7S4ti0uR9L2PFWCPGEiA==",
+  "_location": "/remote-sync",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+  "_shasum": "56a4c2d182490165bb00b0a6ca2b7d97a50447ae",
+  "_spec": "https://www.atom.io/api/packages/remote-sync/versions/4.1.8/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211118-3167-1dpctpm.xmmo",
+  "bugs": {
+    "url": "https://github.com/yongkangchen/remote-sync/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^2.0.0",
+    "atom-message-panel": "^1.1.1",
+    "atom-space-pen-views": "^2.0.3",
+    "chokidar": "^1.4.3",
+    "fs-plus": "^2.1",
+    "ftp": "^0.3.7",
+    "minimatch": "^3.0",
+    "mkdirp": "^0.3",
+    "randomatic": "^1.1.5",
+    "ssh2": "^0.5"
+  },
+  "deprecated": false,
+  "description": "Upload your files to remote host after every change. Both SCP/SFTP and FTP are supported.",
+  "engines": {
+    "atom": ">=0.78"
+  },
+  "homepage": "https://github.com/yongkangchen/remote-sync#readme",
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "remote-sync",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yongkangchen/remote-sync.git"
+  },
+  "version": "4.1.8"
+}

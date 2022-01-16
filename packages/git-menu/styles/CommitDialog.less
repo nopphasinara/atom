@@ -1,0 +1,18 @@
+@import "ui-variables";
+
+.git-menu.dialog.commit {
+	.message {
+		height: 150px;
+		resize: none;
+
+		&.too-long {
+			border-color: @text-color-error;
+			box-shadow: 0 0 0 1px @text-color-error;
+		}
+	}
+
+	.last-commit {
+		font-weight: bold;
+		font-style: italic;
+	}
+}

@@ -1,0 +1,78 @@
+{
+  "_from": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+  "_id": "git-menu@3.2.9",
+  "_inBundle": false,
+  "_integrity": "sha512-IvLH6DVbb22+jJggZPZaeVUj5+RmEBm3REBfIc08eSP11OIJEfhQaUvnPIiz3KjLQPCg4LPIOL1z1VC00GlV0w==",
+  "_location": "/git-menu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+  "_shasum": "8e0ca65fa377518c3f5c6534b785f4a54049553e",
+  "_spec": "https://www.atom.io/api/packages/git-menu/versions/3.2.9/tarball",
+  "_where": "/private/tmp/apm-install-dir-20211119-2757-t371u0.o79qd",
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/UziTech/git-menu/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "statusBarService"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "busySignalService"
+      }
+    }
+  },
+  "dependencies": {
+    "etch": "^0.14.1",
+    "promisificator": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "string-argv": "^0.3.1",
+    "which": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "Use git from the context menu",
+  "devDependencies": {
+    "@semantic-release/apm-config": "^8.0.0",
+    "atom-jasmine3-test-runner": "^5.1.9",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
+    "semantic-release": "^17.4.2",
+    "temp": "^0.9.4"
+  },
+  "engines": {
+    "atom": ">=1.25.0 <2.0.0"
+  },
+  "homepage": "https://github.com/UziTech/git-menu#readme",
+  "keywords": [
+    "git",
+    "menu",
+    "context"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "git-menu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UziTech/git-menu.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "atom --test spec"
+  },
+  "version": "3.2.9"
+}

@@ -1,0 +1,278 @@
+[
+  {
+    title: "Home"
+    group: "macOS"
+    paths: [
+      "~/"
+    ]
+  }
+  {
+    title: ".atom"
+    group: "Atom"
+    paths: [
+      "~/.atom"
+    ]
+  }
+  {
+    title: ".atom-dev"
+    group: "Atom"
+    paths: [
+      "/Volumes/Storage/Projects/atom-dev"
+    ]
+  }
+  {
+    title: "DOTFILE"
+    group: "Dotfiles"
+    paths: [
+      "/Volumes/Storage/Projects/atom"
+      "/Volumes/Storage/Projects/dotzsh"
+    ]
+  }
+  {
+    title: "Karabiner"
+    group: "Dotfiles"
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/config/karabiner"
+    ]
+  }
+  {
+    title: "Storage"
+    group: "Storage"
+    paths: [
+      "/Volumes/Storage"
+    ]
+  }
+  {
+    title: "Projects"
+    group: "Projects"
+    paths: [
+      "/Volumes/Storage/Projects"
+    ]
+  }
+  {
+    title: "All Websites"
+    group: "Websites"
+    paths: [
+      "/Volumes/Storage/www"
+    ]
+  }
+  {
+    title: "projects/chrome"
+    group: "Dotfiles"
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/projects/chrome"
+    ]
+  }
+  {
+    title: "projects/extensions"
+    group: "Dotfiles"
+    paths: [
+      "/Volumes/Storage/Projects/dotfiles/projects/extensions"
+    ]
+  }
+  {
+    title: "dotzsh"
+    group: "Dotzsh"
+    paths: [
+      "/Volumes/Storage/Projects/dotzsh"
+      "/Volumes/Storage/Projects/others/applescripts/Launch Google Chrome Canary.app"
+    ]
+  }
+  {
+    title: "lodash"
+    group: "CommandLine"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/lodash"
+      "/Users/sudprawat/Library/BlueStacks/Uninstaller.bundle"
+    ]
+  }
+  {
+    title: "cheatsheets"
+    group: "Github"
+    paths: [
+      "/Volumes/Storage/Projects/github/cheatsheets"
+    ]
+  }
+  {
+    title: "github"
+    group: "Github"
+    paths: [
+      "/Volumes/Storage/Projects/github"
+    ]
+  }
+  {
+    title: "happymishra__JavaScriptTutorials"
+    group: "Github"
+    paths: [
+      "/Volumes/Storage/Projects/github/happymishra__JavaScriptTutorials"
+    ]
+  }
+  {
+    title: "atom-extended"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/atom-extended"
+    ]
+  }
+  {
+    title: "chromeawesome"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chromeawesome"
+    ]
+  }
+  {
+    title: "chrome-extended"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chrome-extended"
+    ]
+  }
+  {
+    title: "atom-awesome"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/atom-awesome"
+    ]
+  }
+  {
+    title: "atom-awesome-utils"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/atom-awesome-utils"
+    ]
+  }
+  {
+    title: "chrome-snippets"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/chrome-snippets"
+    ]
+  }
+  {
+    title: "others/firefox/goldfish"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/others/firefox/goldfish"
+    ]
+  }
+  {
+    title: "awesome-atom"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/awesome-atom"
+    ]
+  }
+  {
+    title: "NPM Packages"
+    group: "NPM"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages"
+    ]
+  }
+  {
+    title: "app1.laravel.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/app1.laravel.local"
+    ]
+  }
+  {
+    title: "dashboard.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.local/dashboard"
+    ]
+  }
+  {
+    title: "demo1.reproduction-galleries.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/demo1.reproduction-galleries.com"
+    ]
+  }
+  {
+    title: "quick3.reproduction-gallery.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.local/quickadmin3"
+    ]
+  }
+  {
+    title: "reproduction-galleries.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-galleries.com"
+    ]
+  }
+  {
+    title: "reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.com"
+    ]
+  }
+  {
+    title: "template.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-studio.com/template"
+    ]
+  }
+  {
+    title: "soho-art.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/soho-art.com"
+      "/Volumes/Storage/Projects/controls"
+    ]
+  }
+  {
+    title: "oshjosh.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/oshjosh.com"
+      "/Volumes/Storage/Projects/controls"
+    ]
+  }
+  {
+    title: "rimtalay-resort.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/rimtalay-resort.com"
+    ]
+  }
+  {
+    title: "demo1.amp.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/amp.local/demo1"
+    ]
+  }
+  {
+    title: "BlueStacks"
+    group: "OTHERS"
+    paths: [
+      "~/Library/BlueStacks/InputMapper"
+    ]
+  }
+  {
+    title: "applescript"
+    group: "AppleScript"
+    paths: [
+      "/Volumes/Storage/Projects/github/applescript"
+    ]
+    icon: "icon-apple"
+    color: "#5ae991"
+  }
+  {
+    title: "Google Drives"
+    group: "Drives"
+    paths: [
+      "/Volumes/Drives/Dropbox"
+      "/Volumes/Drives/Google Drives"
+    ]
+    icon: "icon-apple"
+    color: "#5ae991"
+  }
+]
