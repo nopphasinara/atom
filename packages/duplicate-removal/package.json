@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+  "_id": "duplicate-removal@0.1.3",
+  "_inBundle": false,
+  "_integrity": "sha512-WC+RMPsUAhjV3bvUhioOgy+sqApgtySEcByXy+lhe9j1ldPbiR34kHW+oS3O/5pL4zyo2JEJvcgDUXyavXxXUQ==",
+  "_location": "/duplicate-removal",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+  "_shasum": "549bf83284efd08ee5f8e7694e132e03a77df687",
+  "_spec": "https://www.atom.io/api/packages/duplicate-removal/versions/0.1.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022110-33490-1p820ca.huorg",
+  "activationCommands": {
+    "atom-workspace": "duplicate-removal:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/FloydaGithub/duplicate-removal/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "remove duplicate lines | 删除重复行",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/FloydaGithub/duplicate-removal#readme",
+  "keywords": [
+    "line",
+    "remove",
+    "duplicate"
+  ],
+  "license": "MIT",
+  "main": "./lib/duplicate-removal",
+  "name": "duplicate-removal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FloydaGithub/duplicate-removal.git"
+  },
+  "version": "0.1.3"
+}

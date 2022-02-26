@@ -163,6 +163,17 @@ module.exports = [
     },
     { type: 'spacer' },
     {
+        type: 'button',
+        callback: {
+            '': 'remote-sync:configure',
+        },
+        tooltip: 'Remote Sync: Config',
+        text: '<i>󰌘</i>',
+        html: true,
+        class: ['mdi', 'bg-warning', 'fg-dark'],
+    },
+    { type: 'spacer' },
+    {
         type: 'url',
         url: 'https://github.com/{repo-owner}/{repo-name}',
         tooltip: 'Open on Github',

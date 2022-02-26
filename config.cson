@@ -15,24 +15,121 @@
     allowPendingPaneItems: false
     audioBeep: false
     disabledPackages: [
-      "atom-ternjs"
-      "deprecation-cop"
-      "background-tips"
-      "autosave"
-      "exception-reporting"
-      "metrics"
-      "styleguide"
-      "timecop"
-      "welcome"
-    ]
-    packagesWithKeymapsDisabled: [
-      "project-manager"
-      "advanced-open-file"
-      "atom-easy-jsdoc"
+      "atom-ide-base"
+      "atom-ide-code-format"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-javascript"
+      "atom-ide-markdown-service"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-ide-ui"
       "atom-ternjs"
       "atom-typescript"
-      "intentions"
+      "autocomplete-bash-builtins"
+      "autocomplete-module-import"
+      "autocomplete-php"
+      "autocomplete-sql"
+      "autosave"
+      "background-tips"
+      "blade-snippets"
+      "css-hyperclick"
+      "css-snippets"
+      "deprecation-cop"
+      "es6-javascript"
+      "exception-reporting"
+      "hyperclick"
+      "hyperlink-hyperclick"
+      "ide-css"
+      "ide-flowtype"
+      "ide-html"
+      "ide-json"
+      "js-hyperclick"
+      "language-scss"
+      "language-shellscript"
+      "laravel-snippets"
+      "lodash-snippets"
+      "metrics"
+      "php-hyperclick"
+      "python-snippets"
+      "Quick-JavaScript"
+      "spell-check"
+      "styleguide"
+      "timecop"
       "turbo-javascript"
+      "welcome"
+      "linter-php"
+      "atom-autocomplete-php"
+    ]
+    packagesWithKeymapsDisabled: [
+      "advanced-open-file"
+      "aligner"
+      "archive-view"
+      "ascii-unicode-escape"
+      "atom-autocomplete-php"
+      "atom-beautify"
+      "atom-easy-jsdoc"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
+      "atom-ide-hyperclick"
+      "atom-ide-outline"
+      "atom-ide-signature-help"
+      "atom-js-console"
+      "atom-line-to-console"
+      "atom-minify"
+      "atom-ternjs"
+      "atom-typescript"
+      "autocomplete-javascript"
+      "autoflow"
+      "bracket-matcher"
+      "browser-plus"
+      "change-case"
+      "chrome-color-picker"
+      "color-picker"
+      "dev-live-reload"
+      "duplicate-removal"
+      "emmet"
+      "encoding-selector"
+      "es6-javascript"
+      "escape-to-javascript-string"
+      "escape-utils"
+      "expand-selection-to-quotes"
+      "fuzzy-finder"
+      "git-diff"
+      "git-history"
+      "git-plus"
+      "github"
+      "grammar-selector"
+      "hyperclick"
+      "image-view"
+      "intentions"
+      "keybinding-resolver"
+      "link"
+      "markdown-preview"
+      "open-on-github"
+      "php-integrator-refactoring"
+      "prettier-atom"
+      "preview-plus"
+      "project-manager"
+      "pymakr"
+      "quick-query"
+      "repl-console"
+      "sass-autocompile"
+      "script"
+      "sequential-number"
+      "server-script"
+      "sort-lines"
+      "spell-check"
+      "split-diff"
+      "styleguide"
+      "symbols-list"
+      "toggle-quotes"
+      "tool-bar"
+      "tree-view"
+      "turbo-javascript"
+      "typescript-modules-helper"
+      "select-text"
     ]
     restorePreviousWindowsOnStart: "always"
     simpleFullScreenWindows: true
@@ -43,6 +140,7 @@
     ]
     titleBar: "custom"
   editor:
+    fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -52,19 +150,22 @@
     userId: "76b45aae-d46b-47bd-b54c-7d2b594202dd"
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
   "one-dark-ui":
     hideDockButtons: true
-    tabSizing: "Minimum"
   "project-manager":
     sortBy: "title"
   "remote-sync":
+    autoHideLogPanel: true
     foldLogPanel: true
   tabs:
     displayMruTabList: false
     enableMruTabSwitching: false
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"

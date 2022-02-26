@@ -1,3 +1,10 @@
+@import "syntax-variables.less";
+@import "ui-variables.less";
+
+@import "./styles/fonts.less";
+@import "./styles/variables.less";
+@import "./styles/mixins.less";
+
 /*
 * Your Stylesheet
 *
@@ -14,6 +21,23 @@
 * Examples
 * (To see them, uncomment and save)
 */
+
+// style the background color of the toolbar
+.tool-bar {
+  button,
+  button.tool-bar-btn,
+  .tool-bar-btn,
+  .btn {
+    .font-reset();
+    .font-icons();
+
+    i {
+      .font-reset();
+      .font-icons();
+    }
+  }
+}
+
 
 // style the background color of the tree view
 .tree-view {
@@ -40,25 +64,25 @@ atom-text-editor .cursor {
 }
 
 
-atom-workspace {
-  atom-pane {
-    .tab-bar[is="atom-tabs"] {
-
-      .tab[is="tabs-tab"] {
-
-        .title {
-          padding-right: 2em;
-          overflow: visible;
-        }
-
-        .close-icon {
-          // margin-left: 1em;
-          // left: auto;
-          // right: 0em;
-        }
-
-      }
-
-    }
-  }
-}
+// atom-workspace {
+//   atom-pane {
+//     .tab-bar[is="atom-tabs"] {
+//
+//       .tab[is="tabs-tab"] {
+//
+//         .title {
+//           padding-right: 2em;
+//           overflow: visible;
+//         }
+//
+//         .close-icon {
+//           // margin-left: 1em;
+//           // left: auto;
+//           // right: 0em;
+//         }
+//
+//       }
+//
+//     }
+//   }
+// }

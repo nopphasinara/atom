@@ -243,6 +243,27 @@
     ]
   }
   {
+    title: "laravel.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/laravel.local"
+    ]
+  }
+  {
+    title: "reservation.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reservation.local"
+    ]
+  }
+  {
+    title: "reservation2.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reservation2.local"
+    ]
+  }
+  {
     title: "demo1.amp.local"
     group: "WWW"
     paths: [
