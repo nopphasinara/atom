@@ -75,6 +75,7 @@
     group: "Dotzsh"
     paths: [
       "/Volumes/Storage/Projects/dotzsh"
+      "/Volumes/Storage/Projects/others/cliclick"
       "/Volumes/Storage/Projects/others/applescripts/Launch Google Chrome Canary.app"
     ]
   }
