@@ -33,6 +33,8 @@
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnType: false
+    hyperclick:
+      darwinTriggerKeys: "altKey"
   "atom-minify":
     checkOutputFileAlreadyExists: true
     jsMinifier: "Google Closure Compiler"
@@ -75,10 +77,11 @@
     ]
     maxFileCount: 6000
   "autocomplete-plus":
-    autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
+    enableExtendedUnicodeSupport: true
     extraWordCharacters: ""
     minimumWordLength: 1
+    similarSuggestionRemoval: "textOrSnippet"
   "bracket-matcher":
     highlightMatchingLineNumber: true
   "command-palette":
@@ -86,8 +89,8 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    debugLSP: true
     disabledPackages: [
-      "language-shellscript"
       "language-scss"
       "language-scss"
       "spell-check"
@@ -106,21 +109,16 @@
       "css-snippets"
       "es6-javascript"
       "laravel-snippets"
-      "atom-ide-ui"
-      "atom-ide-base"
-      "atom-ide-code-format"
-      "atom-ide-datatip"
-      "atom-ide-definitions"
-      "atom-ide-hyperclick"
       "atom-ide-javascript"
-      "atom-ide-markdown-service"
-      "atom-ide-outline"
-      "atom-ide-signature-help"
-      "ide-css"
       "ide-flowtype"
-      "ide-html"
-      "ide-json"
       "deprecation-cop"
+      "autosave"
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "styleguide"
+      "timecop"
+      "welcome"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -187,6 +185,9 @@
       "prettier-atom"
       "typescript-modules-helper"
       "quick-query"
+      "php-ide-serenata"
+      "format-shell"
+      "process-palette"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"
@@ -302,6 +303,8 @@
     liveSearchMinimumCharacters: 1
   "flex-tool-bar":
     reloadToolBarNotification: false
+  "format-shell":
+    spaceAfterRedirect: true
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
@@ -344,6 +347,11 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+  "php-ide-serenata":
+    general:
+      doNotShowProjectChangeMessage: true
+      projectOpenCount: 10
+    storagePath: "/Users/fineart/Library/Preferences/php-ide-serenata"
   "project-manager":
     prettifyTitle: false
     showPath: false
@@ -380,6 +388,8 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".applescript.source":
   editor:
     commentEnd: ""
@@ -397,9 +407,16 @@
   editor:
     autoIndentOnPaste: true
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
+".ebuild.shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
 ".html.php.text":
   editor:
-    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
+    tabLength: 2
+".install.shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
 ".js.jsx.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
@@ -409,6 +426,13 @@
 ".json.source":
   editor:
     softWrap: false
+".php.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+    tabLength: 2
+".pkgbuild.shell.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
 ".plain.text":
   whitespace:
     ensureSingleTrailingNewline: false
@@ -426,3 +450,18 @@
 ".text.vim-help":
   editor:
     tabType: "soft"
+"atom-shell-commands":
+  commands: [
+    {
+      name: "compile"
+      command: "/usr/local/bin/gcc"
+      arguments: [
+        "{FileName}"
+        "-o"
+        "{FileNameNoExt}.exe"
+      ]
+      options:
+        cwd: "{FileDir}"
+        keymap: "ctrl-2"
+    }
+  ]

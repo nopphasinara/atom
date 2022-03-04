@@ -1,0 +1,137 @@
+{
+  "_from": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+  "_id": "format-shell@2.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-4u7Qd51A93gBSfN/sjbaNtzkkp7TZcdKCVKQ+V3a9f/t3sAAXn00tPOKlUDk5Ovm2RvS6AZqZi221zbwhMrAww==",
+  "_location": "/format-shell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+  "_shasum": "2c4acacbb1986d1f726deca1ef38c333ed24f630",
+  "_spec": "https://www.atom.io/api/packages/format-shell/versions/2.2.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022128-98545-1fwmue2.7ku8f",
+  "activationHooks": [
+    "language-shellscript:grammar-used"
+  ],
+  "author": {
+    "name": "Peter Lyons",
+    "email": "pete@peterlyons.com",
+    "url": "http://peterlyons.com"
+  },
+  "bugs": {
+    "url": "https://github.com/focusaurus/atom-format-shell/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "shfmtPath": {
+      "title": "Path to shfmt executable",
+      "description": "Absolute filesystem path. If you do not have shfmt installed, you can [download a package for your OS here](https://github.com/mvdan/sh/releases).",
+      "type": "string",
+      "default": "shfmt",
+      "order": 1
+    },
+    "indent": {
+      "description": "Indent setting for how your shell code is formatted. 0 for tab, 2 for 2 spaces, 4 for 4 spaces",
+      "type": "integer",
+      "default": 2,
+      "enum": [
+        0,
+        2,
+        4
+      ],
+      "order": 2
+    },
+    "simplify": {
+      "description": "simplify the code (-s command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 3
+    },
+    "binary": {
+      "description": "binary ops like && and | may start a line (-bn command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 4
+    },
+    "indentSwitch": {
+      "description": "switch cases will be indented (-ci command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 5
+    },
+    "spaceAfterRedirect": {
+      "description": "redirect operators will be followed by a space (-sr command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 6
+    },
+    "keepPaddings": {
+      "description": "keep column alignment paddings (-kp command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 7
+    },
+    "minifyProgram": {
+      "description": "minify program to reduce its size (implies -s) (-mn command line flag)",
+      "type": "boolean",
+      "default": false,
+      "order": 8
+    },
+    "showNotifications": {
+      "description": "Do you want to see the success message?",
+      "type": "boolean",
+      "default": false,
+      "order": 9
+    },
+    "showErrorNotifications": {
+      "description": "Do you want to see the error message?",
+      "type": "boolean",
+      "default": true,
+      "order": 10
+    },
+    "formatOnSave": {
+      "description": "Format file on save.",
+      "type": "boolean",
+      "default": false,
+      "order": 11
+    }
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Format your shell scripts automatically in the Atom text editor",
+  "devDependencies": {
+    "standard-version": "7.0.0"
+  },
+  "engines": {
+    "atom": ">=1.4.0 <2.0.0"
+  },
+  "homepage": "https://github.com/focusaurus/atom-format-shell#readme",
+  "keywords": [
+    "format",
+    "beautify",
+    "shell",
+    "bash",
+    "atom"
+  ],
+  "license": "MIT",
+  "main": "./lib/format-shell.js",
+  "name": "format-shell",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/focusaurus/atom-format-shell.git"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "version": "2.2.1"
+}

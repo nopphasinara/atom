@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+  "_id": "php-composer-completion@0.3.4",
+  "_inBundle": false,
+  "_integrity": "sha512-zTwegpKR4lWBsUqNthEEvlFXya/18erDlZjQp9rAYYL0J0FauJ3ojv6d9Q36RHevcBKsSnpEJMQQFd2FyxIJSA==",
+  "_location": "/php-composer-completion",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+  "_shasum": "cb3dd00189f55c8c6d205e8d43263a630b84aa4a",
+  "_spec": "https://www.atom.io/api/packages/php-composer-completion/versions/0.3.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022111-91277-12wobr2.9szw",
+  "bugs": {
+    "url": "https://github.com/vinicarlos56/php-composer-autocompletion/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mock-spawn": "v0.2.6",
+    "mockery": "1.4.0"
+  },
+  "deprecated": false,
+  "description": "autocomplete+ provider for php projects based on composer",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/vinicarlos56/php-composer-autocompletion#readme",
+  "keywords": [
+    "php",
+    "composer",
+    "autocomplete",
+    "completion",
+    "php-completion"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "php-composer-completion",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicarlos56/php-composer-autocompletion.git"
+  },
+  "version": "0.3.4"
+}

@@ -1,0 +1,72 @@
+{
+  "_from": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+  "_id": "process-palette@0.19.3",
+  "_inBundle": false,
+  "_integrity": "sha512-PBS662GVFXFjJzBOXG+KXhndDDjoxO6lxL82E8PBkATED0rOFQN3hYC9NByNuydHcpyiM83fGBOinKPDgsl77g==",
+  "_location": "/process-palette",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+  "_shasum": "b1cf622c2a417479d5397b52e50218eea74d9243",
+  "_spec": "https://www.atom.io/api/packages/process-palette/versions/0.19.3/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022128-39582-1yyivsp.9p0o",
+  "bugs": {
+    "url": "https://github.com/morassman/process-palette/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ansi-to-html": "0.6.14",
+    "atom-select-list": "0.8.0",
+    "etch": "0.14.1",
+    "fs-plus": "3.1.1",
+    "loophole": "1.1.0",
+    "minimatch": "3.0.4",
+    "node-pty-prebuilt-multiarch": "0.10.0",
+    "path": "0.12.7",
+    "ps-tree": "1.2.0",
+    "shelljs": "0.8.4",
+    "underscore-plus": "1.7.0",
+    "underscore.string": "3.3.5",
+    "xterm": "^4.11.0",
+    "xterm-addon-fit": "0.5.0",
+    "xterm-addon-search": "0.8.0",
+    "xterm-addon-search-bar": "0.2.0"
+  },
+  "deprecated": false,
+  "description": "Run parameterized shell commands from Atom. Easy to use and very configurable.",
+  "devDependencies": {
+    "@types/atom": "^1.40.10",
+    "@types/node": "^14.14.37"
+  },
+  "engines": {
+    "atom": ">=1.18.0 <2.0.0"
+  },
+  "homepage": "https://github.com/morassman/process-palette#readme",
+  "keywords": [
+    "run",
+    "execute",
+    "terminal",
+    "shell",
+    "command",
+    "task",
+    "script"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "process-palette",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morassman/process-palette.git"
+  },
+  "version": "0.19.3"
+}

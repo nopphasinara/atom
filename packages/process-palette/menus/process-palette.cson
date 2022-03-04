@@ -1,0 +1,36 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'menu': [
+  {
+    label: 'Packages'
+    submenu: [
+      label: 'Process Palette'
+      submenu: [
+        {
+          label: 'Toggle'
+          command: 'process-palette:toggle'
+        },
+        {
+          label: 'Edit Configuration'
+          command: 'process-palette:edit-configuration'
+        },
+        {
+          label: 'Reload Configuration'
+          command: 'process-palette:reload-configuration'
+        }
+      ]
+    ]
+  }
+]
+
+# Even though this menu item is created dynamically, it is still defined here
+# so that the separator can be added.
+'context-menu':
+  '.tree-view': [
+    { type: 'separator' }
+    {
+      label: 'Run With',
+      submenu: [
+        # This sub menu will be dynamically populated.
+      ]
+    }
+  ]

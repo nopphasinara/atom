@@ -161,7 +161,7 @@ module.exports = [
         html: true,
         class: ['mdi', 'bg-warning', 'fg-dark'],
     },
-    { type: 'spacer' },
+    // { type: 'spacer' },
     {
         type: 'button',
         callback: {
@@ -172,7 +172,7 @@ module.exports = [
         html: true,
         class: ['mdi', 'bg-warning', 'fg-dark'],
     },
-    { type: 'spacer' },
+    // { type: 'spacer' },
     {
         type: 'url',
         url: 'https://github.com/{repo-owner}/{repo-name}',
@@ -224,9 +224,9 @@ module.exports = [
               return !atom.packages.isPackageDisabled('git-history');
           },
         },
-        class: ['mdi'],
+        class: ['mdi', 'bg-info', 'fg-dark'],
     },
-    { type: 'spacer' },
+    // { type: 'spacer' },
     {
         type: 'button',
         callback: {
@@ -267,7 +267,7 @@ module.exports = [
         },
         class: ['mdi', 'bg-success', 'fg-dark'],
     },
-    { type: 'spacer' },
+    // { type: 'spacer' },
     {
         type: 'button',
         callback: {

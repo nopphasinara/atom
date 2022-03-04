@@ -1,0 +1,43 @@
+.detached-color-variables() {
+  .for-each(@color-keys, {
+    @k: extract(@color-keys, @i);
+    @v: extract(@color-values, @i);
+    @v-hover: extract(@color-values-hover, @i);
+
+    --@{k}: @v;
+    --@{k}-hover: @v-hover;
+  });
+}
+
+
+.generator(@n, @rules: false, @i: 1) when (@i =< @n) {
+  @isruleset: isruleset(@rules);
+  .dd() when (@isruleset) {
+    @rules();
+  }
+  .dd();
+  .generator(@n, @rules, (@i + 1));
+}
+
+.for(@n, @rules: false, @i: 1) when (@i =< @n) {
+  @isruleset: isruleset(@rules);
+  .dd() when (@isruleset) {
+    @rules();
+  }
+  .dd();
+  .for(@n, @rules, (@i + 1));
+}
+
+
+.for-each(@var, @rules: false, @keys: false) {
+  @isnumber: isnumber(@var);
+  .dd() when (@isnumber) {
+    @length: @var;
+  }
+  .dd() when not (@isnumber) {
+    @length: length(@var);
+  }
+  .dd();
+
+  .generator(@length, @rules);
+}

@@ -1,0 +1,1 @@
+{"name":"cr","dist-tags":{"latest":"0.1.0"},"versions":{"0.1.0":{"name":"cr","version":"0.1.0","devDependencies":{"mocha":"*"},"dist":{"shasum":"e59372714cc45154e93b5173f3f134966225bd45","tarball":"https://registry.npmjs.org/cr/-/cr-0.1.0.tgz"},"engines":{"node":">=0.10.0"}}},"modified":"2015-10-10T09:32:22.165Z"}

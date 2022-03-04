@@ -26,6 +26,7 @@
     paths: [
       "/Volumes/Storage/Projects/atom"
       "/Volumes/Storage/Projects/dotzsh"
+      "/Volumes/Storage/Projects/others/cliclick"
     ]
   }
   {
@@ -75,6 +76,7 @@
     group: "Dotzsh"
     paths: [
       "/Volumes/Storage/Projects/dotzsh"
+      "/Volumes/Storage/Projects/others/cliclick"
       "/Volumes/Storage/Projects/controls"
     ]
   }
@@ -206,6 +208,13 @@
     ]
   }
   {
+    title: "redis-tools"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.com/redis-tools"
+    ]
+  }
+  {
     title: "template.reproduction-gallery.com"
     group: "WWW"
     paths: [
@@ -247,6 +256,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reservation.local"
+    ]
+  }
+  {
+    title: "reservation2.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reservation2.local"
     ]
   }
   {
