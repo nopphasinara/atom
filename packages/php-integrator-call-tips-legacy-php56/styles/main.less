@@ -1,0 +1,43 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "octicon-utf-codes";
+
+.php-integrator-call-tip {
+    width: 50%;
+    max-width: 50%;
+
+    .tooltip {
+        pointer-events: none;
+    }
+
+    .php-integrator-call-tip-inactive-argument {
+        opacity: 0.50;
+    }
+
+    .php-integrator-call-tip-default-value {
+        margin: 0 !important;
+    }
+
+    .php-integrator-call-tip-wrapper {
+        margin: 0;
+        padding: 0.25em 0.50em !important;
+        text-align: left;
+        line-height: 1.55em !important;
+
+        div {
+            white-space: normal;
+        }
+    }
+}
+
+atom-text-editor:not(.autocomplete-active) {
+    .php-integrator-call-tip {
+        // Keep call tips above linter errors, as they are more relevant to getting the solution implemented and linter
+        // messages can always be made visible via the bottom panel or by simply moving the cursor somewhere else to hide
+        // the call tip.
+        z-index: 10;
+    }
+}
