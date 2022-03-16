@@ -10,6 +10,8 @@
   "atom-typescript":
     ignoreUnusedSuggestionDiagnostics: true
   "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    enableExtendedUnicodeSupport: true
     minimumWordLength: 1
   core:
     allowPendingPaneItems: false
@@ -47,7 +49,6 @@
       "ide-json"
       "js-hyperclick"
       "language-scss"
-      "language-shellscript"
       "laravel-snippets"
       "lodash-snippets"
       "metrics"
@@ -170,3 +171,6 @@
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
+".html.php.text":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-"

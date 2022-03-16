@@ -251,6 +251,13 @@
     ]
   }
   {
+    title: "woocommerce.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/woocommerce.local"
+    ]
+  }
+  {
     title: "reservation.local"
     group: "WWW"
     paths: [
