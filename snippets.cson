@@ -514,6 +514,14 @@
       """,
     },
 
+    "pre": {
+      "prefix": "pre",
+      "body": """
+      echo '<pre>'; print_r(${1:\\$${2:value}}); echo '</pre>';
+      exit();
+      """,
+    },
+
     "function assignment": {
       "prefix": "fn",
       "body": """
