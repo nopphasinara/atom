@@ -25,8 +25,6 @@
     group: "Dotfiles"
     paths: [
       "/Volumes/Storage/Projects/atom"
-      "/Volumes/Storage/Projects/dotzsh"
-      "/Volumes/Storage/Projects/others/cliclick"
     ]
   }
   {
@@ -219,6 +217,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-studio.com/template"
+    ]
+  }
+  {
+    title: "staging.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging.reproduction-gallery.com"
     ]
   }
   {
