@@ -251,6 +251,13 @@
     ]
   }
   {
+    title: "la.โต๊ะจีนชลบุรี.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/la.โต๊ะจีนชลบุรี.com"
+    ]
+  }
+  {
     title: "woocommerce.local"
     group: "WWW"
     paths: [

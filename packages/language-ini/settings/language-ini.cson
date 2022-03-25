@@ -1,0 +1,6 @@
+'.source.ini':
+  'editor':
+    'commentStart': '; '
+'.source.desktop':
+  'editor':
+    'commentStart': '; '
