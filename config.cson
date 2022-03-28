@@ -121,14 +121,6 @@
       "styleguide"
       "timecop"
       "welcome"
-      "php-integrator-annotations"
-      "php-integrator-refactoring-legacy-php56"
-      "php-integrator-navigation-legacy-php56"
-      "php-integrator-tooltips-legacy-php56"
-      "php-integrator-linter-legacy-php56"
-      "php-integrator-autocomplete-plus"
-      "php-integrator-call-tips-legacy-php56"
-      "php-integrator-autocomplete-plus-legacy-php56"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
