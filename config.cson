@@ -121,6 +121,7 @@
       "styleguide"
       "timecop"
       "welcome"
+      "wordpress-autocomplete"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -190,6 +191,7 @@
       "php-ide-serenata"
       "format-shell"
       "process-palette"
+      "wordpress-autocomplete"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"
@@ -290,7 +292,7 @@
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    maxScreenLineLength: 4096
+    maxScreenLineLength: 10000
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
