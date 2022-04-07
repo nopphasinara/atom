@@ -214,6 +214,13 @@
     ]
   }
   {
+    title: "por.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/por.reproduction-gallery.com"
+    ]
+  }
+  {
     title: "template.reproduction-gallery.com"
     group: "WWW"
     paths: [
