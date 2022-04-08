@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+  "_id": "woocommerce@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-826HWexzvpPs5XizjRD7bTjVZm5RxZ/MZFUfANr74YfvBlsqDB9rsg+72UkoIf9IcJ8HkCuIlQJ7GKmA8xZI3w==",
+  "_location": "/woocommerce",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+  "_shasum": "78ebd1a828c5dd28943e42f68e8c68fbb6fbbce2",
+  "_spec": "https://www.atom.io/api/packages/woocommerce/versions/1.0.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202237-2471-1tul9os.99ngi",
+  "bugs": {
+    "url": "https://github.com/claudiosanches/atom-woocommerce/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A collection of WooCommerce snippets and autocompletions.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/claudiosanches/atom-woocommerce#readme",
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "snippets"
+  ],
+  "license": "GPLv3",
+  "name": "woocommerce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiosanches/atom-woocommerce.git"
+  },
+  "version": "1.0.0"
+}
