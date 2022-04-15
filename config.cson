@@ -122,6 +122,7 @@
       "timecop"
       "welcome"
       "wordpress-autocomplete"
+      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"

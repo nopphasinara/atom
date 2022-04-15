@@ -1,0 +1,63 @@
+{
+  "_from": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+  "_id": "drunken-php@0.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-ypgZ/HMsfC1SyvmOtFGBGsEhzh0T0JHk/H3y/FHSxSB4JqeyC+z/YW3q37hsuxR05BTr78vkrvsu+gqEkrivVA==",
+  "_location": "/drunken-php",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+  "_shasum": "3fd65c64d8f83d5039515ad073fb23987c187735",
+  "_spec": "https://www.atom.io/api/packages/drunken-php/versions/0.3.2/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022315-3662-hlg7jf.cicgp",
+  "author": {
+    "name": "Jan T. Sott",
+    "url": "http://github.com/idleberg"
+  },
+  "bugs": {
+    "url": "https://github.com/idleberg/atom-drunken-php/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom snippets for PHP, right kinda wrong",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.5"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/idleberg/atom-drunken-php#readme",
+  "keywords": [
+    "php"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.md": "prettier --write",
+    "*.json": "eslint --cache --fix"
+  },
+  "name": "drunken-php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idleberg/atom-drunken-php.git"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --no-error-on-unmatched-pattern ./snippets/**/*.json",
+    "prepare": "husky install",
+    "test": "npm run lint"
+  },
+  "version": "0.3.2"
+}
