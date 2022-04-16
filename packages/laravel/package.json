@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+  "_id": "laravel@0.7.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Y/2CRnunifLNUgxWIvLfe0zGF6gyX20acJgqKUv1ecbBtE2I8KvE0/sA/NYy1iopqT80lW7pKkwnelTEkUFljA==",
+  "_location": "/laravel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+  "_shasum": "68dce9c0e6d7bfba97a73679d43b5cc347aa54c0",
+  "_spec": "https://www.atom.io/api/packages/laravel/versions/0.7.1/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022316-10299-6elwyu.4u61s",
+  "bugs": {
+    "url": "https://github.com/Cronos87/atom-laravel/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Add Laravel snippets",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/Cronos87/atom-laravel#readme",
+  "license": "MIT",
+  "name": "laravel",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cronos87/atom-laravel.git"
+  },
+  "version": "0.7.1"
+}

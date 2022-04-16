@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+  "_id": "laravel-helper@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-FegNrk2vq5gPuV7ODPvajTy4/6qJRvcji+e+URrdiuguTPxO6tbqSOpRFtfgog7JtzZAvEIoY/pJ8BiEngC8rQ==",
+  "_location": "/laravel-helper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+  "_shasum": "65738e0c1a818dd035556be7d17ccb125b3afb6d",
+  "_spec": "https://www.atom.io/api/packages/laravel-helper/versions/0.3.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022316-10314-k7rx7w.k5j0j",
+  "bugs": {
+    "url": "https://github.com/73CN0109y-Packages/laravel-helper/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "etch": "^0.14.0",
+    "lodash": "^4.17.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "deprecated": false,
+  "description": "Interactive helper for executing Laravel 5 artisan commands",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/73CN0109y-Packages/laravel-helper#readme",
+  "keywords": [
+    "Laravel",
+    "Command",
+    "Artisan",
+    "Helper",
+    "Laravel5"
+  ],
+  "license": "MIT",
+  "main": "./lib/laravel-helper",
+  "name": "laravel-helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/73CN0109y-Packages/laravel-helper.git"
+  },
+  "version": "0.3.0"
+}

@@ -130,6 +130,7 @@
       "turbo-javascript"
       "typescript-modules-helper"
       "select-text"
+      "laravel-helper"
     ]
     restorePreviousWindowsOnStart: "always"
     simpleFullScreenWindows: true
@@ -150,8 +151,7 @@
     userId: "76b45aae-d46b-47bd-b54c-7d2b594202dd"
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "linter-ui-default":
-    panelHeight: 300
+  "linter-ui-default": {}
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
