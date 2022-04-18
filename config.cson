@@ -151,7 +151,8 @@
     userId: "76b45aae-d46b-47bd-b54c-7d2b594202dd"
   hyperclick:
     darwinTriggerKeys: "altKey"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":
