@@ -1,3 +1,0 @@
-import "./lib/main";
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiL1ZvbHVtZXMvU3RvcmFnZS9Qcm9qZWN0cy9hdG9tL2luaXQuY29mZmVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgXCIuL2xpYi9tYWluXCJcbiJdfQ==

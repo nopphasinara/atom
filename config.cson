@@ -293,7 +293,7 @@
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    maxScreenLineLength: 10000
+    maxScreenLineLength: 8196
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true

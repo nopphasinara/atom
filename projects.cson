@@ -241,6 +241,13 @@
     ]
   }
   {
+    title: "woo.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/woo.reproduction-studio.com"
+    ]
+  }
+  {
     title: "soho-art.com"
     group: "WWW"
     paths: [
