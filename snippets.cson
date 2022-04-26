@@ -397,6 +397,19 @@
 
 
   ".source.php, .text.html.php .source.php": {
+    "gct_print()": {
+      "prefix": "gcp",
+      "body": """
+      gct_print(${1:\\$var});$0
+      """,
+    },
+    "gct_class_methods()": {
+      "prefix": "gcm",
+      "body": """
+      gct_class_methods(${1:\\$var});$0
+      """,
+    },
+
     "if": {
       "prefix": "if",
       "body": """
