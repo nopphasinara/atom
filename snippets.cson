@@ -397,16 +397,16 @@
 
 
   ".source.php, .text.html.php .source.php": {
-    "gct_print()": {
-      "prefix": "gcp",
+    "_printr()": {
+      "prefix": "prr",
       "body": """
-      gct_print(${1:\\$var});$0
+      __printr(${1:\\$var});$0
       """,
     },
-    "gct_class_methods()": {
-      "prefix": "gcm",
+    "__methods()": {
+      "prefix": "met",
       "body": """
-      gct_class_methods(${1:\\$var});$0
+      __methods(${1:\\$var});$0
       """,
     },
 
