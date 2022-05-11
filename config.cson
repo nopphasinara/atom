@@ -40,7 +40,6 @@
       "deprecation-cop"
       "es6-javascript"
       "exception-reporting"
-      "hyperclick"
       "hyperlink-hyperclick"
       "ide-css"
       "ide-flowtype"
@@ -51,7 +50,6 @@
       "laravel-snippets"
       "lodash-snippets"
       "metrics"
-      "php-hyperclick"
       "python-snippets"
       "Quick-JavaScript"
       "spell-check"
@@ -151,6 +149,8 @@
     userId: "76b45aae-d46b-47bd-b54c-7d2b594202dd"
   hyperclick:
     darwinTriggerKeys: "altKey"
+    linuxTriggerKeys: "altKey"
+    win32TriggerKeys: "altKey"
   "linter-ui-default":
     panelHeight: 300
   "one-dark-ui":

@@ -218,6 +218,7 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/por.reproduction-gallery.com"
+      "/Volumes/Storage/Projects/github/applescript/Finder/demo-3.scptd"
     ]
   }
   {
@@ -225,6 +226,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-studio.com/template"
+    ]
+  }
+  {
+    title: "staging.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging.reproduction-gallery.com"
     ]
   }
   {
