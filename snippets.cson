@@ -397,6 +397,18 @@
 
 
   ".source.php, .text.html.php .source.php": {
+    "json_encode()": {
+      "prefix": "jse",
+      "body": """
+      json_encode(${1:\\$var});$0
+      """,
+    },
+    "json_decode()": {
+      "prefix": "jsde",
+      "body": """
+      json_decode(${1:\\$var}, ${2:true});$0
+      """,
+    },
     "_printr()": {
       "prefix": "prr",
       "body": """
