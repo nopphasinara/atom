@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+  "_id": "wordpress-autocomplete@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hAhVjh/9dGYsqxzRjUJWR8xmEybTvkPCs2URuVpLMsEJFD5YsAlNA6A++EkxeXQegP4V0bYaIzrAxee0SLjmPw==",
+  "_location": "/wordpress-autocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+  "_shasum": "61c3bc296288a88c25dcef1f20487e08d1aa2475",
+  "_spec": "https://www.atom.io/api/packages/wordpress-autocomplete/versions/1.5.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-202256-80286-1jt148h.o2kz",
+  "activationCommands": {
+    "atom-workspace": "wordpress-autocomplete:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/burhandodhy/wordpress-autocomplete/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Autocomplete support for WordPress functions.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/burhandodhy/wordpress-autocomplete#readme",
+  "keywords": [
+    "php",
+    "wordpress",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "main": "./lib/wordpress-autocomplete",
+  "name": "wordpress-autocomplete",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burhandodhy/wordpress-autocomplete.git"
+  },
+  "version": "1.5.0"
+}

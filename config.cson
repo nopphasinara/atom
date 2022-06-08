@@ -121,8 +121,8 @@
       "styleguide"
       "timecop"
       "welcome"
-      "wordpress-autocomplete"
-      "autocomplete-php"
+      "atom-wordpress"
+      "wp-dev"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"

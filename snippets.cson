@@ -397,6 +397,23 @@
 
 
   ".source.php, .text.html.php .source.php": {
+    "if not defined": {
+      "prefix": "ifnde",
+      "body": """
+      if (!defined('$1')) {
+        $2
+      \\}$0
+      """,
+    },
+    "if defined": {
+      "prefix": "ifde",
+      "body": """
+      if (defined('$1')) {
+        $2
+      \\}$0
+      """,
+    },
+
     "json_encode()": {
       "prefix": "jse",
       "body": """

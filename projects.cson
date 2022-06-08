@@ -248,6 +248,13 @@
     ]
   }
   {
+    title: "test.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/test.reproduction-studio.com"
+    ]
+  }
+  {
     title: "soho-art.com"
     group: "WWW"
     paths: [

@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Applications/Atom.app/Contents/Resources/app/apm/bin/node',
+1 verbose cli   '/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   '--globalconfig',
+1 verbose cli   '/Users/fineart/.atom/.apm/.apmrc',
+1 verbose cli   '--userconfig',
+1 verbose cli   '/Users/fineart/.atom/.apmrc',
+1 verbose cli   'install',
+1 verbose cli   'https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball',
+1 verbose cli   '--target=9.4.4',
+1 verbose cli   '--disturl=https://atom.io/download/electron',
+1 verbose cli   '--arch=x64',
+1 verbose cli   '--global-style'
+1 verbose cli ]
+2 info using npm@6.14.13
+3 info using node@v12.14.1
+4 verbose npm-session 7120ddfc418dd410
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 502 https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball 72873ms attempt #3
+8 silly fetchPackageMetaData error for https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball 502 Bad Gateway - GET https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball
+9 timing stage:rollbackFailedOptional Completed in 0ms
+10 timing stage:runTopLevelLifecycles Completed in 72960ms
+11 verbose stack Error: 502 Bad Gateway - GET https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball
+11 verbose stack     at /Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:117:15
+11 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:94:5)
+12 verbose statusCode 502
+13 verbose pkgid https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball
+14 verbose cwd /private/tmp/apm-install-dir-202257-1642-1xj2fm6.p48l
+15 verbose Darwin 17.7.0
+16 verbose argv "/Applications/Atom.app/Contents/Resources/app/apm/bin/node" "/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js" "--globalconfig" "/Users/fineart/.atom/.apm/.apmrc" "--userconfig" "/Users/fineart/.atom/.apmrc" "install" "https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball" "--target=9.4.4" "--disturl=https://atom.io/download/electron" "--arch=x64" "--global-style"
+17 verbose node v12.14.1
+18 verbose npm  v6.14.13
+19 error code E502
+20 error 502 Bad Gateway - GET https://www.atom.io/api/packages/atom-autocomplete-python/versions/5.0.0/tarball
+21 verbose exit [ 1, true ]

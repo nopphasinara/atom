@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+  "_id": "wp-dev@0.3.5",
+  "_inBundle": false,
+  "_integrity": "sha512-vv0yxqGT930qSaPh1zrn/6/9bfBW95zpkFev4/SKXLty8V8kpJQzXhza07JVki1PjfFT0UAx9tfd31JyWvhMkg==",
+  "_location": "/wp-dev",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+  "_shasum": "abbbc56160a4e98d9a075be17bab9a62ca81f7e4",
+  "_spec": "https://www.atom.io/api/packages/wp-dev/versions/0.3.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-202256-87690-106neg3.0fhb",
+  "bugs": {
+    "url": "https://github.com/slushman/atom-wp-dev/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Snippets for WordPress development.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/slushman/atom-wp-dev#readme",
+  "keywords": [
+    "WordPress",
+    "snippets",
+    "theme",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "./lib/wp-dev",
+  "name": "wp-dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slushman/atom-wp-dev.git"
+  },
+  "version": "0.3.5"
+}
