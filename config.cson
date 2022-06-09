@@ -2,6 +2,7 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
+  "atom-autocomplete-php": {}
   "atom-ternjs":
     inlineFnCompletion: false
     snippetsFirst: true
@@ -58,7 +59,7 @@
       "turbo-javascript"
       "welcome"
       "linter-php"
-      "atom-autocomplete-php"
+      "autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "advanced-open-file"
@@ -129,6 +130,7 @@
       "typescript-modules-helper"
       "select-text"
       "laravel-helper"
+      "wordpress-autocomplete"
     ]
     restorePreviousWindowsOnStart: "always"
     simpleFullScreenWindows: true
@@ -140,6 +142,7 @@
     titleBar: "custom"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -153,6 +156,8 @@
     win32TriggerKeys: "altKey"
   "linter-ui-default":
     panelHeight: 300
+  "markdown-preview-enhanced":
+    openPreviewPaneAutomatically: false
   "one-dark-ui":
     hideDockButtons: true
   "project-manager":

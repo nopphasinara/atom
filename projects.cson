@@ -250,6 +250,20 @@
     ]
   }
   {
+    title: "test.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/test.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "laravel.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/laravel.reproduction-studio.com"
+    ]
+  }
+  {
     title: "soho-art.com"
     group: "WWW"
     paths: [
@@ -312,6 +326,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/amp.local/demo1"
+    ]
+  }
+  {
+    title: "stocky.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/stocky.local"
     ]
   }
   {
