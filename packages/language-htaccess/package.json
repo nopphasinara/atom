@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+  "_id": "language-htaccess@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LuCPED5VvRLM9gKmZ4fgtOJFIXNJNjb9pwrNoRrmilWU7N5bK7d7Ai/vfWsDsRm0c69h91pFUE76gKnwSQITrA==",
+  "_location": "/language-htaccess",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+  "_shasum": "9eec893af274f03e9b61278708322017f46dfabe",
+  "_spec": "https://www.atom.io/api/packages/language-htaccess/versions/0.2.0/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022524-9385-1awxgqo.ykmt",
+  "bugs": {
+    "url": "https://github.com/muchweb/atom-language-htaccess/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "HTACCESS language support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://atom.github.io/language-htaccess",
+  "license": "GPLv3+",
+  "name": "language-htaccess",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muchweb/atom-language-htaccess.git"
+  },
+  "version": "0.2.0"
+}

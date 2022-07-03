@@ -2,7 +2,8 @@
   "advanced-open-file":
     fuzzyMatch: true
     helmDirSwitch: true
-  "atom-autocomplete-php": {}
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/opt/php@8.0/bin/php"
   "atom-ternjs":
     inlineFnCompletion: false
     snippetsFirst: true
@@ -60,6 +61,8 @@
       "welcome"
       "linter-php"
       "autocomplete-php"
+      "wordpress-autocomplete"
+      "atom-autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "advanced-open-file"
