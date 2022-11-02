@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+  "_id": "language-twig@1.6.4",
+  "_inBundle": false,
+  "_integrity": "sha512-1ZgjF0V5AbAodXr+8pSjgdER7VEn+UJj/jX0DmC1lhiSI88VT4wOZCQg0CLjF9u/M3Yl/pzFs7dllES3hnwW8w==",
+  "_location": "/language-twig",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+  "_shasum": "35901ab52b8597bc0b350dc21e77e0424bc62602",
+  "_spec": "https://www.atom.io/api/packages/language-twig/versions/1.6.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022824-3568-1veqawf.vgn4",
+  "bugs": {
+    "url": "https://github.com/ener-getick/php-twig/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Twig support for Atom. Several languages supported.",
+  "engines": {
+    "atom": ">0.10.0"
+  },
+  "homepage": "https://github.com/ener-getick/php-twig#readme",
+  "license": "MIT",
+  "name": "language-twig",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ener-getick/php-twig.git"
+  },
+  "version": "1.6.4"
+}

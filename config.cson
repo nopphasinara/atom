@@ -63,6 +63,7 @@
       "autocomplete-php"
       "wordpress-autocomplete"
       "atom-autocomplete-php"
+      "linter-ui-default"
     ]
     packagesWithKeymapsDisabled: [
       "advanced-open-file"
@@ -158,6 +159,8 @@
     linuxTriggerKeys: "altKey"
     win32TriggerKeys: "altKey"
   "linter-ui-default":
+    largeFileLineCount: 50000
+    longLineLength: 20000
     panelHeight: 300
   "markdown-preview-enhanced":
     openPreviewPaneAutomatically: false
@@ -168,6 +171,9 @@
   "remote-sync":
     autoHideLogPanel: true
     foldLogPanel: true
+  "sass-autocompile":
+    compileOnSave: false
+    showStartCompilingNotification: true
   tabs:
     displayMruTabList: false
     enableMruTabSwitching: false

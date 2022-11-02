@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+  "_id": "language-twig-patch@1.6.4",
+  "_inBundle": false,
+  "_integrity": "sha512-o4yosm0FoK8A66bl8zeHvRYAKbVUry8HlpEPD4y/QhUBeZ2MGAhGfP/SmjxO1HZQNTcBaWft6xICLGk8O5bw6w==",
+  "_location": "/language-twig-patch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+  "_shasum": "04b01ffd6176d66d020618209bba52e58a26ed55",
+  "_spec": "https://www.atom.io/api/packages/language-twig-patch/versions/1.6.4/tarball",
+  "_where": "/private/tmp/apm-install-dir-2022824-3554-1r169xf.t366",
+  "bugs": {
+    "url": "https://github.com/p-chan/php-twig/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Twig support for Atom. Several languages supported.",
+  "engines": {
+    "atom": ">0.10.0"
+  },
+  "homepage": "https://github.com/p-chan/php-twig#readme",
+  "license": "MIT",
+  "name": "language-twig-patch",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-chan/php-twig.git"
+  },
+  "version": "1.6.4"
+}

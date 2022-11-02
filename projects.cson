@@ -135,6 +135,13 @@
     ]
   }
   {
+    title: "www.little-coconut.de"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/www.little-coconut.de"
+    ]
+  }
+  {
     title: "por.reproduction-gallery.com"
     group: "WWW"
     paths: [
@@ -163,6 +170,13 @@
     ]
   }
   {
+    title: "nest.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/nest.local"
+    ]
+  }
+  {
     title: "por.reproduction-studio.com"
     group: "WWW"
     paths: [
@@ -181,6 +195,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/test.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "plesk.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/plesk.reproduction-studio.com"
     ]
   }
   {
@@ -240,20 +261,24 @@
     ]
   }
   {
+    title: "phlox.woocommerce.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/phlox.woocommerce.local"
+    ]
+  }
+  {
+    title: "www.simply-posters.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/www.simply-posters.local"
+    ]
+  }
+  {
     title: "applescript"
     group: "AppleScript"
     paths: [
       "/Volumes/Storage/Projects/github/applescript"
-    ]
-    icon: "icon-apple"
-    color: "#5ae991"
-  }
-  {
-    title: "Google Drives"
-    group: "Drives"
-    paths: [
-      "/Volumes/Drives/Dropbox"
-      "/Volumes/Drives/Google Drives"
     ]
     icon: "icon-apple"
     color: "#5ae991"

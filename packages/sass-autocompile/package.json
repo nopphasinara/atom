@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+  "_id": "sass-autocompile@0.13.5",
+  "_inBundle": false,
+  "_integrity": "sha512-cXF8XZPqlg7sZYp1k6qoPp6TrUMnOQBsJZos9SgDOeAg7JAdJJiTkV1nbCFNgYIcj+ikvRdtC+wfrUiSqUVZBQ==",
+  "_location": "/sass-autocompile",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+  "_shasum": "fcb3c7a0232a17f642526f5057ccd76fdbda5054",
+  "_spec": "https://www.atom.io/api/packages/sass-autocompile/versions/0.13.5/tarball",
+  "_where": "/private/tmp/apm-install-dir-202281-5227-1fje3jk.b3z6",
+  "bugs": {
+    "url": "https://github.com/armin-pfaeffle/sass-autocompile/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "event-kit": "^1.2.0",
+    "node-uuid": "^1.4.3"
+  },
+  "deprecated": false,
+  "description": "Automatically compiles SASS files on save.",
+  "engines": {
+    "atom": ">=0.185.0 <2.0.0"
+  },
+  "homepage": "https://github.com/armin-pfaeffle/sass-autocompile#readme",
+  "license": "MIT",
+  "main": "./lib/sass-autocompile",
+  "name": "sass-autocompile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armin-pfaeffle/sass-autocompile.git"
+  },
+  "version": "0.13.5"
+}
