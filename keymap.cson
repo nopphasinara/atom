@@ -319,6 +319,7 @@
     "shift-tab": "snippets:previous-tab-stop"
     "shift-f11": "remote-sync:upload-file"
     "f11": "remote-sync:download-file"
+    "ctrl-f11": "remote-sync:delete-file"
     "ctrl-cmd-enter": "tree-view:rename"
     "alt-cmd-s": "sass-autocompile:compile-to-file"
     "alt-cmd-tab": "editor:auto-indent"
