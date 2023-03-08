@@ -172,6 +172,26 @@ module.exports = [
         html: true,
         class: ['mdi', 'bg-warning', 'fg-dark'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'remote-sync:upload-file',
+        },
+        tooltip: 'Upload File',
+        text: '<i>󰁞</i>',
+        html: true,
+        class: ['mdi', 'bg-orange', 'fg-dark'],
+    },
+    {
+        type: 'button',
+        callback: {
+            '': 'remote-sync:download-file',
+        },
+        tooltip: 'Download File',
+        text: '<i>󰁆</i>',
+        html: true,
+        class: ['mdi', 'bg-orange', 'fg-dark'],
+    },
     // { type: 'spacer' },
     {
         type: 'url',

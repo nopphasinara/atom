@@ -248,10 +248,38 @@
     ]
   }
   {
+    title: "staging4.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging4.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "staging.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging.reproduction-studio.com"
+    ]
+  }
+  {
     title: "test.reproduction-studio.com"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/test.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "wp.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/wp.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "staging3.reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging3.reproduction-studio.com"
     ]
   }
   {
@@ -299,10 +327,24 @@
     ]
   }
   {
+    title: "wordpress.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/wordpress.local"
+    ]
+  }
+  {
     title: "demo1.amp.local"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/amp.local/demo1"
+    ]
+  }
+  {
+    title: "nest.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/nest.local"
     ]
   }
   {

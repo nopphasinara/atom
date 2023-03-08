@@ -99,15 +99,12 @@
       "lodash-snippets"
       "atom-ternjs"
       "Quick-JavaScript"
-      "hyperclick"
       "hyperlink-hyperclick"
       "js-hyperclick"
-      "php-hyperclick"
       "css-hyperclick"
       "python-snippets"
       "autocomplete-module-import"
       "autocomplete-sql"
-      "blade-snippets"
       "css-snippets"
       "es6-javascript"
       "laravel-snippets"
@@ -123,6 +120,7 @@
       "welcome"
       "atom-wordpress"
       "wp-dev"
+      "atom-autocomplete-php"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
@@ -405,6 +403,7 @@
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…$"
 ".coffee.source":
   editor:
     autoIndentOnPaste: true

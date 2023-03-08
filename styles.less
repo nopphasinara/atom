@@ -3,13 +3,51 @@
 
 @import "./styles/fonts.less";
 @import "./styles/variables.less";
+@import "./styles/custom-colors.less";
 @import "./styles/mixins.less";
 @import "./styles/helpers.less";
 
 
 :root {
   .detached-color-variables();
+
+  .for-each(@custom-key-colors-list, {
+    @k: e(extract(@custom-key-colors-list, @i));
+    @v: e(extract(@custom-colors-list, @i));
+    @v-hover: color(extract(@custom-colors-list, @i));
+
+    --@{k}: @v;
+    --@{k}-hover: @v-hover;
+  });
 }
+
+.for-each(@custom-key-colors-list, {
+  @k: e(extract(@custom-key-colors-list, @i));
+  @v: e(extract(@custom-colors-list, @i));
+  @v-hover: saturate(tint(color(extract(@custom-colors-list, @i)), 20%), 20%);
+
+  .bg-@{k} {
+    background: @v !important;
+    background-color: @v !important;
+  }
+
+  .bg-@{k}-hover {
+    &:hover {
+      background: @v-hover !important;
+      background-color: @v-hover !important;
+    }
+  }
+
+  .fg-@{k} {
+    color: @v !important;
+  }
+
+  .fg-@{k}-hover {
+    &:hover {
+      color: @v-hover !important;
+    }
+  }
+});
 
 
 /*
@@ -46,9 +84,22 @@
 }
 
 
+// body {
+//   &::before {
+//     .for-each(@custom-colors-list, {
+//       @k: extract(@custom-colors-list, @i);
+//       @v: @@k;
+//
+//       --@{k}: @v;
+//     });
+//   }
+// }
+
 // style the background color of the tree view
 .tree-view {
-  // background-color: whitesmoke;
+  &::after {
+    // content: extract(@custom-colors-list, 2);
+  }
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself

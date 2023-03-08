@@ -1,4 +1,8 @@
 {
+  "body": {
+    "cmd-shift-z": "abort!"
+  }
+
   "atom-text-editor:not([mini]).typescript-editor": {
     "escape": "typescript:hide-signature-help"
     "pageup": "typescript:signature-help-prev"
@@ -206,6 +210,7 @@
     "backspace": "tree-view:remove"
   }
   ".platform-darwin atom-text-editor": {
+    "cmd-shift-z": "core:redo"
     "alt-cmd": "datatip:toggle"
     "cmd-r": "symbols-view:toggle-file-symbols"
     "ctrl-shift-o": "link:open"
