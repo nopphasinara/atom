@@ -206,10 +206,10 @@
     ]
   }
   {
-    title: "por.reproduction-studio.com"
+    title: "demo2.eazyportraits.com"
     group: "WWW"
     paths: [
-      "/Volumes/Storage/www/por.reproduction-studio.com"
+      "/Volumes/Storage/www/demo2.eazyportraits.com"
     ]
   }
   {
@@ -331,6 +331,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/wordpress.local"
+    ]
+  }
+  {
+    title: "fineart.iclicksee.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/fineart.iclicksee.com"
     ]
   }
   {
