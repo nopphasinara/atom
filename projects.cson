@@ -206,6 +206,13 @@
     ]
   }
   {
+    title: "demo1.eazyportraits.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/demo1.eazyportraits.com"
+    ]
+  }
+  {
     title: "demo2.eazyportraits.com"
     group: "WWW"
     paths: [
