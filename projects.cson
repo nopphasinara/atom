@@ -178,13 +178,6 @@
     ]
   }
   {
-    title: "demo1.reproduction-galleries.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/demo1.reproduction-galleries.com"
-    ]
-  }
-  {
     title: "quick3.reproduction-gallery.local"
     group: "WWW"
     paths: [
@@ -206,10 +199,10 @@
     ]
   }
   {
-    title: "demo1.eazyportraits.com"
+    title: "demo1"
     group: "WWW"
     paths: [
-      "/Volumes/Storage/www/demo1.eazyportraits.com"
+      "/Volumes/Storage/www/demo1"
     ]
   }
   {
