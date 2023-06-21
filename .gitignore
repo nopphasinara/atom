@@ -1,6 +1,6 @@
 .node-gyp
 blob-store
-compile-cache
+compile-cache/*
 node_modules
 recovery
 storage

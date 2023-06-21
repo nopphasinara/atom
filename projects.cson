@@ -196,6 +196,8 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-gallery.com"
+      "/Applications/Google Drive.app/Contents/Applications/FinderHelper.app"
+      "/Applications/Google Drive.app/Contents/PlugIns/DFSFileProviderExtension.appex"
     ]
   }
   {
@@ -203,6 +205,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/demo1"
+    ]
+  }
+  {
+    title: "demo2"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/demo2"
     ]
   }
   {
@@ -234,20 +243,6 @@
     ]
   }
   {
-    title: "por.reproduction-gallery.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/por.reproduction-gallery.com"
-    ]
-  }
-  {
-    title: "woo.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/woo.reproduction-studio.com"
-    ]
-  }
-  {
     title: "staging4.reproduction-studio.com"
     group: "WWW"
     paths: [
@@ -262,24 +257,17 @@
     ]
   }
   {
-    title: "test.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/test.reproduction-studio.com"
-    ]
-  }
-  {
-    title: "wp.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/wp.reproduction-studio.com"
-    ]
-  }
-  {
     title: "staging3.reproduction-studio.com"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/staging3.reproduction-studio.com"
+    ]
+  }
+  {
+    title: "staging3.reproduction-gallery.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/staging3.reproduction-gallery.com"
     ]
   }
   {
@@ -299,59 +287,10 @@
     ]
   }
   {
-    title: "rimtalay-resort.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/rimtalay-resort.com"
-    ]
-  }
-  {
     title: "laravel.local"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/laravel.local"
-    ]
-  }
-  {
-    title: "reservation.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/reservation.local"
-    ]
-  }
-  {
-    title: "reservation2.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/reservation2.local"
-    ]
-  }
-  {
-    title: "wordpress.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/wordpress.local"
-    ]
-  }
-  {
-    title: "fineart.iclicksee.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/fineart.iclicksee.com"
-    ]
-  }
-  {
-    title: "demo1.amp.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/amp.local/demo1"
-    ]
-  }
-  {
-    title: "nest.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/nest.local"
     ]
   }
   {

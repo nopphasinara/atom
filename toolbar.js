@@ -287,6 +287,17 @@ module.exports = [
         },
         class: ['mdi', 'bg-success', 'fg-dark'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'url-encode:encode',
+            alt: 'url-encode:decode',
+        },
+        tooltip: 'Decode (󰘵󰍽)',
+        text: '<i>󰘦</i>',
+        html: true,
+        class: ['mdi', 'bg-highlight', 'fg-dark'],
+    },
     // { type: 'spacer' },
     {
         type: 'button',

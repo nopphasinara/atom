@@ -191,6 +191,7 @@
       "format-shell"
       "process-palette"
       "wordpress-autocomplete"
+      "url-encode"
     ]
     packagesWithSnippetsDisabled: [
       "advanced-open-file"

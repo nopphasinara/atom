@@ -1,3 +1,14 @@
+.font-icon {
+  // &:extend(.editor-font-settings);
+
+  vertical-align: middle !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  min-width: @tool-bar-btn-width !important;
+  width: auto !important;
+  font-family: "system-ui", "MaterialDesignIcons", "master-icons" !important;
+}
+
 .detached-color-variables() {
   .for-each(@color-keys, {
     @k: extract(@color-keys, @i);
