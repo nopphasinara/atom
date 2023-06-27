@@ -164,13 +164,6 @@
     ]
   }
   {
-    title: "app1.laravel.local"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/app1.laravel.local"
-    ]
-  }
-  {
     title: "dashboard.reproduction-gallery.com"
     group: "WWW"
     paths: [
@@ -192,33 +185,17 @@
     ]
   }
   {
+    title: "modern-art-reproductions.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/modern-art-reproductions.com"
+    ]
+  }
+  {
     title: "reproduction-gallery.com"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-gallery.com"
-      "/Applications/Google Drive.app/Contents/Applications/FinderHelper.app"
-      "/Applications/Google Drive.app/Contents/PlugIns/DFSFileProviderExtension.appex"
-    ]
-  }
-  {
-    title: "demo1"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/demo1"
-    ]
-  }
-  {
-    title: "demo2"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/demo2"
-    ]
-  }
-  {
-    title: "demo2.eazyportraits.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/demo2.eazyportraits.com"
     ]
   }
   {
@@ -229,45 +206,17 @@
     ]
   }
   {
-    title: "template.reproduction-gallery.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/reproduction-studio.com/template"
-    ]
-  }
-  {
-    title: "staging.reproduction-gallery.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/staging.reproduction-gallery.com"
-    ]
-  }
-  {
-    title: "staging4.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/staging4.reproduction-studio.com"
-    ]
-  }
-  {
-    title: "staging.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/staging.reproduction-studio.com"
-    ]
-  }
-  {
-    title: "staging3.reproduction-studio.com"
-    group: "WWW"
-    paths: [
-      "/Volumes/Storage/www/staging3.reproduction-studio.com"
-    ]
-  }
-  {
     title: "staging3.reproduction-gallery.com"
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/staging3.reproduction-gallery.com"
+    ]
+  }
+  {
+    title: "museum-reproductions.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/museum-reproductions.com"
     ]
   }
   {

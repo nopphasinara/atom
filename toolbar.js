@@ -192,6 +192,16 @@ module.exports = [
         html: true,
         class: ['mdi', 'bg-orange', 'fg-dark'],
     },
+    {
+        type: 'button',
+        callback: {
+            '': 'remote-sync:delete-file',
+        },
+        tooltip: 'Delete File',
+        text: '<i>󰁮</i>',
+        html: true,
+        class: ['mdi', 'bg-orange', 'fg-dark'],
+    },
     // { type: 'spacer' },
     {
         type: 'url',
