@@ -1,12 +1,5 @@
 [
   {
-    title: "Home"
-    group: "macOS"
-    paths: [
-      "~/"
-    ]
-  }
-  {
     title: ".atom"
     group: "Atom"
     paths: [
@@ -21,52 +14,10 @@
     ]
   }
   {
-    title: "DOTFILE"
-    group: "Dotfiles"
-    paths: [
-      "/Volumes/Storage/Projects/atom"
-    ]
-  }
-  {
     title: "Karabiner"
     group: "Dotfiles"
     paths: [
       "/Volumes/Storage/Projects/dotfiles/config/karabiner"
-    ]
-  }
-  {
-    title: "Storage"
-    group: "Storage"
-    paths: [
-      "/Volumes/Storage"
-    ]
-  }
-  {
-    title: "Projects"
-    group: "Projects"
-    paths: [
-      "/Volumes/Storage/Projects"
-    ]
-  }
-  {
-    title: "All Websites"
-    group: "Websites"
-    paths: [
-      "/Volumes/Storage/www"
-    ]
-  }
-  {
-    title: "projects/chrome"
-    group: "Dotfiles"
-    paths: [
-      "/Volumes/Storage/Projects/dotfiles/projects/chrome"
-    ]
-  }
-  {
-    title: "projects/extensions"
-    group: "Dotfiles"
-    paths: [
-      "/Volumes/Storage/Projects/dotfiles/projects/extensions"
     ]
   }
   {
@@ -94,76 +45,6 @@
     ]
   }
   {
-    title: "github"
-    group: "Github"
-    paths: [
-      "/Volumes/Storage/Projects/github"
-    ]
-  }
-  {
-    title: "happymishra__JavaScriptTutorials"
-    group: "Github"
-    paths: [
-      "/Volumes/Storage/Projects/github/happymishra__JavaScriptTutorials"
-    ]
-  }
-  {
-    title: "atom-extended"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/atom-extended"
-    ]
-  }
-  {
-    title: "chromeawesome"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/chromeawesome"
-    ]
-  }
-  {
-    title: "chrome-extended"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/chrome-extended"
-    ]
-  }
-  {
-    title: "atom-awesome"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/atom-awesome"
-    ]
-  }
-  {
-    title: "atom-awesome-utils"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/atom-awesome-utils"
-    ]
-  }
-  {
-    title: "chrome-snippets"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/chrome-snippets"
-    ]
-  }
-  {
-    title: "awesome-atom"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages/awesome-atom"
-    ]
-  }
-  {
-    title: "NPM Packages"
-    group: "NPM"
-    paths: [
-      "/Volumes/Storage/Projects/npm-packages"
-    ]
-  }
-  {
     title: "dashboard.reproduction-gallery.com"
     group: "WWW"
     paths: [
@@ -171,10 +52,10 @@
     ]
   }
   {
-    title: "quick3.reproduction-gallery.local"
+    title: "dashboard.reproduction-gallery.com/admin"
     group: "WWW"
     paths: [
-      "/Volumes/Storage/www/reproduction-gallery.local/quickadmin3"
+      "/Volumes/Storage/www/dashboard.reproduction-gallery.com/admin"
     ]
   }
   {
@@ -182,6 +63,20 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-galleries.com"
+    ]
+  }
+  {
+    title: "wp.reproduction-galleries.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-galleries.com/wp.reproduction-galleries.com"
+    ]
+  }
+  {
+    title: "reproduction-studio.com"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-studio.com"
     ]
   }
   {
@@ -223,8 +118,7 @@
     title: "soho-art.com"
     group: "WWW"
     paths: [
-      "/Volumes/Storage/www/soho-art.com"
-      "/Volumes/Storage/Projects/controls"
+      "/Volumes/Storage/www/soho-art.com/httpdocs"
     ]
   }
   {
@@ -241,24 +135,5 @@
     paths: [
       "/Volumes/Storage/www/laravel.local"
     ]
-  }
-  {
-    title: "applescript"
-    group: "AppleScript"
-    paths: [
-      "/Volumes/Storage/Projects/github/applescript"
-    ]
-    icon: "icon-apple"
-    color: "#5ae991"
-  }
-  {
-    title: "Google Drives"
-    group: "Drives"
-    paths: [
-      "/Volumes/Drives/Dropbox"
-      "/Volumes/Drives/Google Drives"
-    ]
-    icon: "icon-apple"
-    color: "#5ae991"
   }
 ]

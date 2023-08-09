@@ -5,22 +5,201 @@
   "atom-autocomplete-php":
     binPhp: "/usr/local/bin/php"
   "atom-beautify":
+    apex:
+      disabled: true
+    arduino:
+      disabled: true
+    blade:
+      brace_style: "end-expand"
+      wrap_attributes: "force-aligned"
+      wrap_line_length: 0
+    c:
+      disabled: true
+    cfml:
+      disabled: true
+    clj:
+      disabled: true
+    cpp:
+      disabled: true
+    crystal:
+      disabled: true
+    cs:
+      disabled: true
+    css:
+      selector_separator_newline: true
+    d:
+      disabled: true
+    ejs:
+      disabled: true
+    elm:
+      disabled: true
+    erb:
+      disabled: true
+    erlang:
+      disabled: true
     executables:
       php:
         path: "/usr/local/bin/php"
       "php-cs-fixer":
         path: "/usr/local/bin/php-cs-fixer"
+      phpcbf:
+        path: "/usr/local/bin/phpcbf"
+      "puppet-lint": {}
+    fortran:
+      disabled: true
     general:
       beautifyEntireFileOnSave: false
       loggerLevel: "debug"
       muteAllErrors: true
       muteUnsupportedLanguageErrors: true
+    gherkin:
+      disabled: true
+    glsl:
+      disabled: true
+    gn:
+      disabled: true
+    handlebars:
+      disabled: true
+    html:
+      brace_style: "expand"
+      inline: [
+        "a"
+        "abbr"
+        "area"
+        "audio"
+        "b"
+        "bdi"
+        "bdo"
+        "br"
+        "button"
+        "canvas"
+        "cite"
+        "code"
+        "data"
+        "datalist"
+        "del"
+        "dfn"
+        "em"
+        "embed"
+        "i"
+        "iframe"
+        "img"
+        "input"
+        "ins"
+        "kbd"
+        "keygen"
+        "label"
+        "map"
+        "mark"
+        "math"
+        "meter"
+        "noscript"
+        "object"
+        "output"
+        "progress"
+        "q"
+        "ruby"
+        "s"
+        "samp"
+        "small"
+        "span"
+        "strong"
+        "sub"
+        "sup"
+        "svg"
+        "template"
+        "textarea"
+        "time"
+        "u"
+        "var"
+        "video"
+        "wbr"
+        "text"
+        "acronym"
+        "address"
+        "big"
+        "dt"
+        "ins"
+        "strike"
+        "tt"
+      ]
+      wrap_line_length: 0
+    jade:
+      disabled: true
+    java:
+      disabled: true
     js:
       brace_style: "expand"
-      default_beautifier: "Pretty Diff"
+      break_chained_methods: true
       end_with_comma: true
       jslint_happy: true
       space_after_anon_function: true
+      space_in_paren: true
+    json:
+      brace_style: "end-expand"
+      space_after_anon_function: true
+      space_in_paren: true
+    jsx:
+      disabled: true
+    latex:
+      disabled: true
+    less:
+      align_assignments: true
+    lua:
+      disabled: true
+    marko:
+      disabled: true
+    mustache:
+      disabled: true
+    nunjucks:
+      disabled: true
+    ocaml:
+      disabled: true
+    pawn:
+      disabled: true
+    php: {}
+    puppet:
+      disabled: true
+    r:
+      disabled: true
+    riot:
+      disabled: true
+    rust:
+      disabled: true
+    spacebars:
+      disabled: true
+    sql:
+      identifiers: "upper"
+    svg: {}
+    swig:
+      disabled: true
+    terraform:
+      disabled: true
+    tss:
+      disabled: true
+    tsx:
+      disabled: true
+    twig:
+      disabled: true
+    ux:
+      disabled: true
+    vala:
+      disabled: true
+    verilog:
+      disabled: true
+    vhdl:
+      disabled: true
+    visualforce:
+      disabled: true
+    vue:
+      brace_style: "expand"
+    xml:
+      brace_style: "expand"
+      wrap_attributes: "force-aligned"
+    xtemplate:
+      disabled: true
+    yaml:
+      disabled: true
   "atom-ide-datatip":
     showDataTipOnMouseMove: false
   "atom-ide-hyperclick":
