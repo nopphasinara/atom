@@ -45,6 +45,13 @@
     ]
   }
   {
+    title: "corcel.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/corcel.local"
+    ]
+  }
+  {
     title: "dashboard.reproduction-gallery.com"
     group: "WWW"
     paths: [

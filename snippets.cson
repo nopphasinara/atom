@@ -350,6 +350,14 @@
 
 
   ".text.html.php": {
+    "die": {
+      "prefix": "die",
+      "body": """
+      <?php die(${1:}); ?>$0
+      """,
+    },
+
+
     "/* ... */": {
       "prefix": "/*",
       "body": """
@@ -397,6 +405,13 @@
 
 
   ".source.php, .text.html.php .source.php": {
+    "die()": {
+      "prefix": "die",
+      "body": """
+      die(${1:});$0
+      """,
+    },
+
     "if not defined": {
       "prefix": "ifnde",
       "body": """
