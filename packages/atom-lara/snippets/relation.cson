@@ -1,0 +1,116 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Relationship                        #
+#####################################################
+
+'.text.php':
+  "one to one parent->laravel":
+    "prefix": "lrl-o2op"
+    "body": """
+     /**
+      * Get the phone record associated with the user.
+      */
+     public function phone()
+     {
+         return $this->hasOne('App\\\\Phone$1');
+     }
+    """
+  "one to one ->laravel":
+    "prefix": "lrl-o2o"
+    "body": """
+     /**
+      * Get the user that owns the phone.
+      */
+     public function user()
+     {
+         return $this->belongsTo('App\\\\User');
+     }
+    """
+  "one to Many parent ->laravel":
+    "prefix": "lrl-o2mp"
+    "body": """
+     /**
+      * Get the comments for the blog post.
+      */
+     public function comments()
+     {
+         return $this->hasMany('App\\\\Comment');
+     }
+    """
+  "one to Many  ->laravel":
+    "prefix": "lrl-o2m"
+    "body": """
+     /**
+      * Get the post that owns the comment.
+      */
+     public function post()
+     {
+         return $this->belongsTo('App\\\\Post');
+     }
+    """
+  "many to many parent  ->laravel":
+    "prefix": "lrl-m2mp"
+    "body": """
+     /**
+      * The roles that belong to the user.
+      */
+     public function roles()
+     {
+         return $this->belongsToMany('App\\\\Role');
+     }
+    """
+  "many to many  ->laravel":
+    "prefix": "lrl-m2m"
+    "body": """
+     /**
+      * The users that belong to the role.
+      */
+     public function users()
+     {
+         return $this->belongsToMany('App\\\\User');
+     }
+    """
+  "hasManyThrough ->laravel":
+    "prefix": "lrl-hasManyThrough"
+    "body": """
+     /**
+     * Get all of the posts for the country.
+     */
+    public function posts()
+    {
+        return $this->hasManyThrough('App\\\\Post', 'App\\\\User');
+    }
+    """
+  "polymorpic   ->laravel":
+    "prefix": "lrl-poly"
+    "body": """
+     /**
+      * Get all of the post's comments.
+      */
+     public function comments()
+     {
+         return $this->morphMany('App\\\\Comment', 'commentable');
+     }
+    """
+  "polymorpic parent->laravel":
+    "prefix": "lrl-polyp"
+    "body": """
+     /**
+      * Get all of the owning commentable models.
+      */
+     public function commentable()
+     {
+         return $this->morphTo();
+     }
+    """
+  "polymorpic many parent->laravel":
+    "prefix": "lrl-p2mp"
+    "body": """
+     /**
+     * Get all of the tags for the post.
+     */
+    public function tags()
+    {
+        return $this->morphToMany('App\\\\Tag', 'taggable');
+    }
+    """

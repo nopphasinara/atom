@@ -1,0 +1,96 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Routing                             #
+#####################################################
+".text.php":
+
+  "Route Basic->laravel":
+    "prefix": "lr-basic"
+    "body": """
+      Route::get('foo', function () {
+          return 'Hello Laravel';
+      });
+    """
+
+  "Route::redirect->laravel":
+    "prefix": "lr-redirect"
+    "body": """
+      Route::redirect('/here', '/there', 301);
+    """
+
+  "Route::namespace->laravel":
+    "prefix": "lr-namespace"
+    "body": """
+      Route::namespace('$1')->group(function () {
+          $1
+      });
+    """
+
+  "Route::domain->laravel":
+    "prefix": "lr-domain"
+    "body": """
+      Route::domain('{account}.myapp.com')->group(function () {
+          $1
+      });
+    """
+
+  "Route::get->laravel":
+    "prefix": "lr-get"
+    "body": """
+      Route::get('$1', '$1')->name('$1');
+    """
+  "Route::post->laravel":
+    "prefix": "lr-post"
+    "body": """
+      Route::post('$1', '$1')->name('$1');
+    """
+  "Route::patch->laravel":
+    "prefix": "lr-patch"
+    "body": """
+      Route::patch('$1', '$1')->name('$1');
+    """
+  "Route::put->laravel":
+    "prefix": "lr-put"
+    "body": """
+      Route::put('$1', '$1')->name('$1');
+    """
+  "Route::delete->laravel":
+    "prefix": "lr-delete"
+    "body": """
+      Route::delete('$1', '$1')->name('$1');
+    """
+  "Route::group->laravel":
+    "prefix": "lr-group"
+    "body": """
+        Route::middleware(['first', 'second'])->group(function () {
+          // Your all route here ........
+          $1
+      });
+    """
+  "Route::prefix->laravel":
+    "prefix": "lr-prefix"
+    "body": """
+        Route::prefix('admin')->group(function () {
+          // Your  routes here ......
+          $1
+      });
+    """
+  "Route::resource->laravel":
+    "prefix": "lr-resource"
+    "body": """
+        Route::resource('photos', 'PhotoController');
+    """
+  "Route::resource only->laravel":
+    "prefix": "lr-oresource"
+    "body": """
+        Route::resource('photo','PhotoController', ['only' => [
+          'create', 'store'
+          ]]);
+    """
+  "Route::resource except->laravel":
+    "prefix": "lr-eresource"
+    "body": """
+        Route::resource('photo','PhotoController', ['except' => [
+          'create', 'store', 'update', 'destroy'
+          ]]);
+    """

@@ -1,0 +1,65 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Filesystem                          #
+#####################################################
+".text.php":
+
+  "Filesystem put ->laravel":
+    "prefix": "lf-put"
+    "body": """
+      Storage::disk('local')->put('file.txt', 'Contents');
+    """
+
+  "Filesystem get ->laravel":
+    "prefix": "lf-get1"
+    "body": """
+      Storage::get('file.jpg');
+    """
+
+  "Filesystem get disk ->laravel":
+    "prefix": "lf-get2"
+    "body": """
+      Storage::disk('s3')->exists('file.jpg');
+    """
+
+  "Filesystem url ->laravel":
+    "prefix": "lf-url"
+    "body": """
+      Storage::url('file1.jpg');
+    """
+
+  "Filesystem size ->laravel":
+    "prefix": "lf-size"
+    "body": """
+      Storage::size('file.txt');
+    """
+
+  "Filesystem copy ->laravel":
+    "prefix": "lf-copy"
+    "body": """
+      Storage::copy('old/file1.jpg', 'new/file1.jpg');
+    """
+
+  "Filesystem move ->laravel":
+    "prefix": "lf-move"
+    "body": """
+      Storage::move('old/file1.jpg', 'new/file1.jpg');
+    """
+
+  "Filesystem delete ->laravel":
+    "prefix": "lf-delete"
+    "body": """
+      Storage::delete(['file1.jpg', 'file2.jpg']);
+    """
+
+  "Filesystem makeDirectory ->laravel":
+    "prefix": "lf-makeDirectory"
+    "body": """
+      Storage::makeDirectory($directory);
+    """
+
+  "Filesystem deleteDirectory ->laravel":
+    "prefix": "lf-deleteDirectory"
+    "body": """
+      Storage::deleteDirectory($directory);
+    """

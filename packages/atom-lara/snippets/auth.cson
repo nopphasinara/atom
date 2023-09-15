@@ -1,0 +1,51 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                AUTH SYSTEM                         #
+#####################################################
+
+".text.php":
+  "Auth::check->laravel":
+    "prefix": "la-check"
+    "body": """
+     Auth::check()
+    """
+  "Auth::user->laravel":
+    "prefix": "la-u"
+    "body": """
+     Auth::user()
+    """
+  "Auth::id->laravel":
+    "prefix": "la-id"
+    "body": """
+     Auth::id()
+    """
+  "middleware auth->laravel":
+    "prefix": "la-m"
+    "body": """
+     middleware('auth');
+    """
+
+  "Auth::logout() auth->laravel":
+    "prefix": "la-out"
+    "body": """
+     Auth::logout();
+    """
+
+  "Auth::login() auth->laravel":
+    "prefix": "la-login"
+    "body": """
+     Auth::login($user);
+    """
+
+  "authenticate auth->laravel":
+    "prefix": "la-authenticate"
+    "body": """
+     public function authenticate()
+     {
+       if (Auth::attempt(['email' => $email, 'password' => $password])) {
+           // Authentication passed...
+           return redirect()->intended('dashboard');
+           $1
+       }
+     }
+    """

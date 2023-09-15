@@ -1,0 +1,24 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Seeding                             #
+#####################################################
+
+'.text.php':
+
+    'DB::table -> laravel':
+      'prefix': 'lsd-db'
+      'body': """
+       DB::table('users')->insert([
+             'name' => str_random(10),
+             'email' => str_random(10).'@gmail.com',
+             'password' => bcrypt('secret'),
+              $1
+         ]);
+      """
+    'DB::factory -> laravel':
+      'prefix': 'lsd-factory'
+      'body': """
+       factory(App\\\\User::class, 50)->create()->each(function ($u) {
+        $u->posts()->save(factory(App\\\\Post::class)->make());
+    });
+      """

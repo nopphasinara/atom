@@ -1,0 +1,268 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Migrations                          #
+#####################################################
+
+'.text.php':
+
+   'bigIncrements -> laravel':
+     'prefix': 'lmg-bigIncrements'
+     'body': """
+      $table->bigIncrements('id$1');
+     """
+    'bigInteger -> laravel':
+      'prefix': 'lmg-bigInteger'
+      'body': """
+       $table->bigInteger('votes$1');
+      """
+    'binary -> laravel':
+      'prefix': 'lmg-binary'
+      'body': """
+       $table->binary('data$1');
+      """
+    'boolean -> laravel':
+      'prefix': 'lmg-boolean'
+      'body': """
+       $table->boolean('confirmed$1');
+      """
+    'char -> laravel':
+      'prefix': 'lmg-char'
+      'body': """
+       $table->char('name', 4);
+      """
+    'date -> laravel':
+      'prefix': 'lmg-date'
+      'body': """
+       $table->date('created_at$1');
+      """
+    'dateTime -> laravel':
+      'prefix': 'lmg-dateTime'
+      'body': """
+       $table->dateTime('created_at$1');
+      """
+    'dateTimeTz -> laravel':
+      'prefix': 'lmg-dateTimeTz'
+      'body': """
+       $table->dateTimeTz('created_at$1');
+      """
+    'decimal -> laravel':
+      'prefix': 'lmg-decimal'
+      'body': """
+       $table->decimal('amount$1', 5, 2);
+      """
+    'double -> laravel':
+      'prefix': 'lmg-double'
+      'body': """
+       $table->double('column$1', 15, 8);
+      """
+    'enum -> laravel':
+      'prefix': 'lmg-enum'
+      'body': """
+       $table->enum('choices$1', ['foo', 'bar']);
+      """
+    'float -> laravel':
+      'prefix': 'lmg-float'
+      'body': """
+       $table->float('amount$1', 8, 2);
+      """
+    'increments -> laravel':
+      'prefix': 'lmg-increments'
+      'body': """
+       $table->increments('id$1');
+      """
+    'integer -> laravel':
+      'prefix': 'lmg-integer'
+      'body': """
+       $table->integer('votes$1');
+      """
+    'ipAddress -> laravel':
+      'prefix': 'lmg-ipAddress'
+      'body': """
+       $table->ipAddress('visitor$1');
+      """
+    'json -> laravel':
+      'prefix': 'lmg-json'
+      'body': """
+       $table->json('options$1');
+      """
+    'jsonb -> laravel':
+      'prefix': 'lmg-jsonb'
+      'body': """
+       $table->jsonb('options$1');
+      """
+    'longText -> laravel':
+      'prefix': 'lmg-longText'
+      'body': """
+       $table->longText('description$1');
+      """
+    'macAddress -> laravel':
+      'prefix': 'lmg-macAddress'
+      'body': """
+       $table->macAddress('device$1');
+      """
+    'mediumIncrements -> laravel':
+      'prefix': 'lmg-mediumIncrements'
+      'body': """
+       $table->mediumIncrements('id$1');
+      """
+    'mediumInteger -> laravel':
+      'prefix': 'lmg-mediumInteger'
+      'body': """
+      $table->mediumInteger('numbers$1');
+      """
+    'mediumText -> laravel':
+      'prefix': 'lmg-mediumText'
+      'body': """
+      $table->mediumText('description$1');
+      """
+    'morphs -> laravel':
+      'prefix': 'lmg-morphs'
+      'body': """
+      $table->morphs('taggable$1');
+      """
+    'nullableMorphs -> laravel':
+      'prefix': 'lmg-nullableMorphs'
+      'body': """
+      $table->nullableMorphs('taggable$1');
+      """
+    'nullableTimestamps -> laravel':
+      'prefix': 'lmg-nullableTimestamps'
+      'body': """
+      $table->nullableTimestamps();
+      """
+    'rememberToken -> laravel':
+      'prefix': 'lmg-rememberToken'
+      'body': """
+      $table->rememberToken();
+      """
+
+    'smallIncrements -> laravel':
+      'prefix': 'lmg-smallIncrements'
+      'body': """
+      $table->smallIncrements('id$1');
+      """
+    'smallInteger -> laravel':
+      'prefix': 'lmg-smallInteger'
+      'body': """
+      $table->smallInteger('votes$1');
+      """
+    'softDeletes -> laravel':
+      'prefix': 'lmg-softDeletes'
+      'body': """
+      $table->softDeletes();
+      """
+    'string -> laravel':
+      'prefix': 'lmg-string'
+      'body': """
+      $table->string('email$1');
+      """
+    'text -> laravel':
+      'prefix': 'lmg-text'
+      'body': """
+      $table->text('description$1');
+      """
+    'string/limit -> laravel':
+      'prefix': 'lmg-stringl'
+      'body': """
+      $table->string('name$1', 100);
+      """
+    'time -> laravel':
+      'prefix': 'lmg-time'
+      'body': """
+      $table->time('sunrise$1');
+      """
+    'timeTz -> laravel':
+      'prefix': 'lmg-timeTz'
+      'body': """
+      $table->timeTz('sunrise$1');
+      """
+    'tinyInteger -> laravel':
+      'prefix': 'lmg-tinyInteger'
+      'body': """
+      $table->tinyInteger('numbers$1');
+      """
+    'timestamp -> laravel':
+      'prefix': 'lmg-timestamp'
+      'body': """
+      $table->timestamp('added_on$1');
+      """
+    'timestampTz -> laravel':
+      'prefix': 'lmg-timestampTz'
+      'body': """
+      $table->timestampTz('added_on$1');
+      """
+    'timestamps -> laravel':
+      'prefix': 'lmg-timestamps'
+      'body': """
+      $table->timestamps();
+      """
+    'unsignedBigInteger -> laravel':
+      'prefix': 'lmg-unsignedBigInteger'
+      'body': """
+      $table->unsignedBigInteger('votes$1');
+      """
+    'unsignedInteger -> laravel':
+      'prefix': 'lmg-unsignedInteger'
+      'body': """
+      $table->unsignedInteger('votes$1');
+      """
+    'unsignedMediumInteger -> laravel':
+      'prefix': 'lmg-unsignedMediumInteger'
+      'body': """
+      $table->unsignedMediumInteger('votes$1');
+      """
+    'unsignedSmallInteger -> laravel':
+      'prefix': 'lmg-unsignedSmallInteger'
+      'body': """
+      $table->unsignedSmallInteger('votes$1');
+      """
+    'unsignedTinyInteger -> laravel':
+      'prefix': 'lmg-unsignedTinyInteger'
+      'body': """
+      $table->unsignedTinyInteger('votes$1');
+      """
+    'uuid -> laravel':
+      'prefix': 'lmg-uuid'
+      'body': """
+      $table->uuid('id$1');
+      """
+    'foreign -> laravel':
+      'prefix': 'lmg-foreign'
+      'body': """
+      $table->foreign('user_id$1')->references('id$1')->on('users$1')->onDelete('cascade$1');
+      """
+    'after -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-after'
+      'body': """
+      after('column$1')
+      """
+    'comment -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-comment'
+      'body': """
+      comment('my comment$1')
+      """
+    'foreign -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-default'
+      'body': """
+      default($value$1)
+      """
+    'nullable -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-nullable'
+      'body': """
+      nullable()
+      """
+    'unsigned -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-unsigned'
+      'body': """
+      unsigned()
+      """
+    'unique -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-unique'
+      'body': """
+      unique()
+      """
+    'dropForeign -> laravel [Column Modifiers] ':
+      'prefix': 'lmg-dropForeign'
+      'body': """
+      $table->dropForeign(['user_id$1']);
+      """

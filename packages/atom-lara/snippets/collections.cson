@@ -1,0 +1,446 @@
+
+########################################################
+#            Atom Laravel Snippet                     #
+#                Collections                         #
+#####################################################
+
+".text.php":
+
+  "orderBy->laravel":
+    "prefix": "lcl-orderBy"
+    "body": """
+      orderBy()
+    """
+  "all->laravel":
+    "prefix": "lcl-all"
+    "body": """
+      all()
+    """
+  "average->laravel":
+    "prefix": "lcl-average"
+    "body": """
+      average()
+    """
+  "avg->laravel":
+    "prefix": "lcl-avg"
+    "body": """
+      avg()
+    """
+  "chunk->laravel":
+    "prefix": "lcl-chunk"
+    "body": """
+      chunk(4)
+    """
+  "collapse->laravel":
+    "prefix": "lcl-collapse"
+    "body": """
+      collapse()
+    """
+  "concat->laravel":
+    "prefix": "lcl-concat"
+    "body": """
+      concat()
+    """
+  "combine->laravel":
+    "prefix": "lcl-combine"
+    "body": """
+      combine()
+    """
+  "contains->laravel":
+    "prefix": "lcl-contains"
+    "body": """
+      contains('BD')
+    """
+  "count->laravel":
+    "prefix": "lcl-count"
+    "body": """
+      count()
+    """
+
+  "crossJoin->laravel":
+    "prefix": "lcl-crossJoin"
+    "body": """
+      crossJoin()
+    """
+
+  "diff->laravel":
+    "prefix": "lcl-diff"
+    "body": """
+      diff()
+    """
+  "diffAssoc->laravel":
+    "prefix": "lcl-diffAssoc"
+    "body": """
+      diffAssoc()
+    """
+  "diffKeys->laravel":
+    "prefix": "lcl-diffKeys"
+    "body": """
+      diffKeys()
+    """
+  "each->laravel":
+    "prefix": "lcl-each"
+    "body": """
+      each()
+    """
+  "every->laravel":
+    "prefix": "lcl-every"
+    "body": """
+      every()
+    """
+  "except->laravel":
+    "prefix": "lcl-except"
+    "body": """
+      except([])
+    """
+  "filter->laravel":
+    "prefix": "lcl-filter"
+    "body": """
+      filter()
+    """
+  "first->laravel":
+    "prefix": "lcl-first"
+    "body": """
+      first()
+    """
+  "flatMap->laravel":
+    "prefix": "lcl-flatMap"
+    "body": """
+      flatMap()
+    """
+  "flatten->laravel":
+    "prefix": "lcl-flatten"
+    "body": """
+      flatten()
+    """
+  "flip->laravel":
+    "prefix": "lcl-flip"
+    "body": """
+      flip()
+    """
+  "forget->laravel":
+    "prefix": "lcl-forget"
+    "body": """
+      forget()
+    """
+  "forPage->laravel":
+    "prefix": "lcl-forPage"
+    "body": """
+      forPage(2,3)
+    """
+  "get->laravel":
+    "prefix": "lcl-get"
+    "body": """
+      get()
+    """
+  "groupBy->laravel":
+    "prefix": "lcl-groupBy"
+    "body": """
+      groupBy('user_id')
+    """
+  "has->laravel":
+    "prefix": "lcl-has"
+    "body": """
+      has()
+    """
+  "implode->laravel":
+    "prefix": "lcl-implode"
+    "body": """
+      implode('-')
+    """
+  "intersect->laravel":
+    "prefix": "lcl-intersect"
+    "body": """
+      intersect([])
+    """
+  "intersectKey->laravel":
+    "prefix": "lcl-intersectKey"
+    "body": """
+      intersectKey([])
+    """
+  "isEmpty->laravel":
+    "prefix": "lcl-isEmpty"
+    "body": """
+      isEmpty()
+    """
+  "isNotEmpty->laravel":
+    "prefix": "lcl-isNotEmpty"
+    "body": """
+      isNotEmpty()
+    """
+  "keyBy->laravel":
+    "prefix": "lcl-keyBy"
+    "body": """
+      keyBy('product_id')
+    """
+  "keys->laravel":
+    "prefix": "lcl-keys"
+    "body": """
+      keys()
+    """
+  "last->laravel":
+    "prefix": "lcl-last"
+    "body": """
+      last()
+    """
+  "map->laravel":
+    "prefix": "lcl-map"
+    "body": """
+      map()
+    """
+  "mapWithKeys->laravel":
+    "prefix": "lcl-mapWithKeys"
+    "body": """
+      mapWithKeys()
+    """
+
+  "mapInto->laravel":
+    "prefix": "lcl-mapInto"
+    "body": """
+      mapInto()
+    """
+  "mapSpread->laravel":
+    "prefix": "lcl-mapSpread"
+    "body": """
+      mapSpread()
+    """
+  "mapToGroups->laravel":
+    "prefix": "lcl-mapToGroups"
+    "body": """
+      mapToGroups()
+    """
+  "max->laravel":
+    "prefix": "lcl-max"
+    "body": """
+      max()
+    """
+  "median->laravel":
+    "prefix": "lcl-median"
+    "body": """
+      median()
+    """
+  "merge->laravel":
+    "prefix": "lcl-merge"
+    "body": """
+      merge()
+    """
+  "min->laravel":
+    "prefix": "lcl-min"
+    "body": """
+      min()
+    """
+  "mode->laravel":
+    "prefix": "lcl-mode"
+    "body": """
+      mode()
+    """
+  "nth->laravel":
+    "prefix": "lcl-nth"
+    "body": """
+      nth(4,1)
+    """
+  "only->laravel":
+    "prefix": "lcl-only"
+    "body": """
+      only()
+    """
+  "pad->laravel":
+    "prefix": "lcl-pad"
+    "body": """
+      pad()
+    """
+  "partition->laravel":
+    "prefix": "lcl-partition"
+    "body": """
+      partition()
+    """
+  "pipe->laravel":
+    "prefix": "lcl-pipe"
+    "body": """
+      pipe()
+    """
+  "pluck->laravel":
+    "prefix": "lcl-pluck"
+    "body": """
+      pluck('name')
+    """
+  "pop->laravel":
+    "prefix": "lcl-pop"
+    "body": """
+      pop()
+    """
+  "prepend->laravel":
+    "prefix": "lcl-prepend"
+    "body": """
+      prepend(0)
+    """
+  "pull->laravel":
+    "prefix": "lcl-pull"
+    "body": """
+      pull()
+    """
+  "push->laravel":
+    "prefix": "lcl-push"
+    "body": """
+      push(5)
+    """
+  "put->laravel":
+    "prefix": "lcl-put"
+    "body": """
+      put()
+    """
+  "random->laravel":
+    "prefix": "lcl-random"
+    "body": """
+      random()
+    """
+  "reduce->laravel":
+    "prefix": "lcl-reduce"
+    "body": """
+      reduce()
+    """
+  "reject->laravel":
+    "prefix": "lcl-reject"
+    "body": """
+      reject()
+    """
+  "reverse->laravel":
+    "prefix": "lcl-reverse"
+    "body": """
+      reverse()
+    """
+  "search->laravel":
+    "prefix": "lcl-search"
+    "body": """
+      search(3)
+    """
+  "shift->laravel":
+    "prefix": "lcl-shift"
+    "body": """
+      shift()
+    """
+  "shuffle->laravel":
+    "prefix": "lcl-shuffle"
+    "body": """
+      shuffle()
+    """
+  "slice->laravel":
+    "prefix": "lcl-slice"
+    "body": """
+      slice(4)
+    """
+  "sort->laravel":
+    "prefix": "lcl-sort"
+    "body": """
+      sort()
+    """
+  "sortBy->laravel":
+    "prefix": "lcl-sortBy"
+    "body": """
+      sortBy('price')
+    """
+  "sortByDesc->laravel":
+    "prefix": "lcl-sortByDesc"
+    "body": """
+      sortByDesc()
+    """
+  "splice->laravel":
+    "prefix": "lcl-splice"
+    "body": """
+      splice()
+    """
+  "split->laravel":
+    "prefix": "lcl-split"
+    "body": """
+      split()
+    """
+  "sum->laravel":
+    "prefix": "lcl-sum"
+    "body": """
+      sum()
+    """
+  "take->laravel":
+    "prefix": "lcl-take"
+    "body": """
+      take(3)
+    """
+  "tap->laravel":
+    "prefix": "lcl-tap"
+    "body": """
+      tap()
+    """
+  "times->laravel":
+    "prefix": "lcl-times"
+    "body": """
+      times()
+    """
+  "toArray->laravel":
+    "prefix": "lcl-toArray"
+    "body": """
+      toArray()
+    """
+  "toJson->laravel":
+    "prefix": "lcl-toJson"
+    "body": """
+      toJson()
+    """
+  "transform->laravel":
+    "prefix": "lcl-transform"
+    "body": """
+      transform()
+    """
+  "union->laravel":
+    "prefix": "lcl-union"
+    "body": """
+      union()
+    """
+  "unique->laravel":
+    "prefix": "lcl-unique"
+    "body": """
+      unique()
+    """
+  "unless->laravel":
+    "prefix": "lcl-unless"
+    "body": """
+    unless()
+    """
+  "unwrap->laravel":
+    "prefix": "lcl-unwrap"
+    "body": """
+    unwrap()
+    """
+  "values->laravel":
+    "prefix": "lcl-values"
+    "body": """
+      values()
+    """
+  "when->laravel":
+    "prefix": "lcl-when"
+    "body": """
+      when()
+    """
+  "where->laravel":
+    "prefix": "lcl-where"
+    "body": """
+      where()
+    """
+  "whereIn->laravel":
+    "prefix": "lcl-whereIn"
+    "body": """
+      whereIn()
+    """
+  "whereNotIn->laravel":
+    "prefix": "lcl-whereNotIn"
+    "body": """
+      whereNotIn()
+    """
+  "wrap->laravel":
+    "prefix": "lcl-wrap"
+    "body": """
+      wrap()
+    """
+  "zip->laravel":
+    "prefix": "lcl-zip"
+    "body": """
+      zip()
+    """

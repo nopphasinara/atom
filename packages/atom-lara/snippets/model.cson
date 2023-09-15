@@ -1,0 +1,128 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Model                                #
+#####################################################
+
+'.text.php':
+
+   'model attributes -> laravel':
+     'prefix': 'lm-attributes'
+     'body': """
+      /**
+       * The model's default values for attributes.
+       *
+       * @var array
+       */
+      protected $attributes = [
+          'delayed' => false,$1
+      ];
+     """
+
+    'model table name -> laravel':
+      'prefix': 'lm-table'
+      'body': """
+       /**
+        * The table associated with the model.
+        *
+        * @var string
+        */
+       protected $table = 'my_flights';$1
+      """
+
+    'model connection name -> laravel':
+      'prefix': 'lm-connection'
+      'body': """
+       /**
+        * The connection name for the model.
+        *
+        * @var string
+        */
+       protected $connection = 'connection-name';$1
+      """
+
+    'model created_at -> laravel':
+      'prefix': 'lm-created_at'
+      'body': """
+       const CREATED_AT = 'creation_date';
+       const UPDATED_AT = 'last_update';
+      """
+
+    'model fillable -> laravel':
+      'prefix': 'lm-fillable'
+      'body': """
+       /**
+        * The attributes that are mass assignable.
+        *
+        * @var array
+        */
+       protected $fillable = [
+           'name', 'email', 'password',$1
+       ];
+      """
+
+    'model hidden -> laravel':
+      'prefix': 'lm-hidden'
+      'body': """
+       /**
+        * The attributes that should be hidden for arrays.
+        *
+        * @var array
+        */
+       protected $hidden = [
+           'password', 'remember_token',$1
+       ];
+      """
+
+    'model timestamps -> laravel':
+      'prefix': 'lm-timestamp'
+      'body': """
+       /**
+        * Indicates if the model should be timestamped.
+        *
+        * @var bool
+        */
+       public $timestamps = false;
+      """
+
+    'model date format -> laravel':
+      'prefix': 'lm-date'
+      'body': """
+       /**
+        * The storage format of the model's date columns.
+        *
+        * @var string
+        */
+       protected $dateFormat = 'U';
+      """
+
+    'model model -> laravel':
+      'prefix': 'lm-model'
+      'body': """
+       <?php
+
+       namespace App;
+
+       use Illuminate\\\\Database\\\\Eloquent\\\\Model;
+
+       class Test extends Model
+       {
+           $1
+       }
+      """
+
+    'model softDeletes -> laravel':
+      'prefix': 'lm-soft'
+      'body': """
+       use SoftDeletes;
+      """
+
+    'model deleted_at -> laravel':
+      'prefix': 'lm-deleted_at'
+      'body': """
+       /**
+        * The attributes that should be mutated to dates.
+        *
+        * @var array
+        */
+       protected $dates = ['deleted_at'];
+      """

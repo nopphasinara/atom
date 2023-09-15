@@ -1,0 +1,78 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#            Controller Element                      #
+#####################################################
+
+".text.php":
+  "Controller store elements->laravel":
+    "prefix": "lcte-store"
+    "body": """
+
+        // validate the data
+        $this->validate($request, [
+          'title'         => 'required|max:255',
+          'slug'          => 'required'
+          $1
+        ]);
+
+        // store in the database
+        $post = new Post;
+        $post->title = $request->title;
+        $post->slug = $request->slug;
+        $post->save();
+        $1
+        return redirect()->route('$1');
+
+    """
+  "Controller update elements->laravel":
+    "prefix": "lcte-update"
+    "body": """
+
+           $post = Post::find($change);
+
+           // validate the data
+           $this->validate($request, [
+             'title'         => 'required|max:255',
+             'slug'          => 'required'
+             $1
+           ]);
+
+           // store in the database
+           $post = Post::find($change);
+
+           $post->title = $request->title;
+           $post->slug = $request->slug;
+           $post->save();
+           $1
+
+           return redirect()->route('');
+      }
+    """
+  "Controller show elements->laravel":
+    "prefix": "lcte-show"
+    "body": """
+
+        $post$1 = Post$1::find($change$1);
+        return view('posts.show$1')->withPost$1($post$1);
+
+    """
+  "Controller edit elements->laravel":
+    "prefix": "lcte-edit"
+    "body": """
+
+        // find the data
+        $post = Post::find($change);
+        return view('posts.edit')->withPost($post);
+        $1
+
+      """
+  "Controller delete elements->laravel":
+    "prefix": "lcte-delete"
+    "body": """
+
+        $post = Post::find($change);
+        $post->delete();
+         $1
+        return redirect()->route('');
+      }
+    """

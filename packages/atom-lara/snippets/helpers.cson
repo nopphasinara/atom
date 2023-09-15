@@ -1,0 +1,312 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                Helpers                             #
+#####################################################
+".text.php":
+
+  "array_add ->laravel":
+    "prefix": "lh-array_add"
+    "body": """
+      array_add($1)
+    """
+  "array_collapse ->laravel":
+    "prefix": "lh-array_collapse"
+    "body": """
+      array_collapse($1)
+    """
+  "array_divide() ->laravel":
+    "prefix": "lh-array_divide"
+    "body": """
+      array_divide($1)
+    """
+  "array_dot ->laravel":
+    "prefix": "lh-array_dot"
+    "body": """
+      array_dot($1)
+    """
+  "array_except ->laravel":
+    "prefix": "lh-array_except"
+    "body": """
+      array_except($1)
+    """
+  "array_first ->laravel":
+    "prefix": "lh-array_first"
+    "body": """
+      array_first($1)
+    """
+  "array_flatten ->laravel":
+    "prefix": "lh-array_flatten"
+    "body": """
+      array_flatten($1)
+    """
+  "array_forget() ->laravel":
+    "prefix": "lh-array_forget()"
+    "body": """
+      array_forget($1)
+    """
+  "array_get ->laravel":
+    "prefix": "lh-array_get"
+    "body": """
+      array_get($1)
+    """
+  "array_has ->laravel":
+    "prefix": "lh-array_has"
+    "body": """
+      array_has($1)
+    """
+
+  "array_last ->laravel":
+    "prefix": "lh-array_last"
+    "body": """
+      array_last($1)
+    """
+  "array_only ->laravel":
+    "prefix": "lh-array_only"
+    "body": """
+      array_only($1)
+    """
+  "array_pluck ->laravel":
+    "prefix": "lh-array_pluck"
+    "body": """
+      array_pluck($1)
+    """
+  "array_prepend ->laravel":
+    "prefix": "lh-array_prepend"
+    "body": """
+      array_prepend($1)
+    """
+  "array_pull ->laravel":
+    "prefix": "lh-array_pull"
+    "body": """
+      array_pull($1)
+    """
+  "array_random ->laravel":
+    "prefix": "lh-array_random"
+    "body": """
+      array_random($1)
+    """
+  "array_set ->laravel":
+    "prefix": "lh-array_set"
+    "body": """
+      array_set($1)
+    """
+  "array_sort ->laravel":
+    "prefix": "lh-array_sort"
+    "body": """
+      array_sort($1)
+    """
+  "array_sort_recursive ->laravel":
+    "prefix": "lh-array_sort_recursive"
+    "body": """
+      array_sort_recursive($1)
+    """
+  "array_where ->laravel":
+    "prefix": "lh-array_where"
+    "body": """
+      array_where($1)
+    """
+  "array_wrap ->laravel":
+    "prefix": "lh-array_wrap"
+    "body": """
+      array_wrap($1)
+    """
+  "data_fill ->laravel":
+    "prefix": "lh-data_fill"
+    "body": """
+      data_fill($1)
+    """
+  "data_get ->laravel":
+    "prefix": "lh-data_get"
+    "body": """
+      data_get($1)
+    """
+  "data_set ->laravel":
+    "prefix": "lh-data_set"
+    "body": """
+      data_set($1)
+    """
+  "head ->laravel":
+    "prefix": "lh-head"
+    "body": """
+      head($1)
+    """
+  "last ->laravel":
+    "prefix": "lh-last"
+    "body": """
+      last($1)
+    """
+  "app_path ->laravel":
+    "prefix": "lhp-app"
+    "body": """
+      app_path($1)
+    """
+  "base_path ->laravel":
+    "prefix": "lhp-base"
+    "body": """
+      base_path($1)
+    """
+  "config_path ->laravel":
+    "prefix": "lhp-config"
+    "body": """
+      config_path($1)
+    """
+  "database_path ->laravel":
+    "prefix": "lhp-database"
+    "body": """
+      database_path($1)
+    """
+  "public_path ->laravel":
+    "prefix": "lhp-public"
+    "body": """
+      public_path($1)
+    """
+  "resource_path ->laravel":
+    "prefix": "lhp-resource"
+    "body": """
+      resource_path($1)
+    """
+  "storaage_path ->laravel":
+    "prefix": "lhp-storaage"
+    "body": """
+      storaage_path($1)
+    """
+  "camel_case ->laravel":
+    "prefix": "lh-camel"
+    "body": """
+      camel_case($1);
+    """
+  "class_basename ->laravel":
+    "prefix": "lh-class_basename"
+    "body": """
+      class_basename($1);
+    """
+  "ends_with ->laravel":
+    "prefix": "lh-ends_with"
+    "body": """
+      ends_with($1);
+    """
+  "kebab_case ->laravel":
+    "prefix": "lh-kebab_case"
+    "body": """
+      kebab_case($1);
+    """
+  "snake_case ->laravel":
+    "prefix": "lh-snake_case"
+    "body": """
+      snake_case($1);
+    """
+  "starts_with ->laravel":
+    "prefix": "lh-starts_with"
+    "body": """
+      starts_with($1);
+    """
+  "str_after ->laravel":
+    "prefix": "lh-str_after"
+    "body": """
+      str_after($1);
+    """
+  "str_before ->laravel":
+    "prefix": "lh-str_before"
+    "body": """
+      str_before($1);
+    """
+  "str_contains ->laravel":
+    "prefix": "lh-str_contains"
+    "body": """
+      str_contains($1);
+    """
+  "str_finish ->laravel":
+    "prefix": "lh-str_finish"
+    "body": """
+      str_finish($1);
+    """
+  "str_is ->laravel":
+    "prefix": "lh-str_is"
+    "body": """
+      str_is($1);
+    """
+  "str_limit ->laravel":
+    "prefix": "lh-str_limit"
+    "body": """
+      str_limit($1);
+    """
+  "str_plural ->laravel":
+    "prefix": "lh-str_plural"
+    "body": """
+      str_plural($1);
+    """
+  "str_random ->laravel":
+    "prefix": "lh-str_random"
+    "body": """
+      str_random($1);
+    """
+  "str_replace_array ->laravel":
+    "prefix": "lh-str_replace_array"
+    "body": """
+      str_replace_array($1);
+    """
+  "str_replace_first ->laravel":
+    "prefix": "lh-str_replace_first"
+    "body": """
+      str_replace_first($1);
+    """
+  "str_replace_last ->laravel":
+    "prefix": "lh-str_replace_last"
+    "body": """
+      str_replace_last($1);
+    """
+  "str_singular ->laravel":
+    "prefix": "lh-str_singular"
+    "body": """
+      str_singular($1);
+    """
+  "str_slug ->laravel":
+    "prefix": "lh-str_slug"
+    "body": """
+      str_slug($1);
+    """
+  "str_start ->laravel":
+    "prefix": "lh-str_start"
+    "body": """
+      str_start($1);
+    """
+  "studly_case ->laravel":
+    "prefix": "lh-studly_case"
+    "body": """
+      studly_case($1);
+    """
+  "title_case ->laravel":
+    "prefix": "lh-title_case"
+    "body": """
+      title_case($1);
+    """
+  "trans ->laravel":
+    "prefix": "lh-trans"
+    "body": """
+      trans($1);
+    """
+  "trans_choice ->laravel":
+    "prefix": "lh-trans_choice"
+    "body": """
+      trans_choice($1);
+    """
+  "bcrypt ->laravel":
+    "prefix": "lh-bcrypt"
+    "body": """
+      bcrypt($1);
+    """
+  "config ->laravel":
+    "prefix": "lh-config"
+    "body": """
+      config($1);
+    """
+  "encrypt ->laravel":
+    "prefix": "lh-encrypt"
+    "body": """
+      encrypt($1);
+    """
+  "env ->laravel":
+    "prefix": "lh-env"
+    "body": """
+      env('APP_ENV', 'production');
+    """

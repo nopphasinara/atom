@@ -1,0 +1,107 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#            Laravel collective                      #
+#####################################################
+
+'.text.html.php.blade':
+  "open->collective":
+    "prefix": "lc-open"
+    "body": """
+      {!! Form::open(['method' => 'POST', 'route' => 'routeName', 'class' => 'test']) !!}
+    """
+  "submit->collective":
+    "prefix": "lc-sub"
+    "body": """
+      {{ Form::submit('button', ['class' => 'test test2']) }}
+    """
+  "checkbox->collective":
+    "prefix": "lc-check"
+    "body": """
+    {{ Form::checkbox('checkbox_id', null, null, ['id' => 'checkbox_id']) }}
+    """
+  "close->collective":
+    "prefix": "lc-close"
+    "body": """
+      {!! Form::close() !!}
+    """
+  "label->collective":
+    "prefix": "lc-label"
+    "body": """
+      {{ Form::label('meLabel', 'labelName', ['class' => 'test test2']) }}
+    """
+  "text->collective":
+    "prefix": "lc-text"
+    "body": """
+      {{ Form::text('meLabel', null, ['class' => 'test', 'required' => 'required']) }}
+    """
+  "textarea->collective":
+    "prefix": "lc-textarea"
+    "body": """
+      {{ Form::textarea('meLabel', null, ['class' => 'test', 'required' => 'required']) }}
+    """
+  "date->collective":
+    "prefix": "lc-date"
+    "body": """
+      {{ Form::date('meLabel', null, ['class' => 'test', 'required' => 'required']) }}
+    """
+  "email->collective":
+    "prefix": "lc-email"
+    "body": """
+      {{ Form::email('email', null, ['class' => 'test', 'required' => 'required', 'placeholder' => 'eg: hellolaravel@gmail.com']) }}
+    """
+  "file->collective":
+    "prefix": "lc-file"
+    "body": """
+      {{ Form::file('meLabel', ['required' => 'required']) }}
+    """
+
+  "model->collective":
+    "prefix": "lc-model"
+    "body": """
+      {{ Form::model($model, ['route' => ['models.update', models->id}], 'method' => 'PUT']) }}
+    """
+  "reset->collective":
+    "prefix": "lc-reset"
+    "body": """
+      {{ Form::reset("Reset", ['class' => 'test'] ) }}
+    """
+  "hidden->collective":
+    "prefix": "lc-hidden"
+    "body": """
+      {{ Form::hidden('meLabel', 'value') }}
+    """
+  "number->collective":
+    "prefix": "lc-number"
+    "body": """
+      {{ Form::number('meLabel', null, ['class' => 'test']) }}
+    """
+  "password->collective":
+    "prefix": "lc-password"
+    "body": """
+      {{ Form::password('meLabel', ['class' => 'test']) }}
+    """
+  "radio->collective":
+    "prefix": "lc-radio"
+    "body": """
+      {{ Form::radio('meLabel', null, null ['class' => 'test']) }}
+    """
+  "select->collective":
+    "prefix": "lc-select"
+    "body": """
+      {{ Form::select('meLabel', $options, $selected_value, ['class' => 'test', 'multiple']) }}
+    """
+  "month->collective":
+    "prefix": "lc-month"
+    "body": """
+      {{ Form::selectRange('meLabel', ['class' => 'test']) }}
+    """
+  "action->collective":
+    "prefix": "lc-action"
+    "body": """
+      'action' => ['Controller@method', $user->id]
+    """
+  "files true->collective":
+    "prefix": "lc-f"
+    "body": """
+      'files' => true
+    """

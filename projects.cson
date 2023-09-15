@@ -143,4 +143,11 @@
       "/Volumes/Storage/www/laravel.local"
     ]
   }
+  {
+    title: "wordpress.local"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/wordpress.local"
+    ]
+  }
 ]

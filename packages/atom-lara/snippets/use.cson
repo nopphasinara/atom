@@ -1,0 +1,70 @@
+
+########################################################
+#            Atom Laravel Snippet                     #
+#                USE                                 #
+#####################################################
+
+".text.php":
+
+  "use Application->laravel":
+    "prefix": "use-application"
+    "body": """
+      use Illuminate\\\\Foundation\\\\Application;
+    """
+
+  "use Closure->laravel":
+    "prefix": "use-closure"
+    "body": """
+      use Closure;
+    """
+
+  "use Database->laravel":
+    "prefix": "use-db"
+    "body": """
+      use DB;
+    """
+
+  "use Schema->laravel":
+    "prefix": "use-schema"
+    "body": """
+      use Schema;
+    """
+
+  "use URL->laravel":
+    "prefix": "use-url"
+    "body": """
+      use Illuminate\\\\Support\\\\Facades\\\\URL;
+    """
+  "use UrlGenerator->laravel":
+    "prefix": "use-urlGenerator"
+    "body": """
+      use Illuminate\\\\Routing\\\\UrlGenerator;
+    """
+
+  "use Authenticatable->laravel":
+    "prefix": "use-Authenticatable"
+    "body": """
+      use Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable;
+    """
+  "use Storage->laravel":
+    "prefix": "use-Storage"
+    "body": """
+      use Illuminate\\\\Support\\\\Facades\\\\Storage;
+    """
+  "use Notifiable->laravel":
+    "prefix": "use-Notifiable"
+    "body": """
+      use Illuminate\\\\Notifications\\\\Notifiable
+    """
+
+  "defaultStringLength->laravel":
+    "prefix": "use-dfl"
+    "body": """
+      Schema::defaultStringLength(191);
+    """
+
+  "namespace softDeletes->laravel":
+    "prefix": "use-softDeletes"
+    "body": """
+    use Illuminate\\\\Database\\\\Eloquent\\\\SoftDeletes;
+    """

@@ -1,0 +1,16 @@
+########################################################
+#            Atom Laravel Snippet                     #
+#                DATABASE                           #
+#####################################################
+
+".text.php":
+  "DB::->laravel(c)":
+    "prefix": "db"
+    "body": """
+      DB::table('users')
+    """
+  "use db->laravel(c)":
+    "prefix": "use-db"
+    "body": """
+     "use Illuminate'\\'Support\\Facades\\DB"
+    """

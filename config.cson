@@ -300,6 +300,7 @@
       "atom-wordpress"
       "wp-dev"
       "atom-autocomplete-php"
+      "larasnippets"
     ]
     packagesWithKeymapsDisabled: [
       "color-picker"
