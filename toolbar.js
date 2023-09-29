@@ -229,14 +229,15 @@ module.exports = [
     {
         type: 'button',
         callback: {
-            '': 'split-diff:toggle',
+            '': 'git-plus:diff',
+            // '': 'split-diff:toggle',
         },
-        tooltip: 'Split Diff',
+        tooltip: 'Diff',
         text: '<i>󰪚</i>',
         html: true,
         show: {
           function: () => {
-              return !atom.packages.isPackageDisabled('split-diff');
+              return !atom.packages.isPackageDisabled('git-plus');
           },
         },
         class: ['mdi', 'bg-info', 'fg-dark'],

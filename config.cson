@@ -492,6 +492,7 @@
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true
+  "git-diff": {}
   "git-menu":
     confirmationDialogs: {}
     contextMenuItems:

@@ -45,6 +45,13 @@
     ]
   }
   {
+    title: "hello-world-package"
+    group: "Github"
+    paths: [
+      "/Volumes/Storage/Projects/composer-packages/hello-world-package"
+    ]
+  }
+  {
     title: "corcel.local"
     group: "WWW"
     paths: [
