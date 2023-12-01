@@ -480,31 +480,50 @@ module.exports = [
                 if (isTextEditor(editor)) {
                     var filepath = getRealpathSync(editor.getPath());
 
-                    console.log(console);
-                    console.log(console.prototype);
+                    // console.log(console);
+                    // console.log(console.prototype);
 
                     // const exec = require('child_process').execFile;
                     const util = require('util');
                     const exec = util.promisify(require('child_process').exec);
                     const execFile = util.promisify(require('child_process').execFile);
+                    const execSync = require('child_process').execSync;
 
                     async function runScripts(filepath) {
-                        console.group('exec');
-                        console.log(exec);
-                        console.log(
-                            exec(
-                                `tap ${filepath}`,
-                                {
-                                    shell: '/bin/zsh',
-                                },
-                                function (error, stdout, stderr) {
-                                    console.log(error);
-                                    console.log(stdout);
-                                    console.log(stderr);
-                                }
-                            )
-                        );
-                        console.groupEnd();
+                      const output = execSync('(cd '+ path.dirname(filepath) +' && node config --list)');
+                      console.log(output.toString());
+
+                        atom.commands.dispatch(atom.views.getView(editor), 'repl-console:run');
+
+                        // let response = execFile();
+
+                        // let response = await execFile('', {}, (err, stdout, strerr) => {
+                        //   if (err) {
+                        //     console.log(err);
+                        //     console.log(stderr);
+                        //   } else {
+                        //     console.log(stdout);
+                        //
+                        //     return stdout;
+                        //   }
+                        // });
+
+                        // console.group('exec');
+                        // console.log(exec);
+                        // console.log(
+                        //     exec(
+                        //         `tap ${filepath}`,
+                        //         {
+                        //             shell: '/bin/zsh',
+                        //         },
+                        //         function (error, stdout, stderr) {
+                        //             console.log(error);
+                        //             console.log(stdout);
+                        //             console.log(stderr);
+                        //         }
+                        //     )
+                        // );
+                        // console.groupEnd();
 
                         // console.group('execFile');
                         // console.log(execFile);

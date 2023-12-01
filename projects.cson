@@ -21,6 +21,13 @@
     ]
   }
   {
+    title: "scripts"
+    group: "dotzsh"
+    paths: [
+      "/Volumes/Storage/Projects/dotzsh/scripts"
+    ]
+  }
+  {
     title: "dotzsh"
     group: "Dotzsh"
     paths: [
@@ -35,6 +42,13 @@
     paths: [
       "/Volumes/Storage/Projects/npm-packages/lodash"
       "/Users/sudprawat/Library/BlueStacks/Uninstaller.bundle"
+    ]
+  }
+  {
+    title: "read-sitemap-xml"
+    group: "CommandLine"
+    paths: [
+      "/Volumes/Storage/Projects/npm-packages/read-sitemap-xml"
     ]
   }
   {
@@ -105,6 +119,13 @@
     group: "WWW"
     paths: [
       "/Volumes/Storage/www/reproduction-gallery.com"
+    ]
+  }
+  {
+    title: "reproduction-gallery.com/catalogue"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-gallery.com/catalogue"
     ]
   }
   {
