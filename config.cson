@@ -136,7 +136,10 @@
       space_after_anon_function: true
       space_in_paren: true
     json:
-      brace_style: "end-expand"
+      brace_style: "expand"
+      end_with_newline: true
+      jslint_happy: true
+      keep_array_indentation: true
       space_after_anon_function: true
       space_in_paren: true
     jsx:
@@ -254,7 +257,7 @@
     ignoredPatterns: [
       ".git"
     ]
-    maxFileCount: 6000
+    maxFileCount: 5000
   "autocomplete-php":
     executablePath: "/usr/local/bin/php"
   "autocomplete-plus":
@@ -472,7 +475,7 @@
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    maxScreenLineLength: 8196
+    maxScreenLineLength: 99999
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
