@@ -155,7 +155,6 @@
     },
   },
 
-
   ".source.js": {
     "return true": {
       "prefix": "rt",
@@ -346,6 +345,14 @@
       console.groupEnd();$0
       """,
     },
+    "forEach": {
+      "prefix": "fore",
+      "body": """
+      forEach((${1:value}, ${2:key}) => {
+        ${3:console.log(${4:value});$5}
+      \\});$0
+      """,
+    },
   },
 
 
@@ -405,6 +412,13 @@
 
 
   ".source.php, .text.html.php .source.php": {
+    "var_dump()": {
+      "prefix": "vd",
+      "body": """
+      var_dump(${1:});$0
+      """,
+    },
+
     "die()": {
       "prefix": "die",
       "body": """

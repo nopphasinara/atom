@@ -94,6 +94,13 @@
     ]
   }
   {
+    title: "reproduction-galleries.com/new"
+    group: "WWW"
+    paths: [
+      "/Volumes/Storage/www/reproduction-galleries.com/httpdocs/new"
+    ]
+  }
+  {
     title: "wp.reproduction-galleries.com"
     group: "WWW"
     paths: [

@@ -273,7 +273,8 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    debugLSP: true
+    automaticallyUpdate: false
+    debugLSP: false
     disabledPackages: [
       "language-scss"
       "language-scss"
@@ -463,7 +464,7 @@
       "split-diff"
       "tool-bar"
     ]
-    reopenProjectMenuCount: 10
+    reopenProjectMenuCount: 5
     restorePreviousWindowsOnStart: "always"
     simpleFullScreenWindows: true
     telemetryConsent: "no"
@@ -472,10 +473,10 @@
       "one-dark-vivid-syntax"
     ]
     titleBar: "custom"
-    uriHandlerRegistration: "always"
+    uriHandlerRegistration: "never"
   editor:
     fontFamily: "Menlo, Prompt, MaterialDesignIcons, master-icons, monospace"
-    maxScreenLineLength: 99999
+    maxScreenLineLength: 4096
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -551,10 +552,10 @@
     foldLogPanel: true
     monitorFileAnimation: false
   "sass-autocompile":
+    autoHidePanelDelay: 10000
     compileCompressed: false
     compileExpanded: true
     compileOnSave: false
-    indentWidth: 4
     showAdditionalCompilationInfo: false
     showOldParametersWarning: false
   "spell-check":

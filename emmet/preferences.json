@@ -1,4 +1,5 @@
 {
+  "href.urlPattern": "^(?:(?:https?|ftp|file)://|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])",
   "filter.commentTrigger": "class, id",
   "filter.commentBefore": "<!-- <%= if (attr('id', '')) attr('id', '')  %> -->\n",
   "filter.commentAfter": "\n<!-- <%= attr('id', '/ END #') %> -->",
